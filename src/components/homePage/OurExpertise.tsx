@@ -63,6 +63,8 @@ const OurExpertise = () => {
                       <Image
                         src={item.techImg}
                         alt={item.techImg}
+                        width={40}
+                        height={40}
                         className="h-10 w-10 3xl:h-max 3xl:w-max"
                       />
                     </div>

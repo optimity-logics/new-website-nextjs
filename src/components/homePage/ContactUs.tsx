@@ -123,7 +123,7 @@ const ContactUs = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.subject}
-            className="w-full rounded-xl border-[1.33px] border-[#CCCCCC] bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-[#8A8A8A] 2xl:rounded-[20px] 2xl:p-[23.87px]"
+            className="w-full rounded-xl border-[1.33px] border-[#CCCCCC] bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] text-[#8A8A8A] outline-none 2xl:rounded-[20px] 2xl:p-[23.87px]"
           >
             <option value="">Select a subject</option>
             <option value="General Inquiry">General Inquiry</option>
