@@ -28,7 +28,7 @@ const ClientReview = () => {
   // console.log(visibleCount < ClientsReview.length);
 
   return (
-    <Container className="pt-[18px] md:mb-12 xl:mb-16 3xl:mb-[120px] 3xl:px-[200px]">
+    <Container className="pt-[18px] md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:px-[200px]">
       <div className="flex flex-col gap-5 lg:gap-20">
         <SectionHeading
           heading="Real Stories from <span>Satisfied Clients</span>"
@@ -36,12 +36,12 @@ const ClientReview = () => {
           className="max-w-[998px]"
           descriptionStyle="max-w-[590px]"
         />
-        <div className="review grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-[23px] xl:gap-y-[25px] 2xl:grid-cols-3">
+        <div className="review grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-[23px] xl:gap-y-[25px] 3xl:grid-cols-3">
           {clientsReview &&
             clientsReview.slice(0, visibleCount).map((item, index) => (
               <div
                 key={index}
-                className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-[51.74px] rounded-[18.91px] p-5 transition-all duration-300 hover:bg-[#2bbada1a] md:px-[34px] md:py-[30px]`}
+                className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-[51.74px] rounded-[18.91px] p-5 transition-all duration-300 hover:bg-turquoise md:px-[34px] md:py-[30px]`}
               >
                 <div className="flex flex-col gap-[25px]">
                   <StarRatings
@@ -65,13 +65,13 @@ const ClientReview = () => {
             ))}
 
           {visibleCount < clientsReview.length && (
-            <div className="relative z-30 col-span-1 flex w-full items-center justify-center md:col-span-2 2xl:col-span-3">
+            <div className="relative z-30 col-span-1 flex w-full items-center justify-center md:col-span-2 3xl:col-span-3">
               <div
-                className={`absolute bottom-0 -z-20 flex h-[350px] w-full max-w-[1920px] items-end justify-center bg-custom-gradient 2xl:-bottom-[45px]`}
+                className={`absolute bottom-0 -z-20 flex h-[350px] w-full max-w-[1920px] items-end justify-center bg-custom-gradient 3xl:-bottom-[45px]`}
               >
                 <button
                   onClick={handleReadMore}
-                  className="hover: w-max cursor-pointer rounded-[5px] border border-[#02ADE1] px-4 py-2.5 font-Inter font-bold leading-[19.36px] text-[#02ADE1] transition-all duration-300 hover:bg-[#02ADE1] hover:text-white lg:px-[33px] lg:py-[14px]"
+                  className="hover: w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Inter font-bold leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px]"
                   disabled={isLoading} // Disable button while loading
                 >
                   {isLoading ? (

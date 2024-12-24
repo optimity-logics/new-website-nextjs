@@ -62,7 +62,7 @@ const NavBar = () => {
               alt="nav-logo"
               width={202}
               height={57.09}
-              className="max-w-[130px] xl:max-w-max"
+              className="max-w-[130px] xl:max-w-[150px] 4xl:max-w-max"
             />
           </Link>
         </div>
@@ -83,15 +83,15 @@ const NavBar = () => {
                 {item?.menuItem === 'Services' && showMegaMenu && (
                   <div className="scale-up-ver-bottom">
                     <div
-                      className={`megaMenu absolute left-1/2 top-full mt-6 flex flex-col gap-[61.32px] rounded-2xl bg-white p-7 shadow-lg transition-all duration-500 ease-in-out xl:mt-9 xl:rounded-[25.42px] 2xl:px-[49.43px] 2xl:py-[51.31px]`}
+                      className={`megaMenu absolute left-1/2 top-full mt-6 flex flex-col gap-[61.32px] rounded-3xl bg-white p-7 shadow-lg transition-all duration-500 ease-in-out xl:mt-9 xl:rounded-[25.42px] 3xl:px-[49.43px] 3xl:py-[51.31px]`}
                     >
-                      <div className="grid grid-cols-3 items-center gap-5 2xl:gap-[50.84px]">
+                      <div className="grid grid-cols-3 items-center gap-5 3xl:gap-[50.84px]">
                         {servicesMegsmenuDate.map((item, index) => (
                           <div
                             key={index}
                             className="flex flex-col gap-5 xl:gap-[25.42px]"
                           >
-                            <h4 className="font-Inter text-xl font-normal leading-6 text-[#97A3B7] xl:text-2xl xl:leading-9">
+                            <h4 className="font-Inter text-xl font-normal leading-6 text-[#97A3B7] xl:text-3xl xl:leading-9">
                               {item.title}
                             </h4>
                             <ul className="flex flex-col gap-4 xl:gap-[31.77px]">

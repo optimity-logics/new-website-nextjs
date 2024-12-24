@@ -38,7 +38,7 @@ const SectionHeading = ({
       {btnName && <Button btnName={btnName} className={btnStyle} />}
       <HighlitedDescription
         dangerouslySetInnerHTML={{ __html: heading }}
-        className="text-center font-Inter text-[45px] font-semibold leading-[47px] text-lightBlack 2xl:text-[55px] 3xl:text-[60px] 3xl:leading-[72.61px]"
+        className="text-center font-Inter text-[45px] font-semibold leading-[47px] text-lightBlack 3xl:text-[55px] 3xl:leading-[72.61px] 4xl:text-[60px]"
       />
       <p
         className={`text-center font-Inter text-lg font-normal leading-[21.15px] text-gray ${descriptionStyle}`}
@@ -48,7 +48,7 @@ const SectionHeading = ({
       {LinkName && (
         <Link
           href={''}
-          className={`${LinkStyle} flex items-center gap-[15.32px] font-Inter text-base font-semibold leading-6 text-[#E94E25]`}
+          className={`${LinkStyle} flex items-center gap-[15.32px] font-Inter text-base font-semibold leading-6 text-red`}
         >
           {' '}
           {LinkName}

@@ -21,6 +21,7 @@
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
     "react-modal": "^3.16.3",
     "react-modern-drawer": "^1.4.0",
     "react-star-ratings": "^2.3.0",

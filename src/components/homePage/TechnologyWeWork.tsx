@@ -16,7 +16,7 @@ const TechnologyWeWork = () => {
   };
 
   return (
-    <div className="mb-10 flex flex-col items-center gap-10 md:mb-12 xl:mb-16 2xl:gap-12 3xl:mb-[140px] 3xl:gap-[80px]">
+    <div className="mb-10 flex flex-col items-center gap-10 md:mb-12 xl:mb-16 3xl:gap-12 4xl:mb-[140px] 4xl:gap-[80px]">
       <SectionHeading
         heading={`<span>Technologies</span> we work with`}
         className="max-w-[860px]"
@@ -48,10 +48,10 @@ const TechnologyWeWork = () => {
                 ></div>
 
                 <div className="absolute bottom-0 flex h-full w-full flex-col justify-end gap-2.5 p-4 text-white sm:p-6 lg:p-[30px]">
-                  <h5 className="font-Inter text-2xl font-semibold leading-7 text-white 3xl:text-[30px] 3xl:leading-[38.72px]">
+                  <h5 className="font-Inter text-3xl font-semibold leading-7 text-white 4xl:text-[30px] 4xl:leading-[38.72px]">
                     {item.TechName}
                   </h5>
-                  <p className="invisible hidden overflow-hidden font-Inter font-medium leading-[21.78px] text-white opacity-0 transition-all duration-500 ease-in-out group-hover:visible group-hover:block group-hover:opacity-100 sm:text-base 3xl:text-lg">
+                  <p className="invisible hidden overflow-hidden font-Inter font-medium leading-[21.78px] text-white opacity-0 transition-all duration-500 ease-in-out group-hover:visible group-hover:block group-hover:opacity-100 sm:text-base 4xl:text-lg">
                     {item.TechDescription}
                   </p>
                 </div>

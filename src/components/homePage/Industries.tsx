@@ -12,7 +12,7 @@ import { industriesData } from '../utils/Constant';
 
 const Industries = () => {
   return (
-    <div className="!2xl:px-0 !3xl:px-0 mb-10 flex flex-col items-center gap-[60px] px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:px-10 3xl:mb-[120px]">
+    <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col items-center gap-[60px] overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:px-10 4xl:mb-[120px]">
       <SectionHeading
         heading="Our Industrial <span> Expertise </span>"
         description="Our team of industry experts curates progressive solutions that befit your requirements"
@@ -21,41 +21,37 @@ const Industries = () => {
         btnStyle=" bg-herobtnbg bg-cover bg-no-repeat !py-2.5 !px-[23px] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-black"
         LinkName="Connect to know more"
       />
-      <div className="relative h-full w-full max-w-[1820px] 3xl:ml-[100px]">
+      <div className="swiper-container relative h-full w-full max-w-[1820px] 4xl:ml-[100px]">
         <Swiper
           spaceBetween={26}
           slidesPerView={1}
           breakpoints={{
             640: {
               slidesPerView: 2,
-              spaceBetween: 26,
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 26,
             },
             1280: {
               slidesPerView: 4,
-              spaceBetween: 26,
             },
             1836: {
               slidesPerView: 5,
-              spaceBetween: 26,
             },
           }}
-          className="h-full w-full"
+          className="mySwiper h-full !w-full"
         >
           {industriesData &&
             industriesData.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="group flex cursor-pointer flex-col items-stretch gap-4 2xl:gap-8">
+              <SwiperSlide key={index} className="!h-auto">
+                <div className="group flex h-full cursor-pointer flex-col items-stretch gap-4 3xl:gap-8">
                   <div className="w-max">
                     <Image
                       src={item?.img}
                       alt="icon"
                       width={100}
                       height={100}
-                      className="!h-16 !w-16 object-cover 2xl:h-max 2xl:w-max"
+                      className="!h-16 !w-16 object-cover 3xl:h-max 3xl:w-max"
                     />
                   </div>
                   <div className="flex flex-col gap-[17.39px]">
@@ -85,7 +81,7 @@ const Industries = () => {
                       </div>
                     </div>
 
-                    <div className="relative mt-2 h-0.5 w-full bg-[#D4D4D4]">
+                    <div className="relative mt-2 h-0.5 w-full bg-lightSilver">
                       <span className="absolute left-0 top-0 h-full w-0 bg-red transition-all duration-500 ease-out group-hover:w-full"></span>
                     </div>
                   </div>
