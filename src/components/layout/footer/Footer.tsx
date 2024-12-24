@@ -19,8 +19,8 @@ const Footer = () => {
           className="h-12 sm:h-full"
         />
       </div>
-      <Container className="bg-footer bg-cover bg-no-repeat pt-10 3xl:pt-20">
-        <div className="flex flex-col gap-10 border-b-[1.34px] border-b-[#1110221f] pb-10 xl:flex-row xl:gap-3 3xl:gap-[196px]">
+      <Container className="bg-footer bg-cover bg-no-repeat pt-10 4xl:pt-20">
+        <div className="flex flex-col gap-10 border-b-[1.34px] border-b-grayishBlue pb-10 xl:flex-row xl:gap-3 4xl:gap-[196px]">
           <div className="flex w-full max-w-[420px] flex-col gap-[30px]">
             <div>
               <Image
@@ -28,7 +28,7 @@ const Footer = () => {
                 alt="logo"
                 width={202}
                 height={57}
-                className="w-[150px] 3xl:w-max"
+                className="w-[150px] 4xl:w-max"
               />
             </div>
             <span className="font-Inter text-lg font-normal leading-[30px] text-charcoalBlue">
@@ -36,10 +36,10 @@ const Footer = () => {
               school, Godrej Garden City Road, Ahmedabad, Gujarat 382470
             </span>
           </div>
-          <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-4 xl:gap-[70px] 2xl:gap-20 3xl:gap-[95.14px]">
+          <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-4 xl:gap-[70px] 3xl:gap-20 4xl:gap-[95.14px]">
             {footerData.map((section, index) => (
               <div key={index} className="flex flex-col gap-[21.37px]">
-                <h3 className="font-Inter text-2xl font-semibold leading-[29.05px] text-charcoalBlue">
+                <h3 className="font-Inter text-3xl font-semibold leading-[29.05px] text-charcoalBlue">
                   {section.title}
                 </h3>
                 <ul className="flex flex-col gap-[21.37px]">
@@ -61,7 +61,7 @@ const Footer = () => {
             © 2024 Optimity Logics. All rights reserved.
           </span>
           <div className="flex items-center gap-3">
-            <div className="rounded-full bg-[#1110221a] p-2.5">
+            <div className="rounded-full bg-bluishGray p-2.5">
               <Image
                 src={instagram}
                 alt="instageam-logo"
@@ -69,7 +69,7 @@ const Footer = () => {
                 height={20}
               />
             </div>
-            <div className="rounded-full bg-[#1110221a] p-2.5">
+            <div className="rounded-full bg-bluishGray p-2.5">
               <Image
                 src={facebook}
                 alt="facebook-logo"
@@ -77,7 +77,7 @@ const Footer = () => {
                 height={20}
               />
             </div>
-            <div className="rounded-full bg-[#1110221a] p-2.5">
+            <div className="rounded-full bg-bluishGray p-2.5">
               <Image src={twitter} alt="twitter-logo" width={20} height={20} />
             </div>
           </div>

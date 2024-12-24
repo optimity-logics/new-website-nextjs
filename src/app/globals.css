@@ -114,3 +114,15 @@ html {
 .zoom-in-fade {
   animation: zoomInFade 0.4s ease forwards;
 }
+
+/* heroSection text gredient color  */
+.text-gradient {
+  background: linear-gradient(43.75deg, #f38f02 -10.78%, #02ade1 60.97%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* accordion title */
+.accordion-title h2 button {
+  padding: 10px 0px;
+}

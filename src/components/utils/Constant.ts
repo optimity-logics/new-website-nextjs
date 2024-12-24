@@ -1,10 +1,23 @@
-import ketoCycle from '../../../public/svg/ketoCycle.svg';
-import heycollab from '../../../public/svg/heycollab.svg';
-import ball from '../../../public/svg/05.svg';
-import loloco from '../../../public/svg/loloco.svg';
-import satisfind from '../../../public/svg/satisfind.svg';
-import gocaution from '../../../public/svg/gocaution.svg';
-import propftx from '../../../public/svg/propftx.svg';
+import ketoCycle from '../../../public/svg/client-logo-slider/ketocycle.svg';
+import hts from '../../../public/svg/client-logo-slider/hts.svg';
+import hopper from '../../../public/svg/client-logo-slider/hopper.svg';
+import wikifarmer from '../../../public/svg/client-logo-slider/wikifarmer.svg';
+import gocaution from '../../../public/svg/client-logo-slider/gocaution.svg';
+import heycollab from '../../../public/svg/client-logo-slider/heycollab.svg';
+import loloco from '../../../public/svg/client-logo-slider/loloco.svg';
+import propftx from '../../../public/svg/client-logo-slider/propftx.svg';
+import everpretty from '../../../public/svg/client-logo-slider/everpretty.svg';
+import datapacket from '../../../public/svg/client-logo-slider/datapacket.svg';
+import gobrochures from '../../../public/svg/client-logo-slider/gobrochures.svg';
+import hungrytripper from '../../../public/svg/client-logo-slider/hungrytripper.svg';
+import blueprint from '../../../public/svg/client-logo-slider/blueprint.svg';
+import edqan from '../../../public/svg/client-logo-slider/edqan.svg';
+import yhonk from '../../../public/svg/client-logo-slider/yhonk.svg';
+import woodlogs from '../../../public/svg/client-logo-slider/woodlogs.svg';
+import helpingjobseekers from '../../../public/svg/client-logo-slider/helpingjobseekers.svg';
+import trady from '../../../public/svg/client-logo-slider/trady.svg';
+import waosim from '../../../public/svg/client-logo-slider/waosim.svg';
+import teqdiligent from '../../../public/svg/client-logo-slider/teqdiligent.svg';
 
 // types
 
@@ -44,11 +57,24 @@ export const NavBarData = [
 export const logoIcons = [
   ketoCycle,
   heycollab,
-  ball,
+  hts,
   loloco,
-  satisfind,
+  hopper,
   gocaution,
   propftx,
+  wikifarmer,
+  everpretty,
+  datapacket,
+  gobrochures,
+  hungrytripper,
+  blueprint,
+  edqan,
+  yhonk,
+  woodlogs,
+  helpingjobseekers,
+  trady,
+  waosim,
+  teqdiligent,
 ];
 
 export const ourExpertiseData = [
@@ -456,7 +482,7 @@ export const servicesMegsmenuDate = [
 
 export const AccordionMenuItemData = [
   {
-    title: 'Resources',
+    title: 'Services',
     subMenu: [
       'Developers Docs',
       'Help Center',
@@ -465,7 +491,7 @@ export const AccordionMenuItemData = [
     ],
   },
   {
-    title: 'Resources',
+    title: 'Technology',
     subMenu: [
       'Developers Docs',
       'Help Center',
@@ -473,8 +499,39 @@ export const AccordionMenuItemData = [
       'User Community',
     ],
   },
+
   {
-    title: 'Resources',
+    title: 'About Us',
+    subMenu: [
+      'Developers Docs',
+      'Help Center',
+      'Product Updates',
+      'User Community',
+    ],
+  },
+
+  {
+    title: 'Our Works',
+    subMenu: [
+      'Developers Docs',
+      'Help Center',
+      'Product Updates',
+      'User Community',
+    ],
+  },
+
+  {
+    title: 'Hire Us',
+    subMenu: [
+      'Developers Docs',
+      'Help Center',
+      'Product Updates',
+      'User Community',
+    ],
+  },
+
+  {
+    title: 'Blog',
     subMenu: [
       'Developers Docs',
       'Help Center',

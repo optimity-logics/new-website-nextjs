@@ -16,8 +16,12 @@ export default {
         md: '768px',
         lg: '1024px',
         xl: '1280px',
-        '2xl': '1430px',
-        '3xl': '1536px',
+        xxl: '1365px',
+        '3xl': '1430px',
+        '4xl': '1536px',
+        '5xl': '1679px',
+
+        // 1366 1440 1400 1600
       },
       backgroundImage: {
         heroElipsbtn1: "url('/svg/heroElipsbtn1.svg')",
@@ -25,12 +29,15 @@ export default {
         herobtnbg: "url('/svg/herobtnbg.svg')",
         whatwedobg: "url('/svg/what-we-do-bg.svg')",
         homepagebg: "url('/svg/Homepagebg.svg')",
+        // herobg: "url('/webp/herobg.webp')",
         teambg: "url('/images/team.png')",
         footer: "url('/images/footerbg.png')",
         sectionBg: "url('/svg/common-section-bg.svg')",
         // homepagebg: "url('/images/homepage.png')",
         'custom-gradient':
           'linear-gradient(180deg, rgba(255, 255, 255, 0) -5.03%, #FFFFFF 54.04%)',
+        'hero-overlap':
+          'linear-gradient(73.24deg, rgba(255, 255, 255, 0) 44.98%, rgba(255, 255, 255, 0.8) 76.91%)',
       },
       fontFamily: {
         Inter: ['Inter'],
@@ -46,6 +53,16 @@ export default {
         gray: '#757474',
         red: '#E94E25',
         primaryGray: '#696969',
+        turquoise: '#2bbada1a',
+        cyanBlue: '#02ADE1',
+        grayishBlue: '#1110221f',
+        bluishGray: '#1110221a',
+        secGray: '#CCCCCC',
+        mediumGray: '#8A8A8A',
+        secBlack: '#0F0F0F',
+        lightSilver: '#D4D4D4',
+        graphite: '#636363',
+        lavenderGray: '#888790',
       },
       keyframes: {
         slideUp: {

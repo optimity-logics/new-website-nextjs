@@ -1,11 +1,10 @@
 import { Accordion, AccordionItem } from '@nextui-org/accordion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
-import add from '../../../public/svg/add.svg';
-import minus from '../../../public/svg/minus.svg';
+import close from '../../../public/svg/close.svg';
 import mobileScreenLogo from '../../../public/svg/mobileScreenLogo.svg';
 import useWindowSize from '../hooks/useWindowSize';
 import { IMenuSidebarProps } from '../type/type';
@@ -13,11 +12,11 @@ import { AccordionMenuItemData } from '../utils/Constant';
 
 const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
   const { width } = useWindowSize();
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  // const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  const handleToggle = (index: number) => {
-    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
+  // const handleToggle = (index: number) => {
+  //   setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+  // };
 
   useEffect(() => {
     if (width >= 768) {
@@ -45,10 +44,10 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
         open={isOpen}
         onClose={handleCloseDrower}
         direction="left"
-        style={{ width: '75%' }}
+        style={{ width: '75%', overflowY: 'scroll' }}
       >
-        <div className="px-4 pt-4">
-          <div className="flex items-center justify-between p-2">
+        <div>
+          <div className="sticky top-0 z-[9999] flex items-center justify-between border-b border-b-bluishGray bg-white p-5">
             <Link href={'/'}>
               <Image
                 src={mobileScreenLogo}
@@ -58,49 +57,56 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                 onClick={handleCloseDrower}
               />
             </Link>
-          </div>
-          <Accordion variant="splitted">
-            {AccordionMenuItemData &&
-              AccordionMenuItemData.map((item, index) => {
-                const isExpanded = expandedIndex === index;
 
-                return (
-                  <AccordionItem
-                    key={index}
-                    aria-label={`Accordion ${index + 1}`}
-                    title={
-                      <div
-                        className={` ${isExpanded ? 'py-0' : '2xl:py-1 3xl:py-5'} `}
-                      >
-                        <span className="font-Inter text-xl font-medium leading-6 text-charcoalBlue md:text-2xl md:leading-[29.05px]">
-                          {item?.title}
-                        </span>
-                      </div>
-                    }
-                    indicator={
-                      <Image
-                        src={isExpanded ? minus : add}
-                        alt={isExpanded ? 'Collapse' : 'Expand'}
-                        width={24}
-                        height={24}
-                        className={`${isExpanded && 'rotate-90'}`}
-                      />
-                    }
-                    className="!rounded-none border-b !border-b-[#1110221a] px-0 !shadow-none"
-                    onPress={() => handleToggle(index)}
-                  >
-                    {item?.subMenu.map((items, ind) => (
-                      <p
-                        key={ind}
-                        className="w-full max-w-[619px] pb-3 font-Inter text-base font-normal leading-[19.36px] text-charcoalBlue opacity-50 lg:ml-[72px] xl:ml-20"
-                      >
-                        {items}
-                      </p>
-                    ))}
-                  </AccordionItem>
-                );
-              })}
-          </Accordion>
+            <Image
+              src={close}
+              alt="close-btn"
+              width={24}
+              height={24}
+              className="cursor-pointer"
+              onClick={handleCloseDrower}
+            />
+          </div>
+          <div className="flex flex-col gap-2 p-5">
+            <Link
+              href={'/'}
+              onClick={handleCloseDrower}
+              className="px-2 py-2.5 font-Inter text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6"
+            >
+              Home
+            </Link>
+            <Accordion variant="splitted">
+              {AccordionMenuItemData &&
+                AccordionMenuItemData.map((item, index) => {
+                  return (
+                    <AccordionItem
+                      key={index}
+                      aria-label={`Accordion ${index + 1}`}
+                      title={
+                        <div className={`!py-0`}>
+                          <span className="font-Inter text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6">
+                            {item?.title}
+                          </span>
+                        </div>
+                      }
+                      className="accordion-title !rounded-none border-b-0 px-0 !shadow-none"
+                    >
+                      {item?.subMenu &&
+                        item?.subMenu.map((items, ind) => (
+                          <Link
+                            href={'/'}
+                            key={ind}
+                            onClick={handleCloseDrower}
+                            className="mb-3 block w-full max-w-[619px] font-Inter text-base font-normal leading-[19.36px] text-charcoalBlue opacity-50 lg:ml-[72px] xl:ml-20"
+                          >
+                            {items}
+                          </Link>
+                        ))}
+                    </AccordionItem>
+                  );
+                })}
+            </Accordion>
+          </div>
         </div>
       </Drawer>
     </div>

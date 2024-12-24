@@ -1,9 +1,9 @@
 'use client';
 import { useFormik } from 'formik';
+import { useState } from 'react';
 import styled from 'styled-components';
 import Button from '../common/Button';
 import Container from '../common/Container';
-
 interface FormValues {
   firstName: string;
   lastName: string;
@@ -17,6 +17,7 @@ const HighlitedHeading = styled.h1`
   }
 `;
 const ContactUs = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const formik = useFormik<FormValues>({
     initialValues: {
       firstName: '',
@@ -40,7 +41,7 @@ const ContactUs = () => {
   });
 
   return (
-    <Container className="mb-10 grid grid-cols-1 gap-10 bg-sectionBg bg-cover bg-no-repeat py-10 md:mb-12 lg:grid-cols-2 xl:mb-16 xl:gap-[79.42px] xl:py-20 3xl:mb-[120px] 3xl:items-center 3xl:pl-[100px] 3xl:pr-[255px]">
+    <Container className="mb-10 grid grid-cols-1 gap-10 bg-sectionBg bg-cover bg-no-repeat py-10 md:mb-12 lg:grid-cols-2 xl:mb-16 xl:gap-[79.42px] xl:py-20 4xl:mb-[120px] 4xl:items-center 4xl:pl-[100px] 4xl:pr-[255px]">
       <div className="flex flex-col gap-5 lg:max-w-[735px]">
         <div className="flex flex-col items-center gap-[15px] lg:items-start">
           <Button
@@ -51,7 +52,7 @@ const ContactUs = () => {
             dangerouslySetInnerHTML={{
               __html: `We’re Here to <span>Help, Anytime.</span>`,
             }}
-            className="text-center font-Inter text-[45px] font-semibold leading-[47px] text-lightBlack lg:text-start 3xl:text-[60px] 3xl:leading-[65px]"
+            className="text-center font-Inter text-[45px] font-semibold leading-[47px] text-lightBlack lg:text-start 4xl:text-[60px] 4xl:leading-[65px]"
           />
         </div>
         <p className="text-center font-Inter text-base font-normal leading-[19.36px] text-[#595959] lg:text-start">
@@ -61,7 +62,7 @@ const ContactUs = () => {
       </div>
       <form
         onSubmit={formik.handleSubmit}
-        className="flex w-full flex-col gap-5 lg:max-w-[690px] 2xl:gap-[26.53px]"
+        className="flex w-full flex-col gap-5 lg:max-w-[690px] 3xl:gap-[26.53px]"
       >
         <div className="flex flex-col items-center gap-[26.53px] lg:flex-row xl:gap-[39.79px]">
           <div className="w-full">
@@ -73,7 +74,7 @@ const ContactUs = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.firstName}
-              className="w-full rounded-xl border-[1.33px] border-[#CCCCCC] bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-[#8A8A8A] 2xl:rounded-[20px] 2xl:p-[23.87px]"
+              className="w-full rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
             />
             {/* {formik.touched.firstName && formik.errors.firstName ? (
               <div className="font-Inter text-lg font-medium leading-6 text-red">
@@ -90,7 +91,7 @@ const ContactUs = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.lastName}
-              className="w-full rounded-xl border-[1.33px] border-[#CCCCCC] bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-[#8A8A8A] 2xl:rounded-[20px] 2xl:p-[23.87px]"
+              className="w-full rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
             />
             {/* {formik.touched.lastName && formik.errors.lastName ? (
               <div className="font-Inter text-lg font-medium leading-6 text-red">
@@ -109,30 +110,55 @@ const ContactUs = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
-            className="w-full rounded-xl border-[1.33px] border-[#CCCCCC] bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-[#8A8A8A] 2xl:rounded-[20px] 2xl:p-[23.87px]"
+            className="w-full rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
           />
           {/* {formik.touched.email && formik.errors.email ? (
             <div>{formik.errors.email}</div>
           ) : null} */}
         </div>
 
-        <div>
+        <div className="relative w-full">
           <select
             id="subject"
             name="subject"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
+            onClick={() => setIsOpen(!isOpen)}
+            onFocus={() => setIsOpen(true)}
             value={formik.values.subject}
-            className="w-full rounded-xl border-[1.33px] border-[#CCCCCC] bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] text-[#8A8A8A] outline-none 2xl:rounded-[20px] 2xl:p-[23.87px]"
+            className="w-full appearance-none rounded-xl border-[1.33px] border-secGray bg-transparent p-4 pr-10 font-Inter text-[18.57px] font-normal leading-[22.47px] text-mediumGray outline-none 3xl:rounded-[20px] 3xl:p-[23.87px]"
           >
             <option value="">Select a subject</option>
-            <option value="General Inquiry">General Inquiry</option>
-            <option value="Support">Support</option>
-            <option value="Feedback">Feedback</option>
+            <option value="General Inquiry" onClick={() => setIsOpen(false)}>
+              General Inquiry
+            </option>
+            <option value="Support" onClick={() => setIsOpen(false)}>
+              Support
+            </option>
+            <option value="Feedback" onClick={() => setIsOpen(false)}>
+              Feedback
+            </option>
           </select>
-          {/* {formik.touched.subject && formik.errors.subject ? (
-            <div>{formik.errors.subject}</div>
-          ) : null} */}
+          <div
+            className={`pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 transition-transform duration-300 ${
+              isOpen ? 'rotate-180' : ''
+            }`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-mediumGray"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
         </div>
 
         <div>
@@ -143,7 +169,7 @@ const ContactUs = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.description}
-            className="w-full resize-none rounded-xl border-[1.33px] border-[#CCCCCC] bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-[#8A8A8A] 2xl:rounded-[20px] 2xl:p-[23.87px]"
+            className="w-full resize-none rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
           />
           {/* {formik.touched.description && formik.errors.description ? (
             <div>{formik.errors.description}</div>
@@ -154,7 +180,7 @@ const ContactUs = () => {
           <Button
             type="submit"
             btnName="Submit "
-            className="bg-red px-[30px] 2xl:mt-[13.26px]"
+            className="bg-red px-[30px] 3xl:mt-[13.26px]"
           />
         </div>
       </form>
