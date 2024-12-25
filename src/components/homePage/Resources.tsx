@@ -8,6 +8,7 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionHeading from '../common/SectionHeading';
 import { resourcesData } from '../utils/Constant';
+import { Autoplay } from 'swiper/modules';
 
 const Resources = () => {
   return (
@@ -24,6 +25,13 @@ const Resources = () => {
         <Swiper
           spaceBetween={40}
           slidesPerView={1}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          speed={900}
+          loop={true}
           breakpoints={{
             540: {
               slidesPerView: 2,

@@ -29,9 +29,9 @@ export default {
         herobtnbg: "url('/svg/herobtnbg.svg')",
         whatwedobg: "url('/svg/what-we-do-bg.svg')",
         homepagebg: "url('/svg/Homepagebg.svg')",
-        // herobg: "url('/webp/herobg.webp')",
+        herobg: "url('/webp/hero-banner.webp')",
         teambg: "url('/images/team.png')",
-        footer: "url('/images/footerbg.png')",
+        footer: "url('/images/footer/footerbg.png')",
         sectionBg: "url('/svg/common-section-bg.svg')",
         // homepagebg: "url('/images/homepage.png')",
         'custom-gradient':

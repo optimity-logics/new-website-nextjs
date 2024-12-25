@@ -1,14 +1,16 @@
 import React from 'react';
 
 interface ContainerProps {
-  className?: string; // Optional prop to pass Tailwind classes
-  children: React.ReactNode; // For rendering children inside the container
+  className?: string;
+  children: React.ReactNode;
+  isBackground?: boolean;
 }
 
-const Container = ({ className, children }: ContainerProps) => {
+const Container = ({ className, children, isBackground }: ContainerProps) => {
   return (
     <div
       className={`${className} mx-auto w-full max-w-[1920px] px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 5xl:px-[100px]`}
+      style={{ backgroundColor: `${isBackground ? '#000' : ''}` }}
     >
       {children}
     </div>

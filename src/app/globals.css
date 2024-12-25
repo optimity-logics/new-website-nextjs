@@ -122,7 +122,28 @@ html {
   color: transparent;
 }
 
+/* footer text gredient color */
+
+.highlitedtextfooter {
+  background: linear-gradient(22.75deg, #f38f02 14.78%, #02ade1 43.97%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 /* accordion title */
 .accordion-title h2 button {
   padding: 10px 0px;
+}
+
+/* uploader  */
+.uploader .btn--primary {
+  background-color: #1a6aa3 !important;
+  font-family: 'Inter' !important;
+  border: none !important;
+  padding: 0 10px !important;
+  font-size: 16px !important;
+}
+
+.uploader__widget-base--draggable {
+  border: 1px dashed #cccccc !important;
 }

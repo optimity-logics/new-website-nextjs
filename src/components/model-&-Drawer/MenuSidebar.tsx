@@ -106,6 +106,13 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                   );
                 })}
             </Accordion>
+            <Link
+              href={'/'}
+              onClick={handleCloseDrower}
+              className="px-2 py-2.5 font-Inter text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6"
+            >
+              Blog
+            </Link>
           </div>
         </div>
       </Drawer>

@@ -2555,6 +2555,11 @@
     "@typescript-eslint/types" "8.18.1"
     eslint-visitor-keys "^4.2.0"
 
+"@upload-io/upload-api-client-upload-js@^2.18.0":
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/@upload-io/upload-api-client-upload-js/-/upload-api-client-upload-js-2.18.0.tgz#948cf288ace5ef22a152b37096335fda2ef7cc5c"
+  integrity sha512-yPwsRCecXSilYn4q5ZDD4fyI2PVyUcLimv2LQcfpV3hRyzc8t82NuWHYEYpRZa5K68zxw2RljDf30geT1vJN9g==
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
@@ -2865,7 +2870,7 @@ chokidar@^3.6.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-classnames@^2.2.1:
+classnames@^2.2.1, classnames@^2.2.6:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
   integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
@@ -4238,6 +4243,11 @@ lodash-es@^4.17.21:
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
+
 lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
@@ -4648,6 +4658,11 @@ postcss@^8, postcss@^8.4.47:
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
+preact@^10.6.5:
+  version "10.25.3"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.25.3.tgz#22dfb072b088dda9a2bc6d4ca41bf46b588d325e"
+  integrity sha512-dzQmIFtM970z+fP9ziQ3yG4e3ULIbwZzJ734vaMVUTaKQ2+Ru1Ou/gjshOYVHCcd1rpAelC6ngjvjDXph98unQ==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -4669,6 +4684,11 @@ prettier@^3.4.2:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.4.2.tgz#a5ce1fb522a588bf2b78ca44c6e6fe5aa5a2b13f"
   integrity sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==
+
+progress-smoother@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/progress-smoother/-/progress-smoother-1.7.0.tgz#77a5d77b19ce55ef81fdf02007ba6213df08ee5e"
+  integrity sha512-ZIbSbPQ8SnEf5Sa0If9lfvn5URyrZfgTTh5DM+04j1GafiLIaWDWW+1AkYXzGl7JQvzAvCy5E1ZPOgx8XORyew==
 
 prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
@@ -4710,6 +4730,11 @@ react-fast-marquee@^1.6.5:
   version "1.6.5"
   resolved "https://registry.yarnpkg.com/react-fast-marquee/-/react-fast-marquee-1.6.5.tgz#98929ae93eef087a607a71e9d45ab76bba97dc16"
   integrity sha512-swDnPqrT2XISAih0o74zQVE2wQJFMvkx+9VZXYYNSLb/CUcAzU9pNj637Ar2+hyRw6b4tP6xh4GQZip2ZCpQpg==
+
+react-international-phone@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/react-international-phone/-/react-international-phone-4.4.0.tgz#1a7e678df0fd5611785aadb22706c80a828ed77c"
+  integrity sha512-dxjgKrbwYBFtB8aL/x0K0SmtsABEnqeGaMwHm66aFLN3gZqtGDoY/MgKN3qaMPOrv5mwUxjrpYwBx9ea31C5vA==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
@@ -4753,6 +4778,14 @@ react-textarea-autosize@^8.5.3:
     "@babel/runtime" "^7.20.13"
     use-composed-ref "^1.3.0"
     use-latest "^1.2.1"
+
+react-uploader@^3.43.0:
+  version "3.43.0"
+  resolved "https://registry.yarnpkg.com/react-uploader/-/react-uploader-3.43.0.tgz#0dd4f709549d8067aae2fb8615262d371ddeca53"
+  integrity sha512-RCaMSdRsfrIC6Mt2UDhk9G4A+mzcuumW2bOfuPyKwKktotNdlcj8ZqRDihtzXVy/K9PVvxnr2PxCfQuDXOkcyQ==
+  dependencies:
+    lodash.isequal "^4.5.0"
+    uploader "^3.47.0"
 
 react@^16.1.0:
   version "16.14.0"
@@ -5468,6 +5501,23 @@ undici-types@~6.19.2:
   version "6.19.8"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
   integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
+
+upload-js@^2.22.0:
+  version "2.24.3"
+  resolved "https://registry.yarnpkg.com/upload-js/-/upload-js-2.24.3.tgz#cf18a2d4f726d247380d5b89b336a0c8b28f3e92"
+  integrity sha512-iiTowtr2uRw2coGXlqiN1ff/wfMPVMv2MqaZYqEYBSNGmxD1pLl9R9wU8BT/mK+Yn8fDx7utlPovXziS8PVaIA==
+  dependencies:
+    "@upload-io/upload-api-client-upload-js" "^2.18.0"
+    progress-smoother "^1.7.0"
+
+uploader@^3.47.0:
+  version "3.48.3"
+  resolved "https://registry.yarnpkg.com/uploader/-/uploader-3.48.3.tgz#5b7f8c57ff115e42ab66d9aed68b1c7f2a544f1a"
+  integrity sha512-BGXSS9O54m81TL5Ogn4OHISD/WPuIS3kvNCYomDl8cltPGzUMrHseU1sXHKGrFg65L28qJL6LnGA2fXUxpQVBQ==
+  dependencies:
+    classnames "^2.2.6"
+    preact "^10.6.5"
+    upload-js "^2.22.0"
 
 uri-js@^4.2.2:
   version "4.4.1"

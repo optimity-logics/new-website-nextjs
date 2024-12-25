@@ -6,10 +6,10 @@ import Marquee from 'react-fast-marquee';
 
 const HeroSection = () => {
   return (
-    <div className="relative flex flex-col bg-homepagebg bg-cover bg-no-repeat pb-[50px] sm:pb-[100px]">
+    <div className="relative flex flex-col bg-homepagebg bg-cover bg-no-repeat px-4 pb-[50px] sm:px-6 sm:pb-[100px] md:px-8 lg:px-10">
       <div className="absolute bottom-0 left-0 h-[50px] w-full bg-gradient-to-t from-white/100 to-transparent backdrop-blur-sm sm:h-[100px]"></div>
 
-      <div className="mx-auto flex max-w-[1251px] flex-col items-center gap-5 px-4 py-8 sm:px-6 sm:py-11 md:gap-[26px] md:px-8 lg:px-10 xl:py-16 3xl:gap-[30px] 3xl:py-[100px] 4xl:py-[155px]">
+      <div className="mx-auto flex max-w-[1251px] flex-col items-center gap-5 py-8 sm:py-11 md:gap-[26px] xl:py-16 3xl:gap-[30px] 3xl:py-[100px] 4xl:py-[155px]">
         <Button
           btnName="24/7 optimity.AI"
           className="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg !font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7 4xl:!text-[28px] 4xl:!leading-[33.89px]"
@@ -30,23 +30,26 @@ const HeroSection = () => {
           className="bg-lightBlue px-[30px] lg:px-10 3xl:px-12 4xl:px-[54px]"
         />
       </div>
-      {/* 
-      <div className="mx-auto flex w-full max-w-[1587px] flex-wrap items-center rounded-[20px] border border-darkGray bg-white p-6 py-8 sm:px-8 lg:px-12 xl:py-10 4xl:flex-nowrap 4xl:rounded-[200px] 4xl:px-[60px] 4xl:py-[53px]"> */}
-      <Marquee gradient={false} speed={65}>
-        <div className="flex items-center justify-between gap-5 last-of-type:mr-5 md:gap-[45px] md:last-of-type:mr-[45px] xl:gap-[34px] last-of-type:xl:mr-[34px] 4xl:gap-[69px] last-of-type:4xl:mr-[69px]">
-          {logoIcons &&
-            logoIcons.map((item, index) => (
-              <div
-                key={index}
-                className={`aspect-w-1 aspect-h-1 w-[100px] max-w-max sm:w-[120px] xxl:w-[170px] 3xl:w-full`}
-              >
-                <Image src={item} alt="icon" className="h-auto w-max" />
-              </div>
-            ))}
-        </div>
-      </Marquee>
+
+      <div className="mx-auto flex w-full max-w-[1587px] flex-col flex-wrap items-center gap-6 rounded-[20px] border border-darkGray bg-white p-6 pb-8 pt-8 sm:px-8 lg:px-12 xl:pb-10 4xl:flex-nowrap 4xl:rounded-[200px] 5xl:px-[60px] 5xl:pb-[53px]">
+        <span className="text-center font-Inter text-lg font-medium leading-6 text-charcoalBlue">
+          Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
+        </span>
+        <Marquee gradient={false} speed={65}>
+          <div className="flex items-center justify-between gap-5 last-of-type:mr-5 md:gap-[45px] md:last-of-type:mr-[45px] xl:gap-[34px] last-of-type:xl:mr-[34px] 4xl:gap-[69px] last-of-type:4xl:mr-[69px]">
+            {logoIcons &&
+              logoIcons.map((item, index) => (
+                <div
+                  key={index}
+                  className={`aspect-w-1 aspect-h-1 w-[100px] max-w-max sm:w-[120px] 4xl:w-[170px] 5xl:w-full`}
+                >
+                  <Image src={item} alt="icon" className="h-auto w-max" />
+                </div>
+              ))}
+          </div>
+        </Marquee>
+      </div>
     </div>
-    // </div>
   );
 };
 

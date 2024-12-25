@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Button from '../common/Button';
 import Container from '../common/Container';
 import { ourExpertiseData } from '../utils/Constant';
+import { Autoplay } from 'swiper/modules';
 
 const OurExpertise = () => {
   return (
@@ -27,8 +28,15 @@ const OurExpertise = () => {
         </div>
         <div className="relative w-full max-w-[1520px] overflow-x-hidden pr-4 lg:px-0">
           <Swiper
+            modules={[Autoplay]}
             spaceBetween={26}
             slidesPerView={1}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            speed={900}
+            loop={true}
             breakpoints={{
               640: {
                 slidesPerView: 2,

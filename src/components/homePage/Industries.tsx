@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import arrow from '../../../public/svg/arrow-white.svg';
 import SectionHeading from '../common/SectionHeading';
 import { industriesData } from '../utils/Constant';
+import { Autoplay } from 'swiper/modules';
 
 const Industries = () => {
   return (
@@ -25,6 +26,13 @@ const Industries = () => {
         <Swiper
           spaceBetween={26}
           slidesPerView={1}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          speed={900}
+          loop={true}
           breakpoints={{
             640: {
               slidesPerView: 2,
