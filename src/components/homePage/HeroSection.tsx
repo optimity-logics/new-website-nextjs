@@ -3,13 +3,15 @@ import Button from '../common/Button';
 import { logoIcons } from '../utils/Constant';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
+import Container from '../common/Container';
 
 const HeroSection = () => {
   return (
-    <div className="relative flex flex-col bg-homepagebg bg-cover bg-no-repeat px-4 pb-[50px] sm:px-6 sm:pb-[100px] md:px-8 lg:px-10">
-      <div className="absolute bottom-0 left-0 h-[50px] w-full bg-gradient-to-t from-white/100 to-transparent backdrop-blur-sm sm:h-[100px]"></div>
+    // <div className="h-[calc(100vh-80px)]">
+    <Container className="mb-4 flex h-full w-full flex-col bg-herobg bg-cover bg-no-repeat px-4 pb-[50px] sm:mb-[100px] sm:px-6 sm:pb-5 md:px-8 lg:px-10">
+      {/* <div className="absolute bottom-0 left-0 h-[50px] w-full bg-gradient-to-t from-white/100 to-transparent backdrop-blur-sm sm:h-[100px]"></div> */}
 
-      <div className="mx-auto flex max-w-[1251px] flex-col items-center gap-5 py-8 sm:py-11 md:gap-[26px] xl:py-16 3xl:gap-[30px] 3xl:py-[100px] 4xl:py-[155px]">
+      <div className="mx-auto flex h-full max-w-[1251px] flex-col items-center gap-5 py-8 sm:py-11 md:gap-[26px] xl:pb-[237px] xl:pt-16 3xl:gap-[30px] 3xl:pt-[100px] 4xl:pt-[147px]">
         <Button
           btnName="24/7 optimity.AI"
           className="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg !font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7 4xl:!text-[28px] 4xl:!leading-[33.89px]"
@@ -31,8 +33,8 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="mx-auto flex w-full max-w-[1587px] flex-col flex-wrap items-center gap-6 rounded-[20px] border border-darkGray bg-white p-6 pb-8 pt-8 sm:px-8 lg:px-12 xl:pb-10 4xl:flex-nowrap 4xl:rounded-[200px] 5xl:px-[60px] 5xl:pb-[53px]">
-        <span className="text-center font-Inter text-lg font-medium leading-6 text-charcoalBlue">
+      <div className="-mt-[35px] flex flex-col items-center gap-[35px] rounded-[30px] border border-darkGray bg-black p-6 py-[35.5px] 3xl:px-8 5xl:px-[60px]">
+        <span className="text-center font-Poppins text-[22px] font-medium leading-[33px] text-white">
           Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
         </span>
         <Marquee gradient={false} speed={65}>
@@ -49,7 +51,8 @@ const HeroSection = () => {
           </div>
         </Marquee>
       </div>
-    </div>
+    </Container>
+    // </div>
   );
 };
 

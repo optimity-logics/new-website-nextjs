@@ -15,6 +15,7 @@ interface IHeadingProps {
   LinkName?: string;
   LinkStyle?: string;
   descriptionStyle?: string;
+  isDark?: boolean;
 }
 
 const HighlitedDescription = styled.h1`
@@ -31,6 +32,7 @@ const SectionHeading = ({
   btnStyle,
   LinkName,
   LinkStyle,
+  isDark,
   descriptionStyle,
 }: IHeadingProps) => {
   return (
@@ -38,10 +40,10 @@ const SectionHeading = ({
       {btnName && <Button btnName={btnName} className={btnStyle} />}
       <HighlitedDescription
         dangerouslySetInnerHTML={{ __html: heading }}
-        className="text-center font-Inter text-[45px] font-semibold leading-[47px] text-white 3xl:text-[55px] 3xl:leading-[72.61px] 4xl:text-[60px]"
+        className={`text-center font-Inter text-[45px] font-semibold leading-[47px] 3xl:text-[55px] 3xl:leading-[72.61px] 4xl:text-[60px] ${isDark ? 'text-white' : 'text-black'}`}
       />
       <p
-        className={`text-center font-Inter text-lg font-normal leading-[21.15px] text-[#B3B3B3] ${descriptionStyle}`}
+        className={`text-center font-Inter text-lg font-normal leading-[21.15px] ${isDark ? 'text-[#B3B3B3]' : 'text-primaryGray'} ${descriptionStyle}`}
       >
         {description}
       </p>

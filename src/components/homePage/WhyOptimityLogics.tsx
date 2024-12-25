@@ -21,8 +21,8 @@ const statsData = [
 
 const WhyOptimityLogics = () => {
   return (
-    <Container className="mb-10 flex flex-col items-center justify-center gap-10 md:mb-12 md:gap-12 lg:flex-row xl:mb-16 xl:gap-20 3xl:px-[140px] 5xl:mb-[120px] 5xl:gap-[140px] 5xl:px-[247px]">
-      <div className="flex w-full flex-col items-center gap-6 md:gap-[46px] lg:max-w-[598px] lg:items-start">
+    <Container className="mb-10 flex flex-col items-center justify-between gap-10 md:mb-12 md:gap-12 lg:flex-row xl:mb-16 5xl:mb-[120px]">
+      <div className="flex w-full flex-col items-center gap-6 md:gap-[46px] lg:max-w-[898px] lg:items-start">
         <div className="flex flex-col items-center gap-[15px] lg:items-start">
           <Button
             btnName="Why optimity logics"
@@ -35,7 +35,7 @@ const WhyOptimityLogics = () => {
             }}
           />
         </div>
-        <p className="text-center font-Inter text-xl font-normal leading-7 text-primaryGray lg:text-start">
+        <p className="text-center font-Inter text-xl font-normal leading-7 text-primaryGray lg:text-start 4xl:pr-5">
           We&apos;re a dynamic team of millennials and Gen-Z, witnessing the
           digital era&apos;s evolution. With a cohesive approach, we develop
           fully integrated digital products, build brand identities, and drive
@@ -44,7 +44,7 @@ const WhyOptimityLogics = () => {
         </p>
         <Button btnName="Get in Touch" className="w-max bg-orange px-[30px]" />
       </div>
-      <div className="w-full rounded-[10px] bg-teambg bg-cover bg-no-repeat">
+      <div className="w-full max-w-[688px] rounded-[10px] bg-teambg bg-cover bg-no-repeat">
         <div className="grid w-full grid-cols-2 place-items-center justify-center gap-4 p-4 sm:py-11 lg:px-11 4xl:px-[80px] 4xl:py-[110px] 5xl:px-[122px] 5xl:py-[156px]">
           {statsData.map((stat, index) => (
             <div

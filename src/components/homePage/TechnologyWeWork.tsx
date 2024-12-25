@@ -1,66 +1,89 @@
 'use client';
 import { useState } from 'react';
 import SectionHeading from '../common/SectionHeading';
-import { images } from '../utils/Constant';
+import Container from '../common/Container';
+import { Tabs, Tab } from '@nextui-org/tabs';
+import { technologyWeWorkData } from '../utils/Constant';
+import Image from 'next/image';
 
 const TechnologyWeWork = () => {
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
+  const [activeKey, setActiveKey] = useState<string>(
+    technologyWeWorkData[0]?.technologyName,
+  ); // Default tab is the first technology
 
-  // Helper function to handle hover logic
-  const handleMouseEnter = (id: number) => {
-    setHoveredId(id);
+  // Handle tab change
+  const handlChangeTechnology = (activetab: string) => {
+    setActiveKey(activetab);
   };
 
-  const handleMouseLeave = () => {
-    setHoveredId(null);
-  };
+  // Find the selected technology data based on the active tab key
+  const selectedTechnology = technologyWeWorkData.find(
+    (tech) => tech.technologyName === activeKey,
+  );
 
   return (
-    <div className="mb-10 flex flex-col items-center gap-10 md:mb-12 xl:mb-16 3xl:gap-12 4xl:mb-[140px] 4xl:gap-[80px]">
+    <Container className="mb-10 flex flex-col items-center gap-10 bg-black py-[60px] md:mb-12 xl:mb-16 3xl:gap-12 4xl:mb-[140px] 4xl:gap-[80px] 5xl:px-[154px]">
       <SectionHeading
         heading={`<span>Technologies</span> we work with`}
         className="max-w-[860px]"
         description={
           'Bringing the best of AI’s efficiency and expert guidance, we make custom app building a cost-effective, user-friendly, and exactly envisioned experience for all.'
         }
+        isDark={true}
       />
-      <div className="hide-scrollbar w-full max-w-[1920px] overflow-x-scroll">
-        <div className="relative flex w-full cursor-pointer items-center">
-          {images.map((item) => (
-            <div
-              key={item.id}
-              className={`group transition-all duration-300 ${
-                hoveredId === item.id ? 'z-10 scale-110' : 'z-0 scale-100'
-              }`}
-              style={{
-                transform: `translateX(${(item.id - 1) * -80}px)`,
-              }}
-              onMouseEnter={() => handleMouseEnter(item.id)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <div
-                className="relative h-[350px] w-[300px] bg-cover bg-no-repeat transition-all duration-300 sm:h-[400px] sm:w-[350px] xl:h-[700px] xl:w-[450px]"
-                style={{ backgroundImage: `url(${item.src})` }}
-              >
-                <div
-                  className="absolute inset-0 bg-cover transition-all duration-300"
-                  style={{ backgroundImage: `url(${item.Techbg})` }}
-                ></div>
-
-                <div className="absolute bottom-0 flex h-full w-full flex-col justify-end gap-2.5 p-4 text-white sm:p-6 lg:p-[30px]">
-                  <h5 className="font-Inter text-3xl font-semibold leading-7 text-white 4xl:text-[30px] 4xl:leading-[38.72px]">
-                    {item.TechName}
-                  </h5>
-                  <p className="invisible hidden overflow-hidden font-Inter font-medium leading-[21.78px] text-white opacity-0 transition-all duration-500 ease-in-out group-hover:visible group-hover:block group-hover:opacity-100 sm:text-base 4xl:text-lg">
-                    {item.TechDescription}
-                  </p>
-                </div>
+      <div className="flex flex-col items-center gap-[60px]">
+        {/* Tabs Component from Next UI */}
+        <Tabs
+          aria-label="Technology Tabs"
+          color="default"
+          aria-labelledby="technology-tabs"
+          radius="full"
+          selectedKey={activeKey}
+          onSelectionChange={(e) => handlChangeTechnology(e as string)}
+        >
+          {technologyWeWorkData.map((tech) => (
+            <Tab key={tech.technologyName} title={tech.technologyName}>
+              {/* Tab content can go here if needed */}
+            </Tab>
+          ))}
+        </Tabs>
+        <div
+          className="flex gap-[30px] rounded-[20px] bg-footer bg-cover bg-no-repeat py-[43px] pl-[43px] pr-[46px]"
+          style={{ backgroundColor: 'white' }}
+        >
+          <div>
+            <Image
+              src={selectedTechnology?.technologyImage || ''}
+              alt={selectedTechnology?.technologyName || 'technology-img'}
+              width={628}
+              height={461}
+              className="h-[461px] max-w-[628px]"
+            />
+          </div>
+          <div className="flex flex-col gap-[25px]">
+            <div className="flex flex-col gap-5">
+              <h2 className="font-Inter text-[48px] font-bold leading-[52px] text-red">
+                {selectedTechnology?.technologyName}
+              </h2>
+              <div className="flex flex-col gap-8 font-Inter text-lg font-normal leading-[33px] text-[#2B3857]">
+                <p>{selectedTechnology?.techDescription1}</p>
+                <p>{selectedTechnology?.techDescription2}</p>
               </div>
             </div>
-          ))}
+            <div className="flex items-center gap-2.5">
+              {selectedTechnology?.allTechnology.map((item, index) => (
+                <span
+                  key={index}
+                  className="text-nowrap rounded border border-[#13192433] bg-white px-[19px] py-[5px] font-Inter text-[14.48px] font-normal leading-[17.52px] text-[#2B3857]"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

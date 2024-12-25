@@ -5,7 +5,7 @@ import { useFormik } from 'formik';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 import { Uploader } from 'uploader'; // Installed by "react-uploader".
-import { UploadButton, UploadDropzone } from 'react-uploader';
+import { UploadDropzone } from 'react-uploader';
 
 interface FormValues {
   firstName: string;
@@ -29,26 +29,6 @@ const validationSchema = Yup.object({
     .required('Phone number is required'),
   aboutProject: Yup.string().required(
     'Please provide details about your project',
-  ),
-  file: Yup.mixed().test(
-    'fileType',
-    'Unsupported File Format. Allowed formats: .pdf, .docx, .odt, .ods, .ppt, .pptx, .xls, .xlsx, .rtf, .txt',
-    (value) => {
-      if (!value) return true; // If no file is uploaded
-      const allowedFormats: any | null = [
-        'application/pdf',
-        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-        'application/vnd.oasis.opendocument.text',
-        'application/vnd.oasis.opendocument.spreadsheet',
-        'application/vnd.ms-powerpoint',
-        'application/vnd.openxmlformats-officedocument.presentationml.presentation',
-        'application/vnd.ms-excel',
-        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-        'application/rtf',
-        'text/plain',
-      ];
-      return value && allowedFormats.includes(value);
-    },
   ),
 });
 
@@ -255,10 +235,7 @@ const InquireForm = () => {
             </div>
           ) : null}
         </div>
-        <button
-          type="submit"
-          className="font-Inter"
-        >
+        <button type="submit" className="font-Inter">
           inquire now
         </button>
       </form>

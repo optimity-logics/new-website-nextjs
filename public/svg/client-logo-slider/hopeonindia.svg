@@ -3,7 +3,7 @@
 <rect width="88" height="44" fill="url(#pattern0_198_158)"/>
 </mask>
 <g mask="url(#mask0_198_158)">
-<rect width="88" height="44" fill="black"/>
+<rect width="88" height="44" fill="white"/>
 </g>
 <circle cx="19.5359" cy="12.32" r="4.752" fill="white"/>
 <defs>

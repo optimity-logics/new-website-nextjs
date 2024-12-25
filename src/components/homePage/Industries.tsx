@@ -21,6 +21,7 @@ const Industries = () => {
         btnName="Industries "
         btnStyle=" bg-herobtnbg bg-cover bg-no-repeat !py-2.5 !px-[23px] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-black"
         LinkName="Connect to know more"
+        isDark={false}
       />
       <div className="swiper-container relative h-full w-full max-w-[1820px] 4xl:ml-[100px]">
         <Swiper

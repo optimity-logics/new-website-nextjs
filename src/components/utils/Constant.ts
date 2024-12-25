@@ -15,7 +15,7 @@ import edqan from '../../../public/svg/client-logo-slider/edqan.svg';
 import yhonk from '../../../public/svg/client-logo-slider/yhonk.svg';
 import woodlogs from '../../../public/svg/client-logo-slider/woodlogs.svg';
 import helpingjobseekers from '../../../public/svg/client-logo-slider/helpingjobseekers.svg';
-import trady from '../../../public/svg/client-logo-slider/trady.svg';
+import yellowbird from '../../../public/svg/client-logo-slider/yellowbird.svg';
 import waosim from '../../../public/svg/client-logo-slider/waosim.svg';
 import teqdiligent from '../../../public/svg/client-logo-slider/teqdiligent.svg';
 
@@ -72,7 +72,7 @@ export const logoIcons = [
   yhonk,
   woodlogs,
   helpingjobseekers,
-  trady,
+  yellowbird,
   waosim,
   teqdiligent,
 ];
@@ -94,7 +94,7 @@ export const ourExpertiseData = [
     techHeading: 'Mobile apps',
     techDescription:
       'From concept to completion, Optimity Logics seamlessly manages the entire mobile app',
-    techbg: '/svg/mobilebg.svg',
+    techbg: '/svg/mobile-apps.svg',
   },
   {
     id: 3,
@@ -112,7 +112,7 @@ export const ourExpertiseData = [
     techHeading: 'UI/UX',
     techDescription:
       'Our UI and UX designers embody creative imagination, successfully deploying innovative web design',
-    techbg: '/svg/uiuxbg.svg',
+    techbg: '/svg/ui-uxbg.svg',
   },
   {
     id: 5,
@@ -139,7 +139,7 @@ export const ourExpertiseData = [
     techHeading: 'UI/UX',
     techDescription:
       'Our UI and UX designers embody creative imagination, successfully deploying innovative web design',
-    techbg: '/svg/uiuxbg.svg',
+    techbg: '/svg/ui-uxbg.svg',
   },
 ];
 
@@ -326,56 +326,120 @@ export const footerData: IFooterDataType[] = [
   },
 ];
 
-export const images = [
+export const technologyWeWorkData = [
   {
-    id: 1,
-    src: '/images/technologyWeWork/mobile.png',
-    hoverimg: '/images/technologyWeWork/1.png',
-    alt: 'Mobile',
-    TechName: 'Mobile',
-    Techbg: '/images/technologyWeWork/mobilebg.png',
-    TechDescription:
-      'With a 24/7 Coders.AI built app, you can streamline transactions, manage multiple user accounts, and secure all your data with custom financial apps.',
+    technologyName: 'Mobile',
+    technologyImage: '/images/technologyWeWork/1.png',
+    techDescription1:
+      'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
+    techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
+    allTechnology: [
+      'Flutter',
+      'React Native',
+      'ios',
+      'Android',
+      'Ionic',
+      'Swift',
+      'Kotlin',
+      'ObjectiveC',
+      'Titanium',
+      'Xamarin',
+    ],
   },
   {
-    id: 2,
-    src: '/images/technologyWeWork/frontend.png',
-    hoverimg: '/images/technologyWeWork/2.png',
-    alt: 'Frontend',
-    TechName: 'Frontend',
-    Techbg: '/images/technologyWeWork/frontendbg.png',
-    TechDescription:
-      'With a 24/7 Coders.AI built app, you can strengthen your store operations with inventory management, sales features, and customer interaction capabilities.',
+    technologyName: 'Frontend',
+    technologyImage: '/images/technologyWeWork/2.png',
+    techDescription1:
+      'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
+    techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
+    allTechnology: [
+      'Flutter',
+      'React Native',
+      'ios',
+      'Android',
+      'Ionic',
+      'Swift',
+      'Kotlin',
+      'ObjectiveC',
+      'Titanium',
+      'Xamarin',
+    ],
   },
   {
-    id: 3,
-    src: '/images/technologyWeWork/database.png',
-    hoverimg: '/images/technologyWeWork/3.png',
-    alt: 'Database',
-    TechName: 'Database',
-    Techbg: '/images/technologyWeWork/databasebg.png',
-    TechDescription:
-      'With a 24/7 Coders.AI built app, you can craft interactive learning platforms with gamification, tracking, and educational resources.',
+    technologyName: 'Backend',
+    technologyImage: '/images/technologyWeWork/2.png',
+    techDescription1:
+      'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
+    techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
+    allTechnology: [
+      'Flutter',
+      'React Native',
+      'ios',
+      'Android',
+      'Ionic',
+      'Swift',
+      'Kotlin',
+      'ObjectiveC',
+      'Titanium',
+      'Xamarin',
+    ],
   },
   {
-    id: 4,
-    src: '/images/technologyWeWork/cms.png',
-    hoverimg: '/images/technologyWeWork/4.png',
-    alt: 'CMS',
-    TechName: 'CMS',
-    Techbg: '/images/technologyWeWork/cmsbg.png',
-    TechDescription:
-      'With a 24/7 Coders.AI built app, you can improve patient experiences with appointment scheduling, health tracking, and safe data management.',
+    technologyName: 'Database',
+    technologyImage: '/images/technologyWeWork/3.png',
+    techDescription1:
+      'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
+    techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
+    allTechnology: [
+      'Flutter',
+      'React Native',
+      'ios',
+      'Android',
+      'Ionic',
+      'Swift',
+      'Kotlin',
+      'ObjectiveC',
+      'Titanium',
+      'Xamarin',
+    ],
   },
   {
-    id: 5,
-    src: '/images/technologyWeWork/devops.png',
-    hoverimg: '/images/technologyWeWork/5.png',
-    alt: 'DevOps',
-    TechName: 'DevOps',
-    Techbg: '/images/technologyWeWork/devopsbg.png',
-    TechDescription:
-      'With a 24/7 Coders.AI built app, you can improve patient experiences with appointment scheduling, health tracking, and safe data management.',
+    technologyName: 'CMS',
+    technologyImage: '/images/technologyWeWork/4.png',
+    techDescription1:
+      'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
+    techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
+    allTechnology: [
+      'Flutter',
+      'React Native',
+      'ios',
+      'Android',
+      'Ionic',
+      'Swift',
+      'Kotlin',
+      'ObjectiveC',
+      'Titanium',
+      'Xamarin',
+    ],
+  },
+  {
+    technologyName: 'DevOps',
+    technologyImage: '/images/technologyWeWork/5.png',
+    techDescription1:
+      'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
+    techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
+    allTechnology: [
+      'Flutter',
+      'React Native',
+      'ios',
+      'Android',
+      'Ionic',
+      'Swift',
+      'Kotlin',
+      'ObjectiveC',
+      'Titanium',
+      'Xamarin',
+    ],
   },
 ];
 

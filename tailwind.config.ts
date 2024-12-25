@@ -29,7 +29,7 @@ export default {
         herobtnbg: "url('/svg/herobtnbg.svg')",
         whatwedobg: "url('/svg/what-we-do-bg.svg')",
         homepagebg: "url('/svg/Homepagebg.svg')",
-        herobg: "url('/webp/hero-banner.webp')",
+        herobg: "url('/webp/herobg.webp')",
         teambg: "url('/images/team.png')",
         footer: "url('/images/footer/footerbg.png')",
         sectionBg: "url('/svg/common-section-bg.svg')",
@@ -41,6 +41,7 @@ export default {
       },
       fontFamily: {
         Inter: ['Inter'],
+        Poppins: ['Poppins'],
       },
       colors: {
         darkBlack: '#000000',

@@ -27,8 +27,9 @@ const Project = () => {
           description="Transform and automate processes with enterprise AI solutions tailored to your business requirements"
           LinkName="Connect to know more"
           className="max-w-[1286px] !gap-6"
+          isDark={true}
         />
-        <div className="w-full max-w-[1386px]">
+        <div className="w-full">
           <Swiper
             spaceBetween={30}
             // slidesPerView={3}

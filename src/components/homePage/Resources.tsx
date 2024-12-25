@@ -12,7 +12,7 @@ import { Autoplay } from 'swiper/modules';
 
 const Resources = () => {
   return (
-    <div className="mb-10 flex flex-col gap-10 md:mb-12 xl:mb-16 xl:gap-[60px] 4xl:mb-[120px]">
+    <div className="mb-10 flex flex-col gap-10 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:gap-[60px] xl:px-10 3xl:px-20 4xl:mb-[120px] 4xl:px-0">
       <SectionHeading
         heading="Know what’s <span> trending in AI </span>"
         description="Insights on the global impact of artificial intelligence across multiple domains"
@@ -21,7 +21,7 @@ const Resources = () => {
         LinkName="Explore all blogs"
         className="!gap-6"
       />
-      <div className="mx-auto w-full max-w-[1418px] px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 4xl:px-0">
+      <div className="mx-auto w-full 4xl:ml-[100px]">
         <Swiper
           spaceBetween={40}
           slidesPerView={1}
@@ -42,7 +42,11 @@ const Resources = () => {
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 3.5,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 4,
               spaceBetween: 30,
             },
           }}
