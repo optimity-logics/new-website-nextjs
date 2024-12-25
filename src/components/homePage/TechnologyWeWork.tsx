@@ -31,6 +31,7 @@ const TechnologyWeWork = () => {
         }
         isDark={true}
       />
+
       <div className="flex flex-col items-center gap-[60px]">
         {/* Tabs Component from Next UI */}
         <Tabs
