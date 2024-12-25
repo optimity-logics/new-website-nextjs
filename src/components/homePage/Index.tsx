@@ -1,15 +1,14 @@
-import React from 'react';
-import HeroSection from './HeroSection';
-import WhyOptimityLogics from './WhyOptimityLogics';
-import Project from './Project';
-import OurExpertise from './OurExpertise';
-import TechnologyWeWork from './TechnologyWeWork';
-import Industries from './Industries';
-import HowWeWork from './HowWeWork';
-import Resources from './Resources';
 import ClientReview from './ClientReview';
 import ContactUs from './ContactUs';
 import Faqs from './Faqs';
+import HeroSection from './HeroSection';
+import HowWeWork from './HowWeWork';
+import Industries from './Industries';
+import OurExpertise from './OurExpertise';
+import Project from './Project';
+import Resources from './Resources';
+import TechnologyWeWork from './TechnologyWeWork';
+import WhyOptimityLogics from './WhyOptimityLogics';
 
 const Index = () => {
   return (

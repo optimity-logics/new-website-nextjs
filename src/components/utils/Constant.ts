@@ -145,22 +145,22 @@ export const ourExpertiseData = [
 
 export const deployProjects = [
   {
-    projectImg: '/images/riskbeach.png',
+    projectImg: '/images/project/riskbeach.png',
     projectName: 'Ricks Beach Rentals',
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
   {
-    projectImg: '/images/hts.png',
+    projectImg: '/images/project/hts.png',
     projectName: 'HTS',
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
   {
-    projectImg: '/images/hopper.png',
+    projectImg: '/images/project/hopper.png',
     projectName: 'Hopper',
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
   {
-    projectImg: '/images/riskbeach.png',
+    projectImg: '/images/project/riskbeach.png',
     projectName: 'Ricks Beach',
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
@@ -221,35 +221,35 @@ personalization feature`,
 
 export const resourcesData = [
   {
-    img: '/images/AIModel.png',
+    img: '/images/resources/AIModel.png',
     title:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     description: `In the bustling world of data, where information is the new
 currency, the reliability and efficiency...`,
   },
   {
-    img: '/images/services.png',
+    img: '/images/resources/services.png',
     title:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     description: `The AI revolution is here, and it’s continuously changing the
 way we interact with technology ...`,
   },
   {
-    img: '/images/angular.png',
+    img: '/images/resources/angular.png',
     title:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     description: `In a world where technology is reshaping the boundaries of
 every tech possibility and blowing everyo...`,
   },
   {
-    img: '/images/services.png',
+    img: '/images/resources/services.png',
     title:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     description: `The AI revolution is here, and it’s continuously changing the
 way we interact with technology ...`,
   },
   {
-    img: '/images/angular.png',
+    img: '/images/resources/angular.png',
     title:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     description: `In a world where technology is reshaping the boundaries of
@@ -329,51 +329,51 @@ export const footerData: IFooterDataType[] = [
 export const images = [
   {
     id: 1,
-    src: '/images/mobile.png',
-    hoverimg: '/images/1.png',
+    src: '/images/technologyWeWork/mobile.png',
+    hoverimg: '/images/technologyWeWork/1.png',
     alt: 'Mobile',
     TechName: 'Mobile',
-    Techbg: '/images/mobilebg.png',
+    Techbg: '/images/technologyWeWork/mobilebg.png',
     TechDescription:
       'With a 24/7 Coders.AI built app, you can streamline transactions, manage multiple user accounts, and secure all your data with custom financial apps.',
   },
   {
     id: 2,
-    src: '/images/frontend.png',
-    hoverimg: '/images/2.png',
+    src: '/images/technologyWeWork/frontend.png',
+    hoverimg: '/images/technologyWeWork/2.png',
     alt: 'Frontend',
     TechName: 'Frontend',
-    Techbg: '/images/frontendbg.png',
+    Techbg: '/images/technologyWeWork/frontendbg.png',
     TechDescription:
       'With a 24/7 Coders.AI built app, you can strengthen your store operations with inventory management, sales features, and customer interaction capabilities.',
   },
   {
     id: 3,
-    src: '/images/database.png',
-    hoverimg: '/images/3.png',
+    src: '/images/technologyWeWork/database.png',
+    hoverimg: '/images/technologyWeWork/3.png',
     alt: 'Database',
     TechName: 'Database',
-    Techbg: '/images/databasebg.png',
+    Techbg: '/images/technologyWeWork/databasebg.png',
     TechDescription:
       'With a 24/7 Coders.AI built app, you can craft interactive learning platforms with gamification, tracking, and educational resources.',
   },
   {
     id: 4,
-    src: '/images/cms.png',
-    hoverimg: '/images/4.png',
+    src: '/images/technologyWeWork/cms.png',
+    hoverimg: '/images/technologyWeWork/4.png',
     alt: 'CMS',
     TechName: 'CMS',
-    Techbg: '/images/cmsbg.png',
+    Techbg: '/images/technologyWeWork/cmsbg.png',
     TechDescription:
       'With a 24/7 Coders.AI built app, you can improve patient experiences with appointment scheduling, health tracking, and safe data management.',
   },
   {
     id: 5,
-    src: '/images/devops.png',
-    hoverimg: '/images/5.png',
+    src: '/images/technologyWeWork/devops.png',
+    hoverimg: '/images/technologyWeWork/5.png',
     alt: 'DevOps',
     TechName: 'DevOps',
-    Techbg: '/images/devopsbg.png',
+    Techbg: '/images/technologyWeWork/devopsbg.png',
     TechDescription:
       'With a 24/7 Coders.AI built app, you can improve patient experiences with appointment scheduling, health tracking, and safe data management.',
   },
@@ -522,16 +522,6 @@ export const AccordionMenuItemData = [
 
   {
     title: 'Hire Us',
-    subMenu: [
-      'Developers Docs',
-      'Help Center',
-      'Product Updates',
-      'User Community',
-    ],
-  },
-
-  {
-    title: 'Blog',
     subMenu: [
       'Developers Docs',
       'Help Center',

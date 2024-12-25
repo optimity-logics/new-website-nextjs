@@ -81,7 +81,7 @@ const NavBar = () => {
               >
                 <Link href={''}>{item?.menuItem}</Link>
                 {item?.menuItem === 'Services' && showMegaMenu && (
-                  <div className="scale-up-ver-bottom">
+                  <div className="scale-up-ver-top">
                     <div
                       className={`megaMenu absolute left-1/2 top-full mt-6 flex flex-col gap-[61.32px] rounded-3xl bg-white p-7 shadow-lg transition-all duration-500 ease-in-out xl:mt-9 xl:rounded-[25.42px] 3xl:px-[49.43px] 3xl:py-[51.31px]`}
                     >
