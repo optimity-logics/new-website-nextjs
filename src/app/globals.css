@@ -145,9 +145,42 @@ html {
 }
 
 .uploader__widget-base--draggable {
-  border: 1px dashed #cccccc !important;
+  border: 1px dashed #ffffff4a !important;
 }
 
+/* technology section tabs */
 span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-small {
   background-color: #1a6aa3 !important;
+}
+
+.group[data-selected='true']
+  .group-data-\[selected\=true\]\:text-default-foreground {
+  color: #ffffff !important;
+  text-align: center !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* country dropdown */
+.stdropdown-container {
+  border: none !important;
+  border-bottom: 1px solid #ffffff4a !important;
+  border-radius: 0px !important;
+  padding-bottom: 10px;
+}
+.stsearch-box input {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #ffffff80 !important;
+}
+.stdropdown-menu {
+  border: none !important;
 }

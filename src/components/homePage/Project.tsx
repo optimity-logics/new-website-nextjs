@@ -15,7 +15,7 @@ import arrow from '../../../public/svg/arrow-white.svg';
 const Project = () => {
   return (
     <Container
-      className="bg-sectionBg bg-cover bg-right bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:py-20"
+      className="mb-10 bg-sectionBg bg-cover bg-right bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:py-20"
       isBackground={true}
     >
       <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">

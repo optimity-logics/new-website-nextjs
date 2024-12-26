@@ -121,7 +121,7 @@ export const ourExpertiseData = [
     techHeading: 'Mobile apps',
     techDescription:
       'From concept to completion, Optimity Logics seamlessly manages the entire mobile app',
-    techbg: '/svg/mobilebg.svg',
+    techbg: '/svg/mobileappbg.svg',
   },
   {
     id: 6,
@@ -168,54 +168,65 @@ export const deployProjects = [
 
 export const industriesData = [
   {
-    img: '/svg/real-estate.svg',
-    hoverImg: '/svg/real-estate-orange.svg',
-    title: 'Real Estate',
-    description: `Make informed decisions with AI’s
-predictive analytics to derive insights on
-user behavior & market trends`,
+    industriesIcon: '/svg/industries/healthcare.svg',
+    industriesHoverIcon: '/svg/industries/health-care-blue.svg',
+    industriesName: 'Healthcare',
+    industriesWork: [
+      'Telemedicine Solution',
+      'Electronic Health Records (EHR)',
+      'Practice Management Systems',
+      'Clinical Software Solutions',
+      'Medical Device Integrations Solutions',
+    ],
   },
   {
-    img: '/svg/ecommerce.svg',
-    title: 'eCommerce',
-    description: `Get better investment analysis, credit
-scores, and fraud detection with artificial
-intellegence`,
+    industriesIcon: '/svg/industries/dollar.svg',
+    industriesHoverIcon: '/svg/industries/dollar-blue.svg',
+    industriesName: 'Fintech',
+    industriesWork: [
+      'Digital Payment Systems',
+      'Custom Digital Banking Solutions',
+      'Wealth/Finance Management Solutions',
+      'Mobile Payment App Development',
+      'Insurance App Development',
+    ],
   },
   {
-    img: '/svg/education.svg',
-    title: 'Education',
-    description: `SaaS companies improve marketing
-campaigns with AI’s automation &
-personalization feature`,
+    industriesIcon: '/svg/industries/real-estate.svg',
+    industriesHoverIcon: '/svg/industries/real-estate-blue.svg',
+    industriesName: 'Real Estate',
+    industriesWork: [
+      'MLS Solutions for Real Estate',
+      'Virtual Property Tours',
+      'Property Valuation Tools',
+      'Real Estate Investment Platforms',
+      'Property Management Solutions',
+    ],
   },
   {
-    img: '/svg/entertainment.svg',
-    title: 'Entertainment',
-    description: `Make medical diagnosis more accurate
-and improve drug discovery with AI-
-based processes`,
+    industriesIcon: '/svg/industries/ecommerce.svg',
+    industriesHoverIcon: '/svg/industries/ecommerce-blue.svg',
+
+    industriesName: 'eCommerce',
+    industriesWork: [
+      'Custom eCommerce Store Development',
+      'Shipping and fulfillment Solution',
+      'Grocery E-Commerce Apps',
+      'End to End MarketPlace',
+      'AR-based eCommerce solutions',
+    ],
   },
   {
-    img: '/svg/healthcare.svg',
-    title: 'Healthcare',
-    description: `Make medical diagnosis more accurate
-and improve drug discovery with AI-
-based processes`,
-  },
-  {
-    img: '/svg/ecommerce.svg',
-    title: 'eCommerce',
-    description: `Get better investment analysis, credit
-scores, and fraud detection with artificial
-intellegence`,
-  },
-  {
-    img: '/svg/education.svg',
-    title: 'Education',
-    description: `SaaS companies improve marketing
-campaigns with AI’s automation &
-personalization feature`,
+    industriesIcon: '/svg/industries/real-estate.svg',
+    industriesHoverIcon: '/svg/industries/real-estate-blue.svg',
+    industriesName: 'Real Estate',
+    industriesWork: [
+      'MLS Solutions for Real Estate',
+      'Virtual Property Tours',
+      'Property Valuation Tools',
+      'Real Estate Investment Platforms',
+      'Property Management Solutions',
+    ],
   },
 ];
 
@@ -329,7 +340,7 @@ export const footerData: IFooterDataType[] = [
 export const technologyWeWorkData = [
   {
     technologyName: 'Mobile',
-    technologyImage: '/images/technologyWeWork/1.png',
+    technologyImage: '/images/technologyWeWork/mobile.png',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -348,7 +359,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'Frontend',
-    technologyImage: '/images/technologyWeWork/2.png',
+    technologyImage: '/images/technologyWeWork/frontend.png',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -367,7 +378,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'Backend',
-    technologyImage: '/images/technologyWeWork/2.png',
+    technologyImage: '/images/technologyWeWork/database.png',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -386,7 +397,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'Database',
-    technologyImage: '/images/technologyWeWork/3.png',
+    technologyImage: '/images/technologyWeWork/database.png',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -405,7 +416,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'CMS',
-    technologyImage: '/images/technologyWeWork/4.png',
+    technologyImage: '/images/technologyWeWork/cms.png',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -424,7 +435,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'DevOps',
-    technologyImage: '/images/technologyWeWork/5.png',
+    technologyImage: '/images/technologyWeWork/devops.png',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -592,5 +603,28 @@ export const AccordionMenuItemData = [
       'Product Updates',
       'User Community',
     ],
+  },
+];
+
+export const reviewsData = [
+  {
+    siteIcon: '/svg/review-on-site/clutch.svg',
+    review: '4.6 ',
+  },
+  {
+    siteIcon: '/svg/review-on-site/goodfirm.svg',
+    review: '4.7',
+  },
+  {
+    siteIcon: '/svg/review-on-site/designrush.svg',
+    review: '4.8',
+  },
+  {
+    siteIcon: '/svg/review-on-site/top-developers.svg',
+    review: '4.9',
+  },
+  {
+    siteIcon: '/svg/review-on-site/google.svg',
+    review: '5.0',
   },
 ];

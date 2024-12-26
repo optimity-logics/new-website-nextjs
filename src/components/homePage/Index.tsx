@@ -1,5 +1,4 @@
 import ClientReview from './ClientReview';
-import ContactUs from './ContactUs';
 import Faqs from './Faqs';
 import HeroSection from './HeroSection';
 import HowWeWork from './HowWeWork';
@@ -22,7 +21,7 @@ const Index = () => {
       <HowWeWork />
       <Resources />
       <ClientReview />
-      <ContactUs />
+      {/* <ContactUs /> */}
       <Faqs />
     </>
   );
