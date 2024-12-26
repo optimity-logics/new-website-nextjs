@@ -6,6 +6,10 @@ import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 import { Uploader } from 'uploader'; // Installed by "react-uploader".
 import { UploadDropzone } from 'react-uploader';
+import arrow from '../../../../public/svg/black-arrow.svg';
+import Image from 'next/image';
+import { CountrySelect } from 'react-country-state-city';
+import 'react-country-state-city/dist/react-country-state-city.css';
 
 interface FormValues {
   firstName: string;
@@ -57,8 +61,8 @@ const InquireForm = () => {
   });
 
   return (
-    <div className="flex flex-col gap-5 rounded-[10px] border border-secGray bg-transparent px-[22.5px] py-9">
-      <h3 className="font-Inter text-[26px] font-medium leading-8 text-black">
+    <div className="flex flex-col gap-5 rounded-[10px] border border-[#ffffff4a] bg-white/5 px-[22.5px] py-9">
+      <h3 className="font-Inter text-[26px] font-medium leading-8 text-white">
         Collaborate with <span className="font-semibold">Optimity Logics</span>
       </h3>
       <form onSubmit={formik.handleSubmit} className="space-y-6">
@@ -73,10 +77,10 @@ const InquireForm = () => {
               value={formik.values.firstName}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-secGray bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] placeholder:text-[#00000080] focus:outline-none"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none"
             />
             {formik.touched.firstName && formik.errors.firstName ? (
-              <div className="text-red-600 mt-1 text-sm">
+              <div className="mt-1 text-sm text-red">
                 {formik.errors.firstName}
               </div>
             ) : null}
@@ -92,10 +96,10 @@ const InquireForm = () => {
               value={formik.values.lastName}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-secGray bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] placeholder:text-[#00000080] focus:outline-none"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none"
             />
             {formik.touched.lastName && formik.errors.lastName ? (
-              <div className="text-red-600 mt-1 text-sm">
+              <div className="mt-1 text-sm text-red">
                 {formik.errors.lastName}
               </div>
             ) : null}
@@ -113,29 +117,33 @@ const InquireForm = () => {
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-secGray bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] placeholder:text-[#00000080] focus:outline-none"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none"
             />
             {formik.touched.email && formik.errors.email ? (
-              <div className="text-red-600 mt-1 text-sm">
-                {formik.errors.email}
-              </div>
+              <div className="mt-1 text-sm text-red">{formik.errors.email}</div>
             ) : null}
           </div>
-
-          {/* Country */}
           <div className="w-full">
-            <input
-              type="text"
-              id="country"
-              name="country"
-              placeholder="Country Name"
-              value={formik.values.country}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              className="w-full border-b border-b-secGray bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] placeholder:text-[#00000080] focus:outline-none"
+            <CountrySelect
+              value={formik.values.country || 'India'} // Set default value to "India"
+              onChange={(country) => {
+                if (
+                  typeof country === 'object' &&
+                  country !== null &&
+                  'name' in country
+                ) {
+                  // Safely extract the name property
+                  formik.setFieldValue('country', country.name);
+                } else {
+                  formik.setFieldValue('country', '');
+                }
+              }}
+              onBlur={() => formik.setFieldTouched('country', true)}
+              className="!placeholder:text-[#ffffff80] w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] !text-[#ffffff80] focus:outline-none"
+              placeHolder="Search "
             />
             {formik.touched.country && formik.errors.country ? (
-              <div className="text-red-600 mt-1 text-sm">
+              <div className="mt-1 text-sm text-red">
                 {formik.errors.country}
               </div>
             ) : null}
@@ -147,11 +155,10 @@ const InquireForm = () => {
           <PhoneInput
             value={formik.values.phone}
             onChange={formik.handleChange}
-            autoFocus
             className="w-full border-none"
             placeholder="Phone number"
             defaultCountry="in" // Use lowercase 'in' for India
-            inputClassName="w-full !border-b !border-b-secGray !bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] placeholder:text-[#00000080] focus:outline-none !outline-none !border-transparent !rounded-none"
+            inputClassName="w-full !border-b !border-b-[#ffffff4a] !bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] placeholder:text-[#ffffff80] focus:outline-none !outline-none !border-transparent !rounded-none !text-[#ffffff4a]"
             countrySelectorStyleProps={{
               className: '!border-none !pl-2 ',
               buttonClassName: '!border-none !rounded-l-lg !bg-transparent',
@@ -159,9 +166,7 @@ const InquireForm = () => {
           />
 
           {formik.touched.phone && formik.errors.phone ? (
-            <div className="text-red-600 mt-1 text-sm">
-              {formik.errors.phone}
-            </div>
+            <div className="mt-1 text-sm text-red">{formik.errors.phone}</div>
           ) : null}
         </div>
 
@@ -175,39 +180,14 @@ const InquireForm = () => {
             value={formik.values.aboutProject}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            className="w-full border-b border-b-secGray bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] placeholder:text-[#00000080] focus:outline-none"
+            className="appearance-[#ffffff4a] w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none"
           />
           {formik.touched.aboutProject && formik.errors.aboutProject ? (
-            <div className="text-red-600 mt-1 text-sm">
+            <div className="mt-1 text-sm text-red">
               {formik.errors.aboutProject}
             </div>
           ) : null}
         </div>
-
-        {/* File Upload */}
-        {/* <div>
-          <label htmlFor="file" className="block text-sm font-medium">
-            Attach File
-          </label>
-          <input
-            type="file"
-            id="file"
-            name="file"
-            onChange={(event) =>
-              formik.setFieldValue('file', event.currentTarget.files?.[0])
-            }
-            className="border-gray-300 mt-1 w-full rounded border p-2"
-          />
-          <p className="text-gray-500 mt-1 text-sm">
-            Please upload a file with one of the following extensions: .pdf,
-            .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt
-          </p>
-          {formik.errors.file ? (
-            <div className="text-red-600 mt-1 text-sm">
-              {formik.errors.file}
-            </div>
-          ) : null}
-        </div> */}
         <div>
           <UploadDropzone
             uploader={uploader}
@@ -219,24 +199,19 @@ const InquireForm = () => {
             width="100%"
             height="175px"
           />
-
-          {formik.errors.file ? (
-            <div className="text-red-600 mt-1 text-sm">
-              {formik.errors.file}
-            </div>
-          ) : null}
-          <p className="text-gray-500 mt-1 text-sm">
+          <p className="font-Inter text-base font-normal leading-5 text-[#ffffff4a]">
             Please upload a file with one of the following extensions: .pdf,
             .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt
           </p>
           {formik.errors.file ? (
-            <div className="text-red-600 mt-1 text-sm">
-              {formik.errors.file}
-            </div>
+            <div className="mt-1 text-sm text-red">{formik.errors.file}</div>
           ) : null}
         </div>
-        <button type="submit" className="font-Inter">
-          inquire now
+        <button
+          type="submit"
+          className="flex cursor-pointer items-center gap-2.5 rounded-[30px] bg-white px-[26px] pb-[13px] pt-[16px] font-Inter text-base font-semibold uppercase leading-6"
+        >
+          inquire now <Image src={arrow} alt="Arrow" width={20} height={20} />
         </button>
       </form>
 

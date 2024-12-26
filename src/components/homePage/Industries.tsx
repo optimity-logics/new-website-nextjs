@@ -1,17 +1,20 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import arrow from '../../../public/svg/arrow-white.svg';
+import arrow from '../../../public/svg/gray-arrow.svg';
+import checkmark from '../../../public/svg/check-mark.svg';
 import SectionHeading from '../common/SectionHeading';
 import { industriesData } from '../utils/Constant';
 import { Autoplay } from 'swiper/modules';
+import { useState } from 'react';
 
 const Industries = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col items-center gap-[60px] overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:px-10 4xl:mb-[120px]">
       <SectionHeading
@@ -23,9 +26,9 @@ const Industries = () => {
         LinkName="Connect to know more"
         isDark={false}
       />
-      <div className="swiper-container relative h-full w-full max-w-[1820px] 4xl:ml-[100px]">
+      <div className="swiper-container relative h-full w-full max-w-[1820px] 4xl:ml-20">
         <Swiper
-          spaceBetween={26}
+          spaceBetween={70}
           slidesPerView={1}
           modules={[Autoplay]}
           autoplay={{
@@ -36,63 +39,65 @@ const Industries = () => {
           loop={true}
           breakpoints={{
             640: {
+              slidesPerView: 1.5,
+            },
+            1024: {
               slidesPerView: 2,
             },
-            768: {
-              slidesPerView: 3,
-            },
-            1280: {
-              slidesPerView: 4,
+            1440: {
+              slidesPerView: 2.5,
             },
             1836: {
-              slidesPerView: 5,
+              slidesPerView: 3.2,
             },
           }}
           className="mySwiper h-full !w-full"
         >
           {industriesData &&
             industriesData.map((item, index) => (
-              <SwiperSlide key={index} className="!h-auto">
-                <div className="group flex h-full cursor-pointer flex-col items-stretch gap-4 3xl:gap-8">
-                  <div className="w-max">
+              <SwiperSlide
+                key={index}
+                className="mt-[35px] !h-auto"
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <div className="group flex cursor-pointer flex-col gap-[25px] rounded-3xl bg-[#b5b5b51a] p-[30px] transition-all duration-300 hover:bg-[#02ade11a]">
+                  <div className="-mt-[63px] w-max rounded-full border-2 border-[#192020] bg-white p-4 transition-all duration-300 group-hover:border-lightBlue">
                     <Image
-                      src={item?.img}
-                      alt="icon"
-                      width={100}
-                      height={100}
-                      className="!h-16 !w-16 object-cover 3xl:h-max 3xl:w-max"
+                      src={
+                        hoveredIndex === index
+                          ? item?.industriesHoverIcon
+                          : item?.industriesIcon
+                      }
+                      alt={item?.industriesIcon}
+                      width={51}
+                      height={51}
+                      className="w-max"
                     />
                   </div>
-                  <div className="flex flex-col gap-[17.39px]">
-                    <div className="flex flex-col gap-[9px]">
-                      <h5 className="font-Inter text-xl font-bold leading-6 text-black">
-                        {item?.title}
-                      </h5>
-                      <p className="font-Inter text-base font-normal leading-[22.4px] text-black">
-                        {item?.description}
-                      </p>
-                    </div>
+                  <div className="flex flex-col gap-4">
                     <div className="flex items-center gap-2">
-                      <Link
-                        href={'#'}
-                        className="font-Inter text-sm font-medium leading-[19.6px] text-red"
-                      >
-                        Find out more
-                      </Link>
-                      <div className="invisible relative flex h-6 w-6 translate-x-[-30px] items-center justify-center rounded-full bg-red opacity-0 transition-all duration-500 ease-out group-hover:visible group-hover:translate-x-0 group-hover:opacity-100">
-                        <Image
-                          src={arrow}
-                          alt="arrow"
-                          width={12}
-                          height={12}
-                          className="object-cover"
-                        />
-                      </div>
+                      <h4 className="font-Inter text-[26px] font-semibold leading-8 text-[#192020] transition-all duration-300 group-hover:text-lightBlue">
+                        {item?.industriesName}
+                      </h4>
+                      <Image src={arrow} alt="arrow" width={24} height={24} />
                     </div>
-
-                    <div className="relative mt-2 h-0.5 w-full bg-lightSilver">
-                      <span className="absolute left-0 top-0 h-full w-0 bg-red transition-all duration-500 ease-out group-hover:w-full"></span>
-                    </div>
+                    <ul className="flex flex-col gap-3">
+                      {item?.industriesWork.map((items, ind) => (
+                        <li
+                          key={ind}
+                          className="flex items-center gap-4 font-Inter text-lg font-normal leading-[28.8px] text-[#192020]"
+                        >
+                          <Image
+                            src={checkmark}
+                            alt="check-mark"
+                            width={24}
+                            height={24}
+                          />
+                          {items}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </SwiperSlide>

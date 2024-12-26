@@ -18,7 +18,7 @@ const Faqs = () => {
 
   return (
     <NextUIProvider>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[176px]">
+      <Container className="4xl:20 mb-10 md:mb-12 xl:mb-16 5xl:mb-[120px]">
         <div className="flex flex-col gap-5 lg:gap-6 4xl:gap-[60px]">
           <SectionHeading
             heading="Frequently Asked Questions"

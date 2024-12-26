@@ -13,7 +13,7 @@ import { Autoplay } from 'swiper/modules';
 const OurExpertise = () => {
   return (
     <Container className="!px-0">
-      <div className="mb-10 ml-4 flex flex-col items-center gap-[30px] overflow-x-hidden sm:ml-6 md:mb-12 md:ml-8 lg:flex-row xl:mb-16 xl:ml-10 3xl:ml-20 4xl:mb-[140px] 4xl:ml-[100px]">
+      <div className="mb-10 ml-4 flex flex-col items-center gap-[30px] overflow-x-hidden sm:ml-6 md:mb-12 md:ml-8 lg:flex-row xl:mb-16 xl:ml-10 3xl:ml-20 4xl:mb-[120px] 4xl:ml-[100px]">
         <div className="flex w-full flex-col gap-5 lg:max-w-[375px] lg:gap-[100px]">
           <div className="flex flex-col gap-5 lg:gap-[25px]">
             <h3 className="font-Inter text-[45px] font-semibold leading-[50px] text-charcoalBlue 4xl:text-[60px] 4xl:leading-[65px]">

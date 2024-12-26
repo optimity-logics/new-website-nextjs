@@ -28,20 +28,24 @@ const ClientReview = () => {
   // console.log(visibleCount < ClientsReview.length);
 
   return (
-    <Container className="pt-[18px] md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:px-[200px]">
+    <Container
+      className="mb-10 bg-technologbg bg-contain bg-no-repeat py-20 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:px-[200px]"
+      isBackground={true}
+    >
       <div className="flex flex-col gap-5 lg:gap-20">
         <SectionHeading
           heading="Real Stories from <span>Satisfied Clients</span>"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore"
           className="max-w-[998px]"
           descriptionStyle="max-w-[590px]"
+          isDark={true}
         />
         <div className="review grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-[23px] xl:gap-y-[25px] 3xl:grid-cols-3">
           {clientsReview &&
             clientsReview.slice(0, visibleCount).map((item, index) => (
               <div
                 key={index}
-                className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-[51.74px] rounded-[18.91px] p-5 transition-all duration-300 hover:bg-turquoise md:px-[34px] md:py-[30px]`}
+                className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-[51.74px] rounded-[18.91px] bg-[#ffffff1a] p-5 transition-all duration-300 hover:bg-turquoise md:px-[34px] md:py-[30px]`}
               >
                 <div className="flex flex-col gap-[25px]">
                   <StarRatings
@@ -54,11 +58,11 @@ const ClientReview = () => {
                     svgIconViewBox="0 0 31 31"
                     svgIconPath={filledStarPath}
                   />
-                  <p className="font-Inter text-lg font-normal leading-7 text-gray">
+                  <p className="font-Inter text-lg font-normal leading-7 text-[#757474]">
                     {item?.description}
                   </p>
                 </div>
-                <span className="font-Inter text-[22px] font-semibold leading-[26.63px] text-charcoalBlue">
+                <span className="font-Inter text-[22px] font-semibold leading-[26.63px] text-white">
                   {item?.NameOrPosition}
                 </span>
               </div>
@@ -67,11 +71,11 @@ const ClientReview = () => {
           {visibleCount < clientsReview.length && (
             <div className="relative z-30 col-span-1 flex w-full items-center justify-center md:col-span-2 3xl:col-span-3">
               <div
-                className={`absolute bottom-0 -z-20 flex h-[350px] w-full max-w-[1920px] items-end justify-center bg-custom-gradient 3xl:-bottom-[45px]`}
+                className={`absolute bottom-0 -z-20 flex h-[350px] w-full max-w-[1920px] items-end justify-center bg-custom-gradient 3xl:-bottom-[65px] 5xl:-bottom-[60px]`}
               >
                 <button
                   onClick={handleReadMore}
-                  className="hover: w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Inter font-bold leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px]"
+                  className="hover: mb-8 w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Inter font-bold leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px]"
                   disabled={isLoading} // Disable button while loading
                 >
                   {isLoading ? (
