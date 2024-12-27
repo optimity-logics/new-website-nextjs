@@ -6,7 +6,7 @@ import Marquee from 'react-fast-marquee';
 import Container from '../common/Container';
 
 const HeroSection = () => {
-  return 
+  return (
     <div className="mb-10 h-full sm:mb-[100px]">
       <Container
         className="h-full w-full bg-homepagebg bg-cover bg-no-repeat px-4 pb-[50px] sm:px-6 sm:pb-5 md:px-8 lg:px-10"
@@ -36,15 +36,12 @@ const HeroSection = () => {
         </div>
       </Container>
       <Container>
-
         <div className="-mt-[37px] flex flex-col items-center gap-5 rounded-[30px] border border-darkGray bg-black p-6 xxl:gap-[35px] xxl:py-[35.5px] 3xl:px-8 5xl:px-[60px]">
-         
-         
-                                <span className="text-center font-Poppins text-lg font-medium leading-6 text-white md:text-[22px] md:leading-[33px]">
+          <span className="text-center font-Poppins text-lg font-medium leading-6 text-white md:text-[22px] md:leading-[33px]">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
           </span>
           <Marquee gradient={false} speed={65}>
-            <                  div className="flex items-center justify-between gap-5 last-of-type:mr-5 md:gap-[45px] md:last-of-type:mr-[45px] xl:gap-[34px] last-of-type:xl:mr-[34px] 4xl:gap-[69px] last-of-type:4xl:mr-[69px]">
+            <div className="flex items-center justify-between gap-5 last-of-type:mr-5 md:gap-[45px] md:last-of-type:mr-[45px] xl:gap-[34px] last-of-type:xl:mr-[34px] 4xl:gap-[69px] last-of-type:4xl:mr-[69px]">
               {logoIcons &&
                 logoIcons.map((item, index) => (
                   <div key={index}>
@@ -57,7 +54,7 @@ const HeroSection = () => {
                     />
                   </div>
                 ))}
-            </>
+            </div>
           </Marquee>
         </div>
       </Container>
