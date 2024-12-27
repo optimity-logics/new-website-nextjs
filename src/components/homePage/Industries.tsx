@@ -61,7 +61,7 @@ const Industries = () => {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="group flex cursor-pointer flex-col gap-[25px] rounded-3xl bg-[#b5b5b51a] p-[30px] transition-all duration-300 hover:bg-[#02ade11a]">
+                <div className="smgap-[25px] group flex cursor-pointer flex-col rounded-3xl bg-[#b5b5b51a] p-[30px] transition-all duration-300 hover:bg-[#02ade11a]">
                   <div className="-mt-[63px] w-max rounded-full border-2 border-[#192020] bg-white p-4 transition-all duration-300 group-hover:border-lightBlue">
                     <Image
                       src={
@@ -72,7 +72,7 @@ const Industries = () => {
                       alt={item?.industriesIcon}
                       width={51}
                       height={51}
-                      className="w-max"
+                      className="w-7 sm:w-max"
                     />
                   </div>
                   <div className="flex flex-col gap-4">
@@ -82,17 +82,18 @@ const Industries = () => {
                       </h4>
                       <Image src={arrow} alt="arrow" width={24} height={24} />
                     </div>
-                    <ul className="flex flex-col gap-3">
+                    <ul className="flex flex-col gap-1.5 sm:gap-3">
                       {item?.industriesWork.map((items, ind) => (
                         <li
                           key={ind}
-                          className="flex items-center gap-4 font-Inter text-lg font-normal leading-[28.8px] text-[#192020]"
+                          className="flex items-start gap-4 font-Inter text-base font-normal leading-5 text-[#192020] sm:text-lg sm:leading-[28.8px]"
                         >
                           <Image
                             src={checkmark}
                             alt="check-mark"
                             width={24}
                             height={24}
+                            className="mt-0.5"
                           />
                           {items}
                         </li>

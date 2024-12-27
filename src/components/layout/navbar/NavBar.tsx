@@ -83,29 +83,41 @@ const NavBar = () => {
                 {item?.menuItem === 'Services' && showMegaMenu && (
                   <div className="scale-up-ver-top">
                     <div
-                      className={`megaMenu absolute left-1/2 top-full mt-6 flex flex-col gap-[61.32px] rounded-3xl bg-white p-7 shadow-lg transition-all duration-500 ease-in-out xl:mt-9 xl:rounded-[25.42px] 3xl:px-[49.43px] 3xl:py-[51.31px]`}
+                      className={`megaMenu absolute left-1/2 top-full mt-6 flex flex-col gap-[61.32px] rounded-xl border-t-4 border-lightBlue bg-white p-7 shadow-lg transition-all duration-500 ease-in-out xl:mt-9 3xl:px-[49.43px] 3xl:py-[51.31px]`}
                     >
-                      <div className="grid grid-cols-3 items-center gap-5 3xl:gap-[50.84px]">
-                        {servicesMegsmenuDate.map((item, index) => (
-                          <div
-                            key={index}
-                            className="flex flex-col gap-5 xl:gap-[25.42px]"
-                          >
-                            <h4 className="font-Inter text-xl font-normal leading-6 text-[#97A3B7] xl:text-3xl xl:leading-9">
-                              {item.title}
-                            </h4>
-                            <ul className="flex flex-col gap-4 xl:gap-[31.77px]">
-                              {item.items.map((items, idx) => (
-                                <li
-                                  key={idx}
-                                  className="font-Inter text-base font-normal leading-5 text-charcoalBlue lg:text-lg lg:leading-6 xl:text-2xl xl:leading-9"
-                                >
-                                  {items}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
+                      <div className="flex flex-col justify-between gap-8 4xl:flex-row">
+                        <div className="grid w-full grid-cols-3 gap-5 3xl:gap-[50.84px]">
+                          {servicesMegsmenuDate.map((item, index) => (
+                            <div key={index} className="flex flex-col gap-4">
+                              <h4 className="font-Inter text-lg font-normal leading-6 text-[#97A3B7]">
+                                {item.title}
+                              </h4>
+                              <ul className="flex flex-col gap-4">
+                                {item.items.map((items, idx) => (
+                                  <li
+                                    key={idx}
+                                    className="cursor-pointer font-Inter text-base font-normal leading-5 text-charcoalBlue"
+                                  >
+                                    {items}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                        <div className="flex w-full max-w-[489px] flex-col gap-5 rounded-2xl border border-[#e4e4e4] bg-[#fafbfd] p-6 4xl:gap-[37px] 4xl:p-[35px]">
+                          <h3 className="font-Inter text-2xl font-semibold leading-7 text-[#212529] 5xl:text-4xl 5xl:leading-[49px]">
+                            An AI development company trusted by clients
+                          </h3>
+                          <span className="pr-4 font-Inter text-xl font-normal leading-7 text-[#696969]">
+                            We&apos;re a dynamic team of millennials and Gen-Z,
+                            witnessing the digital era&apos;s evolution.{' '}
+                          </span>
+                          <Button
+                            btnName="Explore Blog"
+                            className="w-max rounded-md bg-orange px-[30px] py-[14px] font-Inter text-base font-semibold leading-5 text-white"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>

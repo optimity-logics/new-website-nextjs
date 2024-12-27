@@ -5,18 +5,18 @@ import instagram from '../../../../public/svg/footer/social-media/instagram.svg'
 import twitter from '../../../../public/svg/footer/social-media/twitter-logo.svg';
 const SocialMedia = () => {
   return (
-    <div className="flex flex-col gap-5">
-      <h4 className="font-Inter text-xl font-semibold leading-7 text-white">
+    <div className="flex flex-col gap-2 md:gap-5">
+      <h4 className="font-Inter text-xl font-semibold leading-7 text-white xl:text-[28px] xl:leading-8">
         Follow Us
       </h4>
-      <div className="mt-2.5 flex items-center gap-2 xl:gap-5">
+      <div className="flex items-center gap-3 xl:gap-6">
         <div>
           <Image
             src={instagram}
             alt="instageam-logo"
             width={55}
             height={55}
-            className="w-7 xl:w-full"
+            className="w-8 xl:w-full"
           />
         </div>
         <div>
@@ -25,7 +25,7 @@ const SocialMedia = () => {
             alt="facebook-logo"
             width={55}
             height={55}
-            className="w-7 xl:w-full"
+            className="w-8 xl:w-full"
           />
         </div>
         <div>
@@ -34,7 +34,7 @@ const SocialMedia = () => {
             alt="twitter-logo"
             width={55}
             height={55}
-            className="w-7 xl:w-full"
+            className="w-8 xl:w-full"
           />
         </div>
       </div>

@@ -25,15 +25,15 @@ const Footer = () => {
                 className="w-[150px] 4xl:w-max"
               />
             </div>
-            <div className="flex flex-col gap-[30px]">
+            <div className="flex flex-col gap-6 sm:gap-[30px]">
               {/* <div className="flex flex-col gap-[30px]"> */}
-              <h3 className="font-Inter text-[52px] font-bold leading-[56px] text-white">
+              <h3 className="font-Inter text-[28px] font-bold leading-[30px] text-white 5xl:text-[40px] 5xl:leading-[44px]">
                 <span className="highlitedtextfooter block">
                   Have a question?
                 </span>
                 Our team is happy to assist you
               </h3>
-              <span className="max-w-[666px] font-Inter text-lg font-normal leading-[21.78px] text-white">
+              <span className="max-w-[666px] font-Inter text-base font-normal leading-5 text-white md:text-lg md:leading-[21.78px] 3xl:text-2xl 3xl:leading-7">
                 Ask about optimity logics impressive portfolio, pricing,
                 development approach, or anything else. Our Expert Consultants
                 are ready to help!
@@ -50,7 +50,7 @@ const Footer = () => {
                       className="w-[25px] sm:w-max"
                     />
                   </div>
-                  <span className="font-Inter text-lg font-normal leading-6 text-white md:pr-[26px]">
+                  <span className="font-Inter text-base font-normal leading-5 text-white md:pr-[26px] md:text-lg md:leading-6 3xl:text-2xl 3xl:leading-7">
                     426, 4th Floor, Swarnim Business Hub-1, opp. Global
                     International school, Godrej Garden City Road, Ahmedabad,
                     Gujarat 382470
@@ -64,10 +64,10 @@ const Footer = () => {
                         alt="phone-icon"
                         width={31}
                         height={31}
-                        className="w-[25px] sm:w-max"
+                        className="w-5 sm:w-max"
                       />
                     </div>
-                    <span className="font-Inter text-xl font-medium leading-6 text-white">
+                    <span className="font-Inter text-base font-medium leading-5 text-white md:text-xl md:leading-6 3xl:text-2xl 3xl:leading-7">
                       +91 635 301 5499
                     </span>
                   </div>
@@ -78,10 +78,10 @@ const Footer = () => {
                         alt="email-icon"
                         width={31}
                         height={31}
-                        className="w-[25px] sm:w-max"
+                        className="w-5 sm:w-max"
                       />
                     </div>
-                    <span className="font-Inter text-xl font-medium leading-6 text-white">
+                    <span className="font-Inter text-base font-medium text-white md:text-xl md:leading-6 3xl:text-2xl 3xl:leading-7">
                       hr@optimitylogics.com
                     </span>
                   </div>
@@ -96,7 +96,7 @@ const Footer = () => {
         <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-4 xl:gap-[70px] 3xl:gap-20 4xl:gap-[95.14px]">
           {footerData.map((section, index) => (
             <div key={index} className="flex flex-col gap-[21.37px]">
-              <h3 className="font-Inter text-3xl font-semibold leading-[29.05px] text-white">
+              <h3 className="font-Inter text-2xl font-semibold leading-[29.05px] text-white">
                 {section.title}
               </h3>
               <ul className="flex flex-col gap-[21.37px]">
@@ -117,7 +117,7 @@ const Footer = () => {
         <span className="text-center font-Inter text-[18.69px] font-normal leading-[22.62px] text-white sm:text-start">
           © 2024 Optimity Logics. All rights reserved.
         </span>
-        <ul className="flex items-center gap-[30px] font-Inter text-xl font-medium leading-6 text-white">
+        <ul className="flex flex-wrap items-center justify-center gap-5 gap-y-2 font-Inter text-base font-medium leading-5 text-white md:text-xl lg:text-lg lg:leading-6 xl:gap-[30px]">
           <li className="cursor-pointer transition-all duration-300 hover:font-medium hover:text-lightBlue">
             About Us
           </li>
