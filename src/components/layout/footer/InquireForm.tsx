@@ -61,8 +61,8 @@ const InquireForm = () => {
   });
 
   return (
-    <div className="flex flex-col gap-5 rounded-[10px] border border-[#ffffff4a] bg-white/5 px-[22.5px] py-9">
-      <h3 className="font-Inter text-[26px] font-medium leading-8 text-white">
+    <div className="flex w-full max-w-[697px] flex-col gap-5 rounded-[10px] border border-[#ffffff4a] bg-white/5 px-[22.5px] py-9">
+      <h3 className="font-Inter text-xl font-medium leading-6 text-white xl:text-2xl xl:leading-7 5xl:text-[26px] 5xl:leading-8">
         Collaborate with <span className="font-semibold">Optimity Logics</span>
       </h3>
       <form onSubmit={formik.handleSubmit} className="space-y-6">
@@ -209,7 +209,7 @@ const InquireForm = () => {
         </div>
         <button
           type="submit"
-          className="flex cursor-pointer items-center gap-2.5 rounded-[30px] bg-white px-[26px] pb-[13px] pt-[16px] font-Inter text-base font-semibold uppercase leading-6"
+          className="flex cursor-pointer items-center gap-2.5 rounded-[30px] bg-white px-4 py-3 font-Inter text-sm font-semibold uppercase md:px-[26px] md:py-4 md:text-base md:leading-6"
         >
           inquire now <Image src={arrow} alt="Arrow" width={20} height={20} />
         </button>

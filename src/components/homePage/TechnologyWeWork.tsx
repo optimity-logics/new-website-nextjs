@@ -54,7 +54,7 @@ const TechnologyWeWork = () => {
         </Tabs>
       </div>
       <div
-        className="flex w-full flex-col items-center gap-[30px] rounded-[20px] bg-tectnologyContentbg bg-cover bg-no-repeat py-[43px] pl-[43px] pr-[46px] xl:flex-row 4xl:items-start"
+        className="flex w-full flex-col items-center gap-[30px] rounded-[20px] bg-tectnologyContentbg bg-cover bg-no-repeat p-5 lg:flex-row 4xl:items-start 4xl:p-[43px]"
         style={{ backgroundColor: 'white' }}
       >
         <div>
@@ -66,15 +66,15 @@ const TechnologyWeWork = () => {
             alt={selectedTechnology?.technologyName || 'technology-img'}
             width={628}
             height={461}
-            className="h-[461px] md:max-w-[400px] 5xl:max-w-[628px]"
+            className="max-h-[461px] md:max-w-[400px] 5xl:max-w-[628px]"
           />
         </div>
         <div className="flex flex-col gap-[25px]">
           <div className="flex flex-col gap-5">
-            <h2 className="font-Inter text-[48px] font-bold leading-[52px] text-red">
+            <h2 className="font-Inter text-4xl font-bold leading-10 text-red md:text-[48px] md:leading-[52px]">
               {selectedTechnology?.technologyName}
             </h2>
-            <div className="flex flex-col gap-8 font-Inter text-lg font-normal leading-[33px] text-[#2B3857]">
+            <div className="flex flex-col gap-4 font-Inter text-base font-normal leading-5 text-[#2B3857] sm:gap-8 3xl:text-lg 3xl:leading-[33px]">
               <p>{selectedTechnology?.techDescription1}</p>
               <p>{selectedTechnology?.techDescription2}</p>
             </div>
