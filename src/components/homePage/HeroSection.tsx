@@ -35,29 +35,29 @@ const HeroSection = () => {
           />
         </div>
       </Container>
-      <Container>
-        <div className="-mt-[37px] flex flex-col items-center gap-5 rounded-[30px] border border-darkGray bg-black p-6 xxl:gap-[35px] xxl:py-[35.5px] 3xl:px-8 5xl:px-[60px]">
-          <span className="text-center font-Poppins text-lg font-medium leading-6 text-white md:text-[22px] md:leading-[33px]">
+      <div className="px-3">
+        <div className="-mt-[37px] flex flex-col items-center gap-[25px] rounded-[24px] border border-darkGray bg-black px-5 pb-[22px] pt-[30px]">
+          <span className="text-center font-Poppins text-lg font-normal leading-7 text-white">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
           </span>
           <Marquee gradient={false} speed={65}>
-            <div className="flex items-center justify-between gap-5 last-of-type:mr-5 md:gap-[45px] md:last-of-type:mr-[45px] xl:gap-[34px] last-of-type:xl:mr-[34px] 4xl:gap-[69px] last-of-type:4xl:mr-[69px]">
+            <div className="flex items-center justify-between last-of-type:mr-5 md:last-of-type:mr-[45px] last-of-type:xl:mr-[34px] last-of-type:4xl:mr-[69px]">
               {logoIcons &&
                 logoIcons.map((item, index) => (
-                  <div key={index}>
+                  <div key={index} className="h-[66px] w-[193px]">
                     <Image
                       src={item}
                       alt="icon"
                       width={60}
                       height={38}
-                      className="h-[38px] w-[80px] object-contain"
+                      className="h-[38px] w-[90px] object-contain"
                     />
                   </div>
                 ))}
             </div>
           </Marquee>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

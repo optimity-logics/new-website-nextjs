@@ -12,24 +12,23 @@ import { Autoplay } from 'swiper/modules';
 
 const Resources = () => {
   return (
-    <div className="mb-10 flex flex-col gap-10 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:gap-[60px] xl:px-10 3xl:px-20 4xl:mb-[120px] 4xl:px-0">
+    <div className="mb-10 flex flex-col gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:px-10 3xl:gap-10 3xl:px-20 4xl:mb-[120px] 4xl:gap-[60px] 4xl:px-0">
       <SectionHeading
         heading="Know what’s <span> trending in AI </span>"
         description="Insights on the global impact of artificial intelligence across multiple domains"
         btnName="Resources"
         btnStyle="bg-herobtnbg bg-cover bg-no-repeat !py-2.5 !px-[23px] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-black"
         LinkName="Explore all blogs"
-        className="!gap-6"
       />
       <div className="mx-auto w-full 4xl:ml-[100px]">
         <Swiper
           spaceBetween={40}
           slidesPerView={1}
           modules={[Autoplay]}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2000,
+          //   disableOnInteraction: false,
+          // }}
           speed={900}
           loop={true}
           breakpoints={{

@@ -61,7 +61,7 @@ const InquireForm = () => {
   });
 
   return (
-    <div className="flex w-full max-w-[697px] flex-col gap-5 rounded-[10px] border border-[#ffffff4a] bg-white/5 px-[22.5px] py-9">
+    <div className="flex w-full max-w-[697px] flex-col gap-5 rounded-3xl border border-[#ffffff4a] bg-white/5 px-[22.5px] py-9">
       <h3 className="font-Inter text-xl font-medium leading-6 text-white xl:text-2xl xl:leading-7 5xl:text-[26px] 5xl:leading-8">
         Collaborate with <span className="font-semibold">Optimity Logics</span>
       </h3>
