@@ -12,8 +12,11 @@ import email from '../../../../public/svg/footer/mail.svg';
 const Footer = () => {
   return (
     // <div className="flex flex-col items-center">
-    <Container className="bg-footer bg-cover bg-no-repeat pt-10 4xl:pt-20">
-      <div className="flex flex-col gap-10 border-b-[1.34px] border-b-[#ffffff4a] pb-10 xl:gap-[60px]">
+    <Container
+      className="bg-footer bg-cover bg-no-repeat pt-10 4xl:pt-20"
+      isBackground={true}
+    >
+      <div className="flex flex-col gap-8 border-b-[1.34px] border-b-[#ffffff4a] pb-10 3xl:gap-10 4xl:gap-[60px]">
         <div className="flex flex-col justify-between gap-7 sm:gap-14 lg:flex-row lg:items-center">
           <div className="flex w-full max-w-[795px] flex-col gap-[35px]">
             <div>
@@ -27,13 +30,13 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-6 sm:gap-[30px]">
               {/* <div className="flex flex-col gap-[30px]"> */}
-              <h3 className="font-Inter text-[28px] font-bold leading-[30px] text-white 5xl:text-[40px] 5xl:leading-[44px]">
+              <h3 className="font-Inter text-[28px] font-bold leading-[30px] text-white 5xl:text-4xl 5xl:leading-[38px]">
                 <span className="highlitedtextfooter block">
                   Have a question?
                 </span>
                 Our team is happy to assist you
               </h3>
-              <span className="max-w-[666px] font-Inter text-base font-normal leading-5 text-white md:text-lg md:leading-[21.78px] 3xl:text-2xl 3xl:leading-7">
+              <span className="max-w-[666px] font-Poppins text-lg font-light leading-7 text-white">
                 Ask about optimity logics impressive portfolio, pricing,
                 development approach, or anything else. Our Expert Consultants
                 are ready to help!
@@ -41,16 +44,15 @@ const Footer = () => {
               {/* </div> */}
               <div className="flex flex-col gap-[15px]">
                 <div className="flex items-start gap-2 sm:gap-[15px]">
-                  <div className="w-full max-w-max">
+                  <div className="mt-1 w-full max-w-max sm:mt-1.5">
                     <Image
                       src={location}
                       alt="location-icon"
-                      width={31}
-                      height={31}
-                      className="w-[25px] sm:w-max"
+                      width={22}
+                      height={22}
                     />
                   </div>
-                  <span className="font-Inter text-base font-normal leading-5 text-white md:pr-[26px] md:text-lg md:leading-6 3xl:text-2xl 3xl:leading-7">
+                  <span className="font-Poppins text-lg font-light leading-7 text-white md:pr-[26px]">
                     426, 4th Floor, Swarnim Business Hub-1, opp. Global
                     International school, Godrej Garden City Road, Ahmedabad,
                     Gujarat 382470
@@ -62,12 +64,11 @@ const Footer = () => {
                       <Image
                         src={phone}
                         alt="phone-icon"
-                        width={31}
-                        height={31}
-                        className="w-5 sm:w-max"
+                        width={22}
+                        height={22}
                       />
                     </div>
-                    <span className="font-Inter text-base font-medium leading-5 text-white md:text-xl md:leading-6 3xl:text-2xl 3xl:leading-7">
+                    <span className="font-Poppins text-lg font-light leading-7 text-white">
                       +91 635 301 5499
                     </span>
                   </div>
@@ -76,12 +77,11 @@ const Footer = () => {
                       <Image
                         src={email}
                         alt="email-icon"
-                        width={31}
-                        height={31}
-                        className="w-5 sm:w-max"
+                        width={22}
+                        height={22}
                       />
                     </div>
-                    <span className="font-Inter text-base font-medium text-white md:text-xl md:leading-6 3xl:text-2xl 3xl:leading-7">
+                    <span className="font-Poppins text-lg font-light leading-7 text-white">
                       hr@optimitylogics.com
                     </span>
                   </div>
@@ -96,14 +96,14 @@ const Footer = () => {
         <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-4 xl:gap-[70px] 3xl:gap-20 4xl:gap-[95.14px]">
           {footerData.map((section, index) => (
             <div key={index} className="flex flex-col gap-[21.37px]">
-              <h3 className="font-Inter text-2xl font-semibold leading-[29.05px] text-white">
+              <h3 className="font-Poppins text-xl font-normal leading-[1.875rem] text-white">
                 {section.title}
               </h3>
-              <ul className="flex flex-col gap-[21.37px]">
+              <ul className="flex flex-col gap-3">
                 {section.items.map((item, idx) => (
                   <li
                     key={idx}
-                    className="cursor-pointer text-nowrap font-Inter text-lg font-normal leading-[21.78px] text-white transition-all duration-300 hover:text-lightBlue"
+                    className="cursor-pointer text-nowrap font-Poppins text-base font-normal leading-[1.8rem] text-white opacity-70 transition-all duration-300 hover:text-lightBlue"
                   >
                     {item}
                   </li>
@@ -113,11 +113,11 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between gap-5 pb-[35.81px] pt-10 lg:flex-row">
-        <span className="text-center font-Inter text-[18.69px] font-normal leading-[22.62px] text-white sm:text-start">
+      <div className="flex flex-col items-center justify-between gap-5 py-[26.8px] lg:flex-row">
+        <span className="text-center font-Poppins text-sm font-normal leading-[1.6rem] text-white sm:text-start">
           © 2024 Optimity Logics. All rights reserved.
         </span>
-        <ul className="flex flex-wrap items-center justify-center gap-5 gap-y-2 font-Inter text-base font-medium leading-5 text-white md:text-xl lg:text-lg lg:leading-6 xl:gap-[30px]">
+        <ul className="flex flex-wrap items-center justify-center gap-[30px] gap-y-2 font-Poppins text-sm font-normal leading-6 text-white">
           <li className="cursor-pointer transition-all duration-300 hover:font-medium hover:text-lightBlue">
             About Us
           </li>

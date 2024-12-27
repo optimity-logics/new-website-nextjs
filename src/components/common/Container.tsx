@@ -17,7 +17,7 @@ const Container = ({
     <div
       className={`${className} mx-auto w-full max-w-[1920px] px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 5xl:px-[100px]`}
       style={{
-        backgroundColor: isBackground ? '#000' : '',
+        backgroundColor: isBackground ? '#192020' : '',
         ...styleClass,
       }}
     >

@@ -16,11 +16,11 @@ const Industries = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col items-center gap-[60px] overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:px-10 4xl:mb-[120px]">
+    <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col items-center gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:px-10 3xl:gap-10 4xl:mb-[120px] 4xl:gap-[60px]">
       <SectionHeading
         heading="Our Industrial <span> Expertise </span>"
         description="Our team of industry experts curates progressive solutions that befit your requirements"
-        className="max-w-[1586px] !gap-6"
+        className="max-w-[1586px]"
         btnName="Industries "
         btnStyle=" bg-herobtnbg bg-cover bg-no-repeat !py-2.5 !px-[23px] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-black"
         LinkName="Connect to know more"
@@ -61,7 +61,7 @@ const Industries = () => {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="smgap-[25px] group flex cursor-pointer flex-col rounded-3xl bg-[#b5b5b51a] p-[30px] transition-all duration-300 hover:bg-[#02ade11a]">
+                <div className="group flex cursor-pointer flex-col gap-4 rounded-3xl bg-[#b5b5b51a] p-[30px] transition-all duration-300 hover:bg-[#02ade11a] sm:gap-[25px]">
                   <div className="-mt-[63px] w-max rounded-full border-2 border-[#192020] bg-white p-4 transition-all duration-300 group-hover:border-lightBlue">
                     <Image
                       src={
@@ -70,14 +70,13 @@ const Industries = () => {
                           : item?.industriesIcon
                       }
                       alt={item?.industriesIcon}
-                      width={51}
-                      height={51}
-                      className="w-7 sm:w-max"
+                      width={28}
+                      height={28}
                     />
                   </div>
                   <div className="flex flex-col gap-4">
                     <div className="flex items-center gap-2">
-                      <h4 className="font-Inter text-[26px] font-semibold leading-8 text-[#192020] transition-all duration-300 group-hover:text-lightBlue">
+                      <h4 className="font-Inter text-xl font-semibold leading-6 text-[#192020] transition-all duration-300 group-hover:text-lightBlue xl:text-[26px] xl:leading-8">
                         {item?.industriesName}
                       </h4>
                       <Image src={arrow} alt="arrow" width={24} height={24} />
@@ -91,9 +90,9 @@ const Industries = () => {
                           <Image
                             src={checkmark}
                             alt="check-mark"
-                            width={24}
-                            height={24}
-                            className="mt-0.5"
+                            width={20}
+                            height={20}
+                            // className="mt-0.5"
                           />
                           {items}
                         </li>
