@@ -76,7 +76,7 @@ const Industries = () => {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div className="flex items-center gap-2">
-                      <h4 className="font-Inter text-xl font-semibold leading-6 text-[#192020] transition-all duration-300 group-hover:text-lightBlue xl:text-[26px] xl:leading-8">
+                      <h4 className="font-Poppins text-xl font-semibold leading-6 text-[#192020] transition-all duration-300 group-hover:text-lightBlue xl:text-[26px] xl:leading-8">
                         {item?.industriesName}
                       </h4>
                       <Image src={arrow} alt="arrow" width={24} height={24} />
@@ -85,7 +85,7 @@ const Industries = () => {
                       {item?.industriesWork.map((items, ind) => (
                         <li
                           key={ind}
-                          className="flex items-start gap-4 font-Inter text-base font-normal leading-5 text-[#192020] sm:text-lg sm:leading-[28.8px]"
+                          className="flex items-start gap-4 font-Poppins text-base font-normal leading-5 text-[#192020] sm:text-lg sm:leading-[28.8px]"
                         >
                           <Image
                             src={checkmark}

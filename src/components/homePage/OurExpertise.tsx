@@ -12,21 +12,21 @@ import { Autoplay } from 'swiper/modules';
 
 const OurExpertise = () => {
   return (
-    <Container className="!px-0">
-      <div className="mb-10 ml-4 flex flex-col items-center gap-[30px] overflow-x-hidden sm:ml-6 md:mb-12 md:ml-8 lg:flex-row xl:mb-16 xl:ml-10 3xl:ml-20 4xl:mb-[120px] 4xl:ml-[100px]">
+    <Container className="md:!px-0">
+      <div className="mb-10 flex flex-col items-center gap-[30px] overflow-x-hidden md:mb-12 md:ml-8 lg:flex-row xl:mb-16 xl:ml-10 3xl:ml-20 4xl:mb-[120px] 4xl:ml-[100px]">
         <div className="flex w-full flex-col gap-5 lg:max-w-[375px] lg:gap-[100px]">
-          <div className="flex flex-col gap-5 lg:gap-[25px]">
-            <h3 className="font-Inter text-[45px] font-semibold leading-[50px] text-charcoalBlue 4xl:text-[60px] 4xl:leading-[65px]">
+          <div className="flex flex-col gap-3 lg:gap-[25px]">
+            <h3 className="font-Poppins text-[30px] font-semibold leading-8 text-charcoalBlue 4xl:text-[60px] 4xl:leading-[65px]">
               Our <span className="text-red lg:block">Expertise</span>
             </h3>
-            <p className="font-Inter text-lg font-normal leading-[26px] text-lavenderGray">
+            <p className="font-Poppins text-lg font-normal leading-[26px] text-lavenderGray">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore
             </p>
           </div>
           <Button btnName="View All" className="w-max bg-orange px-[30px]" />
         </div>
-        <div className="relative w-full max-w-[1520px] overflow-x-hidden pr-4 lg:px-0">
+        <div className="relative w-full max-w-[1520px] overflow-x-hidden lg:px-0">
           <Swiper
             modules={[Autoplay]}
             spaceBetween={26}
@@ -78,10 +78,10 @@ const OurExpertise = () => {
                     </div>
                     <div className="flex flex-col gap-[50px]">
                       <div className="flex flex-col gap-5">
-                        <h5 className="font-Inter text-2xl font-semibold leading-[29.05px] text-charcoalBlue">
+                        <h5 className="font-Poppins text-2xl font-semibold leading-[29.05px] text-charcoalBlue">
                           {item.techHeading}
                         </h5>
-                        <p className="font-Inter text-lg font-normal leading-[21.78px] text-lavenderGray">
+                        <p className="font-Poppins text-lg font-normal leading-[21.78px] text-lavenderGray">
                           {item.techDescription}
                         </p>
                       </div>

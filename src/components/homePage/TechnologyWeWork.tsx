@@ -39,14 +39,14 @@ const TechnologyWeWork = () => {
           aria-labelledby="technology-tabs"
           radius="full"
           selectedKey={activeKey}
-          className="!font-Inter !text-base !font-medium !leading-[28.8px]"
+          className="!font-Poppins !text-base !font-medium !leading-[28.8px]"
           onSelectionChange={(e) => handlChangeTechnology(e as string)}
         >
           {technologyWeWorkData.map((tech) => (
             <Tab
               key={tech.technologyName}
               title={tech.technologyName}
-              className="!px-[22px] !py-4 !font-Inter !text-base !font-medium !leading-5"
+              className="!px-[22px] !py-4 !font-Poppins !text-base !font-medium !leading-5"
             >
               {/* Tab content can go here if needed */}
             </Tab>
@@ -71,10 +71,10 @@ const TechnologyWeWork = () => {
         </div>
         <div className="flex flex-col gap-[25px]">
           <div className="flex flex-col gap-5">
-            <h2 className="font-Inter text-4xl font-bold leading-10 text-red md:text-[48px] md:leading-[52px]">
+            <h2 className="font-Poppins text-4xl font-bold leading-10 text-red md:text-[48px] md:leading-[52px]">
               {selectedTechnology?.technologyName}
             </h2>
-            <div className="flex flex-col gap-4 font-Inter text-base font-normal leading-5 text-[#2B3857] sm:gap-8 3xl:text-lg 3xl:leading-[33px]">
+            <div className="flex flex-col gap-4 font-Poppins text-base font-normal leading-5 text-[#2B3857] opacity-65 sm:gap-8 3xl:text-lg 3xl:leading-[33px]">
               <p>{selectedTechnology?.techDescription1}</p>
               <p>{selectedTechnology?.techDescription2}</p>
             </div>
@@ -83,7 +83,7 @@ const TechnologyWeWork = () => {
             {selectedTechnology?.allTechnology.map((item, index) => (
               <span
                 key={index}
-                className="text-nowrap rounded border border-[#13192433] bg-white px-[19px] py-[5px] font-Inter text-[14.48px] font-normal leading-[17.52px] text-[#2B3857]"
+                className="text-nowrap rounded border border-[#13192433] bg-white px-[19px] py-[5px] font-Poppins text-[14.48px] font-normal leading-[17.52px] text-[#2B3857]"
               >
                 {item}
               </span>

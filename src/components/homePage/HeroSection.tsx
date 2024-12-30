@@ -18,12 +18,12 @@ const HeroSection = () => {
             className="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg !font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7 4xl:!text-[28px] 4xl:!leading-[33.89px]"
           />
           <div className="flex flex-col items-center gap-3 sm:gap-4 3xl:gap-[25px]">
-            <h1 className="4xl:[50px] text-center font-Inter text-[35px] font-bold leading-[40px] tracking-[-0.16px] text-darkBlack sm:text-[45px] sm:leading-[50px] 3xl:text-[50px] 3xl:leading-[55px] 5xl:text-[60px] 5xl:leading-[65px]">
+            <h1 className="4xl:[50px] text-center font-Poppins text-[35px] font-bold leading-[40px] tracking-[-0.16px] text-darkBlack sm:text-[45px] sm:leading-[50px] 3xl:text-[50px] 3xl:leading-[55px] 5xl:text-[60px] 5xl:leading-[65px]">
               Bring Your <span className="text-gradient">App Vision</span> to
               Life,
               <br /> Anytime with <span className="text-gradient">AI.</span>
             </h1>
-            <p className="max-w-[927px] text-center font-Inter text-lg font-normal leading-6 text-charcoalBlue sm:text-xl 4xl:text-[22px] 4xl:leading-[26px]">
+            <p className="max-w-[927px] text-center font-Poppins text-lg font-normal leading-6 text-charcoalBlue sm:text-xl 4xl:text-[22px] 4xl:leading-[26px]">
               We&nbsp;re a full-stack agency specializing in digital
               transformation. Crafting experiences for startups&apos; SMEs&apos;
               and Fortune 500 companies.
@@ -44,7 +44,7 @@ const HeroSection = () => {
             <div className="flex items-center justify-between last-of-type:mr-5 md:last-of-type:mr-[45px] last-of-type:xl:mr-[34px] last-of-type:4xl:mr-[69px]">
               {logoIcons &&
                 logoIcons.map((item, index) => (
-                  <div key={index} className="h-[66px] w-[193px]">
+                  <div key={index} className="w-[193px] 4xl:h-[66px]">
                     <Image
                       src={item}
                       alt="icon"

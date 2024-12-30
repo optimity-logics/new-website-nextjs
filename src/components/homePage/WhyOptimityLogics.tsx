@@ -29,13 +29,13 @@ const WhyOptimityLogics = () => {
             className="w-max !rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !py-2.5 px-[23px] !text-2xl !font-normal !leading-[29.05px] !text-black"
           />
           <HighlitedHeading
-            className="text-center font-Inter text-[40px] font-bold leading-[44px] text-lightBlack lg:text-start 4xl:text-[60px] 4xl:leading-[65px]"
+            className="text-center font-Poppins text-[40px] font-bold leading-[44px] text-lightBlack lg:text-start 4xl:text-[60px] 4xl:leading-[65px]"
             dangerouslySetInnerHTML={{
               __html: `An <span>AI development company</span> trusted by clients across the globe!`,
             }}
           />
         </div>
-        <p className="text-center font-Inter text-xl font-normal leading-7 text-primaryGray lg:text-start 4xl:pr-5">
+        <p className="text-center font-Poppins text-xl font-normal leading-7 text-primaryGray lg:text-start 4xl:pr-5">
           We&apos;re a dynamic team of millennials and Gen-Z, witnessing the
           digital era&apos;s evolution. With a cohesive approach, we develop
           fully integrated digital products, build brand identities, and drive
@@ -52,10 +52,10 @@ const WhyOptimityLogics = () => {
               className="h-full w-full max-w-[214px] rounded-[16px] border-[8px] border-[#ffffffcc]"
             >
               <div className="flex h-full flex-col items-center justify-center gap-[9.39px] bg-white p-3 sm:pb-[17.39px] sm:pl-[22.81px] sm:pr-[21.92px] sm:pt-[15px]">
-                <h3 className="font-Inter text-2xl font-bold leading-[38.04px] text-[#212529] sm:text-[32px]">
+                <h3 className="font-Poppins text-2xl font-bold leading-[38.04px] text-[#212529] sm:text-[32px]">
                   {stat.value}
                 </h3>
-                <span className="text-center font-Inter text-base font-semibold leading-[22.4px] text-black">
+                <span className="text-center font-Poppins text-base font-semibold leading-[22.4px] text-black">
                   {stat.label}
                 </span>
               </div>

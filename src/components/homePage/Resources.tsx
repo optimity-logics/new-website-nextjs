@@ -65,16 +65,16 @@ const Resources = () => {
                   </div>
                   <div className="flex flex-col gap-[17.39px]">
                     <div className="flex flex-col gap-[9px]">
-                      <h3 className="font-Inter text-xl font-bold leading-6 text-graphite">
+                      <h3 className="font-Poppins text-xl font-bold leading-6 text-graphite">
                         {item?.title}
                       </h3>
-                      <p className="font-Inter text-base font-normal leading-[22.4px] text-graphite">
+                      <p className="font-Poppins text-base font-normal leading-[22.4px] text-graphite">
                         {item?.description}
                       </p>
                     </div>
                     <Link
                       href={'/'}
-                      className="font-Inter text-sm font-medium leading-[19.6px] text-red"
+                      className="font-Poppins text-sm font-medium leading-[19.6px] text-red"
                     >
                       Continue Reading
                     </Link>

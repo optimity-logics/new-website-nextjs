@@ -29,7 +29,7 @@ const ClientReview = () => {
 
   return (
     <Container
-      className="mb-10 bg-technologbg bg-cover bg-no-repeat py-20 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:px-[200px]"
+      className="mb-10 bg-technologbg bg-cover bg-no-repeat py-20 md:mb-12 xl:mb-16 4xl:mb-[120px] 5xl:px-[200px]"
       isBackground={true}
     >
       <div className="flex flex-col gap-5 lg:gap-[60px]">
@@ -58,11 +58,11 @@ const ClientReview = () => {
                     svgIconViewBox="0 0 31 31"
                     svgIconPath={filledStarPath}
                   />
-                  <p className="font-Inter text-lg font-normal leading-7 text-[#757474]">
+                  <p className="font-Poppins text-lg font-normal leading-7 text-[#757474]">
                     {item?.description}
                   </p>
                 </div>
-                <span className="font-Inter text-[22px] font-semibold leading-[26.63px] text-white">
+                <span className="font-Poppins text-[22px] font-semibold leading-[26.63px] text-white">
                   {item?.NameOrPosition}
                 </span>
               </div>
@@ -75,7 +75,7 @@ const ClientReview = () => {
               >
                 <button
                   onClick={handleReadMore}
-                  className="hover: mb-8 w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Inter font-bold leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px]"
+                  className="hover: mb-8 w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Poppins font-bold leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px]"
                   disabled={isLoading} // Disable button while loading
                 >
                   {isLoading ? (
