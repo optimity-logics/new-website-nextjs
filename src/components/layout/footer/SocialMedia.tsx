@@ -6,7 +6,7 @@ import twitter from '../../../../public/svg/footer/social-media/twitter-logo.svg
 const SocialMedia = () => {
   return (
     <div className="flex flex-col gap-4">
-      <h4 className="font-Inter text-base font-normal leading-[1.6rem] text-white">
+      <h4 className="font-Poppins text-base font-normal leading-[1.6rem] text-white">
         Follow Us
       </h4>
       <div className="flex items-center gap-3">

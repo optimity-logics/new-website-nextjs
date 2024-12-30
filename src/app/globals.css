@@ -175,10 +175,16 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
   border-radius: 0px !important;
   padding-bottom: 10px;
 }
+.react-international-phone-country-selector-dropdown {
+  z-index: 99 !important;
+}
 .stsearch-box input {
   background: transparent !important;
   border: none !important;
   outline: none !important;
+  color: #ffffff80 !important;
+}
+.stsearch-box input::placeholder {
   color: #ffffff80 !important;
 }
 .stdropdown-menu {

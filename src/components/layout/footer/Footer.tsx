@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-6 sm:gap-[30px]">
               {/* <div className="flex flex-col gap-[30px]"> */}
-              <h3 className="font-Inter text-[28px] font-bold leading-[30px] text-white 5xl:text-4xl 5xl:leading-[38px]">
+              <h3 className="font-Poppins text-[28px] font-bold leading-[30px] text-white 5xl:text-4xl 5xl:leading-[38px]">
                 <span className="highlitedtextfooter block">
                   Have a question?
                 </span>
@@ -103,7 +103,7 @@ const Footer = () => {
                 {section.items.map((item, idx) => (
                   <li
                     key={idx}
-                    className="cursor-pointer text-nowrap font-Poppins text-base font-normal leading-[1.8rem] text-white opacity-70 transition-all duration-300 hover:text-lightBlue"
+                    className="w-max cursor-pointer text-nowrap font-Poppins text-base font-light leading-[1.8rem] text-white opacity-70 transition-all duration-300 hover:text-lightBlue"
                   >
                     {item}
                   </li>
@@ -118,16 +118,16 @@ const Footer = () => {
           © 2024 Optimity Logics. All rights reserved.
         </span>
         <ul className="flex flex-wrap items-center justify-center gap-[30px] gap-y-2 font-Poppins text-sm font-normal leading-6 text-white">
-          <li className="cursor-pointer transition-all duration-300 hover:font-medium hover:text-lightBlue">
+          <li className="cursor-pointer transition-all duration-300 hover:text-lightBlue">
             About Us
           </li>
-          <li className="cursor-pointer transition-all duration-300 hover:font-medium hover:text-lightBlue">
+          <li className="cursor-pointer transition-all duration-300 hover:text-lightBlue">
             Insights
           </li>
-          <li className="cursor-pointer transition-all duration-300 hover:font-medium hover:text-lightBlue">
+          <li className="cursor-pointer transition-all duration-300 hover:text-lightBlue">
             Careers
           </li>
-          <li className="cursor-pointer transition-all duration-300 hover:font-medium hover:text-lightBlue">
+          <li className="cursor-pointer transition-all duration-300 hover:text-lightBlue">
             Privacy Policy
           </li>
           <li className="cursor-pointer hover:text-lightBlue">Sitemap</li>

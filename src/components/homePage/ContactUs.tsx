@@ -52,10 +52,10 @@ const ContactUs = () => {
             dangerouslySetInnerHTML={{
               __html: `We’re Here to <span>Help, Anytime.</span>`,
             }}
-            className="text-center font-Inter text-[45px] font-semibold leading-[47px] text-lightBlack lg:text-start 4xl:text-[60px] 4xl:leading-[65px]"
+            className="text-center font-Poppins text-[45px] font-semibold leading-[47px] text-lightBlack lg:text-start 4xl:text-[60px] 4xl:leading-[65px]"
           />
         </div>
-        <p className="text-center font-Inter text-base font-normal leading-[19.36px] text-[#595959] lg:text-start">
+        <p className="text-center font-Poppins text-base font-normal leading-[19.36px] text-[#595959] lg:text-start">
           Our support team is ready to provide prompt solutions and guidance to
           ensure your experience with us is seamless and satisfying.
         </p>
@@ -74,10 +74,10 @@ const ContactUs = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.firstName}
-              className="w-full rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
+              className="w-full rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Poppins text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
             />
             {/* {formik.touched.firstName && formik.errors.firstName ? (
-              <div className="font-Inter text-lg font-medium leading-6 text-red">
+              <div className="font-Poppins text-lg font-medium leading-6 text-red">
                 {formik.errors.firstName}
               </div>
             ) : null} */}
@@ -91,10 +91,10 @@ const ContactUs = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.lastName}
-              className="w-full rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
+              className="w-full rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Poppins text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
             />
             {/* {formik.touched.lastName && formik.errors.lastName ? (
-              <div className="font-Inter text-lg font-medium leading-6 text-red">
+              <div className="font-Poppins text-lg font-medium leading-6 text-red">
                 {formik.errors.lastName}
               </div>
             ) : null} */}
@@ -110,7 +110,7 @@ const ContactUs = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
-            className="w-full rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
+            className="w-full rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Poppins text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
           />
           {/* {formik.touched.email && formik.errors.email ? (
             <div>{formik.errors.email}</div>
@@ -126,7 +126,7 @@ const ContactUs = () => {
             onClick={() => setIsOpen(!isOpen)}
             onFocus={() => setIsOpen(true)}
             value={formik.values.subject}
-            className="w-full appearance-none rounded-xl border-[1.33px] border-secGray bg-transparent p-4 pr-10 font-Inter text-[18.57px] font-normal leading-[22.47px] text-mediumGray outline-none 3xl:rounded-[20px] 3xl:p-[23.87px]"
+            className="w-full appearance-none rounded-xl border-[1.33px] border-secGray bg-transparent p-4 pr-10 font-Poppins text-[18.57px] font-normal leading-[22.47px] text-mediumGray outline-none 3xl:rounded-[20px] 3xl:p-[23.87px]"
           >
             <option value="">Select a subject</option>
             <option value="General Inquiry" onClick={() => setIsOpen(false)}>
@@ -169,7 +169,7 @@ const ContactUs = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.description}
-            className="w-full resize-none rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Inter text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
+            className="w-full resize-none rounded-xl border-[1.33px] border-secGray bg-transparent p-4 font-Poppins text-[18.57px] font-normal leading-[22.47px] outline-none placeholder:text-mediumGray 3xl:rounded-[20px] 3xl:p-[23.87px]"
           />
           {/* {formik.touched.description && formik.errors.description ? (
             <div>{formik.errors.description}</div>

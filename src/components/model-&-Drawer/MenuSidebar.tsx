@@ -71,7 +71,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
             <Link
               href={'/'}
               onClick={handleCloseDrower}
-              className="px-2 py-2.5 font-Inter text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6"
+              className="px-2 py-2.5 font-Poppins text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6"
             >
               Home
             </Link>
@@ -84,7 +84,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                       aria-label={`Accordion ${index + 1}`}
                       title={
                         <div className={`!py-0`}>
-                          <span className="font-Inter text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6">
+                          <span className="font-Poppins text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6">
                             {item?.title}
                           </span>
                         </div>
@@ -97,7 +97,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                             href={'/'}
                             key={ind}
                             onClick={handleCloseDrower}
-                            className="mb-3 block w-full max-w-[619px] font-Inter text-base font-normal leading-[19.36px] text-charcoalBlue opacity-50 lg:ml-[72px] xl:ml-20"
+                            className="mb-3 block w-full max-w-[619px] font-Poppins text-base font-normal leading-[19.36px] text-charcoalBlue opacity-50 lg:ml-[72px] xl:ml-20"
                           >
                             {items}
                           </Link>
@@ -109,7 +109,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
             <Link
               href={'/'}
               onClick={handleCloseDrower}
-              className="px-2 py-2.5 font-Inter text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6"
+              className="px-2 py-2.5 font-Poppins text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6"
             >
               Blog
             </Link>

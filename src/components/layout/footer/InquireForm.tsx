@@ -62,11 +62,11 @@ const InquireForm = () => {
 
   return (
     <div className="flex w-full max-w-[697px] flex-col gap-5 rounded-3xl border border-[#ffffff4a] bg-white/5 px-[22.5px] py-9">
-      <h3 className="font-Inter text-xl font-medium leading-6 text-white xl:text-2xl xl:leading-7 5xl:text-[26px] 5xl:leading-8">
+      <h3 className="font-Poppins text-xl font-medium leading-6 text-white xl:text-2xl xl:leading-7 5xl:text-[26px] 5xl:leading-8">
         Collaborate with <span className="font-semibold">Optimity Logics</span>
       </h3>
       <form onSubmit={formik.handleSubmit} className="space-y-6">
-        <div className="flex w-full gap-6">
+        <div className="flex w-full flex-col gap-6 sm:flex-row">
           {/* First Name */}
           <div className="w-full">
             <input
@@ -77,7 +77,7 @@ const InquireForm = () => {
               value={formik.values.firstName}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
             />
             {formik.touched.firstName && formik.errors.firstName ? (
               <div className="mt-1 text-sm text-red">
@@ -96,7 +96,7 @@ const InquireForm = () => {
               value={formik.values.lastName}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
             />
             {formik.touched.lastName && formik.errors.lastName ? (
               <div className="mt-1 text-sm text-red">
@@ -106,7 +106,7 @@ const InquireForm = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-6">
+        <div className="flex flex-col items-center gap-6 sm:flex-row">
           {/* Email */}
           <div className="w-full">
             <input
@@ -117,7 +117,7 @@ const InquireForm = () => {
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
             />
             {formik.touched.email && formik.errors.email ? (
               <div className="mt-1 text-sm text-red">{formik.errors.email}</div>
@@ -139,7 +139,7 @@ const InquireForm = () => {
                 }
               }}
               onBlur={() => formik.setFieldTouched('country', true)}
-              className="!placeholder:text-[#ffffff80] w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] !text-[#ffffff80] focus:outline-none"
+              className="!placeholder:text-[#ffffff80] w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] !text-[#ffffff80] focus:outline-none"
               placeHolder="Search "
             />
             {formik.touched.country && formik.errors.country ? (
@@ -158,7 +158,7 @@ const InquireForm = () => {
             className="w-full border-none"
             placeholder="Phone number"
             defaultCountry="in" // Use lowercase 'in' for India
-            inputClassName="w-full !border-b !border-b-[#ffffff4a] !bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] placeholder:text-[#ffffff80] focus:outline-none !outline-none !border-transparent !rounded-none !text-[#ffffff4a]"
+            inputClassName="w-full !border-b !border-b-[#ffffff4a] !bg-transparent pr-4 pb-5 pt-4 font-Poppins text-base font-normal leading-[19.36px] placeholder:text-[#ffffff80] focus:outline-none !outline-none !border-transparent !rounded-none !text-[#ffffff4a]"
             countrySelectorStyleProps={{
               className: '!border-none !pl-2 ',
               buttonClassName: '!border-none !rounded-l-lg !bg-transparent',
@@ -180,7 +180,7 @@ const InquireForm = () => {
             value={formik.values.aboutProject}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            className="appearance-[#ffffff4a] w-full border-b border-b-[#ffffff4a] bg-transparent px-4 pb-5 pt-4 font-Inter text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none"
+            className="appearance-[#ffffff4a] w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
           />
           {formik.touched.aboutProject && formik.errors.aboutProject ? (
             <div className="mt-1 text-sm text-red">
@@ -199,7 +199,7 @@ const InquireForm = () => {
             width="100%"
             height="175px"
           />
-          <p className="font-Inter text-base font-normal leading-5 text-[#ffffff4a]">
+          <p className="font-Poppins text-base font-normal leading-5 text-[#ffffff4a]">
             Please upload a file with one of the following extensions: .pdf,
             .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt
           </p>
@@ -209,7 +209,7 @@ const InquireForm = () => {
         </div>
         <button
           type="submit"
-          className="flex cursor-pointer items-center gap-2.5 rounded-[30px] bg-white px-4 py-3 font-Inter text-sm font-semibold uppercase md:px-[26px] md:py-4 md:text-base md:leading-6"
+          className="flex cursor-pointer items-center gap-2.5 rounded-[30px] bg-white px-4 py-3 font-Poppins text-sm font-semibold uppercase md:px-[26px] md:py-4 md:text-base md:leading-6"
         >
           inquire now <Image src={arrow} alt="Arrow" width={20} height={20} />
         </button>
