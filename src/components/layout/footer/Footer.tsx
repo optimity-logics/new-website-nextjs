@@ -103,7 +103,7 @@ const Footer = () => {
                 {section.items.map((item, idx) => (
                   <li
                     key={idx}
-                    className="w-max cursor-pointer text-nowrap font-Poppins text-base font-normal leading-[1.8rem] text-white opacity-70 transition-all duration-300 hover:text-lightBlue"
+                    className="w-max cursor-pointer text-nowrap font-Poppins text-base font-light leading-[1.8rem] text-white opacity-70 transition-all duration-300 hover:text-lightBlue"
                   >
                     {item}
                   </li>

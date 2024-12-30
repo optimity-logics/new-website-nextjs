@@ -26,9 +26,9 @@ const Industries = () => {
         LinkName="Connect to know more"
         isDark={false}
       />
-      <div className="swiper-container relative h-full w-full max-w-[1820px] 4xl:ml-20">
+      <div className="swiper-container relative h-full w-full max-w-[1820px] 4xl:ml-20 5xl:ml-[100px]">
         <Swiper
-          spaceBetween={70}
+          spaceBetween={30}
           slidesPerView={1}
           modules={[Autoplay]}
           autoplay={{
@@ -46,12 +46,14 @@ const Industries = () => {
             },
             1440: {
               slidesPerView: 2.5,
+              spaceBetween: 60,
             },
             1836: {
               slidesPerView: 3.2,
+              spaceBetween: 70,
             },
           }}
-          className="mySwiper h-full !w-full"
+          className="h-full !w-full"
         >
           {industriesData &&
             industriesData.map((item, index) => (
@@ -61,7 +63,7 @@ const Industries = () => {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="group flex cursor-pointer flex-col gap-4 rounded-3xl bg-[#b5b5b51a] p-[30px] transition-all duration-300 hover:bg-[#02ade11a] sm:gap-[25px]">
+                <div className="group flex min-h-full cursor-pointer flex-col gap-4 rounded-3xl bg-[#b5b5b51a] p-[30px] transition-all duration-300 hover:bg-[#02ade11a] sm:gap-[25px]">
                   <div className="-mt-[63px] w-max rounded-full border-2 border-[#192020] bg-white p-4 transition-all duration-300 group-hover:border-lightBlue">
                     <Image
                       src={

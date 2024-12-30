@@ -4,19 +4,25 @@ import Container from '@/components/common/Container';
 import { NavBarData, servicesMegsmenuDate } from '@/components/utils/Constant';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import logo from '../../../../public/svg/logo.svg';
 import mobileScreenLogo from '../../../../public/svg/mobileScreenLogo.svg';
 import hamburger from '../../../../public/svg/hamburger-menu.svg';
 import MenuSidebar from '@/components/model-&-Drawer/MenuSidebar';
+import useOutsideClick from '@/components/hooks/useClickOutSide/page';
 
 const NavBar = () => {
+  const megaMenuRef = useRef<HTMLDivElement>(null);
   const [showMegaMenu, setShowMegaMenu] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [isClient, setIsClient] = useState(false); // To check for client-side rendering
+  const [isClient, setIsClient] = useState(false);
+
+  useOutsideClick(megaMenuRef, () => {
+    setShowMegaMenu(false);
+  });
 
   useEffect(() => {
-    setIsClient(true); // Set to true when the component is mounted on the client
+    setIsClient(true);
   }, []);
 
   const handleOpenMenuDrawer = () => {
@@ -78,7 +84,7 @@ const NavBar = () => {
               >
                 <Link href={''}>{item?.menuItem}</Link>
                 {item?.menuItem === 'Services' && showMegaMenu && (
-                  <div className="scale-up-ver-top">
+                  <div ref={megaMenuRef} className="scale-up-ver-top">
                     <div
                       className={`megaMenu absolute left-1/2 top-full mt-6 flex flex-col gap-[61.32px] rounded-xl border-t-4 border-lightBlue bg-white p-7 shadow-lg transition-all duration-500 ease-in-out xl:mt-9 3xl:px-[49.43px] 3xl:py-[51.31px]`}
                     >

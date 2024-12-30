@@ -15,17 +15,16 @@ const ClientReview = () => {
   const filledStarPath =
     'M17.6347 5.07802L19.7805 9.36955C20.0731 9.96695 20.8533 10.54 21.5117 10.6497L25.4009 11.2959C27.888 11.7104 28.4732 13.5148 26.681 15.2948L23.6575 18.3184C23.1454 18.8304 22.865 19.818 23.0235 20.5251L23.8891 24.268C24.5718 27.2306 22.9991 28.3766 20.3779 26.8283L16.7325 24.6703C16.0741 24.2802 14.9891 24.2802 14.3185 24.6703L10.6731 26.8283C8.06409 28.3766 6.47915 27.2184 7.1619 24.268L8.02752 20.5251C8.18601 19.818 7.9056 18.8304 7.39354 18.3184L4.36997 15.2948C2.58996 13.5148 3.16297 11.7104 5.65011 11.2959L9.53931 10.6497C10.1855 10.54 10.9658 9.96695 11.2584 9.36955L13.4041 5.07802C14.5745 2.74938 16.4765 2.74938 17.6347 5.07802Z';
 
-  const [visibleCount, setVisibleCount] = useState(9); // State to manage visible items
-  const [isLoading, setIsLoading] = useState(false); // State to manage loading spinner
+  const [visibleCount, setVisibleCount] = useState(9);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleReadMore = () => {
-    setIsLoading(true); // Start loading spinner
+    setIsLoading(true);
     setTimeout(() => {
-      setVisibleCount((prevCount) => prevCount + 6); // Increase visible count
-      setIsLoading(false); // Stop loading spinner
-    }, 1000); // Simulate a loading delay
+      setVisibleCount((prevCount) => prevCount + 6);
+      setIsLoading(false);
+    }, 1000);
   };
-  // console.log(visibleCount < ClientsReview.length);
 
   return (
     <Container
@@ -62,7 +61,7 @@ const ClientReview = () => {
                     {item?.description}
                   </p>
                 </div>
-                <span className="font-Poppins text-[22px] font-semibold leading-[26.63px] text-white">
+                <span className="font-Poppins text-[22px] font-light leading-[26.63px] text-white">
                   {item?.NameOrPosition}
                 </span>
               </div>

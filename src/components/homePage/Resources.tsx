@@ -20,41 +20,46 @@ const Resources = () => {
         btnStyle="bg-herobtnbg bg-cover bg-no-repeat !py-2.5 !px-[23px] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-black"
         LinkName="Explore all blogs"
       />
-      <div className="mx-auto w-full 4xl:ml-[100px]">
+      <div className="mx-auto h-full w-full 4xl:ml-[100px]">
         <Swiper
-          spaceBetween={40}
+          spaceBetween={20}
           slidesPerView={1}
           modules={[Autoplay]}
-          // autoplay={{
-          //   delay: 2000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           speed={900}
           loop={true}
           breakpoints={{
             540: {
               slidesPerView: 2,
-              spaceBetween: 10,
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 3.5,
-              spaceBetween: 30,
+              slidesPerView: 2.5,
             },
             1280: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 30,
             },
+            1440: {
+              slidesPerView: 3.5,
+              spaceBetween: 40,
+            },
+            1660: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
           }}
-          className="w-full"
+          className="h-full w-full"
         >
           {resourcesData &&
             resourcesData.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="group flex cursor-pointer flex-col gap-8">
+              <SwiperSlide key={index} className="!h-auto">
+                <div className="group flex h-full min-h-full cursor-pointer flex-col gap-8">
                   <div>
                     <Image
                       src={item?.img}
@@ -63,23 +68,25 @@ const Resources = () => {
                       height={230}
                     />
                   </div>
-                  <div className="flex flex-col gap-[17.39px]">
-                    <div className="flex flex-col gap-[9px]">
-                      <h3 className="font-Poppins text-xl font-bold leading-6 text-graphite">
+                  <div className="flex h-full flex-col justify-between gap-[17.39px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-Poppins text-xl font-medium leading-6 text-[#192020] 5xl:text-[26px] 5xl:leading-8">
                         {item?.title}
                       </h3>
-                      <p className="font-Poppins text-base font-normal leading-[22.4px] text-graphite">
+                      <p className="font-Poppins text-base font-light leading-[1.6rem] text-[#192020] 5xl:text-lg 5xl:leading-[1.8rem]">
                         {item?.description}
                       </p>
                     </div>
-                    <Link
-                      href={'/'}
-                      className="font-Poppins text-sm font-medium leading-[19.6px] text-red"
-                    >
-                      Continue Reading
-                    </Link>
-                    <div className="relative mt-[5px] h-0.5 w-full bg-lightSilver">
-                      <span className="absolute left-0 top-0 h-full w-0 bg-red transition-all duration-300 ease-out group-hover:w-full"></span>
+                    <div className="flex flex-col gap-3">
+                      <Link
+                        href={'/'}
+                        className="font-Poppins text-sm font-medium leading-[19.6px] text-red"
+                      >
+                        Continue Reading
+                      </Link>
+                      <div className="relative mt-[5px] h-0.5 w-full bg-lightSilver">
+                        <span className="absolute left-0 top-0 h-full w-0 bg-red transition-all duration-300 ease-out group-hover:w-full"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
