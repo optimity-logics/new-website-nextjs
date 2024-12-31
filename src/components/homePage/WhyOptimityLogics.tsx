@@ -3,21 +3,13 @@ import React from 'react';
 import Container from '../common/Container';
 import Button from '../common/Button';
 import styled from 'styled-components';
+import { workingData } from '../utils/Constant';
 
 const HighlitedHeading = styled.h1`
   span {
     color: #e94e25;
   }
 `;
-
-const statsData = [
-  { value: '5 +', label: 'Years of Excellence' },
-  { value: '500 +', label: 'Happy Clients' },
-  { value: '20 +', label: 'AI Specialists' },
-  { value: '1000 +', label: 'Successful Projects' },
-  { value: '50%', label: 'Client Retention' },
-  { value: '20%', label: 'Faster Product Delivery' },
-];
 
 const WhyOptimityLogics = () => {
   return (
@@ -46,7 +38,7 @@ const WhyOptimityLogics = () => {
       </div>
       <div className="w-full max-w-[688px] rounded-[10px] bg-teambg bg-cover bg-no-repeat">
         <div className="grid w-full grid-cols-2 place-items-center justify-center gap-4 p-4 sm:py-11 lg:px-11 4xl:px-[80px] 4xl:py-[110px] 5xl:px-[122px] 5xl:py-[156px]">
-          {statsData.map((stat, index) => (
+          {workingData.map((stat, index) => (
             <div
               key={index}
               className="h-full w-full max-w-[214px] rounded-[16px] border-[8px] border-[#ffffffcc]"

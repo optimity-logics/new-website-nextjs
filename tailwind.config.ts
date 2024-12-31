@@ -31,8 +31,8 @@ export default {
         homepagebg: "url('/webp/hero-banner.webp')",
         herobg: "url('/webp/herobg.webp')",
         technologbg: "url('/webp/technology-we-work-bg.webp')",
-        tectnologyContentbg: "url('/images/footer/footerbg.png')",
-        teambg: "url('/images/team.png')",
+        tectnologyContentbg: "url('/web/footer/footerbg.webp')",
+        teambg: "url('/webp/team.webp')",
         footer: "url('/webp/footerbg.webp')",
         sectionBg: "url('/svg/common-section-bg.svg')",
         'custom-gradient':

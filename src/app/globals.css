@@ -6,6 +6,12 @@
 
 /* smooth-scrolling */
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -138,7 +144,7 @@ html {
 /* uploader  */
 .uploader .btn--primary {
   background-color: #1a6aa3 !important;
-  font-family: 'Inter' !important;
+  font-family: 'Poppins' !important;
   border: none !important;
   padding: 0 10px !important;
   font-size: 16px !important;
@@ -160,12 +166,12 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
 }
 
 .no-scrollbar::-webkit-scrollbar {
-  display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+  display: none;
 }
 
 .no-scrollbar {
-  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* country dropdown */
@@ -175,9 +181,7 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
   border-radius: 0px !important;
   padding-bottom: 10px;
 }
-.react-international-phone-country-selector-dropdown {
-  z-index: 99 !important;
-}
+
 .stsearch-box input {
   background: transparent !important;
   border: none !important;
@@ -194,6 +198,3 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
 .stdropdown-tools {
   display: none !important;
 }
-/* .tap-highlight-transparent {
-  padding: 10px 0 !important;
-} */

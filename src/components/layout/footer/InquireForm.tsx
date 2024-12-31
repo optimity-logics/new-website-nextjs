@@ -160,8 +160,8 @@ const InquireForm = () => {
             defaultCountry="in" // Use lowercase 'in' for India
             inputClassName="w-full !border-b !border-b-[#ffffff4a] !bg-transparent pr-4 pb-5 pt-4 font-Poppins text-base font-normal leading-[19.36px] placeholder:text-[#ffffff80] focus:outline-none !outline-none !border-transparent !rounded-none !text-[#ffffff4a]"
             countrySelectorStyleProps={{
-              className: '!border-none !pl-2 ',
-              buttonClassName: '!border-none !rounded-l-lg !bg-transparent',
+              className: '!border-none !pl-2 !z-[99]',
+              buttonClassName: '!border-none !rounded-l-lg !bg-transparent ',
             }}
           />
 

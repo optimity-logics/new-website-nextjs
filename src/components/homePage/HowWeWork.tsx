@@ -3,7 +3,7 @@ import SectionHeading from '../common/SectionHeading';
 import Container from '../common/Container';
 import Image from 'next/image';
 import { howWeWorkData } from '../utils/Constant';
-import msgframe from '../../../public/images/msgframe.png';
+import msgframe from '../../../public/webp/msgframe.webp';
 
 const HowWeWork = () => {
   return (
@@ -41,7 +41,7 @@ const HowWeWork = () => {
             <Image
               src={msgframe}
               alt="chat-msg-image"
-              width={550}
+              width={533}
               height={649}
             />
           </div>

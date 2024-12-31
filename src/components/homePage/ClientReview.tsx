@@ -28,7 +28,7 @@ const ClientReview = () => {
 
   return (
     <Container
-      className="mb-10 bg-technologbg bg-cover bg-no-repeat py-20 md:mb-12 xl:mb-16 4xl:mb-[120px] 5xl:px-[200px]"
+      className="mb-10 bg-red bg-technologbg bg-cover bg-no-repeat py-20 md:mb-12 xl:mb-16 4xl:mb-[120px] 5xl:px-[200px]"
       isBackground={true}
     >
       <div className="flex flex-col gap-5 lg:gap-[60px]">
@@ -44,7 +44,7 @@ const ClientReview = () => {
             clientsReview.slice(0, visibleCount).map((item, index) => (
               <div
                 key={index}
-                className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-[51.74px] rounded-[18.91px] bg-[#ffffff1a] p-5 backdrop-blur-md transition-all duration-300 hover:bg-turquoise md:px-[34px] md:py-[30px]`}
+                className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-[51.74px] rounded-[18.91px] bg-[#1A1A1A] p-5 transition-all duration-300 md:px-[34px] md:py-[30px]`}
               >
                 <div className="flex flex-col gap-[25px]">
                   <StarRatings

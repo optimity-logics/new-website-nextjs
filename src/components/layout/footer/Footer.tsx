@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-6 sm:gap-[30px]">
               {/* <div className="flex flex-col gap-[30px]"> */}
-              <h3 className="font-Poppins text-[28px] font-bold leading-[30px] text-white 5xl:text-4xl 5xl:leading-[38px]">
+              <h3 className="font-Poppins text-[28px] font-semibold leading-[30px] text-white 5xl:text-4xl 5xl:leading-[38px]">
                 <span className="highlitedtextfooter block">
                   Have a question?
                 </span>
