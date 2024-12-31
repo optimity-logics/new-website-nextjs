@@ -35,18 +35,18 @@ const Industries = () => {
             delay: 2000,
             disableOnInteraction: false,
           }}
-          speed={900}
+          speed={1000}
           loop={true}
           breakpoints={{
             640: {
               slidesPerView: 1.5,
             },
             1024: {
-              slidesPerView: 2,
+              slidesPerView: 2.5,
             },
             1440: {
-              slidesPerView: 2.5,
-              spaceBetween: 60,
+              slidesPerView: 3.5,
+              spaceBetween: 40,
             },
             1836: {
               slidesPerView: 3.2,
@@ -92,8 +92,8 @@ const Industries = () => {
                           <Image
                             src={checkmark}
                             alt="check-mark"
-                            width={20}
-                            height={20}
+                            width={24}
+                            height={25}
                             // className="mt-0.5"
                           />
                           {items}

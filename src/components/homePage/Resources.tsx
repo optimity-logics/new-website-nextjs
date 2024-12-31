@@ -9,10 +9,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionHeading from '../common/SectionHeading';
 import { resourcesData } from '../utils/Constant';
 import { Autoplay } from 'swiper/modules';
+import Container from '../common/Container';
 
 const Resources = () => {
   return (
-    <div className="mb-10 flex flex-col gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:px-10 3xl:gap-10 3xl:px-20 4xl:mb-[120px] 4xl:gap-[60px] 4xl:px-0">
+    <Container className="mb-10 flex flex-col gap-8 overflow-x-hidden md:mb-12 xl:mb-16 3xl:gap-10 3xl:px-0 4xl:mb-[120px] 4xl:gap-[60px] 5xl:px-0">
       <SectionHeading
         heading="Know what’s <span> trending in AI </span>"
         description="Insights on the global impact of artificial intelligence across multiple domains"
@@ -29,7 +30,7 @@ const Resources = () => {
             delay: 2000,
             disableOnInteraction: false,
           }}
-          speed={900}
+          speed={1000}
           loop={true}
           breakpoints={{
             540: {
@@ -94,7 +95,7 @@ const Resources = () => {
             ))}
         </Swiper>
       </div>
-    </div>
+    </Container>
   );
 };
 

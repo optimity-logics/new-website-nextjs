@@ -35,7 +35,7 @@ const OurExpertise = () => {
               delay: 2000,
               disableOnInteraction: false,
             }}
-            speed={900}
+            speed={1000}
             loop={true}
             breakpoints={{
               640: {

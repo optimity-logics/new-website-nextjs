@@ -76,7 +76,14 @@ export const logoIcons = [
   waosim,
   teqdiligent,
 ];
-
+export const workingData = [
+  { value: '5 +', label: 'Years of Excellence' },
+  { value: '500 +', label: 'Happy Clients' },
+  { value: '20 +', label: 'AI Specialists' },
+  { value: '1000 +', label: 'Successful Projects' },
+  { value: '50%', label: 'Client Retention' },
+  { value: '20%', label: 'Faster Product Delivery' },
+];
 export const ourExpertiseData = [
   {
     id: 1,
@@ -145,22 +152,22 @@ export const ourExpertiseData = [
 
 export const deployProjects = [
   {
-    projectImg: '/images/project/riskbeach.png',
+    projectImg: '/webp/project/riskbeach.webp',
     projectName: 'Ricks Beach Rentals',
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
   {
-    projectImg: '/images/project/hts.png',
+    projectImg: '/webp/project/hts.webp',
     projectName: 'HTS',
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
   {
-    projectImg: '/images/project/hopper.png',
+    projectImg: '/webp/project/hopper.webp',
     projectName: 'Hopper',
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
   {
-    projectImg: '/images/project/riskbeach.png',
+    projectImg: '/webp/project/riskbeach.webp',
     projectName: 'Ricks Beach',
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
@@ -340,7 +347,7 @@ export const footerData: IFooterDataType[] = [
 export const technologyWeWorkData = [
   {
     technologyName: 'Mobile',
-    technologyImage: '/images/technologyWeWork/mobile.png',
+    technologyImage: '/webp/technologyWeWork/mobile.webp',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -378,7 +385,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'Backend',
-    technologyImage: '/images/technologyWeWork/database.png',
+    technologyImage: '/webp/technologyWeWork/database.webp',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -397,7 +404,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'Database',
-    technologyImage: '/images/technologyWeWork/database.png',
+    technologyImage: '/webp/technologyWeWork/database.webp',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -435,7 +442,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'DevOps',
-    technologyImage: '/images/technologyWeWork/devops.png',
+    technologyImage: '/webp/technologyWeWork/devops.webp',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,

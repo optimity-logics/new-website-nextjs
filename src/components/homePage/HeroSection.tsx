@@ -7,9 +7,9 @@ import Container from '../common/Container';
 
 const HeroSection = () => {
   return (
-    <div className="mb-10 h-full sm:mb-[100px]">
+    <div className="mb-10 sm:mb-[100px]">
       <Container
-        className="h-full w-full bg-homepagebg bg-cover bg-no-repeat px-4 pb-[50px] sm:px-6 sm:pb-5 md:px-8 lg:px-10"
+        className="w-full bg-homepagebg bg-cover bg-no-repeat px-4 pb-[50px] sm:px-6 sm:pb-5 md:px-8 lg:px-10"
         styleClass={{ backgroundSize: '100% 100%' }}
       >
         <div className="mx-auto flex h-full max-w-[1251px] flex-col items-center justify-center gap-5 py-8 xs:h-[calc(100vh-250px)] sm:h-[calc(100vh-205px)] sm:py-11 md:h-[calc(100vh-240px)] md:gap-[26px] xl:pt-16 3xl:h-[calc(100vh-260px)] 3xl:gap-[30px] 3xl:pt-[100px] 4xl:pt-[147px]">
@@ -35,9 +35,9 @@ const HeroSection = () => {
           />
         </div>
       </Container>
-      <div className="px-3">
+      <div className="mx-auto max-w-[1920px] px-3">
         <div className="-mt-[37px] flex flex-col items-center gap-[25px] rounded-[24px] border border-darkGray bg-black px-5 pb-[22px] pt-[30px]">
-          <span className="text-center font-Poppins text-lg font-normal leading-7 text-white">
+          <span className="text-center font-Poppins text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
           </span>
           <Marquee gradient={false} speed={65}>

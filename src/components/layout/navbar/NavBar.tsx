@@ -77,7 +77,7 @@ const NavBar = () => {
             NavBarData.map((item) => (
               <li
                 key={item?.id}
-                className="relative cursor-pointer font-Poppins text-base font-medium leading-6 text-darkBlack transition-all duration-300 hover:text-lightBlue lg:text-lg xl:text-xl xl:leading-[24.2px]"
+                className="relative cursor-pointer font-Poppins text-base font-normal uppercase leading-6 text-darkBlack transition-all duration-300 hover:text-lightBlue"
                 onMouseEnter={() =>
                   item?.menuItem === 'Services' && handleHover(true)
                 }
@@ -99,7 +99,7 @@ const NavBar = () => {
                                 {item.items.map((items, idx) => (
                                   <Link
                                     key={idx}
-                                    href=""
+                                    href="/"
                                     className="w-max cursor-pointer font-Poppins text-base font-normal leading-5 text-charcoalBlue transition-all duration-300 hover:text-lightBlue"
                                   >
                                     {items}
@@ -110,7 +110,7 @@ const NavBar = () => {
                           ))}
                         </div>
                         <div className="flex w-full max-w-[389px] flex-col gap-4 rounded-2xl border border-[#e4e4e4] bg-[#fafbfd] p-6 4xl:p-[35px]">
-                          <h3 className="font-Poppins text-xl font-semibold leading-6 text-[#212529]">
+                          <h3 className="font-Poppins text-lg font-semibold leading-5 text-[#212529] 4xl:text-xl 4xl:leading-6">
                             An AI development company trusted by clients
                           </h3>
                           <span className="pr-4 font-Poppins text-base font-normal leading-5 text-[#696969]">

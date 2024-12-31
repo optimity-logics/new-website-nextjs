@@ -49,7 +49,7 @@ const SectionHeading = ({
       </p>
       {LinkName && (
         <Link
-          href={''}
+          href={'/'}
           className={`${LinkStyle} flex items-center gap-[15.32px] font-Poppins text-base font-semibold leading-6 text-red`}
         >
           {' '}

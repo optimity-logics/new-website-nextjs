@@ -39,17 +39,15 @@ const TechnologyWeWork = () => {
           aria-labelledby="technology-tabs"
           radius="full"
           selectedKey={activeKey}
-          className="!font-Poppins !text-base !font-medium !leading-[28.8px]"
+          className="!font-Poppins !text-base !font-normal !leading-[28.8px]"
           onSelectionChange={(e) => handlChangeTechnology(e as string)}
         >
           {technologyWeWorkData.map((tech) => (
             <Tab
               key={tech.technologyName}
               title={tech.technologyName}
-              className="!px-[22px] !py-4 !font-Poppins !text-base !font-medium !leading-5"
-            >
-              {/* Tab content can go here if needed */}
-            </Tab>
+              className="h-11 !px-[22px] !py-4 !font-Poppins !text-base !font-normal !leading-5"
+            ></Tab>
           ))}
         </Tabs>
       </div>
@@ -66,15 +64,15 @@ const TechnologyWeWork = () => {
             alt={selectedTechnology?.technologyName || 'technology-img'}
             width={628}
             height={461}
-            className="max-h-[461px] md:max-w-[400px] 5xl:max-w-[628px]"
+            className="max-h-[461px] rounded-2xl object-fill md:max-w-[400px] 5xl:max-w-max"
           />
         </div>
         <div className="flex flex-col gap-[25px]">
           <div className="flex flex-col gap-5">
-            <h2 className="font-Poppins text-4xl font-bold leading-10 text-red md:text-[48px] md:leading-[52px]">
+            <h2 className="font-Poppins text-4xl font-semibold leading-10 text-red 5xl:text-[48px] 5xl:leading-[52px]">
               {selectedTechnology?.technologyName}
             </h2>
-            <div className="flex flex-col gap-4 font-Poppins text-base font-normal leading-5 text-[#2B3857] opacity-65 sm:gap-8 3xl:text-lg 3xl:leading-[33px]">
+            <div className="flex flex-col gap-4 font-Poppins text-base font-normal leading-5 tracking-[-0.015px] text-[#2B3857] opacity-65 3xl:text-lg">
               <p>{selectedTechnology?.techDescription1}</p>
               <p>{selectedTechnology?.techDescription2}</p>
             </div>
