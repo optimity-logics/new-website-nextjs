@@ -16,17 +16,17 @@ const Industries = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col items-center gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-8 xl:mb-16 xl:px-10 3xl:gap-10 4xl:mb-[120px] 4xl:gap-[60px]">
+    <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col items-center gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-0 xl:mb-16 3xl:gap-10 4xl:mb-[120px] 4xl:gap-[60px]">
       <SectionHeading
         heading="Our Industrial <span> Expertise </span>"
         description="Our team of industry experts curates progressive solutions that befit your requirements"
         className="max-w-[1586px]"
         btnName="Industries "
-        btnStyle=" bg-herobtnbg bg-cover bg-no-repeat !py-2.5 !px-[23px] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-black"
+        btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
         LinkName="Connect to know more"
         isDark={false}
       />
-      <div className="swiper-container relative h-full w-full max-w-[1820px] 4xl:ml-20 5xl:ml-[100px]">
+      <div className="m h-full w-full">
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
@@ -38,11 +38,17 @@ const Industries = () => {
           speed={1000}
           loop={true}
           breakpoints={{
+            540: {
+              slidesPerView: 1.3,
+            },
             640: {
               slidesPerView: 1.5,
             },
             1024: {
               slidesPerView: 2.5,
+            },
+            1280: {
+              slidesPerView: 2.8,
             },
             1440: {
               slidesPerView: 3.5,
@@ -78,7 +84,7 @@ const Industries = () => {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div className="flex items-center gap-2">
-                      <h4 className="font-Poppins text-xl font-semibold leading-6 text-[#192020] transition-all duration-300 group-hover:text-lightBlue xl:text-[26px] xl:leading-8">
+                      <h4 className="font-Poppins text-xl font-normal leading-6 text-[#192020] transition-all duration-300 group-hover:text-lightBlue xl:text-[26px] xl:leading-8 5xl:font-semibold">
                         {item?.industriesName}
                       </h4>
                       <Image src={arrow} alt="arrow" width={24} height={24} />
@@ -87,7 +93,7 @@ const Industries = () => {
                       {item?.industriesWork.map((items, ind) => (
                         <li
                           key={ind}
-                          className="flex items-start gap-4 font-Poppins text-base font-normal leading-5 text-[#192020] sm:text-lg sm:leading-[28.8px]"
+                          className="flex items-start gap-4 font-Poppins text-base font-light leading-5 text-[#192020] 4xl:text-lg 4xl:font-normal 4xl:leading-[28.8px]"
                         >
                           <Image
                             src={checkmark}

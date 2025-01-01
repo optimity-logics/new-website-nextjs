@@ -9,19 +9,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionHeading from '../common/SectionHeading';
 import { resourcesData } from '../utils/Constant';
 import { Autoplay } from 'swiper/modules';
-import Container from '../common/Container';
 
 const Resources = () => {
   return (
-    <Container className="mb-10 flex flex-col gap-8 overflow-x-hidden md:mb-12 xl:mb-16 3xl:gap-10 3xl:px-0 4xl:mb-[120px] 4xl:gap-[60px] 5xl:px-0">
+    <div className="mb-10 flex flex-col items-center gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-0 xl:mb-16 3xl:gap-10 3xl:px-0 4xl:mb-[120px] 4xl:gap-[60px] 4xl:px-0">
       <SectionHeading
         heading="Know what’s <span> trending in AI </span>"
         description="Insights on the global impact of artificial intelligence across multiple domains"
         btnName="Resources"
-        btnStyle="bg-herobtnbg bg-cover bg-no-repeat !py-2.5 !px-[23px] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-black"
+        // btnStyle="bg-herobtnbg bg-cover bg-no-repeat !py-2.5 !px-[23px] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-black"
+        btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
         LinkName="Explore all blogs"
       />
-      <div className="mx-auto h-full w-full 4xl:ml-[100px]">
+      <div className="h-full w-full">
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
@@ -34,15 +34,15 @@ const Resources = () => {
           loop={true}
           breakpoints={{
             540: {
+              slidesPerView: 1.3,
+            },
+            640: {
               slidesPerView: 2,
             },
-            768: {
-              slidesPerView: 2,
-            },
-            1024: {
+            820: {
               slidesPerView: 2.5,
             },
-            1280: {
+            1024: {
               slidesPerView: 3,
               spaceBetween: 30,
             },
@@ -60,7 +60,7 @@ const Resources = () => {
           {resourcesData &&
             resourcesData.map((item, index) => (
               <SwiperSlide key={index} className="!h-auto">
-                <div className="group flex h-full min-h-full cursor-pointer flex-col gap-8">
+                <div className="group flex h-full min-h-full cursor-pointer flex-col gap-6 xl:gap-8">
                   <div>
                     <Image
                       src={item?.img}
@@ -95,7 +95,7 @@ const Resources = () => {
             ))}
         </Swiper>
       </div>
-    </Container>
+    </div>
   );
 };
 

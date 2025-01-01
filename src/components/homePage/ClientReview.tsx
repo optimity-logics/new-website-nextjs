@@ -39,14 +39,14 @@ const ClientReview = () => {
           descriptionStyle="max-w-[590px]"
           isDark={true}
         />
-        <div className="review grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-[23px] xl:gap-y-[25px] 3xl:grid-cols-3">
+        <div className="review grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-[23px] xl:gap-y-[25px] 3xl:grid-cols-3">
           {clientsReview &&
             clientsReview.slice(0, visibleCount).map((item, index) => (
               <div
                 key={index}
-                className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-[51.74px] rounded-[18.91px] bg-[#1A1A1A] p-5 transition-all duration-300 md:px-[34px] md:py-[30px]`}
+                className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-5 rounded-[18.91px] bg-[#1A1A1A] p-5 transition-all duration-300 md:gap-6 md:px-[34px] md:py-[30px] xl:gap-[51.74px]`}
               >
-                <div className="flex flex-col gap-[25px]">
+                <div className="flex flex-col gap-5 md:gap-[25px]">
                   <StarRatings
                     rating={item?.rating || 0}
                     starRatedColor="#02ADE1"
@@ -57,11 +57,11 @@ const ClientReview = () => {
                     svgIconViewBox="0 0 31 31"
                     svgIconPath={filledStarPath}
                   />
-                  <p className="font-Poppins text-lg font-normal leading-7 text-[#757474]">
+                  <p className="font-Poppins text-base font-light leading-[1.6rem] text-white opacity-50 5xl:text-lg 5xl:leading-[1.8rem]">
                     {item?.description}
                   </p>
                 </div>
-                <span className="font-Poppins text-[22px] font-light leading-[26.63px] text-white">
+                <span className="font-Poppins text-lg font-light leading-5 text-white lg:text-[22px] lg:leading-[26.63px]">
                   {item?.NameOrPosition}
                 </span>
               </div>
@@ -74,7 +74,7 @@ const ClientReview = () => {
               >
                 <button
                   onClick={handleReadMore}
-                  className="hover: mb-8 w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Poppins font-bold leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px]"
+                  className="hover: mb-8 w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Poppins font-medium leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px]"
                   disabled={isLoading} // Disable button while loading
                 >
                   {isLoading ? (

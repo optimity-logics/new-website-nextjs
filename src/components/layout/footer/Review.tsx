@@ -5,12 +5,12 @@ import star from '../../../../public/svg/review-on-site/star.svg';
 
 const Review = () => {
   return (
-    <div className="rounded-3xl border border-[#ffffff4a] bg-[#252b2b] px-6 py-9">
-      <div className="no-scrollbar flex w-full flex-nowrap items-center overflow-x-scroll">
+    <div className="rounded-2xl border border-[#ffffff4a] bg-[#252b2b] p-5 lg:rounded-3xl lg:px-6 lg:py-9">
+      <div className="no-scrollbar flex w-full flex-nowrap items-center gap-5 overflow-x-scroll">
         {reviewsData.map((item, index) => (
           <div
             key={index}
-            className="flex w-[344px] min-w-[200px] items-center justify-evenly gap-5"
+            className="flex w-[344px] min-w-[200px] items-center justify-between gap-5"
           >
             <div>
               <Image
@@ -18,17 +18,20 @@ const Review = () => {
                 alt={item?.siteIcon}
                 width={88}
                 height={24}
+                className="object-contain"
               />
             </div>
-            <div className="flex items-center gap-1.5">
-              <Image src={star} alt="star" width={15} height={14} />
-              <span className="font-Poppins text-base font-semibold leading-7 text-white">
-                {item?.review}
-              </span>
+            <div className="flex items-center gap-5">
+              <div className="flex items-center gap-1.5">
+                <Image src={star} alt="star" width={15} height={14} />
+                <span className="font-Poppins text-base font-semibold leading-7 text-white">
+                  {item?.review}
+                </span>
+              </div>
+              {index !== reviewsData?.length - 1 && (
+                <span className="h-7 w-0.5 bg-[#ffffff4a]"></span>
+              )}
             </div>
-            {index !== reviewsData?.length - 1 && (
-              <span className="h-7 w-0.5 bg-[#ffffff4a]"></span>
-            )}
           </div>
         ))}
       </div>
