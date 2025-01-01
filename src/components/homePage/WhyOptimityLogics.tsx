@@ -13,21 +13,22 @@ const HighlitedHeading = styled.h1`
 
 const WhyOptimityLogics = () => {
   return (
-    <Container className="mb-10 flex flex-col items-center justify-between gap-10 md:mb-12 md:gap-12 lg:flex-row xl:mb-16 5xl:mb-[120px]">
-      <div className="flex w-full flex-col items-center gap-6 md:gap-[46px] lg:max-w-[898px] lg:items-start">
+    <Container className="mb-10 flex flex-col items-center justify-between gap-5 md:mb-12 lg:flex-row xl:mb-16 xl:gap-10 5xl:mb-[120px] 5xl:gap-12">
+      <div className="flex w-full flex-col items-center gap-6 md:gap-8 lg:max-w-[898px] lg:items-start 3xl:gap-[46px]">
         <div className="flex flex-col items-center gap-[15px] lg:items-start">
           <Button
             btnName="Why optimity logics"
-            className="w-max !rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !py-2.5 px-[23px] !text-2xl !font-normal !leading-[29.05px] !text-black"
+            className="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
+            // className="w-max !rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !py-2.5 px-[23px] !text-2xl !font-normal !leading-[29.05px] !text-black"
           />
           <HighlitedHeading
-            className="text-center font-Poppins text-[40px] font-bold leading-[44px] text-lightBlack lg:text-start 4xl:text-[60px] 4xl:leading-[65px]"
+            className="text-center font-Poppins text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 5xl:text-[60px] 5xl:font-bold 5xl:leading-[65px]"
             dangerouslySetInnerHTML={{
               __html: `An <span>AI development company</span> trusted by clients across the globe!`,
             }}
           />
         </div>
-        <p className="text-center font-Poppins text-xl font-normal leading-7 text-primaryGray lg:text-start 4xl:pr-5">
+        <p className="text-center font-Poppins text-base font-normal leading-[1.6rem] text-[#192020] sm:text-xl sm:leading-7 lg:text-start 4xl:pr-5">
           We&apos;re a dynamic team of millennials and Gen-Z, witnessing the
           digital era&apos;s evolution. With a cohesive approach, we develop
           fully integrated digital products, build brand identities, and drive
@@ -43,11 +44,11 @@ const WhyOptimityLogics = () => {
               key={index}
               className="h-full w-full max-w-[214px] rounded-[16px] border-[8px] border-[#ffffffcc]"
             >
-              <div className="flex h-full flex-col items-center justify-center gap-[9.39px] bg-white p-3 sm:pb-[17.39px] sm:pl-[22.81px] sm:pr-[21.92px] sm:pt-[15px]">
-                <h3 className="font-Poppins text-2xl font-bold leading-[38.04px] text-[#212529] sm:text-[32px]">
+              <div className="flex h-full flex-col items-center justify-center gap-1.5 bg-white p-3 md:gap-[9.39px] xl:pb-[17.39px] xl:pl-[22.81px] xl:pr-[21.92px] xl:pt-[15px]">
+                <h3 className="font-Poppins text-2xl font-bold text-[#212529] xl:text-3xl xl:leading-8 5xl:text-[32px] 5xl:leading-[38.04px]">
                   {stat.value}
                 </h3>
-                <span className="text-center font-Poppins text-base font-semibold leading-[22.4px] text-black">
+                <span className="text-center font-Poppins text-sm font-semibold leading-4 text-black md:text-base md:leading-[22.4px]">
                   {stat.label}
                 </span>
               </div>

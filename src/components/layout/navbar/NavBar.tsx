@@ -14,17 +14,15 @@ import useOutsideClick from '@/components/hooks/useClickOutSide/page';
 const NavBar = () => {
   const megaMenuRef = useRef<HTMLDivElement>(null);
   const [showMegaMenu, setShowMegaMenu] = useState<boolean>(false);
-  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isClient, setIsClient] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useOutsideClick(megaMenuRef, () => {
     setShowMegaMenu(false);
   });
-
   useEffect(() => {
     setIsClient(true);
   }, []);
-
   const handleOpenMenuDrawer = () => {
     setIsOpen(true);
   };
@@ -32,22 +30,22 @@ const NavBar = () => {
   const handleHover = (isHovering: boolean) => {
     setShowMegaMenu(isHovering);
   };
-
   if (!isClient) {
     return null; // Don't render the menu on the server side
   }
-
   return (
-    <Container className="sticky top-0 z-[9999] max-w-[1920px] border-b border-b-lightGray bg-white py-3 lg:py-[18px]">
+    <Container className="sticky top-0 z-[9999] max-w-[1920px] border-b border-b-lightGray bg-white py-[14px] lg:py-[18px]">
       <div className="flex w-full items-center justify-between">
         <div className="flex items-center gap-5 lg:hidden">
-          <div onClick={handleOpenMenuDrawer} className="cursor-pointer">
+          <div
+            onClick={handleOpenMenuDrawer}
+            className="block cursor-pointer lg:hidden"
+          >
             <Image
               src={hamburger}
               alt="hamburger-menu"
               width={24}
               height={24}
-              className="block md:hidden"
             />
           </div>
           <div>
@@ -72,7 +70,7 @@ const NavBar = () => {
             />
           </Link>
         </div>
-        <ul className="hidden items-center gap-3 md:flex lg:gap-4 xl:gap-[30px]">
+        <ul className="hidden items-center gap-3 lg:flex lg:gap-4 xl:gap-[30px]">
           {NavBarData &&
             NavBarData.map((item) => (
               <li

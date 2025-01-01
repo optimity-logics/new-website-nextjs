@@ -16,7 +16,7 @@ const OurExpertise = () => {
       <div className="mb-10 flex flex-col items-center gap-[30px] overflow-x-hidden md:mb-12 md:ml-8 lg:flex-row xl:mb-16 xl:ml-10 3xl:ml-20 4xl:mb-[120px] 4xl:ml-[100px]">
         <div className="flex w-full flex-col gap-5 lg:max-w-[375px] lg:gap-[100px]">
           <div className="flex flex-col gap-3 lg:gap-[25px]">
-            <h3 className="font-Poppins text-[30px] font-semibold leading-8 text-charcoalBlue lg:text-4xl lg:leading-10 4xl:text-[60px] 4xl:leading-[65px]">
+            <h3 className="font-Poppins text-[26px] font-semibold leading-[2.3rem] text-charcoalBlue sm:text-4xl sm:leading-10 4xl:text-[60px] 4xl:leading-[65px]">
               Our <span className="text-red lg:block">Expertise</span>
             </h3>
             <p className="font-Poppins text-lg font-normal leading-[26px] text-lavenderGray">
@@ -38,6 +38,9 @@ const OurExpertise = () => {
             speed={1000}
             loop={true}
             breakpoints={{
+              540: {
+                slidesPerView: 1.3,
+              },
               640: {
                 slidesPerView: 2,
                 spaceBetween: 20,

@@ -52,7 +52,7 @@ const TechnologyWeWork = () => {
         </Tabs>
       </div>
       <div
-        className="flex w-full flex-col items-center gap-[30px] rounded-[20px] bg-tectnologyContentbg bg-cover bg-no-repeat p-5 lg:flex-row 4xl:items-start 4xl:p-[43px]"
+        className="flex w-full flex-col items-center gap-5 rounded-[20px] bg-tectnologyContentbg bg-cover bg-no-repeat p-5 md:gap-[30px] lg:flex-row 4xl:items-start 4xl:p-[43px]"
         style={{ backgroundColor: 'white' }}
       >
         <div>
@@ -69,7 +69,7 @@ const TechnologyWeWork = () => {
         </div>
         <div className="flex flex-col gap-[25px]">
           <div className="flex flex-col gap-5">
-            <h2 className="font-Poppins text-4xl font-semibold leading-10 text-red 5xl:text-[48px] 5xl:leading-[52px]">
+            <h2 className="font-Poppins text-2xl font-medium leading-6 text-red lg:text-4xl lg:font-semibold lg:leading-10 5xl:text-[48px] 5xl:leading-[52px]">
               {selectedTechnology?.technologyName}
             </h2>
             <div className="flex flex-col gap-4 font-Poppins text-base font-normal leading-5 tracking-[-0.015px] text-[#2B3857] opacity-65 3xl:text-lg">

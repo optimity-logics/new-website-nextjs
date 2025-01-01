@@ -31,7 +31,7 @@ export default {
         homepagebg: "url('/webp/hero-banner.webp')",
         herobg: "url('/webp/herobg.webp')",
         technologbg: "url('/webp/technology-we-work-bg.webp')",
-        tectnologyContentbg: "url('/web/footer/footerbg.webp')",
+        tectnologyContentbg: "url('/webp/footer/footerbg.webp')",
         teambg: "url('/webp/team.webp')",
         footer: "url('/webp/footerbg.webp')",
         sectionBg: "url('/svg/common-section-bg.svg')",

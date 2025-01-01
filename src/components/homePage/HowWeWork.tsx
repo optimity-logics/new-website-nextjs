@@ -32,7 +32,7 @@ const HowWeWork = () => {
                     </p>
                   </div>
                   <div
-                    className={`ml-[26px] h-full min-h-7 w-0.5 bg-[#3e656d] md:h-10 ${index !== howWeWorkData.length - 1 ? 'block' : 'hidden'} `}
+                    className={`ml-[26px] h-full min-h-7 w-0.5 bg-[#3e656d] xl:min-h-10 ${index !== howWeWorkData.length - 1 ? 'block' : 'hidden'} `}
                   ></div>
                 </div>
               ))}

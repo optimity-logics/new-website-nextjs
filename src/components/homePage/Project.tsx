@@ -23,7 +23,8 @@ const Project = () => {
           heading="Our innovative <span> AI solutions </span> to revolutionize
   your business"
           btnName="Projects"
-          btnStyle="!py-2.5 px-[23px] bg-[#B3B3B3] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-white bg-opacity-25"
+          // btnStyle="!py-2.5 px-[23px] bg-[#B3B3B3] !rounded-[42px] !text-2xl !font-normal !leading-[29.05px] !text-white bg-opacity-25"
+          btnStyle="!rounded-[42px] bg-[#B3B3B3] !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-white sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7 bg-opacity-25"
           description="Transform and automate processes with enterprise AI solutions tailored to your business requirements"
           LinkName="Connect to know more"
           className="max-w-[1286px] !gap-6"
@@ -32,7 +33,7 @@ const Project = () => {
         <div className="w-full">
           <Swiper
             spaceBetween={30}
-            // slidesPerView={3}
+            slidesPerView={1}
             modules={[Autoplay]}
             autoplay={{
               delay: 2000,
@@ -41,9 +42,6 @@ const Project = () => {
             speed={1000}
             loop={true}
             breakpoints={{
-              540: {
-                slidesPerView: 2,
-              },
               768: {
                 slidesPerView: 2,
               },
