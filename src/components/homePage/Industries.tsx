@@ -26,12 +26,12 @@ const Industries = () => {
         LinkName="Connect to know more"
         isDark={false}
       />
-      <div className="m h-full w-full">
+      <div className="h-full w-full">
         <Swiper
-          spaceBetween={30}
-          centeredSlidesBounds={true}
-          slidesPerView={1}
           modules={[Autoplay, Mousewheel]}
+          spaceBetween={30}
+          centeredSlides={true}
+          slidesPerView={1}
           mousewheel={{
             invert: true,
           }}
@@ -44,19 +44,12 @@ const Industries = () => {
             640: {
               slidesPerView: 1.5,
             },
-            1024: {
-              slidesPerView: 2.5,
-            },
+
             1280: {
-              slidesPerView: 2.8,
+              slidesPerView: 1.8,
             },
             1440: {
               slidesPerView: 3.5,
-              spaceBetween: 40,
-            },
-            1836: {
-              slidesPerView: 4.4,
-              spaceBetween: 45,
             },
           }}
           className="h-full !w-full"

@@ -14,15 +14,15 @@ const HighlitedHeading = styled.h1`
 const WhyOptimityLogics = () => {
   return (
     <Container className="mb-10 flex flex-col items-center justify-between gap-5 md:mb-12 lg:flex-row xl:mb-16 xl:gap-10 5xl:mb-[120px] 5xl:gap-12">
-      <div className="flex w-full flex-col items-center gap-6 md:gap-8 lg:max-w-[898px] lg:items-start 3xl:gap-[46px]">
-        <div className="flex flex-col items-center gap-[15px] lg:items-start">
+      <div className="flex w-full flex-col items-center gap-6 md:gap-8 lg:max-w-[898px] lg:items-start 3xl:gap-10">
+        <div className="flex flex-col items-center gap-[46px] lg:items-start">
           <Button
             btnName="Why optimity logics"
             className="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
             // className="w-max !rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !py-2.5 px-[23px] !text-2xl !font-normal !leading-[29.05px] !text-black"
           />
           <HighlitedHeading
-            className="text-center font-Poppins text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 5xl:text-[60px] 5xl:font-bold 5xl:leading-[65px]"
+            className="text-center font-Poppins text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 5xl:text-[50px] 5xl:font-semibold 5xl:leading-[54px]"
             dangerouslySetInnerHTML={{
               __html: `An <span>AI development company</span> trusted by clients across the globe!`,
             }}

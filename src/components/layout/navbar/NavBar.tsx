@@ -84,7 +84,7 @@ const NavBar = () => {
                 {item?.menuItem === 'Services' && showMegaMenu && (
                   <div ref={megaMenuRef} className="scale-up-ver-top">
                     <div
-                      className={`megaMenu absolute left-1/2 top-full mt-6 flex flex-col gap-[61.32px] rounded-xl border-t-4 border-lightBlue bg-white p-7 shadow-lg transition-all duration-500 ease-in-out xl:mt-9 3xl:px-[49.43px] 3xl:py-[51.31px]`}
+                      className={`megaMenu absolute left-1/2 top-full mt-6 flex flex-col gap-[61.32px] rounded-xl border-t-4 border-lightBlue bg-white p-7 shadow-lg transition-all duration-500 ease-in-out xl:mt-8 3xl:px-[49.43px] 3xl:py-[51.31px] 5xl:mt-9`}
                     >
                       <div className="flex flex-col justify-between gap-8 4xl:flex-row">
                         <div className="grid w-full grid-cols-3 gap-5 3xl:gap-[50.84px]">

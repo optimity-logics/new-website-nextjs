@@ -226,13 +226,39 @@ export const industriesData = [
   {
     industriesIcon: '/svg/industries/real-estate.svg',
     industriesHoverIcon: '/svg/industries/real-estate-blue.svg',
-    industriesName: 'Real Estate',
+    industriesName: 'Restaurant',
     industriesWork: [
       'MLS Solutions for Real Estate',
       'Virtual Property Tours',
       'Property Valuation Tools',
       'Real Estate Investment Platforms',
       'Property Management Solutions',
+    ],
+  },
+  {
+    industriesIcon: '/svg/industries/ecommerce.svg',
+    industriesHoverIcon: '/svg/industries/ecommerce-blue.svg',
+
+    industriesName: 'Travel',
+    industriesWork: [
+      'Custom eCommerce Store Development',
+      'Shipping and fulfillment Solution',
+      'Grocery E-Commerce Apps',
+      'End to End MarketPlace',
+      'AR-based eCommerce solutions',
+    ],
+  },
+  {
+    industriesIcon: '/svg/industries/ecommerce.svg',
+    industriesHoverIcon: '/svg/industries/ecommerce-blue.svg',
+
+    industriesName: 'Social Networking',
+    industriesWork: [
+      'Custom eCommerce Store Development',
+      'Shipping and fulfillment Solution',
+      'Grocery E-Commerce Apps',
+      'End to End MarketPlace',
+      'AR-based eCommerce solutions',
     ],
   },
 ];
