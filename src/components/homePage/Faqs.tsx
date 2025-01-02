@@ -22,6 +22,7 @@ const Faqs = () => {
         <div className="flex flex-col gap-8 lg:gap-6 3xl:gap-10 4xl:gap-[60px]">
           <SectionHeading
             heading="Frequently Asked Questions"
+            className="4xl:!gap-5"
             description="We’ve compiled the answers to your burning questions!"
           />
           <Accordion variant="splitted">
