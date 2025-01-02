@@ -17,8 +17,8 @@ const Review = () => {
                 src={item?.siteIcon}
                 alt={item?.siteIcon}
                 width={88}
-                height={24}
-                className="object-contain"
+                height={20}
+                className="object-scale-down"
               />
             </div>
             <div className="flex items-center gap-5">

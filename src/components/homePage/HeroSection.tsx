@@ -12,7 +12,7 @@ const HeroSection = () => {
         className="w-full bg-homepagebg bg-cover bg-no-repeat px-4 pb-[50px] pt-4 sm:px-6 sm:pb-5 md:px-8 lg:px-10"
         styleClass={{ backgroundSize: '100% 100%' }}
       >
-        <div className="mx-auto flex h-full max-w-[1251px] flex-col items-center justify-center gap-5 py-8 sm:py-11 md:gap-[26px] xl:pt-16 3xl:h-[calc(100vh-260px)] 3xl:gap-[30px] 3xl:pt-[100px] 4xl:pt-[147px]">
+        <div className="mx-auto flex h-full max-w-[1251px] flex-col items-center gap-5 py-8 sm:py-11 md:gap-[26px] xl:pt-16 3xl:h-[calc(100vh-265px)] 3xl:gap-[30px] 3xl:pt-[100px] 4xl:pt-[147px]">
           <Button
             btnName="24/7 optimity.AI"
             className="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"

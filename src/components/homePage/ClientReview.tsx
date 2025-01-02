@@ -35,7 +35,7 @@ const ClientReview = () => {
         <SectionHeading
           heading="Real Stories from <span>Satisfied Clients</span>"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore"
-          className="max-w-[998px]"
+          className="max-w-[998px] 4xl:!gap-5"
           descriptionStyle="max-w-[590px]"
           isDark={true}
         />

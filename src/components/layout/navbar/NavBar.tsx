@@ -66,7 +66,7 @@ const NavBar = () => {
               alt="nav-logo"
               width={202}
               height={57.09}
-              className="max-w-[130px] xl:max-w-[150px] 4xl:max-w-max"
+              className="w-full max-w-[130px] xl:max-w-[140px] 5xl:max-w-[170px]"
             />
           </Link>
         </div>

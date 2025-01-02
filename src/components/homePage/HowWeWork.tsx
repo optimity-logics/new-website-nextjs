@@ -15,7 +15,7 @@ const HowWeWork = () => {
         <SectionHeading
           heading="How We <span>Work</span>"
           description="Bringing the best of AI’s efficiency and expert guidance, we make custom app building a cost-effective, user-friendly, and exactly envisioned experience for all."
-          className="max-w-[735px]"
+          className="max-w-[735px] 4xl:!gap-5"
           isDark={true}
         />
         <div className="flex flex-col items-center justify-between gap-[50px] lg:flex-row">

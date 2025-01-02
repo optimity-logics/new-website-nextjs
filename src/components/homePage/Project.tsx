@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Mousewheel } from 'swiper/modules';
 import arrow from '../../../public/svg/arrow-white.svg';
 
 const Project = () => {
@@ -27,17 +27,20 @@ const Project = () => {
           btnStyle="!rounded-[42px] bg-[#B3B3B3] !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-white sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7 bg-opacity-25"
           description="Transform and automate processes with enterprise AI solutions tailored to your business requirements"
           LinkName="Connect to know more"
-          className="max-w-[1286px] !gap-6"
+          className="max-w-[1286px] 4xl:!gap-5"
           isDark={true}
         />
         <div className="w-full">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
-            modules={[Autoplay]}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
+            modules={[Autoplay, Mousewheel]}
+            // autoplay={{
+            //   delay: 2000,
+            //   disableOnInteraction: false,
+            // }}
+            mousewheel={{
+              invert: true,
             }}
             speed={1000}
             loop={true}

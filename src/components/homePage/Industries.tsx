@@ -9,7 +9,7 @@ import arrow from '../../../public/svg/gray-arrow.svg';
 import checkmark from '../../../public/svg/check-mark.svg';
 import SectionHeading from '../common/SectionHeading';
 import { industriesData } from '../utils/Constant';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Mousewheel } from 'swiper/modules';
 import { useState } from 'react';
 
 const Industries = () => {
@@ -20,7 +20,7 @@ const Industries = () => {
       <SectionHeading
         heading="Our Industrial <span> Expertise </span>"
         description="Our team of industry experts curates progressive solutions that befit your requirements"
-        className="max-w-[1586px]"
+        className="max-w-[1586px] 4xl:!gap-5"
         btnName="Industries "
         btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
         LinkName="Connect to know more"
@@ -29,11 +29,11 @@ const Industries = () => {
       <div className="m h-full w-full">
         <Swiper
           spaceBetween={30}
+          centeredSlidesBounds={true}
           slidesPerView={1}
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
+          modules={[Autoplay, Mousewheel]}
+          mousewheel={{
+            invert: true,
           }}
           speed={1000}
           loop={true}
@@ -55,8 +55,8 @@ const Industries = () => {
               spaceBetween: 40,
             },
             1836: {
-              slidesPerView: 3.2,
-              spaceBetween: 70,
+              slidesPerView: 4.4,
+              spaceBetween: 45,
             },
           }}
           className="h-full !w-full"
@@ -84,7 +84,7 @@ const Industries = () => {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div className="flex items-center gap-2">
-                      <h4 className="font-Poppins text-xl font-normal leading-6 text-[#192020] transition-all duration-300 group-hover:text-lightBlue xl:text-[26px] xl:leading-8 5xl:font-semibold">
+                      <h4 className="font-Poppins text-xl font-normal leading-6 text-[#192020] transition-all duration-300 group-hover:text-lightBlue xl:text-[26px] xl:leading-8 5xl:font-medium">
                         {item?.industriesName}
                       </h4>
                       <Image src={arrow} alt="arrow" width={24} height={24} />

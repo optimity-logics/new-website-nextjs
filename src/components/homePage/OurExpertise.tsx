@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Button from '../common/Button';
 import Container from '../common/Container';
 import { ourExpertiseData } from '../utils/Constant';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Mousewheel } from 'swiper/modules';
 
 const OurExpertise = () => {
   return (
@@ -28,12 +28,11 @@ const OurExpertise = () => {
         </div>
         <div className="relative h-full w-full max-w-[1520px] overflow-x-hidden lg:px-0">
           <Swiper
-            modules={[Autoplay]}
+            modules={[Autoplay, Mousewheel]}
             spaceBetween={26}
             slidesPerView={1}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
+            mousewheel={{
+              invert: true,
             }}
             speed={1000}
             loop={true}
