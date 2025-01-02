@@ -18,7 +18,7 @@ const HeroSection = () => {
             className="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
           />
           <div className="flex flex-col items-center gap-3 sm:gap-4 3xl:gap-[25px]">
-            <h1 className="4xl:[50px] text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-darkBlack md:text-[40px] md:leading-[44px] 3xl:text-[50px] 3xl:leading-[55px] 4xl:font-bold 5xl:text-[60px] 5xl:leading-[65px]">
+            <h1 className="4xl:[50px] text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-darkBlack md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
               Bring Your <span className="text-gradient">App Vision</span> to
               Life,
               <br /> Anytime with <span className="text-gradient">AI.</span>

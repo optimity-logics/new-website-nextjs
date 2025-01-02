@@ -10,8 +10,8 @@ const SkeletonForTechnologyWeWork = ({
   selectedTechnology = [],
 }: ITechnologyType) => {
   return (
-    <div className="flex w-full flex-col items-center gap-3 lg:flex-row lg:gap-8">
-      <div className="w-full lg:max-w-[500px]">
+    <div className="flex w-full flex-col gap-3 lg:flex-row lg:gap-8">
+      <div className="w-full lg:max-w-[400px] 5xl:max-w-[500px]">
         <Skeleton height={457} width="100%" borderRadius={16} />
       </div>
       <div className="flex w-full flex-col gap-3 lg:gap-8">
