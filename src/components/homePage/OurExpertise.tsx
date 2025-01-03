@@ -26,7 +26,7 @@ const OurExpertise = () => {
           </div>
           <Button btnName="View All" className="w-max bg-orange px-[30px]" />
         </div>
-        <div className="relative h-full w-full max-w-[1520px] overflow-x-hidden lg:px-0">
+        <div className="h-full w-full max-w-[1520px] overflow-x-hidden lg:px-0">
           <Swiper
             modules={[Autoplay, Mousewheel]}
             slidesPerView={1}
