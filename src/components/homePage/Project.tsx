@@ -30,7 +30,7 @@ const Project = () => {
           className="max-w-[1286px] 4xl:!gap-5"
           isDark={true}
         />
-        <div className="w-full">
+        <div className="h-full w-full">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
@@ -53,25 +53,26 @@ const Project = () => {
                 spaceBetween: 30,
               },
             }}
-            className="w-full"
+            className="h-full w-full"
           >
             {deployProjects &&
               deployProjects.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <div className="group flex cursor-pointer flex-col gap-[32px]">
-                    <div>
-                      <Image
-                        src={item?.projectImg}
-                        alt=""
-                        width={776}
-                        height={294}
-                        className="rounded-[10px]"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-[22px]">
+                <SwiperSlide key={index} className="!h-auto">
+                  <div className="group flex h-full min-h-full cursor-pointer flex-col justify-between gap-[22px]">
+                    <div className="flex flex-col gap-[32px]">
+                      <div>
+                        <Image
+                          src={item?.projectImg}
+                          alt=""
+                          width={776}
+                          height={294}
+                          className="rounded-[10px]"
+                        />
+                      </div>
+                      {/* <div className="flex flex-col gap-[22px]"> */}
                       <div className="flex flex-col gap-[17px]">
                         <div className="flex items-center gap-[3px]">
-                          <h5 className="font-Poppins text-xl font-bold leading-6 text-white">
+                          <h5 className="font-Poppins text-xl font-medium leading-6 text-white">
                             {item?.projectName}
                           </h5>
                           <div className="invisible relative flex h-6 w-6 translate-x-[-30px] items-center justify-center rounded-full bg-red opacity-0 transition-all duration-500 ease-out group-hover:visible group-hover:translate-x-0 group-hover:opacity-100">
@@ -88,9 +89,10 @@ const Project = () => {
                           {item?.projectDescription}
                         </p>
                       </div>
-                      <div className="relative h-0.5 w-full bg-lightSilver">
-                        <span className="absolute left-0 top-0 h-full w-0 bg-red transition-all duration-500 ease-out group-hover:w-full"></span>
-                      </div>
+                      {/* </div> */}
+                    </div>
+                    <div className="relative h-0.5 w-full bg-lightSilver">
+                      <span className="absolute left-0 top-0 h-full w-0 bg-red transition-all duration-500 ease-out group-hover:w-full"></span>
                     </div>
                   </div>
                 </SwiperSlide>

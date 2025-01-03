@@ -18,6 +18,16 @@ import helpingjobseekers from '../../../public/svg/client-logo-slider/helpingjob
 import yellowbird from '../../../public/svg/client-logo-slider/yellowbird.svg';
 import waosim from '../../../public/svg/client-logo-slider/waosim.svg';
 import teqdiligent from '../../../public/svg/client-logo-slider/teqdiligent.svg';
+import portsv from '../../../public/svg/client-logo-slider/portsv.svg';
+
+// social media icons
+
+import instagram from '../../../public/svg/footer/social-media/instagram.svg';
+import twitter from '../../../public/svg/footer/social-media/twitter.svg';
+import dribble from '../../../public/svg/footer/social-media/dribble.svg';
+import linkedin from '../../../public/svg/footer/social-media/linkedIn.svg';
+import youtube from '../../../public/svg/footer/social-media/youtube.svg';
+import facebook from '../../../public/svg/footer/social-media/facebook.svg';
 
 // types
 
@@ -75,6 +85,7 @@ export const logoIcons = [
   yellowbird,
   waosim,
   teqdiligent,
+  portsv,
 ];
 export const workingData = [
   { value: '5 +', label: 'Years of Excellence' },
@@ -660,4 +671,13 @@ export const reviewsData = [
     siteIcon: '/svg/review-on-site/google.svg',
     review: '5.0',
   },
+];
+
+export const socialMediaIcons = [
+  { link: 'https://www.facebook.com/OptimityLogics', icon: facebook },
+  { link: 'https://www.instagram.com/optimitylogics/', icon: instagram },
+  { link: 'https://twitter.com/OptimityLogics', icon: twitter },
+  { link: 'https://dribbble.com/OptimityLogics', icon: dribble },
+  { link: 'https://www.instagram.com/optimitylogics/', icon: linkedin },
+  { link: 'https://www.youtube.com/@OptimityLogics', icon: youtube },
 ];

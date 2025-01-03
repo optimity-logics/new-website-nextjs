@@ -8,8 +8,17 @@ import Container from '../common/Container';
 const HeroSection = () => {
   return (
     <div className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
+      {/* <video
+        className="absolute left-0 top-0 -z-[99] h-full w-full object-cover"
+        autoPlay
+        loop
+        muted
+      >
+        <source src={'/video/homepage.mp4'} type="video/mp4" />
+      </video> */}
+      {/* bg-homepagebg  bg-homepagebg1 bg-homepagebg2*/}
       <Container
-        className="w-full bg-homepagebg bg-cover bg-no-repeat px-4 pb-[50px] pt-4 sm:px-6 sm:pb-5 md:px-8 lg:px-10"
+        className="w-full bg-homepagebg2 bg-cover bg-no-repeat px-4 pb-[50px] pt-4 sm:px-6 sm:pb-5 md:px-8 lg:px-10"
         styleClass={{ backgroundSize: '100% 100%' }}
       >
         <div className="mx-auto flex h-full max-w-[1251px] flex-col items-center gap-5 py-8 sm:py-11 md:gap-[26px] xl:pt-16 3xl:h-[calc(100vh-265px)] 3xl:gap-[30px] 3xl:pt-[100px] 4xl:pt-[147px]">
@@ -40,8 +49,8 @@ const HeroSection = () => {
           <span className="text-center font-Poppins text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
           </span>
-          <Marquee gradient={false} speed={55}>
-            <div className="flex items-center justify-between last-of-type:mr-5 md:last-of-type:mr-[45px] last-of-type:xl:mr-[34px] last-of-type:4xl:mr-[69px]">
+          <Marquee gradient={true} gradientColor="black" speed={55}>
+            <div className="!last-of-type:4xl:mr-[69px] flex items-center justify-between last-of-type:mr-5 md:last-of-type:mr-[45px] last-of-type:xl:mr-[34px]">
               {logoIcons &&
                 logoIcons.map((item, index) => (
                   <div
