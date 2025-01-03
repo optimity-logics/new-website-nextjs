@@ -18,7 +18,7 @@ const HeroSection = () => {
       </video> */}
       {/* bg-homepagebg  bg-homepagebg1 bg-homepagebg2*/}
       <Container
-        className="bg-homepagebg2 w-full bg-cover bg-no-repeat px-4 pb-[50px] pt-4 sm:px-6 sm:pb-5 md:px-8 lg:px-10"
+        className="w-full bg-homepagebg2 bg-cover bg-no-repeat px-4 pb-[50px] pt-4 sm:px-6 sm:pb-5 md:px-8 lg:px-10"
         styleClass={{ backgroundSize: '100% 100%' }}
       >
         <div className="mx-auto flex h-full max-w-[1251px] flex-col items-center gap-5 py-8 sm:py-11 md:gap-[26px] xl:pt-16 3xl:h-[calc(100vh-265px)] 3xl:gap-[30px] 3xl:pt-[100px] 4xl:pt-[147px]">

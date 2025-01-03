@@ -43,7 +43,7 @@
 // export default MapboxMap;
 
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import mapboxgl, { Map, Marker } from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -54,9 +54,6 @@ const MapboxMap: React.FC = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<Map | null>(null);
   const markerRef = useRef<Marker | null>(null); // Marker reference to control removal or updates
-  const [currentLocation, setCurrentLocation] = useState<
-    [number, number] | null
-  >(null);
 
   useEffect(() => {
     if (!mapboxgl.accessToken) {
@@ -83,7 +80,7 @@ const MapboxMap: React.FC = () => {
           const { longitude, latitude } = position.coords;
           const userLocation: [number, number] = [longitude, latitude];
 
-          setCurrentLocation(userLocation);
+          // setCurrentLocation(userLocation);
 
           // Ensure mapRef.current is initialized and not null before interacting
           if (mapRef.current) {

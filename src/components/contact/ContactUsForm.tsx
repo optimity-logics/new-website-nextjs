@@ -1,6 +1,5 @@
 'use client';
 import { useFormik } from 'formik';
-import { useState } from 'react';
 import * as Yup from 'yup';
 import Button from '../common/Button';
 
@@ -12,8 +11,6 @@ interface FormValues {
 }
 
 const ContactUsForm = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   const validationSchema = Yup.object({
     name: Yup.string()
       .min(2, 'Name must be at least 2 characters')
