@@ -8,6 +8,7 @@ import SocialMedia from './SocialMedia';
 import location from '../../../../public/svg/footer/location.svg';
 import phone from '../../../../public/svg/footer/phone.svg';
 import email from '../../../../public/svg/footer/mail.svg';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -125,7 +126,7 @@ const Footer = () => {
             Insights
           </li>
           <li className="cursor-pointer border-r border-r-[#ffffff4a] px-5 transition-all duration-300 hover:text-lightBlue">
-            Careers
+            <Link href={'/careers'}>Careers</Link>
           </li>
           <li className="cursor-pointer border-r border-r-[#ffffff4a] px-5 transition-all duration-300 hover:text-lightBlue">
             Privacy Policy
