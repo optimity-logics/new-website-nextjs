@@ -29,6 +29,31 @@ import linkedin from '../../../public/svg/footer/social-media/linkedIn.svg';
 import youtube from '../../../public/svg/footer/social-media/youtube.svg';
 import facebook from '../../../public/svg/footer/social-media/facebook.svg';
 
+// orange social media icons
+
+import instagramOrange from '../../../public/svg/careers/social-media-icon/instagram.svg';
+import dribbleOrabge from '../../../public/svg/careers/social-media-icon/dribble.svg';
+import facebookOrage from '../../../public/svg/careers/social-media-icon/facebook.svg';
+import linkedInOrange from '../../../public/svg/careers/social-media-icon/linkedIn.svg';
+import twitterOrange from '../../../public/svg/careers/social-media-icon/twitter.svg';
+import youtubeOrange from '../../../public/svg/careers/social-media-icon/youtube.svg';
+
+// career benefits icons
+
+import clock from '../../../public/svg/careers/benefits/clock.svg';
+import handClapping from '../../../public/svg/careers/benefits/handsClapping.svg';
+import baby from '../../../public/svg/careers/benefits/baby.svg';
+import barbell from '../../../public/svg/careers/benefits/barbell.svg';
+import cake from '../../../public/svg/careers/benefits/cake.svg';
+import calendar from '../../../public/svg/careers/benefits/calendar.svg';
+import confetti from '../../../public/svg/careers/benefits/confetti.svg';
+import eyeglasses from '../../../public/svg/careers/benefits/eyeglasses.svg';
+import gradutaionCap from '../../../public/svg/careers/benefits/graduationCap.svg';
+import rocketLaunch from '../../../public/svg/careers/benefits/rocketLaunch.svg';
+import wallet from '../../../public/svg/careers/benefits/wallet.svg';
+import target from '../../../public/svg/careers/benefits/target.svg';
+import shieldCheck from '../../../public/svg/careers/benefits/shieldCheck.svg';
+
 // types
 
 import { IFooterDataType } from '../type/type';
@@ -680,4 +705,248 @@ export const socialMediaIcons = [
   { link: 'https://dribbble.com/OptimityLogics', icon: dribble },
   { link: 'https://www.instagram.com/optimitylogics/', icon: linkedin },
   { link: 'https://www.youtube.com/@OptimityLogics', icon: youtube },
+];
+export const orangeSocialMediaIcons = [
+  { link: 'https://www.facebook.com/OptimityLogics', icon: facebookOrage },
+  { link: 'https://www.instagram.com/optimitylogics/', icon: instagramOrange },
+  { link: 'https://twitter.com/OptimityLogics', icon: twitterOrange },
+  { link: 'https://dribbble.com/OptimityLogics', icon: dribbleOrabge },
+  { link: 'https://www.instagram.com/optimitylogics/', icon: linkedInOrange },
+  { link: 'https://www.youtube.com/@OptimityLogics', icon: youtubeOrange },
+];
+
+export const careerBenefites = [
+  {
+    benefitesIcon: clock,
+    benefitesName: 'Flexible working hours',
+  },
+  {
+    benefitesIcon: barbell,
+    benefitesName: 'Sport compensation',
+  },
+  {
+    benefitesIcon: shieldCheck,
+    benefitesName: 'Health care Insurance',
+  },
+  {
+    benefitesIcon: handClapping,
+    benefitesName: 'Marriage bonus',
+  },
+  {
+    benefitesIcon: confetti,
+    benefitesName: 'Fun team events',
+  },
+  {
+    benefitesIcon: rocketLaunch,
+    benefitesName: 'Perfessional grow budget',
+  },
+  {
+    benefitesIcon: calendar,
+    benefitesName: '30 days paid vacation',
+  },
+  {
+    benefitesIcon: wallet,
+    benefitesName: 'Competitive salary',
+  },
+  {
+    benefitesIcon: eyeglasses,
+    benefitesName: 'Compensation for eyeglasses',
+  },
+  {
+    benefitesIcon: gradutaionCap,
+    benefitesName: 'Allowance for first-graders',
+  },
+  {
+    benefitesIcon: baby,
+    benefitesName: 'Allowance for first-graders',
+  },
+
+  {
+    benefitesIcon: target,
+    benefitesName: 'Employee referral bonus',
+  },
+  {
+    benefitesIcon: cake,
+    benefitesName: 'Birthdays celebration',
+  },
+];
+
+export const jobOpenings = [
+  {
+    positionName: 'All positions (17)',
+    details: [
+      {
+        title: 'Full-Stack Developer',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Application developer (react native)',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Senior Product designer',
+        workModes: ['Full-Time', 'Hybrid', 'part-time'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Product Manager',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Product Owner',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Full-Stack Developer',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+    ],
+  },
+  {
+    positionName: 'Enginering (7)',
+    details: [
+      {
+        title: 'Full-Stack Developer',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Application developer (react native)',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Senior Product designer',
+        workModes: ['Full-Time', 'Hybrid', 'part-time'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+    ],
+  },
+  {
+    positionName: 'Product (3)',
+    details: [
+      {
+        title: 'Full-Stack Developer',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Application developer (react native)',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Senior Product designer',
+        workModes: ['Full-Time', 'Hybrid', 'part-time'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+    ],
+  },
+  {
+    positionName: 'Design (1)',
+    details: [
+      {
+        title: 'Full-Stack Developer',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Application developer (react native)',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Senior Product designer',
+        workModes: ['Full-Time', 'Hybrid', 'part-time'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+    ],
+  },
+  {
+    positionName: 'Operation (4)',
+    details: [
+      {
+        title: 'Full-Stack Developer',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Application developer (react native)',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Senior Product designer',
+        workModes: ['Full-Time', 'Hybrid', 'part-time'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+    ],
+  },
+  {
+    positionName: 'Marketing (2)',
+    details: [
+      {
+        title: 'Full-Stack Developer',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Application developer (react native)',
+        workModes: ['Full-Time', 'Hybrid'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+      {
+        title: 'Senior Product designer',
+        workModes: ['Full-Time', 'Hybrid', 'part-time'],
+        description:
+          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
+        viewPositionLink: '',
+      },
+    ],
+  },
 ];

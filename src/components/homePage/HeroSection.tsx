@@ -7,18 +7,18 @@ import Container from '../common/Container';
 
 const HeroSection = () => {
   return (
-    <div className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
-      {/* <video
-        className="absolute left-0 top-0 -z-[99] h-full w-full object-cover"
+    <div className="relative mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
+      <video
+        className="absolute left-0 top-0 -z-[99] h-full min-h-full w-full object-cover"
         autoPlay
         loop
         muted
       >
-        <source src={'/video/homepage.mp4'} type="video/mp4" />
-      </video> */}
+        <source src={'/video/homepage3.mp4'} type="video/mp4" />
+      </video>
       {/* bg-homepagebg  bg-homepagebg1 bg-homepagebg2*/}
       <Container
-        className="w-full bg-homepagebg2 bg-cover bg-no-repeat px-4 pb-[50px] pt-4 sm:px-6 sm:pb-5 md:px-8 lg:px-10"
+        className="w-full px-4 pb-[50px] pt-4 sm:px-6 sm:pb-5 md:px-8 lg:px-10"
         styleClass={{ backgroundSize: '100% 100%' }}
       >
         <div className="mx-auto flex h-full max-w-[1251px] flex-col items-center gap-5 py-8 sm:py-11 md:gap-[26px] xl:pt-16 3xl:h-[calc(100vh-265px)] 3xl:gap-[30px] 3xl:pt-[100px] 4xl:pt-[147px]">
@@ -27,7 +27,7 @@ const HeroSection = () => {
             className="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
           />
           <div className="flex flex-col items-center gap-3 sm:gap-4 3xl:gap-[25px]">
-            <h1 className="4xl:[50px] text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-darkBlack md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
+            <h1 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-darkBlack md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
               Bring Your <span className="text-gradient">App Vision</span> to
               Life,
               <br /> Anytime with <span className="text-gradient">AI.</span>
