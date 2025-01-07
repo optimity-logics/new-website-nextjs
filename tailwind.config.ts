@@ -29,7 +29,7 @@ export default {
         herobtnbg: "url('/svg/herobtnbg.svg')",
         whatwedobg: "url('/svg/what-we-do-bg.svg')",
         homepagebg: "url('/webp/HeroBanner.webp')",
-        homepagebg1: "url('/webp/1.webp')",
+        homepagebg1: "url('/webp/herobanner1.webp')",
         homepagebg2: "url('/webp/2.webp')",
         homepagebg3: "url('/webp/3.webp')",
         herobg: "url('/webp/herobg.webp')",

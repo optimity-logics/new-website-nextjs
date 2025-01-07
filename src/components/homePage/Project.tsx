@@ -64,9 +64,9 @@ const Project = () => {
                         <Image
                           src={item?.projectImg}
                           alt=""
-                          width={776}
-                          height={294}
-                          className="rounded-[10px]"
+                          width={547}
+                          height={373}
+                          className="rounded-[10px] object-cover"
                         />
                       </div>
                       {/* <div className="flex flex-col gap-[22px]"> */}
@@ -75,7 +75,7 @@ const Project = () => {
                           <h5 className="font-Poppins text-xl font-medium leading-6 text-white">
                             {item?.projectName}
                           </h5>
-                          <div className="invisible relative flex h-6 w-6 translate-x-[-30px] items-center justify-center rounded-full bg-red opacity-0 transition-all duration-500 ease-out group-hover:visible group-hover:translate-x-0 group-hover:opacity-100">
+                          <div className="invisible relative flex h-6 w-6 translate-x-[-30px] items-center justify-center rounded-full bg-red opacity-0 transition-all duration-500 ease-out group-hover:visible group-hover:translate-x-2 group-hover:opacity-100">
                             <Image
                               src={arrow}
                               alt="arrow"
