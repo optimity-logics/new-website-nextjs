@@ -71,7 +71,7 @@ const OurExpertise = () => {
                     style={{ backgroundImage: `url(${item.techbg})` }}
                   >
                     <div
-                      className="flex h-max min-h-16 w-max min-w-16 items-center justify-center rounded-full 4xl:min-h-[100px] 4xl:min-w-[100px]"
+                      className="flex h-max min-h-16 w-max min-w-16 items-center justify-center rounded-full 4xl:min-h-20 4xl:min-w-20"
                       style={{ backgroundColor: item.techImgBg }}
                     >
                       <Image
@@ -79,7 +79,7 @@ const OurExpertise = () => {
                         alt={item.techImg}
                         width={40}
                         height={40}
-                        className="h-10 w-10 4xl:h-max 4xl:w-max"
+                        className="h-10 w-10 4xl:h-[45px] 4xl:w-[45px]"
                       />
                     </div>
                     <div className="flex h-full flex-col justify-between gap-5">
