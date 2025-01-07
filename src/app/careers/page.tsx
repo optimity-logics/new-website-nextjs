@@ -24,7 +24,6 @@ import design from '../../../public/webp/careers/followUs/design.webp';
 import developer from '../../../public/webp/careers/followUs/developer.webp';
 import dots from '../../../public/webp/careers/followUs/dots.webp';
 import team from '../../../public/webp/careers/followUs/team.webp';
-import { div } from 'framer-motion/client';
 
 const HighlitedDescription = styled.h1`
   span {
