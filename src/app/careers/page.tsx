@@ -36,7 +36,7 @@ const Career = () => {
     useState<string>('all positions (17)');
   return (
     <>
-      <Container className="!5xl:px-[150px] mb-10 bg-contactUsBanner bg-cover bg-no-repeat md:mb-12 xl:mb-16 4xl:mb-[100px]">
+      <Container className="!5xl:px-[150px] bg-careerBanner mb-10 bg-cover bg-no-repeat md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <h2 className="py-[120px] text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-white md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
           Join the team
         </h2>

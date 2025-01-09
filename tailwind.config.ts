@@ -38,7 +38,7 @@ export default {
         teambg: "url('/webp/team.webp')",
         footer: "url('/webp/footerbg.webp')",
         contactUsBanner: "url('/webp/contact-us/contactBanner.webp')",
-        sectionBg: "url('/svg/common-section-bg.svg')",
+        careerBanner: "url('/webp/careers/career-banner.webp')",
         'custom-gradient':
           'linear-gradient(180deg, rgba(0, 0, 0, 0) -5.03%, #000000 54.04%)',
         'hero-overlap':
