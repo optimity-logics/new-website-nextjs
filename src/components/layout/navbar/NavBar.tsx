@@ -82,7 +82,7 @@ const NavBar = () => {
                   item?.menuItem === 'Services' && handleHover(true)
                 }
               >
-                <Link href={''}>{item?.menuItem}</Link>
+                <Link href={item?.link}>{item?.menuItem}</Link>
                 {item?.menuItem === 'Services' && showMegaMenu && (
                   <div ref={megaMenuRef} className="scale-up-ver-top">
                     <div

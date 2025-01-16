@@ -62,30 +62,37 @@ export const NavBarData = [
   {
     id: 1,
     menuItem: 'Home',
+    link: '/',
   },
   {
     id: 2,
     menuItem: 'Services',
+    link: '/',
   },
   {
     id: 3,
     menuItem: 'Technology',
+    link: '/',
   },
   {
     id: 4,
     menuItem: 'About Us',
+    link: '/about-us',
   },
   {
     id: 5,
     menuItem: 'Our Works',
+    link: '/',
   },
   {
     id: 6,
     menuItem: 'Hire Us',
+    link: '/',
   },
   {
     id: 7,
     menuItem: 'Blog',
+    link: '/',
   },
 ];
 
@@ -949,4 +956,51 @@ export const jobOpenings = [
       },
     ],
   },
+];
+
+export const achievementsData = [
+  {
+    rating: 4.5,
+    title: 'Top IT services company',
+  },
+
+  {
+    rating: 4.5,
+    title: 'Top mobile app development company',
+  },
+
+  {
+    rating: 4.7,
+    title: 'Top mobile app development company',
+  },
+  {
+    rating: 4.8,
+    title: 'Top mobile app development company',
+  },
+  {
+    rating: 4.5,
+    title: 'Top mobile app development ',
+  },
+  {
+    rating: 5.0,
+    title: 'Top mobile app development',
+  },
+  {
+    rating: 4.5,
+    title: 'Top mobile app development company',
+  },
+  {
+    rating: 4.5,
+    title: 'Top mobile app development company',
+  },
+];
+
+export const exportTeamData = [
+  { name: 'Andrew Max Fetcher', position: 'CEO, techwix' },
+  { name: 'Arnold human', position: 'CEO, techwix' },
+  { name: 'Mike Holder', position: 'CEO, techwix' },
+  { name: 'Joakim Ken', position: 'CEO & Founder, techwix' },
+  { name: 'Andrew Max Fetcher', position: 'CEO & Founder, techwix' },
+  { name: 'Andrew Max Fetcher', position: 'CEO & Founder, techwix' },
+  { name: 'Andrew Max Fetcher', position: 'CEO & Founder, techwix' },
 ];

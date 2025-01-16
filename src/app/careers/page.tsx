@@ -36,8 +36,8 @@ const Career = () => {
     useState<string>('all positions (17)');
   return (
     <>
-      <Container className="!5xl:px-[150px] bg-careerBanner mb-10 bg-cover bg-no-repeat md:mb-12 xl:mb-16 4xl:mb-[100px]">
-        <h2 className="py-[120px] text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-white md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
+      <Container className="!5xl:px-[150px] mb-10 bg-careerBanner bg-cover bg-no-repeat py-[120px] md:mb-12 xl:mb-16 4xl:mb-[100px]">
+        <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-white md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
           Join the team
         </h2>
       </Container>
@@ -62,8 +62,9 @@ const Career = () => {
                     alt={items?.benefitesIcon}
                     width={54}
                     height={54}
+                    className="w-8 object-contain md:w-full"
                   />
-                  <span className="font-Poppins text-[22px] font-normal leading-[35px] text-black">
+                  <span className="font-Poppins text-lg font-normal leading-6 text-black md:text-[22px] md:leading-[35px]">
                     {items?.benefitesName}
                   </span>
                 </div>
@@ -72,7 +73,7 @@ const Career = () => {
         </div>
       </Container>
       <Container
-        className="mb-10 bg-sectionBg bg-cover bg-right bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20 5xl:px-[150px]"
+        className="bg-sectionBg mb-10 bg-cover bg-right bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20 5xl:px-[150px]"
         isBackground={true}
       >
         <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">

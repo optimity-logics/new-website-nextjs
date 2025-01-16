@@ -39,10 +39,13 @@ export default {
         footer: "url('/webp/footerbg.webp')",
         contactUsBanner: "url('/webp/contact-us/contactBanner.webp')",
         careerBanner: "url('/webp/careers/career-banner.webp')",
+        exportTeamBg: "url('/webp/about-us/exportTeamBg.webp')",
         'custom-gradient':
           'linear-gradient(180deg, rgba(0, 0, 0, 0) -5.03%, #000000 54.04%)',
         'hero-overlap':
           'linear-gradient(73.24deg, rgba(255, 255, 255, 0) 44.98%, rgba(255, 255, 255, 0.8) 76.91%)',
+        'export-team-gradient':
+          'linear-gradient(170.88deg, #004372 8.79%, #02ADE1 50.73%)',
       },
       fontFamily: {
         Inter: ['Inter'],
