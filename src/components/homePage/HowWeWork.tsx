@@ -9,7 +9,7 @@ const HowWeWork = () => {
   return (
     <Container
       isBackground={true}
-      className="mb-10 bg-sectionBg bg-cover bg-right bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:py-20 5xl:px-[244.5px]"
+      className="bg-sectionBg mb-10 bg-cover bg-right bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:py-20 5xl:px-[244.5px]"
     >
       <div className="flex flex-col gap-10 lg:gap-[50px] 4xl:gap-[70px]">
         <SectionHeading
