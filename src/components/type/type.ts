@@ -25,3 +25,14 @@ export interface IAccordionDataType {
   title: ReactNode;
   content: ReactNode;
 }
+
+export interface IBlogType {
+  blogHeading: string;
+  data: {
+    img: string;
+
+    title: string;
+
+    description: string;
+  }[];
+}

@@ -62,7 +62,7 @@ const Career = () => {
                     alt={items?.benefitesIcon}
                     width={54}
                     height={54}
-                    className="w-8 object-contain md:w-full"
+                    className="w-8 object-contain md:w-max"
                   />
                   <span className="font-Poppins text-lg font-normal leading-6 text-black md:text-[22px] md:leading-[35px]">
                     {items?.benefitesName}
@@ -72,66 +72,72 @@ const Career = () => {
           </div>
         </div>
       </Container>
-      <Container
-        className="bg-sectionBg mb-10 bg-cover bg-right bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20 5xl:px-[150px]"
-        isBackground={true}
+      <div
+        className="bg-projectSectionBg bg-cover bg-right bg-no-repeat"
+        style={{ backgroundColor: '#192020' }}
       >
-        <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">
-          <SectionHeading
-            heading="Get a <span>glimpse of the magic happening</span>   at optimity logics!"
-            isDark={true}
-          />
-          <div className="no-scrollbar overflow-x-scroll">
-            <div className="grid w-full grid-cols-2 grid-rows-2 gap-[21px] md:grid-cols-4 lg:grid-rows-3">
-              <Image
-                src={first}
-                alt=""
-                className="col-span-2 row-span-2 h-full w-full object-contain"
-              />
-              <Image
-                src={four}
-                alt=""
-                className="col-span-1 row-span-1 h-full w-full object-contain"
-              />
-              <Image
-                src={six}
-                alt=""
-                className="row-span-2 h-full w-full object-contain"
-              />
-              <Image
-                src={five}
-                alt=""
-                className="row-span-2 h-full w-full object-contain"
-              />
-              <Image
-                src={second}
-                alt=""
-                className="h-full w-full object-contain"
-              />
-              <Image
-                src={third}
-                alt=""
-                className="h-full w-full object-contain"
-              />
+        <Container
+          className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20 5xl:px-[150px]"
+          // isBackground={true}
+        >
+          <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">
+            <SectionHeading
+              heading="Get a <span>glimpse of the magic happening</span>   at optimity logics!"
+              isDark={true}
+              className="max-w-[1000px]"
+            />
+            <div className="no-scrollbar overflow-x-scroll">
+              <div className="grid w-full grid-cols-2 grid-rows-2 gap-[21px] md:grid-cols-4 lg:grid-rows-3">
+                <Image
+                  src={first}
+                  alt=""
+                  className="col-span-2 row-span-2 h-full w-full object-contain"
+                />
+                <Image
+                  src={four}
+                  alt=""
+                  className="col-span-1 row-span-1 h-full w-full object-contain"
+                />
+                <Image
+                  src={six}
+                  alt=""
+                  className="row-span-2 h-full w-full object-contain"
+                />
+                <Image
+                  src={five}
+                  alt=""
+                  className="row-span-2 h-full w-full object-contain"
+                />
+                <Image
+                  src={second}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+                <Image
+                  src={third}
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
 
-              <div className="flex h-full cursor-pointer items-end rounded-[15px] bg-[#1a1a1a] p-4 lg:p-8">
-                <div className="flex flex-col gap-3">
-                  <span className="font-Poppins text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
-                    Explore more
-                  </span>
-                  <Image
-                    src={arrow}
-                    alt={arrow}
-                    width={45}
-                    height={45}
-                    className="w-5 lg:w-max"
-                  />
+                <div className="flex h-full cursor-pointer items-end rounded-[15px] bg-[#1a1a1a] p-4 lg:p-8">
+                  <div className="flex flex-col gap-3">
+                    <span className="font-Poppins text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
+                      Explore more
+                    </span>
+                    <Image
+                      src={arrow}
+                      alt={arrow}
+                      width={45}
+                      height={45}
+                      className="w-5 lg:w-max"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
       <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
         <div className="flex flex-col items-center gap-[60px]">
           <SectionHeading heading="We have 17 open <span>positions</span> now!" />

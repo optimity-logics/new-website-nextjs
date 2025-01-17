@@ -40,6 +40,7 @@ export default {
         contactUsBanner: "url('/webp/contact-us/contactBanner.webp')",
         careerBanner: "url('/webp/careers/career-banner.webp')",
         exportTeamBg: "url('/webp/about-us/exportTeamBg.webp')",
+        projectSectionBg: "url('/webp/projectbg.webp')",
         'custom-gradient':
           'linear-gradient(180deg, rgba(0, 0, 0, 0) -5.03%, #000000 54.04%)',
         'hero-overlap':

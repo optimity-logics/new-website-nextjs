@@ -27,70 +27,72 @@ const ClientReview = () => {
   };
 
   return (
-    <Container
-      className="mb-10 bg-red bg-technologbg bg-cover bg-no-repeat py-20 md:mb-12 xl:mb-16 4xl:mb-[120px] 5xl:px-[200px]"
-      isBackground={true}
+    <div
+      className="bg-technologbg bg-cover bg-no-repeat"
+      style={{ backgroundSize: '100% 100%' }}
     >
-      <div className="flex flex-col gap-5 lg:gap-[60px]">
-        <SectionHeading
-          heading="Real Stories from <span>Satisfied Clients</span>"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore"
-          className="max-w-[998px] 4xl:!gap-5"
-          descriptionStyle="max-w-[590px]"
-          isDark={true}
-        />
-        <div className="review grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-[23px] xl:gap-y-[25px] 3xl:grid-cols-3">
-          {clientsReview &&
-            clientsReview.slice(0, visibleCount).map((item, index) => (
-              <div
-                key={index}
-                className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-5 rounded-[18.91px] bg-[#1A1A1A] p-5 transition-all duration-300 md:gap-6 md:px-[34px] md:py-[30px] xl:gap-[51.74px]`}
-              >
-                <div className="flex flex-col gap-5 md:gap-[25px]">
-                  <StarRatings
-                    rating={item?.rating || 0}
-                    starRatedColor="#02ADE1"
-                    starHoverColor="#02ADE1"
-                    numberOfStars={5}
-                    starDimension="29px"
-                    starSpacing="2px"
-                    svgIconViewBox="0 0 31 31"
-                    svgIconPath={filledStarPath}
-                  />
-                  <p className="font-Poppins text-base font-light leading-[1.6rem] text-white opacity-50 5xl:text-lg 5xl:leading-[1.8rem]">
-                    {item?.description}
-                  </p>
-                </div>
-                <span className="font-Poppins text-lg font-light leading-5 text-white lg:text-[22px] lg:leading-[26.63px]">
-                  {item?.NameOrPosition}
-                </span>
-              </div>
-            ))}
-
-          {visibleCount < clientsReview.length && (
-            <div className="relative z-30 col-span-1 flex w-full items-center justify-center md:col-span-2 3xl:col-span-3">
-              <div
-                className={`absolute bottom-0 -z-20 flex h-[350px] w-full max-w-[1920px] items-end justify-center bg-custom-gradient 3xl:-bottom-[65px] 5xl:-bottom-[60px]`}
-              >
-                <button
-                  onClick={handleReadMore}
-                  className="hover: mb-8 w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Poppins font-medium leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px]"
-                  disabled={isLoading} // Disable button while loading
+      <Container className="mb-10 py-20 md:mb-12 xl:mb-16 4xl:mb-[120px] 5xl:px-[200px]">
+        <div className="flex flex-col gap-5 lg:gap-[60px]">
+          <SectionHeading
+            heading="Real Stories from <span>Satisfied Clients</span>"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore"
+            className="max-w-[998px] 4xl:!gap-5"
+            descriptionStyle="max-w-[590px]"
+            isDark={true}
+          />
+          <div className="review grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-[23px] xl:gap-y-[25px] 3xl:grid-cols-3">
+            {clientsReview &&
+              clientsReview.slice(0, visibleCount).map((item, index) => (
+                <div
+                  key={index}
+                  className={`flex h-full cursor-pointer flex-col items-stretch justify-between gap-5 rounded-[18.91px] bg-[#1A1A1A] p-5 transition-all duration-300 md:gap-6 md:px-[34px] md:py-[30px] xl:gap-[51.74px]`}
                 >
-                  {isLoading ? (
-                    <div className="flex w-full min-w-[83px] items-center justify-center">
-                      <Spinner color="#fff" />
-                    </div>
-                  ) : (
-                    'Read More'
-                  )}
-                </button>
+                  <div className="flex flex-col gap-5 md:gap-[25px]">
+                    <StarRatings
+                      rating={item?.rating || 0}
+                      starRatedColor="#02ADE1"
+                      starHoverColor="#02ADE1"
+                      numberOfStars={5}
+                      starDimension="29px"
+                      starSpacing="2px"
+                      svgIconViewBox="0 0 31 31"
+                      svgIconPath={filledStarPath}
+                    />
+                    <p className="font-Poppins text-base font-light leading-[1.6rem] text-white opacity-50 5xl:text-lg 5xl:leading-[1.8rem]">
+                      {item?.description}
+                    </p>
+                  </div>
+                  <span className="font-Poppins text-lg font-light leading-5 text-white lg:text-[22px] lg:leading-[26.63px]">
+                    {item?.NameOrPosition}
+                  </span>
+                </div>
+              ))}
+
+            {visibleCount < clientsReview.length && (
+              <div className="relative z-30 col-span-1 flex w-full items-center justify-center md:col-span-2 3xl:col-span-3">
+                <div
+                  className={`absolute bottom-0 -z-20 flex h-[350px] w-full max-w-[1920px] items-end justify-center bg-custom-gradient 3xl:-bottom-[65px] 5xl:-bottom-[60px]`}
+                >
+                  <button
+                    onClick={handleReadMore}
+                    className="hover: mb-8 w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Poppins font-medium leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px]"
+                    disabled={isLoading} // Disable button while loading
+                  >
+                    {isLoading ? (
+                      <div className="flex w-full min-w-[83px] items-center justify-center">
+                        <Spinner color="#fff" />
+                      </div>
+                    ) : (
+                      'Read More'
+                    )}
+                  </button>
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 

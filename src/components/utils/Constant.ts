@@ -20,6 +20,27 @@ import waosim from '../../../public/svg/client-logo-slider/waosim.svg';
 import teqdiligent from '../../../public/svg/client-logo-slider/teqdiligent.svg';
 import portsv from '../../../public/svg/client-logo-slider/portsv.svg';
 
+import htsBlack from '../../../public/svg/client-logo-slider/black-icon/hts.svg';
+import hopperBlack from '../../../public/svg/client-logo-slider/black-icon/hopper.svg';
+import wikifarmerBlack from '../../../public/svg/client-logo-slider/black-icon/wikifarmer.svg';
+import gocautionBlack from '../../../public/svg/client-logo-slider/black-icon/gocaution.svg';
+import heycollabBlack from '../../../public/svg/client-logo-slider/black-icon/heycollab.svg';
+import lolocoBlack from '../../../public/svg/client-logo-slider/black-icon/loloco.svg';
+import propftxBlack from '../../../public/svg/client-logo-slider/black-icon/propftx.svg';
+import everprettyBlack from '../../../public/svg/client-logo-slider/black-icon/everpretty.svg';
+import datapacketBlack from '../../../public/svg/client-logo-slider/black-icon/datapacket.svg';
+import gobrochuresBlack from '../../../public/svg/client-logo-slider/black-icon/gobrochures.svg';
+import hungrytripperBlack from '../../../public/svg/client-logo-slider/black-icon/hungrytripper.svg';
+import blueprintBlack from '../../../public/svg/client-logo-slider/black-icon/blueprint.svg';
+import edqanBlack from '../../../public/svg/client-logo-slider/black-icon/edqan.svg';
+import yhonkBlack from '../../../public/svg/client-logo-slider/black-icon/yhonk.svg';
+import woodlogsBlack from '../../../public/svg/client-logo-slider/black-icon/woodlogs.svg';
+import helpingjobseekersBlack from '../../../public/svg/client-logo-slider/black-icon/helpingjobseekers.svg';
+import yellowbirdBlack from '../../../public/svg/client-logo-slider/black-icon/yellowbird.svg';
+import waosimBlack from '../../../public/svg/client-logo-slider/black-icon/waosim.svg';
+import teqdiligentBlack from '../../../public/svg/client-logo-slider/black-icon/teqdiligent.svg';
+import portsvBlack from '../../../public/svg/client-logo-slider/black-icon/portsv.svg';
+
 // social media icons
 
 import instagram from '../../../public/svg/footer/social-media/instagram.svg';
@@ -92,7 +113,7 @@ export const NavBarData = [
   {
     id: 7,
     menuItem: 'Blog',
-    link: '/',
+    link: '/blog',
   },
 ];
 
@@ -1003,4 +1024,430 @@ export const exportTeamData = [
   { name: 'Andrew Max Fetcher', position: 'CEO & Founder, techwix' },
   { name: 'Andrew Max Fetcher', position: 'CEO & Founder, techwix' },
   { name: 'Andrew Max Fetcher', position: 'CEO & Founder, techwix' },
+];
+
+export const blackLogoIcon = [
+  heycollabBlack,
+  htsBlack,
+  lolocoBlack,
+  hopperBlack,
+  gocautionBlack,
+  propftxBlack,
+  wikifarmerBlack,
+  everprettyBlack,
+  datapacketBlack,
+  gobrochuresBlack,
+  hungrytripperBlack,
+  blueprintBlack,
+  edqanBlack,
+  yhonkBlack,
+  woodlogsBlack,
+  helpingjobseekersBlack,
+  yellowbirdBlack,
+  waosimBlack,
+  teqdiligentBlack,
+  portsvBlack,
+];
+
+export const blogData = [
+  {
+    blogHeading: 'All Topics',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  {
+    blogHeading: 'Lorem ',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  {
+    blogHeading: 'Lorem Ipsu',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  {
+    blogHeading: 'Lorem Ipsm',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  {
+    blogHeading: 'Ipsum',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  {
+    blogHeading: 'Loresum',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  {
+    blogHeading: 'Lorem Ipum',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  {
+    blogHeading: 'Lorm Ipsum',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  {
+    blogHeading: 'Lreum',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  {
+    blogHeading: 'oresum',
+    data: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
 ];
