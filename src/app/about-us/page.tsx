@@ -10,7 +10,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionHeading from '@/components/common/SectionHeading';
 import { Autoplay, Mousewheel, Pagination } from 'swiper/modules';
 import dynamic from 'next/dynamic';
-import { achievementsData, exportTeamData } from '@/components/utils/Constant';
+import {
+  achievementsData,
+  blackLogoIcon,
+  exportTeamData,
+} from '@/components/utils/Constant';
+import first from '../../../public/webp/careers/1.webp';
+import second from '../../../public/webp/careers/2.webp';
+import third from '../../../public/webp/careers/3.webp';
+import four from '../../../public/webp/careers/4.webp';
+import five from '../../../public/webp/careers/5.webp';
+import six from '../../../public/webp/careers/6.webp';
+import arrow from '../../../public/svg/arrow-white.svg';
+import Image from 'next/image';
+import ClientReview from '@/components/homePage/ClientReview';
+import Marquee from 'react-fast-marquee';
+
 const StarRatings = dynamic(() => import('react-star-ratings'), { ssr: false });
 
 const HighlitedDescription = styled.h1`
@@ -24,13 +39,15 @@ const AboutUs = () => {
     'M11.1855 16.8198L7.49332 19.044C7.3302 19.1479 7.15968 19.1923 6.98173 19.1774C6.80379 19.1626 6.6481 19.1033 6.51464 18.9996C6.38119 18.8957 6.27739 18.766 6.20324 18.6103C6.1291 18.4545 6.11428 18.2804 6.15876 18.0876L7.13743 13.8838L3.86778 11.059C3.71949 10.9255 3.62682 10.7735 3.58975 10.603C3.55267 10.4325 3.5638 10.2656 3.62312 10.1025C3.68242 9.93941 3.7714 9.80595 3.89003 9.70216C4.00865 9.59836 4.17177 9.53163 4.37936 9.50197L8.69441 9.12386L10.3626 5.16468C10.4367 4.98675 10.5517 4.85329 10.7073 4.76431C10.8631 4.67535 11.0225 4.63086 11.1855 4.63086C11.3487 4.63086 11.5081 4.67535 11.6638 4.76431C11.8195 4.85329 11.9344 4.98675 12.0086 5.16468L13.6768 9.12386L17.9917 9.50197C18.1994 9.53163 18.3625 9.59836 18.4811 9.70216C18.5998 9.80595 18.6887 9.93941 18.7481 10.1025C18.8073 10.2656 18.8185 10.4325 18.7814 10.603C18.7443 10.7735 18.6516 10.9255 18.5033 11.059L15.2337 13.8838L16.2124 18.0876C16.2569 18.2804 16.2421 18.4545 16.1679 18.6103C16.0938 18.766 15.9899 18.8957 15.8565 18.9996C15.723 19.1033 15.5673 19.1626 15.3895 19.1774C15.2115 19.1923 15.041 19.1479 14.8779 19.044L11.1855 16.8198Z';
   return (
     <>
-      <Container className="!5xl:px-[150px] mb-10 bg-careerBanner bg-cover bg-no-repeat py-[120px] md:mb-12 xl:mb-16 4xl:mb-[100px]">
-        <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-white md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
-          About Us
-        </h2>
-      </Container>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px] 5xl:px-[150px]">
-        <div className="flex items-center gap-[73px]">
+      <div className="bg-careerBanner bg-cover bg-center bg-no-repeat">
+        <Container className="mb-10 py-[120px] md:mb-12 xl:mb-16 4xl:mb-[100px]">
+          <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-white md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
+            About Us
+          </h2>
+        </Container>
+      </div>
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px]">
+        <div className="flex flex-col items-center gap-[73px] md:flex-row">
           <div className="w-full"></div>
           <div className="flex max-w-[752px] flex-col gap-[22px]">
             <span className="font-Inter text-[26px] font-bold leading-[37.13px] tracking-[-0.26px] text-lightBlue">
@@ -59,7 +76,7 @@ const AboutUs = () => {
           </div>
         </div>
       </Container>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px] 5xl:px-[150px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px]">
         <div className="grid grid-cols-1 gap-[29px] sm:grid-cols-2 xl:grid-cols-4">
           <div className="flex h-full min-h-[350px] flex-col items-center justify-center gap-[18px] rounded-[15px] bg-[#FFD9CF] px-[70.5px] py-5 sm:justify-end 5xl:min-h-[403px]">
             <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
@@ -96,7 +113,7 @@ const AboutUs = () => {
         </div>
       </Container>
       <div className="mb-10 bg-technologbg bg-cover bg-center bg-no-repeat py-10 md:mb-12 xl:mb-16 3xl:py-14 4xl:mb-[100px] 5xl:mb-[120px] 5xl:py-20">
-        <Container className="flex flex-col gap-[60px] 5xl:px-[150px]">
+        <Container className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[60px]">
           <h2 className="text-center font-Inter text-[25px] font-medium capitalize leading-[2rem] text-white sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px]">
             Who We are?
           </h2>
@@ -155,7 +172,7 @@ const AboutUs = () => {
           dangerouslySetInnerHTML={{
             __html: `Our <span> Achievements </span>`,
           }}
-          className="mx-auto max-w-[1612px] px-4 font-Inter text-[25px] font-medium capitalize leading-[2rem] text-charcoalBlue sm:px-6 sm:text-4xl sm:leading-10 md:px-8 xl:px-10 xl:text-[40px] xl:leading-[40px] 3xl:px-20 3xl:font-semibold 4xl:px-[100px] 4xl:text-[50px] 4xl:leading-[54px] 5xl:px-[150px] 5xl:text-[60px] 5xl:leading-[65px]"
+          className="mx-auto max-w-[1612px] px-4 font-Inter text-[25px] font-medium capitalize leading-[2rem] text-charcoalBlue sm:px-6 sm:text-4xl sm:leading-10 md:px-8 xl:px-10 xl:text-[40px] xl:leading-[40px] 3xl:px-20 3xl:font-semibold 4xl:px-[100px] 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px]"
         />
         <div className="h-full w-full">
           <Swiper
@@ -221,7 +238,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="mb-10 bg-technologbg bg-cover bg-center bg-no-repeat py-10 md:mb-12 xl:mb-16 3xl:py-14 4xl:mb-[100px] 5xl:mb-[120px] 5xl:py-20">
-        <Container className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[60px] 5xl:px-[150px]">
+        <Container className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[60px]">
           <SectionHeading
             heading="We have <span> expert team </span>"
             className="text-white"
@@ -239,7 +256,11 @@ const AboutUs = () => {
               speed={1000}
               loop={true}
               pagination={{
-                clickable: true, // Enables clicking on pagination dots
+                clickable: true,
+                renderBullet: (index, className) =>
+                  `<span class="${className} custom-pagination-bullet relative">
+                      <div class="inner-bullet  absolute top-[-3.5px] left-[-4px]"></div>
+                   </span>`,
               }}
               breakpoints={{
                 540: {
@@ -264,7 +285,7 @@ const AboutUs = () => {
                 exportTeamData.map((item, index) => (
                   <SwiperSlide
                     key={index}
-                    className="!h-auto rounded-[15px] bg-exportTeamBg bg-cover bg-center bg-no-repeat px-[35px] py-[70.48px] pt-[100px]"
+                    className="mb-10 !h-auto rounded-[15px] bg-exportTeamBg bg-cover bg-center bg-no-repeat px-[35px] py-[70.48px] pt-[100px]"
                   >
                     <div className="flex items-start gap-[11.85px]">
                       <div className="h-[47px] w-[23px] bg-export-team-gradient"></div>
@@ -282,6 +303,88 @@ const AboutUs = () => {
             </Swiper>
           </div>
         </Container>
+      </div>
+      <Container
+        className="bg-sectionBg mb-10 bg-cover bg-right bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20 5xl:px-[150px]"
+        isBackground={false}
+      >
+        <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">
+          <SectionHeading
+            heading="Life <span>@OptimityLogics</span>"
+            isDark={false}
+          />
+          <div className="no-scrollbar overflow-x-scroll">
+            <div className="grid w-full grid-cols-2 grid-rows-2 gap-[21px] md:grid-cols-4 lg:grid-rows-3">
+              <Image
+                src={first}
+                alt=""
+                className="col-span-2 row-span-2 h-full w-full object-contain"
+              />
+              <Image
+                src={four}
+                alt=""
+                className="col-span-1 row-span-1 h-full w-full object-contain"
+              />
+              <Image
+                src={six}
+                alt=""
+                className="row-span-2 h-full w-full object-contain"
+              />
+              <Image
+                src={five}
+                alt=""
+                className="row-span-2 h-full w-full object-contain"
+              />
+              <Image
+                src={second}
+                alt=""
+                className="h-full w-full object-contain"
+              />
+              <Image
+                src={third}
+                alt=""
+                className="h-full w-full object-contain"
+              />
+
+              <div className="flex h-full cursor-pointer items-end rounded-[15px] bg-[#1a1a1a] p-4 lg:p-8">
+                <div className="flex flex-col gap-3">
+                  <span className="font-Poppins text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
+                    Explore more
+                  </span>
+                  <Image
+                    src={arrow}
+                    alt={arrow}
+                    width={45}
+                    height={45}
+                    className="w-5 lg:w-max"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <ClientReview />
+      <div className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px]">
+        <Marquee gradient={true} gradientColor="white" speed={55}>
+          <div className="!last-of-type:4xl:mr-[69px] flex items-center justify-between last-of-type:mr-5 md:last-of-type:mr-[45px] last-of-type:xl:mr-[34px]">
+            {blackLogoIcon &&
+              blackLogoIcon.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex h-[66px] w-[153px] items-center justify-center sm:w-[193px]"
+                >
+                  <Image
+                    src={item}
+                    alt="icon"
+                    width={60}
+                    height={38}
+                    className="h-[38px] w-[90px] object-contain"
+                  />
+                </div>
+              ))}
+          </div>
+        </Marquee>
       </div>
     </>
   );

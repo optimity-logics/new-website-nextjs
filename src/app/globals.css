@@ -199,14 +199,40 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
   display: none !important;
 }
 
-.export .swiper-pagination-bullet {
-  background-color: white;
-  width: 7px;
-  height: 7px;
-  margin: 0 4px;
+/* Parent span for pagination bullets */
+.custom-pagination-bullet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6px;
+  height: 6px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background-color: white !important; /* Default background */
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+/* Inner div inside span for additional styles */
+.custom-pagination-bullet .inner-bullet {
+  width: 14px; /* Adjust for inner circle size */
+  height: 14px;
+  border-radius: 50%;
+  background-color: transparent; /* Default background */
+  padding: 4px; /* p-4 effect */
+  box-sizing: border-box; /* Ensure padding does not affect dimensions */
   transition: background-color 0.3s;
 }
 
-.export .swiper-pagination-bullet-active {
-  background-color: #086ad8;
+/* Active bullet styling */
+.swiper-pagination-bullet-active.custom-pagination-bullet {
+  border-color: blue !important; /* Active border color */
+  width: 6px; /* Adjust as needed */
+  height: 6px; /* Adjust as needed */
+}
+
+.swiper-pagination-bullet-active .inner-bullet {
+  background-color: transparent;
+  border: 1px solid gray;
 }
