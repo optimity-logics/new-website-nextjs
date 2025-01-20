@@ -95,7 +95,7 @@ const Footer = () => {
             {footerData.map((section, index) => (
               <div key={index} className="flex flex-col gap-[21.37px]">
                 <h3 className="font-Poppins text-xl font-normal leading-[1.875rem] text-white">
-                  {section.title}
+                  {section?.heading}
                 </h3>
                 <ul className="flex flex-col gap-3">
                   {section.items.map((item, idx) => (
@@ -103,7 +103,7 @@ const Footer = () => {
                       key={idx}
                       className="w-max cursor-pointer text-nowrap font-Poppins text-base font-light leading-[1.8rem] text-white opacity-70 transition-all duration-300 hover:text-lightBlue"
                     >
-                      {item}
+                      <Link href={item?.link}> {item?.title}</Link>
                     </li>
                   ))}
                 </ul>

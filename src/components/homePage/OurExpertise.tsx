@@ -13,8 +13,8 @@ import { Autoplay, Mousewheel } from 'swiper/modules';
 const OurExpertise = () => {
   return (
     <Container className="md:!px-0">
-      <div className="mb-10 flex flex-col items-center gap-[30px] overflow-x-hidden md:mb-12 md:ml-8 lg:flex-row xl:mb-16 xl:ml-10 3xl:ml-20 4xl:mb-[120px] 4xl:ml-[100px]">
-        <div className="flex w-full flex-col gap-5 lg:max-w-[375px] lg:gap-[100px]">
+      <div className="mb-10 flex flex-col items-stretch gap-[30px] overflow-x-hidden md:mb-12 md:ml-8 lg:flex-row xl:mb-16 xl:ml-10 3xl:ml-20 4xl:mb-[120px] 4xl:ml-[100px]">
+        <div className="flex w-full flex-col justify-between gap-5 lg:max-w-[375px] lg:gap-[100px]">
           <div className="flex flex-col gap-3 lg:gap-[25px]">
             <h3 className="font-Poppins text-[26px] font-medium leading-[2.3rem] text-charcoalBlue sm:text-4xl sm:leading-10 4xl:text-[45px] 4xl:leading-[48px] 5xl:text-[55px] 5xl:font-semibold 5xl:leading-[60px]">
               Our <span className="text-red lg:block">Expertise</span>
@@ -26,7 +26,7 @@ const OurExpertise = () => {
           </div>
           <Button btnName="View All" className="w-max bg-orange px-[30px]" />
         </div>
-        <div className="h-full w-full max-w-[1520px] overflow-x-hidden lg:px-0">
+        <div className="min-h-[380px] w-full max-w-[1520px] overflow-x-hidden lg:px-0">
           <Swiper
             modules={[Autoplay, Mousewheel]}
             slidesPerView={1}

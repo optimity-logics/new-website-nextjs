@@ -7,7 +7,7 @@ import team from '../../../public/svg/team.svg';
 const WhatWeDo = () => {
   return (
     <Container className="mx-auto mb-[140px] 4xl:!px-[200px]">
-      <div className="flex flex-col items-center gap-16 rounded-[20px] border border-white bg-whatwedobg bg-cover bg-no-repeat p-8 lg:flex-row 3xl:gap-[105px] 3xl:py-[52px] 3xl:pl-[84px] 3xl:pr-[75.56px]">
+      <div className="bg-whatwedobg flex flex-col items-center gap-16 rounded-[20px] border border-white bg-cover bg-no-repeat p-8 lg:flex-row 3xl:gap-[105px] 3xl:py-[52px] 3xl:pl-[84px] 3xl:pr-[75.56px]">
         <div className="flex max-w-[872px] flex-col gap-[30px]">
           <div className="flex flex-col gap-[22px]">
             <h2 className="font-Poppins text-4xl text-[40px] font-bold leading-[46px] text-white 4xl:text-[50px] 4xl:leading-[60.51px]">

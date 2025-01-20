@@ -24,10 +24,7 @@ export default {
         // 1366 1440 1400 1600
       },
       backgroundImage: {
-        heroElipsbtn1: "url('/svg/heroElipsbtn1.svg')",
-        heroElipsbtn2: "url('/svg/heroElipsbtn2.svg')",
         herobtnbg: "url('/svg/herobtnbg.svg')",
-        whatwedobg: "url('/svg/what-we-do-bg.svg')",
         homepagebg: "url('/webp/HeroBanner.webp')",
         homepagebg1: "url('/webp/herobanner1.webp')",
         homepagebg2: "url('/webp/2.webp')",

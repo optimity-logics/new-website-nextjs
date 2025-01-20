@@ -37,7 +37,7 @@ const HeroSection = () => {
           </div>
         </Container>
       </div>
-      <div className="mx-auto max-w-[1920px] px-3">
+      <div className="mx-auto px-4">
         <div className="-mt-[37px] flex flex-col items-center gap-[25px] rounded-2xl border border-darkGray bg-black px-5 pb-[22px] pt-[30px] 5xl:rounded-[24px]">
           <span className="text-center font-Poppins text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
