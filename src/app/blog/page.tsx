@@ -64,7 +64,7 @@ const Blog = () => {
               selectedblog?.data?.map((item, index) => (
                 <div
                   key={index}
-                  className="group flex h-full min-h-full cursor-pointer flex-col gap-6 xl:gap-8"
+                  className="group flex h-full min-h-full cursor-pointer flex-col gap-[11.21px]"
                 >
                   <div>
                     <Image
@@ -74,24 +74,45 @@ const Blog = () => {
                       height={230}
                     />
                   </div>
-                  <div className="flex h-full flex-col justify-between gap-[17.39px]">
-                    <div className="flex flex-col gap-3">
-                      <h3 className="font-Poppins text-xl font-medium leading-6 text-[#192020] 5xl:text-[26px] 5xl:leading-8">
-                        {item?.title}
-                      </h3>
-                      <p className="font-Poppins text-base font-light leading-[1.6rem] text-[#192020] 5xl:text-lg 5xl:leading-[1.8rem]">
-                        {item?.description}
-                      </p>
+                  <div className="flex h-full flex-col justify-between gap-[15px]">
+                    <div className="flex flex-col gap-2.5">
+                      <h5 className="font-Inter text-xl font-semibold leading-[25.56px] text-[#E94E25]">
+                        {item?.projectName}
+                      </h5>
+                      <div className="flex flex-col gap-4">
+                        <h3 className="font-Inter text-xl font-bold leading-6 text-black 5xl:text-[22px] 5xl:leading-7">
+                          {item?.title}
+                        </h3>
+                        <p className="font-Poppins text-base font-light leading-[1.6rem] text-[#504C4C] 5xl:text-lg 5xl:font-normal 5xl:leading-[25.56px]">
+                          {item?.description}
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-[15px]">
                       <Link
                         href={'/'}
                         className="font-Poppins text-sm font-medium leading-[19.6px] text-red"
                       >
                         Continue Reading
                       </Link>
-                      <div className="relative mt-[5px] h-0.5 w-full bg-lightSilver">
+                      <div className="relative h-0.5 w-full bg-lightSilver">
                         <span className="absolute left-0 top-0 h-full w-0 bg-red transition-all duration-300 ease-out group-hover:w-full"></span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-[13px]">
+                          <Image
+                            src={item?.projectManager || ''}
+                            alt="pm-img"
+                            width={45}
+                            height={45}
+                          />
+                          <span className="font-Inter text-base font-medium leading-[22.36px] text-[#0c0c0c]">
+                            {item?.projectManagerName}
+                          </span>
+                        </div>
+                        <span className="font-Inter text-base font-medium leading-[22.36px] text-[#0c0c0c]">
+                          {item?.projectReleaseDate}
+                        </span>
                       </div>
                     </div>
                   </div>

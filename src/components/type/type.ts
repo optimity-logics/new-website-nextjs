@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 
 export interface IFooterDataType {
-  title: string;
-  items: string[];
+  heading: string;
+  items: { title: string; link: string }[];
 }
 
 export interface IMenuSidebarProps {

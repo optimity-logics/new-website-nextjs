@@ -18,13 +18,12 @@ const SkeletonForBlogContent = ({ selectedblog }: IBlogTypes) => {
               key={index}
               className="group flex h-full min-h-full cursor-pointer flex-col gap-6 xl:gap-7"
             >
-              <div className="h-[280px] w-full">
-                <Skeleton
-                  height="100%"
-                  className="h-full min-h-[280px]"
-                  borderRadius={11.41}
-                />
-              </div>
+              <Skeleton
+                height="100%"
+                width="100%"
+                className="min-h-[190px] xl:min-h-[280ox]"
+                borderRadius={11.41}
+              />
               <div className="flex h-full flex-col justify-between gap-[17.39px]">
                 <div className="flex flex-col gap-3">
                   <div className="flex flex-col gap-1">
@@ -34,10 +33,17 @@ const SkeletonForBlogContent = ({ selectedblog }: IBlogTypes) => {
                   <Skeleton width="100%" height={16} />
                   <Skeleton width="83%" height={16} />
                 </div>
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-3">
                   <Skeleton width={120} height={20} />
                   <div className="relative mt-[5px] h-0.5 w-full bg-lightSilver">
                     <span className="absolute left-0 top-0 h-full w-0 bg-red transition-all duration-300 ease-out group-hover:w-full"></span>
+                  </div>
+                  <div className="flex w-full items-center justify-between">
+                    <div className="flex w-full items-center gap-[13px]">
+                      <Skeleton width={45} height={45} borderRadius={50} />
+                      <Skeleton width={100} height={16} />
+                    </div>
+                    <Skeleton width={180} height={16} />
                   </div>
                 </div>
               </div>

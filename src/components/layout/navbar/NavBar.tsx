@@ -121,7 +121,7 @@ const NavBar = () => {
                             </span>
                             <Button
                               btnName="Explore Blog"
-                              className="w-max rounded-md bg-orange px-[30px] py-[14px] font-Poppins text-base font-semibold leading-5 text-white"
+                              className="w-max rounded-md bg-orange px-[20px] py-[10px] font-Poppins text-base font-medium leading-5 text-white"
                             />
                           </div>
                         </div>
