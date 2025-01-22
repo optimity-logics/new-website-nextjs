@@ -1,23 +1,32 @@
+import Container from '@/components/common/Container';
+import Image from 'next/image';
+import notFoundImage from '../../public/webp/404.webp';
 import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <div className="bg- flex min-h-screen items-center justify-center bg-homepagebg2 bg-cover bg-center bg-no-repeat">
-      <div className="max-w-lg text-center">
-        <h1 className="mb-4 font-Inter text-6xl font-extrabold leading-[64px]">
-          404
-        </h1>
-        <p className="mb-6 font-Inter text-2xl">Oops! Page not found</p>
-
-        <div className="flex justify-center gap-4">
+    <Container className="mb-10">
+      <div className="flex flex-col items-center justify-center gap-5 md:gap-7 xl:gap-8">
+        <div>
+          <Image src={notFoundImage} alt="404" width={1012} height={700} />
+        </div>
+        <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col items-center gap-2 sm:gap-3">
+            <h3 className="text-center font-Inter text-base font-bold leading-5 text-[#000000] sm:text-[26px] sm:leading-[27.39px]">
+              Something went wrong.
+            </h3>
+            <span className="text-center font-Inter text-sm font-normal leading-[18px] text-[#7c7676] sm:text-xl sm:leading-[29px]">
+              Sorry, We can’t find the page you’re looking for.
+            </span>
+          </div>
           <Link
-            href="/"
-            className="rounded-lg bg-white px-6 py-2 font-Inter text-lg font-medium shadow-md transition hover:shadow-lg"
+            href={'/'}
+            className="w-max rounded-[5px] bg-[#1A6AA3] px-5 py-2.5 font-Poppins text-base capitalize leading-[19.36px] text-white sm:px-[30px] sm:py-[14px] 5xl:text-lg"
           >
-            Go back home
+            go back
           </Link>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
