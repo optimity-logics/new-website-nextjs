@@ -28,14 +28,20 @@ const Blog = () => {
   }, [activeKey]);
   return (
     <>
-      <div className="bg-careerBanner bg-cover bg-center bg-no-repeat py-[120px]">
-        <Container>
-          <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-white md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
-            Blog
+      <Container className="py-10 3xl:py-14 5xl:py-20">
+        <div className="flex flex-col items-center justify-center gap-5 md:gap-8">
+          <span className="rounded-[32px] bg-orange px-[14px] py-2.5 font-Inter text-base font-normal leading-6 text-white">
+            Blogs
+          </span>
+          <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[60px] 4xl:font-semibold 4xl:leading-[64px] 5xl:text-[75px] 5xl:leading-[80px]">
+            The Optimity Blogs
           </h2>
-        </Container>
-      </div>
-      <div className="mb-8 bg-[#f38f0230] py-[13.01px] 3xl:mb-10 4xl:mb-[60px]">
+          <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
+            Where innovation meets progress.
+          </p>
+        </div>
+      </Container>
+      {/* <div className="mb-8 bg-[#f38f0230] py-[13.01px] 3xl:mb-10 4xl:mb-[60px]">
         <div className="no-scrollbar mx-auto w-full max-w-[1920px] overflow-x-auto px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 5xl:px-[100px]">
           <Tabs
             aria-label="Blog Tabs"
@@ -54,7 +60,7 @@ const Blog = () => {
             ))}
           </Tabs>
         </div>
-      </div>
+      </div> */}
       {loading ? (
         <SkeletonForBlogContent selectedblog={selectedblog} />
       ) : selectedblog ? (
@@ -123,6 +129,48 @@ const Blog = () => {
       ) : (
         <p>No data found for the selected tab.</p>
       )}
+      <div className="bg-[#F8F8F8]">
+        <Container className="py-10 3xl:py-14 5xl:py-20">
+          <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-4">
+              <h5 className="font-Inter text-[26px] font-medium leading-8 text-black">
+                Sign Up for the Latest Insights
+              </h5>
+              <p className="text-center font-Inter text-lg font-normal leading-6 text-black">
+                Get a free access of our exclusive research and tech strategies
+                to level up your knowledge about the digital realm.
+              </p>
+            </div>
+
+            <form className="flex flex-col items-center gap-5">
+              <div className="flex items-center gap-5 rounded-[30px] border-2 border-black pr-1.5">
+                {' '}
+                <input
+                  type="email"
+                  placeholder="Enter your email..."
+                  className="w-full rounded-[30px] border-none bg-transparent py-4 pl-5 focus:outline-none sm:min-w-[450px]"
+                />
+                <button
+                  type="submit"
+                  className="cursor-pointer rounded-[30px] bg-lightBlue px-[15px] py-2.5 font-Inter text-base font-semibold uppercase text-white"
+                >
+                  subscribe
+                </button>
+              </div>
+              <div className="flex items-start gap-1 lg:items-center">
+                <input type="checkbox" className="mt-1 lg:mt-0" />
+                <span className="font-Inter text-lg font-normal leading-6 text-[#192020]">
+                  I hereby agree to receive newsletters from MindInventory and
+                  acknowledge company's
+                  <Link href={''} className="text-lightBlue underline">
+                    Privacy Policy.
+                  </Link>
+                </span>
+              </div>
+            </form>
+          </div>
+        </Container>
+      </div>
     </>
   );
 };

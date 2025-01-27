@@ -77,6 +77,17 @@ import shieldCheck from '../../../public/svg/careers/benefits/shieldCheck.svg';
 
 import pm from '../../../public/images/pm.png';
 
+import clutch from '../../../public/svg/about-us/clutch.svg';
+import designrush from '../../../public/svg/about-us/designrush.svg';
+import goodfirms from '../../../public/svg/about-us/goodfirm.svg';
+import topDevelopers from '../../../public/svg/about-us/top-developers.svg';
+
+import location from '../../../public/svg/about-us/work-life/location.svg';
+import employeeSkill from '../../../public/svg/about-us/work-life/Employee-Upskill.svg';
+import familyHelth from '../../../public/svg/about-us/work-life/family-insurance.svg';
+import leave from '../../../public/svg/about-us/work-life/leave.svg';
+import food from '../../../public/svg/about-us/work-life/food.svg';
+
 // types
 
 import { IFooterDataType } from '../type/type';
@@ -997,47 +1008,83 @@ export const achievementsData = [
   {
     rating: 4.5,
     title: 'Top IT services company',
+    logoImg: clutch,
   },
 
   {
     rating: 4.5,
     title: 'Top mobile app development company',
+    logoImg: goodfirms,
   },
 
   {
     rating: 4.7,
     title: 'Top mobile app development company',
+    logoImg: goodfirms,
   },
   {
     rating: 4.8,
     title: 'Top mobile app development company',
+    logoImg: designrush,
   },
   {
     rating: 4.5,
     title: 'Top mobile app development ',
+    logoImg: topDevelopers,
   },
   {
     rating: 5.0,
     title: 'Top mobile app development',
+    logoImg: designrush,
   },
   {
     rating: 4.5,
     title: 'Top mobile app development company',
+    logoImg: topDevelopers,
   },
   {
     rating: 4.5,
     title: 'Top mobile app development company',
+    logoImg: clutch,
   },
 ];
 
 export const exportTeamData = [
-  { name: 'Andrew Max Fetcher', position: 'CEO, techwix' },
-  { name: 'Arnold human', position: 'CEO, techwix' },
-  { name: 'Mike Holder', position: 'CEO, techwix' },
-  { name: 'Joakim Ken', position: 'CEO & Founder, techwix' },
-  { name: 'Andrew Max Fetcher', position: 'CEO & Founder, techwix' },
-  { name: 'Andrew Max Fetcher', position: 'CEO & Founder, techwix' },
-  { name: 'Andrew Max Fetcher', position: 'CEO & Founder, techwix' },
+  {
+    name: 'Andrew Max Fetcher',
+    position: 'CEO, techwix',
+    employeImg: '/webp/about-us/expert-team/employee1.webp',
+  },
+  {
+    name: 'Arnold human',
+    position: 'CEO, techwix',
+    employeImg: '/webp/about-us/expert-team/employee2.webp',
+  },
+  {
+    name: 'Mike Holder',
+    position: 'CEO, techwix',
+    employeImg: '/webp/about-us/expert-team/employee3.webp',
+  },
+  {
+    name: 'Joakim Ken',
+    position: 'CEO & Founder, techwix',
+    employeImg: '/webp/about-us/expert-team/employee4.webp',
+  },
+  {
+    name: 'Andrew Max Fetcher',
+    position: 'CEO & Founder, techwix',
+    employeImg: '/webp/about-us/expert-team/employee1.webp',
+  },
+  {
+    name: 'Andrew Max Fetcher',
+    position: 'CEO & Founder, techwix',
+    employeImg: '/webp/about-us/expert-team/employee2.webp',
+  },
+  {
+    name: 'Andrew Max Fetcher',
+    position: 'CEO & Founder, techwix',
+    employeImg: '/webp/about-us/expert-team/employee3.webp',
+  },
 ];
 
 export const blackLogoIcon = [
@@ -1657,5 +1704,33 @@ every tech possibility and blowing everyo...`,
         projectReleaseDate: 'January 7, 2024',
       },
     ],
+  },
+];
+
+export const WorkLifeData = [
+  {
+    img: location,
+    title: 'Relocation Reimbursement',
+    bgColor: '#ffc0d9',
+  },
+  {
+    img: employeeSkill,
+    title: 'Employee Upskill Programs',
+    bgColor: '#d0bfff',
+  },
+  {
+    img: familyHelth,
+    title: 'Family Health Insurance',
+    bgColor: '#ffd8c0',
+  },
+  {
+    img: leave,
+    title: 'Paternity/Maternity Leave',
+    bgColor: '#b5f1c5',
+  },
+  {
+    img: food,
+    title: 'Economical Meals and Free Snacks',
+    bgColor: '#9fe9fe',
   },
 ];
