@@ -14,6 +14,7 @@ import {
   achievementsData,
   blackLogoIcon,
   exportTeamData,
+  WorkLifeData,
 } from '@/components/utils/Constant';
 import first from '../../../public/webp/careers/1.webp';
 import second from '../../../public/webp/careers/2.webp';
@@ -24,7 +25,13 @@ import six from '../../../public/webp/careers/6.webp';
 import arrow from '../../../public/svg/arrow-white.svg';
 import Image from 'next/image';
 import ClientReview from '@/components/homePage/ClientReview';
-import Marquee from 'react-fast-marquee';
+import completeProject from '../../../public/webp/about-us/completeProject.webp';
+import employee from '../../../public/webp/about-us/employee.webp';
+import countryServe from '../../../public/webp/about-us/countryServe.webp';
+import expertise from '../../../public/webp/about-us/yearOfExpertise.webp';
+import aboutUs from '../../../public/webp/about-us/about-us1.webp';
+import { div } from 'framer-motion/client';
+import Button from '@/components/common/Button';
 
 const StarRatings = dynamic(() => import('react-star-ratings'), { ssr: false });
 
@@ -47,9 +54,28 @@ const AboutUs = () => {
         </Container>
       </div>
       <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px]">
-        <div className="flex flex-col items-center gap-[73px] md:flex-row">
-          <div className="w-full"></div>
-          <div className="flex max-w-[752px] flex-col gap-[22px]">
+        <div className="flex flex-col items-center gap-[73px] lg:flex-row">
+          <div className="grid w-full grid-cols-2 gap-[25px]">
+            <div>
+              <Image
+                src={aboutUs}
+                alt="about-us"
+                width={383}
+                height={567}
+                className="w-full rounded-[15px] object-cover"
+              />
+            </div>
+            <div className="relative pt-10 before:-left-1/2 before:top-0 before:-z-[10] before:mx-auto before:h-full before:w-full before:min-w-[415px] before:-rotate-[8deg] before:bg-aboutUsClient before:bg-cover before:bg-center before:bg-no-repeat sm:pt-14 sm:before:absolute lg:pt-20 4xl:pt-[127px] 4xl:before:min-w-[555px]">
+              <Image
+                src={aboutUs}
+                alt="about-us"
+                width={383}
+                height={567}
+                className="w-full rounded-[15px] object-cover"
+              />
+            </div>
+          </div>
+          <div className="flex w-full max-w-[752px] flex-col gap-[22px]">
             <span className="font-Inter text-[26px] font-bold leading-[37.13px] tracking-[-0.26px] text-lightBlue">
               Who we are
             </span>
@@ -78,37 +104,73 @@ const AboutUs = () => {
       </Container>
       <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px]">
         <div className="grid grid-cols-1 gap-[29px] sm:grid-cols-2 xl:grid-cols-4">
-          <div className="flex h-full min-h-[350px] flex-col items-center justify-center gap-[18px] rounded-[15px] bg-[#FFD9CF] px-[70.5px] py-5 sm:justify-end 5xl:min-h-[403px]">
-            <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
-              354+
-            </h5>
-            <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
-              Completed Projects
-            </span>
+          <div className="flex h-full flex-col justify-between gap-5 rounded-[15px] bg-[#FFD9CF] pb-5">
+            <Image
+              src={completeProject}
+              alt="completeProject"
+              width={408}
+              height={241}
+              className="w-full object-cover"
+            />
+            <div className="flex flex-col items-center justify-center gap-[18px]">
+              <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+                354+
+              </h5>
+              <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
+                Completed Projects
+              </span>
+            </div>
           </div>
-          <div className="flex h-full min-h-[350px] flex-col items-center justify-center gap-[18px] rounded-[15px] bg-[#92E6FF] px-[70.5px] py-5 sm:justify-start 5xl:min-h-[403px]">
-            <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
-              15+
-            </h5>
-            <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
-              Employees
-            </span>
+          <div className="flex h-full flex-col justify-between gap-5 rounded-[15px] bg-[#92E6FF] pt-5">
+            <div className="flex flex-col items-center justify-center gap-[18px] px-[70.5px]">
+              <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+                15+
+              </h5>
+              <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
+                Employees
+              </span>
+            </div>
+            <Image
+              src={employee}
+              alt="employee"
+              width={408}
+              height={241}
+              className="w-full object-cover"
+            />
           </div>
-          <div className="flex h-full min-h-[350px] flex-col items-center justify-center gap-[18px] rounded-[15px] bg-[#FFD9CF] px-[70.5px] py-5 sm:justify-end sm:bg-[#92E6FF] xl:bg-[#FFD9CF] 5xl:min-h-[403px]">
-            <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
-              02+
-            </h5>
-            <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
-              Countries Served
-            </span>
+          <div className="flex h-full flex-col justify-between gap-5 rounded-[15px] bg-[#FFD9CF] pb-5 sm:bg-[#92E6FF] xl:bg-[#FFD9CF] 5xl:min-h-[403px]">
+            <Image
+              src={countryServe}
+              alt="countryServe-img"
+              width={408}
+              height={241}
+              className="w-full object-cover"
+            />
+            <div className="flex flex-col items-center justify-center gap-[18px] px-[70.5px]">
+              <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+                02+
+              </h5>
+              <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
+                Countries Served
+              </span>
+            </div>
           </div>
-          <div className="flex h-full min-h-[350px] flex-col items-center justify-center gap-[18px] rounded-[15px] bg-[#92E6FF] px-[70.5px] py-5 sm:justify-start sm:bg-[#FFD9CF] xl:bg-[#92E6FF] 5xl:min-h-[403px]">
-            <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
-              05+
-            </h5>
-            <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
-              Year Of Experience
-            </span>
+          <div className="flex h-full flex-col justify-between gap-5 rounded-[15px] bg-[#92E6FF] pt-5 sm:bg-[#FFD9CF] xl:bg-[#92E6FF]">
+            <div className="flex flex-col items-center justify-center gap-[18px] px-[70.5px]">
+              <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+                05+
+              </h5>
+              <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
+                Year Of Experience
+              </span>
+            </div>
+            <Image
+              src={expertise}
+              alt="yearOfExperience"
+              width={408}
+              height={241}
+              className="w-full object-cover"
+            />
           </div>
         </div>
       </Container>
@@ -209,28 +271,39 @@ const AboutUs = () => {
               achievementsData.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="!h-auto rounded-[16.82px] bg-[#F8F8F8] px-[33.63px] py-[28.94px]"
+                  className="!h-auto rounded-[16.82px] bg-[#F8F8F8] px-[33.63px] pb-[28.94px] pt-[33.63px]"
                 >
-                  <div className="flex h-full flex-col items-center gap-[15.69px] pt-[112px]">
-                    <div className="flex items-center gap-[16.01px]">
-                      {' '}
-                      <StarRatings
-                        rating={item?.rating || 0}
-                        starRatedColor="#FFB300"
-                        starHoverColor="#FFB300"
-                        numberOfStars={5}
-                        starDimension="32px"
-                        starSpacing="4px"
-                        svgIconViewBox="0 0 22 22"
-                        svgIconPath={yellowStarPath}
-                      />{' '}
-                      <p className="mt-1.5 font-Inter text-lg font-normal leading-6 text-[#212529]">
-                        {item?.rating || 0}
-                      </p>
+                  <div className="flex h-full flex-col items-center gap-[22.42px]">
+                    <div>
+                      <Image
+                        src={item?.logoImg || ''}
+                        alt=""
+                        width={100}
+                        height={24}
+                        className="w-full"
+                      />
                     </div>
-                    <span className="text-center font-Inter text-xl font-light leading-[32.29px] text-[#212529]">
-                      {item?.title}
-                    </span>
+                    <div className="flex h-full flex-col items-center gap-[15.69px]">
+                      <div className="flex items-center gap-[16.01px]">
+                        {' '}
+                        <StarRatings
+                          rating={item?.rating || 0}
+                          starRatedColor="#FFB300"
+                          starHoverColor="#FFB300"
+                          numberOfStars={5}
+                          starDimension="32px"
+                          starSpacing="4px"
+                          svgIconViewBox="0 0 22 22"
+                          svgIconPath={yellowStarPath}
+                        />{' '}
+                        <p className="mt-1.5 font-Inter text-lg font-normal leading-6 text-[#212529]">
+                          {item?.rating || 0}
+                        </p>
+                      </div>
+                      <span className="text-center font-Inter text-xl font-light leading-[32.29px] text-[#212529]">
+                        {item?.title}
+                      </span>
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}
@@ -259,7 +332,7 @@ const AboutUs = () => {
                 clickable: true,
                 renderBullet: (index, className) =>
                   `<span class="${className} custom-pagination-bullet relative">
-                      <div class="inner-bullet  absolute top-[-3.5px] left-[-4px]"></div>
+                      <div class="inner-bullet  absolute top-[-4.5px] left-[-4px]"></div>
                    </span>`,
               }}
               breakpoints={{
@@ -285,17 +358,23 @@ const AboutUs = () => {
                 exportTeamData.map((item, index) => (
                   <SwiperSlide
                     key={index}
-                    className="mb-10 !h-auto rounded-[15px] bg-exportTeamBg bg-cover bg-center bg-no-repeat px-[35px] py-[70.48px] pt-[100px]"
+                    className="mb-10 !h-auto min-h-[490px] rounded-[15px] bg-cover bg-center bg-no-repeat"
+                    style={{
+                      backgroundImage: `url("${item?.employeImg}")`,
+                      backgroundSize: '100%,100%',
+                    }}
                   >
-                    <div className="flex items-start gap-[11.85px]">
-                      <div className="h-[47px] w-[23px] bg-export-team-gradient"></div>
-                      <div className="flex flex-col gap-[22.5px]">
-                        <h3 className="max-w-[150px] font-Inter text-[26px] font-semibold leading-[28.42px] tracking-[-0.19px] text-white">
-                          {item?.name}
-                        </h3>
-                        <span className="font-Inter text-sm font-normal leading-7 text-white">
-                          {item?.position}
-                        </span>
+                    <div className="mt-auto flex h-full items-end bg-exportTeamBg bg-cover bg-no-repeat px-[35px] py-[70.48px] pt-[100px]">
+                      <div className="flex items-start gap-[11.85px]">
+                        <div className="h-[47px] w-[23px] bg-export-team-gradient"></div>
+                        <div className="flex flex-col gap-[22.5px]">
+                          <h3 className="max-w-[150px] font-Inter text-[26px] font-semibold leading-[28.42px] tracking-[-0.19px] text-white">
+                            {item?.name}
+                          </h3>
+                          <span className="font-Inter text-sm font-normal leading-7 text-white">
+                            {item?.position}
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -304,8 +383,48 @@ const AboutUs = () => {
           </div>
         </Container>
       </div>
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px] 5xl:px-[150px]">
+        <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[60px]">
+          <SectionHeading
+            heading="Discover Work-Life Harmony With <span> Optimity Logics</span>"
+            isDark={false}
+          />
+          <div className="flex flex-col gap-5 md:gap-10">
+            <div className="grid grid-cols-5 gap-5">
+              {WorkLifeData &&
+                WorkLifeData.map((item, index) => (
+                  <div
+                    key={index}
+                    className={`flex flex-col items-center gap-6 rounded-3xl p-[30px]`}
+                    style={{ backgroundColor: item?.bgColor }}
+                  >
+                    <div className="flex h-[56px] w-[56px] items-center justify-center rounded-full bg-black">
+                      <Image src={item?.img} alt="" width={24} height={24} />
+                    </div>
+                    <h4 className="px-10 text-center font-Inter text-lg font-normal leading-7 text-black">
+                      {item?.title}
+                    </h4>
+                  </div>
+                ))}
+            </div>
+            <div className="flex flex-col items-center gap-4">
+              <h3 className="font-Inter text-[26px] font-semibold leading-[28.42px] tracking-[-0.19px] text-black 3xl:text-4xl">
+                Want to Join Team MindInventory?
+              </h3>
+              <p className="font-Inter text-lg font-normal leading-[29px] text-[#7C7676]">
+                Find your suitable job role openings and apply right away to get
+                to work on exciting projects!
+              </p>
+              <Button
+                btnName=" explore openings"
+                className="mt-5 bg-lightBlue px-5 uppercase"
+              />
+            </div>
+          </div>
+        </div>
+      </Container>
       <Container
-        className="bg-sectionBg mb-10 bg-cover bg-right bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20 5xl:px-[150px]"
+        className="bg-sectionBg mb-10 bg-cover bg-right bg-no-repeat md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]"
         isBackground={false}
       >
         <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">
@@ -365,27 +484,6 @@ const AboutUs = () => {
         </div>
       </Container>
       <ClientReview />
-      <div className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px]">
-        <Marquee gradient={true} gradientColor="white" speed={55}>
-          <div className="!last-of-type:4xl:mr-[69px] flex items-center justify-between last-of-type:mr-5 md:last-of-type:mr-[45px] last-of-type:xl:mr-[34px]">
-            {blackLogoIcon &&
-              blackLogoIcon.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex h-[66px] w-[153px] items-center justify-center sm:w-[193px]"
-                >
-                  <Image
-                    src={item}
-                    alt="icon"
-                    width={60}
-                    height={38}
-                    className="h-[38px] w-[90px] object-contain"
-                  />
-                </div>
-              ))}
-          </div>
-        </Marquee>
-      </div>
     </>
   );
 };
