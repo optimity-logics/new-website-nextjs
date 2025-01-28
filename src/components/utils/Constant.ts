@@ -676,6 +676,116 @@ export const servicesMegsmenuDate = [
     items: ['FAQs', 'Case Studies', 'Engineering Blog', 'Books & Webinars'],
   },
 ];
+export const technologyData = [
+  {
+    title: 'Mobile',
+    items: [
+      {
+        techName: 'Flutter',
+        techLink: '/technology/mobile',
+      },
+      {
+        techName: 'ios',
+        techLink: '/technology/mobile',
+      },
+      {
+        techName: 'Android',
+        techLink: '/technology/mobile',
+      },
+      {
+        techName: 'Swift',
+        techLink: '/technology/mobile',
+      },
+      {
+        techName: 'React Native',
+        techLink: '/technology/mobile',
+      },
+      {
+        techName: 'Iconic',
+        techLink: '/technology/mobile',
+      },
+    ],
+  },
+  {
+    title: 'Frontend',
+    items: [
+      {
+        techName: 'React',
+        techLink: '/technology/front-end',
+      },
+      {
+        techName: 'Vue',
+        techLink: '/technology/front-end',
+      },
+      {
+        techName: 'Next.js',
+        techLink: '/technology/front-end',
+      },
+      {
+        techName: 'Backbone.js',
+        techLink: '/technology/front-end',
+      },
+      {
+        techName: 'JavaSctipr',
+        techLink: '/technology/front-end',
+      },
+      {
+        techName: 'Angular',
+        techLink: '/technology/front-end',
+      },
+    ],
+  },
+  {
+    title: 'Backend',
+    items: [
+      {
+        techName: 'Python',
+        techLink: '/technology/back-end',
+      },
+      {
+        techName: 'Golang',
+        techLink: '/technology/back-end',
+      },
+      {
+        techName: 'Node.js',
+        techLink: '/technology/back-end',
+      },
+      {
+        techName: 'Laravel',
+        techLink: '/technology/back-end',
+      },
+      {
+        techName: 'PHP',
+        techLink: '/technology/back-end',
+      },
+      {
+        techName: 'Meteor.js',
+        techLink: '/technology/back-end',
+      },
+    ],
+  },
+  {
+    title: 'Trending',
+    items: [
+      {
+        techName: 'Wearable App Development',
+        techLink: '/technology/trending',
+      },
+      {
+        techName: 'Internet of Things',
+        techLink: '/technology/trending',
+      },
+      {
+        techName: 'Tailwind CSS',
+        techLink: '/technology/trending',
+      },
+      {
+        techName: 'Generative AI',
+        techLink: '/technology/trending',
+      },
+    ],
+  },
+];
 
 export const AccordionMenuItemData = [
   {

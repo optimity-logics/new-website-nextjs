@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import { ReactNode } from 'react';
 
 export interface IFooterDataType {
@@ -36,3 +37,77 @@ export interface IBlogType {
     description: string;
   }[];
 }
+
+// common page pass props data types
+
+type Accuracy = {
+  accuraceyImg: string;
+  accuraceyTitle: string;
+};
+
+type Integration = {
+  images: string[];
+  heading: string;
+  description: string;
+};
+
+type TypesOfApplication = {
+  heading: string;
+  description: string;
+};
+
+// type HeroSectionData = {
+//   heading: string;
+//   description: string;
+//   techImg: string | StaticImageData;
+//   btnName: string;
+//   btnLink: string;
+//   workWithTechnology: { title: string; description: string }[];
+// };
+
+type Development = {
+  heading: string;
+  description: string;
+  typesOfApplication: TypesOfApplication[];
+  btnName: string;
+};
+
+type NextGen = {
+  heading: string;
+  description: string;
+  btnName: string;
+  img: string;
+  accuracey: Accuracy[];
+};
+
+type TechnologiesIntegrations = {
+  heading: string;
+  description: string;
+  btnName: string;
+  integrations: Integration[];
+};
+
+type WhyOptimityForDevelopment = {
+  heading: string;
+  description: string;
+  typesOfApplication: TypesOfApplication[];
+  btnName: string;
+};
+
+export type IPropsDataTypes = {
+  HeroSectionData: {
+    heading: string;
+    description: string;
+    techImg: StaticImageData | string; // Update this line
+    btnName: string;
+    btnLink: string;
+    workWithTechnology: {
+      title: string;
+      description: string;
+    }[];
+  };
+  Development: Development;
+  NextGen: NextGen;
+  TechnologiesIntegrations: TechnologiesIntegrations;
+  WhyOptimityForDevelopment: WhyOptimityForDevelopment;
+};
