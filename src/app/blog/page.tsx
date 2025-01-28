@@ -4,7 +4,6 @@ import { blogData } from '@/components/utils/Constant';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { Tabs, Tab } from '@nextui-org/tabs';
 import 'react-loading-skeleton/dist/skeleton.css';
 import SkeletonForBlogContent from '@/components/skeleton/SkeletonForBlogContent';
 
@@ -34,7 +33,7 @@ const Blog = () => {
             Blogs
           </span>
           <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[60px] 4xl:font-semibold 4xl:leading-[64px] 5xl:text-[75px] 5xl:leading-[80px]">
-            The Optimity Blogs
+            The Optimity Logics Blogs
           </h2>
           <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
             Where innovation meets progress.
@@ -161,7 +160,7 @@ const Blog = () => {
                 <input type="checkbox" className="mt-1 lg:mt-0" />
                 <span className="font-Inter text-lg font-normal leading-6 text-[#192020]">
                   I hereby agree to receive newsletters from MindInventory and
-                  acknowledge company's
+                  acknowledge company&#39;s
                   <Link href={''} className="text-lightBlue underline">
                     Privacy Policy.
                   </Link>

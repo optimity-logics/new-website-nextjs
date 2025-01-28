@@ -12,7 +12,6 @@ import { Autoplay, Mousewheel, Pagination } from 'swiper/modules';
 import dynamic from 'next/dynamic';
 import {
   achievementsData,
-  blackLogoIcon,
   exportTeamData,
   WorkLifeData,
 } from '@/components/utils/Constant';
@@ -30,7 +29,6 @@ import employee from '../../../public/webp/about-us/employee.webp';
 import countryServe from '../../../public/webp/about-us/countryServe.webp';
 import expertise from '../../../public/webp/about-us/yearOfExpertise.webp';
 import aboutUs from '../../../public/webp/about-us/about-us1.webp';
-import { div } from 'framer-motion/client';
 import Button from '@/components/common/Button';
 
 const StarRatings = dynamic(() => import('react-star-ratings'), { ssr: false });
