@@ -56,18 +56,22 @@ type TypesOfApplication = {
   description: string;
 };
 
-// type HeroSectionData = {
-//   heading: string;
-//   description: string;
-//   techImg: string | StaticImageData;
-//   btnName: string;
-//   btnLink: string;
-//   workWithTechnology: { title: string; description: string }[];
-// };
+type HeroSectionData = {
+  heading: string;
+  description: string;
+  techImg: StaticImageData | string;
+  btnName: string;
+  btnLink: string;
+  workWithTechnology: {
+    title: string;
+    description: string;
+  }[];
+};
 
 type Development = {
   heading: string;
   description: string;
+  btnLink: string;
   typesOfApplication: TypesOfApplication[];
   btnName: string;
 };
@@ -76,7 +80,8 @@ type NextGen = {
   heading: string;
   description: string;
   btnName: string;
-  img: string;
+  btnLink: string;
+  img: StaticImageData | string;
   accuracey: Accuracy[];
 };
 
@@ -84,6 +89,7 @@ type TechnologiesIntegrations = {
   heading: string;
   description: string;
   btnName: string;
+  btnLink: string;
   integrations: Integration[];
 };
 
@@ -95,18 +101,8 @@ type WhyOptimityForDevelopment = {
 };
 
 export type IPropsDataTypes = {
-  HeroSectionData: {
-    heading: string;
-    description: string;
-    techImg: StaticImageData | string; // Update this line
-    btnName: string;
-    btnLink: string;
-    workWithTechnology: {
-      title: string;
-      description: string;
-    }[];
-  };
-  Development: Development;
+  HeroSectionData: HeroSectionData;
+  AppDevelopment: Development;
   NextGen: NextGen;
   TechnologiesIntegrations: TechnologiesIntegrations;
   WhyOptimityForDevelopment: WhyOptimityForDevelopment;

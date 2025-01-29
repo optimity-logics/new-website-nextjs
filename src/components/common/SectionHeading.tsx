@@ -16,6 +16,7 @@ interface IHeadingProps {
   LinkStyle?: string;
   descriptionStyle?: string;
   isDark?: boolean;
+  headingStyle?: string;
 }
 
 const HighlitedDescription = styled.h1`
@@ -34,17 +35,18 @@ const SectionHeading = ({
   LinkStyle,
   isDark,
   descriptionStyle,
+  headingStyle,
 }: IHeadingProps) => {
   return (
     <div className={`mx-auto flex flex-col items-center gap-3 ${className} `}>
       {btnName && <Button btnName={btnName} className={btnStyle} />}
       <HighlitedDescription
         dangerouslySetInnerHTML={{ __html: heading }}
-        className={`text-center font-Poppins text-[25px] font-medium capitalize leading-[2.3rem] sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 5xl:text-[50px] 5xl:leading-[54px] ${isDark ? 'text-white' : 'text-charcoalBlue'}`}
+        className={`text-center font-Poppins text-[25px] font-medium capitalize leading-[2.3rem] sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px] ${isDark ? 'text-white' : 'text-charcoalBlue'} ${headingStyle}`}
       />
       {description && (
         <p
-          className={`text-center font-Poppins text-base font-normal leading-[21.15px] md:text-lg ${isDark ? 'text-white opacity-70' : 'text-primaryGray'} ${descriptionStyle}`}
+          className={`text-center font-Poppins text-base font-normal leading-[21.15px] md:text-lg 5xl:text-xl 5xl:leading-7 ${isDark ? 'text-white opacity-70' : 'text-primaryGray'} ${descriptionStyle}`}
         >
           {description}
         </p>
