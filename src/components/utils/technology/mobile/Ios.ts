@@ -10,27 +10,27 @@ import mongoDB from '../../../../../public/svg/technology/mobile/mongoDB.svg';
 import nodejs from '../../../../../public/svg/technology/mobile/node-js.svg';
 import { IPropsDataTypes } from '@/components/type/type';
 
-export const flutterData: IPropsDataTypes = {
+export const IosData: IPropsDataTypes = {
   HeroSectionData: {
-    heading: 'Flutter App Development Company',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
+    heading: 'Ios App Development Company',
+    description: `Optimity Logics is a top-notch Ios app development company in USA offering robust
+cross-platform app development solutions. With a team of expert Ios developers
+onboard, we offer end-to-end Ios app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
     techImg: flutter,
     btnName: `let's connect`,
     btnLink: '',
     workWithTechnology: [
       {
-        title: '40+',
-        description: 'Flutter Developers',
+        title: '30+',
+        description: 'Ios Developers',
       },
       {
-        title: '6+',
+        title: '4+',
         description: 'Years of Avg. Developer Exp.',
       },
       {
-        title: '90%',
+        title: '80%',
         description: 'Talent Retention Rate',
       },
       {
@@ -41,34 +41,34 @@ fledged development solutions aligned with your business objectives. `,
   },
 
   AppDevelopment: {
-    heading: `Our <span>Flutter App Development </span> Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Flutter mobile app development company, we provide comprehensive Flutter app development services to support you through every stage of the development lifecycle.`,
+    heading: `Our <span>Ios App Development </span> Services Aligned with Your Needs`,
+    description: ` Whether you're looking to build a custom cross-platform app from the ground up using Ios or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Ios mobile app development company, we provide comprehensive Ios app development services to support you through every stage of the development lifecycle.`,
     btnLink: '',
     typesOfApplication: [
       {
-        heading: 'Custom Flutter App Development',
+        heading: 'Custom Ios App Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
       },
       {
-        heading: 'Custom Flutter App Development',
+        heading: 'Custom Ios App Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
       },
       {
-        heading: 'Custom Flutter App Development',
+        heading: 'Custom Ios App Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
       },
       {
-        heading: 'Custom Flutter App Development',
+        heading: 'Custom Ios App Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
       },
       {
-        heading: 'Custom Flutter App Development',
+        heading: 'Custom Ios App Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
       },
     ],
     btnName: 'view more',

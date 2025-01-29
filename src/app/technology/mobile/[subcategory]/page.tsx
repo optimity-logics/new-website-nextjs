@@ -1,18 +1,24 @@
 'use client';
+import AllPageContent from '@/components/common/AllPageContent';
+import { flutterData } from '@/components/utils/technology/mobile/flutter';
+import { IosData } from '@/components/utils/technology/mobile/Ios';
 import { useParams } from 'next/navigation';
 
-const SubcategoryPage = () => {
-  const { subcategory } = useParams();
+const dataMap = {
+  flutter: flutterData,
+  ios: IosData,
+} as const;
 
-  return (
-    <div>
-      <h1>{subcategory ? subcategory : 'Subcategory'}</h1>
-      <p>
-        Welcome to the <strong>{subcategory}</strong> page under Mobile
-        technologies.
-      </p>
-      {/* <AllPageContent pageData={flutterData} /> */}
-    </div>
-  );
+type SubcategoryKey = keyof typeof dataMap;
+
+const SubcategoryPage = () => {
+  const { subcategory } = useParams<{ subcategory: string }>();
+
+  const pageData =
+    (subcategory in dataMap ? dataMap[subcategory as SubcategoryKey] : null) ??
+    null;
+
+  return pageData ? <AllPageContent data={pageData} /> : <p>Data not found.</p>;
 };
+
 export default SubcategoryPage;

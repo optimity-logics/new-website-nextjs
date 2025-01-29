@@ -88,6 +88,11 @@ import familyHelth from '../../../public/svg/about-us/work-life/family-insurance
 import leave from '../../../public/svg/about-us/work-life/leave.svg';
 import food from '../../../public/svg/about-us/work-life/food.svg';
 
+import mobile from '../../../public/svg/megaMenu/mobile.svg';
+import frontEnd from '../../../public/svg/megaMenu/front-end.svg';
+import backEnd from '../../../public/svg/megaMenu/back-end.svg';
+import trending from '../../../public/svg/megaMenu/trending.svg';
+
 // types
 
 import { IFooterDataType } from '../type/type';
@@ -679,6 +684,8 @@ export const servicesMegsmenuDate = [
 export const technologyData = [
   {
     title: 'Mobile',
+    backgroundColor: '#ffc0d9',
+    img: mobile,
     items: [
       {
         techName: 'Flutter',
@@ -708,6 +715,8 @@ export const technologyData = [
   },
   {
     title: 'Frontend',
+    backgroundColor: '#d0bfff',
+    img: frontEnd,
     items: [
       {
         techName: 'React',
@@ -737,6 +746,8 @@ export const technologyData = [
   },
   {
     title: 'Backend',
+    backgroundColor: '#b5f1cc',
+    img: backEnd,
     items: [
       {
         techName: 'Python',
@@ -766,6 +777,8 @@ export const technologyData = [
   },
   {
     title: 'Trending',
+    backgroundColor: '#ffd8c0',
+    img: trending,
     items: [
       {
         techName: 'Wearable App Development',
