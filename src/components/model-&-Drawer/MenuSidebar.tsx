@@ -104,7 +104,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                                   />
                                 </div>
                                 <h4 className="font-Poppins text-lg font-medium capitalize leading-6 text-[#192020]">
-                                  {item.title}
+                                  {itm?.title}
                                 </h4>
                               </div>
                               <ul className="flex flex-col gap-5">
