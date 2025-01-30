@@ -12,7 +12,10 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="bg-footer bg-cover bg-center bg-no-repeat">
+    <div
+      className="bg-footer bg-cover bg-center bg-no-repeat"
+      style={{ backgroundSize: '100% 100%' }}
+    >
       <Container className="pt-10 4xl:pt-20" isBackground={false}>
         <div className="flex flex-col gap-8 border-b-[1.34px] border-b-[#ffffff4a] pb-10 3xl:gap-10 4xl:gap-[60px]">
           <div className="flex flex-col justify-between gap-7 md:flex-row lg:items-center 3xl:gap-14">

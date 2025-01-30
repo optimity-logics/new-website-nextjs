@@ -2,6 +2,7 @@
 import AllPageContent from '@/components/common/AllPageContent';
 import { flutterData } from '@/components/utils/technology/mobile/flutter';
 import { IosData } from '@/components/utils/technology/mobile/Ios';
+
 import { useParams } from 'next/navigation';
 
 const dataMap = {
@@ -9,15 +10,12 @@ const dataMap = {
   ios: IosData,
 } as const;
 
-type SubcategoryKey = keyof typeof dataMap;
+type ServiceKey = keyof typeof dataMap;
 
 const SubcategoryPage = () => {
-  const { subcategory } = useParams<{ subcategory: string }>();
-
-  const pageData =
-    (subcategory in dataMap ? dataMap[subcategory as SubcategoryKey] : null) ??
-    null;
-
+  const { service } = useParams<{ service: string }>();
+  const mainService = service?.split('-')[0];
+  const pageData = dataMap[mainService as ServiceKey] ?? null;
   return pageData ? <AllPageContent data={pageData} /> : <p>Data not found.</p>;
 };
 

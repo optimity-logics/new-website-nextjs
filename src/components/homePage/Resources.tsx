@@ -59,7 +59,7 @@ const Resources = () => {
                 spaceBetween: 40,
               },
               1660: {
-                slidesPerView: 4,
+                slidesPerView: 4.3,
                 spaceBetween: 40,
               },
             }}
@@ -79,10 +79,10 @@ const Resources = () => {
                     </div>
                     <div className="flex h-full flex-col justify-between gap-[17.39px]">
                       <div className="flex flex-col gap-3">
-                        <h3 className="font-Poppins text-xl font-medium leading-6 text-[#192020] 5xl:text-[26px] 5xl:leading-8">
+                        <h3 className="font-Poppins text-xl font-medium leading-6 text-[#192020]">
                           {item?.title}
                         </h3>
-                        <p className="font-Poppins text-base font-light leading-[1.6rem] text-[#192020] 5xl:text-lg 5xl:leading-[1.8rem]">
+                        <p className="font-Poppins text-base font-light leading-[1.6rem] text-[#192020]">
                           {item?.description}
                         </p>
                       </div>

@@ -664,21 +664,37 @@ export const clientsReview = [
 
 export const servicesMegsmenuDate = [
   {
-    title: 'Resources',
+    title: 'Digital Transformationurces',
+    backgroundColor: '#ffc0d9',
+    img: mobile,
     items: [
-      'Developers Docs',
-      'Help Center',
-      'Product Updates',
-      'User Community',
+      {
+        techName: 'Software Product Development',
+        techLink: '-development-service',
+      },
     ],
   },
   {
-    title: 'Best practices',
-    items: ['FAQs', 'Case Studies', 'Engineering Blog', 'Books & Webinars'],
+    title: 'Data and AI',
+    backgroundColor: '#d0bfff',
+    img: mobile,
+    items: [
+      {
+        techName: 'Software Product Development',
+        techLink: '-development-service',
+      },
+    ],
   },
   {
-    title: 'Best practices',
-    items: ['FAQs', 'Case Studies', 'Engineering Blog', 'Books & Webinars'],
+    title: 'Application Development',
+    backgroundColor: '#b5f1cc',
+    img: mobile,
+    items: [
+      {
+        techName: 'Software Product Development',
+        techLink: '-development-service',
+      },
+    ],
   },
 ];
 export const technologyData = [
@@ -688,28 +704,28 @@ export const technologyData = [
     img: mobile,
     items: [
       {
-        techName: 'Flutter',
-        techLink: '/technology/mobile',
-      },
-      {
         techName: 'ios',
-        techLink: '/technology/mobile',
+        techLink: '/ios-development-service',
       },
       {
         techName: 'Android',
-        techLink: '/technology/mobile',
-      },
-      {
-        techName: 'Swift',
-        techLink: '/technology/mobile',
+        techLink: '/android-development-service',
       },
       {
         techName: 'React Native',
-        techLink: '/technology/mobile',
+        techLink: '/react-native-development-service',
+      },
+      {
+        techName: 'Flutter',
+        techLink: '/flutter-development-service',
+      },
+      {
+        techName: 'Swift',
+        techLink: '/swift-development-service',
       },
       {
         techName: 'Iconic',
-        techLink: '/technology/mobile',
+        techLink: '/iconic-development-service',
       },
     ],
   },
@@ -719,28 +735,28 @@ export const technologyData = [
     img: frontEnd,
     items: [
       {
-        techName: 'React',
-        techLink: '/technology/front-end',
-      },
-      {
-        techName: 'Vue',
-        techLink: '/technology/front-end',
-      },
-      {
         techName: 'Next.js',
-        techLink: '/technology/front-end',
+        techLink: 'next-js-development-service',
       },
       {
-        techName: 'Backbone.js',
-        techLink: '/technology/front-end',
-      },
-      {
-        techName: 'JavaSctipr',
-        techLink: '/technology/front-end',
+        techName: 'React',
+        techLink: 'react-js-development-service',
       },
       {
         techName: 'Angular',
-        techLink: '/technology/front-end',
+        techLink: 'angular-js-development-service',
+      },
+      {
+        techName: 'Vue',
+        techLink: 'vue-js-development-service',
+      },
+      {
+        techName: 'Backbone.js',
+        techLink: 'backbone-js-development-service',
+      },
+      {
+        techName: 'JavaSctipt',
+        techLink: 'javascript-development-service',
       },
     ],
   },
@@ -751,27 +767,27 @@ export const technologyData = [
     items: [
       {
         techName: 'Python',
-        techLink: '/technology/back-end',
+        techLink: '/pyhton-development-service',
       },
       {
         techName: 'Golang',
-        techLink: '/technology/back-end',
+        techLink: '/golang-development-service',
       },
       {
         techName: 'Node.js',
-        techLink: '/technology/back-end',
+        techLink: '/node-js-development-service',
       },
       {
         techName: 'Laravel',
-        techLink: '/technology/back-end',
+        techLink: '/laravel-development-service',
       },
       {
         techName: 'PHP',
-        techLink: '/technology/back-end',
+        techLink: '/php-development-service',
       },
       {
         techName: 'Meteor.js',
-        techLink: '/technology/back-end',
+        techLink: '/meteor-js-development-service',
       },
     ],
   },
@@ -804,49 +820,277 @@ export const AccordionMenuItemData = [
   {
     title: 'Services',
     subMenu: [
-      'Developers Docs',
-      'Help Center',
-      'Product Updates',
-      'User Community',
+      {
+        title: 'Digital Transformationurces',
+        backgroundColor: '#ffc0d9',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Data and AI',
+        backgroundColor: '#d0bfff',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Application Development',
+        backgroundColor: '#b5f1cc',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
     ],
   },
   {
     title: 'Technology',
     subMenu: [
-      'Developers Docs',
-      'Help Center',
-      'Product Updates',
-      'User Community',
+      {
+        title: 'Mobile',
+        backgroundColor: '#ffc0d9',
+        img: mobile,
+        items: [
+          {
+            techName: 'ios',
+            techLink: '/ios-development-service',
+          },
+          {
+            techName: 'Android',
+            techLink: '/android-development-service',
+          },
+          {
+            techName: 'React Native',
+            techLink: '/react-native-development-service',
+          },
+          {
+            techName: 'Flutter',
+            techLink: '/flutter-development-service',
+          },
+          {
+            techName: 'Swift',
+            techLink: '/swift-development-service',
+          },
+          {
+            techName: 'Iconic',
+            techLink: '/iconic-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Frontend',
+        backgroundColor: '#d0bfff',
+        img: frontEnd,
+        items: [
+          {
+            techName: 'Next.js',
+            techLink: 'next-js-development-service',
+          },
+          {
+            techName: 'React',
+            techLink: 'react-js-development-service',
+          },
+          {
+            techName: 'Angular',
+            techLink: 'angular-js-development-service',
+          },
+          {
+            techName: 'Vue',
+            techLink: 'vue-js-development-service',
+          },
+          {
+            techName: 'Backbone.js',
+            techLink: 'backbone-js-development-service',
+          },
+          {
+            techName: 'JavaSctipt',
+            techLink: 'javascript-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Backend',
+        backgroundColor: '#b5f1cc',
+        img: backEnd,
+        items: [
+          {
+            techName: 'Python',
+            techLink: '/pyhton-development-service',
+          },
+          {
+            techName: 'Golang',
+            techLink: '/golang-development-service',
+          },
+          {
+            techName: 'Node.js',
+            techLink: '/node-js-development-service',
+          },
+          {
+            techName: 'Laravel',
+            techLink: '/laravel-development-service',
+          },
+          {
+            techName: 'PHP',
+            techLink: '/php-development-service',
+          },
+          {
+            techName: 'Meteor.js',
+            techLink: '/meteor-js-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Trending',
+        backgroundColor: '#ffd8c0',
+        img: trending,
+        items: [
+          {
+            techName: 'Wearable App Development',
+            techLink: '/technology/trending',
+          },
+          {
+            techName: 'Internet of Things',
+            techLink: '/technology/trending',
+          },
+          {
+            techName: 'Tailwind CSS',
+            techLink: '/technology/trending',
+          },
+          {
+            techName: 'Generative AI',
+            techLink: '/technology/trending',
+          },
+        ],
+      },
     ],
   },
 
   {
     title: 'About Us',
     subMenu: [
-      'Developers Docs',
-      'Help Center',
-      'Product Updates',
-      'User Community',
+      {
+        title: 'Digital Transformationurces',
+        backgroundColor: '#ffc0d9',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Data and AI',
+        backgroundColor: '#d0bfff',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Application Development',
+        backgroundColor: '#b5f1cc',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
     ],
   },
 
   {
     title: 'Our Works',
     subMenu: [
-      'Developers Docs',
-      'Help Center',
-      'Product Updates',
-      'User Community',
+      {
+        title: 'Digital Transformationurces',
+        backgroundColor: '#ffc0d9',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Data and AI',
+        backgroundColor: '#d0bfff',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Application Development',
+        backgroundColor: '#b5f1cc',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
     ],
   },
 
   {
     title: 'Hire Us',
     subMenu: [
-      'Developers Docs',
-      'Help Center',
-      'Product Updates',
-      'User Community',
+      {
+        title: 'Digital Transformationurces',
+        backgroundColor: '#ffc0d9',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Data and AI',
+        backgroundColor: '#d0bfff',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Application Development',
+        backgroundColor: '#b5f1cc',
+        img: mobile,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '-development-service',
+          },
+        ],
+      },
     ],
   },
 ];
