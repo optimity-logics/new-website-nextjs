@@ -39,6 +39,8 @@ export default {
         exportTeamBg: "url('/webp/about-us/exportTeamBg.webp')",
         aboutUsClient: "url('/svg/about-us/about-shape.svg')",
         projectSectionBg: "url('/webp/projectbg.webp')",
+        technology: "url('/webp/technologyBg.webp')",
+        EllipseTechnology: "url('/webp/EllipseTechnology.webp')",
         'custom-gradient':
           'linear-gradient(180deg, rgba(0, 0, 0, 0) -5.03%, #000000 54.04%)',
         'hero-overlap':

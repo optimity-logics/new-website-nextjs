@@ -8,6 +8,20 @@ import flutterLogo from '../../../../../public/svg/technology/mobile/flutter.svg
 import fireBase from '../../../../../public/svg/technology/mobile/firebase.svg';
 import mongoDB from '../../../../../public/svg/technology/mobile/mongoDB.svg';
 import nodejs from '../../../../../public/svg/technology/mobile/node-js.svg';
+import framework from '../../../../../public/svg/technology/mobile/framework.svg';
+import tools from '../../../../../public/svg/technology/mobile/tools&utilities.svg';
+import database from '../../../../../public/svg/technology/mobile/database.svg';
+import plugin from '../../../../../public/svg/technology/mobile/plugin.svg';
+import dns from '../../../../../public/svg/technology/mobile/dns.svg';
+import completeProject from '../../../../../public/webp/about-us/completeProject.webp';
+import employee from '../../../../../public/webp/about-us/employee.webp';
+import countryServe from '../../../../../public/webp/about-us/countryServe.webp';
+import expert from '../../../../../public/webp/about-us/yearOfExpertise.webp';
+import clutch from '../../../../../public/svg/about-us/clutch.svg';
+import designrush from '../../../../../public/svg/about-us/designrush.svg';
+import goodfirms from '../../../../../public/svg/about-us/goodfirm.svg';
+import topDevelopers from '../../../../../public/svg/about-us/top-developers.svg';
+
 import { IPropsDataTypes } from '@/components/type/type';
 
 export const flutterData: IPropsDataTypes = {
@@ -39,7 +53,6 @@ fledged development solutions aligned with your business objectives. `,
       },
     ],
   },
-
   AppDevelopment: {
     heading: `Our <span>Flutter App Development </span> Services Aligned with Your Needs`,
     description: ` Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Flutter mobile app development company, we provide comprehensive Flutter app development services to support you through every stage of the development lifecycle.`,
@@ -73,7 +86,6 @@ fledged development solutions aligned with your business objectives. `,
     ],
     btnName: 'view more',
   },
-
   NextGen: {
     heading: 'Want To Build A Next-Gen Flutter Application?',
     description: `Optimity Logics can be your trusted Flutter app development company,
@@ -102,7 +114,6 @@ apps that leave a lasting impression.`,
       },
     ],
   },
-
   TechnologiesIntegrations: {
     heading: `Technologies We Use In <span> Combination with Flutter </span>`,
     description: `Being the best Flutter mobile app development company, we seamlessly integrate various backend technologies and databases with Flutter to
@@ -160,7 +171,6 @@ experience across multiple platforms.`,
       },
     ],
   },
-
   WhyOptimityForDevelopment: {
     heading: `Why Choose <span> Optimity Logics for Flutter App Development</span> Services?`,
     description: ` When it comes to Flutter app development services, choosing the right partner can make all the difference in
@@ -198,5 +208,267 @@ achieving your app's success. We stand as the ideal Flutter app development comp
       },
     ],
     btnName: 'view more',
+  },
+  TechnologiesFeatured: {
+    heading: '<span>Featured Insights </span> from Our Flutter Experts',
+    description:
+      'Explore our featured Flutter technology insights that are popular among our readers.',
+    expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+      way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+      every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+      way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+      every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  TechnologyWeUseInDevelopment: {
+    heading: 'Technology Stack We Use For <span>Flutter App Development</span>',
+    description:
+      "Here's a list of tools and technologies our Flutter experts excel in, catering to various requirements for Flutter mobile app development services",
+    btnName: 'schedule a developer interview',
+    btnLink: '',
+    technologyServices: [
+      {
+        bgColor: '#FFC0D9',
+        servicesName: 'Frameworks',
+        servicesImg: framework,
+        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+      },
+      {
+        bgColor: '#B5F1CC',
+        servicesName: 'Tools & Utilities',
+        servicesImg: tools,
+        servicesItems: [
+          'Android studio',
+          'Visual studio code',
+          'IntelliJ',
+          'Version control tools (Git, GitLab, Bit Bucket)',
+        ],
+      },
+      {
+        bgColor: '#9FE9F6',
+        servicesName: 'Databases',
+        servicesImg: database,
+        servicesItems: [
+          'Hive',
+          'ObjectBox',
+          'SQLite',
+          'Firebase realtime database',
+          'Firestore',
+          'Sembast',
+          'StorageMoor',
+        ],
+      },
+      {
+        bgColor: '#FFD8C0',
+        servicesName: 'Plugins & Integrations',
+        servicesImg: plugin,
+        servicesItems: [
+          'Firebase (All service)',
+          'Provider',
+          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
+          'Social Sign-In (Facebook, Google, Apple)',
+          'Shared preferences',
+          'Image_picker',
+          'In-app Purchase',
+          'Map flutter_ffmpeg',
+          'AWS Amplify',
+          'AWS datastore',
+          'Freezed',
+          'JSON serializable',
+          'flutter_local_notifications',
+          'BLoC',
+        ],
+      },
+      {
+        bgColor: '#D0BFFF',
+        servicesName: 'CI/CD Tools',
+        servicesImg: dns,
+        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+      },
+    ],
+  },
+  Resources: {
+    heading: 'Know what’s <span> trending in AI </span>',
+    description:
+      'Insights on the global impact of artificial intelligence across multiple domains',
+    btnName: 'Resources',
+    linkName: 'Explore all blogs',
+    resourcesData: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+    currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+    way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+    every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+    way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+    every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  Achievements: {
+    heading: 'Our <span> Achievements </span>',
+    aboutUs: [
+      {
+        basicInfo: '354+',
+        description: 'Completed Projects',
+        Img: completeProject,
+        bgColor: '#FFD9CF',
+      },
+      {
+        basicInfo: '15+',
+        description: 'Employees',
+        Img: employee,
+        bgColor: '#92E6FF',
+      },
+      {
+        basicInfo: '02+',
+        description: 'Countries Served',
+        Img: countryServe,
+        bgColor: '#FFD9CF',
+      },
+      {
+        basicInfo: '05+',
+        description: 'Years Of Expertise',
+        Img: expert,
+        bgColor: '#92E6FF',
+      },
+    ],
+    achievementsData: [
+      {
+        rating: 4.5,
+        title: 'Top IT services company',
+        logoImg: clutch,
+      },
+
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: goodfirms,
+      },
+
+      {
+        rating: 4.7,
+        title: 'Top mobile app development company',
+        logoImg: goodfirms,
+      },
+      {
+        rating: 4.8,
+        title: 'Top mobile app development company',
+        logoImg: designrush,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development ',
+        logoImg: topDevelopers,
+      },
+      {
+        rating: 5.0,
+        title: 'Top mobile app development',
+        logoImg: designrush,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: topDevelopers,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: clutch,
+      },
+    ],
+  },
+  Faqs: {
+    heading: 'Frequently Asked Questions',
+    description: 'We’ve compiled the answers to your burning questions!',
+    faqs: [
+      {
+        question: 'How much does it cost to build an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'How much does it cost to build an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'Is it possible to create an app for free?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'How do I start creating my own app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'What’s involved in launching an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+    ],
   },
 };

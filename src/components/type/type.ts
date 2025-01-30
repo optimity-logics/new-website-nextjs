@@ -6,6 +6,11 @@ export interface IFooterDataType {
   items: { title: string; link: string }[];
 }
 
+export interface IFaqsData {
+  question: string;
+  answer: string;
+}
+
 export interface IMenuSidebarProps {
   isOpen: boolean;
   setIsOpen: (val: boolean) => void;
@@ -20,11 +25,6 @@ export interface IDrawerCustomeProps {
   size: 'xs' | 'sm' | 'md' | 'lg' | 'full' | number | string;
   className?: string;
   children: ReactNode;
-}
-
-export interface IAccordionDataType {
-  title: ReactNode;
-  content: ReactNode;
 }
 
 export interface IBlogType {
@@ -56,7 +56,7 @@ type TypesOfApplication = {
   description: string;
 };
 
-type HeroSectionData = {
+type IHeroSectionData = {
   heading: string;
   description: string;
   techImg: StaticImageData | string;
@@ -68,7 +68,7 @@ type HeroSectionData = {
   }[];
 };
 
-type Development = {
+type IDevelopment = {
   heading: string;
   description: string;
   btnLink: string;
@@ -76,7 +76,7 @@ type Development = {
   btnName: string;
 };
 
-type NextGen = {
+type INextGen = {
   heading: string;
   description: string;
   btnName: string;
@@ -85,7 +85,7 @@ type NextGen = {
   accuracey: Accuracy[];
 };
 
-type TechnologiesIntegrations = {
+type ITechnologiesIntegrations = {
   heading: string;
   description: string;
   btnName: string;
@@ -93,17 +93,75 @@ type TechnologiesIntegrations = {
   integrations: Integration[];
 };
 
-type WhyOptimityForDevelopment = {
+type IWhyOptimityForDevelopment = {
   heading: string;
   description: string;
   typesOfApplication: TypesOfApplication[];
   btnName: string;
 };
 
+type ITechnologiesFeatured = {
+  heading: string;
+  description: string;
+  expertiseInFeacture: {
+    img: StaticImageData | string;
+    label: string;
+    title: string;
+    description: string;
+  }[];
+};
+type ITechnologyWeUseInDevelopment = {
+  heading: string;
+  description: string;
+  btnName: string;
+  btnLink: string;
+  technologyServices: {
+    bgColor: string;
+    servicesName: string;
+    servicesImg: string;
+    servicesItems: string[];
+  }[];
+};
+type IResources = {
+  heading: string;
+  description: string;
+  btnName: string;
+  linkName: string;
+  resourcesData: {
+    img: string;
+    title: string;
+    description: string;
+  }[];
+};
+type IAchievements = {
+  heading: string;
+  aboutUs: {
+    Img: string | StaticImageData;
+    basicInfo: string;
+    description: string;
+    bgColor: string;
+  }[];
+  achievementsData: {
+    rating: number;
+    title: string;
+    logoImg: StaticImageData | string;
+  }[];
+};
+
+type IFaqs = {
+  heading: string;
+  description: string;
+  faqs: { question: string; answer: string }[];
+};
 export type IPropsDataTypes = {
-  HeroSectionData: HeroSectionData;
-  AppDevelopment: Development;
-  NextGen: NextGen;
-  TechnologiesIntegrations: TechnologiesIntegrations;
-  WhyOptimityForDevelopment: WhyOptimityForDevelopment;
+  HeroSectionData: IHeroSectionData;
+  AppDevelopment: IDevelopment;
+  NextGen: INextGen;
+  TechnologiesIntegrations: ITechnologiesIntegrations;
+  WhyOptimityForDevelopment: IWhyOptimityForDevelopment;
+  TechnologiesFeatured: ITechnologiesFeatured;
+  TechnologyWeUseInDevelopment: ITechnologyWeUseInDevelopment;
+  Resources: IResources;
+  Achievements: IAchievements;
+  Faqs: IFaqs;
 };
