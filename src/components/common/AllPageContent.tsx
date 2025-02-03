@@ -69,8 +69,8 @@ const AllPageContent = ({ data }: IPropsType) => {
             <Image
               src={data?.HeroSectionData?.techImg || ''}
               alt=""
-              width={346}
-              height={517}
+              width={650}
+              height={628}
               className="w-max"
             />
           </div>
@@ -648,16 +648,6 @@ const AllPageContent = ({ data }: IPropsType) => {
           </Swiper>
         </div>
       </div>
-      {/* <Container className="4xl:20 mb-10 md:mb-12 xl:mb-16 5xl:mb-[120px]">
-        <div className="flex flex-col gap-8 lg:gap-6 3xl:gap-10 4xl:gap-[60px]">
-          <SectionHeading
-            heading={data?.Faqs?.heading}
-            className="4xl:gap-5"
-            description={data?.Faqs?.description}
-          />
-          <FaqsAccordion data={faqsData} />
-        </div>
-      </Container> */}
     </>
   );
 };

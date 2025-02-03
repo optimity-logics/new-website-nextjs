@@ -24,7 +24,7 @@ import topDevelopers from '../../../../../public/svg/about-us/top-developers.svg
 
 import { IPropsDataTypes } from '@/components/type/type';
 
-export const flutterData: IPropsDataTypes = {
+export const FlutterData: IPropsDataTypes = {
   HeroSectionData: {
     heading: 'Flutter App Development Company',
     description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
