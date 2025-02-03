@@ -38,29 +38,57 @@ const HeroSection = () => {
         </Container>
       </div>
       <div className="mx-auto px-4">
-        <div className="-mt-[37px] flex flex-col items-center gap-[25px] rounded-2xl border border-darkGray bg-black px-5 pb-[22px] pt-[30px] 5xl:rounded-[24px]">
+        <div className="-mt-[37px] flex flex-col items-center gap-[25px] rounded-2xl border border-darkGray bg-black px-5 pb-[22px] pt-[30px] shadow-lg 5xl:rounded-[24px]">
           <span className="text-center font-Poppins text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
           </span>
-          <Marquee gradient={true} gradientColor="black" speed={55}>
-            <div className="!last-of-type:4xl:mr-[69px] flex items-center justify-between last-of-type:mr-5 md:last-of-type:mr-[45px] last-of-type:xl:mr-[34px]">
+          <Marquee
+            speed={55}
+            gradient={true}
+            gradientColor="black"
+            pauseOnHover={true}
+          >
+            <div className="!last-of-type:4xl:mr-[69px] flex items-center justify-between">
               {logoIcons &&
                 logoIcons.map((item, index) => (
                   <div
                     key={index}
-                    className="flex h-[66px] w-[153px] items-center justify-center sm:w-[193px]"
+                    className="grid h-[66px] w-[153px] place-items-center justify-center sm:w-[193px]"
                   >
                     <Image
                       src={item}
                       alt="icon"
                       width={60}
                       height={38}
-                      className="h-[38px] w-[90px] object-contain"
+                      className="h-10 w-[100px] object-contain"
                     />
                   </div>
                 ))}
             </div>
           </Marquee>
+          {/* <Marquee
+            speed={55}
+            pauseOnHover={true}
+            gradient={true}
+            gradientColor="black"
+          >
+            <div className="flex items-center justify-between gap-6">
+              {logoIcons?.map((item, index) => (
+                <div
+                  key={index}
+                  className="grid h-[66px] w-[150px] place-items-center sm:w-[160px]"
+                >
+                  <Image
+                    src={item}
+                    alt="icon"
+                    width={100}
+                    height={50}
+                    className="h-auto w-auto max-w-[100px] object-scale-down"
+                  />
+                </div>
+              ))}
+            </div>
+          </Marquee> */}
         </div>
       </div>
     </div>

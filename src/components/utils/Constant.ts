@@ -19,6 +19,7 @@ import yellowbird from '../../../public/svg/client-logo-slider/yellowbird.svg';
 import waosim from '../../../public/svg/client-logo-slider/waosim.svg';
 import teqdiligent from '../../../public/svg/client-logo-slider/teqdiligent.svg';
 import portsv from '../../../public/svg/client-logo-slider/portsv.svg';
+import blueBunglow from '../../../public/svg/client-logo-slider/bluebungalow.svg';
 
 import htsBlack from '../../../public/svg/client-logo-slider/black-icon/hts.svg';
 import hopperBlack from '../../../public/svg/client-logo-slider/black-icon/hopper.svg';
@@ -157,7 +158,9 @@ export const logoIcons = [
   waosim,
   teqdiligent,
   portsv,
+  blueBunglow,
 ];
+
 export const workingData = [
   { value: '5 +', label: 'Years of Excellence' },
   { value: '500 +', label: 'Happy Clients' },
@@ -767,7 +770,7 @@ export const technologyData = [
     items: [
       {
         techName: 'Python',
-        techLink: '/pyhton-development-service',
+        techLink: '/python-development-service',
       },
       {
         techName: 'Golang',

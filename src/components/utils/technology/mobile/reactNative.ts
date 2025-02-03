@@ -1,4 +1,4 @@
-import ios from '../../../../../public/webp/technology/mobile/ios.webp';
+import reactNative from '../../../../../public/webp/technology/mobile/react-native.webp';
 import hiringModels from '../../../../../public/svg/technology/mobile/hiring-models.svg';
 import nda from '../../../../../public/svg/technology/mobile/nda.svg';
 import refundPolicy from '../../../../../public/svg/technology/mobile/refund-policy.svg';
@@ -23,20 +23,20 @@ import designrush from '../../../../../public/svg/about-us/designrush.svg';
 import goodfirms from '../../../../../public/svg/about-us/goodfirm.svg';
 import topDevelopers from '../../../../../public/svg/about-us/top-developers.svg';
 
-export const IosData: IPropsDataTypes = {
+export const ReactNative: IPropsDataTypes = {
   HeroSectionData: {
-    heading: 'Ios App Development Company',
+    heading: 'ReactNative App Development Company',
     description: `Optimity Logics is a top-notch Ios app development company in USA offering robust
 cross-platform app development solutions. With a team of expert Ios developers
 onboard, we offer end-to-end Ios app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: ios,
+    techImg: reactNative,
     btnName: `let's connect`,
     btnLink: '',
     workWithTechnology: [
       {
         title: '30+',
-        description: 'Ios Developers',
+        description: 'ReactNative Developers',
       },
       {
         title: '4+',

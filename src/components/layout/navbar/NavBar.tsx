@@ -15,8 +15,8 @@ import hamburger from '../../../../public/svg/hamburger-menu.svg';
 import MenuSidebar from '@/components/model-&-Drawer/MenuSidebar';
 import useOutsideClick from '@/components/hooks/useClickOutSide/page';
 import { useRouter } from 'next/navigation';
-import phone from '../../../../public/svg/footer/phone.svg';
-import mail from '../../../../public/svg/footer/mail.svg';
+import phone from '../../../../public/svg/call.svg';
+import mail from '../../../../public/svg/mail.svg';
 
 const NavBar = () => {
   const megaMenuRef = useRef<HTMLDivElement>(null);
