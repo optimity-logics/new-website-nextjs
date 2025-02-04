@@ -8,8 +8,10 @@ import close from '../../../public/svg/close.svg';
 import mobileScreenLogo from '../../../public/svg/mobileScreenLogo.svg';
 import useWindowSize from '../hooks/useWindowSize';
 import { IMenuSidebarProps } from '../type/type';
-import { AccordionMenuItemData } from '../utils/Constant';
+import { menuSidebar } from '../utils/Constant';
 import React from 'react';
+import router from 'next/router';
+import Button from '../common/Button';
 
 const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
   const { width } = useWindowSize();
@@ -70,8 +72,8 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
           </div>
           <div className="flex flex-col gap-2 p-5">
             <Accordion variant="splitted">
-              {AccordionMenuItemData &&
-                AccordionMenuItemData.map((item, index) => {
+              {menuSidebar &&
+                menuSidebar.map((item, index) => {
                   return (
                     <AccordionItem
                       key={index}
@@ -153,6 +155,14 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
             >
               Blog
             </Link>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <Button
+              btnName="Contact Us"
+              className="bg-lightBlue px-4 lg:px-6 xl:px-[30px]"
+              onClick={() => router.push('/contact-us')}
+            />
           </div>
         </div>
       </Drawer>
