@@ -39,7 +39,7 @@ const dataMap = {
   // back-end
   node: NodeData,
   python: PythonData,
-  go: GolangData,
+  golang: GolangData,
   php: PhpData,
   laravel: LaravelData,
   meteor: MeteorData,

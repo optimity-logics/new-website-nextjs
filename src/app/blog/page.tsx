@@ -142,7 +142,7 @@ const Blog = () => {
             </div>
 
             <form className="flex flex-col items-center gap-5">
-              <div className="flex items-center gap-5 rounded-[30px] border-2 border-black pr-1.5">
+              <div className="flex items-center gap-5 rounded-[30px] border-2 border-[#D4D4D4] pr-1.5">
                 {' '}
                 <input
                   type="email"

@@ -39,7 +39,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             </div>
             <Link
               href={data?.HeroSectionData?.btnLink}
-              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-[19.56px]"
+              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
             >
               {data?.HeroSectionData?.btnName}{' '}
               <Image src={arrow} alt={arrow} width={32} height={32} />
@@ -48,7 +48,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               {data?.HeroSectionData?.workWithTechnology &&
                 data?.HeroSectionData?.workWithTechnology.map((item, index) => (
                   <div key={index} className="flex flex-col items-center gap-1">
-                    <span className="font-Poppins text-[40px] font-bold leading-[44.8px] text-red">
+                    <span className="font-Poppins text-2xl font-bold leading-6 text-red md:text-3xl md:leading-[44.8px] 4xl:text-[40px]">
                       {item?.title}
                     </span>
                     <p
@@ -68,10 +68,10 @@ const AllPageContent = ({ data }: IPropsType) => {
           <div className="mx-auto max-w-full">
             <Image
               src={data?.HeroSectionData?.techImg || ''}
-              alt=""
-              width={650}
-              height={628}
-              className="w-max"
+              alt="Technology Image"
+              width={600}
+              height={528}
+              priority
             />
           </div>
         </div>
