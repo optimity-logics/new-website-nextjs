@@ -10,7 +10,7 @@ import {
 } from '@/components/utils/Constant';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import logo from '../../../../public/svg/logo.svg';
 import mobileScreenLogo from '../../../../public/svg/mobileScreenLogo.svg';
 import hamburger from '../../../../public/svg/hamburger-menu.svg';
@@ -24,7 +24,6 @@ const NavBar = () => {
   const megaMenuRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const [showMegaMenu, setShowMegaMenu] = useState<string | null>(null);
-  const [isClient, setIsClient] = useState(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleMenu = (menuName: string) => {
