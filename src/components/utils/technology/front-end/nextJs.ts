@@ -23,7 +23,7 @@ import designrush from '../../../../../public/svg/about-us/designrush.svg';
 import goodfirms from '../../../../../public/svg/about-us/goodfirm.svg';
 import topDevelopers from '../../../../../public/svg/about-us/top-developers.svg';
 
-export const NextJaData: IPropsDataTypes = {
+export const NextJsData: IPropsDataTypes = {
   HeroSectionData: {
     heading: 'nextJs Web Development Company',
     description: `Optimity Logics is a top-notch Ios app development company in USA offering robust

@@ -1,4 +1,3 @@
-'use client';
 import AllPageContent from '@/components/common/AllPageContent';
 import { GolangData } from '@/components/utils/technology/back-end/golang';
 import { LaravelData } from '@/components/utils/technology/back-end/laravel';
@@ -9,7 +8,7 @@ import { PythonData } from '@/components/utils/technology/back-end/python';
 import { AngularData } from '@/components/utils/technology/front-end/angularJs';
 import { BackboneJsData } from '@/components/utils/technology/front-end/backboneJs';
 import { JavaScriptData } from '@/components/utils/technology/front-end/javascript';
-import { NextJaData } from '@/components/utils/technology/front-end/nextJs';
+import { NextJsData } from '@/components/utils/technology/front-end/nextJs';
 import { VueData } from '@/components/utils/technology/front-end/vueJs';
 import { AndroidData } from '@/components/utils/technology/mobile/android';
 import { FlutterData } from '@/components/utils/technology/mobile/flutter';
@@ -19,7 +18,7 @@ import { ReactNative } from '@/components/utils/technology/mobile/reactNative';
 import { SwiftData } from '@/components/utils/technology/mobile/swift';
 import { ReactJsData } from '@/components/utils/technology/front-end/reactJs';
 
-import { useParams } from 'next/navigation';
+type Params = Promise<{ service: string }>;
 
 const dataMap = {
   // mobile
@@ -30,7 +29,7 @@ const dataMap = {
   iconic: Iconic,
   android: AndroidData,
   // front-end
-  next: NextJaData,
+  next: NextJsData,
   'react-js': ReactJsData,
   angular: AngularData,
   vue: VueData,
@@ -47,16 +46,15 @@ const dataMap = {
 
 type ServiceKey = keyof typeof dataMap;
 
-const SubcategoryPage = () => {
-  const { service } = useParams<{ service: string }>();
-  let mainService: string | null = null;
-  if (service === 'react-js-development-service') {
-    mainService = 'react-js';
-  } else if (service === 'react-native-development-service') {
-    mainService = 'react-native';
-  } else {
-    mainService = service?.split('-')[0] ?? null;
-  }
+const SubcategoryPage = async (props: { params: Params }) => {
+  const { service } = await props.params;
+
+  const mainService = service.startsWith('react-js')
+    ? 'react-js'
+    : service.startsWith('react-native')
+      ? 'react-native'
+      : service.split('-')[0];
+
   const pageData = mainService ? dataMap[mainService as ServiceKey] : null;
 
   return pageData ? <AllPageContent data={pageData} /> : <p>Data not found.</p>;
