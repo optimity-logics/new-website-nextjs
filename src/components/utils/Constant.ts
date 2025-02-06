@@ -170,7 +170,7 @@ export const logoIcons = [
 export const servicesMegmenuDate = [
   {
     title: 'Digital Transformationurces',
-    backgroundColor: '#ffc0d9',
+    backgroundColor: '#73BDF2',
     img: digitalTransFormation,
     items: [
       {
@@ -201,7 +201,7 @@ export const servicesMegmenuDate = [
   },
   {
     title: 'Data and AI',
-    backgroundColor: '#d0bfff',
+    backgroundColor: '#FFCABC',
     img: dataAi,
     items: [
       {
@@ -232,7 +232,7 @@ export const servicesMegmenuDate = [
   },
   {
     title: 'Application Development',
-    backgroundColor: '#b5f1cc',
+    backgroundColor: '#FDD8A3',
     img: appDevelopment,
     items: [
       {
@@ -269,7 +269,7 @@ export const servicesMegmenuDate = [
 export const solutionMegmenuDate = [
   {
     title: 'Industry Expertise',
-    backgroundColor: '#ffc0d9',
+    backgroundColor: '#73BDF2',
     img: industryExperties,
     items: [
       {
@@ -300,7 +300,7 @@ export const solutionMegmenuDate = [
   },
   {
     title: 'Custom Solutions',
-    backgroundColor: '#b5f1cc',
+    backgroundColor: '#FDD8A3',
     img: customSolution,
     items: [
       {
@@ -323,7 +323,7 @@ export const solutionMegmenuDate = [
   },
   {
     title: 'By Business Scales',
-    backgroundColor: '#d0bfff',
+    backgroundColor: '#FFCABC',
     img: byBusunessScale,
     items: [
       {
@@ -340,7 +340,7 @@ export const solutionMegmenuDate = [
 export const technologyData = [
   {
     title: 'Mobile',
-    backgroundColor: '#ffc0d9',
+    backgroundColor: '#73BDF2',
     img: mobile,
     items: [
       {
@@ -371,7 +371,7 @@ export const technologyData = [
   },
   {
     title: 'Frontend',
-    backgroundColor: '#d0bfff',
+    backgroundColor: '#FFCABC',
     img: frontEnd,
     items: [
       {
@@ -402,7 +402,7 @@ export const technologyData = [
   },
   {
     title: 'Backend',
-    backgroundColor: '#b5f1cc',
+    backgroundColor: '#FDD8A3',
     img: backEnd,
     items: [
       {
@@ -433,7 +433,7 @@ export const technologyData = [
   },
   {
     title: 'Trending',
-    backgroundColor: '#ffd8c0',
+    backgroundColor: '#A3D8FD',
     img: trending,
     items: [
       {
@@ -458,7 +458,7 @@ export const technologyData = [
 export const hireTeamData = [
   {
     title: 'data & ai',
-    backgroundColor: '#ffc0d9',
+    backgroundColor: '#73BDF2',
     img: dataAi,
     items: [
       {
@@ -477,7 +477,7 @@ export const hireTeamData = [
   },
   {
     title: 'Mobile App',
-    backgroundColor: '#d0bfff',
+    backgroundColor: '#FFCABC',
     img: mobile,
     items: [
       {
@@ -508,7 +508,7 @@ export const hireTeamData = [
   },
   {
     title: 'Frontend',
-    backgroundColor: '#b5f1cc',
+    backgroundColor: '#FDD8A3',
     img: frontEnd,
     items: [
       {
@@ -539,7 +539,7 @@ export const hireTeamData = [
   },
   {
     title: 'Backend',
-    backgroundColor: '#ffd8c0',
+    backgroundColor: '#A3D8FD',
     img: backEnd,
     items: [
       {
@@ -1114,7 +1114,7 @@ export const menuSidebar = [
     subMenu: [
       {
         title: 'Digital Transformationurces',
-        backgroundColor: '#ffc0d9',
+        backgroundColor: '#73BDF2',
         img: digitalTransFormation,
         items: [
           {
@@ -1145,7 +1145,7 @@ export const menuSidebar = [
       },
       {
         title: 'Data and AI',
-        backgroundColor: '#d0bfff',
+        backgroundColor: '#FFCABC',
         img: dataAi,
         items: [
           {
@@ -1176,7 +1176,7 @@ export const menuSidebar = [
       },
       {
         title: 'Application Development',
-        backgroundColor: '#b5f1cc',
+        backgroundColor: '#FDD8A3',
         img: appDevelopment,
         items: [
           {
@@ -1216,7 +1216,7 @@ export const menuSidebar = [
     subMenu: [
       {
         title: 'Industry Expertise',
-        backgroundColor: '#ffc0d9',
+        backgroundColor: '#73BDF2',
         img: industryExperties,
         items: [
           {
@@ -1247,7 +1247,7 @@ export const menuSidebar = [
       },
       {
         title: 'Custom Solutions',
-        backgroundColor: '#b5f1cc',
+        backgroundColor: '#FDD8A3',
         img: customSolution,
         items: [
           {
@@ -1270,7 +1270,7 @@ export const menuSidebar = [
       },
       {
         title: 'By Business Scales',
-        backgroundColor: '#d0bfff',
+        backgroundColor: '#FFCABC',
         img: byBusunessScale,
         items: [
           {
@@ -1290,7 +1290,7 @@ export const menuSidebar = [
     subMenu: [
       {
         title: 'Mobile',
-        backgroundColor: '#ffc0d9',
+        backgroundColor: '#73BDF2',
         img: mobile,
         items: [
           {
@@ -1321,7 +1321,7 @@ export const menuSidebar = [
       },
       {
         title: 'Frontend',
-        backgroundColor: '#d0bfff',
+        backgroundColor: '#FFCABC',
         img: frontEnd,
         items: [
           {
@@ -1352,7 +1352,7 @@ export const menuSidebar = [
       },
       {
         title: 'Backend',
-        backgroundColor: '#b5f1cc',
+        backgroundColor: '#FDD8A3',
         img: backEnd,
         items: [
           {
@@ -1383,7 +1383,7 @@ export const menuSidebar = [
       },
       {
         title: 'Trending',
-        backgroundColor: '#ffd8c0',
+        backgroundColor: '#A3D8FD',
         img: trending,
         items: [
           {
@@ -1411,7 +1411,7 @@ export const menuSidebar = [
     subMenu: [
       {
         title: 'Digital Transformationurces',
-        backgroundColor: '#ffc0d9',
+        backgroundColor: '#73BDF2',
         img: mobile,
         items: [
           {
@@ -1422,7 +1422,7 @@ export const menuSidebar = [
       },
       {
         title: 'Data and AI',
-        backgroundColor: '#d0bfff',
+        backgroundColor: '#FFCABC',
         img: mobile,
         items: [
           {
@@ -1433,7 +1433,7 @@ export const menuSidebar = [
       },
       {
         title: 'Application Development',
-        backgroundColor: '#b5f1cc',
+        backgroundColor: '#FDD8A3',
         img: mobile,
         items: [
           {
@@ -1449,7 +1449,7 @@ export const menuSidebar = [
     subMenu: [
       {
         title: 'Digital Transformationurces',
-        backgroundColor: '#ffc0d9',
+        backgroundColor: '#73BDF2',
         img: mobile,
         items: [
           {
@@ -1460,7 +1460,7 @@ export const menuSidebar = [
       },
       {
         title: 'Data and AI',
-        backgroundColor: '#d0bfff',
+        backgroundColor: '#FFCABC',
         img: mobile,
         items: [
           {
@@ -1471,7 +1471,7 @@ export const menuSidebar = [
       },
       {
         title: 'Application Development',
-        backgroundColor: '#b5f1cc',
+        backgroundColor: '#FDD8A3',
         img: mobile,
         items: [
           {
@@ -1487,7 +1487,7 @@ export const menuSidebar = [
     subMenu: [
       {
         title: 'Digital Transformationurces',
-        backgroundColor: '#ffc0d9',
+        backgroundColor: '#73BDF2',
         img: mobile,
         items: [
           {
@@ -1498,7 +1498,7 @@ export const menuSidebar = [
       },
       {
         title: 'Data and AI',
-        backgroundColor: '#d0bfff',
+        backgroundColor: '#FFCABC',
         img: mobile,
         items: [
           {
@@ -1509,7 +1509,7 @@ export const menuSidebar = [
       },
       {
         title: 'Application Development',
-        backgroundColor: '#b5f1cc',
+        backgroundColor: '#FDD8A3',
         img: mobile,
         items: [
           {
@@ -2505,17 +2505,17 @@ export const WorkLifeData = [
   {
     img: location,
     title: 'Relocation Reimbursement',
-    bgColor: '#ffc0d9',
+    bgColor: '#73BDF2',
   },
   {
     img: employeeSkill,
     title: 'Employee Upskill Programs',
-    bgColor: '#d0bfff',
+    bgColor: '#FFCABC',
   },
   {
     img: familyHelth,
     title: 'Family Health Insurance',
-    bgColor: '#ffd8c0',
+    bgColor: '#A3D8FD',
   },
   {
     img: leave,
@@ -2535,7 +2535,7 @@ export const menuData = [
     megaMenuItem: [
       {
         title: 'Digital Transformationurces',
-        backgroundColor: '#ffc0d9',
+        backgroundColor: '#73BDF2',
         img: digitalTransFormation,
         items: [
           {
@@ -2544,34 +2544,34 @@ export const menuData = [
           },
           {
             techName: 'UI/UX Design',
-            techLink: '/ui-ux-design-development-service',
+            techLink: '/ui-ux-design-service',
           },
           {
             techName: 'Digital Marketing',
-            techLink: '/digital-marketing-development-service',
+            techLink: '/digital-marketing-service',
           },
           {
             techName: 'Quality Engineering',
-            techLink: '/quality-engineering-development-service',
+            techLink: '/quality-engineering-service',
           },
           {
             techName: 'Dedicated Team Augmentation',
-            techLink: '/dedicated-team-augmentation-development-service',
+            techLink: '/dedicated-team-augmentation-service',
           },
           {
             techName: 'CTO As A Service',
-            techLink: '/cto-as-development-service',
+            techLink: '/cto-as-service',
           },
         ],
       },
       {
         title: 'Data and AI',
-        backgroundColor: '#d0bfff',
+        backgroundColor: '#FFCABC',
         img: dataAi,
         items: [
           {
             techName: 'Data Science',
-            techLink: '/data-science-development-service',
+            techLink: '/data-science-service',
           },
           {
             techName: 'Machine Learning',
@@ -2579,11 +2579,11 @@ export const menuData = [
           },
           {
             techName: 'Artificial Intelligence (AI)',
-            techLink: '/artificial-intelligence-development-service',
+            techLink: '/artificial-intelligence-service',
           },
           {
             techName: 'Robotic Process Automation',
-            techLink: '/robotic-process-automation-development-service',
+            techLink: '/robotic-process-automation-service',
           },
           {
             techName: 'Computer Vision Development',
@@ -2597,7 +2597,7 @@ export const menuData = [
       },
       {
         title: 'Application Development',
-        backgroundColor: '#b5f1cc',
+        backgroundColor: '#FDD8A3',
         img: appDevelopment,
         items: [
           {
@@ -2637,47 +2637,47 @@ export const menuData = [
     megaMenuItem: [
       {
         title: 'Industry Expertise',
-        backgroundColor: '#ffc0d9',
+        backgroundColor: '#73BDF2',
         img: industryExperties,
         items: [
           {
             techName: 'Healthcare',
-            techLink: '/healthcare-development-service',
+            techLink: '/healthcare-solutions',
           },
           {
             techName: 'Finance',
-            techLink: '/finance-development-service',
+            techLink: '/fintech-solutions',
           },
           {
             techName: 'Real Estate',
-            techLink: '/real-estate-development-service',
+            techLink: '/real-estate-app-development',
           },
           {
             techName: 'Retail',
-            techLink: '/retail-development-service',
+            techLink: '/ecommerce-solutions',
           },
           {
             techName: 'Education',
-            techLink: '/education-development-service',
+            techLink: '/educational-app-development-solutions',
           },
           {
             techName: 'Logistics',
-            techLink: '/logistics-development-service',
+            techLink: '/logistics-app-development',
           },
         ],
       },
       {
         title: 'Custom Solutions',
-        backgroundColor: '#b5f1cc',
+        backgroundColor: '#FDD8A3',
         img: customSolution,
         items: [
           {
             techName: 'DevOps Solutions',
-            techLink: '/devops-Solutions-service',
+            techLink: '/devops-Solutions',
           },
           {
             techName: 'Cloud Solutions',
-            techLink: '/cloud-solutions-service',
+            techLink: '/cloud-computing-solutions',
           },
           {
             techName: 'Product Prototype Solutions',
@@ -2685,13 +2685,13 @@ export const menuData = [
           },
           {
             techName: 'On-demand Business Solutions',
-            techLink: '/on-demand-business-solutions-service',
+            techLink: '/on-demand-app-development',
           },
         ],
       },
       {
         title: 'By Business Scales',
-        backgroundColor: '#d0bfff',
+        backgroundColor: '#FFCABC',
         img: byBusunessScale,
         items: [
           {
@@ -2711,7 +2711,7 @@ export const menuData = [
     megaMenuItem: [
       {
         title: 'Mobile',
-        backgroundColor: '#ffc0d9',
+        backgroundColor: '#73BDF2',
         img: mobile,
         items: [
           {
@@ -2742,7 +2742,7 @@ export const menuData = [
       },
       {
         title: 'Frontend',
-        backgroundColor: '#d0bfff',
+        backgroundColor: '#FFCABC',
         img: frontEnd,
         items: [
           {
@@ -2773,7 +2773,7 @@ export const menuData = [
       },
       {
         title: 'Backend',
-        backgroundColor: '#b5f1cc',
+        backgroundColor: '#FDD8A3',
         img: backEnd,
         items: [
           {
@@ -2804,7 +2804,7 @@ export const menuData = [
       },
       {
         title: 'Trending',
-        backgroundColor: '#ffd8c0',
+        backgroundColor: '#A3D8FD',
         img: trending,
         items: [
           {
@@ -2837,7 +2837,155 @@ export const menuData = [
   },
   {
     menuTitle: 'Hire Us',
-    megaMenuItem: [],
+    megaMenuItem: [
+      {
+        title: 'data & ai',
+        backgroundColor: '#73BDF2',
+        img: dataAi,
+        items: [
+          {
+            techName: 'AI Developers',
+            techLink: '/hire-ai-developers',
+          },
+          {
+            techName: 'ML Developers',
+            techLink: '/hire-ml-developers',
+          },
+          {
+            techName: 'Data Scientists',
+            techLink: '/hire-data-scientists-developers',
+          },
+        ],
+      },
+      {
+        title: 'Mobile App',
+        backgroundColor: '#FFCABC',
+        img: mobile,
+        items: [
+          {
+            techName: 'ios Developers',
+            techLink: '/hire-ios-developers',
+          },
+          {
+            techName: 'Android Developers',
+            techLink: '/hire-android-developers',
+          },
+          {
+            techName: 'React Native Developers',
+            techLink: '/hire-react-native-developers',
+          },
+          {
+            techName: 'Flutter Developers',
+            techLink: '/hire-flutter-developers',
+          },
+          {
+            techName: 'Swift Developers',
+            techLink: '/hire-swift-developers',
+          },
+          {
+            techName: 'Iconic Developers',
+            techLink: '/hire-iconic-developers',
+          },
+        ],
+      },
+      {
+        title: 'Frontend',
+        backgroundColor: '#FDD8A3',
+        img: frontEnd,
+        items: [
+          {
+            techName: 'Next.js Developers',
+            techLink: '/hire-next-js-developers',
+          },
+          {
+            techName: 'React Developers',
+            techLink: '/hire-react-js-developers',
+          },
+          {
+            techName: 'Angular Developers',
+            techLink: '/hire-angular-js-developers',
+          },
+          {
+            techName: 'Vue Developers',
+            techLink: '/hire-vue-js-developers',
+          },
+          {
+            techName: 'Backbone.js Developers',
+            techLink: '/hire-backbone-js-developers',
+          },
+          {
+            techName: 'JavaSctipt Developers',
+            techLink: '/hire-javascript-developers',
+          },
+        ],
+      },
+      {
+        title: 'Backend',
+        backgroundColor: '#A3D8FD',
+        img: backEnd,
+        items: [
+          {
+            techName: 'Python ',
+            techLink: '/hire-python-developers',
+          },
+          {
+            techName: 'Golang',
+            techLink: '/hire-golang-developers',
+          },
+          {
+            techName: 'Node.js',
+            techLink: '/hire-node-js-developers',
+          },
+          {
+            techName: 'Laravel',
+            techLink: '/hire-laravel-developers',
+          },
+          {
+            techName: 'PHP',
+            techLink: '/hire-php-developers',
+          },
+          {
+            techName: 'Meteor.js',
+            techLink: '/hire-meteor-js-developers',
+          },
+        ],
+      },
+      {
+        title: 'Trending',
+        backgroundColor: '#9fe9f6',
+        img: trending,
+        items: [
+          {
+            techName: 'Unreal Engine Developers',
+            techLink: '/hire-wearable-app-developers',
+          },
+          {
+            techName: 'UI/UX Designers',
+            techLink: '/hire-internet-of-things-developers',
+          },
+          {
+            techName: 'Software Developers',
+            techLink: '/hire-software-developers',
+          },
+          {
+            techName: 'DevOps Engineers',
+            techLink: '/hire-devops-developers',
+          },
+          {
+            techName: 'MERN Stack Developers',
+            techLink: '/hire-mern-stack-developers',
+          },
+          {
+            techName: 'MEAN Stack Developers',
+            techLink: '/hire-mean-stack-developers',
+          },
+          {
+            techName: 'Game Developers',
+            techLink: '/hire-game-developers',
+          },
+        ],
+      },
+    ],
   },
   {
     menuTitle: 'Blog',
