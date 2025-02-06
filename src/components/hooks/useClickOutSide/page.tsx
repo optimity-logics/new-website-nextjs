@@ -19,16 +19,16 @@ function useOutsideClick(
         callback();
       }
     }
-    function handleScroll() {
-      callback();
-    }
+    // function handleScroll() {
+    //   callback();
+    // }
     document.addEventListener('mousedown', handleClickOutside);
     document.addEventListener('keyup', escKey);
-    window.addEventListener('scroll', handleScroll);
+    // window.addEventListener('scroll', handleScroll);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
       document.removeEventListener('keyup', escKey);
-      window.removeEventListener('scroll', handleScroll);
+      // window.removeEventListener('scroll', handleScroll);
     };
   }, [ref, callback]);
 }
