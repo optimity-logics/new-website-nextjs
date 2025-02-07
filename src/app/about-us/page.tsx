@@ -407,7 +407,7 @@ const AboutUs = () => {
             </div>
             <div className="flex flex-col items-center gap-4">
               <h3 className="font-Inter text-[26px] font-semibold leading-[28.42px] tracking-[-0.19px] text-black 3xl:text-4xl">
-                Want to Join Team MindInventory?
+                Want to Join Team Optimity Logics?
               </h3>
               <p className="font-Inter text-lg font-normal leading-[29px] text-[#7C7676]">
                 Find your suitable job role openings and apply right away to get

@@ -16,6 +16,7 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import checkMark from '../../../public/svg/check-mark.svg';
 import StarRatings from 'react-star-ratings';
+import FaqsAccordion from './FaqsAccordion';
 
 interface IPropsType {
   data: IPropsDataTypes;
@@ -28,7 +29,7 @@ const AllPageContent = ({ data }: IPropsType) => {
     <>
       <Container className="mb-10 pt-10 md:mb-12 xl:mb-16 3xl:pt-[100px] 4xl:mb-[100px] 5xl:px-[150px]">
         <div className="flex w-full flex-col items-center gap-8 md:flex-row">
-          <div className="flex w-full max-w-[780px] flex-col gap-6 xl:gap-8 4xl:gap-12">
+          <div className="flex w-full max-w-[800px] flex-col gap-6 xl:gap-8 4xl:gap-12">
             <div className="flex flex-col gap-3 md:gap-8">
               <h2 className="font-Inter text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 4xl:text-[55px] 4xl:leading-[60px] 5xl:text-[60px] 5xl:font-semibold 5xl:leading-[64px]">
                 {data?.HeroSectionData?.heading}
@@ -48,16 +49,11 @@ const AllPageContent = ({ data }: IPropsType) => {
               {data?.HeroSectionData?.workWithTechnology &&
                 data?.HeroSectionData?.workWithTechnology.map((item, index) => (
                   <div key={index} className="flex flex-col items-center gap-1">
-                    <span className="font-Poppins text-2xl font-bold leading-6 text-red md:text-3xl md:leading-[44.8px] 4xl:text-[40px]">
+                    <span className="font-Poppins text-2xl font-medium leading-6 text-red md:text-3xl md:leading-[44.8px]">
                       {item?.title}
                     </span>
                     <p
-                      className={`text-center font-Poppins text-xl font-medium leading-[28.8px] text-[#212529] ${
-                        index ===
-                        data?.HeroSectionData?.workWithTechnology.length - 1
-                          ? 'px-2.5'
-                          : ''
-                      }`}
+                      className={`text-center font-Poppins text-lg font-normal leading-6 text-[#212529] 5xl:text-xl 5xl:leading-[28.8px]`}
                     >
                       {item?.description}
                     </p>
@@ -65,15 +61,18 @@ const AllPageContent = ({ data }: IPropsType) => {
                 ))}
             </div>
           </div>
-          <div className="mx-auto max-w-full">
-            <Image
-              src={data?.HeroSectionData?.techImg || ''}
-              alt="Technology Image"
-              width={600}
-              height={528}
-              priority
-            />
-          </div>
+          {data?.HeroSectionData?.techImg && (
+            <div className="mx-auto max-w-full">
+              <Image
+                src={data?.HeroSectionData?.techImg || ''}
+                alt="Technology Image"
+                width={600}
+                height={528}
+                className="h-[528px] object-contain"
+                priority
+              />
+            </div>
+          )}
         </div>
       </Container>
       <div
@@ -546,7 +545,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         </div>
       </div>
       <div className="mb-10 bg-technologbg bg-cover bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">
-        <Container className="flex flex-col gap-7 md:gap-10 4xl:gap-[60px]">
+        <Container className="flex flex-col gap-7 md:gap-10 4xl:gap-[60px] 5xl:px-[150px]">
           <div className="grid grid-cols-1 gap-[29px] sm:grid-cols-2 xl:grid-cols-4">
             {data?.Achievements?.aboutUs?.map((item, index) => (
               <div
@@ -648,6 +647,16 @@ const AllPageContent = ({ data }: IPropsType) => {
           </Swiper>
         </div>
       </div>
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
+        <div className="flex flex-col gap-8 lg:gap-6 3xl:gap-10 4xl:gap-[60px]">
+          <SectionHeading
+            heading={data?.Faqs?.heading}
+            className="4xl:!gap-5"
+            description={data?.Faqs?.description}
+          />
+          <FaqsAccordion data={data?.Faqs?.faqs} />
+        </div>
+      </Container>
     </>
   );
 };
