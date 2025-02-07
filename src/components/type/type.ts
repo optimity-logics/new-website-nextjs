@@ -59,7 +59,7 @@ type TypesOfApplication = {
 type IHeroSectionData = {
   heading: string;
   description: string;
-  techImg: StaticImageData | string;
+  techImg?: StaticImageData | string;
   btnName: string;
   btnLink: string;
   workWithTechnology: {

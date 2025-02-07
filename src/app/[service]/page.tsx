@@ -17,6 +17,69 @@ import { IosData } from '@/components/utils/technology/mobile/Ios';
 import { ReactNative } from '@/components/utils/technology/mobile/reactNative';
 import { SwiftData } from '@/components/utils/technology/mobile/swift';
 import { ReactJsData } from '@/components/utils/technology/front-end/reactJs';
+import {
+  ctoServices,
+  digitalMarketing,
+  hireDedicatedDevs,
+  qualityEngineer,
+  softwareProductDevelopment,
+  uiuxData,
+} from '@/components/utils/services/digitalTransformation/digitalTransformation';
+import {
+  artificialIntelligence,
+  computerVision,
+  dataScience,
+  generativeAI,
+  machineLerning,
+  roboticAutomation,
+} from '@/components/utils/services/dataAndAI/dataAndAi';
+import {
+  appModernization,
+  gameDevelopment,
+  mobileAppDevelopment,
+  mvpDevelopment,
+  saasDevelopment,
+  softwareDevelopment,
+  webAppDevelopment,
+} from '@/components/utils/services/applicationDevelopment/applicationDevelopment';
+import {
+  education,
+  financeSolution,
+  healthcareData,
+  logisticsAppDevelopment,
+  realEstate,
+  retailSolution,
+} from '@/components/utils/solution/IndustryExpertise/IndustryExpertise';
+import {
+  cloudComputing,
+  devOps,
+  onDemandApp,
+  productPrototype,
+} from '@/components/utils/solution/ customSolutions/customSolution';
+import {
+  enterpriseSolution,
+  startUpSolution,
+} from '@/components/utils/solution/businessScales/businessScales';
+import {
+  hireAIDeveloper,
+  hireMLDeveloper,
+} from '@/components/utils/hireTeam/dataAndAI/DataAndAI';
+import {
+  hireAndroidDeveloper,
+  hireFlutterDeveloper,
+  hireIconicDeveloper,
+  hireIosDeveloper,
+  hireReactNativeDeveloper,
+  hireSwiftDeveloper,
+} from '@/components/utils/hireTeam/mobileApp/mobileApp';
+import {
+  hireAngularDeveloper,
+  hireBackboneJs,
+  hireJavascriptDeveloper,
+  hireNextDeveloper,
+  hireReactDeveloper,
+  hireVueDeveloper,
+} from '@/components/utils/hireTeam/frontend/frontend';
 
 type Params = Promise<{ service: string }>;
 
@@ -42,6 +105,56 @@ const dataMap = {
   php: PhpData,
   laravel: LaravelData,
   meteor: MeteorData,
+  // services
+  software: softwareProductDevelopment,
+  ui: uiuxData,
+  digital: digitalMarketing,
+  quality: qualityEngineer,
+  dedicated: hireDedicatedDevs,
+  cto: ctoServices,
+  data: dataScience,
+  machine: machineLerning,
+  artificial: artificialIntelligence,
+  robotic: roboticAutomation,
+  computer: computerVision,
+  generative: generativeAI,
+  web: webAppDevelopment,
+  mobile: mobileAppDevelopment,
+  'software-development': softwareDevelopment,
+  saas: saasDevelopment,
+  mvp: mvpDevelopment,
+  app: appModernization,
+  game: gameDevelopment,
+  // solution
+  healthcare: healthcareData,
+  fintech: financeSolution,
+  real: realEstate,
+  ecommerce: retailSolution,
+  educational: education,
+  logistics: logisticsAppDevelopment,
+  devops: devOps,
+  cloud: cloudComputing,
+  product: productPrototype,
+  on: onDemandApp,
+  startup: startUpSolution,
+  enterprise: enterpriseSolution,
+  // hire devs
+  // mobile
+  'hire-ai': hireAIDeveloper,
+  'hire-machine': hireMLDeveloper,
+  'hire-flutter': hireFlutterDeveloper,
+  'hire-ios': hireIosDeveloper,
+  'hire-android': hireAndroidDeveloper,
+  'hire-react-native': hireReactNativeDeveloper,
+  'hire-swift': hireSwiftDeveloper,
+  'hire-iconic': hireIconicDeveloper,
+  // front-end
+  'hire-react': hireReactDeveloper,
+  'hire-angular': hireAngularDeveloper,
+  'hire-vue': hireVueDeveloper,
+  'hire-next': hireNextDeveloper,
+  'hire-javascript': hireJavascriptDeveloper,
+  'hire-backbone': hireBackboneJs,
 } as const;
 
 type ServiceKey = keyof typeof dataMap;
@@ -53,7 +166,13 @@ const SubcategoryPage = async (props: { params: Params }) => {
     ? 'react-js'
     : service.startsWith('react-native')
       ? 'react-native'
-      : service.split('-')[0];
+      : service.startsWith('software-development')
+        ? 'software-development'
+        : service.startsWith('hire-react-native')
+          ? 'hire-react-native'
+          : service.startsWith('hire')
+            ? service.split('-').slice(0, 2).join('-')
+            : service.split('-')[0];
 
   const pageData = mainService ? dataMap[mainService as ServiceKey] : null;
 

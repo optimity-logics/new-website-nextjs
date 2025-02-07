@@ -159,7 +159,7 @@ const Blog = () => {
               <div className="flex items-start gap-1 lg:items-center">
                 <input type="checkbox" className="mt-1 lg:mt-0" />
                 <span className="font-Inter text-lg font-normal leading-6 text-[#192020]">
-                  I hereby agree to receive newsletters from MindInventory and
+                  I hereby agree to receive newsletters from Optimity Logics and
                   acknowledge company&#39;s
                   <Link href={''} className="text-lightBlue underline">
                     Privacy Policy.

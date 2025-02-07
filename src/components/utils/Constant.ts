@@ -2849,7 +2849,7 @@ export const menuData = [
           },
           {
             techName: 'ML Developers',
-            techLink: '/hire-ml-developers',
+            techLink: '/hire-machine-learning-developers',
           },
           {
             techName: 'Data Scientists',
