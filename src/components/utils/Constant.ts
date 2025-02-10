@@ -543,28 +543,28 @@ export const hireTeamData = [
     img: backEnd,
     items: [
       {
-        techName: 'Python ',
+        techName: 'Python Developers',
         techLink: '/hire-python-developers',
       },
       {
-        techName: 'Golang',
+        techName: 'FastAPI Developers',
+        techLink: '/hire-meteor-js-developers',
+      },
+      {
+        techName: 'Golang Developers',
         techLink: '/hire-golang-developers',
       },
       {
-        techName: 'Node.js',
+        techName: 'Node.js Developers',
         techLink: '/hire-node-js-developers',
       },
       {
-        techName: 'Laravel',
+        techName: 'Laravel Developers',
         techLink: '/hire-laravel-developers',
       },
       {
-        techName: 'PHP',
+        techName: 'PHP Developers',
         techLink: '/hire-php-developers',
-      },
-      {
-        techName: 'Meteor.js',
-        techLink: '/hire-meteor-js-developers',
       },
     ],
   },
@@ -2917,6 +2917,14 @@ export const menuData = [
             techName: 'JavaSctipt Developers',
             techLink: '/hire-javascript-developers',
           },
+          {
+            techName: 'Tailwind CSS Developers',
+            techLink: '/hire-tailwind-css-developers',
+          },
+          {
+            techName: 'Webflow Developers',
+            techLink: '/hire-webflow-developers',
+          },
         ],
       },
       {
@@ -2925,28 +2933,36 @@ export const menuData = [
         img: backEnd,
         items: [
           {
-            techName: 'Python ',
+            techName: 'Python Developers',
             techLink: '/hire-python-developers',
           },
           {
-            techName: 'Golang',
+            techName: 'FastAPI Developers',
+            techLink: '/hire-fastapi-developers',
+          },
+          {
+            techName: 'Django Developers',
+            techLink: '/hire-django-developers',
+          },
+          {
+            techName: 'Flask Developers',
+            techLink: '/hire-flask-developers',
+          },
+          {
+            techName: 'Golang Developers',
             techLink: '/hire-golang-developers',
           },
           {
-            techName: 'Node.js',
+            techName: 'Node.js Developers',
             techLink: '/hire-node-js-developers',
           },
           {
-            techName: 'Laravel',
+            techName: 'Laravel Developers',
             techLink: '/hire-laravel-developers',
           },
           {
-            techName: 'PHP',
+            techName: 'PHP Developers',
             techLink: '/hire-php-developers',
-          },
-          {
-            techName: 'Meteor.js',
-            techLink: '/hire-meteor-js-developers',
           },
         ],
       },
@@ -2957,7 +2973,7 @@ export const menuData = [
         items: [
           {
             techName: 'Unreal Engine Developers',
-            techLink: '/hire-wearable-app-developers',
+            techLink: '/hire-unreal-app-developers',
           },
           {
             techName: 'UI/UX Designers',
