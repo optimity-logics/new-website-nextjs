@@ -148,6 +148,17 @@ type IAchievements = {
   }[];
 };
 
+type IDeployProject = {
+  heading: string;
+  description: string;
+  deployProjectItem: {
+    deployProjectImg: StaticImageData | string;
+    deployProjectHeading: string;
+    deployProjectDescription: string;
+    caseStudyLink: string;
+  }[];
+};
+
 type IFaqs = {
   heading: string;
   description: string;
@@ -164,4 +175,5 @@ export type IPropsDataTypes = {
   Resources: IResources;
   Achievements: IAchievements;
   Faqs: IFaqs;
+  deployProject?: IDeployProject;
 };

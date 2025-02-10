@@ -17,6 +17,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import checkMark from '../../../public/svg/check-mark.svg';
 import StarRatings from 'react-star-ratings';
 import FaqsAccordion from './FaqsAccordion';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 
 interface IPropsType {
   data: IPropsDataTypes;
@@ -28,7 +30,7 @@ const AllPageContent = ({ data }: IPropsType) => {
   return (
     <>
       <Container className="mb-10 pt-10 md:mb-12 xl:mb-16 3xl:pt-[100px] 4xl:mb-[100px] 5xl:px-[150px]">
-        <div className="flex w-full flex-col items-center gap-8 md:flex-row">
+        <div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex w-full max-w-[800px] flex-col gap-6 xl:gap-8 4xl:gap-12">
             <div className="flex flex-col gap-3 md:gap-8">
               <h2 className="font-Inter text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 4xl:text-[55px] 4xl:leading-[60px] 5xl:text-[60px] 5xl:font-semibold 5xl:leading-[64px]">
@@ -61,7 +63,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                 ))}
             </div>
           </div>
-          {data?.HeroSectionData?.techImg && (
+          {data?.HeroSectionData?.techImg ? (
             <div className="mx-auto max-w-full">
               <Image
                 src={data?.HeroSectionData?.techImg || ''}
@@ -72,6 +74,54 @@ const AllPageContent = ({ data }: IPropsType) => {
                 priority
               />
             </div>
+          ) : (
+            <form className="flex w-full max-w-[620px] flex-col gap-[14px] rounded-3xl bg-[#e2f7f8] bg-cover px-[26px] py-[30px]">
+              <div className="flex flex-col gap-1.5">
+                <h3 className="font-Inter text-[30px] font-semibold leading-[36.31px] text-black">
+                  Book a Developer Interview
+                </h3>
+                <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
+                  Provide details about the skills you need, and we’ll find the
+                  right candidate for you.
+                </p>
+              </div>
+              <div className="flex flex-col gap-[15px]">
+                <input
+                  type="text"
+                  placeholder="Your name.."
+                  className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
+                />
+                <input
+                  type="text"
+                  placeholder="Email address.."
+                  className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
+                />
+                <PhoneInput
+                  className="w-full !space-x-5 border-none"
+                  placeholder="Phone number"
+                  defaultCountry="in" // Use lowercase 'in' for India
+                  inputClassName="w-full !border !border-[#19202033]  !px-[15px] !py-[14.59px] font-Inter !text-base font-light !leading-6 !text-[#192020] focus:outline-none !outline-none !rounded-[10px] !bg-white !min-h-[54px]"
+                  countrySelectorStyleProps={{
+                    className: '  !z-[99]',
+                    buttonClassName:
+                      '!border border-[#19202033] !rounded-[10px] !p-[15px] !bg-white !min-h-[54px] !min-w-[100px]',
+                  }}
+                />
+
+                <textarea
+                  rows={3}
+                  placeholder="Tell us about your project.."
+                  className="appearance-[#ffffff4a] w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  className="mt-[5px] flex w-max cursor-pointer items-center gap-2.5 rounded-[39px] bg-red px-4 py-3 font-Inter text-sm font-medium uppercase text-white md:px-[21px] md:py-4 md:text-lg md:leading-[24.2px]"
+                >
+                  inquire now{' '}
+                  <Image src={arrow} alt="Arrow" width={24} height={24} />
+                </button>
+              </div>
+            </form>
           )}
         </div>
       </Container>
@@ -216,6 +266,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           </div>
         </Container>
       </div>
+
       <div className="mb-10 flex flex-col gap-7 md:mb-12 md:gap-10 xl:mb-16 4xl:mb-[100px] 4xl:gap-[60px] 5xl:gap-[64px]">
         <div className="mx-auto max-w-[1564px] px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 4xl:px-0">
           <SectionHeading
@@ -293,6 +344,102 @@ const AllPageContent = ({ data }: IPropsType) => {
           </Link>
         </div>
       </div>
+      {data?.deployProject && (
+        <div className="mb-10 bg-technologbg bg-cover bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">
+          <Container className="flex flex-col items-center gap-8 4xl:gap-[60px]">
+            <SectionHeading
+              heading={data?.deployProject?.heading}
+              description={data?.deployProject?.description}
+              className="max-w-[1170px]"
+              descriptionStyle="max-w-[950px]"
+              isDark={true}
+            />
+            <div className="h-full w-full">
+              <Swiper
+                spaceBetween={33}
+                slidesPerView={1}
+                modules={[Autoplay, Mousewheel]}
+                // autoplay={{
+                //   delay: 2000,
+                //   disableOnInteraction: false,
+                // }}
+                speed={1000}
+                mousewheel={{
+                  invert: true,
+                }}
+                loop={true}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                  },
+                  // 820: {
+                  //   slidesPerView: 2,
+                  // },
+                  1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1440: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                  },
+                  // 1660: {
+                  //   slidesPerView: 4,
+                  //   spaceBetween: 40,
+                  // },
+                }}
+                className="w-full"
+              >
+                {data?.deployProject?.deployProjectItem &&
+                  data?.deployProject?.deployProjectItem.map((item, index) => (
+                    <SwiperSlide
+                      key={index}
+                      className={` ${index % 2 === 0 ? 'pt-[78px]' : 'pb-[78px]'}`}
+                    >
+                      <div
+                        className={`gap- flex ${index % 2 === 0 ? 'flex-col' : 'flex-col-reverse'} items-center rounded-[40px] bg-white`}
+                      >
+                        <div
+                          className={`${index % 2 === 0 ? 'mt-[-78px]' : 'mb-[-78px]'}`}
+                        >
+                          <Image
+                            src={item?.deployProjectImg}
+                            alt="deploy-project-img"
+                            width={487}
+                            height={281}
+                          />
+                        </div>
+                        <div
+                          className={`flex flex-col gap-4 px-6 py-5 ${index % 2 === 0 ? 'bg-[#02ade11a]' : 'bg-[#e94e2540]'} `}
+                        >
+                          <h3 className="font-Inter text-[34px] font-semibold leading-8 text-black">
+                            {item?.deployProjectHeading}
+                          </h3>
+                          <p className="font-Inter text-lg font-light leading-7 text-black">
+                            {item?.deployProjectDescription}
+                          </p>
+                          <Link
+                            href={item?.caseStudyLink}
+                            className="mt-2 flex w-max items-center gap-2.5 rounded-[39.35px] bg-[#02ADE1] px-[21.29px] py-[19.5px] font-Inter text-[21px] font-medium capitalize leading-[26px] text-white"
+                          >
+                            {' '}
+                            case study{' '}
+                            <Image
+                              src={arrow}
+                              alt="arrow"
+                              width={24}
+                              height={24}
+                            />
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+              </Swiper>
+            </div>
+          </Container>
+        </div>
+      )}
       <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
         <div className="flex flex-col items-center gap-7 md:gap-10 4xl:gap-[60px]">
           <SectionHeading
@@ -320,6 +467,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           </div>
         </div>
       </Container>
+
       <div className="mb-10 flex flex-col items-center gap-8 bg-technologbg bg-cover bg-no-repeat px-4 py-10 sm:px-0 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:gap-[60px] 4xl:py-20">
         <SectionHeading
           heading={data?.TechnologiesFeatured?.heading}

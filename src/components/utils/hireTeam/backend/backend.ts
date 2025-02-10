@@ -21,531 +21,29 @@ import clutch from '../../../../../public/svg/about-us/clutch.svg';
 import designrush from '../../../../../public/svg/about-us/designrush.svg';
 import goodfirms from '../../../../../public/svg/about-us/goodfirm.svg';
 import topDevelopers from '../../../../../public/svg/about-us/top-developers.svg';
-import healthCareImg from '../../../../../public/webp/solution/startup-solution.webp';
-import deployProjectImg from '../../../../../public/webp/deployProject.webp';
 
-export const healthcareData: IPropsDataTypes = {
+export const hirePythonDeveloper: IPropsDataTypes = {
   HeroSectionData: {
-    heading: 'Healthcare Software Development Company',
-    description: `As a leading healthcare software development company, we deliver innovative solutions to help the industry tackle today’s challenges and seize tomorrow’s opportunities.Our technologies integrate with the system, streamline operations, and encourage data-driven decisions, enhancing the overall outcomes.`,
-    techImg: healthCareImg,
-    btnName: `let's connect`,
+    heading: 'Hire Python Developers',
+    description: `Hire Python developers from our team, with extensive knowledge and hands-on experience in working with frameworks like Django, Flask, FastAPI, and more. Our Python developers build robust backend solutions for web apps and cutting-edge AI/ML solutions backed by insightful data. Skip the hassle - Hire your ideal Python developer in just a click!`,
+    btnName: `schedule a call `,
     btnLink: '',
     workWithTechnology: [
       {
-        title: '250+',
-        description: 'In-house Team Members',
-      },
-      {
-        title: '6+',
-        description: 'Years of Avg. Developer Exp.',
+        title: '20+',
+        description: 'Python Developers',
       },
       {
         title: '90%',
-        description: 'Talent Retention Rate',
-      },
-      {
-        title: '100%',
-        description: 'Refund Policy*',
-      },
-    ],
-  },
-
-  AppDevelopment: {
-    heading: `Our <span>Ios App Development </span> Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from the ground up using Ios or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Ios mobile app development company, we provide comprehensive Ios app development services to support you through every stage of the development lifecycle.`,
-    btnLink: '',
-    typesOfApplication: [
-      {
-        heading: 'Custom Ios App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        heading: 'Custom Ios App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        heading: 'Custom Ios App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        heading: 'Custom Ios App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        heading: 'Custom Ios App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-    ],
-    btnName: 'view more',
-  },
-
-  NextGen: {
-    heading: 'Want To Build A Next-Gen Flutter Application?',
-    description: `Optimity Logics can be your trusted Flutter app development company,
-harnessing the power of this cross-platform technology for your app project. With
-a focus on user-centric design and seamless performance, we deliver Flutter
-apps that leave a lasting impression.`,
-    btnName: `let's discuss`,
-    btnLink: '',
-    img: presentationProductMan,
-    accuracey: [
-      {
-        accuraceyImg: nda,
-        accuraceyTitle: '100% NDA-protected contract',
-      },
-      {
-        accuraceyImg: resource,
-        accuraceyTitle: '100% resource substitution*',
-      },
-      {
-        accuraceyImg: hiringModels,
-        accuraceyTitle: 'Flexible hiring models',
-      },
-      {
-        accuraceyImg: refundPolicy,
-        accuraceyTitle: '100% refund policy*',
-      },
-    ],
-  },
-
-  TechnologiesIntegrations: {
-    heading: `Technologies We Use In <span> Combination with Flutter </span>`,
-    description: `Being the best Flutter mobile app development company, we seamlessly integrate various backend technologies and databases with Flutter to
-enhance the capabilities and functionalities of our mobile applications. Check out the best frontend and backend technology combination that you can avail with our Flutter mobile app development services.`,
-    btnName: 'hire developer',
-    btnLink: '',
-    integrations: [
-      {
-        images: [flutterLogo, fireBase],
-        heading: 'Flutter + Firebase',
-        description: `The best-fit app development combination to
-launch your MVP faster and robust toolkit to build
-high-quality, feature-rich apps that are scalable,
-performant, and easy to maintain.`,
-      },
-      {
-        images: [flutterLogo, nodejs],
-        heading: 'Flutter + Node.js',
-        description: `Node.js is the most suitable backend to use with
-Flutter for building RESTful APIs and backend
-apps entirely in JavaScript which simplifies app
-development with cohesive architecture.`,
-      },
-      {
-        images: [flutterLogo, mongoDB],
-        heading: 'Flutter + MongoDB',
-        description: `Combining Flutter with MongoDB our developers
-build powerful, scalable, and feature-rich
-applications that deliver a seamless user
-experience across multiple platforms.`,
-      },
-      {
-        images: [flutterLogo, fireBase],
-        heading: 'Flutter + Firebase',
-        description: `The best-fit app development combination to
-launch your MVP faster and robust toolkit to build
-high-quality, feature-rich apps that are scalable,
-performant, and easy to maintain.`,
-      },
-      {
-        images: [flutterLogo, nodejs],
-        heading: 'Flutter + Node.js',
-        description: `Node.js is the most suitable backend to use with
-Flutter for building RESTful APIs and backend
-apps entirely in JavaScript which simplifies app
-development with cohesive architecture.`,
-      },
-      {
-        images: [flutterLogo, mongoDB],
-        heading: 'Flutter + MongoDB',
-        description: `Combining Flutter with MongoDB our developers
-build powerful, scalable, and feature-rich
-applications that deliver a seamless user
-experience across multiple platforms.`,
-      },
-    ],
-  },
-
-  WhyOptimityForDevelopment: {
-    heading: `Why Choose <span> Optimity Logics for Flutter App Development</span> Services?`,
-    description: ` When it comes to Flutter app development services, choosing the right partner can make all the difference in
-achieving your app's success. We stand as the ideal Flutter app development company for the following reasons.`,
-    typesOfApplication: [
-      {
-        heading: '100% In-house Team',
-        description:
-          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
-      },
-      {
-        heading: '100% In-house Team',
-        description:
-          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
-      },
-      {
-        heading: '100% In-house Team',
-        description:
-          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
-      },
-      {
-        heading: '100% In-house Team',
-        description:
-          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
-      },
-      {
-        heading: '100% In-house Team',
-        description:
-          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
-      },
-      {
-        heading: '100% In-house Team',
-        description:
-          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
-      },
-    ],
-    btnName: 'view more',
-  },
-  deployProject: {
-    heading:
-      'Our Successful Software Product <span>Development Projects</span>',
-    description:
-      'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.  ',
-    deployProjectItem: [
-      {
-        deployProjectHeading: 'Hopper',
-        deployProjectImg: deployProjectImg,
-        deployProjectDescription:
-          'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
-        caseStudyLink: '',
-      },
-      {
-        deployProjectHeading: 'HTS',
-        deployProjectImg: deployProjectImg,
-        deployProjectDescription:
-          'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
-        caseStudyLink: '',
-      },
-      {
-        deployProjectHeading: 'Hopper',
-        deployProjectImg: deployProjectImg,
-        deployProjectDescription:
-          'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
-        caseStudyLink: '',
-      },
-      {
-        deployProjectHeading: 'HTS',
-        deployProjectImg: deployProjectImg,
-        deployProjectDescription:
-          'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
-        caseStudyLink: '',
-      },
-      {
-        deployProjectHeading: 'Hopper',
-        deployProjectImg: deployProjectImg,
-        deployProjectDescription:
-          'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
-        caseStudyLink: '',
-      },
-      {
-        deployProjectHeading: 'HTS',
-        deployProjectImg: deployProjectImg,
-        deployProjectDescription:
-          'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
-        caseStudyLink: '',
-      },
-    ],
-  },
-  TechnologiesFeatured: {
-    heading: '<span>Featured Insights </span> from Our Flutter Experts',
-    description:
-      'Explore our featured Flutter technology insights that are popular among our readers.',
-    expertiseInFeacture: [
-      {
-        img: '/images/resources/AIModel.png',
-        label: 'Artificial Intelligence',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-      currency, the reliability and efficiency...`,
-      },
-      {
-        img: '/images/resources/services.png',
-        label: 'Artificial Intelligence',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-      way we interact with technology ...`,
-      },
-      {
-        img: '/images/resources/angular.png',
-        label: 'Artificial Intelligence',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-      every tech possibility and blowing everyo...`,
-      },
-      {
-        img: '/images/resources/services.png',
-        label: 'Artificial Intelligence',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-      way we interact with technology ...`,
-      },
-      {
-        img: '/images/resources/angular.png',
-        label: 'Artificial Intelligence',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-      every tech possibility and blowing everyo...`,
-      },
-    ],
-  },
-  TechnologyWeUseInDevelopment: {
-    heading: 'Technology Stack We Use For <span>Flutter App Development</span>',
-    description:
-      "Here's a list of tools and technologies our Flutter experts excel in, catering to various requirements for Flutter mobile app development services",
-    btnName: 'schedule a developer interview',
-    btnLink: '',
-    technologyServices: [
-      {
-        bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
-        servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
-      },
-      {
-        bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
-        servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
-      },
-      {
-        bgColor: '#9FE9F6',
-        servicesName: 'Databases',
-        servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
-      },
-      {
-        bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
-        servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
-      },
-      {
-        bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
-        servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
-      },
-    ],
-  },
-  Resources: {
-    heading: 'Know what’s <span> trending in AI </span>',
-    description:
-      'Insights on the global impact of artificial intelligence across multiple domains',
-    btnName: 'Resources',
-    linkName: 'Explore all blogs',
-    resourcesData: [
-      {
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-    currency, the reliability and efficiency...`,
-      },
-      {
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-    way we interact with technology ...`,
-      },
-      {
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-    every tech possibility and blowing everyo...`,
-      },
-      {
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-    way we interact with technology ...`,
-      },
-      {
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-    every tech possibility and blowing everyo...`,
-      },
-    ],
-  },
-  Achievements: {
-    heading: 'Our <span> Achievements </span>',
-    aboutUs: [
-      {
-        basicInfo: '354+',
-        description: 'Completed Projects',
-        Img: completeProject,
-        bgColor: '#FFD9CF',
-      },
-      {
-        basicInfo: '15+',
-        description: 'Employees',
-        Img: employee,
-        bgColor: '#92E6FF',
-      },
-      {
-        basicInfo: '02+',
-        description: 'Countries Served',
-        Img: countryServe,
-        bgColor: '#FFD9CF',
-      },
-      {
-        basicInfo: '05+',
-        description: 'Years Of Expertise',
-        Img: expert,
-        bgColor: '#92E6FF',
-      },
-    ],
-    achievementsData: [
-      {
-        rating: 4.5,
-        title: 'Top IT services company',
-        logoImg: clutch,
-      },
-
-      {
-        rating: 4.5,
-        title: 'Top mobile app development company',
-        logoImg: goodfirms,
-      },
-
-      {
-        rating: 4.7,
-        title: 'Top mobile app development company',
-        logoImg: goodfirms,
-      },
-      {
-        rating: 4.8,
-        title: 'Top mobile app development company',
-        logoImg: designrush,
-      },
-      {
-        rating: 4.5,
-        title: 'Top mobile app development ',
-        logoImg: topDevelopers,
-      },
-      {
-        rating: 5.0,
-        title: 'Top mobile app development',
-        logoImg: designrush,
-      },
-      {
-        rating: 4.5,
-        title: 'Top mobile app development company',
-        logoImg: topDevelopers,
-      },
-      {
-        rating: 4.5,
-        title: 'Top mobile app development company',
-        logoImg: clutch,
-      },
-    ],
-  },
-  Faqs: {
-    heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
-    faqs: [
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How do I start creating my own app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-    ],
-  },
-};
-export const financeSolution: IPropsDataTypes = {
-  HeroSectionData: {
-    heading: 'Fintech Software Development Company',
-    description: `Optimity Logics is a trusted Fintech software development partner for many global clients taking steps towards digital innovation. With expertise in the field and utilizing certified practices, we are committed to delivering custom Fintech software solutions that transform the way people deal with finances.`,
-    techImg: healthCareImg,
-    btnName: `let's connect`,
-    btnLink: '',
-    workWithTechnology: [
-      {
-        title: '250+',
-        description: 'In-house Team Members',
+        description: `Developer's Retention Rate`,
       },
       {
         title: '6+',
-        description: 'Years of Avg. Developer Exp.',
+        description: "Years of Dev's' Avg. Exp.",
       },
       {
-        title: '90%',
-        description: 'Talent Retention Rate',
-      },
-      {
-        title: '100%',
-        description: 'Refund Policy*',
+        title: '40+',
+        description: 'Countries We Served',
       },
     ],
   },
@@ -972,29 +470,28 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     ],
   },
 };
-export const realEstate: IPropsDataTypes = {
+export const hireGoLangDeveloper: IPropsDataTypes = {
   HeroSectionData: {
-    heading: 'Real Estate App Development Company',
-    description: `Optimity Logics has a team of expert app developers who can help you with custom real estate app development, revolutionizing the way of managing real estate business processes and the way people buy, sell, or rent properties while ensuring compliance with industry standards.`,
-    techImg: healthCareImg,
-    btnName: `let's connect`,
+    heading: 'Hire Golang Developers',
+    description: `Hire our top Golang developers with a track record of delivering successful projects for global clients since 2011. Our certified Golang web developers specialize in concurrent programming, API development, microservices architecture, database integrations, etc. Skip the hassle - find Golang developers for hire with just a click!`,
+    btnName: `schedule a call `,
     btnLink: '',
     workWithTechnology: [
       {
-        title: '250+',
-        description: 'In-house Team Members',
-      },
-      {
-        title: '6+',
-        description: 'Years of Avg. Developer Exp.',
+        title: '20+',
+        description: 'Golang Developers',
       },
       {
         title: '90%',
-        description: 'Talent Retention Rate',
+        description: `Developer's Retention Rate`,
       },
       {
-        title: '100%',
-        description: 'Refund Policy*',
+        title: '6+',
+        description: "Years of Dev's' Avg. Exp.",
+      },
+      {
+        title: '40+',
+        description: 'Countries We Served',
       },
     ],
   },
@@ -1421,29 +918,28 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     ],
   },
 };
-export const retailSolution: IPropsDataTypes = {
+export const hireNodeJSDeveloper: IPropsDataTypes = {
   HeroSectionData: {
-    heading: 'Ecommerce App Development Company',
-    description: `At Optimity Logics, our dedicated team of developers specializes in empowering retail businesses with cutting-edge Ecommerce app development services. Our expertise focuses on enhancing retail business conversions and expanding market territories.`,
-    techImg: healthCareImg,
-    btnName: `let's connect`,
+    heading: 'Hire Node.js Developers',
+    description: `Hire Node JS developers to build development projects facilitating real-time functionality, data processing capabilities, scalable architecture, and more. Our Node.js developers for hire specialize in developing data-intensive apps, custom web apps, RESTful APIs, SPAs, and more.`,
+    btnName: `schedule a call `,
     btnLink: '',
     workWithTechnology: [
       {
-        title: '250+',
-        description: 'In-house Team Members',
-      },
-      {
-        title: '6+',
-        description: 'Years of Avg. Developer Exp.',
+        title: '15+',
+        description: 'Node.js Developers',
       },
       {
         title: '90%',
-        description: 'Talent Retention Rate',
+        description: `Developer's Retention Rate`,
       },
       {
-        title: '100%',
-        description: 'Refund Policy*',
+        title: '6+',
+        description: "Years of Dev's Exp.",
+      },
+      {
+        title: '40+',
+        description: 'Countries We Served',
       },
     ],
   },
@@ -1870,29 +1366,28 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     ],
   },
 };
-export const education: IPropsDataTypes = {
+export const hireLaravelDeveloper: IPropsDataTypes = {
   HeroSectionData: {
-    heading: 'Education App Development Company',
-    description: `Optimity Logics is a leading education app development company assisting education organizations in their digital learning transformation journey. With extensive industry expertise and utilizing modern-age technologies, we deliver cutting-edge education software solutions, elevating your institution's capabilities, enhancing student learning experiences, streamlining administrative tasks, and much more.`,
-    techImg: healthCareImg,
-    btnName: `let's connect`,
+    heading: 'Hire Laravel Developers',
+    description: `Hire Laravel developers with a knack for developing exceptional UIs and web applications. Our Laravel developers for hire offer end-to-end Laravel development services, specializing in building interactive UIs, robust single-page applications (SPAs), and more such web solutions.`,
+    btnName: `schedule a call `,
     btnLink: '',
     workWithTechnology: [
       {
-        title: '250+',
-        description: 'In-house Team Members',
-      },
-      {
-        title: '6+',
-        description: 'Years of Avg. Developer Exp.',
+        title: '20+',
+        description: 'Laravel Developers',
       },
       {
         title: '90%',
-        description: 'Talent Retention Rate',
+        description: `Developer's Retention Rate`,
       },
       {
-        title: '100%',
-        description: 'Refund Policy*',
+        title: '6+',
+        description: "Years of Dev's Avg. Exp.",
+      },
+      {
+        title: '40+',
+        description: 'Countries We Served',
       },
     ],
   },
@@ -2319,29 +1814,1372 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     ],
   },
 };
-export const logisticsAppDevelopment: IPropsDataTypes = {
+export const hirePhpDeveloper: IPropsDataTypes = {
   HeroSectionData: {
-    heading: 'Logistics Software Development Company',
-    description: `At Optimity Logics, we understand the necessities of the logistics industry, such as seamless efficiency, real-time tracking, and more useful features, and considering all that, we provide them with tailored logistics app development services to stay ahead in today’s fast-paced world.`,
-    techImg: healthCareImg,
-    btnName: `let's connect`,
+    heading: 'Hire PHP Developers',
+    description: `Hire PHP developers with expertise in developing dynamic web pages, custom web apps, RESTful APIs, and more. Our PHP web developers for hire are vetted and specialize in powering your web development projects with popular PHP frameworks like Laravel.`,
+    btnName: `schedule a call `,
     btnLink: '',
     workWithTechnology: [
       {
-        title: '250+',
-        description: 'In-house Team Members',
-      },
-      {
-        title: '6+',
-        description: 'Years of Avg. Developer Exp.',
+        title: '15+',
+        description: 'PHP Developers',
       },
       {
         title: '90%',
-        description: 'Talent Retention Rate',
+        description: `Developer's Retention Rate`,
       },
       {
-        title: '100%',
-        description: 'Refund Policy*',
+        title: '6+',
+        description: "Years of Dev's Avg. Exp.",
+      },
+      {
+        title: '40+',
+        description: 'Countries We Served',
+      },
+    ],
+  },
+
+  AppDevelopment: {
+    heading: `Our <span>Ios App Development </span> Services Aligned with Your Needs`,
+    description: ` Whether you're looking to build a custom cross-platform app from the ground up using Ios or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Ios mobile app development company, we provide comprehensive Ios app development services to support you through every stage of the development lifecycle.`,
+    btnLink: '',
+    typesOfApplication: [
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+    ],
+    btnName: 'view more',
+  },
+
+  NextGen: {
+    heading: 'Want To Build A Next-Gen Flutter Application?',
+    description: `Optimity Logics can be your trusted Flutter app development company,
+harnessing the power of this cross-platform technology for your app project. With
+a focus on user-centric design and seamless performance, we deliver Flutter
+apps that leave a lasting impression.`,
+    btnName: `let's discuss`,
+    btnLink: '',
+    img: presentationProductMan,
+    accuracey: [
+      {
+        accuraceyImg: nda,
+        accuraceyTitle: '100% NDA-protected contract',
+      },
+      {
+        accuraceyImg: resource,
+        accuraceyTitle: '100% resource substitution*',
+      },
+      {
+        accuraceyImg: hiringModels,
+        accuraceyTitle: 'Flexible hiring models',
+      },
+      {
+        accuraceyImg: refundPolicy,
+        accuraceyTitle: '100% refund policy*',
+      },
+    ],
+  },
+
+  TechnologiesIntegrations: {
+    heading: `Technologies We Use In <span> Combination with Flutter </span>`,
+    description: `Being the best Flutter mobile app development company, we seamlessly integrate various backend technologies and databases with Flutter to
+enhance the capabilities and functionalities of our mobile applications. Check out the best frontend and backend technology combination that you can avail with our Flutter mobile app development services.`,
+    btnName: 'hire developer',
+    btnLink: '',
+    integrations: [
+      {
+        images: [flutterLogo, fireBase],
+        heading: 'Flutter + Firebase',
+        description: `The best-fit app development combination to
+launch your MVP faster and robust toolkit to build
+high-quality, feature-rich apps that are scalable,
+performant, and easy to maintain.`,
+      },
+      {
+        images: [flutterLogo, nodejs],
+        heading: 'Flutter + Node.js',
+        description: `Node.js is the most suitable backend to use with
+Flutter for building RESTful APIs and backend
+apps entirely in JavaScript which simplifies app
+development with cohesive architecture.`,
+      },
+      {
+        images: [flutterLogo, mongoDB],
+        heading: 'Flutter + MongoDB',
+        description: `Combining Flutter with MongoDB our developers
+build powerful, scalable, and feature-rich
+applications that deliver a seamless user
+experience across multiple platforms.`,
+      },
+      {
+        images: [flutterLogo, fireBase],
+        heading: 'Flutter + Firebase',
+        description: `The best-fit app development combination to
+launch your MVP faster and robust toolkit to build
+high-quality, feature-rich apps that are scalable,
+performant, and easy to maintain.`,
+      },
+      {
+        images: [flutterLogo, nodejs],
+        heading: 'Flutter + Node.js',
+        description: `Node.js is the most suitable backend to use with
+Flutter for building RESTful APIs and backend
+apps entirely in JavaScript which simplifies app
+development with cohesive architecture.`,
+      },
+      {
+        images: [flutterLogo, mongoDB],
+        heading: 'Flutter + MongoDB',
+        description: `Combining Flutter with MongoDB our developers
+build powerful, scalable, and feature-rich
+applications that deliver a seamless user
+experience across multiple platforms.`,
+      },
+    ],
+  },
+
+  WhyOptimityForDevelopment: {
+    heading: `Why Choose <span> Optimity Logics for Flutter App Development</span> Services?`,
+    description: ` When it comes to Flutter app development services, choosing the right partner can make all the difference in
+achieving your app's success. We stand as the ideal Flutter app development company for the following reasons.`,
+    typesOfApplication: [
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+    ],
+    btnName: 'view more',
+  },
+  TechnologiesFeatured: {
+    heading: '<span>Featured Insights </span> from Our Flutter Experts',
+    description:
+      'Explore our featured Flutter technology insights that are popular among our readers.',
+    expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+      way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+      every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+      way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+      every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  TechnologyWeUseInDevelopment: {
+    heading: 'Technology Stack We Use For <span>Flutter App Development</span>',
+    description:
+      "Here's a list of tools and technologies our Flutter experts excel in, catering to various requirements for Flutter mobile app development services",
+    btnName: 'schedule a developer interview',
+    btnLink: '',
+    technologyServices: [
+      {
+        bgColor: '#FFC0D9',
+        servicesName: 'Frameworks',
+        servicesImg: framework,
+        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+      },
+      {
+        bgColor: '#B5F1CC',
+        servicesName: 'Tools & Utilities',
+        servicesImg: tools,
+        servicesItems: [
+          'Android studio',
+          'Visual studio code',
+          'IntelliJ',
+          'Version control tools (Git, GitLab, Bit Bucket)',
+        ],
+      },
+      {
+        bgColor: '#9FE9F6',
+        servicesName: 'Databases',
+        servicesImg: database,
+        servicesItems: [
+          'Hive',
+          'ObjectBox',
+          'SQLite',
+          'Firebase realtime database',
+          'Firestore',
+          'Sembast',
+          'StorageMoor',
+        ],
+      },
+      {
+        bgColor: '#FFD8C0',
+        servicesName: 'Plugins & Integrations',
+        servicesImg: plugin,
+        servicesItems: [
+          'Firebase (All service)',
+          'Provider',
+          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
+          'Social Sign-In (Facebook, Google, Apple)',
+          'Shared preferences',
+          'Image_picker',
+          'In-app Purchase',
+          'Map flutter_ffmpeg',
+          'AWS Amplify',
+          'AWS datastore',
+          'Freezed',
+          'JSON serializable',
+          'flutter_local_notifications',
+          'BLoC',
+        ],
+      },
+      {
+        bgColor: '#D0BFFF',
+        servicesName: 'CI/CD Tools',
+        servicesImg: dns,
+        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+      },
+    ],
+  },
+  Resources: {
+    heading: 'Know what’s <span> trending in AI </span>',
+    description:
+      'Insights on the global impact of artificial intelligence across multiple domains',
+    btnName: 'Resources',
+    linkName: 'Explore all blogs',
+    resourcesData: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+    currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+    way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+    every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+    way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+    every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  Achievements: {
+    heading: 'Our <span> Achievements </span>',
+    aboutUs: [
+      {
+        basicInfo: '354+',
+        description: 'Completed Projects',
+        Img: completeProject,
+        bgColor: '#FFD9CF',
+      },
+      {
+        basicInfo: '15+',
+        description: 'Employees',
+        Img: employee,
+        bgColor: '#92E6FF',
+      },
+      {
+        basicInfo: '02+',
+        description: 'Countries Served',
+        Img: countryServe,
+        bgColor: '#FFD9CF',
+      },
+      {
+        basicInfo: '05+',
+        description: 'Years Of Expertise',
+        Img: expert,
+        bgColor: '#92E6FF',
+      },
+    ],
+    achievementsData: [
+      {
+        rating: 4.5,
+        title: 'Top IT services company',
+        logoImg: clutch,
+      },
+
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: goodfirms,
+      },
+
+      {
+        rating: 4.7,
+        title: 'Top mobile app development company',
+        logoImg: goodfirms,
+      },
+      {
+        rating: 4.8,
+        title: 'Top mobile app development company',
+        logoImg: designrush,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development ',
+        logoImg: topDevelopers,
+      },
+      {
+        rating: 5.0,
+        title: 'Top mobile app development',
+        logoImg: designrush,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: topDevelopers,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: clutch,
+      },
+    ],
+  },
+  Faqs: {
+    heading: 'Frequently Asked Questions',
+    description: 'We’ve compiled the answers to your burning questions!',
+    faqs: [
+      {
+        question: 'How much does it cost to build an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'How much does it cost to build an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'Is it possible to create an app for free?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'How do I start creating my own app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'What’s involved in launching an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+    ],
+  },
+};
+export const hireFastApiDeveloper: IPropsDataTypes = {
+  HeroSectionData: {
+    heading: 'Hire FastAPI Developers',
+    description: `Harness the power of FastAPI - a modern, high-performance web framework to build secure APIs with automatic documentation generation with rapid development. Being a dedicated team of Python developers with experience working with different frameworks, we allow businesses to hire FastAPI developers from our team to work as their dedicated remote team. Our FastAPI experts leverage this asynchronous programming to build real-time applications, microservices, and beyond, delivering optimal performance.`,
+    btnName: `schedule a call `,
+    btnLink: '',
+    workWithTechnology: [
+      {
+        title: '15+',
+        description: 'FastAPI Developers',
+      },
+      {
+        title: '90%',
+        description: `Developer's Retention Rate`,
+      },
+      {
+        title: '6+',
+        description: "Years of Dev's Avg. Exp.",
+      },
+      {
+        title: '40+',
+        description: 'Countries We Served',
+      },
+    ],
+  },
+
+  AppDevelopment: {
+    heading: `Our <span>Ios App Development </span> Services Aligned with Your Needs`,
+    description: ` Whether you're looking to build a custom cross-platform app from the ground up using Ios or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Ios mobile app development company, we provide comprehensive Ios app development services to support you through every stage of the development lifecycle.`,
+    btnLink: '',
+    typesOfApplication: [
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+    ],
+    btnName: 'view more',
+  },
+
+  NextGen: {
+    heading: 'Want To Build A Next-Gen Flutter Application?',
+    description: `Optimity Logics can be your trusted Flutter app development company,
+harnessing the power of this cross-platform technology for your app project. With
+a focus on user-centric design and seamless performance, we deliver Flutter
+apps that leave a lasting impression.`,
+    btnName: `let's discuss`,
+    btnLink: '',
+    img: presentationProductMan,
+    accuracey: [
+      {
+        accuraceyImg: nda,
+        accuraceyTitle: '100% NDA-protected contract',
+      },
+      {
+        accuraceyImg: resource,
+        accuraceyTitle: '100% resource substitution*',
+      },
+      {
+        accuraceyImg: hiringModels,
+        accuraceyTitle: 'Flexible hiring models',
+      },
+      {
+        accuraceyImg: refundPolicy,
+        accuraceyTitle: '100% refund policy*',
+      },
+    ],
+  },
+
+  TechnologiesIntegrations: {
+    heading: `Technologies We Use In <span> Combination with Flutter </span>`,
+    description: `Being the best Flutter mobile app development company, we seamlessly integrate various backend technologies and databases with Flutter to
+enhance the capabilities and functionalities of our mobile applications. Check out the best frontend and backend technology combination that you can avail with our Flutter mobile app development services.`,
+    btnName: 'hire developer',
+    btnLink: '',
+    integrations: [
+      {
+        images: [flutterLogo, fireBase],
+        heading: 'Flutter + Firebase',
+        description: `The best-fit app development combination to
+launch your MVP faster and robust toolkit to build
+high-quality, feature-rich apps that are scalable,
+performant, and easy to maintain.`,
+      },
+      {
+        images: [flutterLogo, nodejs],
+        heading: 'Flutter + Node.js',
+        description: `Node.js is the most suitable backend to use with
+Flutter for building RESTful APIs and backend
+apps entirely in JavaScript which simplifies app
+development with cohesive architecture.`,
+      },
+      {
+        images: [flutterLogo, mongoDB],
+        heading: 'Flutter + MongoDB',
+        description: `Combining Flutter with MongoDB our developers
+build powerful, scalable, and feature-rich
+applications that deliver a seamless user
+experience across multiple platforms.`,
+      },
+      {
+        images: [flutterLogo, fireBase],
+        heading: 'Flutter + Firebase',
+        description: `The best-fit app development combination to
+launch your MVP faster and robust toolkit to build
+high-quality, feature-rich apps that are scalable,
+performant, and easy to maintain.`,
+      },
+      {
+        images: [flutterLogo, nodejs],
+        heading: 'Flutter + Node.js',
+        description: `Node.js is the most suitable backend to use with
+Flutter for building RESTful APIs and backend
+apps entirely in JavaScript which simplifies app
+development with cohesive architecture.`,
+      },
+      {
+        images: [flutterLogo, mongoDB],
+        heading: 'Flutter + MongoDB',
+        description: `Combining Flutter with MongoDB our developers
+build powerful, scalable, and feature-rich
+applications that deliver a seamless user
+experience across multiple platforms.`,
+      },
+    ],
+  },
+
+  WhyOptimityForDevelopment: {
+    heading: `Why Choose <span> Optimity Logics for Flutter App Development</span> Services?`,
+    description: ` When it comes to Flutter app development services, choosing the right partner can make all the difference in
+achieving your app's success. We stand as the ideal Flutter app development company for the following reasons.`,
+    typesOfApplication: [
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+    ],
+    btnName: 'view more',
+  },
+  TechnologiesFeatured: {
+    heading: '<span>Featured Insights </span> from Our Flutter Experts',
+    description:
+      'Explore our featured Flutter technology insights that are popular among our readers.',
+    expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+      way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+      every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+      way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+      every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  TechnologyWeUseInDevelopment: {
+    heading: 'Technology Stack We Use For <span>Flutter App Development</span>',
+    description:
+      "Here's a list of tools and technologies our Flutter experts excel in, catering to various requirements for Flutter mobile app development services",
+    btnName: 'schedule a developer interview',
+    btnLink: '',
+    technologyServices: [
+      {
+        bgColor: '#FFC0D9',
+        servicesName: 'Frameworks',
+        servicesImg: framework,
+        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+      },
+      {
+        bgColor: '#B5F1CC',
+        servicesName: 'Tools & Utilities',
+        servicesImg: tools,
+        servicesItems: [
+          'Android studio',
+          'Visual studio code',
+          'IntelliJ',
+          'Version control tools (Git, GitLab, Bit Bucket)',
+        ],
+      },
+      {
+        bgColor: '#9FE9F6',
+        servicesName: 'Databases',
+        servicesImg: database,
+        servicesItems: [
+          'Hive',
+          'ObjectBox',
+          'SQLite',
+          'Firebase realtime database',
+          'Firestore',
+          'Sembast',
+          'StorageMoor',
+        ],
+      },
+      {
+        bgColor: '#FFD8C0',
+        servicesName: 'Plugins & Integrations',
+        servicesImg: plugin,
+        servicesItems: [
+          'Firebase (All service)',
+          'Provider',
+          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
+          'Social Sign-In (Facebook, Google, Apple)',
+          'Shared preferences',
+          'Image_picker',
+          'In-app Purchase',
+          'Map flutter_ffmpeg',
+          'AWS Amplify',
+          'AWS datastore',
+          'Freezed',
+          'JSON serializable',
+          'flutter_local_notifications',
+          'BLoC',
+        ],
+      },
+      {
+        bgColor: '#D0BFFF',
+        servicesName: 'CI/CD Tools',
+        servicesImg: dns,
+        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+      },
+    ],
+  },
+  Resources: {
+    heading: 'Know what’s <span> trending in AI </span>',
+    description:
+      'Insights on the global impact of artificial intelligence across multiple domains',
+    btnName: 'Resources',
+    linkName: 'Explore all blogs',
+    resourcesData: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+    currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+    way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+    every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+    way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+    every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  Achievements: {
+    heading: 'Our <span> Achievements </span>',
+    aboutUs: [
+      {
+        basicInfo: '354+',
+        description: 'Completed Projects',
+        Img: completeProject,
+        bgColor: '#FFD9CF',
+      },
+      {
+        basicInfo: '15+',
+        description: 'Employees',
+        Img: employee,
+        bgColor: '#92E6FF',
+      },
+      {
+        basicInfo: '02+',
+        description: 'Countries Served',
+        Img: countryServe,
+        bgColor: '#FFD9CF',
+      },
+      {
+        basicInfo: '05+',
+        description: 'Years Of Expertise',
+        Img: expert,
+        bgColor: '#92E6FF',
+      },
+    ],
+    achievementsData: [
+      {
+        rating: 4.5,
+        title: 'Top IT services company',
+        logoImg: clutch,
+      },
+
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: goodfirms,
+      },
+
+      {
+        rating: 4.7,
+        title: 'Top mobile app development company',
+        logoImg: goodfirms,
+      },
+      {
+        rating: 4.8,
+        title: 'Top mobile app development company',
+        logoImg: designrush,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development ',
+        logoImg: topDevelopers,
+      },
+      {
+        rating: 5.0,
+        title: 'Top mobile app development',
+        logoImg: designrush,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: topDevelopers,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: clutch,
+      },
+    ],
+  },
+  Faqs: {
+    heading: 'Frequently Asked Questions',
+    description: 'We’ve compiled the answers to your burning questions!',
+    faqs: [
+      {
+        question: 'How much does it cost to build an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'How much does it cost to build an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'Is it possible to create an app for free?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'How do I start creating my own app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'What’s involved in launching an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+    ],
+  },
+};
+export const hireDjangoDeveloper: IPropsDataTypes = {
+  HeroSectionData: {
+    heading: 'Hire Django Developers',
+    description: `Are you looking to build a dynamic web application, streamline backend processes, or upgrade an existing project? Hire Django developers from our team with extensive experience in working with high-level Python web frameworks offering full-stack Django development services to help you get rapid development of secure and scalable apps.`,
+    btnName: `schedule a call `,
+    btnLink: '',
+    workWithTechnology: [
+      {
+        title: '15+',
+        description: 'Django Developers',
+      },
+      {
+        title: '90%',
+        description: `Developer's Retention Rate`,
+      },
+      {
+        title: '6+',
+        description: "Years of Dev's Avg. Exp.",
+      },
+      {
+        title: '40+',
+        description: 'Countries We Served',
+      },
+    ],
+  },
+
+  AppDevelopment: {
+    heading: `Our <span>Ios App Development </span> Services Aligned with Your Needs`,
+    description: ` Whether you're looking to build a custom cross-platform app from the ground up using Ios or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Ios mobile app development company, we provide comprehensive Ios app development services to support you through every stage of the development lifecycle.`,
+    btnLink: '',
+    typesOfApplication: [
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+      {
+        heading: 'Custom Ios App Development',
+        description:
+          'Whether it is a B2B or B2C app development requirement, our Ios developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      },
+    ],
+    btnName: 'view more',
+  },
+
+  NextGen: {
+    heading: 'Want To Build A Next-Gen Flutter Application?',
+    description: `Optimity Logics can be your trusted Flutter app development company,
+harnessing the power of this cross-platform technology for your app project. With
+a focus on user-centric design and seamless performance, we deliver Flutter
+apps that leave a lasting impression.`,
+    btnName: `let's discuss`,
+    btnLink: '',
+    img: presentationProductMan,
+    accuracey: [
+      {
+        accuraceyImg: nda,
+        accuraceyTitle: '100% NDA-protected contract',
+      },
+      {
+        accuraceyImg: resource,
+        accuraceyTitle: '100% resource substitution*',
+      },
+      {
+        accuraceyImg: hiringModels,
+        accuraceyTitle: 'Flexible hiring models',
+      },
+      {
+        accuraceyImg: refundPolicy,
+        accuraceyTitle: '100% refund policy*',
+      },
+    ],
+  },
+
+  TechnologiesIntegrations: {
+    heading: `Technologies We Use In <span> Combination with Flutter </span>`,
+    description: `Being the best Flutter mobile app development company, we seamlessly integrate various backend technologies and databases with Flutter to
+enhance the capabilities and functionalities of our mobile applications. Check out the best frontend and backend technology combination that you can avail with our Flutter mobile app development services.`,
+    btnName: 'hire developer',
+    btnLink: '',
+    integrations: [
+      {
+        images: [flutterLogo, fireBase],
+        heading: 'Flutter + Firebase',
+        description: `The best-fit app development combination to
+launch your MVP faster and robust toolkit to build
+high-quality, feature-rich apps that are scalable,
+performant, and easy to maintain.`,
+      },
+      {
+        images: [flutterLogo, nodejs],
+        heading: 'Flutter + Node.js',
+        description: `Node.js is the most suitable backend to use with
+Flutter for building RESTful APIs and backend
+apps entirely in JavaScript which simplifies app
+development with cohesive architecture.`,
+      },
+      {
+        images: [flutterLogo, mongoDB],
+        heading: 'Flutter + MongoDB',
+        description: `Combining Flutter with MongoDB our developers
+build powerful, scalable, and feature-rich
+applications that deliver a seamless user
+experience across multiple platforms.`,
+      },
+      {
+        images: [flutterLogo, fireBase],
+        heading: 'Flutter + Firebase',
+        description: `The best-fit app development combination to
+launch your MVP faster and robust toolkit to build
+high-quality, feature-rich apps that are scalable,
+performant, and easy to maintain.`,
+      },
+      {
+        images: [flutterLogo, nodejs],
+        heading: 'Flutter + Node.js',
+        description: `Node.js is the most suitable backend to use with
+Flutter for building RESTful APIs and backend
+apps entirely in JavaScript which simplifies app
+development with cohesive architecture.`,
+      },
+      {
+        images: [flutterLogo, mongoDB],
+        heading: 'Flutter + MongoDB',
+        description: `Combining Flutter with MongoDB our developers
+build powerful, scalable, and feature-rich
+applications that deliver a seamless user
+experience across multiple platforms.`,
+      },
+    ],
+  },
+
+  WhyOptimityForDevelopment: {
+    heading: `Why Choose <span> Optimity Logics for Flutter App Development</span> Services?`,
+    description: ` When it comes to Flutter app development services, choosing the right partner can make all the difference in
+achieving your app's success. We stand as the ideal Flutter app development company for the following reasons.`,
+    typesOfApplication: [
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+      {
+        heading: '100% In-house Team',
+        description:
+          'We have a team of 20+ Flutter experts working directly from our office under one roof. We do not outsource projects to third-party service providers but rather manage each project dedicatedly to meet your objectives.',
+      },
+    ],
+    btnName: 'view more',
+  },
+  TechnologiesFeatured: {
+    heading: '<span>Featured Insights </span> from Our Flutter Experts',
+    description:
+      'Explore our featured Flutter technology insights that are popular among our readers.',
+    expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+      way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+      every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+      way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+      every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  TechnologyWeUseInDevelopment: {
+    heading: 'Technology Stack We Use For <span>Flutter App Development</span>',
+    description:
+      "Here's a list of tools and technologies our Flutter experts excel in, catering to various requirements for Flutter mobile app development services",
+    btnName: 'schedule a developer interview',
+    btnLink: '',
+    technologyServices: [
+      {
+        bgColor: '#FFC0D9',
+        servicesName: 'Frameworks',
+        servicesImg: framework,
+        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+      },
+      {
+        bgColor: '#B5F1CC',
+        servicesName: 'Tools & Utilities',
+        servicesImg: tools,
+        servicesItems: [
+          'Android studio',
+          'Visual studio code',
+          'IntelliJ',
+          'Version control tools (Git, GitLab, Bit Bucket)',
+        ],
+      },
+      {
+        bgColor: '#9FE9F6',
+        servicesName: 'Databases',
+        servicesImg: database,
+        servicesItems: [
+          'Hive',
+          'ObjectBox',
+          'SQLite',
+          'Firebase realtime database',
+          'Firestore',
+          'Sembast',
+          'StorageMoor',
+        ],
+      },
+      {
+        bgColor: '#FFD8C0',
+        servicesName: 'Plugins & Integrations',
+        servicesImg: plugin,
+        servicesItems: [
+          'Firebase (All service)',
+          'Provider',
+          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
+          'Social Sign-In (Facebook, Google, Apple)',
+          'Shared preferences',
+          'Image_picker',
+          'In-app Purchase',
+          'Map flutter_ffmpeg',
+          'AWS Amplify',
+          'AWS datastore',
+          'Freezed',
+          'JSON serializable',
+          'flutter_local_notifications',
+          'BLoC',
+        ],
+      },
+      {
+        bgColor: '#D0BFFF',
+        servicesName: 'CI/CD Tools',
+        servicesImg: dns,
+        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+      },
+    ],
+  },
+  Resources: {
+    heading: 'Know what’s <span> trending in AI </span>',
+    description:
+      'Insights on the global impact of artificial intelligence across multiple domains',
+    btnName: 'Resources',
+    linkName: 'Explore all blogs',
+    resourcesData: [
+      {
+        img: '/images/resources/AIModel.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+    currency, the reliability and efficiency...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+    way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+    every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/services.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `The AI revolution is here, and it’s continuously changing the
+    way we interact with technology ...`,
+      },
+      {
+        img: '/images/resources/angular.png',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+    every tech possibility and blowing everyo...`,
+      },
+    ],
+  },
+  Achievements: {
+    heading: 'Our <span> Achievements </span>',
+    aboutUs: [
+      {
+        basicInfo: '354+',
+        description: 'Completed Projects',
+        Img: completeProject,
+        bgColor: '#FFD9CF',
+      },
+      {
+        basicInfo: '15+',
+        description: 'Employees',
+        Img: employee,
+        bgColor: '#92E6FF',
+      },
+      {
+        basicInfo: '02+',
+        description: 'Countries Served',
+        Img: countryServe,
+        bgColor: '#FFD9CF',
+      },
+      {
+        basicInfo: '05+',
+        description: 'Years Of Expertise',
+        Img: expert,
+        bgColor: '#92E6FF',
+      },
+    ],
+    achievementsData: [
+      {
+        rating: 4.5,
+        title: 'Top IT services company',
+        logoImg: clutch,
+      },
+
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: goodfirms,
+      },
+
+      {
+        rating: 4.7,
+        title: 'Top mobile app development company',
+        logoImg: goodfirms,
+      },
+      {
+        rating: 4.8,
+        title: 'Top mobile app development company',
+        logoImg: designrush,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development ',
+        logoImg: topDevelopers,
+      },
+      {
+        rating: 5.0,
+        title: 'Top mobile app development',
+        logoImg: designrush,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: topDevelopers,
+      },
+      {
+        rating: 4.5,
+        title: 'Top mobile app development company',
+        logoImg: clutch,
+      },
+    ],
+  },
+  Faqs: {
+    heading: 'Frequently Asked Questions',
+    description: 'We’ve compiled the answers to your burning questions!',
+    faqs: [
+      {
+        question: 'How much does it cost to build an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'How much does it cost to build an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'Is it possible to create an app for free?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'How do I start creating my own app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+      {
+        question: 'What’s involved in launching an app?',
+        answer:
+          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      },
+    ],
+  },
+};
+export const hireFlaskDeveloper: IPropsDataTypes = {
+  HeroSectionData: {
+    heading: 'Hire Flask Developers',
+    description: `Hire our top Flask developers with a track record of delivering successful projects for global clients since 2011. Our certified Flask developers specialize in building custom web applications, RESTful APIs, or integrating Flask into your existing project. Skip the hassle - find a Flask developer for hire with just a click!`,
+    btnName: `schedule a call `,
+    btnLink: '',
+    workWithTechnology: [
+      {
+        title: '15+',
+        description: 'Flask Developers',
+      },
+      {
+        title: '90%',
+        description: `Developer's Retention Rate`,
+      },
+      {
+        title: '6+',
+        description: "Years of Dev's Avg. Exp.",
+      },
+      {
+        title: '40+',
+        description: 'Countries We Served',
       },
     ],
   },

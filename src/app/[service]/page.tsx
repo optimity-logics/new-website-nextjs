@@ -78,8 +78,29 @@ import {
   hireJavascriptDeveloper,
   hireNextDeveloper,
   hireReactDeveloper,
+  hireTailwindCssDeveloper,
   hireVueDeveloper,
+  hireWebflowDeveloper,
 } from '@/components/utils/hireTeam/frontend/frontend';
+import {
+  hireDjangoDeveloper,
+  hireFastApiDeveloper,
+  hireFlaskDeveloper,
+  hireGoLangDeveloper,
+  hireLaravelDeveloper,
+  hireNodeJSDeveloper,
+  hirePhpDeveloper,
+  hirePythonDeveloper,
+} from '@/components/utils/hireTeam/backend/backend';
+import {
+  hireDevOpsDeveloper,
+  hireGameDeveloper,
+  hireMEANStackDeveloper,
+  hireMERNStackDeveloper,
+  hireSoftwareDeveloper,
+  hireUIUXDesigner,
+  hireUnrealEngineDeveloper,
+} from '@/components/utils/hireTeam/trending/trending';
 
 type Params = Promise<{ service: string }>;
 
@@ -155,6 +176,25 @@ const dataMap = {
   'hire-next': hireNextDeveloper,
   'hire-javascript': hireJavascriptDeveloper,
   'hire-backbone': hireBackboneJs,
+  'hire-tailwind': hireTailwindCssDeveloper,
+  'hire-webflow': hireWebflowDeveloper,
+  // back-end
+  'hire-python': hirePythonDeveloper,
+  'hire-fastapi': hireFastApiDeveloper,
+  'hire-django': hireDjangoDeveloper,
+  'hire-flask': hireFlaskDeveloper,
+  'hire-golang': hireGoLangDeveloper,
+  'hire-node': hireNodeJSDeveloper,
+  'hire-php': hirePhpDeveloper,
+  'hire-laravel': hireLaravelDeveloper,
+  // trending
+  'hire-unreal': hireUnrealEngineDeveloper,
+  'hire-ui': hireUIUXDesigner,
+  'hire-software': hireSoftwareDeveloper,
+  'hire-devops': hireDevOpsDeveloper,
+  'hire-mern': hireMERNStackDeveloper,
+  'hire-mean': hireMEANStackDeveloper,
+  'hire-game': hireGameDeveloper,
 } as const;
 
 type ServiceKey = keyof typeof dataMap;
