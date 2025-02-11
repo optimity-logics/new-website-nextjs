@@ -932,7 +932,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'Frontend',
-    technologyImage: '/images/technologyWeWork/frontend.png',
+    technologyImage: '/webp/technologyWeWork/frontend.webp',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -946,7 +946,6 @@ export const technologyWeWorkData = [
       'Kotlin',
       'ObjectiveC',
       'Titanium',
-      'Xamarin',
     ],
   },
   {
@@ -989,7 +988,7 @@ export const technologyWeWorkData = [
   },
   {
     technologyName: 'CMS',
-    technologyImage: '/images/technologyWeWork/cms.png',
+    technologyImage: '/webp/technologyWeWork/cms.webp',
     techDescription1:
       'Wikifarmer is a global platform designed to transform the agriculture industry by empowering farmers. It provides comprehensive educational resources on modern farming practices, equipping farmers with the knowledge to enhance their productivity and sustainability. The platform fosters learning and growth, making it an invaluable tool for farmers seeking to improve their operations.',
     techDescription2: `In addition to education, Wikifarmer connects farmers directly to commercial markets, ensuring they receive fair prices for their products. By eliminating intermediaries, the platform creates a transparent and equitable marketplace. Wikifarmer's mission is to build a sustainable ecosystem where farmers can thrive while seamlessly linking with buyers.`,
@@ -1105,420 +1104,6 @@ export const clientsReview = [
     description:
       '“Fast and easy! Our entire fitness app came together in such a seamless manner, all thanks to the AI-backed approach of 24/7 Coders.ai.”',
     NameOrPosition: 'Sarah T., Project Manager',
-  },
-];
-
-export const menuSidebar = [
-  {
-    title: 'Services',
-    subMenu: [
-      {
-        title: 'Digital Transformationurces',
-        backgroundColor: '#73BDF2',
-        img: digitalTransFormation,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '/software-product-development-service',
-          },
-          {
-            techName: 'UI/UX Design',
-            techLink: '/ui-ux-design-development-service',
-          },
-          {
-            techName: 'Digital Marketing',
-            techLink: '/digital-marketing-development-service',
-          },
-          {
-            techName: 'Quality Engineering',
-            techLink: '/quality-engineering-development-service',
-          },
-          {
-            techName: 'Dedicated Team Augmentation',
-            techLink: '/dedicated-team-augmentation-development-service',
-          },
-          {
-            techName: 'CTO As A Service',
-            techLink: '/cto-as-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Data and AI',
-        backgroundColor: '#FFCABC',
-        img: dataAi,
-        items: [
-          {
-            techName: 'Data Science',
-            techLink: '/data-science-development-service',
-          },
-          {
-            techName: 'Machine Learning',
-            techLink: '/machine-learning-development-service',
-          },
-          {
-            techName: 'Artificial Intelligence (AI)',
-            techLink: '/artificial-intelligence-development-service',
-          },
-          {
-            techName: 'Robotic Process Automation',
-            techLink: '/robotic-process-automation-development-service',
-          },
-          {
-            techName: 'Computer Vision Development',
-            techLink: '/computer-vision-development-service',
-          },
-          {
-            techName: 'Generative AI Development',
-            techLink: '/generative-ai-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Application Development',
-        backgroundColor: '#FDD8A3',
-        img: appDevelopment,
-        items: [
-          {
-            techName: 'Web App Development',
-            techLink: '/web-app-development-service',
-          },
-          {
-            techName: 'Mobile App Development',
-            techLink: '/mobile-app-development-service',
-          },
-          {
-            techName: 'Software Development',
-            techLink: '/software-development-service',
-          },
-          {
-            techName: 'SaaS App Development',
-            techLink: '/saas-app-development-service',
-          },
-          {
-            techName: 'MVP Development',
-            techLink: '/mvp-development-service',
-          },
-          {
-            techName: 'App Modernization',
-            techLink: '/app-modernization-development-service',
-          },
-          {
-            techName: 'Game Development',
-            techLink: '/game-development-service',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Solution',
-    subMenu: [
-      {
-        title: 'Industry Expertise',
-        backgroundColor: '#73BDF2',
-        img: industryExperties,
-        items: [
-          {
-            techName: 'Healthcare',
-            techLink: '/healthcare-development-service',
-          },
-          {
-            techName: 'Finance',
-            techLink: '/finance-development-service',
-          },
-          {
-            techName: 'Real Estate',
-            techLink: '/real-estate-development-service',
-          },
-          {
-            techName: 'Retail',
-            techLink: '/retail-development-service',
-          },
-          {
-            techName: 'Education',
-            techLink: '/education-development-service',
-          },
-          {
-            techName: 'Logistics',
-            techLink: '/logistics-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Custom Solutions',
-        backgroundColor: '#FDD8A3',
-        img: customSolution,
-        items: [
-          {
-            techName: 'DevOps Solutions',
-            techLink: '/devops-Solutions-service',
-          },
-          {
-            techName: 'Cloud Solutions',
-            techLink: '/cloud-solutions-service',
-          },
-          {
-            techName: 'Product Prototype Solutions',
-            techLink: '/product-prototype-solutions-service',
-          },
-          {
-            techName: 'On-demand Business Solutions',
-            techLink: '/on-demand-business-solutions-service',
-          },
-        ],
-      },
-      {
-        title: 'By Business Scales',
-        backgroundColor: '#FFCABC',
-        img: byBusunessScale,
-        items: [
-          {
-            techName: 'Startup Solutions',
-            techLink: '/startup-app-development-service',
-          },
-          {
-            techName: 'Enterprise Solutions',
-            techLink: '/enterprise-app-development-service',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Technology',
-    subMenu: [
-      {
-        title: 'Mobile',
-        backgroundColor: '#73BDF2',
-        img: mobile,
-        items: [
-          {
-            techName: 'ios',
-            techLink: '/ios-development-service',
-          },
-          {
-            techName: 'Android',
-            techLink: '/android-development-service',
-          },
-          {
-            techName: 'React Native',
-            techLink: '/react-native-development-service',
-          },
-          {
-            techName: 'Flutter',
-            techLink: '/flutter-development-service',
-          },
-          {
-            techName: 'Swift',
-            techLink: '/swift-development-service',
-          },
-          {
-            techName: 'Iconic',
-            techLink: '/iconic-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Frontend',
-        backgroundColor: '#FFCABC',
-        img: frontEnd,
-        items: [
-          {
-            techName: 'Next.js',
-            techLink: 'next-js-development-service',
-          },
-          {
-            techName: 'React',
-            techLink: 'react-js-development-service',
-          },
-          {
-            techName: 'Angular',
-            techLink: 'angular-js-development-service',
-          },
-          {
-            techName: 'Vue',
-            techLink: 'vue-js-development-service',
-          },
-          {
-            techName: 'Backbone.js',
-            techLink: 'backbone-js-development-service',
-          },
-          {
-            techName: 'JavaSctipt',
-            techLink: 'javascript-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Backend',
-        backgroundColor: '#FDD8A3',
-        img: backEnd,
-        items: [
-          {
-            techName: 'Python',
-            techLink: '/pyhton-development-service',
-          },
-          {
-            techName: 'Golang',
-            techLink: '/golang-development-service',
-          },
-          {
-            techName: 'Node.js',
-            techLink: '/node-js-development-service',
-          },
-          {
-            techName: 'Laravel',
-            techLink: '/laravel-development-service',
-          },
-          {
-            techName: 'PHP',
-            techLink: '/php-development-service',
-          },
-          {
-            techName: 'Meteor.js',
-            techLink: '/meteor-js-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Trending',
-        backgroundColor: '#A3D8FD',
-        img: trending,
-        items: [
-          {
-            techName: 'Wearable App Development',
-            techLink: '/technology/trending',
-          },
-          {
-            techName: 'Internet of Things',
-            techLink: '/technology/trending',
-          },
-          {
-            techName: 'Tailwind CSS',
-            techLink: '/technology/trending',
-          },
-          {
-            techName: 'Generative AI',
-            techLink: '/technology/trending',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'About Us',
-    subMenu: [
-      {
-        title: 'Digital Transformationurces',
-        backgroundColor: '#73BDF2',
-        img: mobile,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Data and AI',
-        backgroundColor: '#FFCABC',
-        img: mobile,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Application Development',
-        backgroundColor: '#FDD8A3',
-        img: mobile,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '-development-service',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Our Works',
-    subMenu: [
-      {
-        title: 'Digital Transformationurces',
-        backgroundColor: '#73BDF2',
-        img: mobile,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Data and AI',
-        backgroundColor: '#FFCABC',
-        img: mobile,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Application Development',
-        backgroundColor: '#FDD8A3',
-        img: mobile,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '-development-service',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Hire Us',
-    subMenu: [
-      {
-        title: 'Digital Transformationurces',
-        backgroundColor: '#73BDF2',
-        img: mobile,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Data and AI',
-        backgroundColor: '#FFCABC',
-        img: mobile,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Application Development',
-        backgroundColor: '#FDD8A3',
-        img: mobile,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '-development-service',
-          },
-        ],
-      },
-    ],
   },
 ];
 
@@ -2530,6 +2115,485 @@ export const WorkLifeData = [
 ];
 
 export const menuData = [
+  {
+    menuTitle: 'Services',
+    megaMenuItem: [
+      {
+        title: 'Digital Transformationurces',
+        backgroundColor: '#73BDF2',
+        img: digitalTransFormation,
+        items: [
+          {
+            techName: 'Software Product Development',
+            techLink: '/software-product-development-service',
+          },
+          {
+            techName: 'UI/UX Design',
+            techLink: '/ui-ux-design-service',
+          },
+          {
+            techName: 'Digital Marketing',
+            techLink: '/digital-marketing-service',
+          },
+          {
+            techName: 'Quality Engineering',
+            techLink: '/quality-engineering-service',
+          },
+          {
+            techName: 'Dedicated Team Augmentation',
+            techLink: '/dedicated-team-augmentation-service',
+          },
+          {
+            techName: 'CTO As A Service',
+            techLink: '/cto-as-service',
+          },
+        ],
+      },
+      {
+        title: 'Data and AI',
+        backgroundColor: '#FFCABC',
+        img: dataAi,
+        items: [
+          {
+            techName: 'Data Science',
+            techLink: '/data-science-service',
+          },
+          {
+            techName: 'Machine Learning',
+            techLink: '/machine-learning-development-service',
+          },
+          {
+            techName: 'Artificial Intelligence (AI)',
+            techLink: '/artificial-intelligence-service',
+          },
+          {
+            techName: 'Robotic Process Automation',
+            techLink: '/robotic-process-automation-service',
+          },
+          {
+            techName: 'Computer Vision Development',
+            techLink: '/computer-vision-development-service',
+          },
+          {
+            techName: 'Generative AI Development',
+            techLink: '/generative-ai-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Application Development',
+        backgroundColor: '#FDD8A3',
+        img: appDevelopment,
+        items: [
+          {
+            techName: 'Web App Development',
+            techLink: '/web-app-development-service',
+          },
+          {
+            techName: 'Mobile App Development',
+            techLink: '/mobile-app-development-service',
+          },
+          {
+            techName: 'Software Development',
+            techLink: '/software-development-service',
+          },
+          {
+            techName: 'SaaS App Development',
+            techLink: '/saas-app-development-service',
+          },
+          {
+            techName: 'MVP Development',
+            techLink: '/mvp-development-service',
+          },
+          {
+            techName: 'App Modernization',
+            techLink: '/app-modernization-development-service',
+          },
+          {
+            techName: 'Game Development',
+            techLink: '/game-development-service',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menuTitle: 'Solution',
+    megaMenuItem: [
+      {
+        title: 'Industry Expertise',
+        backgroundColor: '#73BDF2',
+        img: industryExperties,
+        items: [
+          {
+            techName: 'Healthcare',
+            techLink: '/healthcare-solutions',
+          },
+          {
+            techName: 'Finance',
+            techLink: '/fintech-solutions',
+          },
+          {
+            techName: 'Real Estate',
+            techLink: '/real-estate-app-development',
+          },
+          {
+            techName: 'Retail',
+            techLink: '/ecommerce-solutions',
+          },
+          {
+            techName: 'Education',
+            techLink: '/educational-app-development-solutions',
+          },
+          {
+            techName: 'Logistics',
+            techLink: '/logistics-app-development',
+          },
+        ],
+      },
+      {
+        title: 'Custom Solutions',
+        backgroundColor: '#FDD8A3',
+        img: customSolution,
+        items: [
+          {
+            techName: 'DevOps Solutions',
+            techLink: '/devops-Solutions',
+          },
+          {
+            techName: 'Cloud Solutions',
+            techLink: '/cloud-computing-solutions',
+          },
+          {
+            techName: 'Product Prototype Solutions',
+            techLink: '/product-prototype-solutions-service',
+          },
+          {
+            techName: 'On-demand Business Solutions',
+            techLink: '/on-demand-app-development',
+          },
+        ],
+      },
+      {
+        title: 'By Business Scales',
+        backgroundColor: '#FFCABC',
+        img: byBusunessScale,
+        items: [
+          {
+            techName: 'Startup Solutions',
+            techLink: '/startup-app-development-service',
+          },
+          {
+            techName: 'Enterprise Solutions',
+            techLink: '/enterprise-app-development-service',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menuTitle: 'Technology',
+    megaMenuItem: [
+      {
+        title: 'Mobile',
+        backgroundColor: '#73BDF2',
+        img: mobile,
+        items: [
+          {
+            techName: 'ios',
+            techLink: '/ios-development-service',
+          },
+          {
+            techName: 'Android',
+            techLink: '/android-development-service',
+          },
+          {
+            techName: 'React Native',
+            techLink: '/react-native-development-service',
+          },
+          {
+            techName: 'Flutter',
+            techLink: '/flutter-development-service',
+          },
+          {
+            techName: 'Swift',
+            techLink: '/swift-development-service',
+          },
+          {
+            techName: 'Iconic',
+            techLink: '/iconic-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Frontend',
+        backgroundColor: '#FFCABC',
+        img: frontEnd,
+        items: [
+          {
+            techName: 'Next.js',
+            techLink: 'next-js-development-service',
+          },
+          {
+            techName: 'React',
+            techLink: 'react-js-development-service',
+          },
+          {
+            techName: 'Angular',
+            techLink: 'angular-js-development-service',
+          },
+          {
+            techName: 'Vue',
+            techLink: 'vue-js-development-service',
+          },
+          {
+            techName: 'Backbone.js',
+            techLink: 'backbone-js-development-service',
+          },
+          {
+            techName: 'JavaSctipt',
+            techLink: 'javascript-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Backend',
+        backgroundColor: '#FDD8A3',
+        img: backEnd,
+        items: [
+          {
+            techName: 'Python',
+            techLink: '/python-development-service',
+          },
+          {
+            techName: 'Golang',
+            techLink: '/golang-development-service',
+          },
+          {
+            techName: 'Node.js',
+            techLink: '/node-js-development-service',
+          },
+          {
+            techName: 'Laravel',
+            techLink: '/laravel-development-service',
+          },
+          {
+            techName: 'PHP',
+            techLink: '/php-development-service',
+          },
+          {
+            techName: 'Meteor.js',
+            techLink: '/meteor-js-development-service',
+          },
+        ],
+      },
+      {
+        title: 'Trending',
+        backgroundColor: '#A3D8FD',
+        img: trending,
+        items: [
+          {
+            techName: 'Wearable App Development',
+            techLink: '/wearable-app-development-service',
+          },
+          {
+            techName: 'Internet of Things',
+            techLink: '/internet-of-things-development-service',
+          },
+          {
+            techName: 'Tailwind CSS',
+            techLink: '/tailwind-css-development-service',
+          },
+          {
+            techName: 'Generative AI',
+            techLink: '/generative-ai-development-service',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menuTitle: 'About Us',
+    megaMenuItem: [],
+  },
+  {
+    menuTitle: 'Our Works',
+    megaMenuItem: [],
+  },
+  {
+    menuTitle: 'Hire Us',
+    megaMenuItem: [
+      {
+        title: 'data & ai',
+        backgroundColor: '#73BDF2',
+        img: dataAi,
+        items: [
+          {
+            techName: 'AI Developers',
+            techLink: '/hire-ai-developers',
+          },
+          {
+            techName: 'ML Developers',
+            techLink: '/hire-machine-learning-developers',
+          },
+          {
+            techName: 'Data Scientists',
+            techLink: '/hire-data-scientists-developers',
+          },
+        ],
+      },
+      {
+        title: 'Mobile App',
+        backgroundColor: '#FFCABC',
+        img: mobile,
+        items: [
+          {
+            techName: 'ios Developers',
+            techLink: '/hire-ios-developers',
+          },
+          {
+            techName: 'Android Developers',
+            techLink: '/hire-android-developers',
+          },
+          {
+            techName: 'React Native Developers',
+            techLink: '/hire-react-native-developers',
+          },
+          {
+            techName: 'Flutter Developers',
+            techLink: '/hire-flutter-developers',
+          },
+          {
+            techName: 'Swift Developers',
+            techLink: '/hire-swift-developers',
+          },
+          {
+            techName: 'Iconic Developers',
+            techLink: '/hire-iconic-developers',
+          },
+        ],
+      },
+      {
+        title: 'Frontend',
+        backgroundColor: '#FDD8A3',
+        img: frontEnd,
+        items: [
+          {
+            techName: 'Next.js Developers',
+            techLink: '/hire-next-js-developers',
+          },
+          {
+            techName: 'React Developers',
+            techLink: '/hire-react-js-developers',
+          },
+          {
+            techName: 'Angular Developers',
+            techLink: '/hire-angular-js-developers',
+          },
+          {
+            techName: 'Vue Developers',
+            techLink: '/hire-vue-js-developers',
+          },
+          {
+            techName: 'Backbone.js Developers',
+            techLink: '/hire-backbone-js-developers',
+          },
+          {
+            techName: 'JavaSctipt Developers',
+            techLink: '/hire-javascript-developers',
+          },
+          {
+            techName: 'Tailwind CSS Developers',
+            techLink: '/hire-tailwind-css-developers',
+          },
+          {
+            techName: 'Webflow Developers',
+            techLink: '/hire-webflow-developers',
+          },
+        ],
+      },
+      {
+        title: 'Backend',
+        backgroundColor: '#A3D8FD',
+        img: backEnd,
+        items: [
+          {
+            techName: 'Python Developers',
+            techLink: '/hire-python-developers',
+          },
+          {
+            techName: 'FastAPI Developers',
+            techLink: '/hire-fastapi-developers',
+          },
+          {
+            techName: 'Django Developers',
+            techLink: '/hire-django-developers',
+          },
+          {
+            techName: 'Flask Developers',
+            techLink: '/hire-flask-developers',
+          },
+          {
+            techName: 'Golang Developers',
+            techLink: '/hire-golang-developers',
+          },
+          {
+            techName: 'Node.js Developers',
+            techLink: '/hire-node-js-developers',
+          },
+          {
+            techName: 'Laravel Developers',
+            techLink: '/hire-laravel-developers',
+          },
+          {
+            techName: 'PHP Developers',
+            techLink: '/hire-php-developers',
+          },
+        ],
+      },
+      {
+        title: 'Trending',
+        backgroundColor: '#9fe9f6',
+        img: trending,
+        items: [
+          {
+            techName: 'Unreal Engine Developers',
+            techLink: '/hire-unreal-app-developers',
+          },
+          {
+            techName: 'UI/UX Designers',
+            techLink: '/hire-internet-of-things-developers',
+          },
+          {
+            techName: 'Software Developers',
+            techLink: '/hire-software-developers',
+          },
+          {
+            techName: 'DevOps Engineers',
+            techLink: '/hire-devops-developers',
+          },
+          {
+            techName: 'MERN Stack Developers',
+            techLink: '/hire-mern-stack-developers',
+          },
+          {
+            techName: 'MEAN Stack Developers',
+            techLink: '/hire-mean-stack-developers',
+          },
+          {
+            techName: 'Game Developers',
+            techLink: '/hire-game-developers',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menuTitle: 'Blog',
+    megaMenuItem: [],
+  },
+];
+export const menuSidebar = [
   {
     menuTitle: 'Services',
     megaMenuItem: [

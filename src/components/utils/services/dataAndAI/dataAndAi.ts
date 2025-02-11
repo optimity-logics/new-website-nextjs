@@ -228,6 +228,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
       currency, the reliability and efficiency...`,
       },
       {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
+      {
         img: '/images/resources/services.png',
         label: 'Artificial Intelligence',
         title:
@@ -668,6 +676,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     description:
       'Explore our featured Flutter technology insights that are popular among our readers.',
     expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
       {
         img: '/images/resources/AIModel.png',
         label: 'Artificial Intelligence',
@@ -1126,6 +1142,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
       currency, the reliability and efficiency...`,
       },
       {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
+      {
         img: '/images/resources/services.png',
         label: 'Artificial Intelligence',
         title:
@@ -1575,6 +1599,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
       currency, the reliability and efficiency...`,
       },
       {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
+      {
         img: '/images/resources/services.png',
         label: 'Artificial Intelligence',
         title:
@@ -2015,6 +2047,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     description:
       'Explore our featured Flutter technology insights that are popular among our readers.',
     expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
       {
         img: '/images/resources/AIModel.png',
         label: 'Artificial Intelligence',
@@ -2503,6 +2543,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
           'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         description: `In a world where technology is reshaping the boundaries of
       every tech possibility and blowing everyo...`,
+      },
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
       },
     ],
   },

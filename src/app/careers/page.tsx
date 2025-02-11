@@ -50,21 +50,21 @@ const Career = () => {
             }
             className="4xl:gap-[30px]"
           />
-          <div className="grid grid-cols-1 items-center gap-x-10 gap-y-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 4xl:grid-cols-5">
+          <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 4xl:grid-cols-5">
             {careerBenefites &&
               careerBenefites.map((items, index) => (
                 <div
                   key={index}
-                  className="flex h-full items-center gap-2.5 rounded-[10px] bg-[#b5b5b51a] px-5 py-4 md:py-7"
+                  className="flex h-full items-center gap-2.5 rounded-[10px] bg-[#b5b5b51a] px-5 py-4"
                 >
                   <Image
                     src={items?.benefitesIcon}
                     alt={items?.benefitesIcon}
-                    width={54}
-                    height={54}
-                    className="w-8 object-contain md:w-max"
+                    width={45}
+                    height={45}
+                    className="w-8 object-contain"
                   />
-                  <span className="font-Poppins text-lg font-normal leading-6 text-black md:text-[22px] md:leading-[35px]">
+                  <span className="font-Poppins text-lg font-normal leading-6 text-black md:text-xl md:leading-6">
                     {items?.benefitesName}
                   </span>
                 </div>
@@ -268,7 +268,7 @@ const Career = () => {
                 className="h-full w-full rounded-lg object-cover"
               />
             </div>
-            <div className="col-span-2 mt-5 flex flex-col gap-7">
+            <div className="col-span-2 flex flex-col gap-3 lg:mt-5 lg:gap-7">
               <h4 className="font-Poppins text-lg font-medium leading-[1.6rem] text-charcoalBlue md:text-xl md:leading-6 3xl:text-[30px] 3xl:leading-8">
                 Follow Us
               </h4>

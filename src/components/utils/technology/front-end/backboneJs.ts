@@ -257,6 +257,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
         description: `In a world where technology is reshaping the boundaries of
       every tech possibility and blowing everyo...`,
       },
+      {
+        img: '/images/resources/angular.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In a world where technology is reshaping the boundaries of
+      every tech possibility and blowing everyo...`,
+      },
     ],
   },
   TechnologyWeUseInDevelopment: {

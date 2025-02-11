@@ -244,7 +244,7 @@ const AboutUs = () => {
               invert: true,
             }}
             speed={1000}
-            loop={true}
+            loop={false}
             breakpoints={{
               540: {
                 slidesPerView: 1,
@@ -325,7 +325,7 @@ const AboutUs = () => {
                 invert: true,
               }}
               speed={1000}
-              loop={true}
+              loop={false}
               pagination={{
                 clickable: true,
                 renderBullet: (index, className) =>

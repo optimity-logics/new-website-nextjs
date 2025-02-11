@@ -40,6 +40,7 @@ export default {
         aboutUsClient: "url('/svg/about-us/about-shape.svg')",
         projectSectionBg: "url('/webp/projectbg.webp')",
         technology: "url('/webp/technologyBg.webp')",
+        healthcarebg: "url('/webp/solution/healthcare.webp')",
         EllipseTechnology: "url('/webp/EllipseTechnology.webp')",
         'custom-gradient':
           'linear-gradient(180deg, rgba(0, 0, 0, 0) -5.03%, #000000 54.04%)',
