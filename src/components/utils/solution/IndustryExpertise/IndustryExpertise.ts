@@ -21,14 +21,12 @@ import clutch from '../../../../../public/svg/about-us/clutch.svg';
 import designrush from '../../../../../public/svg/about-us/designrush.svg';
 import goodfirms from '../../../../../public/svg/about-us/goodfirm.svg';
 import topDevelopers from '../../../../../public/svg/about-us/top-developers.svg';
-import healthCareImg from '../../../../../public/webp/solution/startup-solution.webp';
 import deployProjectImg from '../../../../../public/webp/deployProject.webp';
 
 export const healthcareData: IPropsDataTypes = {
   HeroSectionData: {
     heading: 'Healthcare Software Development Company',
     description: `As a leading healthcare software development company, we deliver innovative solutions to help the industry tackle today’s challenges and seize tomorrow’s opportunities.Our technologies integrate with the system, streamline operations, and encourage data-driven decisions, enhancing the overall outcomes.`,
-    techImg: healthCareImg,
     btnName: `let's connect`,
     btnLink: '',
     workWithTechnology: [
@@ -265,6 +263,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     description:
       'Explore our featured Flutter technology insights that are popular among our readers.',
     expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
       {
         img: '/images/resources/AIModel.png',
         label: 'Artificial Intelligence',
@@ -527,7 +533,7 @@ export const financeSolution: IPropsDataTypes = {
   HeroSectionData: {
     heading: 'Fintech Software Development Company',
     description: `Optimity Logics is a trusted Fintech software development partner for many global clients taking steps towards digital innovation. With expertise in the field and utilizing certified practices, we are committed to delivering custom Fintech software solutions that transform the way people deal with finances.`,
-    techImg: healthCareImg,
+
     btnName: `let's connect`,
     btnLink: '',
     workWithTechnology: [
@@ -714,6 +720,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     description:
       'Explore our featured Flutter technology insights that are popular among our readers.',
     expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
       {
         img: '/images/resources/AIModel.png',
         label: 'Artificial Intelligence',
@@ -976,7 +990,7 @@ export const realEstate: IPropsDataTypes = {
   HeroSectionData: {
     heading: 'Real Estate App Development Company',
     description: `Optimity Logics has a team of expert app developers who can help you with custom real estate app development, revolutionizing the way of managing real estate business processes and the way people buy, sell, or rent properties while ensuring compliance with industry standards.`,
-    techImg: healthCareImg,
+
     btnName: `let's connect`,
     btnLink: '',
     workWithTechnology: [
@@ -1163,6 +1177,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     description:
       'Explore our featured Flutter technology insights that are popular among our readers.',
     expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
       {
         img: '/images/resources/AIModel.png',
         label: 'Artificial Intelligence',
@@ -1425,7 +1447,7 @@ export const retailSolution: IPropsDataTypes = {
   HeroSectionData: {
     heading: 'Ecommerce App Development Company',
     description: `At Optimity Logics, our dedicated team of developers specializes in empowering retail businesses with cutting-edge Ecommerce app development services. Our expertise focuses on enhancing retail business conversions and expanding market territories.`,
-    techImg: healthCareImg,
+
     btnName: `let's connect`,
     btnLink: '',
     workWithTechnology: [
@@ -1612,6 +1634,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     description:
       'Explore our featured Flutter technology insights that are popular among our readers.',
     expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
       {
         img: '/images/resources/AIModel.png',
         label: 'Artificial Intelligence',
@@ -1874,7 +1904,7 @@ export const education: IPropsDataTypes = {
   HeroSectionData: {
     heading: 'Education App Development Company',
     description: `Optimity Logics is a leading education app development company assisting education organizations in their digital learning transformation journey. With extensive industry expertise and utilizing modern-age technologies, we deliver cutting-edge education software solutions, elevating your institution's capabilities, enhancing student learning experiences, streamlining administrative tasks, and much more.`,
-    techImg: healthCareImg,
+
     btnName: `let's connect`,
     btnLink: '',
     workWithTechnology: [
@@ -2061,6 +2091,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     description:
       'Explore our featured Flutter technology insights that are popular among our readers.',
     expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
       {
         img: '/images/resources/AIModel.png',
         label: 'Artificial Intelligence',
@@ -2323,7 +2361,7 @@ export const logisticsAppDevelopment: IPropsDataTypes = {
   HeroSectionData: {
     heading: 'Logistics Software Development Company',
     description: `At Optimity Logics, we understand the necessities of the logistics industry, such as seamless efficiency, real-time tracking, and more useful features, and considering all that, we provide them with tailored logistics app development services to stay ahead in today’s fast-paced world.`,
-    techImg: healthCareImg,
+
     btnName: `let's connect`,
     btnLink: '',
     workWithTechnology: [
@@ -2510,6 +2548,14 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     description:
       'Explore our featured Flutter technology insights that are popular among our readers.',
     expertiseInFeacture: [
+      {
+        img: '/images/resources/AIModel.png',
+        label: 'Artificial Intelligence',
+        title:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        description: `In the bustling world of data, where information is the new
+      currency, the reliability and efficiency...`,
+      },
       {
         img: '/images/resources/AIModel.png',
         label: 'Artificial Intelligence',

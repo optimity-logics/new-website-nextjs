@@ -55,7 +55,7 @@ const TechnologyWeWork = () => {
         </div>
         <div
           className="flex h-full w-full flex-col items-center gap-5 rounded-[20px] bg-tectnologyContentbg bg-cover bg-no-repeat p-5 md:gap-[30px] lg:flex-row 4xl:items-start 4xl:p-[43px]"
-          style={{ backgroundColor: 'white' }}
+          style={{ backgroundColor: 'white', backgroundSize: '100% 100% ' }}
         >
           {loading ? (
             <SkeletonForTechnologyWeWork

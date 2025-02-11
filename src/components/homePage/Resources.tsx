@@ -39,7 +39,7 @@ const Resources = () => {
             mousewheel={{
               invert: true,
             }}
-            loop={true}
+            loop={false}
             breakpoints={{
               540: {
                 slidesPerView: 1.3,

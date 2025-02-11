@@ -35,7 +35,7 @@ const OurExpertise = () => {
               invert: true,
             }}
             speed={1000}
-            loop={true}
+            loop={false}
             breakpoints={{
               540: {
                 slidesPerView: 1.3,

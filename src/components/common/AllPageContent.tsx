@@ -19,19 +19,24 @@ import StarRatings from 'react-star-ratings';
 import FaqsAccordion from './FaqsAccordion';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
+import { usePathname } from 'next/navigation';
 
 interface IPropsType {
   data: IPropsDataTypes;
 }
 
 const AllPageContent = ({ data }: IPropsType) => {
+  const path = usePathname();
+  const solution = path.toLowerCase().includes('solution');
   const yellowStarPath =
     'M11.1855 16.8198L7.49332 19.044C7.3302 19.1479 7.15968 19.1923 6.98173 19.1774C6.80379 19.1626 6.6481 19.1033 6.51464 18.9996C6.38119 18.8957 6.27739 18.766 6.20324 18.6103C6.1291 18.4545 6.11428 18.2804 6.15876 18.0876L7.13743 13.8838L3.86778 11.059C3.71949 10.9255 3.62682 10.7735 3.58975 10.603C3.55267 10.4325 3.5638 10.2656 3.62312 10.1025C3.68242 9.93941 3.7714 9.80595 3.89003 9.70216C4.00865 9.59836 4.17177 9.53163 4.37936 9.50197L8.69441 9.12386L10.3626 5.16468C10.4367 4.98675 10.5517 4.85329 10.7073 4.76431C10.8631 4.67535 11.0225 4.63086 11.1855 4.63086C11.3487 4.63086 11.5081 4.67535 11.6638 4.76431C11.8195 4.85329 11.9344 4.98675 12.0086 5.16468L13.6768 9.12386L17.9917 9.50197C18.1994 9.53163 18.3625 9.59836 18.4811 9.70216C18.5998 9.80595 18.6887 9.93941 18.7481 10.1025C18.8073 10.2656 18.8185 10.4325 18.7814 10.603C18.7443 10.7735 18.6516 10.9255 18.5033 11.059L15.2337 13.8838L16.2124 18.0876C16.2569 18.2804 16.2421 18.4545 16.1679 18.6103C16.0938 18.766 15.9899 18.8957 15.8565 18.9996C15.723 19.1033 15.5673 19.1626 15.3895 19.1774C15.2115 19.1923 15.041 19.1479 14.8779 19.044L11.1855 16.8198Z';
   return (
     <>
-      <Container className="mb-10 pt-10 md:mb-12 xl:mb-16 3xl:pt-[100px] 4xl:mb-[100px] 5xl:px-[150px]">
+      <Container
+        className={`mb-10 pt-10 md:mb-12 xl:mb-16 3xl:pt-[100px] 4xl:mb-[100px] 5xl:px-[150px] ${solution && 'after:bg- relative after:absolute after:right-0 after:top-0 after:h-full after:w-full after:bg-contain after:bg-right after:bg-no-repeat'}`}
+      >
         <div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row">
-          <div className="flex w-full max-w-[800px] flex-col gap-6 xl:gap-8 4xl:gap-12">
+          <div className="flex w-full flex-col gap-6 lg:max-w-[800px] xl:gap-8 4xl:gap-12">
             <div className="flex flex-col gap-3 md:gap-8">
               <h2 className="font-Inter text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 4xl:text-[55px] 4xl:leading-[60px] 5xl:text-[60px] 5xl:font-semibold 5xl:leading-[64px]">
                 {data?.HeroSectionData?.heading}
@@ -47,15 +52,15 @@ const AllPageContent = ({ data }: IPropsType) => {
               {data?.HeroSectionData?.btnName}{' '}
               <Image src={arrow} alt={arrow} width={32} height={32} />
             </Link>
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-4 sm:gap-10 md:grid-cols-4">
               {data?.HeroSectionData?.workWithTechnology &&
                 data?.HeroSectionData?.workWithTechnology.map((item, index) => (
-                  <div key={index} className="flex flex-col items-center gap-1">
+                  <div key={index} className="flex flex-col items-start gap-1">
                     <span className="font-Poppins text-2xl font-medium leading-6 text-red md:text-3xl md:leading-[44.8px]">
                       {item?.title}
                     </span>
                     <p
-                      className={`text-center font-Poppins text-lg font-normal leading-6 text-[#212529] 5xl:text-xl 5xl:leading-[28.8px]`}
+                      className={`font-Poppins text-lg font-normal leading-6 text-[#212529] 5xl:text-xl 5xl:leading-[28.8px]`}
                     >
                       {item?.description}
                     </p>
@@ -63,65 +68,70 @@ const AllPageContent = ({ data }: IPropsType) => {
                 ))}
             </div>
           </div>
-          {data?.HeroSectionData?.techImg ? (
-            <div className="mx-auto max-w-full">
-              <Image
-                src={data?.HeroSectionData?.techImg || ''}
-                alt="Technology Image"
-                width={600}
-                height={528}
-                className="h-[528px] object-contain"
-                priority
-              />
-            </div>
-          ) : (
-            <form className="flex w-full max-w-[620px] flex-col gap-[14px] rounded-3xl bg-[#e2f7f8] bg-cover px-[26px] py-[30px]">
-              <div className="flex flex-col gap-1.5">
-                <h3 className="font-Inter text-[30px] font-semibold leading-[36.31px] text-black">
-                  Book a Developer Interview
-                </h3>
-                <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
-                  Provide details about the skills you need, and we’ll find the
-                  right candidate for you.
-                </p>
-              </div>
-              <div className="flex flex-col gap-[15px]">
-                <input
-                  type="text"
-                  placeholder="Your name.."
-                  className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
-                />
-                <input
-                  type="text"
-                  placeholder="Email address.."
-                  className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
-                />
-                <PhoneInput
-                  className="w-full !space-x-5 border-none"
-                  placeholder="Phone number"
-                  defaultCountry="in" // Use lowercase 'in' for India
-                  inputClassName="w-full !border !border-[#19202033]  !px-[15px] !py-[14.59px] font-Inter !text-base font-light !leading-6 !text-[#192020] focus:outline-none !outline-none !rounded-[10px] !bg-white !min-h-[54px]"
-                  countrySelectorStyleProps={{
-                    className: '  !z-[99]',
-                    buttonClassName:
-                      '!border border-[#19202033] !rounded-[10px] !p-[15px] !bg-white !min-h-[54px] !min-w-[100px]',
-                  }}
-                />
+          {!solution && (
+            <div className="hidden lg:block">
+              {' '}
+              {data?.HeroSectionData?.techImg ? (
+                <div className="mx-auto max-w-full">
+                  <Image
+                    src={data?.HeroSectionData?.techImg || ''}
+                    alt="Technology Image"
+                    width={600}
+                    height={528}
+                    className="h-[528px] object-contain"
+                    priority
+                  />
+                </div>
+              ) : (
+                <form className="flex w-full max-w-[620px] flex-col gap-[14px] rounded-3xl bg-[#e2f7f8] bg-cover px-[26px] py-[30px]">
+                  <div className="flex flex-col gap-1.5">
+                    <h3 className="font-Inter text-[30px] font-semibold leading-[36.31px] text-black">
+                      Book a Developer Interview
+                    </h3>
+                    <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
+                      Provide details about the skills you need, and we’ll find
+                      the right candidate for you.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-[15px]">
+                    <input
+                      type="text"
+                      placeholder="Your name.."
+                      className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Email address.."
+                      className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
+                    />
+                    <PhoneInput
+                      className="w-full !space-x-5 border-none"
+                      placeholder="Phone number"
+                      defaultCountry="in" // Use lowercase 'in' for India
+                      inputClassName="w-full !border !border-[#19202033]  !px-[15px] !py-[14.59px] font-Inter !text-base font-light !leading-6 !text-[#192020] focus:outline-none !outline-none !rounded-[10px] !bg-white !min-h-[54px]"
+                      countrySelectorStyleProps={{
+                        className: '  !z-[99]',
+                        buttonClassName:
+                          '!border border-[#19202033] !rounded-[10px] !p-[15px] !bg-white !min-h-[54px] !min-w-[100px]',
+                      }}
+                    />
 
-                <textarea
-                  rows={3}
-                  placeholder="Tell us about your project.."
-                  className="appearance-[#ffffff4a] w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="mt-[5px] flex w-max cursor-pointer items-center gap-2.5 rounded-[39px] bg-red px-4 py-3 font-Inter text-sm font-medium uppercase text-white md:px-[21px] md:py-4 md:text-lg md:leading-[24.2px]"
-                >
-                  inquire now{' '}
-                  <Image src={arrow} alt="Arrow" width={24} height={24} />
-                </button>
-              </div>
-            </form>
+                    <textarea
+                      rows={3}
+                      placeholder="Tell us about your project.."
+                      className="appearance-[#ffffff4a] w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
+                    />
+                    <button
+                      type="submit"
+                      className="mt-[5px] flex w-max cursor-pointer items-center gap-2.5 rounded-[39px] bg-red px-4 py-3 font-Inter text-sm font-medium uppercase text-white md:px-[21px] md:py-4 md:text-lg md:leading-[24.2px]"
+                    >
+                      inquire now{' '}
+                      <Image src={arrow} alt="Arrow" width={24} height={24} />
+                    </button>
+                  </div>
+                </form>
+              )}
+            </div>
           )}
         </div>
       </Container>
@@ -182,7 +192,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             </div>
             <Link
               href={data?.AppDevelopment?.btnLink}
-              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-[19.56px]"
+              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
             >
               {data?.AppDevelopment?.btnName}{' '}
               <Image src={arrow} alt={arrow} width={32} height={32} />
@@ -207,7 +217,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               </div>
               <Link
                 href={data?.NextGen?.btnLink}
-                className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-[19.56px]"
+                className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
               >
                 {data?.NextGen?.btnName}
                 <Image src={arrow} alt={arrow} width={32} height={32} />
@@ -337,7 +347,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         <div className="mx-auto w-full max-w-[1620px] px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 5xl:px-0">
           <Link
             href={data?.TechnologiesIntegrations?.btnLink}
-            className="float-left flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-[19.56px]"
+            className="float-left flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
           >
             {data?.TechnologiesIntegrations?.btnName}{' '}
             <Image src={arrow} alt={arrow} width={32} height={32} />
@@ -367,7 +377,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                 mousewheel={{
                   invert: true,
                 }}
-                loop={true}
+                loop={false}
                 breakpoints={{
                   640: {
                     slidesPerView: 2,
@@ -394,10 +404,10 @@ const AllPageContent = ({ data }: IPropsType) => {
                   data?.deployProject?.deployProjectItem.map((item, index) => (
                     <SwiperSlide
                       key={index}
-                      className={` ${index % 2 === 0 ? 'pt-[78px]' : 'pb-[78px]'}`}
+                      className={` ${index % 2 === 0 ? 'pt-[78px]' : 'pb-[78px]'} !h-auto`}
                     >
                       <div
-                        className={`gap- flex ${index % 2 === 0 ? 'flex-col' : 'flex-col-reverse'} items-center rounded-[40px] bg-white`}
+                        className={`flex ${index % 2 === 0 ? 'flex-col' : 'flex-col-reverse gap-2.5'} items-center rounded-[40px] bg-white`}
                       >
                         <div
                           className={`${index % 2 === 0 ? 'mt-[-78px]' : 'mb-[-78px]'}`}
@@ -410,7 +420,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                           />
                         </div>
                         <div
-                          className={`flex flex-col gap-4 px-6 py-5 ${index % 2 === 0 ? 'bg-[#02ade11a]' : 'bg-[#e94e2540]'} `}
+                          className={`flex flex-col gap-4 px-6 py-5 ${index % 2 === 0 ? 'bg-[#02ade11a]' : 'rounded-t-[40px] bg-[#e94e2540]'} `}
                         >
                           <h3 className="font-Inter text-[34px] font-semibold leading-8 text-black">
                             {item?.deployProjectHeading}
@@ -480,6 +490,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
+            centeredSlides={true}
             modules={[Autoplay, Mousewheel]}
             // autoplay={{
             //   delay: 2000,
@@ -498,7 +509,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                 slidesPerView: 2.5,
               },
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 2.9,
                 spaceBetween: 30,
               },
               1440: {
@@ -506,7 +517,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                 spaceBetween: 40,
               },
               1660: {
-                slidesPerView: 4,
+                slidesPerView: 3.8,
                 spaceBetween: 40,
               },
             }}
@@ -560,7 +571,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                     key={index}
                     className="gradient-border flex flex-col gap-5 !rounded-[33.11px] bg-[#f8f8f8] p-[33.61px] xl:flex-row xl:items-center"
                   >
-                    <div className="flex w-full items-center gap-[15px] xl:max-w-[330px]">
+                    <div className="flex items-center gap-[15px] lg:min-w-[270px]">
                       <div
                         className="flex h-[60px] min-w-[60px] items-center justify-center rounded-full"
                         style={{ backgroundColor: item?.bgColor }}
@@ -590,7 +601,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                               height={24}
                             />
                           </div>
-                          <span className="font-Inter text-base font-medium leading-7 text-[#192020]">
+                          <span className="line-clamp-1 font-Inter text-base font-medium leading-7 text-[#192020] sm:line-clamp-none">
                             {items}
                           </span>
                         </div>
@@ -602,7 +613,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           </div>
           <Link
             href={data?.TechnologyWeUseInDevelopment?.btnLink}
-            className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium uppercase leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-[19.56px]"
+            className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
           >
             {data?.TechnologyWeUseInDevelopment?.btnName}{' '}
             <Image src={arrow} alt={arrow} width={32} height={32} />
@@ -611,12 +622,12 @@ const AllPageContent = ({ data }: IPropsType) => {
       </Container>
       <div className="mb-10 flex flex-col items-center gap-8 px-4 sm:px-0 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:gap-[60px]">
         <SectionHeading
-          heading=""
-          description=""
-          btnName=""
+          heading={data?.Resources?.heading}
+          description={data?.Resources?.description}
+          btnName={data?.Resources?.btnName}
           className="4xl:!gap-5"
           btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
-          LinkName=""
+          LinkName={data?.Resources?.linkName}
         />
         <div className="h-full w-full">
           <Swiper
@@ -627,7 +638,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             mousewheel={{
               invert: true,
             }}
-            loop={true}
+            loop={false}
             breakpoints={{
               540: {
                 slidesPerView: 1.3,
@@ -706,7 +717,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                   alt="about-us"
                   width={408}
                   height={241}
-                  className="w-full object-cover"
+                  className={`w-full object-cover ${index % 2 !== 0 ? 'rounded-b-[15px]' : 'rounded-t-[15px]'}`}
                 />
                 <div className="flex flex-col items-center justify-center gap-[18px]">
                   <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
@@ -756,7 +767,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               data?.Achievements?.achievementsData.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="!h-auto rounded-[16.82px] bg-[#F8F8F8] px-[33.63px] pb-[28.94px] pt-[33.63px]"
+                  className="!h-auto rounded-[16.82px] bg-[#F8F8F8] p-6 5xl:px-[33.63px] 5xl:pb-[28.94px] 5xl:pt-[33.63px]"
                 >
                   <div className="flex h-full flex-col items-center gap-[22.42px]">
                     <div>
