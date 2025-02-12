@@ -21,7 +21,7 @@ import clutch from '../../../../../public/svg/about-us/clutch.svg';
 import designrush from '../../../../../public/svg/about-us/designrush.svg';
 import goodfirms from '../../../../../public/svg/about-us/goodfirm.svg';
 import topDevelopers from '../../../../../public/svg/about-us/top-developers.svg';
-import deployProjectImg from '../../../../../public/webp/deployProject.webp';
+import deployProjectImage from '../../../../../public/webp/deployProject.webp';
 
 export const healthcareData: IPropsDataTypes = {
   HeroSectionData: {
@@ -216,42 +216,42 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     deployProjectItem: [
       {
         deployProjectHeading: 'Hopper',
-        deployProjectImg: deployProjectImg,
+        deployProjectImg: deployProjectImage,
         deployProjectDescription:
           'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
         caseStudyLink: '',
       },
       {
         deployProjectHeading: 'HTS',
-        deployProjectImg: deployProjectImg,
+        deployProjectImg: deployProjectImage,
         deployProjectDescription:
           'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
         caseStudyLink: '',
       },
       {
         deployProjectHeading: 'Hopper',
-        deployProjectImg: deployProjectImg,
+        deployProjectImg: deployProjectImage,
         deployProjectDescription:
           'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
         caseStudyLink: '',
       },
       {
         deployProjectHeading: 'HTS',
-        deployProjectImg: deployProjectImg,
+        deployProjectImg: deployProjectImage,
         deployProjectDescription:
           'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
         caseStudyLink: '',
       },
       {
         deployProjectHeading: 'Hopper',
-        deployProjectImg: deployProjectImg,
+        deployProjectImg: deployProjectImage,
         deployProjectDescription:
           'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
         caseStudyLink: '',
       },
       {
         deployProjectHeading: 'HTS',
-        deployProjectImg: deployProjectImg,
+        deployProjectImg: deployProjectImage,
         deployProjectDescription:
           'From essential software product solutions to innovative, game-changing ones, explore the portfolio of delivered solutions we are proud of.',
         caseStudyLink: '',

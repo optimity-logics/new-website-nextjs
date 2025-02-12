@@ -41,6 +41,11 @@ export default {
         projectSectionBg: "url('/webp/projectbg.webp')",
         technology: "url('/webp/technologyBg.webp')",
         healthcarebg: "url('/webp/solution/healthcare.webp')",
+        finance: "url('/webp/solution/finance.webp')",
+        logistic: "url('/webp/solution/Logistics.webp')",
+        education: "url('/webp/solution/education.webp')",
+        realEstate: "url('/webp/solution/realEstate.webp')",
+        retail: "url('/webp/solution/retail.webp')",
         EllipseTechnology: "url('/webp/EllipseTechnology.webp')",
         'custom-gradient':
           'linear-gradient(180deg, rgba(0, 0, 0, 0) -5.03%, #000000 54.04%)',
