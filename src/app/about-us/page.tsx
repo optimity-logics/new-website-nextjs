@@ -142,7 +142,7 @@ const AboutUs = () => {
               alt="countryServe-img"
               width={408}
               height={241}
-              className="w-full object-cover"
+              className="w-full rounded-t-[15px] object-cover"
             />
             <div className="flex flex-col items-center justify-center gap-[18px] px-[70.5px]">
               <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">

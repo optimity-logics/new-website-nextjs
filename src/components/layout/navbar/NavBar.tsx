@@ -213,7 +213,7 @@ const NavBar = () => {
                           </h6>
                           <span className="font-Inter text-[15px] font-medium lowercase leading-4 text-black">
                             {' '}
-                            career@optimitylogics.com
+                            sales@optimitylogics.com
                           </span>
                         </div>
                       </div>

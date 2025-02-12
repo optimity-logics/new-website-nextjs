@@ -24,16 +24,30 @@ import { usePathname } from 'next/navigation';
 interface IPropsType {
   data: IPropsDataTypes;
 }
+const solutionLinks = [
+  { path: '/healthcare-solutions', bgClass: 'after:bg-healthcarebg' },
+  { path: '/fintech-solutions', bgClass: 'after:bg-finance' },
+  { path: '/real-estate-app-development', bgClass: 'after:bg-realEstate' },
+  { path: '/ecommerce-solutions', bgClass: 'after:bg-retail' },
+  {
+    path: '/educational-app-development-solutions',
+    bgClass: 'after:bg-education',
+  },
+  { path: '/logistics-app-development', bgClass: 'after:bg-logistic' },
+];
 
 const AllPageContent = ({ data }: IPropsType) => {
   const path = usePathname();
-  const solution = path.toLowerCase().includes('solution');
+  const solution = solutionLinks.find((link) =>
+    path.toLowerCase().includes(link.path.toLowerCase()),
+  );
+  const bgClass = solution ? solution.bgClass : '';
   const yellowStarPath =
     'M11.1855 16.8198L7.49332 19.044C7.3302 19.1479 7.15968 19.1923 6.98173 19.1774C6.80379 19.1626 6.6481 19.1033 6.51464 18.9996C6.38119 18.8957 6.27739 18.766 6.20324 18.6103C6.1291 18.4545 6.11428 18.2804 6.15876 18.0876L7.13743 13.8838L3.86778 11.059C3.71949 10.9255 3.62682 10.7735 3.58975 10.603C3.55267 10.4325 3.5638 10.2656 3.62312 10.1025C3.68242 9.93941 3.7714 9.80595 3.89003 9.70216C4.00865 9.59836 4.17177 9.53163 4.37936 9.50197L8.69441 9.12386L10.3626 5.16468C10.4367 4.98675 10.5517 4.85329 10.7073 4.76431C10.8631 4.67535 11.0225 4.63086 11.1855 4.63086C11.3487 4.63086 11.5081 4.67535 11.6638 4.76431C11.8195 4.85329 11.9344 4.98675 12.0086 5.16468L13.6768 9.12386L17.9917 9.50197C18.1994 9.53163 18.3625 9.59836 18.4811 9.70216C18.5998 9.80595 18.6887 9.93941 18.7481 10.1025C18.8073 10.2656 18.8185 10.4325 18.7814 10.603C18.7443 10.7735 18.6516 10.9255 18.5033 11.059L15.2337 13.8838L16.2124 18.0876C16.2569 18.2804 16.2421 18.4545 16.1679 18.6103C16.0938 18.766 15.9899 18.8957 15.8565 18.9996C15.723 19.1033 15.5673 19.1626 15.3895 19.1774C15.2115 19.1923 15.041 19.1479 14.8779 19.044L11.1855 16.8198Z';
   return (
     <>
       <Container
-        className={`mb-10 pt-10 md:mb-12 xl:mb-16 3xl:pt-[100px] 4xl:mb-[100px] 5xl:px-[150px] ${solution && 'after:bg- relative after:absolute after:right-0 after:top-0 after:h-full after:w-full after:bg-contain after:bg-right after:bg-no-repeat'}`}
+        className={`mb-10 pt-10 md:mb-12 xl:mb-16 3xl:pt-[100px] 4xl:mb-[100px] 5xl:px-[150px] ${solution && ` ${bgClass} relative after:right-0 after:top-0 after:h-full after:w-full after:bg-contain after:bg-right after:bg-no-repeat sm:after:absolute`}`}
       >
         <div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex w-full flex-col gap-6 lg:max-w-[800px] xl:gap-8 4xl:gap-12">
@@ -205,7 +219,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         style={{ backgroundSize: '100% 100%' }}
       >
         <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
-          <div className="flex items-center justify-between gap-6 rounded-2xl bg-technologbg bg-cover bg-center bg-no-repeat px-5 md:rounded-[40px] md:pl-16 md:pr-[42px]">
+          <div className="flex justify-between gap-6 rounded-2xl bg-technologbg bg-cover bg-center bg-no-repeat px-5 md:rounded-[40px] md:pl-16 md:pr-[42px] 5xl:items-center">
             <div className="xxl :py-0 flex w-full flex-col gap-[30px] py-5 md:py-10 xl:max-w-[759px]">
               <div className="flex flex-col gap-5">
                 <h3 className="font-Inter text-4xl font-semibold leading-[43.57px] text-white">
@@ -245,7 +259,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                     ),
                 )}
               </ul>
-              <div className="-mt-[77px]">
+              <div className="5xl:-mt-[77px]">
                 <Image
                   src={data?.NextGen?.img}
                   alt=""
@@ -253,7 +267,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                   height={590}
                 />
               </div>
-              <ul className="-ml-[100px] mt-[35px] space-y-3">
+              <ul className="-ml-[100px] mt-auto space-y-3 5xl:mt-[35px]">
                 {data?.NextGen?.accuracey?.map(
                   (item, index) =>
                     index <= 1 && (
