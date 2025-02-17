@@ -1,3 +1,4 @@
+import PrivacyPolicy from '@/app/privacy-policy/page';
 import { nextui } from '@nextui-org/theme';
 import type { Config } from 'tailwindcss';
 
@@ -47,6 +48,8 @@ export default {
         realEstate: "url('/webp/solution/realEstate.webp')",
         retail: "url('/webp/solution/retail.webp')",
         EllipseTechnology: "url('/webp/EllipseTechnology.webp')",
+        PrivacyPolicy: "url('/webp/privacy-policy.webp')",
+        siteMap: "url('/webp/site-map.webp')",
         'custom-gradient':
           'linear-gradient(180deg, rgba(0, 0, 0, 0) -5.03%, #000000 54.04%)',
         'hero-overlap':

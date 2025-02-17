@@ -3072,3 +3072,1001 @@ export const menuSidebar = [
     megaMenuItem: [],
   },
 ];
+
+export const siteMapData = [
+  {
+    title: 'Application Development',
+    items: [
+      {
+        techName: 'Mobile App Development',
+        techLink: '',
+      },
+      {
+        techName: 'IOS App Development',
+        techLink: '',
+      },
+      {
+        techName: 'Android App Development',
+        techLink: '',
+      },
+      {
+        techName: 'Flutter App Development',
+        techLink: '',
+      },
+      {
+        techName: 'React Native App Development',
+        techLink: '',
+      },
+      {
+        techName: 'Swift App Development',
+        techLink: '',
+      },
+      {
+        techName: 'Iconic App Development',
+        techLink: '',
+      },
+      {
+        techName: 'iBeacon App Development',
+        techLink: '',
+      },
+      {
+        techName: 'Wearable App Development',
+        techLink: '',
+      },
+      {
+        techName: 'IoT App Development',
+        techLink: '',
+      },
+      {
+        techName: 'Enterprise App Development',
+        techLink: '',
+      },
+      {
+        techName: 'Software solution for Startups',
+        techLink: '',
+      },
+      {
+        techName: 'frontend  Development',
+        techLink: '',
+      },
+      {
+        techName: 'Cross platform Development',
+        techLink: '',
+      },
+      {
+        techName: 'API Development',
+        techLink: '',
+      },
+    ],
+  },
+  {
+    title: 'Industry Based Solutions',
+    items: [
+      {
+        techName: 'healthcare solution',
+        techLink: '',
+      },
+      {
+        techName: 'fintech solution',
+        techLink: '',
+      },
+      {
+        techName: 'education app development',
+        techLink: '',
+      },
+      {
+        techName: 'fitness app development',
+        techLink: '',
+      },
+      {
+        techName: 'ecommerce app development',
+        techLink: '',
+      },
+      {
+        techName: 'logistics solution',
+        techLink: '',
+      },
+      {
+        techName: 'real estate app development',
+        techLink: '',
+      },
+      {
+        techName: 'travel app development',
+        techLink: '',
+      },
+      {
+        techName: 'sports app development',
+        techLink: '',
+      },
+      {
+        techName: 'social networking app development',
+        techLink: '',
+      },
+      {
+        techName: 'entertaintment app development',
+        techLink: '',
+      },
+      {
+        techName: 'food services solution',
+        techLink: '',
+      },
+    ],
+  },
+  {
+    title: 'web development',
+    items: [
+      {
+        techName: 'javascript development',
+        techLink: '',
+      },
+      {
+        techName: 'reactJs development',
+        techLink: '',
+      },
+      {
+        techName: 'vueJs development',
+        techLink: '',
+      },
+      {
+        techName: 'angular development',
+        techLink: '',
+      },
+      {
+        techName: 'meterorJs development',
+        techLink: '',
+      },
+      {
+        techName: 'backboneJs development',
+        techLink: '',
+      },
+      {
+        techName: 'node.Js development',
+        techLink: '',
+      },
+      {
+        techName: 'laravel development',
+        techLink: '',
+      },
+      {
+        techName: 'golang development',
+        techLink: '',
+      },
+      {
+        techName: 'python development',
+        techLink: '',
+      },
+      {
+        techName: 'php development',
+        techLink: '',
+      },
+      {
+        techName: 'Backend development',
+        techLink: '',
+      },
+      {
+        techName: 'progessive web app development ',
+        techLink: '',
+      },
+      {
+        techName: 'typescript development',
+        techLink: '',
+      },
+    ],
+  },
+  {
+    title: 'hire dedicated developers',
+    items: [
+      {
+        techName: 'hire UI/UX designers',
+        techLink: '',
+      },
+      {
+        techName: 'hire mobile app developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire iOS app developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire android app developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire swift app developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire flutter app developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire react native app developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire iconic app developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire angular developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire reactJs developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire vueJs developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire node.js developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire golang developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire python developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire php developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire full stack developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire QA engineers',
+        techLink: '',
+      },
+      {
+        techName: 'hire devOps engineers',
+        techLink: '',
+      },
+      {
+        techName: 'hire game developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire data scientist',
+        techLink: '',
+      },
+      {
+        techName: 'hire AI developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire ML developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire django developer',
+        techLink: '',
+      },
+      {
+        techName: 'hire flask developer',
+        techLink: '',
+      },
+      {
+        techName: 'hire fastAPI developer',
+        techLink: '',
+      },
+      {
+        techName: 'hire software developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire backend developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire front end developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire MERN stack developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire MEAN stack developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire next.js developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire tailwind CSS developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire unreal developers',
+        techLink: '',
+      },
+      {
+        techName: 'hire webflow developers',
+        techLink: '',
+      },
+      {
+        techName: 'dedicated software development team',
+        techLink: '',
+      },
+      {
+        techName: 'hire typescript developers',
+        techLink: '',
+      },
+    ],
+  },
+  {
+    title: 'emerging tech',
+    items: [
+      {
+        techName: 'blockchain development',
+        techLink: '',
+      },
+      {
+        techName: 'web 3.0 development',
+        techLink: '',
+      },
+      {
+        techName: 'computer vision development',
+        techLink: '',
+      },
+      {
+        techName: 'AI development',
+        techLink: '',
+      },
+      {
+        techName: 'data science solution',
+        techLink: '',
+      },
+      {
+        techName: 'ML development',
+        techLink: '',
+      },
+      {
+        techName: 'robotic process automation',
+        techLink: '',
+      },
+      {
+        techName: 'generative AI development',
+        techLink: '',
+      },
+      {
+        techName: 'AI ML development',
+        techLink: '',
+      },
+      {
+        techName: 'unreal engine development',
+        techLink: '',
+      },
+      {
+        techName: 'AI consulting',
+        techLink: '',
+      },
+      {
+        techName: 'AI integration',
+        techLink: '',
+      },
+    ],
+  },
+  {
+    title: 'digital solutions',
+    items: [
+      {
+        techName: 'digital transformation',
+        techLink: '',
+      },
+      {
+        techName: 'CTO as a services',
+        techLink: '',
+      },
+      {
+        techName: 'software development',
+        techLink: '',
+      },
+      {
+        techName: 'software product development',
+        techLink: '',
+      },
+      {
+        techName: 'UI/UX design services',
+        techLink: '',
+      },
+      {
+        techName: 'software testing services',
+        techLink: '',
+      },
+      {
+        techName: 'cloud computing ',
+        techLink: '',
+      },
+      {
+        techName: 'cloud migration',
+        techLink: '',
+      },
+      {
+        techName: 'cloud integration',
+        techLink: '',
+      },
+      {
+        techName: 'cloud consulting',
+        techLink: '',
+      },
+      {
+        techName: 'devOps solutions',
+        techLink: '',
+      },
+      {
+        techName: 'SaaS development',
+        techLink: '',
+      },
+      {
+        techName: 'MVP development',
+        techLink: '',
+      },
+      {
+        techName: 'App modernization',
+        techLink: '',
+      },
+      {
+        techName: 'game development',
+        techLink: '',
+      },
+      {
+        techName: 'on-demand solution',
+        techLink: '',
+      },
+      {
+        techName: 'product prototype solution',
+        techLink: '',
+      },
+      {
+        techName: 'digital marketing services',
+        techLink: '',
+      },
+    ],
+  },
+  {
+    title: 'about',
+    items: [
+      {
+        techName: 'blog',
+        techLink: '',
+      },
+      {
+        techName: 'insights',
+        techLink: '',
+      },
+      {
+        techName: 'career',
+        techLink: '',
+      },
+      {
+        techName: 'contact us',
+        techLink: '',
+      },
+      {
+        techName: 'privacy policy',
+        techLink: '',
+      },
+      {
+        techName: 'life at MI',
+        techLink: '',
+      },
+      {
+        techName: 'client testimonials',
+        techLink: '',
+      },
+      {
+        techName: 'FAQs',
+        techLink: '',
+      },
+    ],
+  },
+  {
+    title: 'case study ',
+    items: [],
+  },
+  {
+    title: 'technologies',
+    items: [],
+  },
+];
+
+export const insightsPageData = [
+  {
+    technologyName: 'Mobile',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'Frontend',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'Backend',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'Database',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'CMS',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'DevOps',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+];
+
+export const latestIndustryInsightsData = [
+  {
+    technologyName: 'Mobile',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'Frontend',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'Backend',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'Database',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'CMS',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'DevOps',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'loremi',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'lorem1',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'lorem2',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+  {
+    technologyName: 'lorem3',
+    items: [
+      {
+        technologyImage: '/images/resources/AIModel.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/services.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+      {
+        technologyImage: '/images/resources/angular.png',
+        technologyWeWorkOn: 'UI/UX',
+        techHeading:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+      },
+    ],
+  },
+];
+
+export const latestBlog = [
+  {
+    technologyImage: '/images/resources/AIModel.png',
+    technologyWeWorkOn: 'UI/UX',
+    techHeading:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+  },
+  {
+    technologyImage: '/images/resources/angular.png',
+    technologyWeWorkOn: 'UI/UX',
+    techHeading:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+  },
+  {
+    technologyImage: '/images/resources/angular.png',
+    technologyWeWorkOn: 'UI/UX',
+    techHeading:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+  },
+];
+export const latestPodcast = [
+  {
+    technologyImage: '/images/resources/AIModel.png',
+    technologyWeWorkOn: 'UI/UX',
+    techHeading:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+  },
+  {
+    technologyImage: '/images/resources/angular.png',
+    technologyWeWorkOn: 'UI/UX',
+    techHeading:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+  },
+  {
+    technologyImage: '/images/resources/angular.png',
+    technologyWeWorkOn: 'UI/UX',
+    techHeading:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+  },
+];
+export const latestVideo = [
+  {
+    technologyImage: '/images/resources/AIModel.png',
+    technologyWeWorkOn: 'UI/UX',
+    techHeading:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+  },
+  {
+    technologyImage: '/images/resources/angular.png',
+    technologyWeWorkOn: 'UI/UX',
+    techHeading:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+  },
+  {
+    technologyImage: '/images/resources/angular.png',
+    technologyWeWorkOn: 'UI/UX',
+    techHeading:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
+  },
+];
