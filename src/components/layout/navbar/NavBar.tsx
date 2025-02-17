@@ -137,30 +137,26 @@ const NavBar = () => {
                                   {item.title}
                                 </h4>
                               </div>
-                              <ul className="flex flex-col gap-5">
+                              <ul className="flex flex-col gap-4">
                                 {item.items.map((items, idx) => (
                                   <li
                                     key={idx}
                                     onClick={() => setActiveMenu(null)}
-                                    className="w-full cursor-pointer pl-2 font-Poppins text-[15px] font-normal capitalize leading-[18px] text-gray transition-all duration-300 hover:text-charcoalBlue"
+                                    className="group w-full cursor-pointer pl-2 font-Poppins text-[15px] font-normal capitalize leading-[18px] text-gray transition-all duration-300 hover:text-charcoalBlue"
                                   >
                                     <Link
                                       href={items.techLink}
                                       className="flex items-center gap-2"
                                     >
                                       <svg
-                                        width="8"
-                                        height="14"
-                                        viewBox="0 0 11 14"
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="transition-all duration-300"
+                                        width="15"
+                                        height="12"
+                                        viewBox="0 0 12 18"
                                         fill="currentColor"
+                                        className="transition-all duration-300 group-hover:text-charcoalBlue"
                                       >
-                                        <path
-                                          fillRule="evenodd"
-                                          clipRule="evenodd"
-                                          d="M1.51749 0.782258C1.98612 0.313629 2.74592 0.313629 3.21455 0.782258L9.96455 7.53226C10.4332 8.00089 10.4332 8.76069 9.96455 9.22932L3.21455 15.9793C2.74592 16.4479 1.98612 16.4479 1.51749 15.9793C1.04886 15.5106 1.04886 14.7509 1.51749 14.2822L7.41896 8.38079L1.51749 2.47932C1.04886 2.01069 1.04886 1.25089 1.51749 0.782258Z"
-                                        />
+                                        <path d="M1.51749 0.782258C1.98612 0.313629 2.74592 0.313629 3.21455 0.782258L9.96455 7.53226C10.4332 8.00089 10.4332 8.76069 9.96455 9.22932L3.21455 15.9793C2.74592 16.4479 1.98612 16.4479 1.51749 15.9793C1.04886 15.5106 1.04886 14.7509 1.51749 14.2822L7.41896 8.38079L1.51749 2.47932C1.04886 2.01069 1.04886 1.25089 1.51749 0.782258Z" />
                                       </svg>
                                       {items.techName}
                                     </Link>

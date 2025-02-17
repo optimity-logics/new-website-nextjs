@@ -123,16 +123,16 @@ const Footer = () => {
               About Us
             </li>
             <li className="cursor-pointer border-r border-r-[#ffffff4a] px-5 transition-all duration-300 hover:text-lightBlue">
-              Insights
+              <Link href={'/blog/insights'}>Insights</Link>
             </li>
             <li className="cursor-pointer border-r border-r-[#ffffff4a] px-5 transition-all duration-300 hover:text-lightBlue">
               <Link href={'/careers'}>Careers</Link>
             </li>
             <li className="cursor-pointer border-r border-r-[#ffffff4a] px-5 transition-all duration-300 hover:text-lightBlue">
-              Privacy Policy
+              <Link href={'/privacy-policy'}> Privacy Policy</Link>
             </li>
             <li className="cursor-pointer px-5 hover:text-lightBlue">
-              Sitemap
+              <Link href={'/sitemap'}>Sitemap</Link>
             </li>
           </ul>
         </div>
