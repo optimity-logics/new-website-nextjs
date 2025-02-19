@@ -93,7 +93,6 @@ const AllPageContent = ({ data }: IPropsType) => {
                     width={600}
                     height={528}
                     className="h-[528px] object-contain"
-                    fill
                     priority
                   />
                 </div>
