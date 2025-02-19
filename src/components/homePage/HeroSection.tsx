@@ -1,9 +1,9 @@
 import React from 'react';
-import Button from '../common/Button';
+import Button from '../ui/Button';
 import { logoIcons } from '../utils/Constant';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
-import Container from '../common/Container';
+import Container from '../ui/Container';
 
 const HeroSection = () => {
   return (

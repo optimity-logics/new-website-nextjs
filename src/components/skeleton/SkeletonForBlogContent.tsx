@@ -1,7 +1,7 @@
 import React from 'react';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
-import Container from '../common/Container';
+import Container from '../ui/Container';
 import { IBlogType } from '../type/type';
 
 interface IBlogTypes {

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import Button from '@/components/common/Button';
-import Container from '@/components/common/Container';
+import Button from '@/components/ui/Button';
+import Container from '@/components/ui/Container';
 import { menuData } from '@/components/utils/Constant';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -218,6 +218,9 @@ const NavBar = () => {
                 </motion.div>
               )}
             </AnimatePresence>
+            {activeMenu && (
+              <div className="fixed left-0 top-[92px] -z-10 h-screen w-screen bg-[#19202033] backdrop-blur-sm"></div>
+            )}
           </ul>
           <Button
             btnName="Contact Us"

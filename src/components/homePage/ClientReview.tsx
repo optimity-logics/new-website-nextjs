@@ -1,9 +1,9 @@
 'use client';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
-import Container from '../common/Container';
-import SectionHeading from '../common/SectionHeading';
-import Spinner from '../common/Spinner';
+import Container from '../ui/Container';
+import SectionHeading from '../ui/SectionHeading';
+import Spinner from '../ui/Spinner';
 import { clientsReview } from '../utils/Constant';
 
 const StarRatings = dynamic(() => import('react-star-ratings'), { ssr: false });

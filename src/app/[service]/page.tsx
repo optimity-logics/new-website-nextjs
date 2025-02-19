@@ -1,4 +1,4 @@
-import AllPageContent from '@/components/common/AllPageContent';
+import AllPageContent from '@/components/ui/AllPageContent';
 import { GolangData } from '@/components/utils/technology/back-end/golang';
 import { LaravelData } from '@/components/utils/technology/back-end/laravel';
 import { MeteorData } from '@/components/utils/technology/back-end/meteor';
@@ -126,6 +126,8 @@ const dataMap = {
   php: PhpData,
   laravel: LaravelData,
   meteor: MeteorData,
+  // Trending
+  wearable: '',
   // services
   software: softwareProductDevelopment,
   ui: uiuxData,

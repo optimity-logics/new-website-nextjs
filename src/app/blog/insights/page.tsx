@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import arrow from '../../../../public/svg/fat-arrow.svg';
-import Container from '@/components/common/Container';
+import Container from '@/components/ui/Container';
 import {
   insightsPageData,
   latestBlog,
@@ -12,7 +12,7 @@ import {
   latestVideo,
 } from '@/components/utils/Constant';
 import { Tabs, Tab } from '@nextui-org/tabs';
-import SectionHeading from '@/components/common/SectionHeading';
+import SectionHeading from '@/components/ui/SectionHeading';
 
 const Insights = () => {
   const [activeKey, setActiveKey] = useState<string>(
@@ -45,8 +45,8 @@ const Insights = () => {
         className="bg-PrivacyPolicy bg-cover bg-no-repeat"
         style={{ backgroundSize: '100% 100%' }}
       >
-        <div className="mx-auto flex max-w-[1217px] flex-col items-center gap-2 px-4 py-20 sm:px-6 md:px-8 xl:px-10 3xl:px-0">
-          <h2 className="font-Inter text-4xl font-semibold leading-[44px] tracking-[-2%] text-black lg:text-[44px] lg:leading-[82.3px] 4xl:text-[60px]">
+        <div className="mx-auto flex max-w-[1217px] flex-col items-center gap-2 px-4 py-[46px] sm:px-6 md:px-8 xl:px-10 3xl:px-0">
+          <h2 className="text-center font-Inter text-4xl font-semibold leading-[44px] tracking-[-2%] text-black lg:text-[44px] lg:leading-[82.3px] 4xl:text-[60px]">
             Discover Your Space for Tech Insights
           </h2>
           <p className="text-center font-Inter text-lg font-normal leading-[29px] text-[#727265] 4xl:px-2">
@@ -57,7 +57,7 @@ const Insights = () => {
           </p>
           <Link
             href="/"
-            className="mt-5 flex items-center gap-2.5 rounded-[39px] bg-red px-[21px] py-4 font-Inter text-lg font-medium leading-[22px] text-white"
+            className="mt-5 flex items-center gap-2.5 rounded-[39px] bg-red px-[21px] py-4 font-Inter text-lg font-normal leading-[22px] text-white"
           >
             View Blogs <Image src={arrow} alt="arrow" width={24} height={24} />
           </Link>
@@ -105,11 +105,11 @@ const Insights = () => {
                       <span className="font-Inter text-lg font-medium leading-6 text-red">
                         {item?.technologyWeWorkOn}
                       </span>
-                      <h3 className="font-Inter text-[21px] font-medium leading-[26px] text-black">
+                      <h3 className="font-Inter text-xl font-normal leading-[26px] text-black md:text-[21px] md:font-medium">
                         {item?.techHeading}
                       </h3>
                     </div>
-                    <p className="line-clamp-2 font-Inter text-xl font-light leading-6 text-[#524c4c]">
+                    <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-[#524c4c] md:text-xl">
                       {item?.techDescription}
                     </p>
                   </div>
@@ -172,11 +172,11 @@ const Insights = () => {
                         <span className="font-Inter text-lg font-medium leading-6 text-white">
                           {item?.technologyWeWorkOn}
                         </span>
-                        <h3 className="font-Inter text-[21px] font-medium leading-[26px] text-white">
+                        <h3 className="font-Inter text-xl font-normal leading-[26px] text-white md:text-[21px] md:font-medium">
                           {item?.techHeading}
                         </h3>
                       </div>
-                      <p className="line-clamp-2 font-Inter text-xl font-light leading-6 text-white">
+                      <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-white md:text-xl">
                         {item?.techDescription}
                       </p>
                     </div>
@@ -214,11 +214,11 @@ const Insights = () => {
                       <span className="font-Inter text-lg font-medium leading-6 text-red">
                         {item?.technologyWeWorkOn}
                       </span>
-                      <h3 className="font-Inter text-[21px] font-medium leading-[26px] text-black">
+                      <h3 className="font-Inter text-xl font-normal leading-[26px] text-black md:text-[21px] md:font-medium">
                         {item?.techHeading}
                       </h3>
                     </div>
-                    <p className="line-clamp-2 font-Inter text-xl font-light leading-6 text-[#524c4c]">
+                    <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-[#524c4c] md:text-xl">
                       {item?.techDescription}
                     </p>
                   </div>
@@ -260,11 +260,11 @@ const Insights = () => {
                         <span className="font-Inter text-lg font-medium leading-6 text-white">
                           {item?.technologyWeWorkOn}
                         </span>
-                        <h3 className="font-Inter text-[21px] font-medium leading-[26px] text-white">
+                        <h3 className="font-Inter text-xl font-normal leading-[26px] text-white md:text-[21px] md:font-medium">
                           {item?.techHeading}
                         </h3>
                       </div>
-                      <p className="line-clamp-2 font-Inter text-xl font-light leading-6 text-white">
+                      <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-white md:text-xl">
                         {item?.techDescription}
                       </p>
                     </div>
@@ -302,11 +302,11 @@ const Insights = () => {
                       <span className="font-Inter text-lg font-medium leading-6 text-red">
                         {item?.technologyWeWorkOn}
                       </span>
-                      <h3 className="font-Inter text-[21px] font-medium leading-[26px] text-black">
+                      <h3 className="font-Inter text-xl font-normal leading-[26px] text-black md:text-[21px] md:font-medium">
                         {item?.techHeading}
                       </h3>
                     </div>
-                    <p className="line-clamp-2 font-Inter text-xl font-light leading-6 text-[#524c4c]">
+                    <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-[#524c4c] md:text-xl">
                       {item?.techDescription}
                     </p>
                   </div>
@@ -338,14 +338,14 @@ const Insights = () => {
                 />
                 <button
                   type="submit"
-                  className="cursor-pointer rounded-[30px] bg-lightBlue px-[15px] py-2.5 font-Inter text-base font-semibold uppercase text-white"
+                  className="cursor-pointer rounded-[30px] bg-lightBlue px-[15px] py-2.5 font-Inter text-sm font-semibold uppercase text-white sm:text-base"
                 >
                   subscribe
                 </button>
               </div>
               <div className="flex items-start gap-1 lg:items-center">
                 <input type="checkbox" className="mt-1 lg:mt-0" />
-                <span className="font-Inter text-lg font-normal leading-6 text-[#192020]">
+                <span className="font-Inter text-base font-normal leading-5 text-[#192020] sm:text-lg sm:leading-6">
                   I hereby agree to receive newsletters from Optimity Logics and
                   acknowledge company&#39;s
                   <Link href={''} className="text-lightBlue underline">

@@ -1313,24 +1313,10 @@ export const jobOpenings = [
           'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
         viewPositionLink: '',
       },
-      {
-        title: 'Application developer (react native)',
-        workModes: ['Full-Time', 'Hybrid'],
-        description:
-          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
-        viewPositionLink: '',
-      },
-      {
-        title: 'Senior Product designer',
-        workModes: ['Full-Time', 'Hybrid', 'part-time'],
-        description:
-          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
-        viewPositionLink: '',
-      },
     ],
   },
   {
-    positionName: 'Operation (4)',
+    positionName: 'Operation (2)',
     details: [
       {
         title: 'Full-Stack Developer',
@@ -1342,13 +1328,6 @@ export const jobOpenings = [
       {
         title: 'Application developer (react native)',
         workModes: ['Full-Time', 'Hybrid'],
-        description:
-          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
-        viewPositionLink: '',
-      },
-      {
-        title: 'Senior Product designer',
-        workModes: ['Full-Time', 'Hybrid', 'part-time'],
         description:
           'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
         viewPositionLink: '',
@@ -1365,13 +1344,7 @@ export const jobOpenings = [
           'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
         viewPositionLink: '',
       },
-      {
-        title: 'Application developer (react native)',
-        workModes: ['Full-Time', 'Hybrid'],
-        description:
-          'Due to a growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design, and Marketing to analyze, develop, debug, test, roll out, and support new and existing product features.',
-        viewPositionLink: '',
-      },
+
       {
         title: 'Senior Product designer',
         workModes: ['Full-Time', 'Hybrid', 'part-time'],

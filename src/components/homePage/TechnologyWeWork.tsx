@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
-import SectionHeading from '../common/SectionHeading';
-import Container from '../common/Container';
+import SectionHeading from '../ui/SectionHeading';
+import Container from '../ui/Container';
 import { Tabs, Tab } from '@nextui-org/tabs';
 import { technologyWeWorkData } from '../utils/Constant';
 import Image from 'next/image';

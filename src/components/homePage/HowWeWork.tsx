@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionHeading from '../common/SectionHeading';
-import Container from '../common/Container';
+import SectionHeading from '../ui/SectionHeading';
+import Container from '../ui/Container';
 import Image from 'next/image';
 import { howWeWorkData } from '../utils/Constant';
 import msgframe from '../../../public/webp/msgframe.webp';

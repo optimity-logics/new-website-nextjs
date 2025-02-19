@@ -1,11 +1,13 @@
 'use client';
 import React from 'react';
+import Container from './Container';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IPropsDataTypes } from '../type/type';
 import arrow from '../../../public/svg/fat-arrow.svg';
 import Marquee from 'react-fast-marquee';
 import { logoIcons, resourcesData } from '../utils/Constant';
+import SectionHeading from './SectionHeading';
 import { Autoplay, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,12 +16,10 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import checkMark from '../../../public/svg/check-mark.svg';
 import StarRatings from 'react-star-ratings';
+import FaqsAccordion from './FaqsAccordion';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 import { usePathname } from 'next/navigation';
-import Container from '../ui/Container';
-import FaqsAccordion from '../ui/FaqsAccordion';
-import SectionHeading from '../ui/SectionHeading';
 
 interface IPropsType {
   data: IPropsDataTypes;
@@ -61,7 +61,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             </div>
             <Link
               href={data?.HeroSectionData?.btnLink}
-              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
+              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
             >
               {data?.HeroSectionData?.btnName}{' '}
               <Image src={arrow} alt={arrow} width={32} height={32} />
@@ -93,6 +93,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                     width={600}
                     height={528}
                     className="h-[528px] object-contain"
+                    fill
                     priority
                   />
                 </div>
@@ -206,7 +207,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             </div>
             <Link
               href={data?.AppDevelopment?.btnLink}
-              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
+              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
             >
               {data?.AppDevelopment?.btnName}{' '}
               <Image src={arrow} alt={arrow} width={32} height={32} />
@@ -231,7 +232,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               </div>
               <Link
                 href={data?.NextGen?.btnLink}
-                className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
+                className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
               >
                 {data?.NextGen?.btnName}
                 <Image src={arrow} alt={arrow} width={32} height={32} />
@@ -361,7 +362,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         <div className="mx-auto w-full max-w-[1620px] px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 5xl:px-0">
           <Link
             href={data?.TechnologiesIntegrations?.btnLink}
-            className="float-left flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
+            className="float-left flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
           >
             {data?.TechnologiesIntegrations?.btnName}{' '}
             <Image src={arrow} alt={arrow} width={32} height={32} />
@@ -627,7 +628,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           </div>
           <Link
             href={data?.TechnologyWeUseInDevelopment?.btnLink}
-            className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 xl:py-[19.56px]"
+            className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
           >
             {data?.TechnologyWeUseInDevelopment?.btnName}{' '}
             <Image src={arrow} alt={arrow} width={32} height={32} />

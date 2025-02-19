@@ -11,7 +11,7 @@ import { IMenuSidebarProps } from '../type/type';
 import { menuSidebar } from '../utils/Constant';
 import React from 'react';
 import router from 'next/router';
-import Button from '../common/Button';
+import Button from '../ui/Button';
 
 const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
   const { width } = useWindowSize();
