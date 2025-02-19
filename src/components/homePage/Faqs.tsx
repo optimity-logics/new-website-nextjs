@@ -1,7 +1,7 @@
-import Container from '../common/Container';
-import SectionHeading from '../common/SectionHeading';
+import Container from '../ui/Container';
+import SectionHeading from '../ui/SectionHeading';
 import { faqsData } from '../utils/Constant';
-import FaqsAccordion from '../common/FaqsAccordion';
+import FaqsAccordion from '../ui/FaqsAccordion';
 
 const Faqs = () => {
   return (

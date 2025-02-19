@@ -7,10 +7,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SectionHeading from '../common/SectionHeading';
+import SectionHeading from '../ui/SectionHeading';
 import { resourcesData } from '../utils/Constant';
 import { Autoplay, Mousewheel } from 'swiper/modules';
-import Container from '../common/Container';
+import Container from '../ui/Container';
 
 const Resources = () => {
   return (

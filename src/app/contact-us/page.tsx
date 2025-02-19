@@ -1,5 +1,5 @@
 'use client';
-import Container from '@/components/common/Container';
+import Container from '@/components/ui/Container';
 import ContactUsForm from '@/components/contact/ContactUsForm';
 import Image from 'next/image';
 import React from 'react';
@@ -12,8 +12,8 @@ const ContactUs = () => {
   return (
     <>
       <div className="bg-contactUsBanner bg-cover bg-center bg-no-repeat">
-        <Container className="py-[122px]">
-          <h2 className="4xl:[50px] font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-white md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 5xl:text-[57px] 5xl:leading-[60px]">
+        <Container className="py-[122px] 5xl:px-[240px]">
+          <h2 className="4xl:[50px] font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 5xl:text-[57px] 5xl:leading-[60px]">
             Contact Us
           </h2>
         </Container>

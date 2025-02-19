@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import Container from '../common/Container';
-import Button from '../common/Button';
+import Container from '../ui/Container';
+import Button from '../ui/Button';
 import styled from 'styled-components';
 import { workingData } from '../utils/Constant';
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from '../common/Container';
-import Button from '../common/Button';
+import Container from '../ui/Container';
+import Button from '../ui/Button';
 import Image from 'next/image';
 import team from '../../../public/svg/team.svg';
 

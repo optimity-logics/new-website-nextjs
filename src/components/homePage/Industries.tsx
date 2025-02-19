@@ -7,7 +7,7 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import arrow from '../../../public/svg/gray-arrow.svg';
 import checkmark from '../../../public/svg/check-mark.svg';
-import SectionHeading from '../common/SectionHeading';
+import SectionHeading from '../ui/SectionHeading';
 import { industriesData } from '../utils/Constant';
 import { Autoplay, Mousewheel } from 'swiper/modules';
 import { useState } from 'react';

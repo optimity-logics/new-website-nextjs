@@ -1,5 +1,5 @@
 'use client';
-import Container from '@/components/common/Container';
+import Container from '@/components/ui/Container';
 import React from 'react';
 import styled from 'styled-components';
 import 'swiper/css';
@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SectionHeading from '@/components/common/SectionHeading';
+import SectionHeading from '@/components/ui/SectionHeading';
 import { Autoplay, Mousewheel, Pagination } from 'swiper/modules';
 import dynamic from 'next/dynamic';
 import {
@@ -29,7 +29,7 @@ import employee from '../../../public/webp/about-us/employee.webp';
 import countryServe from '../../../public/webp/about-us/countryServe.webp';
 import expertise from '../../../public/webp/about-us/yearOfExpertise.webp';
 import aboutUs from '../../../public/webp/about-us/about-us1.webp';
-import Button from '@/components/common/Button';
+import Button from '@/components/ui/Button';
 
 const StarRatings = dynamic(() => import('react-star-ratings'), { ssr: false });
 

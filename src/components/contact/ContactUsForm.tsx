@@ -1,7 +1,7 @@
 'use client';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import Button from '../common/Button';
+import Button from '../ui/Button';
 
 interface FormValues {
   name: string;

@@ -1,4 +1,4 @@
-import Container from '@/components/common/Container';
+import Container from '@/components/ui/Container';
 import Image from 'next/image';
 import logo from '../../../../public/svg/footer-logo.svg';
 import { footerData } from '../../utils/Constant';

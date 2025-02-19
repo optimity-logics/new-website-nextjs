@@ -1,4 +1,4 @@
-import Container from '@/components/common/Container';
+import Container from '@/components/ui/Container';
 import React from 'react';
 
 const PrivacyPolicy = () => {

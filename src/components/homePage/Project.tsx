@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
-import SectionHeading from '../common/SectionHeading';
+import SectionHeading from '../ui/SectionHeading';
 import { deployProjects } from '../utils/Constant';
 import Image from 'next/image';
-import Container from '../common/Container';
+import Container from '../ui/Container';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

@@ -1,5 +1,5 @@
 'use client';
-import Container from '@/components/common/Container';
+import Container from '@/components/ui/Container';
 import { blogData } from '@/components/utils/Constant';
 import Image from 'next/image';
 import Link from 'next/link';

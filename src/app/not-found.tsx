@@ -1,4 +1,4 @@
-import Container from '@/components/common/Container';
+import Container from '@/components/ui/Container';
 import Image from 'next/image';
 import notFoundImage from '../../public/webp/404.webp';
 import Link from 'next/link';

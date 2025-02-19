@@ -5,8 +5,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Button from '../common/Button';
-import Container from '../common/Container';
+import Button from '../ui/Button';
+import Container from '../ui/Container';
 import { ourExpertiseData } from '../utils/Constant';
 import { Autoplay, Mousewheel } from 'swiper/modules';
 
