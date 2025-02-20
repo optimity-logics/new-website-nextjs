@@ -62,6 +62,7 @@ import {
 } from '@/components/utils/solution/businessScales/businessScales';
 import {
   hireAIDeveloper,
+  hireDataScientist,
   hireMLDeveloper,
 } from '@/components/utils/hireTeam/dataAndAI/DataAndAI';
 import {
@@ -101,6 +102,8 @@ import {
   hireUIUXDesigner,
   hireUnrealEngineDeveloper,
 } from '@/components/utils/hireTeam/trending/trending';
+import { weareableAppData } from '@/components/utils/technology/trending/wearableApp';
+import { internetOfThingsData } from '@/components/utils/technology/trending/iot';
 
 type Params = Promise<{ service: string }>;
 
@@ -127,7 +130,8 @@ const dataMap = {
   laravel: LaravelData,
   meteor: MeteorData,
   // Trending
-  wearable: '',
+  wearable: weareableAppData,
+  internet: internetOfThingsData,
   // services
   software: softwareProductDevelopment,
   ui: uiuxData,
@@ -165,6 +169,7 @@ const dataMap = {
   // mobile
   'hire-ai': hireAIDeveloper,
   'hire-machine': hireMLDeveloper,
+  'hire-data': hireDataScientist,
   'hire-flutter': hireFlutterDeveloper,
   'hire-ios': hireIosDeveloper,
   'hire-android': hireAndroidDeveloper,

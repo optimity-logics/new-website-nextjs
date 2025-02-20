@@ -2375,7 +2375,7 @@ export const menuData = [
           },
           {
             techName: 'Tailwind CSS',
-            techLink: '/tailwind-css-development-service',
+            techLink: '/hire-tailwind-css-developers',
           },
           {
             techName: 'Generative AI',
@@ -2535,7 +2535,7 @@ export const menuData = [
           },
           {
             techName: 'UI/UX Designers',
-            techLink: '/hire-internet-of-things-developers',
+            techLink: '/hire-ui-ux-developers',
           },
           {
             techName: 'Software Developers',
@@ -3052,31 +3052,31 @@ export const siteMapData = [
     items: [
       {
         techName: 'Mobile App Development',
-        techLink: '',
+        techLink: '/mobile-app-development-service',
       },
       {
         techName: 'IOS App Development',
-        techLink: '',
+        techLink: 'ios-development-service',
       },
       {
         techName: 'Android App Development',
-        techLink: '',
+        techLink: '/android-development-service',
       },
       {
         techName: 'Flutter App Development',
-        techLink: '',
+        techLink: '/flutter-development-service',
       },
       {
         techName: 'React Native App Development',
-        techLink: '',
+        techLink: '/react-native-development-service',
       },
       {
         techName: 'Swift App Development',
-        techLink: '',
+        techLink: '/swift-development-service',
       },
       {
         techName: 'Iconic App Development',
-        techLink: '',
+        techLink: '/iconic-development-service',
       },
       {
         techName: 'iBeacon App Development',
@@ -3084,15 +3084,15 @@ export const siteMapData = [
       },
       {
         techName: 'Wearable App Development',
-        techLink: '',
+        techLink: '/wearable-app-development-service',
       },
       {
         techName: 'IoT App Development',
-        techLink: '',
+        techLink: '/internet-of-things-development-service',
       },
       {
         techName: 'Enterprise App Development',
-        techLink: '',
+        techLink: '/enterprise-app-development-service',
       },
       {
         techName: 'Software solution for Startups',
@@ -3117,15 +3117,15 @@ export const siteMapData = [
     items: [
       {
         techName: 'healthcare solution',
-        techLink: '',
+        techLink: '/healthcare-solutions',
       },
       {
         techName: 'fintech solution',
-        techLink: '',
+        techLink: '/fintech-solutions',
       },
       {
         techName: 'education app development',
-        techLink: '',
+        techLink: '/educational-app-development-solutions',
       },
       {
         techName: 'fitness app development',
@@ -3133,15 +3133,15 @@ export const siteMapData = [
       },
       {
         techName: 'ecommerce app development',
-        techLink: '',
+        techLink: '/ecommerce-solutions',
       },
       {
         techName: 'logistics solution',
-        techLink: '',
+        techLink: '/logistics-app-development',
       },
       {
         techName: 'real estate app development',
-        techLink: '',
+        techLink: '/real-estate-app-development',
       },
       {
         techName: 'travel app development',
@@ -3157,7 +3157,7 @@ export const siteMapData = [
       },
       {
         techName: 'entertaintment app development',
-        techLink: '',
+        techLink: '/enterprise-app-development-service',
       },
       {
         techName: 'food services solution',
@@ -3170,47 +3170,47 @@ export const siteMapData = [
     items: [
       {
         techName: 'javascript development',
-        techLink: '',
+        techLink: '/javascript-development-service',
       },
       {
         techName: 'reactJs development',
-        techLink: '',
+        techLink: '/react-js-development-service',
       },
       {
         techName: 'vueJs development',
-        techLink: '',
+        techLink: '/vue-js-development-service',
       },
       {
         techName: 'angular development',
-        techLink: '',
+        techLink: '/angular-js-development-service',
       },
       {
         techName: 'meterorJs development',
-        techLink: '',
+        techLink: '/meteor-js-development-service',
       },
       {
         techName: 'backboneJs development',
-        techLink: '',
+        techLink: '/backbone-js-development-service',
       },
       {
         techName: 'node.Js development',
-        techLink: '',
+        techLink: '/node-js-development-service',
       },
       {
         techName: 'laravel development',
-        techLink: '',
+        techLink: '/laravel-development-service',
       },
       {
         techName: 'golang development',
-        techLink: '',
+        techLink: '/golang-development-service',
       },
       {
         techName: 'python development',
-        techLink: '',
+        techLink: '/python-development-service',
       },
       {
         techName: 'php development',
-        techLink: '',
+        techLink: '/php-development-service',
       },
       {
         techName: 'Backend development',
@@ -3231,7 +3231,7 @@ export const siteMapData = [
     items: [
       {
         techName: 'hire UI/UX designers',
-        techLink: '',
+        techLink: '/hire-ui-ux-developers',
       },
       {
         techName: 'hire mobile app developers',
@@ -3239,55 +3239,55 @@ export const siteMapData = [
       },
       {
         techName: 'hire iOS app developers',
-        techLink: '',
+        techLink: '/hire-ios-developers',
       },
       {
         techName: 'hire android app developers',
-        techLink: '',
+        techLink: '/hire-android-developers',
       },
       {
         techName: 'hire swift app developers',
-        techLink: '',
+        techLink: '/hire-swift-developers',
       },
       {
         techName: 'hire flutter app developers',
-        techLink: '',
+        techLink: '/hire-flutter-developers',
       },
       {
         techName: 'hire react native app developers',
-        techLink: '',
+        techLink: '/hire-react-native-developers',
       },
       {
         techName: 'hire iconic app developers',
-        techLink: '',
+        techLink: '/hire-iconic-developers',
       },
       {
         techName: 'hire angular developers',
-        techLink: '',
+        techLink: '/hire-angular-js-developers',
       },
       {
         techName: 'hire reactJs developers',
-        techLink: '',
+        techLink: '/hire-react-js-developers',
       },
       {
         techName: 'hire vueJs developers',
-        techLink: '',
+        techLink: '/hire-vue-js-developers',
       },
       {
         techName: 'hire node.js developers',
-        techLink: '',
+        techLink: '/hire-node-js-developers',
       },
       {
         techName: 'hire golang developers',
-        techLink: '',
+        techLink: '/hire-golang-developers',
       },
       {
         techName: 'hire python developers',
-        techLink: '',
+        techLink: '/hire-python-developers',
       },
       {
         techName: 'hire php developers',
-        techLink: '',
+        techLink: '/hire-php-developers',
       },
       {
         techName: 'hire full stack developers',
@@ -3303,35 +3303,35 @@ export const siteMapData = [
       },
       {
         techName: 'hire game developers',
-        techLink: '',
+        techLink: '/hire-game-developers',
       },
       {
         techName: 'hire data scientist',
-        techLink: '',
+        techLink: '/hire-data-scientists-developers',
       },
       {
         techName: 'hire AI developers',
-        techLink: '',
+        techLink: '/hire-ai-developers',
       },
       {
         techName: 'hire ML developers',
-        techLink: '',
+        techLink: '/hire-machine-learning-developers',
       },
       {
         techName: 'hire django developer',
-        techLink: '',
+        techLink: '/hire-django-developers',
       },
       {
         techName: 'hire flask developer',
-        techLink: '',
+        techLink: '/hire-flask-developers',
       },
       {
         techName: 'hire fastAPI developer',
-        techLink: '',
+        techLink: '/hire-fastapi-developers',
       },
       {
         techName: 'hire software developers',
-        techLink: '',
+        techLink: '/hire-software-developers',
       },
       {
         techName: 'hire backend developers',
@@ -3343,23 +3343,23 @@ export const siteMapData = [
       },
       {
         techName: 'hire MERN stack developers',
-        techLink: '',
+        techLink: '/hire-mern-stack-developers',
       },
       {
         techName: 'hire MEAN stack developers',
-        techLink: '',
+        techLink: '/hire-mean-stack-developers',
       },
       {
         techName: 'hire next.js developers',
-        techLink: '',
+        techLink: '/hire-next-js-developers',
       },
       {
         techName: 'hire tailwind CSS developers',
-        techLink: '',
+        techLink: '/hire-tailwind-css-developers',
       },
       {
         techName: 'hire unreal developers',
-        techLink: '',
+        techLink: '/hire-unreal-app-developers',
       },
       {
         techName: 'hire webflow developers',
@@ -3388,27 +3388,27 @@ export const siteMapData = [
       },
       {
         techName: 'computer vision development',
-        techLink: '',
+        techLink: '/computer-vision-development-service',
       },
       {
         techName: 'AI development',
-        techLink: '',
+        techLink: '/artificial-intelligence-service',
       },
       {
         techName: 'data science solution',
-        techLink: '',
+        techLink: '/data-science-service',
       },
       {
         techName: 'ML development',
-        techLink: '',
+        techLink: '/machine-learning-development-service',
       },
       {
         techName: 'robotic process automation',
-        techLink: '',
+        techLink: '/robotic-process-automation-service',
       },
       {
         techName: 'generative AI development',
-        techLink: '',
+        techLink: '/generative-ai-development-service',
       },
       {
         techName: 'AI ML development',
@@ -3437,19 +3437,19 @@ export const siteMapData = [
       },
       {
         techName: 'CTO as a services',
-        techLink: '',
+        techLink: '/cto-as-service',
       },
       {
         techName: 'software development',
-        techLink: '',
+        techLink: '/software-development-service',
       },
       {
         techName: 'software product development',
-        techLink: '',
+        techLink: '/software-product-development-service',
       },
       {
         techName: 'UI/UX design services',
-        techLink: '',
+        techLink: '/ui-ux-design-service',
       },
       {
         techName: 'software testing services',
@@ -3457,7 +3457,7 @@ export const siteMapData = [
       },
       {
         techName: 'cloud computing ',
-        techLink: '',
+        techLink: '/cloud-computing-solutions',
       },
       {
         techName: 'cloud migration',
@@ -3473,31 +3473,31 @@ export const siteMapData = [
       },
       {
         techName: 'devOps solutions',
-        techLink: '',
+        techLink: '/devops-Solutions',
       },
       {
         techName: 'SaaS development',
-        techLink: '',
+        techLink: '/saas-app-development-service',
       },
       {
         techName: 'MVP development',
-        techLink: '',
+        techLink: '/mvp-development-service',
       },
       {
         techName: 'App modernization',
-        techLink: '',
+        techLink: '/app-modernization-development-service',
       },
       {
         techName: 'game development',
-        techLink: '',
+        techLink: '/game-development-service',
       },
       {
         techName: 'on-demand solution',
-        techLink: '',
+        techLink: '/on-demand-app-development',
       },
       {
         techName: 'product prototype solution',
-        techLink: '',
+        techLink: '/product-prototype-solutions-service',
       },
       {
         techName: 'digital marketing services',
@@ -3510,23 +3510,23 @@ export const siteMapData = [
     items: [
       {
         techName: 'blog',
-        techLink: '',
+        techLink: '/blog',
       },
       {
         techName: 'insights',
-        techLink: '',
+        techLink: '/blog/insights',
       },
       {
         techName: 'career',
-        techLink: '',
+        techLink: '/careers',
       },
       {
         techName: 'contact us',
-        techLink: '',
+        techLink: '/contact-us',
       },
       {
         techName: 'privacy policy',
-        techLink: '',
+        techLink: '/privacy-policy',
       },
       {
         techName: 'life at MI',
@@ -3538,7 +3538,7 @@ export const siteMapData = [
       },
       {
         techName: 'FAQs',
-        techLink: '',
+        techLink: '/faq',
       },
     ],
   },
