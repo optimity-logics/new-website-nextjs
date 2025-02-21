@@ -24,7 +24,7 @@ const TechnologyWeWork = () => {
 
   return (
     <div className="bg-technologbg bg-cover bg-center bg-no-repeat">
-      <Container className="mb-10 flex flex-col items-center gap-10 py-[60px] md:mb-12 xl:mb-16 3xl:gap-12 4xl:mb-[120px] 4xl:gap-[80px] 5xl:px-[154px]">
+      <Container className="mb-10 flex flex-col items-center gap-10 py-[60px] md:mb-12 xl:mb-16 3xl:gap-[50px] 4xl:mb-[100px] 4xl:gap-[80px]">
         <SectionHeading
           heading={`<span>Technologies</span> we work with`}
           className="max-w-[860px] 4xl:!gap-5"

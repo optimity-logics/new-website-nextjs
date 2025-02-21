@@ -17,7 +17,7 @@ const Sitemap = () => {
           Privacy Policy
         </h2>
       </div>
-      <Container className="py-12 md:py-16 lg:py-20 4xl:py-[100px] 5xl:px-[150px]">
+      <Container className="py-12 md:py-16 lg:py-20 4xl:py-[100px]">
         <div className="flex flex-col gap-10">
           {siteMapData &&
             siteMapData.map((items, index) => (

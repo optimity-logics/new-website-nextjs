@@ -46,12 +46,12 @@ const AboutUs = () => {
     <>
       <div className="bg-careerBanner bg-cover bg-center bg-no-repeat">
         <Container className="mb-10 py-[120px] md:mb-12 xl:mb-16 4xl:mb-[100px]">
-          <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-white md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
+          <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
             About Us
           </h2>
         </Container>
       </div>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-[73px] lg:flex-row">
           <div className="grid w-full grid-cols-2 gap-[25px]">
             <div>
@@ -100,7 +100,7 @@ const AboutUs = () => {
           </div>
         </div>
       </Container>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-[29px] sm:grid-cols-2 xl:grid-cols-4">
           <div className="flex h-full flex-col justify-between gap-5 rounded-[15px] bg-[#FFD9CF] pb-5">
             <Image
@@ -172,7 +172,7 @@ const AboutUs = () => {
           </div>
         </div>
       </Container>
-      <div className="mb-10 bg-technologbg bg-cover bg-center bg-no-repeat py-10 md:mb-12 xl:mb-16 3xl:py-14 4xl:mb-[100px] 5xl:mb-[120px] 5xl:py-20">
+      <div className="mb-10 bg-technologbg bg-cover bg-center bg-no-repeat py-10 md:mb-12 xl:mb-16 3xl:py-14 4xl:mb-[100px] 5xl:py-20">
         <Container className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[60px]">
           <h2 className="text-center font-Inter text-[25px] font-medium capitalize leading-[2rem] text-white sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px]">
             Who We are?
@@ -227,7 +227,7 @@ const AboutUs = () => {
           </div>
         </Container>
       </div>
-      <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-0 xl:mb-16 3xl:gap-10 4xl:mb-[120px] 4xl:gap-[60px]">
+      <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-0 xl:mb-16 3xl:gap-10 4xl:mb-[100px] 4xl:gap-[60px]">
         <HighlitedDescription
           dangerouslySetInnerHTML={{
             __html: `Our <span> Achievements </span>`,
@@ -244,7 +244,7 @@ const AboutUs = () => {
               invert: true,
             }}
             speed={1000}
-            loop={false}
+            loop={true}
             breakpoints={{
               540: {
                 slidesPerView: 1,
@@ -308,7 +308,7 @@ const AboutUs = () => {
           </Swiper>
         </div>
       </div>
-      <div className="mb-10 bg-technologbg bg-cover bg-center bg-no-repeat py-10 md:mb-12 xl:mb-16 3xl:py-14 4xl:mb-[100px] 5xl:mb-[120px] 5xl:py-20">
+      <div className="mb-10 bg-technologbg bg-cover bg-center bg-no-repeat py-10 md:mb-12 xl:mb-16 3xl:py-14 4xl:mb-[100px] 5xl:py-20">
         <Container className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[60px]">
           <SectionHeading
             heading="We have <span> expert team </span>"
@@ -325,7 +325,7 @@ const AboutUs = () => {
                 invert: true,
               }}
               speed={1000}
-              loop={false}
+              loop={true}
               pagination={{
                 clickable: true,
                 renderBullet: (index, className) =>
@@ -381,7 +381,7 @@ const AboutUs = () => {
           </div>
         </Container>
       </div>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:mb-[120px] 5xl:px-[150px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[60px]">
           <SectionHeading
             heading="Discover Work-Life Harmony With <span> Optimity Logics</span>"
@@ -399,7 +399,7 @@ const AboutUs = () => {
                     <div className="flex h-[56px] w-[56px] items-center justify-center rounded-full bg-black">
                       <Image src={item?.img} alt="" width={24} height={24} />
                     </div>
-                    <h4 className="px-10 text-center font-Inter text-lg font-normal leading-7 text-black">
+                    <h4 className="px-6 text-center font-Inter text-lg font-normal leading-7 text-black">
                       {item?.title}
                     </h4>
                   </div>
@@ -422,7 +422,7 @@ const AboutUs = () => {
         </div>
       </Container>
       <Container
-        className="bg-sectionBg mb-10 bg-cover bg-right bg-no-repeat md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]"
+        className="bg-sectionBg mb-10 bg-cover bg-right bg-no-repeat md:mb-12 xl:mb-16 4xl:mb-[100px]"
         isBackground={false}
       >
         <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">

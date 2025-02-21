@@ -47,7 +47,7 @@ const AllPageContent = ({ data }: IPropsType) => {
   return (
     <>
       <Container
-        className={`mb-10 pt-10 md:mb-12 xl:mb-16 3xl:pt-[100px] 4xl:mb-[100px] 5xl:px-[150px] ${solution && ` ${bgClass} relative after:right-0 after:top-0 after:h-full after:w-full after:bg-contain after:bg-right after:bg-no-repeat sm:after:absolute`}`}
+        className={`mb-10 pt-10 md:mb-12 xl:mb-16 3xl:pt-[100px] 4xl:mb-[100px] ${solution && ` ${bgClass} relative after:right-0 after:top-0 after:h-full after:w-full after:bg-contain after:bg-right after:bg-no-repeat sm:after:absolute`}`}
       >
         <div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex w-full flex-col gap-6 lg:max-w-[800px] xl:gap-8 4xl:gap-12">
@@ -182,12 +182,12 @@ const AllPageContent = ({ data }: IPropsType) => {
         className="bg-technology bg-cover bg-center bg-no-repeat"
         style={{ backgroundSize: '100% 100%' }}
       >
-        <Container className="py-10 sm:py-12 lg:py-20 4xl:py-[100px] 5xl:px-[150px]">
+        <Container className="py-10 sm:py-12 lg:py-20 4xl:py-[100px]">
           <div className="flex flex-col items-center gap-7 md:gap-10 4xl:gap-[60px]">
             <SectionHeading
               heading={data?.AppDevelopment?.heading}
               description={data?.AppDevelopment?.description}
-              className="max-w-[1510px] gap-5"
+              className="max-w-[1210px] gap-5"
             />
             <div className="grid grid-cols-1 gap-x-[34px] gap-y-10 sm:grid-cols-2">
               {data?.AppDevelopment?.typesOfApplication?.map((item, index) => (
@@ -218,7 +218,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         className="relative after:absolute after:left-0 after:top-0 after:-z-10 after:h-1/2 after:w-full after:bg-EllipseTechnology after:bg-cover after:bg-bottom after:bg-no-repeat"
         style={{ backgroundSize: '100% 100%' }}
       >
-        <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
+        <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
           <div className="flex justify-between gap-6 rounded-2xl bg-technologbg bg-cover bg-center bg-no-repeat px-5 md:rounded-[40px] md:pl-16 md:pr-[42px] 5xl:items-center">
             <div className="xxl :py-0 flex w-full flex-col gap-[30px] py-5 md:py-10 xl:max-w-[759px]">
               <div className="flex flex-col gap-5">
@@ -267,7 +267,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                   height={590}
                 />
               </div>
-              <ul className="-ml-[100px] mt-auto space-y-3 5xl:mt-[35px]">
+              <ul className="-ml-[100px] mt-[35px] space-y-3">
                 {data?.NextGen?.accuracey?.map(
                   (item, index) =>
                     index <= 1 && (
@@ -292,13 +292,11 @@ const AllPageContent = ({ data }: IPropsType) => {
       </div>
 
       <div className="mb-10 flex flex-col gap-7 md:mb-12 md:gap-10 xl:mb-16 4xl:mb-[100px] 4xl:gap-[60px] 5xl:gap-[64px]">
-        <div className="mx-auto max-w-[1564px] px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 4xl:px-0">
-          <SectionHeading
-            heading={data?.TechnologiesIntegrations?.heading}
-            description={data?.TechnologiesIntegrations?.description}
-            className="gap-6"
-          />
-        </div>
+        <SectionHeading
+          heading={data?.TechnologiesIntegrations?.heading}
+          description={data?.TechnologiesIntegrations?.description}
+          className="max-w-[1200px] gap-6 px-4 sm:px-6 md:px-8"
+        />
         <div className="h-full w-full px-4 sm:px-0">
           <Swiper
             modules={[Autoplay, Mousewheel]}
@@ -370,7 +368,7 @@ const AllPageContent = ({ data }: IPropsType) => {
       </div>
       {data?.deployProject && (
         <div className="mb-10 bg-technologbg bg-cover bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">
-          <Container className="flex flex-col items-center gap-8 4xl:gap-[60px]">
+          <Container className="flex flex-col items-center gap-8 3xl:gap-10 4xl:gap-[80px]">
             <SectionHeading
               heading={data?.deployProject?.heading}
               description={data?.deployProject?.description}
@@ -464,12 +462,12 @@ const AllPageContent = ({ data }: IPropsType) => {
           </Container>
         </div>
       )}
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-7 md:gap-10 4xl:gap-[60px]">
           <SectionHeading
             heading={data?.WhyOptimityForDevelopment?.heading}
             description={data?.WhyOptimityForDevelopment?.description}
-            className="max-w-[1474px] gap-5"
+            className="max-w-[1000px] gap-5"
             descriptionStyle="max-w-[1180px]"
           />
           <div className="grid grid-cols-1 gap-x-[34px] gap-y-10 sm:grid-cols-2">
@@ -570,7 +568,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           </Swiper>
         </div>
       </div>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-7 md:gap-10 4xl:gap-[60px]">
           <SectionHeading
             heading={data?.TechnologyWeUseInDevelopment?.heading}
@@ -718,7 +716,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         </div>
       </div>
       <div className="mb-10 bg-technologbg bg-cover bg-no-repeat py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">
-        <Container className="flex flex-col gap-7 md:gap-10 4xl:gap-[60px] 5xl:px-[150px]">
+        <Container className="flex flex-col gap-7 md:gap-10 4xl:gap-[60px]">
           <div className="grid grid-cols-1 gap-[29px] sm:grid-cols-2 xl:grid-cols-4">
             {data?.Achievements?.aboutUs?.map((item, index) => (
               <div
@@ -820,8 +818,8 @@ const AllPageContent = ({ data }: IPropsType) => {
           </Swiper>
         </div>
       </div>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
-        <div className="flex flex-col gap-8 lg:gap-6 3xl:gap-10 4xl:gap-[60px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
+        <div className="flex flex-col gap-8 lg:gap-6 3xl:gap-10 4xl:gap-[80px]">
           <SectionHeading
             heading={data?.Faqs?.heading}
             className="4xl:!gap-5"

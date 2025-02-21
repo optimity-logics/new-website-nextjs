@@ -12,13 +12,13 @@ const ContactUs = () => {
   return (
     <>
       <div className="bg-contactUsBanner bg-cover bg-center bg-no-repeat">
-        <Container className="py-[122px] 5xl:px-[240px]">
+        <Container className="py-[122px]">
           <h2 className="4xl:[50px] font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 5xl:text-[57px] 5xl:leading-[60px]">
             Contact Us
           </h2>
         </Container>
       </div>
-      <Container className="mb-10 mt-10 flex flex-col justify-between gap-7 md:mb-12 md:mt-12 md:gap-10 lg:mt-0 lg:flex-row lg:items-end xl:mb-16 4xl:mb-[100px] 4xl:px-[140px] 5xl:px-[240px]">
+      <Container className="mb-10 mt-10 flex flex-col justify-between gap-7 md:mb-12 md:mt-12 md:gap-10 lg:mt-0 lg:flex-row lg:items-end xl:mb-16 4xl:mb-[100px] 4xl:px-[140px]">
         <div className="flex w-full max-w-[510px] flex-col gap-9">
           <h3 className="font-Poppins text-[26px] font-semibold leading-7 text-charcoalBlue">
             Get in touch

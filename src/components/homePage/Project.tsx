@@ -18,7 +18,7 @@ const Project = () => {
       className="bg-projectSectionBg bg-cover bg-right bg-no-repeat"
       style={{ backgroundColor: '#192020' }}
     >
-      <Container className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:py-20">
+      <Container className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">
         <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">
           <SectionHeading
             heading="Our innovative <span> AI solutions </span> to revolutionize
@@ -28,7 +28,7 @@ const Project = () => {
             btnStyle="!rounded-[42px] bg-[#B3B3B3] !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-white sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7 bg-opacity-25"
             description="Transform and automate processes with enterprise AI solutions tailored to your business requirements"
             LinkName="Connect to know more"
-            className="max-w-[1286px] 4xl:!gap-5"
+            className="max-w-[980px] 4xl:!gap-5"
             isDark={true}
           />
           <div className="h-full w-full">

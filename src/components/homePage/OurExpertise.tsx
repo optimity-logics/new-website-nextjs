@@ -13,7 +13,7 @@ import { Autoplay, Mousewheel } from 'swiper/modules';
 const OurExpertise = () => {
   return (
     <Container className="md:!px-0">
-      <div className="mb-10 flex flex-col items-stretch gap-[30px] overflow-x-hidden md:mb-12 md:ml-8 lg:flex-row xl:mb-16 xl:ml-10 3xl:ml-20 4xl:mb-[120px] 4xl:ml-[100px]">
+      <div className="mb-10 flex flex-col items-stretch gap-[30px] overflow-x-hidden md:mb-12 md:ml-8 lg:flex-row xl:mb-16 3xl:ml-10 4xl:mb-[100px]">
         <div className="flex w-full flex-col justify-between gap-5 lg:max-w-[375px] lg:gap-[100px]">
           <div className="flex flex-col gap-3 lg:gap-[25px]">
             <h3 className="font-Poppins text-[26px] font-medium leading-[2.3rem] text-charcoalBlue sm:text-4xl sm:leading-10 4xl:text-[45px] 4xl:leading-[48px] 5xl:text-[55px] 5xl:font-semibold 5xl:leading-[60px]">
@@ -54,10 +54,6 @@ const OurExpertise = () => {
               },
               1666: {
                 slidesPerView: 3,
-                spaceBetween: 26,
-              },
-              1836: {
-                slidesPerView: 4,
                 spaceBetween: 26,
               },
             }}

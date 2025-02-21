@@ -50,6 +50,7 @@ export default {
         EllipseTechnology: "url('/webp/EllipseTechnology.webp')",
         PrivacyPolicy: "url('/webp/privacy-policy.webp')",
         siteMap: "url('/webp/site-map.webp')",
+        'case-study': "url('/webp/case-study/case-study.webp')",
         'custom-gradient':
           'linear-gradient(180deg, rgba(0, 0, 0, 0) -5.03%, #000000 54.04%)',
         'hero-overlap':

@@ -42,7 +42,7 @@ const SectionHeading = ({
       {btnName && <Button btnName={btnName} className={btnStyle} />}
       <HighlitedDescription
         dangerouslySetInnerHTML={{ __html: heading }}
-        className={`text-center font-Poppins text-[25px] font-medium capitalize leading-[2.3rem] sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 4xl:text-[45px] 4xl:leading-[50px] 5xl:text-[50px] 5xl:leading-[55px] ${isDark ? 'text-white' : 'text-charcoalBlue'} ${headingStyle}`}
+        className={`text-center font-Poppins text-[25px] font-medium capitalize leading-[2.3rem] sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[48px] 3xl:font-semibold 4xl:text-[45px] 4xl:leading-[50px] 5xl:text-[50px] 5xl:leading-[55px] ${isDark ? 'text-white' : 'text-charcoalBlue'} ${headingStyle}`}
       />
       {description && (
         <p

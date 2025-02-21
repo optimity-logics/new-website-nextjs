@@ -41,7 +41,7 @@ const Blog = () => {
         </div>
       </Container>
       {/* <div className="mb-8 bg-[#f38f0230] py-[13.01px] 3xl:mb-10 4xl:mb-[60px]">
-        <div className="no-scrollbar mx-auto w-full max-w-[1920px] overflow-x-auto px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 5xl:px-[100px]">
+        <div className="no-scrollbar mx-auto w-full max-w-[1920px] overflow-x-auto px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 ">
           <Tabs
             aria-label="Blog Tabs"
             aria-labelledby="blog-tabs"
