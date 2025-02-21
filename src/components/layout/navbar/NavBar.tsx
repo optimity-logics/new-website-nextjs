@@ -112,7 +112,7 @@ const NavBar = () => {
                   className="absolute left-1/2 top-full"
                 >
                   <div className="hide-scrollbar flex max-h-[70vh] w-[750px] flex-col gap-8 overflow-y-scroll rounded-b-xl border-t-4 border-lightBlue bg-white p-5 shadow-lg lg:w-[1000px] xl:max-h-max xl:w-[1200px] 3xl:w-[1320px] 4xl:w-[1449px]">
-                    <div className="flex flex-wrap justify-between gap-1.5 xl:flex-nowrap xl:gap-5">
+                    <div className="flex flex-wrap justify-between gap-5 xl:flex-nowrap">
                       {menuData
                         .find((menu) => menu.menuTitle === activeMenu)
                         ?.megaMenuItem.map((item, index, array) => (
