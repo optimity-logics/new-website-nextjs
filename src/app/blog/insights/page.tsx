@@ -63,7 +63,7 @@ const Insights = () => {
           </Link>
         </div>
       </div>
-      <Container className="mb-10 pt-10 xl:mb-20 5xl:mb-[120px] 5xl:px-[150px]">
+      <Container className="mb-10 pt-10 md:mb-12 xl:mb-20 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-8 xxl:gap-10 5xl:gap-[55px]">
           <div className="no-scrollbar mx-auto max-w-full !overflow-x-scroll">
             <Tabs
@@ -122,12 +122,12 @@ const Insights = () => {
         className="bg-projectSectionBg bg-contain bg-right bg-no-repeat"
         style={{ backgroundColor: '#192020', backgroundSize: '100% 100%' }}
       >
-        <Container className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:py-20 5xl:px-[150px]">
+        <Container className="mb-10 py-10 md:mb-12 xl:mb-20 4xl:mb-[100px] 4xl:py-20">
           <div className="flex flex-col items-center gap-7 lg:gap-10">
             <SectionHeading
               heading="Get the Latest  <span> Industry Insights </span> "
               description="Bringing the best of AI’s efficiency and expert guidance, we make custom app building a cost-effective, user-friendly, and exactly envisioned experience for all."
-              className="max-w-[1299px] 4xl:!gap-5"
+              className="max-w-[1000px] 4xl:!gap-5"
               isDark={true}
             />
             <div className="no-scrollbar mx-auto max-w-full !overflow-x-scroll">
@@ -186,12 +186,12 @@ const Insights = () => {
           </div>
         </Container>
       </div>
-      <Container className="mb-10 pt-10 xl:mb-20 5xl:mb-[120px] 5xl:px-[150px]">
+      <Container className="md:mb- mb-10 xl:mb-20 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-7 lg:gap-10">
           <SectionHeading
             heading="Latest  <span> Blogs </span> "
             description="Explore our latest research on cutting-edge tech trends and discoveries to stay ahead in this digital-first landscape!"
-            className="max-w-[1299px]"
+            className="max-w-[980px]"
           />
           <div className="grid grid-cols-1 gap-[30px] sm:grid-cols-2 lg:grid-cols-3">
             {latestBlog &&
@@ -231,12 +231,12 @@ const Insights = () => {
         className="bg-projectSectionBg bg-contain bg-right bg-no-repeat"
         style={{ backgroundColor: '#192020', backgroundSize: '100% 100%' }}
       >
-        <Container className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:py-20 5xl:px-[150px]">
+        <Container className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">
           <div className="flex flex-col items-center gap-7 lg:gap-10">
             <SectionHeading
               heading="Latest   <span>Podcasts </span> "
               description="Bringing the best of AI’s efficiency and expert guidance, we make custom app building a cost-effective, user-friendly, and exactly envisioned experience for all."
-              className="max-w-[1299px] 4xl:!gap-5"
+              className="max-w-[980px] 4xl:!gap-5"
               isDark={true}
             />
             <div className="grid grid-cols-1 gap-[30px] sm:grid-cols-2 lg:grid-cols-3">
@@ -274,12 +274,12 @@ const Insights = () => {
           </div>
         </Container>
       </div>
-      <Container className="mb-10 pt-10 xl:mb-20 5xl:mb-[120px] 5xl:px-[150px]">
+      <Container className="mb-10 xl:mb-20 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-7 lg:gap-10">
           <SectionHeading
             heading="Latest  <span> Videos </span> "
             description="Explore our latest research on cutting-edge tech trends and discoveries to stay ahead in this digital-first landscape!"
-            className="max-w-[1299px]"
+            className="max-w-[980px]"
           />
           <div className="grid grid-cols-1 gap-[30px] sm:grid-cols-2 lg:grid-cols-3">
             {latestVideo &&

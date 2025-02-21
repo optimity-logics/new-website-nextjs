@@ -31,12 +31,12 @@ const ClientReview = () => {
       className="bg-technologbg bg-cover bg-no-repeat"
       style={{ backgroundSize: '100% 100%' }}
     >
-      <Container className="mb-10 py-20 md:mb-12 xl:mb-16 4xl:mb-[120px] 5xl:px-[200px]">
-        <div className="flex flex-col gap-5 lg:gap-[60px]">
+      <Container className="mb-10 py-20 md:mb-12 xl:mb-16 4xl:mb-[100px]">
+        <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[80px]">
           <SectionHeading
             heading="Real Stories from <span>Satisfied Clients</span>"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore"
-            className="max-w-[998px] 4xl:!gap-5"
+            className="max-w-[980px] 4xl:!gap-5"
             descriptionStyle="max-w-[590px]"
             isDark={true}
           />

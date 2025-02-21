@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
           </p>
         </div>
       </div>
-      <Container className="py-12 md:py-16 lg:py-20 4xl:py-[100px] 5xl:px-[150px]">
+      <Container className="py-12 md:py-16 lg:py-20 4xl:py-[100px]">
         <div className="flex flex-col gap-6 lg:gap-8 4xl:gap-11">
           <div className="flex flex-col gap-2.5">
             <h4 className="font-Inter text-[22px] font-medium leading-[32px] text-[#000]">

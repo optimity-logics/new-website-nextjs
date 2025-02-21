@@ -14,9 +14,9 @@ import Container from '../ui/Container';
 
 const Resources = () => {
   return (
-    <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[120px]">
+    <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
       {/* <div className="mb-10 flex flex-col items-center gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-0 xl:mb-16 3xl:gap-10 3xl:px-0 4xl:mb-[120px] 4xl:gap-[60px] 4xl:px-0"> */}
-      <div className="flex flex-col items-center gap-8 4xl:gap-[60px]">
+      <div className="flex flex-col items-center gap-8 3xl:gap-10 4xl:gap-[80px]">
         <SectionHeading
           heading="Know what’s <span> trending in AI </span>"
           description="Insights on the global impact of artificial intelligence across multiple domains"
@@ -59,7 +59,7 @@ const Resources = () => {
                 spaceBetween: 40,
               },
               1660: {
-                slidesPerView: 4.3,
+                slidesPerView: 4,
                 spaceBetween: 40,
               },
             }}

@@ -16,7 +16,7 @@ const Industries = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col items-center gap-8 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-0 xl:mb-16 3xl:gap-10 4xl:mb-[120px] 4xl:gap-[60px]">
+    <div className="!3xl:px-0 !4xl:px-0 mb-10 flex flex-col items-center gap-10 overflow-x-hidden px-4 sm:px-6 md:mb-12 md:px-0 xl:mb-16 3xl:gap-[50px] 4xl:mb-[100px] 4xl:gap-[80px]">
       <SectionHeading
         heading="Our Industrial <span> Expertise </span>"
         description="Our team of industry experts curates progressive solutions that befit your requirements"

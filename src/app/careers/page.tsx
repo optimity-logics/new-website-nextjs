@@ -56,7 +56,7 @@ const Career = () => {
           </Link>
         </div>
       </div>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-7 md:gap-10 4xl:gap-[60px]">
           <SectionHeading
             heading="What <span>benefits</span> are waiting for you?"
@@ -92,7 +92,7 @@ const Career = () => {
         style={{ backgroundColor: '#192020' }}
       >
         <Container
-          className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20 5xl:px-[150px]"
+          className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20"
           // isBackground={true}
         >
           <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">
@@ -153,7 +153,7 @@ const Career = () => {
           </div>
         </Container>
       </div>
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-[60px]">
           <SectionHeading heading="We have 17 open <span>positions</span> now!" />
           <div className="flex w-full flex-col items-start gap-10 md:flex-row">
@@ -243,7 +243,7 @@ const Career = () => {
         </div>
       </Container>
       <ClientReview />
-      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 5xl:px-[150px]">
+      <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="grid grid-cols-3 items-center gap-5 lg:grid-cols-5 4xl:gap-[38px]">
           <div className="col-span-2 flex h-full flex-col justify-between gap-5 4xl:gap-[38px]">
             <HighlitedDescription

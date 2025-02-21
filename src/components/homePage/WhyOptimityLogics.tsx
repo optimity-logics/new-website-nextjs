@@ -38,7 +38,7 @@ const WhyOptimityLogics = () => {
         <Button btnName="Get in Touch" className="w-max bg-orange px-[30px]" />
       </div>
       <div className="w-full max-w-[688px] rounded-[10px] bg-teambg bg-cover bg-no-repeat">
-        <div className="grid w-full grid-cols-2 place-items-center justify-center gap-4 p-4 sm:py-11 lg:px-11 4xl:px-[80px] 4xl:py-[110px] 5xl:px-[122px] 5xl:py-[156px]">
+        <div className="grid w-full grid-cols-2 place-items-center justify-center gap-4 p-4 sm:py-11 lg:px-14 3xl:px-24 4xl:px-[100px] 4xl:py-20">
           {workingData.map((stat, index) => (
             <div
               key={index}

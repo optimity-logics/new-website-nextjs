@@ -11,12 +11,12 @@ const HowWeWork = () => {
       className="mb-10 bg-projectSectionBg bg-cover bg-right bg-no-repeat"
       style={{ backgroundColor: '#192020' }}
     >
-      <Container className="py-10 md:mb-12 xl:mb-16 4xl:mb-[120px] 4xl:py-20 5xl:px-[244.5px]">
+      <Container className="py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">
         <div className="flex flex-col gap-10 lg:gap-[50px] 4xl:gap-[70px]">
           <SectionHeading
             heading="How We <span>Work</span>"
             description="Bringing the best of AI’s efficiency and expert guidance, we make custom app building a cost-effective, user-friendly, and exactly envisioned experience for all."
-            className="max-w-[735px] 4xl:!gap-5"
+            className="max-w-[980px] 4xl:!gap-5"
             isDark={true}
           />
           <div className="flex flex-col items-center justify-between gap-[50px] lg:flex-row">

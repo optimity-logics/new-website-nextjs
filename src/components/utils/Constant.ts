@@ -4043,3 +4043,40 @@ export const latestVideo = [
     techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
   },
 ];
+export const caseStudyData = [
+  {
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
+  },
+  {
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
+  },
+  {
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
+  },
+  {
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
+  },
+  {
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
+  },
+  {
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
+  },
+  {
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
+  },
+];

@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import Button from '@/components/ui/Button';
-import Container from '@/components/ui/Container';
 import { menuData } from '@/components/utils/Constant';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -50,7 +49,7 @@ const NavBar = () => {
 
   return (
     <div className="sticky top-0 z-[9999] border-b border-b-lightGray bg-white">
-      <Container className="relative max-w-full bg-white py-4 lg:py-0">
+      <div className="relative max-w-full bg-white px-4 py-4 sm:px-6 md:px-8 lg:py-0 xl:px-10">
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center gap-5 lg:hidden">
             <div
@@ -112,8 +111,8 @@ const NavBar = () => {
                   transition={{ duration: 0.5, ease: 'easeInOut' }}
                   className="absolute left-1/2 top-full"
                 >
-                  <div className="flex w-[750px] flex-col gap-8 rounded-b-xl border-t-4 border-lightBlue bg-white p-5 shadow-lg lg:w-[1000px] xl:w-[1200px] 4xl:w-[1449px]">
-                    <div className="flex justify-between gap-5">
+                  <div className="hide-scrollbar flex max-h-[70vh] w-[750px] flex-col gap-8 overflow-y-scroll rounded-b-xl border-t-4 border-lightBlue bg-white p-5 shadow-lg lg:w-[1000px] xl:max-h-max xl:w-[1200px] 3xl:w-[1320px] 4xl:w-[1449px]">
+                    <div className="flex flex-wrap justify-between gap-1.5 xl:flex-nowrap xl:gap-5">
                       {menuData
                         .find((menu) => menu.menuTitle === activeMenu)
                         ?.megaMenuItem.map((item, index, array) => (
@@ -229,7 +228,7 @@ const NavBar = () => {
           />
         </div>
         <MenuSidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-      </Container>
+      </div>
     </div>
   );
 };
