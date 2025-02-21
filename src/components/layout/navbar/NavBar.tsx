@@ -164,7 +164,7 @@ const NavBar = () => {
                               </ul>
                             </div>
                             {index < array.length - 1 && (
-                              <div className="w-[0.5px] bg-[#f0f0f0]"></div>
+                              <div className="hidden w-[0.5px] bg-[#f0f0f0] xl:block"></div>
                             )}
                           </React.Fragment>
                         ))}
