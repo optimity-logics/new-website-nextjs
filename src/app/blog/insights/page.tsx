@@ -21,16 +21,11 @@ const Insights = () => {
   const [activeKeyForLatest, setActiveKeyForLatest] = useState<string>(
     latestIndustryInsightsData[0]?.technologyName,
   );
-  // const [loading, setLoading] = useState<boolean>(false);
   const handlChangeTechnology = (activetab: string) => {
-    // setLoading(true);
     setActiveKey(activetab);
-    // setTimeout(() => setLoading(false), 900);
   };
   const handlChangeLatestInsights = (activetabForInsights: string) => {
-    // setLoading(true);
     setActiveKeyForLatest(activetabForInsights);
-    // setTimeout(() => setLoading(false), 900);
   };
 
   const selectedTechnology = insightsPageData.find(
@@ -334,22 +329,22 @@ const Insights = () => {
                 <input
                   type="email"
                   placeholder="Enter your email..."
-                  className="w-full rounded-[30px] border-none bg-transparent py-4 pl-5 focus:outline-none sm:min-w-[450px]"
+                  className="w-full rounded-[30px] border-none bg-transparent p-3 font-Inter text-base font-normal leading-6 focus:outline-none sm:min-w-[450px] md:py-4 md:pl-5 md:text-lg"
                 />
                 <button
                   type="submit"
-                  className="cursor-pointer rounded-[30px] bg-lightBlue px-[15px] py-2.5 font-Inter text-sm font-semibold uppercase text-white sm:text-base"
+                  className="cursor-pointer rounded-[30px] bg-lightBlue px-[15px] py-2.5 font-Inter text-sm font-semibold uppercase leading-4 text-white md:py-3.5 md:text-lg md:leading-5"
                 >
                   subscribe
                 </button>
               </div>
               <div className="flex items-start gap-1 lg:items-center">
                 <input type="checkbox" className="mt-1 lg:mt-0" />
-                <span className="font-Inter text-base font-normal leading-5 text-[#192020] sm:text-lg sm:leading-6">
+                <span className="font-Inter text-base font-normal leading-5 text-[#192020] lg:text-lg lg:leading-6">
                   I hereby agree to receive newsletters from Optimity Logics and
                   acknowledge company&#39;s
                   <Link href={''} className="text-lightBlue underline">
-                    &nbsp;Privacy Policy.
+                    Privacy Policy.
                   </Link>
                 </span>
               </div>

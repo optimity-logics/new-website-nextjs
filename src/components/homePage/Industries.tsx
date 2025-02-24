@@ -41,12 +41,11 @@ const Industries = () => {
             540: {
               slidesPerView: 1.3,
             },
-            640: {
-              slidesPerView: 1.5,
+            740: {
+              slidesPerView: 1.6,
             },
-
-            1280: {
-              slidesPerView: 1.8,
+            1024: {
+              slidesPerView: 2.5,
             },
             1440: {
               slidesPerView: 3.5,
@@ -62,8 +61,8 @@ const Industries = () => {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="group flex min-h-full cursor-pointer flex-col gap-4 rounded-3xl bg-[#b5b5b51a] p-[30px] transition-all duration-300 hover:bg-[#02ade11a] sm:gap-[25px]">
-                  <div className="-mt-[63px] w-max rounded-full border-2 border-[#192020] bg-white p-4 transition-all duration-300 group-hover:border-lightBlue">
+                <div className="group flex min-h-full cursor-pointer flex-col gap-3 rounded-3xl bg-[#b5b5b51a] p-6 transition-all duration-300 hover:bg-[#02ade11a] sm:p-[30px] lg:gap-4">
+                  <div className="-mt-[53px] w-max rounded-full border-2 border-[#192020] bg-white p-3 transition-all duration-300 group-hover:border-lightBlue xl:-mt-[63px] xl:p-3">
                     <Image
                       src={
                         hoveredIndex === index
@@ -93,7 +92,6 @@ const Industries = () => {
                             alt="check-mark"
                             width={24}
                             height={25}
-                            // className="mt-0.5"
                           />
                           {items}
                         </li>

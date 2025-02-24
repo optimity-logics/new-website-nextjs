@@ -40,26 +40,6 @@ const Blog = () => {
           </p>
         </div>
       </Container>
-      {/* <div className="mb-8 bg-[#f38f0230] py-[13.01px] 3xl:mb-10 4xl:mb-[60px]">
-        <div className="no-scrollbar mx-auto w-full max-w-[1920px] overflow-x-auto px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 ">
-          <Tabs
-            aria-label="Blog Tabs"
-            aria-labelledby="blog-tabs"
-            className="!w-full"
-            variant="underlined"
-            selectedKey={activeKey}
-            onSelectionChange={(e) => handleTabChange(e as string)}
-          >
-            {blogData.map((item) => (
-              <Tab
-                key={item.blogHeading}
-                title={item?.blogHeading}
-                className="!w-full font-Inter text-base font-semibold leading-6 text-[#04121F]"
-              />
-            ))}
-          </Tabs>
-        </div>
-      </div> */}
       {loading ? (
         <SkeletonForBlogContent selectedblog={selectedblog} />
       ) : selectedblog ? (
@@ -147,18 +127,18 @@ const Blog = () => {
                 <input
                   type="email"
                   placeholder="Enter your email..."
-                  className="w-full rounded-[30px] border-none bg-transparent py-4 pl-5 focus:outline-none sm:min-w-[450px]"
+                  className="w-full rounded-[30px] border-none bg-transparent p-3 font-Inter text-base font-normal leading-6 focus:outline-none sm:min-w-[450px] md:py-4 md:pl-5 md:text-lg"
                 />
                 <button
                   type="submit"
-                  className="cursor-pointer rounded-[30px] bg-lightBlue px-[15px] py-2.5 font-Inter text-base font-semibold uppercase text-white"
+                  className="cursor-pointer rounded-[30px] bg-lightBlue px-[15px] py-2.5 font-Inter text-sm font-semibold uppercase leading-4 text-white md:py-3.5 md:text-lg md:leading-5"
                 >
                   subscribe
                 </button>
               </div>
               <div className="flex items-start gap-1 lg:items-center">
                 <input type="checkbox" className="mt-1 lg:mt-0" />
-                <span className="font-Inter text-lg font-normal leading-6 text-[#192020]">
+                <span className="font-Inter text-base font-normal leading-5 text-[#192020] lg:text-lg lg:leading-6">
                   I hereby agree to receive newsletters from Optimity Logics and
                   acknowledge company&#39;s
                   <Link href={''} className="text-lightBlue underline">

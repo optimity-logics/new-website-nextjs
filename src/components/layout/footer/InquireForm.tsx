@@ -48,7 +48,7 @@ const InquireForm = () => {
       firstName: '',
       lastName: '',
       email: '',
-      country: '',
+      country: 'India',
       phone: '',
       aboutProject: '',
       file: null,
@@ -61,8 +61,8 @@ const InquireForm = () => {
   });
 
   return (
-    <div className="flex w-full max-w-[697px] flex-col gap-5 rounded-3xl border border-[#ffffff4a] bg-white/5 px-[22.5px] py-9">
-      <h3 className="text-center font-Poppins text-xl font-medium leading-6 text-white md:text-start xl:text-2xl xl:leading-7 5xl:text-[26px] 5xl:leading-8">
+    <div className="flex w-full max-w-[620px] flex-col gap-5 rounded-3xl border border-[#ffffff4a] bg-white/5 px-[22.5px] py-9">
+      <h3 className="font-Poppins text-xl font-medium leading-6 text-white xl:text-2xl xl:leading-7 5xl:text-[26px] 5xl:leading-8">
         Collaborate with Optimity Logics
       </h3>
       <form onSubmit={formik.handleSubmit} className="space-y-6">
@@ -85,7 +85,6 @@ const InquireForm = () => {
               </div>
             ) : null}
           </div>
-
           {/* Last Name */}
           <div className="w-full">
             <input
@@ -105,7 +104,6 @@ const InquireForm = () => {
             ) : null}
           </div>
         </div>
-
         <div className="flex flex-col items-center gap-6 sm:flex-row">
           {/* Email */}
           <div className="w-full">
@@ -117,7 +115,7 @@ const InquireForm = () => {
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent !pb-5 !pr-4 !pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
             />
             {formik.touched.email && formik.errors.email ? (
               <div className="mt-1 text-sm text-red">{formik.errors.email}</div>
@@ -125,14 +123,13 @@ const InquireForm = () => {
           </div>
           <div className="w-full">
             <CountrySelect
-              value={formik.values.country || 'India'} // Set default value to "India"
+              value={formik.values.country || 'India'}
               onChange={(country) => {
                 if (
                   typeof country === 'object' &&
                   country !== null &&
                   'name' in country
                 ) {
-                  // Safely extract the name property
                   formik.setFieldValue('country', country.name);
                 } else {
                   formik.setFieldValue('country', '');
@@ -140,7 +137,6 @@ const InquireForm = () => {
               }}
               onBlur={() => formik.setFieldTouched('country', true)}
               className="!placeholder:text-[#ffffff80] w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] !text-[#ffffff80] focus:outline-none"
-              placeHolder="Search "
             />
             {formik.touched.country && formik.errors.country ? (
               <div className="mt-1 text-sm text-red">
@@ -149,27 +145,24 @@ const InquireForm = () => {
             ) : null}
           </div>
         </div>
-
         {/* Phone */}
-        <div>
+        <div className="mt-2.5">
           <PhoneInput
             value={formik.values.phone}
             onChange={formik.handleChange}
             className="w-full border-none"
             placeholder="Phone number"
             defaultCountry="in" // Use lowercase 'in' for India
-            inputClassName="w-full !border-b !border-b-[#ffffff4a] !bg-transparent pr-4 pb-5 pt-4 font-Poppins text-base font-normal leading-[19.36px] placeholder:text-[#ffffff80] focus:outline-none !outline-none !border-transparent !rounded-none !text-[#ffffff4a]"
+            inputClassName="w-full !border-b !border-b-[#ffffff4a] !bg-transparent pr-4 pb-5 pt-4 !font-Poppins !text-base !font-normal !leading-[19.36px] !placeholder:text-[#ffffff80] focus:outline-none !outline-none !border-transparent !rounded-none !text-[#ffffff80]"
             countrySelectorStyleProps={{
               className: '!border-none  !z-[99]',
               buttonClassName: '!border-none !rounded-l-lg !bg-transparent ',
             }}
           />
-
           {formik.touched.phone && formik.errors.phone ? (
             <div className="mt-1 text-sm text-red">{formik.errors.phone}</div>
           ) : null}
         </div>
-
         {/* About Your Project */}
         <div>
           <textarea
@@ -192,11 +185,11 @@ const InquireForm = () => {
           <UploadDropzone
             uploader={uploader}
             onUpdate={(files) => {
-              // Handle file update
-              formik.setFieldValue('file', files[0]); // Store first file in Formik state
-              alert(files.map((x) => x.fileUrl).join('\n')); // Show file URLs in alert
+              formik.setFieldValue('file', files[0]);
+              alert(files.map((x) => x.fileUrl).join('\n'));
             }}
             width="100%"
+            minWidth="100%"
             height="175px"
           />
           <p className="font-Poppins text-base font-normal leading-5 text-[#ffffff4a]">
@@ -209,12 +202,11 @@ const InquireForm = () => {
         </div>
         <button
           type="submit"
-          className="flex cursor-pointer items-center gap-2.5 rounded-[30px] bg-white px-4 py-3 font-Poppins text-sm font-semibold uppercase md:px-[26px] md:py-4 md:text-base md:leading-6"
+          className="flex cursor-pointer items-center gap-2.5 rounded-[30px] bg-white px-4 py-3 font-Poppins text-sm font-semibold uppercase md:px-[15px] md:py-3 md:text-base md:leading-6"
         >
           inquire now <Image src={arrow} alt="Arrow" width={20} height={20} />
         </button>
       </form>
-
       {submittedData && (
         <div className="mt-6 rounded border border-green-500 bg-green-50 p-4">
           <h2 className="text-lg font-medium text-green-800">
