@@ -231,13 +231,13 @@ const AllPageContent = ({ data }: IPropsType) => {
         style={{ backgroundSize: '100% 100%' }}
       >
         <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
-          <div className="flex justify-between gap-6 rounded-2xl bg-technologbg bg-cover bg-center bg-no-repeat px-5 md:rounded-[40px] md:pl-16 md:pr-[42px] 5xl:items-center">
-            <div className="xxl :py-0 flex w-full flex-col gap-[30px] py-5 md:py-10 xl:max-w-[759px]">
+          <div className="flex items-center justify-between gap-6 rounded-2xl bg-technologbg bg-cover bg-center bg-no-repeat px-5 md:rounded-[40px] md:pl-16 md:pr-[42px] 5xl:items-center">
+            <div className="flex w-full flex-col gap-[30px] py-5 md:py-10 xl:max-w-[759px]">
               <div className="flex flex-col gap-5">
                 <h3 className="font-Inter text-2xl font-semibold leading-7 text-white 3xl:text-4xl 3xl:leading-[43.57px]">
                   {data?.NextGen?.heading}
                 </h3>
-                <p className="font-Inter text-base font-normal leading-6 text-white 4xl:text-xl 4xl:leading-7">
+                <p className="font-Inter text-base font-normal leading-6 text-white 4xl:text-lg 4xl:leading-6">
                   {data?.NextGen?.description}
                 </p>
               </div>
@@ -255,9 +255,8 @@ const AllPageContent = ({ data }: IPropsType) => {
                 />
               </Link>
             </div>
-
             <div className="hidden w-full max-w-[820px] xl:flex">
-              <ul className="-ml-[135px] mt-auto space-y-3 xl:mb-5">
+              <ul className="-ml-[135px] mt-auto space-y-3 xl:mb-5 5xl:-ml-[175px]">
                 {data?.NextGen?.accuracey?.map(
                   (item, index) =>
                     index >= 2 &&
@@ -277,7 +276,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                     ),
                 )}
               </ul>
-              <div className="5xl:-mt-[77px]">
+              <div className="-mt-[60px] 5xl:-mt-[77px]">
                 <Image
                   src={data?.NextGen?.img}
                   alt=""
