@@ -91,10 +91,7 @@ const Career = () => {
         className="bg-projectSectionBg bg-cover bg-right bg-no-repeat"
         style={{ backgroundColor: '#192020' }}
       >
-        <Container
-          className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20"
-          // isBackground={true}
-        >
+        <Container className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">
           <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">
             <SectionHeading
               heading="Get a <span>glimpse of the magic happening</span>   at optimity logics!"

@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 
 type HeroVideoProps = {
   forModal?: boolean | null;
-  setForModal: (quantity: boolean) => void;
+  setForModal: (val: boolean) => void;
   width: string;
   children: React.ReactNode;
   outSideClick?: () => void;

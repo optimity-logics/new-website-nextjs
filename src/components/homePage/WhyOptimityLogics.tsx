@@ -19,10 +19,9 @@ const WhyOptimityLogics = () => {
           <Button
             btnName="Why optimity logics"
             className="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
-            // className="w-max !rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !py-2.5 px-[23px] !text-2xl !font-normal !leading-[29.05px] !text-black"
           />
           <HighlitedHeading
-            className="text-center font-Poppins text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 5xl:text-[50px] 5xl:font-semibold 5xl:leading-[54px]"
+            className="text-center font-Poppins text-[26px] font-medium capitalize leading-7 text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 5xl:text-[50px] 5xl:font-semibold 5xl:leading-[54px]"
             dangerouslySetInnerHTML={{
               __html: `An <span>AI development company</span> trusted by clients across the globe!`,
             }}

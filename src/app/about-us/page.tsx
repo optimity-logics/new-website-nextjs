@@ -179,11 +179,11 @@ const AboutUs = () => {
           </h2>
           <div className="flex flex-col items-center gap-[30px]">
             <div className="flex flex-col gap-[23px] md:flex-row">
-              <div className="flex w-full flex-col gap-5 rounded-[15px] bg-[#FFD9CF] py-[28.49px] pl-[46.13px] pr-[45.87px] md:w-1/2">
-                <h3 className="font-Inter text-[37.99px] font-semibold leading-[60.78px] text-black">
+              <div className="flex w-full flex-col gap-2 rounded-[15px] bg-[#FFD9CF] p-5 md:w-1/2 3xl:px-[45.87px]">
+                <h3 className="font-Inter text-3xl font-semibold leading-9 text-black xxl:text-[37.99px] xxl:leading-[42px]">
                   Our Mission
                 </h3>
-                <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
+                <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] xl:text-xl xl:leading-[26px]">
                   Our mission is to expedite the integration of new technologies
                   within enterprises, addressing the inevitable challenges that
                   accompany digital expansion and fostering continuous
@@ -193,11 +193,11 @@ const AboutUs = () => {
                   delivery, offering steadfast support throughout the process.
                 </p>
               </div>
-              <div className="flex w-full flex-col gap-5 rounded-[15px] bg-[#FBFDFF] py-[28.49px] pl-[46.13px] pr-[45.87px] md:w-1/2">
-                <h3 className="font-Inter text-[37.99px] font-semibold leading-[60.78px] text-black">
+              <div className="flex w-full flex-col gap-2 rounded-[15px] bg-[#FBFDFF] p-5 md:w-1/2 3xl:px-[45.87px]">
+                <h3 className="font-Inter text-3xl font-semibold leading-9 text-black xxl:text-[37.99px] xxl:leading-[42px]">
                   Our Vision
                 </h3>
-                <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
+                <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] xl:text-xl xl:leading-[26px]">
                   We aspire to lead as a top web solutions provider in IT,
                   surpassing our current market standing. Committed to our
                   customers success, we recognize our growth is linked to
@@ -209,11 +209,11 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-5 rounded-[15px] bg-[#B1EDFF] py-[28.49px] pl-[46.13px] pr-[45.87px]">
-              <h3 className="font-Inter text-[37.99px] font-semibold leading-[60.78px] text-black">
+            <div className="flex flex-col gap-2 rounded-[15px] bg-[#B1EDFF] p-5 3xl:px-[45.87px]">
+              <h3 className="font-Inter text-3xl font-semibold leading-9 text-black xxl:text-[37.99px] xxl:leading-[42px]">
                 Our Values
               </h3>
-              <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
+              <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] xl:text-xl xl:leading-[26px]">
                 Trust is fundamental in our relationships; we prioritize
                 empathy, understanding others needs, challenges, and
                 aspirations. Through attentive listening and proactive
@@ -359,10 +359,9 @@ const AboutUs = () => {
                     className="mb-10 !h-auto min-h-[490px] rounded-[15px] bg-cover bg-center bg-no-repeat"
                     style={{
                       backgroundImage: `url("${item?.employeImg}")`,
-                      backgroundSize: '100%,100%',
                     }}
                   >
-                    <div className="mt-auto flex h-full items-end bg-exportTeamBg bg-cover bg-no-repeat px-[35px] py-[70.48px] pt-[100px]">
+                    <div className="mt-auto flex h-full items-end bg-exportTeamBg bg-cover bg-no-repeat px-[35px] pb-10">
                       <div className="flex items-start gap-[11.85px]">
                         <div className="h-[47px] w-[23px] bg-export-team-gradient"></div>
                         <div className="flex flex-col gap-[22.5px]">
@@ -388,7 +387,7 @@ const AboutUs = () => {
             isDark={false}
           />
           <div className="flex flex-col gap-5 md:gap-10">
-            <div className="grid grid-cols-5 gap-5">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
               {WorkLifeData &&
                 WorkLifeData.map((item, index) => (
                   <div
@@ -399,7 +398,7 @@ const AboutUs = () => {
                     <div className="flex h-[56px] w-[56px] items-center justify-center rounded-full bg-black">
                       <Image src={item?.img} alt="" width={24} height={24} />
                     </div>
-                    <h4 className="px-6 text-center font-Inter text-lg font-normal leading-7 text-black">
+                    <h4 className="text-center font-Inter text-lg font-normal leading-7 text-black">
                       {item?.title}
                     </h4>
                   </div>

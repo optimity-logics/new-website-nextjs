@@ -15,12 +15,6 @@ import Button from '../ui/Button';
 
 const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
   const { width } = useWindowSize();
-  // const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-
-  // const handleToggle = (index: number) => {
-  //   setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
-  // };
-
   useEffect(() => {
     if (width >= 1024) {
       setIsOpen(false);
@@ -155,7 +149,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
             </Accordion>
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="mb-5 flex items-center justify-center">
             <Button
               btnName="Contact Us"
               className="bg-lightBlue px-4 lg:px-6 xl:px-[30px]"

@@ -19,21 +19,21 @@ const HowWeWork = () => {
             className="max-w-[980px] 4xl:!gap-5"
             isDark={true}
           />
-          <div className="flex flex-col items-center justify-between gap-[50px] lg:flex-row">
+          <div className="flex flex-col justify-between gap-[50px] md:flex-row md:items-center">
             <div className="flex w-full max-w-[691px] flex-col 3xl:py-[32.5px]">
               {howWeWorkData &&
                 howWeWorkData.map((item, index) => (
                   <div key={index}>
                     <div className="flex items-center gap-[25px]">
-                      <div className="flex w-14 items-center justify-center rounded-full bg-white p-4 text-center font-Poppins text-2xl font-bold leading-6 text-black">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-center font-Poppins text-xl font-bold leading-6 text-black lg:h-14 lg:w-14 lg:text-2xl">
                         {`0${index + 1}`}
                       </div>
-                      <p className="font-Poppins text-xl font-light leading-6 text-white">
+                      <p className="font-Poppins text-base font-light leading-6 text-white lg:text-xl">
                         {item}
                       </p>
                     </div>
                     <div
-                      className={`ml-[26px] h-full min-h-7 w-0.5 bg-[#3e656d] xl:min-h-10 ${index !== howWeWorkData.length - 1 ? 'block' : 'hidden'} `}
+                      className={`ml-[19px] h-full min-h-4 w-0.5 bg-[#3e656d] lg:ml-[26px] lg:min-h-7 xl:min-h-10 ${index !== howWeWorkData.length - 1 ? 'block' : 'hidden'} `}
                     ></div>
                   </div>
                 ))}

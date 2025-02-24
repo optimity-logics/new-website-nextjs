@@ -49,8 +49,8 @@ const AllPageContent = ({ data }: IPropsType) => {
       <Container
         className={`mb-10 pt-10 md:mb-12 xl:mb-16 3xl:pt-[100px] 4xl:mb-[100px] ${solution && ` ${bgClass} relative after:right-0 after:top-0 after:h-full after:w-full after:bg-contain after:bg-right after:bg-no-repeat sm:after:absolute`}`}
       >
-        <div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row">
-          <div className="flex w-full flex-col gap-6 lg:max-w-[800px] xl:gap-8 4xl:gap-12">
+        <div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row 4xl:gap-16">
+          <div className="flex w-full flex-col gap-6 lg:max-w-[736px] xl:gap-8 4xl:gap-12">
             <div className="flex flex-col gap-3 md:gap-8">
               <h2 className="font-Inter text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 4xl:text-[55px] 4xl:leading-[60px] 5xl:text-[60px] 5xl:font-semibold 5xl:leading-[64px]">
                 {data?.HeroSectionData?.heading}
@@ -61,10 +61,16 @@ const AllPageContent = ({ data }: IPropsType) => {
             </div>
             <Link
               href={data?.HeroSectionData?.btnLink}
-              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
+              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
             >
               {data?.HeroSectionData?.btnName}{' '}
-              <Image src={arrow} alt={arrow} width={32} height={32} />
+              <Image
+                src={arrow}
+                alt={arrow}
+                width={32}
+                height={32}
+                className="w-5 xl:w-max"
+              />
             </Link>
             <div className="grid grid-cols-2 gap-4 sm:gap-10 md:grid-cols-4">
               {data?.HeroSectionData?.workWithTechnology &&
@@ -99,10 +105,10 @@ const AllPageContent = ({ data }: IPropsType) => {
               ) : (
                 <form className="flex w-full max-w-[620px] flex-col gap-[14px] rounded-3xl bg-[#e2f7f8] bg-cover px-[26px] py-[30px]">
                   <div className="flex flex-col gap-1.5">
-                    <h3 className="font-Inter text-[30px] font-semibold leading-[36.31px] text-black">
+                    <h3 className="font-Inter text-2xl font-semibold leading-7 text-black 3xl:text-3xl 3xl:leading-9">
                       Book a Developer Interview
                     </h3>
-                    <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
+                    <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] 3xl:text-xl 3xl:leading-7">
                       Provide details about the skills you need, and we’ll find
                       the right candidate for you.
                     </p>
@@ -187,18 +193,18 @@ const AllPageContent = ({ data }: IPropsType) => {
             <SectionHeading
               heading={data?.AppDevelopment?.heading}
               description={data?.AppDevelopment?.description}
-              className="max-w-[1210px] gap-5"
+              className="max-w-[1070px] gap-5"
             />
-            <div className="grid grid-cols-1 gap-x-[34px] gap-y-10 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 3xl:gap-x-[34px] 3xl:gap-y-10">
               {data?.AppDevelopment?.typesOfApplication?.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col gap-2.5 rounded-[26.89px] bg-[#B5B5B51a] p-[30px]"
+                  className="flex flex-col gap-2.5 rounded-[26.89px] bg-[#B5B5B51a] p-6 xl:p-[30px]"
                 >
-                  <h3 className="font-Inter text-[30px] font-semibold leading-[36.31px] text-black">
+                  <h3 className="font-Inter text-2xl font-semibold leading-7 text-black 3xl:text-3xl 3xl:leading-9">
                     {item?.heading}
                   </h3>
-                  <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C] opacity-70">
+                  <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] opacity-70 3xl:text-xl 3xl:leading-7">
                     {item?.description}
                   </p>
                 </div>
@@ -206,10 +212,16 @@ const AllPageContent = ({ data }: IPropsType) => {
             </div>
             <Link
               href={data?.AppDevelopment?.btnLink}
-              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
+              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
             >
               {data?.AppDevelopment?.btnName}{' '}
-              <Image src={arrow} alt={arrow} width={32} height={32} />
+              <Image
+                src={arrow}
+                alt={arrow}
+                width={32}
+                height={32}
+                className="w-5 xl:w-max"
+              />
             </Link>
           </div>
         </Container>
@@ -222,24 +234,30 @@ const AllPageContent = ({ data }: IPropsType) => {
           <div className="flex justify-between gap-6 rounded-2xl bg-technologbg bg-cover bg-center bg-no-repeat px-5 md:rounded-[40px] md:pl-16 md:pr-[42px] 5xl:items-center">
             <div className="xxl :py-0 flex w-full flex-col gap-[30px] py-5 md:py-10 xl:max-w-[759px]">
               <div className="flex flex-col gap-5">
-                <h3 className="font-Inter text-4xl font-semibold leading-[43.57px] text-white">
+                <h3 className="font-Inter text-2xl font-semibold leading-7 text-white 3xl:text-4xl 3xl:leading-[43.57px]">
                   {data?.NextGen?.heading}
                 </h3>
-                <p className="font-Inter text-xl font-normal leading-7 text-white">
+                <p className="font-Inter text-base font-normal leading-6 text-white 4xl:text-xl 4xl:leading-7">
                   {data?.NextGen?.description}
                 </p>
               </div>
               <Link
                 href={data?.NextGen?.btnLink}
-                className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
+                className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
               >
                 {data?.NextGen?.btnName}
-                <Image src={arrow} alt={arrow} width={32} height={32} />
+                <Image
+                  src={arrow}
+                  alt={arrow}
+                  width={32}
+                  height={32}
+                  className="w-5 xl:w-max"
+                />
               </Link>
             </div>
 
             <div className="hidden w-full max-w-[820px] xl:flex">
-              <ul className="-ml-[135px] mt-auto space-y-3 3xl:mb-10">
+              <ul className="-ml-[135px] mt-auto space-y-3 xl:mb-5">
                 {data?.NextGen?.accuracey?.map(
                   (item, index) =>
                     index >= 2 &&
@@ -295,7 +313,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         <SectionHeading
           heading={data?.TechnologiesIntegrations?.heading}
           description={data?.TechnologiesIntegrations?.description}
-          className="max-w-[1200px] gap-6 px-4 sm:px-6 md:px-8"
+          className="max-w-[1070px] gap-6 px-4 sm:px-6 md:px-8"
         />
         <div className="h-full w-full px-4 sm:px-0">
           <Swiper
@@ -313,11 +331,11 @@ const AllPageContent = ({ data }: IPropsType) => {
                 slidesPerView: 1.3,
               },
               640: {
-                slidesPerView: 1.5,
+                slidesPerView: 2.1,
               },
 
-              1280: {
-                slidesPerView: 1.8,
+              800: {
+                slidesPerView: 2.5,
               },
               1440: {
                 slidesPerView: 3.8,
@@ -359,10 +377,16 @@ const AllPageContent = ({ data }: IPropsType) => {
         <div className="mx-auto w-full max-w-[1620px] px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 5xl:px-0">
           <Link
             href={data?.TechnologiesIntegrations?.btnLink}
-            className="float-left flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
+            className="float-left flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
           >
             {data?.TechnologiesIntegrations?.btnName}{' '}
-            <Image src={arrow} alt={arrow} width={32} height={32} />
+            <Image
+              src={arrow}
+              alt={arrow}
+              width={32}
+              height={32}
+              className="w-5 xl:w-max"
+            />
           </Link>
         </div>
       </div>
@@ -381,10 +405,6 @@ const AllPageContent = ({ data }: IPropsType) => {
                 spaceBetween={33}
                 slidesPerView={1}
                 modules={[Autoplay, Mousewheel]}
-                // autoplay={{
-                //   delay: 2000,
-                //   disableOnInteraction: false,
-                // }}
                 speed={1000}
                 mousewheel={{
                   invert: true,
@@ -394,9 +414,6 @@ const AllPageContent = ({ data }: IPropsType) => {
                   640: {
                     slidesPerView: 2,
                   },
-                  // 820: {
-                  //   slidesPerView: 2,
-                  // },
                   1024: {
                     slidesPerView: 2,
                     spaceBetween: 30,
@@ -405,10 +422,6 @@ const AllPageContent = ({ data }: IPropsType) => {
                     slidesPerView: 3,
                     spaceBetween: 40,
                   },
-                  // 1660: {
-                  //   slidesPerView: 4,
-                  //   spaceBetween: 40,
-                  // },
                 }}
                 className="w-full"
               >
@@ -470,17 +483,17 @@ const AllPageContent = ({ data }: IPropsType) => {
             className="max-w-[1000px] gap-5"
             descriptionStyle="max-w-[1180px]"
           />
-          <div className="grid grid-cols-1 gap-x-[34px] gap-y-10 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 gap-y-5 md:grid-cols-2 3xl:gap-x-[34px] 3xl:gap-y-10">
             {data?.WhyOptimityForDevelopment?.typesOfApplication.map(
               (item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col gap-3 rounded-[26.89px] bg-[#B5B5B51a] p-[30px]"
+                  className="flex flex-col gap-3 rounded-[26.89px] bg-[#B5B5B51a] p-6 xl:p-[30px]"
                 >
-                  <h3 className="font-Inter text-[30px] font-semibold leading-[36.31px] text-black">
+                  <h3 className="font-Inter text-2xl font-semibold leading-7 text-black 3xl:text-3xl 3xl:leading-9">
                     {item?.heading}
                   </h3>
-                  <p className="font-Inter text-xl font-normal leading-7 text-[#504C4C]">
+                  <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] 3xl:text-xl 3xl:leading-7">
                     {item?.description}
                   </p>
                 </div>
@@ -494,7 +507,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         <SectionHeading
           heading={data?.TechnologiesFeatured?.heading}
           description={data?.TechnologiesFeatured?.description}
-          className="max-w-[1290px]"
+          className="max-w-[1290px] sm:px-6 lg:px-0"
           descriptionStyle="max-w-[950px]"
           isDark={true}
         />
@@ -504,10 +517,6 @@ const AllPageContent = ({ data }: IPropsType) => {
             slidesPerView={1}
             centeredSlides={true}
             modules={[Autoplay, Mousewheel]}
-            // autoplay={{
-            //   delay: 2000,
-            //   disableOnInteraction: false,
-            // }}
             speed={1000}
             mousewheel={{
               invert: true,
@@ -575,17 +584,17 @@ const AllPageContent = ({ data }: IPropsType) => {
             description={data?.TechnologyWeUseInDevelopment?.description}
             className="max-w-[900px]"
           />
-          <div className="flex flex-col gap-[33px]">
+          <div className="flex flex-col gap-5 3xl:gap-[33px]">
             {data?.TechnologyWeUseInDevelopment?.technologyServices &&
               data?.TechnologyWeUseInDevelopment?.technologyServices.map(
                 (item, index) => (
                   <div
                     key={index}
-                    className="gradient-border flex flex-col gap-5 !rounded-[33.11px] bg-[#f8f8f8] p-[33.61px] xl:flex-row xl:items-center"
+                    className="gradient-border flex flex-col gap-5 bg-[#f8f8f8] p-5 md:p-7 xl:flex-row xl:items-center 3xl:p-[33.61px]"
                   >
                     <div className="flex items-center gap-[15px] lg:min-w-[270px]">
                       <div
-                        className="flex h-[60px] min-w-[60px] items-center justify-center rounded-full"
+                        className="flex h-14 w-14 items-center justify-center rounded-full 3xl:h-[60px] 3xl:min-w-[60px]"
                         style={{ backgroundColor: item?.bgColor }}
                       >
                         <Image
@@ -595,7 +604,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                           height={31}
                         />
                       </div>
-                      <span className="font-Inter text-[28px] font-medium leading-[35px] text-[#192020]">
+                      <span className="font-Inter text-xl font-medium leading-6 text-[#192020] sm:text-2xl sm:leading-[30px] 3xl:text-[28px] 3xl:leading-[35px]">
                         {item?.servicesName}
                       </span>
                     </div>
@@ -603,17 +612,16 @@ const AllPageContent = ({ data }: IPropsType) => {
                       {item?.servicesItems?.map((items, ind) => (
                         <div
                           key={ind}
-                          className="gradient-border flex items-center gap-2 rounded-[33.61px] p-[14px]"
+                          className="gradient-border flex items-center gap-2 rounded-[33.61px] p-3.5"
                         >
-                          <div>
-                            <Image
-                              src={checkMark}
-                              alt="check-mark"
-                              width={24}
-                              height={24}
-                            />
-                          </div>
-                          <span className="line-clamp-1 font-Inter text-base font-medium leading-7 text-[#192020] sm:line-clamp-none">
+                          <Image
+                            src={checkMark}
+                            alt="check-mark"
+                            width={24}
+                            height={24}
+                            className="!w-5 sm:w-max"
+                          />
+                          <span className="line-clamp-1 font-Inter text-sm font-medium leading-4 text-[#192020] sm:line-clamp-none sm:text-base sm:leading-6">
                             {items}
                           </span>
                         </div>
@@ -625,10 +633,16 @@ const AllPageContent = ({ data }: IPropsType) => {
           </div>
           <Link
             href={data?.TechnologyWeUseInDevelopment?.btnLink}
-            className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-5 text-white sm:px-[21.71px] sm:text-[21px] sm:leading-[26.27px] md:py-3 5xl:py-[19.56px]"
+            className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
           >
             {data?.TechnologyWeUseInDevelopment?.btnName}{' '}
-            <Image src={arrow} alt={arrow} width={32} height={32} />
+            <Image
+              src={arrow}
+              alt={arrow}
+              width={32}
+              height={32}
+              className="w-5 xl:w-max"
+            />
           </Link>
         </div>
       </Container>
@@ -656,7 +670,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                 slidesPerView: 1.3,
               },
               640: {
-                slidesPerView: 2,
+                slidesPerView: 2.2,
               },
               820: {
                 slidesPerView: 2.5,
