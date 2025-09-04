@@ -252,7 +252,7 @@ const NavBar = () => {
               className="bg-lightBlue px-4 lg:px-6 xl:px-[30px]"
               onClick={() => router.push('/contact-us')}
             /> */}
-            <button className="w-max rounded-[50px] bg-[#1A6AA3] px-[30px] py-[14px] font-Inter text-[20px] font-normal leading-[100%] text-white">
+            <button className="w-max rounded-[50px] bg-[#1A6AA3] px-[30px] py-[14px] font-Inter text-[18px] font-normal leading-[100%] text-white">
               Contact Us
             </button>
           </div>

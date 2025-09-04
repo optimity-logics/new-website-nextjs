@@ -1,13 +1,6 @@
 import Container from '@/components/ui/Container';
-import Image from 'next/image';
-import logo from '../../../../public/svg/footer-logo.svg';
 import { footerData } from '../../utils/Constant';
-import InquireForm from './InquireForm';
 import Review from './Review';
-import SocialMedia from './SocialMedia';
-import location from '../../../../public/svg/footer/location.svg';
-import phone from '../../../../public/svg/footer/phone.svg';
-import email from '../../../../public/svg/footer/mail.svg';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -18,7 +11,7 @@ const Footer = () => {
     >
       <Container className="pt-10 4xl:pt-20" isBackground={false}>
         <div className="flex flex-col gap-8 border-b-[1.34px] border-b-[#ffffff4a] pb-10 3xl:gap-10 4xl:gap-[60px]">
-          <div className="flex flex-col justify-between gap-7 md:flex-row lg:items-center 3xl:gap-14">
+          {/* <div className="flex flex-col justify-between gap-7 md:flex-row lg:items-center 3xl:gap-14">
             <div className="flex w-full max-w-[795px] flex-col gap-[35px]">
               <div>
                 <Image
@@ -30,7 +23,6 @@ const Footer = () => {
                 />
               </div>
               <div className="flex flex-col gap-6 sm:gap-[30px]">
-                {/* <div className="flex flex-col gap-[30px]"> */}
                 <h3 className="font-Poppins text-[26px] font-semibold leading-[30px] text-white 5xl:text-4xl 5xl:leading-[38px]">
                   <span className="highlitedtextfooter block">
                     Have a question?
@@ -42,7 +34,6 @@ const Footer = () => {
                   development approach, or anything else. Our Expert Consultants
                   are ready to help!
                 </span>
-                {/* </div> */}
                 <div className="flex flex-col gap-[15px]">
                   <div className="flex items-start gap-2 sm:gap-[15px]">
                     <div className="mt-1 w-full max-w-max sm:mt-1.5">
@@ -92,7 +83,7 @@ const Footer = () => {
               </div>
             </div>
             <InquireForm />
-          </div>
+          </div> */}
           <Review />
           <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-4 xl:gap-[70px] 3xl:gap-20 4xl:gap-[95.14px]">
             {footerData.map((section, index) => (
