@@ -1,4 +1,3 @@
-import PrivacyPolicy from '@/app/privacy-policy/page';
 import { nextui } from '@nextui-org/theme';
 import type { Config } from 'tailwindcss';
 import gridStackC from './tailwind/plugins/grid-stack';
@@ -64,8 +63,8 @@ export default {
         'tech-we-work': "url('/images/tech-we-work.png')",
         overly: "url('/images/overly.png')",
         'project-bg': "url('/images/project.png')",
-        'line': "url('/images/Line.png')",
-        'contact': "url('/images/contact-us.png')",
+        line: "url('/images/Line.png')",
+        contact: "url('/images/contact-us.png')",
       },
       fontFamily: {
         Inter: ['Inter'],

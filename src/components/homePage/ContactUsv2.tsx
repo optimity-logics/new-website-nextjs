@@ -3,7 +3,7 @@ import React from 'react';
 export const ContactUsv2 = () => {
   return (
     <div className="mx-5 mb-[100px] mt-[300px] h-full max-w-full rounded-xl bg-black">
-      <div className="grid-stack grid h-full w-full max-w-full px-[32px]">
+      <div className="grid h-full w-full max-w-full px-[32px] grid-stack">
         <div className="mx-auto -mt-[180px] w-full rounded-t-xl bg-black p-5 text-white">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore

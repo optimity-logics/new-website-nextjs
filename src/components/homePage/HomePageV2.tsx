@@ -168,11 +168,11 @@ const HomePageV2 = () => {
       {/* section-4 */}
       <div className="max-w-[1920px] px-[100px] py-[120px]">
         <div className="grid grid-cols-3 gap-[45px]">
-          <div className="shadow-work-card rounded-[38px] bg-white px-[32px] pb-[20px] pt-[8px]">
+          <div className="rounded-[38px] bg-white px-[32px] pb-[20px] pt-[8px] shadow-work-card">
             <div className="flex flex-col gap-[20px]">
               <div
                 style={{ backgroundSize: '100% 100%' }}
-                className="bg-card-1 flex w-full items-center justify-center bg-cover bg-no-repeat py-[40px] font-Inter text-[60px] font-semibold leading-[70px] text-black"
+                className="flex w-full items-center justify-center bg-card-1 bg-cover bg-no-repeat py-[40px] font-Inter text-[60px] font-semibold leading-[70px] text-black"
               >
                 20+
               </div>
@@ -181,11 +181,11 @@ const HomePageV2 = () => {
               </span>
             </div>
           </div>
-          <div className="shadow-work-card rounded-[38px] bg-white px-[32px] pb-[20px] pt-[8px]">
+          <div className="rounded-[38px] bg-white px-[32px] pb-[20px] pt-[8px] shadow-work-card">
             <div className="flex flex-col gap-[20px]">
               <div
                 style={{ backgroundSize: '100% 100%' }}
-                className="bg-card-2 flex w-full items-center justify-center bg-cover bg-no-repeat py-[40px] font-Inter text-[60px] font-semibold leading-[70px] text-black"
+                className="flex w-full items-center justify-center bg-card-2 bg-cover bg-no-repeat py-[40px] font-Inter text-[60px] font-semibold leading-[70px] text-black"
               >
                 50+
               </div>
@@ -194,11 +194,11 @@ const HomePageV2 = () => {
               </span>
             </div>
           </div>
-          <div className="shadow-work-card rounded-[38px] bg-white px-[32px] pb-[20px] pt-[8px]">
+          <div className="rounded-[38px] bg-white px-[32px] pb-[20px] pt-[8px] shadow-work-card">
             <div className="flex flex-col gap-[20px]">
               <div
                 style={{ backgroundSize: '100% 100%' }}
-                className="bg-card-3 flex w-full items-center justify-center bg-cover bg-no-repeat py-[40px] font-Inter text-[60px] font-semibold leading-[70px] text-black"
+                className="flex w-full items-center justify-center bg-card-3 bg-cover bg-no-repeat py-[40px] font-Inter text-[60px] font-semibold leading-[70px] text-black"
               >
                 10+
               </div>
@@ -222,7 +222,7 @@ const HomePageV2 = () => {
             {techWeWork &&
               techWeWork.map((item, index) => (
                 <div
-                  className="bg-overly rounded-[24px] bg-cover bg-no-repeat"
+                  className="rounded-[24px] bg-overly bg-cover bg-no-repeat"
                   key={index}
                 >
                   <div className="grid h-full w-full rounded-[20px] bg-cover p-[8px] grid-stack">
@@ -379,7 +379,7 @@ const HomePageV2 = () => {
               client.map((item, index) => (
                 <div
                   key={index}
-                  className={`rounded-[17px] p-[45px] ${item?.id === 1 ? 'shadow-card bg-white' : 'shadow-custom bg-[#F7F7F8]'} flex flex-col gap-[42px]`}
+                  className={`rounded-[17px] p-[45px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col gap-[42px]`}
                 >
                   <p className="font-Inter text-[20px] font-normal leading-[33px] text-black">
                     {item?.message}
