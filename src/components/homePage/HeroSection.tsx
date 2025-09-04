@@ -1,9 +1,8 @@
 import React from 'react';
 import Button from '../ui/Button';
 import { logoIcons } from '../utils/Constant';
-import Image from 'next/image';
-import Marquee from 'react-fast-marquee';
 import Container from '../ui/Container';
+import LogoAnimation from './LogoAnimation';
 
 const HeroSection = () => {
   return (
@@ -42,7 +41,7 @@ const HeroSection = () => {
           <span className="text-center font-Poppins text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
           </span>
-          <Marquee
+          {/* <Marquee
             speed={55}
             gradient={true}
             gradientColor="black"
@@ -65,7 +64,7 @@ const HeroSection = () => {
                   </div>
                 ))}
             </div>
-          </Marquee>
+          </Marquee> */}
           {/* <Marquee
             speed={55}
             pauseOnHover={true}
@@ -89,6 +88,7 @@ const HeroSection = () => {
               ))}
             </div>
           </Marquee> */}
+          <LogoAnimation logo={logoIcons} />
         </div>
       </div>
     </div>

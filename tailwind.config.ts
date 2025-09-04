@@ -1,6 +1,7 @@
 import PrivacyPolicy from '@/app/privacy-policy/page';
 import { nextui } from '@nextui-org/theme';
 import type { Config } from 'tailwindcss';
+import gridStackC from './tailwind/plugins/grid-stack';
 
 export default {
   content: [
@@ -57,6 +58,14 @@ export default {
           'linear-gradient(73.24deg, rgba(255, 255, 255, 0) 44.98%, rgba(255, 255, 255, 0.8) 76.91%)',
         'export-team-gradient':
           'linear-gradient(170.88deg, #004372 8.79%, #02ADE1 50.73%)',
+        'card-1': "url('/images/card-1.png')",
+        'card-2': "url('/images/card-2.png')",
+        'card-3': "url('/images/card-3.png')",
+        'tech-we-work': "url('/images/tech-we-work.png')",
+        overly: "url('/images/overly.png')",
+        'project-bg': "url('/images/project.png')",
+        'line': "url('/images/Line.png')",
+        'contact': "url('/images/contact-us.png')",
       },
       fontFamily: {
         Inter: ['Inter'],
@@ -84,7 +93,13 @@ export default {
         graphite: '#636363',
         lavenderGray: '#888790',
       },
+      boxShadow: {
+        'work-card': '0px 7px 14px 0px #F4F2EF',
+        card: '0px 0px 23.7px 0px #00000030',
+        custom:
+          '0px 1.41px 2.83px -1.41px #0000001A, 0px 1.41px 4.24px 0px #0000001A, 0px 0px 0px 1.41px #1313160D',
+      },
     },
   },
-  plugins: [nextui()],
+  plugins: [nextui(), gridStackC],
 } satisfies Config;

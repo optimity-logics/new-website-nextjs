@@ -1,18 +1,10 @@
-import ClientReview from './ClientReview';
-import Faqs from './Faqs';
-import HeroSection from './HeroSection';
-import HowWeWork from './HowWeWork';
-import Industries from './Industries';
-import OurExpertise from './OurExpertise';
-import Project from './Project';
-import Resources from './Resources';
-import TechnologyWeWork from './TechnologyWeWork';
-import WhyOptimityLogics from './WhyOptimityLogics';
+import HomePageV2 from './HomePageV2';
 
 const Index = () => {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection />
+      <ContactUsv2 />
       <WhyOptimityLogics />
       <Project />
       <OurExpertise />
@@ -21,8 +13,9 @@ const Index = () => {
       <HowWeWork />
       <Resources />
       <ClientReview />
-      {/* <ContactUs /> */}
-      <Faqs />
+      <ContactUs />
+      <Faqs /> */}
+      <HomePageV2 />
     </>
   );
 };
