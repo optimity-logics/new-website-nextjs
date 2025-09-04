@@ -50,7 +50,7 @@ const FaqsAccordion = ({ data }: IAccordionProps) => {
                     className={`${isExpanded && 'rotate-90'}`}
                   />
                 }
-                className="!rounded-none border-b !border-b-bluishGray !px-0 !py-0 !shadow-none"
+                className="!rounded-none border-b !border-b-bluishGray !bg-transparent !px-0 !py-0 !shadow-none"
                 onPress={() => handleToggle(index)}
               >
                 <p className="w-full max-w-[619px] pb-3 font-Poppins text-base font-normal leading-5 text-charcoalBlue opacity-50 lg:ml-[52px]">

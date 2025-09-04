@@ -99,7 +99,16 @@ import byBusunessScale from '../../../public/svg/megaMenu/by-bussiness-scale.svg
 import appDevelopment from '../../../public/svg/megaMenu/app-devlopment.svg';
 import industryExperties from '../../../public/svg/megaMenu/industry-experties.svg';
 import customSolution from '../../../public/svg/megaMenu/custom-solution.svg';
-
+import expertise from '../../../public/images/expertise1.png';
+import mobiles from '../../../public/images/mobile.png';
+import frontend from '../../../public/images/frontend.png';
+import backend from '../../../public/images/backend.png';
+import database from '../../../public/images/database.png';
+import cms from '../../../public/images/cms.png';
+import devops from '../../../public/images/devops.png';
+import htsV2 from '../../../public/images/hts.png';
+import builderV2 from '../../../public/images/builder-spec.png';
+import wikifarmerV2 from '../../../public/images/wikifarmer.png';
 // types
 
 import { IFooterDataType } from '../type/type';
@@ -165,6 +174,8 @@ export const logoIcons = [
   teqdiligent,
   portsv,
   blueBunglow,
+  loloco,
+  gocaution,
 ];
 
 export const servicesMegmenuDate = [
@@ -4078,5 +4089,142 @@ export const caseStudyData = [
     heading: 'Optimity Logics implemented a comprehensive',
     description:
       'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
+  },
+];
+export const ourExpertise = [
+  {
+    title: 'Mobile App',
+    description:
+      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+    button: 'View All',
+    img: expertise,
+  },
+  {
+    title: 'Mobile App',
+    description:
+      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+    button: 'View All',
+    img: expertise,
+  },
+  {
+    title: 'Mobile App',
+    description:
+      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+    button: 'View All',
+    img: expertise,
+  },
+  {
+    title: 'Mobile App',
+    description:
+      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+    button: 'View All',
+    img: expertise,
+  },
+  {
+    title: 'Mobile App',
+    description:
+      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+    button: 'View All',
+    img: expertise,
+  },
+];
+
+export const techWeWork = [
+  {
+    heading: 'Mobile',
+    img: mobiles,
+  },
+  {
+    heading: 'Frontend',
+    img: frontend,
+  },
+  {
+    heading: 'Backend',
+    img: backend,
+  },
+  {
+    heading: 'CMS',
+    img: cms,
+  },
+  {
+    heading: 'Database',
+    img: database,
+  },
+  {
+    heading: 'DevOps',
+    img: devops,
+  },
+];
+
+export const projectWeDone = [
+  {
+    projectName: 'Wikifarmer',
+    img: wikifarmerV2,
+  },
+  {
+    projectName: 'HTS',
+    img: htsV2,
+  },
+  {
+    projectName: 'Builders Spec',
+    img: builderV2,
+  },
+];
+export const client = [
+  {
+    id: 1,
+    message:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: 'John Smith',
+    role: 'CEO / Founder',
+    avatar: '/avatars/user1.png',
+  },
+  {
+    id: 2,
+    message:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: 'John Smith',
+    role: 'CEO / Founder',
+    avatar: '/avatars/user2.png',
+  },
+  {
+    id: 3,
+    message:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: 'John Smith',
+    role: 'CEO / Founder',
+    avatar: '/avatars/user3.png',
+  },
+  {
+    id: 4,
+    message:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: 'John Smith',
+    role: 'CEO / Founder',
+    avatar: '/avatars/user4.png',
+  },
+  {
+    id: 5,
+    message:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: 'John Smith',
+    role: 'CEO / Founder',
+    avatar: '/avatars/user5.png',
+  },
+  {
+    id: 6,
+    message:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: 'John Smith',
+    role: 'CEO / Founder',
+    avatar: '/avatars/user6.png',
+  },
+  {
+    id: 7,
+    message:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    name: 'John Smith',
+    role: 'CEO / Founder',
+    avatar: '/avatars/user7.png',
   },
 ];
