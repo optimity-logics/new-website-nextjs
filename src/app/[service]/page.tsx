@@ -104,6 +104,9 @@ import {
 } from '@/components/utils/hireTeam/trending/trending';
 import { weareableAppData } from '@/components/utils/technology/trending/wearableApp';
 import { internetOfThingsData } from '@/components/utils/technology/trending/iot';
+import { Metadata } from 'next';
+import { generateSEOMetadata } from '@/components/utils/MetaData';
+import { SEO } from '@/components/utils/TitleAndDescription';
 
 type Params = Promise<{ service: string }>;
 
@@ -205,6 +208,69 @@ const dataMap = {
 } as const;
 
 type ServiceKey = keyof typeof dataMap;
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const service = (await params).service;
+
+  const resolveService = (service: string) => {
+    const prefixMap: { prefixes: string[]; seoKey: keyof typeof SEO }[] = [
+      { prefixes: ['web', 'software'], seoKey: 'web_app_development_services' },
+      {
+        prefixes: [
+          'mobile',
+          'saas',
+          'app',
+          'ios',
+          'android',
+          'react-native',
+          'flutter',
+          'swift',
+          'iconic',
+        ],
+        seoKey: 'mobile_app_development_services',
+      },
+      {
+        prefixes: [
+          'next',
+          'react',
+          'angular',
+          'vue',
+          'backbone',
+          'javascript',
+          'svelte',
+        ],
+        seoKey: 'frontend_technology',
+      },
+      {
+        prefixes: ['python', 'golang', 'node', 'laravel', 'php', 'meteor'],
+        seoKey: 'backend_technology',
+      },
+      { prefixes: ['mvp', 'saas'], seoKey: 'about_us' },
+    ];
+
+    const matched = prefixMap.find((entry) =>
+      entry.prefixes.some((prefix) => service.startsWith(prefix)),
+    );
+
+    if (matched) return SEO?.[matched.seoKey];
+  };
+  const seoData = resolveService(service);
+  return seoData
+    ? generateSEOMetadata({
+        title: seoData ? seoData?.title : '',
+        description: seoData.description,
+        og_url: `https://optimitylogics.com/${service}`,
+        og_image:
+          'https://optimitylogics.com/images/meta-img/optimity-logics-og-image.jpg',
+      })
+    : {
+        title: 'Optimity Logics',
+        description: 'Digital Transformation & App Development Company',
+      };
+}
 
 const SubcategoryPage = async (props: { params: Params }) => {
   const { service } = await props.params;

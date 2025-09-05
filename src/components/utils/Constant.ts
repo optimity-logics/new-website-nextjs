@@ -76,7 +76,7 @@ import wallet from '../../../public/svg/careers/benefits/wallet.svg';
 import target from '../../../public/svg/careers/benefits/target.svg';
 import shieldCheck from '../../../public/svg/careers/benefits/shieldCheck.svg';
 
-import pm from '../../../public/images/pm.png';
+import pm from '../../../public/images/homePagev2/pm.png';
 
 import clutch from '../../../public/svg/about-us/clutch.svg';
 import designrush from '../../../public/svg/about-us/designrush.svg';
@@ -99,16 +99,16 @@ import byBusunessScale from '../../../public/svg/megaMenu/by-bussiness-scale.svg
 import appDevelopment from '../../../public/svg/megaMenu/app-devlopment.svg';
 import industryExperties from '../../../public/svg/megaMenu/industry-experties.svg';
 import customSolution from '../../../public/svg/megaMenu/custom-solution.svg';
-import expertise from '../../../public/images/expertise1.png';
-import mobiles from '../../../public/images/mobile.png';
-import frontend from '../../../public/images/frontend.png';
-import backend from '../../../public/images/backend.png';
-import database from '../../../public/images/database.png';
-import cms from '../../../public/images/cms.png';
-import devops from '../../../public/images/devops.png';
-import htsV2 from '../../../public/images/hts.png';
-import builderV2 from '../../../public/images/builder-spec.png';
-import wikifarmerV2 from '../../../public/images/wikifarmer.png';
+import expertise from '../../../public/images/homePagev2/expertise1.png';
+import mobiles from '../../../public/images/homePagev2/mobile.png';
+import frontend from '../../../public/images/homePagev2/frontend.png';
+import backend from '../../../public/images/homePagev2/backend.png';
+import database from '../../../public/images/homePagev2/database.png';
+import cms from '../../../public/images/homePagev2/cms.png';
+import devops from '../../../public/images/homePagev2/devops.png';
+import htsV2 from '../../../public/images/homePagev2/hts.png';
+import builderV2 from '../../../public/images/homePagev2/builder-spec.png';
+import wikifarmerV2 from '../../../public/images/homePagev2/wikifarmer.png';
 // types
 
 import { IFooterDataType } from '../type/type';
