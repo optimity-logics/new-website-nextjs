@@ -78,14 +78,14 @@ const HomePageV2 = () => {
 
           oddGroups.forEach((group) => {
             const element = group as HTMLElement;
-            const parallaxY = scrollProgress * 30; // Positive movement
-            element.style.transform = `translateY(${parallaxY - 40}px)`; // -20 for initial offset
+            const parallaxY = scrollProgress * 20; // Positive movement
+            element.style.transform = `translateY(${parallaxY - 20}px)`; // -20 for initial offset
           });
 
           evenGroups.forEach((group) => {
             const element = group as HTMLElement;
-            const parallaxY = scrollProgress * -30; // Negative movement (opposite direction)
-            element.style.transform = `translateY(${parallaxY + 40}px)`; // +20 for initial offset
+            const parallaxY = scrollProgress * -20; // Negative movement (opposite direction)
+            element.style.transform = `translateY(${parallaxY + 20}px)`; // +20 for initial offset
           });
         }
       });
