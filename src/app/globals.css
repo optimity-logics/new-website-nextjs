@@ -293,6 +293,7 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
   margin: 0;
   padding: 0;
   transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  justify-content: space-between;
 }
 
 .logo-item {
@@ -336,5 +337,43 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
 
   .small {
     width: calc(1920px * 0.79);
+  }
+}
+
+.animated-arrow {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  opacity: 0;
+  transition: stroke-dashoffset 0.25s ease;
+}
+
+.animated-arrow-2 {
+  transition: all 0.25s ease;
+}
+
+.animated-arrow-2.focus {
+  transform: translateX(2px);
+}
+
+.animated-arrow.focus {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+
+@keyframes arrow_appearing {
+  from {
+    stroke-dashoffset: -4;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes arrow_disappearing {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 4;
   }
 }

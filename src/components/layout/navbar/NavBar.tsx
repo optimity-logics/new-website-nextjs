@@ -13,6 +13,7 @@ import { useRouter } from 'next/navigation';
 import phone from '../../../../public/svg/call.svg';
 import mail from '../../../../public/svg/mail.svg';
 import { AnimatePresence, motion } from 'framer-motion';
+import AnimatedArrow from '@/components/common/AnimatedArrow';
 
 const NavBar = () => {
   const megaMenuRef = useRef<HTMLDivElement>(null);
@@ -21,23 +22,13 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const [small, setSmall] = useState(false);
-  useEffect(() => {
-    // Function to check scroll position
-    const handleScroll = () => {
-      setSmall(window.scrollY > 0);
-    };
+  const [hover, setHover] = useState(false);
 
-    // Set initial value
-    handleScroll();
+  const handleMouseEnter = () => setHover(true);
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
 
-    // Add scroll listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup on unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
   const handleClickOnMenuItem = (
     menuTitle: string,
     megaMenuItemLength: number,
@@ -63,11 +54,27 @@ const NavBar = () => {
   const handleOpenMenuDrawer = () => {
     setIsOpen(true);
   };
+  useEffect(() => {
+    // Function to check scroll position
+    const handleScroll = () => {
+      setSmall(window.scrollY > 0);
+    };
 
+    // Set initial value
+    handleScroll();
+
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className="sticky top-0 z-[9999]">
       <div
-        className={`easing_func ${small ? 'small rounded-full' : 'large'} mx-auto max-w-[1920px] bg-white px-4 py-4 sm:px-6 md:px-8 lg:py-0 xl:px-10`}
+        className={`easing_func ${small ? 'small rounded-full xl:px-4' : 'large xl:px-10'} mx-auto max-w-[1920px] bg-white px-4 py-4 sm:px-6 md:px-8 lg:py-0`}
       >
         <div className="navigation">
           <div className="flex w-full items-center justify-between">
@@ -100,8 +107,8 @@ const NavBar = () => {
                   <Image
                     src={mobileScreenLogo}
                     alt="nav-logo"
-                    width={54}
-                    height={54}
+                    width={40}
+                    height={40}
                   />
                 ) : (
                   <Image
@@ -109,7 +116,7 @@ const NavBar = () => {
                     alt="nav-logo"
                     width={202}
                     height={57.09}
-                    className="w-full max-w-[130px] xl:max-w-[140px] 5xl:max-w-[170px]"
+                    className="w-full max-w-[130px] xl:max-w-[140px]"
                   />
                 )}
               </Link>
@@ -119,7 +126,7 @@ const NavBar = () => {
               {menuData?.map((item, index) => (
                 <li
                   key={index}
-                  className={`cursor-pointer py-7 font-Poppins text-base font-normal uppercase leading-6 text-darkBlack transition-all duration-300 hover:text-lightBlue lg:py-[34px] ${activeMenu?.toLowerCase() === item.menuTitle.toLowerCase() && 'text-lightBlue'}`}
+                  className={`cursor-pointer py-7 font-Poppins text-base font-normal uppercase leading-6 tracking-[0.5px] text-darkBlack transition-all duration-300 hover:text-lightBlue lg:py-[24px] ${activeMenu?.toLowerCase() === item.menuTitle.toLowerCase() && 'text-lightBlue'}`}
                   onClick={() =>
                     handleClickOnMenuItem(
                       item?.menuTitle,
@@ -252,8 +259,16 @@ const NavBar = () => {
               className="bg-lightBlue px-4 lg:px-6 xl:px-[30px]"
               onClick={() => router.push('/contact-us')}
             /> */}
-            <button className="w-max rounded-[50px] bg-[#1A6AA3] px-[30px] py-[14px] font-Inter text-[18px] font-normal leading-[100%] text-white">
-              Contact Us
+            <button
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              onMouseUp={handleMouseEnter}
+              onMouseDown={handleMouseLeave}
+              type="button"
+              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-white"
+            >
+              Contact us
+              <AnimatedArrow hover={hover} />
             </button>
           </div>
         </div>
