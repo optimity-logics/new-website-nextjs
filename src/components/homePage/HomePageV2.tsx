@@ -35,12 +35,17 @@ const HomePageV2 = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
   const [hover, setHover] = useState<boolean>(false);
+  const [hoverSubmit, setHoverSubmit] = useState<boolean>(false);
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
   const [hoverContact, setHoverContact] = useState<boolean>(false);
 
   const handleMouseEnter = () => setHover(true);
   const handleMouseLeave = () => {
     setHover(false);
+  };
+  const handleMouseEnterSubmit = () => setHoverSubmit(true);
+  const handleMouseLeaveSubmit = () => {
+    setHoverSubmit(false);
   };
   const handleMouseEnterViewAll = () => setHoverViewAl(true);
   const handleMouseLeaveViewAl = () => {
@@ -447,7 +452,7 @@ const HomePageV2 = () => {
             WebkitMaskImage:
               'linear-gradient(90deg, rgba(102, 102, 102, 0.11) 0.6%, #666666 50.78%, rgba(102, 102, 102, 0.11) 100%)',
           }}
-          className="absolute inset-y-0 left-[120px] w-[1px] bg-cover"
+          className="absolute inset-y-0 left-[119px] w-[1px] bg-cover"
         ></div>
         <div
           style={{
@@ -455,7 +460,7 @@ const HomePageV2 = () => {
             WebkitMaskImage:
               'linear-gradient(90deg, rgba(102, 102, 102, 0.11) 0.6%, #666666 50.78%, rgba(102, 102, 102, 0.11) 100%)',
           }}
-          className="-0 absolute inset-y-0 right-[120px] w-[1px] bg-cover"
+          className="-0 absolute inset-y-0 right-[119px] w-[1px] bg-cover"
         ></div>
         <div className="relative px-[120px]">
           <div
@@ -546,13 +551,13 @@ const HomePageV2 = () => {
                   }}
                 >
                   <div
-                    className={`rounded-[17px] p-[45px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-[42px]`}
+                    className={`rounded-[17px] p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
                   >
-                    <p className="line-clamp-5 font-Inter text-[20px] font-normal leading-[33px] text-black">
+                    <p className="line-clamp-5 font-Inter text-lg font-normal leading-7 text-[#2A2A30]">
                       {item?.message}
                     </p>
                     <div className="flex items-center justify-between gap-2.5">
-                      <p className="font-Inter text-[18px] font-normal leading-[33px] text-[#5E5E5E]">
+                      <p className="font-Inter text-base font-normal leading-5 text-[#5E5E5E]">
                         {item?.role}
                       </p>
                       <Image
@@ -575,7 +580,7 @@ const HomePageV2 = () => {
       <div className="mx-[30px]">
         <div
           style={{ backgroundSize: '100% 100%' }}
-          className="mx-auto w-full max-w-[1680px] bg-contact bg-contain bg-no-repeat px-[120px] pb-[100px] pt-[140px]"
+          className="mx-auto w-full max-w-[1680px] bg-contact bg-contain bg-no-repeat px-[80px] pb-[100px] pt-[140px]"
         >
           <div className="flex items-center justify-between">
             <div className="flex w-full max-w-[570px] flex-col gap-5">
@@ -618,8 +623,16 @@ const HomePageV2 = () => {
                   className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
                 />
               </div>
-              <button className="w-max rounded-[50px] bg-red px-[71px] py-[14px] font-Inter text-[20px] font-normal leading-tight text-white">
+              <button
+                onMouseEnter={handleMouseEnterSubmit}
+                onMouseLeave={handleMouseLeaveSubmit}
+                onMouseUp={handleMouseEnterSubmit}
+                onMouseDown={handleMouseLeaveSubmit}
+                type="button"
+                className="flex w-max items-center gap-1 rounded-[50px] bg-red px-5 py-2 font-Inter text-sm font-normal leading-tight text-white"
+              >
                 Submit
+                <AnimatedArrow hover={hoverSubmit} />
               </button>
             </form>
           </div>
@@ -634,7 +647,7 @@ const HomePageV2 = () => {
             height={57.09}
             className="w-full max-w-[130px] xl:max-w-[150px]"
           />
-          <span className="text-center font-Inter text-lg font-light leading-7 text-[#111022]">
+          <span className="text-center font-Inter text-lg font-light leading-7 text-[#2A2A30]">
             426, 4th Floor, Swarnim Business Hub-1, opp. Global International
             school, Godrej Garden City Road, Ahmedabad, Gujarat 382470
           </span>

@@ -169,6 +169,7 @@ export default function HowWeWork() {
                         duration: 5,
                         ease: 'easeInOut',
                         repeat: 0,
+                        type: 'tween',
                       }}
                       key={`progress-${step.id}`}
                     />

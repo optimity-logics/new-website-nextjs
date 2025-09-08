@@ -33,10 +33,10 @@ const FaqsAccordion = ({ data }: IAccordionProps) => {
                   <div
                     className={`flex items-center gap-6 ${isExpanded ? 'py-0' : 'py-1'}`}
                   >
-                    <span className="font-Inter text-2xl font-semibold leading-7 text-black sm:font-bold">
+                    <span className="font-Inter text-xl font-semibold leading-7 text-black sm:font-bold">
                       {index + 1 < 10 ? `0${index + 1}` : index + 1}
                     </span>
-                    <span className="font-Poppins text-base font-medium leading-5 text-charcoalBlue sm:text-lg sm:leading-[22px] md:text-xl md:leading-6">
+                    <span className="font-Inter text-base font-medium leading-5 text-charcoalBlue sm:text-lg sm:leading-[22px]">
                       {item?.question}
                     </span>
                   </div>
@@ -53,7 +53,7 @@ const FaqsAccordion = ({ data }: IAccordionProps) => {
                 className="!rounded-none border-b !border-b-bluishGray !bg-transparent !px-0 !py-0 !shadow-none"
                 onPress={() => handleToggle(index)}
               >
-                <p className="w-full max-w-[619px] pb-3 font-Poppins text-base font-normal leading-5 text-charcoalBlue opacity-50 lg:ml-[52px]">
+                <p className="w-full max-w-[619px] pb-3 font-Inter text-base font-normal leading-5 text-charcoalBlue opacity-50 lg:ml-[52px]">
                   {item?.answer}
                 </p>
               </AccordionItem>
