@@ -74,7 +74,7 @@ const NavBar = () => {
   return (
     <div className="sticky top-0 z-[9999]">
       <div
-        className={`easing_func ${small ? 'small rounded-full xl:px-4' : 'large xl:px-10'} mx-auto max-w-[1920px] bg-white px-4 py-4 sm:px-6 md:px-8 lg:py-0`}
+        className={`easing_func ${small ? 'small rounded-full bg-white/30 backdrop-blur-lg xl:px-4' : 'large bg-white xl:px-10'} mx-auto max-w-[1920px] px-4 py-4 sm:px-6 md:px-8 lg:py-0`}
       >
         <div className="navigation">
           <div className="flex w-full items-center justify-between">
