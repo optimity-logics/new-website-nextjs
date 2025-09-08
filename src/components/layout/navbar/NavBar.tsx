@@ -141,9 +141,9 @@ const NavBar = () => {
                 {activeMenu && (
                   <motion.div
                     ref={megaMenuRef}
-                    initial={{ opacity: 0, y: -20, x: '-50%' }}
-                    animate={{ opacity: 1, y: 0, x: '-50%' }}
-                    exit={{ opacity: 0, y: -20, x: '-50%' }}
+                    initial={{ opacity: 0, y: -20, x: small ? '-47%' : '-50%' }}
+                    animate={{ opacity: 1, y: 0, x: small ? '-47%' : '-50%' }}
+                    exit={{ opacity: 0, y: -20, x: small ? '-47%' : '-50%' }}
                     transition={{ duration: 0.5, ease: 'easeInOut' }}
                     className="absolute left-1/2 top-full"
                   >

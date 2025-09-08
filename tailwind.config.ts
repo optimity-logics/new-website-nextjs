@@ -64,7 +64,9 @@ export default {
         overly: "url('/images/homePagev2/overly.png')",
         'project-bg': "url('/images/homePagev2/project.png')",
         line: "url('/images/homePagev2/Line.png')",
-        contact: "url('/images/homePagev2/contact-us.png')",
+        contact: "url('/images/homePagev2/contact-us-v2.png')",
+        'our-expertise': "url('/images/homePagev2/our-expertise.png')",
+        footerv2: "url('/images/homePagev2/footer.png')",
       },
       fontFamily: {
         Inter: ['Inter'],
@@ -98,6 +100,8 @@ export default {
         custom:
           '0px 1.41px 2.83px -1.41px #0000001A, 0px 1.41px 4.24px 0px #0000001A, 0px 0px 0px 1.41px #1313160D',
         client: '0px 0px 0px 1.41px #0000001A inset',
+        tab: ' 0px 1.41px 2.83px -1.41px #0000001A,0px 1.41px 4.24px 0px #0000001A,0px 0px 0px 1.41px #1313160D;',
+        'how-work-card': '0px 8px 24px 0px #1212121A',
       },
     },
   },
