@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import heroImg from '../../../public/images/homePagev2/hero.png';
 import ellips1 from '../../../public/images/homePagev2/ellips1.png';
 import ellipse2 from '../../../public/images/homePagev2/ellipse2.png';
+import logo from '../../../public/svg/logo.svg';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import shape1 from '../../../public/images/homePagev2/shape-1.png';
@@ -11,10 +12,9 @@ import shape3 from '../../../public/images/homePagev2/shape-3.png';
 import shape4 from '../../../public/images/homePagev2/shape-4.png';
 import arrow from '../../../public/images/homePagev2/arrow.png';
 import LogoAnimation from './LogoAnimation';
-import msgframe from '../../../public/webp/msgframe.webp';
+
 import {
   client,
-  howWeWorkData,
   logoIcons,
   ourExpertise,
   projectWeDone,
@@ -29,6 +29,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Mousewheel, Navigation } from 'swiper/modules';
 import Faqs from './Faqs';
 import AnimatedArrow from '../common/AnimatedArrow';
+import HowWeWork from './HowWeWork';
 
 const HomePageV2 = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
@@ -78,14 +79,14 @@ const HomePageV2 = () => {
 
           oddGroups.forEach((group) => {
             const element = group as HTMLElement;
-            const parallaxY = scrollProgress * 20; // Positive movement
-            element.style.transform = `translateY(${parallaxY - 20}px)`; // -20 for initial offset
+            const parallaxY = scrollProgress * 20;
+            element.style.transform = `translateY(${parallaxY - 20}px)`;
           });
 
           evenGroups.forEach((group) => {
             const element = group as HTMLElement;
-            const parallaxY = scrollProgress * -20; // Negative movement (opposite direction)
-            element.style.transform = `translateY(${parallaxY + 20}px)`; // +20 for initial offset
+            const parallaxY = scrollProgress * -20;
+            element.style.transform = `translateY(${parallaxY + 20}px)`;
           });
         }
       });
@@ -232,65 +233,70 @@ const HomePageV2 = () => {
         </div>
       </div>
       {/* section-3 */}
-      <div className="flex flex-col gap-[30px] pt-[125px]">
-        <h3 className="mx-auto w-full max-w-[1680px] px-[120px] font-Inter text-[48px] font-bold leading-[52px] text-black">
-          {' '}
-          Our Expertise
-        </h3>
-        <div className="w-full">
-          <Swiper
-            spaceBetween={100}
-            slidesPerView={1.8}
-            modules={[Autoplay, Mousewheel]}
-            centeredSlides={true}
-            mousewheel={{
-              invert: true,
-            }}
-            speed={1000}
-            loop={false}
-          >
-            {ourExpertise &&
-              ourExpertise.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <div className="flex items-center gap-[65px]">
-                    <div className="flex w-full max-w-[799px] flex-col gap-[40px]">
-                      <div className="flex flex-col gap-5">
-                        <h5 className="font-Inter text-[28px] font-bold leading-[32px] text-[#1B1B1B]">
-                          {item?.title}
-                        </h5>
-                        <p className="font-Inter text-[18px] font-normal leading-6 text-[#5E5E5E]">
-                          {item?.description}
-                        </p>
+      <div
+        style={{ backgroundSize: '100% 100%' }}
+        className="my-[100px] bg-our-expertise bg-cover bg-no-repeat"
+      >
+        <div className="flex flex-col gap-8">
+          <h3 className="mx-auto w-full max-w-[1680px] px-[120px] font-Inter text-[48px] font-bold leading-[52px] text-black">
+            {' '}
+            Our Expertise
+          </h3>
+          <div className="w-full">
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={1.8}
+              modules={[Autoplay, Mousewheel]}
+              centeredSlides={true}
+              mousewheel={{
+                invert: true,
+              }}
+              speed={1000}
+              loop={false}
+            >
+              {ourExpertise &&
+                ourExpertise.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="flex items-center gap-[65px]">
+                      <div className="flex w-full max-w-[799px] flex-col gap-[40px]">
+                        <div className="flex flex-col gap-5">
+                          <h5 className="font-Inter text-[28px] font-bold leading-[32px] text-[#1B1B1B]">
+                            {item?.title}
+                          </h5>
+                          <p className="font-Inter text-[18px] font-normal leading-6 text-[#5E5E5E]">
+                            {item?.description}
+                          </p>
+                        </div>
+                        <button
+                          onMouseEnter={handleMouseEnterViewAll}
+                          onMouseLeave={handleMouseLeaveViewAl}
+                          onMouseUp={handleMouseEnterViewAll}
+                          onMouseDown={handleMouseLeaveViewAl}
+                          type="button"
+                          className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-white"
+                        >
+                          {item?.button}
+                          <AnimatedArrow hover={hoverViewAl} />
+                        </button>
                       </div>
-                      <button
-                        onMouseEnter={handleMouseEnterViewAll}
-                        onMouseLeave={handleMouseLeaveViewAl}
-                        onMouseUp={handleMouseEnterViewAll}
-                        onMouseDown={handleMouseLeaveViewAl}
-                        type="button"
-                        className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-white"
-                      >
-                        {item?.button}
-                        <AnimatedArrow hover={hoverViewAl} />
-                      </button>
+                      <div>
+                        <Image
+                          src={item?.img}
+                          alt="img"
+                          width={698}
+                          height={600}
+                          className="w-full object-contain"
+                        />
+                      </div>
                     </div>
-                    <div>
-                      <Image
-                        src={item?.img}
-                        alt="img"
-                        width={698}
-                        height={600}
-                        className="w-full object-contain"
-                      />
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-          </Swiper>
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+          </div>
         </div>
       </div>
       {/* section-4 */}
-      <div className="mx-auto w-full max-w-[1680px] px-[120px] py-[100px]">
+      <div className="mx-auto mb-[100px] w-full max-w-[1680px] px-[120px]">
         <div className="grid grid-cols-3 gap-[45px]">
           <div className="rounded-[38px] bg-white px-[32px] pb-[20px] pt-[8px] shadow-work-card">
             <div className="flex flex-col gap-[20px]">
@@ -335,7 +341,7 @@ const HomePageV2 = () => {
       </div>
       {/* section-5 */}
       <div
-        style={{ backgroundSize: '100% 100%' }}
+        style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
         className="bg-tech-we-work bg-cover bg-no-repeat"
       >
         <div className="mx-auto flex w-full max-w-[1680px] flex-col gap-[60px] px-[120px] py-[100px]">
@@ -373,40 +379,12 @@ const HomePageV2 = () => {
         </div>
       </div>
       {/* section-6 */}
-      <div className="mx-auto w-full max-w-[1280px] px-[50px] py-[100px]">
-        <div className="flex flex-col gap-10 lg:gap-[50px] 4xl:gap-[70px]">
-          <div className="flex flex-col justify-between gap-[50px] md:flex-row md:items-center">
-            <div className="flex w-full max-w-[691px] flex-col">
-              {howWeWorkData &&
-                howWeWorkData.map((item, index) => (
-                  <div key={index}>
-                    <div className="flex items-center gap-[25px]">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-center font-Poppins text-xl font-bold leading-6 text-black lg:h-14 lg:w-14 lg:text-2xl">
-                        {`0${index + 1}`}
-                      </div>
-                      <p className="font-Poppins text-base font-medium leading-6 text-black lg:text-xl">
-                        {item}
-                      </p>
-                    </div>
-                    <div
-                      className={`ml-[19px] h-full min-h-4 w-0.5 bg-[#3e656d] lg:ml-[26px] lg:min-h-7 xl:min-h-10 ${index !== howWeWorkData.length - 1 ? 'block' : 'hidden'} `}
-                    ></div>
-                  </div>
-                ))}
-            </div>
-            <div>
-              <Image
-                src={msgframe}
-                alt="chat-msg-image"
-                width={533}
-                height={649}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <HowWeWork />
       {/* section-7 */}
-      <div className="bg-project-bg bg-cover bg-no-repeat py-[100px]">
+      <div
+        style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
+        className="bg-tech-we-work bg-cover bg-no-repeat py-[100px]"
+      >
         <div className="flex flex-col gap-[80px]">
           <div className="mx-auto flex w-full max-w-[1680px] items-center justify-between px-[120px]">
             <h4 className="font-Inter text-[48px] font-bold leading-[52px] text-white">
@@ -573,7 +551,7 @@ const HomePageV2 = () => {
                     <p className="line-clamp-5 font-Inter text-[20px] font-normal leading-[33px] text-black">
                       {item?.message}
                     </p>
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between gap-2.5">
                       <p className="font-Inter text-[18px] font-normal leading-[33px] text-[#5E5E5E]">
                         {item?.role}
                       </p>
@@ -592,16 +570,12 @@ const HomePageV2 = () => {
         </div>
       </div>
       {/* section- 9 */}
-
+      <Faqs />
       {/* section - 10 */}
-      {/* <div
-        style={{ backgroundSize: '100% 100%' }}
-        className=" bg-contact my-[100px] bg-contain bg-no-repeat"
-      > */}
       <div className="mx-[30px]">
         <div
           style={{ backgroundSize: '100% 100%' }}
-          className="mx-auto w-full max-w-[1680px] bg-contact bg-contain bg-no-repeat px-[120px] py-[140px]"
+          className="mx-auto w-full max-w-[1680px] bg-contact bg-contain bg-no-repeat px-[120px] pb-[100px] pt-[140px]"
         >
           <div className="flex items-center justify-between">
             <div className="flex w-full max-w-[570px] flex-col gap-5">
@@ -614,34 +588,34 @@ const HomePageV2 = () => {
                 satisfying.
               </p>
             </div>
-            <form className="flex w-full max-w-[737px] flex-col gap-10 rounded-2xl border border-[#585555] bg-[#1E1E1E] px-[23px] py-[52px]">
+            <form className="flex w-full max-w-[737px] flex-col gap-10 rounded-2xl bg-[#000]/10 px-[23px] py-[52px] backdrop-blur-lg">
               <div className="flex flex-col gap-[26px]">
                 <div className="flex items-center gap-[39px]">
                   <input
                     type="text"
                     placeholder="First Name"
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70"
+                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
                   />
                   <input
                     type="text"
                     placeholder="Last Name"
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70"
+                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
                   />
                 </div>
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70"
+                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70"
+                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <textarea
                   rows={2}
                   placeholder="Description"
-                  className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70"
+                  className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
                 />
               </div>
               <button className="w-max rounded-[50px] bg-red px-[71px] py-[14px] font-Inter text-[20px] font-normal leading-tight text-white">
@@ -651,11 +625,21 @@ const HomePageV2 = () => {
           </div>
         </div>
       </div>
-      {/* <div className="bg-[#E5F4FF] py-[100px]"> */}
-      <div className="mx-auto w-full max-w-[1680px] px-[120px] pb-[100px]">
-        <Faqs />
+      <div className="mx-auto mb-[60px] w-full max-w-[1680px]">
+        <div className="mx-auto flex max-w-[692px] flex-col items-center gap-10">
+          <Image
+            src={logo}
+            alt="nav-logo"
+            width={202}
+            height={57.09}
+            className="w-full max-w-[130px] xl:max-w-[150px]"
+          />
+          <span className="text-center font-Inter text-lg font-light leading-7 text-[#111022]">
+            426, 4th Floor, Swarnim Business Hub-1, opp. Global International
+            school, Godrej Garden City Road, Ahmedabad, Gujarat 382470
+          </span>
+        </div>
       </div>
-      {/* </div> */}
     </>
   );
 };
