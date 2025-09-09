@@ -1,8 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import heroImg from '../../../public/images/homePagev2/hero.png';
-import ellips1 from '../../../public/images/homePagev2/ellips1.png';
-import ellipse2 from '../../../public/images/homePagev2/ellipse2.png';
+import heroImg from '../../../public/images/homePagev2/logov2.svg';
 import logo from '../../../public/svg/logo.svg';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -110,126 +108,100 @@ const HomePageV2 = () => {
   return (
     <>
       {/* section-1 */}
-      <div className="relative mx-auto w-full max-w-[1680px] px-[120px] py-[154px]">
-        <motion.div
-          animate={{ y: [0, -15, 0] }}
-          transition={{
-            duration: 1.8,
-            ease: 'easeIn',
-            repeat: Infinity,
-            repeatDelay: 0.3,
-          }}
-          className="absolute left-[10%] top-[50px]"
-        >
-          <Image src={shape1} alt="shape-1" width={96} height={84} />
-        </motion.div>
-        <motion.div
-          animate={{ x: [0, -20, 0] }}
-          transition={{
-            duration: 1.8,
-            ease: 'easeIn',
-            repeat: Infinity,
-            repeatDelay: 0.3,
-          }}
-          className="absolute bottom-[70px] left-[20%]"
-        >
-          <Image src={shape2} alt="shape-1" width={96} height={84} />
-        </motion.div>
-        <motion.div
-          animate={{ rotate: 90 }} // rotate full circle
-          transition={{
-            duration: 0.6, // speed (2s per rotation)
-            ease: 'linear', // constant speed (no easing)
-            repeat: Infinity,
-            repeatDelay: 0.6,
-          }}
-          className="absolute right-[8%] top-[80px]"
-        >
-          <Image src={shape3} alt="shape-1" width={70} height={64} />
-        </motion.div>
-        <motion.div
-          animate={{ x: [0, -20, 0] }}
-          transition={{
-            duration: 1.8,
-            ease: 'easeIn',
-            repeat: Infinity,
-            repeatDelay: 0.3,
-          }}
-          className="absolute bottom-[50px] right-[3%]"
-        >
-          <Image src={shape4} alt="shape-1" width={96} height={84} />
-        </motion.div>
-        <div className="flex items-center justify-between gap-[60px]">
-          <div className="flex w-full max-w-[860px] flex-col gap-[50px]">
-            <div className="flex flex-col gap-[20px]">
-              <h2 className="whitespace-pre-line font-Inter text-[60px] font-bold uppercase leading-tight text-black">
-                Bring Your
-                <br />
-                <span className="text-red">App Vision </span>to Life,
-                <br /> Anytime with AI.
-              </h2>
-              <p className="w-full max-w-[800px] font-Inter text-[18px] font-normal leading-[24px] text-[#5E5E5E]">
-                We&#39;re a full-stack agency specializing in digital
-                transformation. Crafting experiences for startups, SMEs, and
-                Fortune 500 companies.
-              </p>
-            </div>
-            <button
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onMouseUp={handleMouseEnter}
-              onMouseDown={handleMouseLeave}
-              type="button"
-              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-white"
-            >
-              Learn more
-              <AnimatedArrow hover={hover} />
-            </button>
-          </div>
+      <div className="bg-heroBg bg-cover bg-top bg-no-repeat">
+        <div className="relative mx-auto w-full max-w-[1680px] px-[120px] py-[154px]">
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{ y: [0, -15, 0] }}
             transition={{
-              duration: 0.8,
+              duration: 1.8,
               ease: 'easeIn',
+              repeat: Infinity,
+              repeatDelay: 0.3,
             }}
+            className="absolute left-[10%] top-[50px]"
           >
-            <div className="relative z-30 w-max">
-              <Image
-                src={ellips1}
-                alt=""
-                width={300}
-                height={300}
-                className="absolute -left-[10%] top-0 -z-10 scale-150 object-contain"
-              />
-              <Image
-                src={ellips1}
-                alt=""
-                width={300}
-                height={300}
-                className="absolute -right-[10%] bottom-0 -z-10 scale-150 object-contain"
-              />
-              <Image
-                src={ellipse2}
-                alt=""
-                width={400}
-                height={400}
-                className="absolute -bottom-[8%] -left-[6%] -z-10 -scale-150 object-contain"
-              />
-              <Image
-                src={ellipse2}
-                alt=""
-                width={400}
-                height={400}
-                className="absolute -top-[8%] right-[6%] -z-10 -scale-150 object-contain"
-              />
-              <Image src={heroImg} alt="hero-img" width={558} height={515} />
-            </div>
+            <Image src={shape1} alt="shape-1" width={96} height={84} />
           </motion.div>
+          <motion.div
+            animate={{ x: [0, -20, 0] }}
+            transition={{
+              duration: 1.8,
+              ease: 'easeIn',
+              repeat: Infinity,
+              repeatDelay: 0.3,
+            }}
+            className="absolute bottom-[70px] left-[20%]"
+          >
+            <Image src={shape2} alt="shape-1" width={96} height={84} />
+          </motion.div>
+          <motion.div
+            animate={{ rotate: 90 }} // rotate full circle
+            transition={{
+              duration: 0.6, // speed (2s per rotation)
+              ease: 'linear', // constant speed (no easing)
+              repeat: Infinity,
+              repeatDelay: 0.6,
+            }}
+            className="absolute right-[8%] top-[80px]"
+          >
+            <Image src={shape3} alt="shape-1" width={70} height={64} />
+          </motion.div>
+          <motion.div
+            animate={{ x: [0, -20, 0] }}
+            transition={{
+              duration: 1.8,
+              ease: 'easeIn',
+              repeat: Infinity,
+              repeatDelay: 0.3,
+            }}
+            className="absolute bottom-[50px] right-[3%]"
+          >
+            <Image src={shape4} alt="shape-1" width={96} height={84} />
+          </motion.div>
+          <div className="flex items-center justify-between gap-[60px]">
+            <div className="flex w-full max-w-[860px] flex-col gap-[50px]">
+              <div className="flex flex-col gap-[20px]">
+                <h2 className="whitespace-pre-line font-Inter text-[60px] font-bold uppercase leading-tight text-black">
+                  Bring Your
+                  <br />
+                  <span className="text-red">App Vision </span>to Life,
+                  <br /> Anytime with AI.
+                </h2>
+                <p className="w-full max-w-[800px] font-Inter text-[18px] font-normal leading-[24px] text-[#5E5E5E]">
+                  We&#39;re a full-stack agency specializing in digital
+                  transformation. Crafting experiences for startups, SMEs, and
+                  Fortune 500 companies.
+                </p>
+              </div>
+              <button
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                onMouseUp={handleMouseEnter}
+                onMouseDown={handleMouseLeave}
+                type="button"
+                className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-white"
+              >
+                Learn more
+                <AnimatedArrow hover={hover} />
+              </button>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                ease: 'easeIn',
+              }}
+            >
+              <div className="relative z-30 w-max">
+                <Image src={heroImg} alt="hero-img" width={558} height={515} />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
       {/* logo */}
-      <div className="mx-auto w-full max-w-[1680px] px-[120px]">
+      <div className="mx-auto mt-[50px] w-full max-w-[1680px] px-[120px]">
         <div className="flex flex-col items-center gap-[25px] rounded-2xl border border-darkGray bg-black px-5 pb-[22px] pt-[30px] shadow-lg 5xl:rounded-[24px]">
           <span className="text-center font-Poppins text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
@@ -478,7 +450,7 @@ const HomePageV2 = () => {
             className="absolute inset-x-0 bottom-[-3px] !h-[1px] border-1 border-dashed border-gray opacity-30"
           ></div>
 
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 gap-5">
             <motion.div
               onMouseMove={(e) => {
                 const rect = e.currentTarget.getBoundingClientRect();
@@ -580,7 +552,7 @@ const HomePageV2 = () => {
       <div className="mx-[30px]">
         <div
           style={{ backgroundSize: '100% 100%' }}
-          className="mx-auto w-full max-w-[1680px] bg-contact bg-contain bg-no-repeat px-[80px] pb-[100px] pt-[140px]"
+          className="mx-auto w-full max-w-[1680px] bg-contact bg-contain bg-no-repeat px-[80px] pb-[130px] pt-[140px]"
         >
           <div className="flex items-center justify-between">
             <div className="flex w-full max-w-[570px] flex-col gap-5">
@@ -593,34 +565,34 @@ const HomePageV2 = () => {
                 satisfying.
               </p>
             </div>
-            <form className="flex w-full max-w-[737px] flex-col gap-10 rounded-2xl bg-[#000]/10 px-[23px] py-[52px] backdrop-blur-lg">
+            <form className="flex w-full max-w-[737px] flex-col gap-10 rounded-2xl bg-[#f0f3f5]/10 px-[23px] py-[52px] backdrop-blur-sm">
               <div className="flex flex-col gap-[26px]">
                 <div className="flex items-center gap-[39px]">
                   <input
                     type="text"
                     placeholder="First Name"
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
+                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
                   />
                   <input
                     type="text"
                     placeholder="Last Name"
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
+                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
                   />
                 </div>
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
+                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
+                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <textarea
                   rows={2}
                   placeholder="Description"
-                  className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 p-[23px] font-Inter text-[18px] font-normal leading-tight text-white/70 focus:outline-none"
+                  className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
                 />
               </div>
               <button
@@ -629,7 +601,7 @@ const HomePageV2 = () => {
                 onMouseUp={handleMouseEnterSubmit}
                 onMouseDown={handleMouseLeaveSubmit}
                 type="button"
-                className="flex w-max items-center gap-1 rounded-[50px] bg-red px-5 py-2 font-Inter text-sm font-normal leading-tight text-white"
+                className="flex w-max items-center gap-1 rounded-[50px] bg-red px-5 py-2 font-Inter text-base font-normal leading-tight text-white"
               >
                 Submit
                 <AnimatedArrow hover={hoverSubmit} />

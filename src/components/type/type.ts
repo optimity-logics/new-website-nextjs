@@ -11,12 +11,6 @@ export interface IFaqsData {
   answer: string;
 }
 
-export interface IMenuSidebarProps {
-  isOpen: boolean;
-  setIsOpen: (val: boolean) => void;
-  // toggleDrawer: () => void;
-}
-
 // custome drawer type
 export interface IDrawerCustomeProps {
   open: boolean;

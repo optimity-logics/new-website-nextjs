@@ -67,6 +67,7 @@ export default {
         contact: "url('/images/homePagev2/contact-us-v2.png')",
         'our-expertise': "url('/images/homePagev2/our-expertise.png')",
         footerv2: "url('/images/homePagev2/footer.png')",
+        heroBg: "url('/images/homePagev2/hero-bg.png')",
       },
       fontFamily: {
         Inter: ['Inter'],

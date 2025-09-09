@@ -7,11 +7,14 @@ import 'react-modern-drawer/dist/index.css';
 import close from '../../../public/svg/close.svg';
 import mobileScreenLogo from '../../../public/svg/mobileScreenLogo.svg';
 import useWindowSize from '../hooks/useWindowSize';
-import { IMenuSidebarProps } from '../type/type';
 import { menuSidebar } from '../utils/Constant';
 import React from 'react';
 import router from 'next/router';
 import Button from '../ui/Button';
+interface IMenuSidebarProps {
+  isOpen: boolean;
+  setIsOpen: (val: boolean) => void;
+}
 
 const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
   const { width } = useWindowSize();
