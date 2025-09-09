@@ -121,7 +121,7 @@ export default function HowWeWork() {
       setActiveStep(workSteps[nextIndex].id);
     };
 
-    intervalRef.current = setInterval(switchToNextStep, 5000);
+    intervalRef.current = setInterval(switchToNextStep, 6000);
 
     return () => {
       if (intervalRef.current) {
@@ -147,7 +147,6 @@ export default function HowWeWork() {
         <h2 className="text-gray-900 mb-12 text-4xl font-bold md:text-5xl">
           How we work
         </h2>
-
         <div className="flex gap-10">
           <div className="flex w-full max-w-[550px] flex-col gap-5">
             {workSteps.map((step) => (
@@ -160,20 +159,20 @@ export default function HowWeWork() {
                       : 'text-gray-700 border-l-black bg-white hover:bg-[#F7F7F8]'
                   } `}
                 >
-                  {activeStep === step.id && (
+                  {activeStep === step.id ? (
                     <motion.div
                       className="absolute inset-0 bg-black"
                       initial={{ width: '0%' }}
                       animate={{ width: '100%' }}
                       transition={{
-                        duration: 5,
-                        ease: 'easeInOut',
+                        duration: 6,
+                        ease: [0.25, 0.1, 0.25, 1],
                         repeat: 0,
                         type: 'tween',
                       }}
-                      key={`progress-${step.id}`}
+                      key={`progress-${step.id}-${activeStep}`}
                     />
-                  )}
+                  ) : null}
                   <span className="relative z-10">{step.title}</span>
                 </button>
               </div>

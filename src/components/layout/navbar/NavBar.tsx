@@ -1,24 +1,16 @@
 'use client';
-import React, { useEffect } from 'react';
-import { menuData } from '@/components/utils/Constant';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef, useState } from 'react';
 import logo from '../../../../public/svg/logo.svg';
 import mobileScreenLogo from '../../../../public/svg/mobileScreenLogo.svg';
 import hamburger from '../../../../public/svg/hamburger-menu.svg';
 import MenuSidebar from '@/components/model-&-Drawer/MenuSidebar';
-import useOutsideClick from '@/components/hooks/useClickOutSide/page';
-import { useRouter } from 'next/navigation';
-import phone from '../../../../public/svg/call.svg';
-import mail from '../../../../public/svg/mail.svg';
-import { AnimatePresence, motion } from 'framer-motion';
 import AnimatedArrow from '@/components/common/AnimatedArrow';
+import MegaMenu from './MegaMenu';
 
 const NavBar = () => {
-  const megaMenuRef = useRef<HTMLDivElement>(null);
-  const router = useRouter();
-  const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  // const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const [small, setSmall] = useState(false);
@@ -29,27 +21,27 @@ const NavBar = () => {
     setHover(false);
   };
 
-  const handleClickOnMenuItem = (
-    menuTitle: string,
-    megaMenuItemLength: number,
-  ) => {
-    const redirectPages = ['blog', 'about us'];
-    const normalizedTitle = menuTitle.trim().toLowerCase();
+  // const handleClickOnMenuItem = (
+  //   menuTitle: string,
+  //   megaMenuItemLength: number,
+  // ) => {
+  //   const redirectPages = ['blog', 'about us'];
+  //   const normalizedTitle = menuTitle.trim().toLowerCase();
 
-    if (redirectPages.includes(normalizedTitle)) {
-      const formattedPath = `/${normalizedTitle.split(' ').join('-')}`;
-      router.push(formattedPath);
-      return;
-    }
+  //   if (redirectPages.includes(normalizedTitle)) {
+  //     const formattedPath = `/${normalizedTitle.split(' ').join('-')}`;
+  //     router.push(formattedPath);
+  //     return;
+  //   }
 
-    if (megaMenuItemLength === 0) return; // Prevent opening empty mega menu
+  //   if (megaMenuItemLength === 0) return; // Prevent opening empty mega menu
 
-    setActiveMenu((prev) => (prev === menuTitle ? null : menuTitle));
-  };
+  //   setActiveMenu((prev) => (prev === menuTitle ? null : menuTitle));
+  // };
 
-  useOutsideClick(megaMenuRef, () => {
-    setActiveMenu(null);
-  });
+  // useOutsideClick(megaMenuRef, () => {
+  //   setActiveMenu(null);
+  // });
 
   const handleOpenMenuDrawer = () => {
     setIsOpen(true);
@@ -101,28 +93,31 @@ const NavBar = () => {
                 </Link>
               </div>
             </div>
-            <div className="hidden lg:block">
-              <Link href="/">
-                {small ? (
-                  <Image
-                    src={mobileScreenLogo}
-                    alt="nav-logo"
-                    width={40}
-                    height={40}
-                  />
-                ) : (
-                  <Image
-                    src={logo}
-                    alt="nav-logo"
-                    width={202}
-                    height={57.09}
-                    className="w-full max-w-[130px] xl:max-w-[140px]"
-                  />
-                )}
-              </Link>
+            <div className="flex items-center gap-14">
+              <div className="hidden lg:block">
+                <Link href="/">
+                  {small ? (
+                    <Image
+                      src={mobileScreenLogo}
+                      alt="nav-logo"
+                      width={40}
+                      height={40}
+                    />
+                  ) : (
+                    <Image
+                      src={logo}
+                      alt="nav-logo"
+                      width={202}
+                      height={57.09}
+                      className="w-full max-w-[130px] xl:max-w-[140px]"
+                    />
+                  )}
+                </Link>
+              </div>
+              <MegaMenu />
             </div>
 
-            <ul className="relative hidden items-center gap-3 lg:flex lg:gap-4 xl:gap-[30px]">
+            {/* <ul className="relative hidden items-center gap-3 lg:flex lg:gap-4 xl:gap-[30px]">
               {menuData?.map((item, index) => (
                 <li
                   key={index}
@@ -253,7 +248,7 @@ const NavBar = () => {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </ul>
+            </ul> */}
             {/* <Button
               btnName="Contact Us"
               className="bg-lightBlue px-4 lg:px-6 xl:px-[30px]"
