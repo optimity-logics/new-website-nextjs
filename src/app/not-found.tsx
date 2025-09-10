@@ -12,16 +12,16 @@ export default function NotFound() {
         </div>
         <div className="flex flex-col items-center gap-5">
           <div className="flex flex-col items-center gap-2 sm:gap-3">
-            <h3 className="text-center font-Inter text-base font-bold leading-5 text-[#000000] sm:text-[26px] sm:leading-[27.39px]">
+            <h3 className="text-center font-base text-base font-bold leading-5 text-[#000000] sm:text-[26px] sm:leading-[27.39px]">
               Something went wrong.
             </h3>
-            <span className="text-center font-Inter text-sm font-normal leading-[18px] text-[#7c7676] sm:text-xl sm:leading-[29px]">
+            <span className="text-center font-base text-sm font-normal leading-[18px] text-[#7c7676] sm:text-xl sm:leading-[29px]">
               Sorry, We can’t find the page you’re looking for.
             </span>
           </div>
           <Link
             href={'/'}
-            className="w-max rounded-[5px] bg-[#1A6AA3] px-5 py-2.5 font-Poppins text-base capitalize leading-[19.36px] text-white sm:px-[30px] sm:py-[14px] 5xl:text-lg"
+            className="w-max rounded-[5px] bg-[#1A6AA3] px-5 py-2.5 font-base text-base capitalize leading-[19.36px] text-white sm:px-[30px] sm:py-[14px] 5xl:text-lg"
           >
             go back
           </Link>

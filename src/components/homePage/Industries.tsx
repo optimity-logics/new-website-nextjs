@@ -22,7 +22,7 @@ const Industries = () => {
         description="Our team of industry experts curates progressive solutions that befit your requirements"
         className="max-w-[1586px] 4xl:!gap-5"
         btnName="Industries "
-        btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
+        btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-primary sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
         LinkName="Connect to know more"
         isDark={false}
       />
@@ -76,7 +76,7 @@ const Industries = () => {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div className="flex items-center gap-2">
-                      <h4 className="font-Poppins text-xl font-normal leading-6 text-[#192020] transition-all duration-300 group-hover:text-lightBlue xl:text-[26px] xl:leading-8 5xl:font-medium">
+                      <h4 className="font-base text-xl font-normal leading-6 text-[#192020] transition-all duration-300 group-hover:text-lightBlue xl:text-[26px] xl:leading-8 5xl:font-medium">
                         {item?.industriesName}
                       </h4>
                       <Image src={arrow} alt="arrow" width={24} height={24} />
@@ -85,7 +85,7 @@ const Industries = () => {
                       {item?.industriesWork.map((items, ind) => (
                         <li
                           key={ind}
-                          className="flex items-start gap-4 font-Poppins text-base font-light leading-5 text-[#192020] 4xl:text-lg 4xl:font-normal 4xl:leading-[28.8px]"
+                          className="flex items-start gap-4 font-base text-base font-light leading-5 text-[#192020] 4xl:text-lg 4xl:font-normal 4xl:leading-[28.8px]"
                         >
                           <Image
                             src={checkmark}

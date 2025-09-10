@@ -9,10 +9,10 @@ const PrivacyPolicy = () => {
         style={{ backgroundSize: '100% 100%' }}
       >
         <div className="mx-auto flex max-w-[1217px] flex-col items-center gap-2 px-4 py-20 sm:px-6 md:px-8 xl:px-10 3xl:px-0">
-          <h2 className="font-Inter text-4xl font-semibold leading-[44px] tracking-[-2%] text-black lg:text-[44px] lg:leading-[82.3px] 4xl:text-[60px]">
+          <h2 className="font-base text-4xl font-semibold leading-[44px] tracking-[-2%] text-primary lg:text-[44px] lg:leading-[82.3px] 4xl:text-[60px]">
             Privacy Policy
           </h2>
-          <p className="text-center font-Inter text-lg font-normal leading-[29px] text-[#727265] 4xl:px-2">
+          <p className="text-center font-base text-lg font-normal leading-[29px] text-[#727265] 4xl:px-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&#39;s standard dummy
             text ever since the 1500s, when an unknown printer took a galley of
@@ -23,10 +23,10 @@ const PrivacyPolicy = () => {
       <Container className="py-12 md:py-16 lg:py-20 4xl:py-[100px]">
         <div className="flex flex-col gap-6 lg:gap-8 4xl:gap-11">
           <div className="flex flex-col gap-2.5">
-            <h4 className="font-Inter text-[22px] font-medium leading-[32px] text-[#000]">
+            <h4 className="font-base text-[22px] font-medium leading-[32px] text-[#000]">
               Privacy Policy
             </h4>
-            <p className="text-justify font-Inter text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
+            <p className="text-justify font-base text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
@@ -37,29 +37,29 @@ const PrivacyPolicy = () => {
               ipsum&#39; will uncover many web
             </p>
           </div>
-          <h4 className="font-Inter text-[22px] font-medium leading-[32px] text-[#000]">
+          <h4 className="font-base text-[22px] font-medium leading-[32px] text-[#000]">
             Why We Collect Your Data Once You Permit?
           </h4>
           <div className="flex flex-col gap-2.5">
-            <h4 className="font-Inter text-[22px] font-medium leading-[32px] text-[#000]">
+            <h4 className="font-base text-[22px] font-medium leading-[32px] text-[#000]">
               1. Accountability
             </h4>
-            <p className="text-justify font-Inter text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
+            <p className="text-justify font-base text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem
             </p>
           </div>
           <div className="flex flex-col gap-2.5">
-            <h4 className="font-Inter text-[22px] font-medium leading-[32px] text-[#000]">
+            <h4 className="font-base text-[22px] font-medium leading-[32px] text-[#000]">
               2. Why do we collect your information?
             </h4>
-            <p className="text-justify font-Inter text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
+            <p className="text-justify font-base text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem
             </p>
-            <p className="text-justify font-Inter text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
+            <p className="text-justify font-base text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
@@ -71,10 +71,10 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className="flex flex-col gap-2.5">
-            <h4 className="font-Inter text-[22px] font-medium leading-[32px] text-[#000]">
+            <h4 className="font-base text-[22px] font-medium leading-[32px] text-[#000]">
               3. Obtaining your Consent
             </h4>
-            <p className="text-justify font-Inter text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
+            <p className="text-justify font-base text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
               We will obtain your consent prior to the collection, use or
               disclosure of your information. Consent may be expressed or
               implied. Implied consent means that you provide the information to
@@ -95,10 +95,10 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className="flex flex-col gap-2.5">
-            <h4 className="font-Inter text-[22px] font-medium leading-[32px] text-[#000]">
+            <h4 className="font-base text-[22px] font-medium leading-[32px] text-[#000]">
               4. Limiting Collection
             </h4>
-            <p className="text-justify font-Inter text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
+            <p className="text-justify font-base text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem

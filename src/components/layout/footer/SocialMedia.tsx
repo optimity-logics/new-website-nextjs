@@ -6,7 +6,7 @@ import Link from 'next/link';
 const SocialMedia = () => {
   return (
     <div className="flex flex-col gap-4">
-      <h4 className="font-Poppins text-sm font-normal leading-[1.6rem] text-white 5xl:text-base">
+      <h4 className="font-base text-sm font-normal leading-[1.6rem] text-white 5xl:text-base">
         Follow Us
       </h4>
       <ul className="flex items-center gap-3">

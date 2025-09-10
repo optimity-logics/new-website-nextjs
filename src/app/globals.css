@@ -389,3 +389,59 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
 .progress-animation {
   animation: progressFill 6s cubic-bezier(0.25, 0.1, 0.25, 1) normal;
 }
+/* font family */
+
+@font-face {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(''),
+    url('../../public/fonts/aeonik-regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local(''),
+    url('../..//public/fonts/aeonik-regularitalic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local(''),
+    url('../..//public/fonts/aeonik-medium.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik';
+  font-style: italic;
+  font-weight: 500;
+  src:
+    local(''),
+    url('../..//public/fonts/aeonik-mediumitalic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local(''),
+    url('../..//public/fonts/aeonik-bold.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik';
+  font-style: italic;
+  font-weight: 700;
+  src:
+    local(''),
+    url('../..//public/fonts/aeonik-bolditalic.woff2') format('woff2');
+  font-display: swap;
+}

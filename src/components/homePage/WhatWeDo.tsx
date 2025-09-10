@@ -10,10 +10,10 @@ const WhatWeDo = () => {
       <div className="bg-whatwedobg flex flex-col items-center gap-16 rounded-[20px] border border-white bg-cover bg-no-repeat p-8 lg:flex-row 3xl:gap-[105px] 3xl:py-[52px] 3xl:pl-[84px] 3xl:pr-[75.56px]">
         <div className="flex max-w-[872px] flex-col gap-[30px]">
           <div className="flex flex-col gap-[22px]">
-            <h2 className="font-Poppins text-4xl text-[40px] font-bold leading-[46px] text-white 4xl:text-[50px] 4xl:leading-[60.51px]">
+            <h2 className="font-base text-4xl text-[40px] font-bold leading-[46px] text-white 4xl:text-[50px] 4xl:leading-[60.51px]">
               Who we are, What we do?
             </h2>
-            <p className="font-Poppins text-2xl font-normal leading-[29.05px] tracking-wide text-white">
+            <p className="font-base text-2xl font-normal leading-[29.05px] tracking-wide text-white">
               We&apos;re a dynamic team of millennials and Gen-Z, witnessing the
               digital era&apos;s evolution. With a cohesive approach, we develop
               fully integrated digital products, build brand identities, and

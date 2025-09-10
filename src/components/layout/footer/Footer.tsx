@@ -23,13 +23,13 @@ const Footer = () => {
                 />
               </div>
               <div className="flex flex-col gap-6 sm:gap-[30px]">
-                <h3 className="font-Poppins text-[26px] font-semibold leading-[30px] text-white 5xl:text-4xl 5xl:leading-[38px]">
+                <h3 className="font-base text-[26px] font-semibold leading-[30px] text-white 5xl:text-4xl 5xl:leading-[38px]">
                   <span className="highlitedtextfooter block">
                     Have a question?
                   </span>
                   Our team is happy to assist you
                 </h3>
-                <span className="max-w-[666px] font-Poppins text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
+                <span className="max-w-[666px] font-base text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
                   Ask about optimity logics impressive portfolio, pricing,
                   development approach, or anything else. Our Expert Consultants
                   are ready to help!
@@ -44,7 +44,7 @@ const Footer = () => {
                         height={22}
                       />
                     </div>
-                    <span className="font-Poppins text-base font-light leading-[1.6rem] text-white md:pr-[26px] 5xl:text-lg 5xl:leading-7">
+                    <span className="font-base text-base font-light leading-[1.6rem] text-white md:pr-[26px] 5xl:text-lg 5xl:leading-7">
                       426, 4th Floor, Swarnim Business Hub-1, opp. Global
                       International school, Godrej Garden City Road, Ahmedabad,
                       Gujarat 382470
@@ -60,7 +60,7 @@ const Footer = () => {
                           height={22}
                         />
                       </div>
-                      <span className="font-Poppins text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
+                      <span className="font-base text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
                         +91 635 301 5499
                       </span>
                     </div>
@@ -73,7 +73,7 @@ const Footer = () => {
                           height={22}
                         />
                       </div>
-                      <span className="font-Poppins text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
+                      <span className="font-base text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
                         hr@optimitylogics.com
                       </span>
                     </div>
@@ -88,14 +88,14 @@ const Footer = () => {
           <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-4 xl:gap-[70px] 3xl:gap-20 4xl:gap-[95.14px]">
             {footerData.map((section, index) => (
               <div key={index} className="flex flex-col gap-[21.37px]">
-                <h3 className="font-Poppins text-xl font-normal leading-[1.875rem] text-white">
+                <h3 className="font-base text-xl font-normal leading-[1.875rem] text-white">
                   {section?.heading}
                 </h3>
                 <ul className="flex flex-col gap-3">
                   {section.items.map((item, idx) => (
                     <li
                       key={idx}
-                      className="w-max cursor-pointer text-nowrap font-Poppins text-base font-light leading-[1.8rem] text-white opacity-70 transition-all duration-300 hover:text-lightBlue"
+                      className="w-max cursor-pointer text-nowrap font-base text-base font-light leading-[1.8rem] text-subtle transition-all duration-300 hover:text-lightBlue"
                     >
                       <Link href={item?.link}> {item?.title}</Link>
                     </li>
@@ -106,10 +106,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-between gap-5 py-[26.8px] lg:flex-row">
-          <span className="order-2 text-center font-Poppins text-sm font-normal leading-[1.6rem] text-white sm:text-start lg:order-1">
+          <span className="order-2 text-center font-base text-sm font-normal leading-[1.6rem] text-subtle sm:text-start lg:order-1">
             © 2024 Optimity Logics. All rights reserved.
           </span>
-          <ul className="order-1 flex flex-wrap items-center justify-center gap-y-2 font-Poppins text-sm font-normal leading-6 text-white lg:order-2">
+          <ul className="order-1 flex flex-wrap items-center justify-center gap-y-2 font-base text-sm font-normal leading-6 text-subtle lg:order-2">
             <li className="cursor-pointer border-r border-r-[#ffffff4a] px-5 transition-all duration-300 hover:text-lightBlue">
               About Us
             </li>

@@ -41,14 +41,14 @@ const TechnologyWeWork = () => {
             aria-labelledby="technology-tabs"
             radius="full"
             selectedKey={activeKey}
-            className="!font-Poppins !text-base !font-normal !leading-[28.8px]"
+            className="!font-base text-base !font-normal !leading-[28.8px]"
             onSelectionChange={(e) => handlChangeTechnology(e as string)}
           >
             {technologyWeWorkData.map((tech) => (
               <Tab
                 key={tech.technologyName}
                 title={tech.technologyName}
-                className="h-11 !px-[22px] !py-4 !font-Poppins !text-base !font-normal !leading-5"
+                className="h-11 !px-[22px] !py-4 !font-base !text-base !font-normal !leading-5"
               ></Tab>
             ))}
           </Tabs>
@@ -77,10 +77,10 @@ const TechnologyWeWork = () => {
               </div>
               <div className="flex flex-col gap-[25px]">
                 <div className="flex flex-col gap-5">
-                  <h2 className="font-Poppins text-2xl font-medium leading-6 text-red lg:text-4xl lg:font-semibold lg:leading-10 5xl:text-[48px] 5xl:leading-[52px]">
+                  <h2 className="font-base text-2xl font-medium leading-6 text-red lg:text-4xl lg:font-semibold lg:leading-10 5xl:text-[48px] 5xl:leading-[52px]">
                     {selectedTechnology?.technologyName}
                   </h2>
-                  <div className="flex flex-col gap-4 font-Poppins text-base font-normal leading-5 tracking-[-0.015px] text-[#2B3857] opacity-65 3xl:text-lg">
+                  <div className="flex flex-col gap-4 font-base text-base font-normal leading-5 tracking-[-0.015px] text-[#2B3857] opacity-65 3xl:text-lg">
                     <p>{selectedTechnology?.techDescription1}</p>
                     <p>{selectedTechnology?.techDescription2}</p>
                   </div>
@@ -89,7 +89,7 @@ const TechnologyWeWork = () => {
                   {selectedTechnology?.allTechnology.map((item, index) => (
                     <span
                       key={index}
-                      className="text-nowrap rounded border border-[#13192433] bg-white px-[19px] py-[5px] font-Poppins text-[14.48px] font-normal leading-[17.52px] text-[#2B3857]"
+                      className="text-nowrap rounded border border-[#13192433] bg-white px-[19px] py-[5px] font-base text-[14.48px] font-normal leading-[17.52px] text-[#2B3857]"
                     >
                       {item}
                     </span>

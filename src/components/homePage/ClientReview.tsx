@@ -55,11 +55,11 @@ const ClientReview = () => {
                       svgIconViewBox="0 0 31 31"
                       svgIconPath={filledStarPath}
                     />
-                    <p className="font-Poppins text-base font-light leading-[1.6rem] text-white opacity-50 5xl:text-lg 5xl:leading-[1.8rem]">
+                    <p className="font-base text-base font-light leading-[1.6rem] text-white opacity-50 5xl:text-lg 5xl:leading-[1.8rem]">
                       {item?.description}
                     </p>
                   </div>
-                  <span className="font-Poppins text-lg font-light leading-5 text-white lg:text-[22px] lg:leading-[26.63px]">
+                  <span className="font-base text-lg font-light leading-5 text-white lg:text-[22px] lg:leading-[26.63px]">
                     {item?.NameOrPosition}
                   </span>
                 </div>
@@ -72,7 +72,7 @@ const ClientReview = () => {
                 >
                   <button
                     onClick={handleReadMore}
-                    className="w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-Poppins font-medium leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px] 3xl:mb-8"
+                    className="w-max cursor-pointer rounded-[5px] border border-cyanBlue px-4 py-2.5 font-base font-medium leading-[19.36px] text-cyanBlue transition-all duration-300 hover:bg-cyanBlue hover:text-white lg:px-[33px] lg:py-[14px] 3xl:mb-8"
                     disabled={isLoading} // Disable button while loading
                   >
                     {isLoading ? (
