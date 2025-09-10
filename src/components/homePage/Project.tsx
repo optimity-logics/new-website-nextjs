@@ -68,7 +68,7 @@ const Project = () => {
                         {/* <div className="flex flex-col gap-[22px]"> */}
                         <div className="flex flex-col gap-[17px]">
                           <div className="flex items-center gap-[3px]">
-                            <h5 className="font-Poppins text-xl font-medium leading-6 text-white">
+                            <h5 className="font-base text-xl font-medium leading-6 text-white">
                               {item?.projectName}
                             </h5>
                             <div className="invisible relative flex h-6 w-6 translate-x-[-30px] items-center justify-center rounded-full bg-red opacity-0 transition-all duration-500 ease-out group-hover:visible group-hover:translate-x-2 group-hover:opacity-100">
@@ -81,7 +81,7 @@ const Project = () => {
                               />
                             </div>
                           </div>
-                          <p className="font-Poppins text-base font-normal leading-[22.4px] text-white">
+                          <p className="font-base text-base font-normal leading-[22.4px] text-white">
                             {item?.projectDescription}
                           </p>
                         </div>

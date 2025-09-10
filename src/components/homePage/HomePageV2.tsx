@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import heroImg from '../../../public/images/homePagev2/logov2.svg';
+import heroImg from '../../../public/images/homePagev2/logov3.svg';
 import logo from '../../../public/svg/logo.svg';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -8,7 +8,9 @@ import shape1 from '../../../public/images/homePagev2/shape-1.png';
 import shape2 from '../../../public/images/homePagev2/shape-2.png';
 import shape3 from '../../../public/images/homePagev2/shape-3.png';
 import shape4 from '../../../public/images/homePagev2/shape-4.png';
-import arrow from '../../../public/images/homePagev2/arrow.png';
+import arrow from '../../../public/images/homePagev2/arrow-black.png';
+import ellips1 from '../../../public/images/homePagev2/ellips1.png';
+import ellipse2 from '../../../public/images/homePagev2/ellipse2.png';
 import LogoAnimation from './LogoAnimation';
 
 import {
@@ -27,7 +29,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Mousewheel, Navigation } from 'swiper/modules';
 import Faqs from './Faqs';
 import AnimatedArrow from '../common/AnimatedArrow';
-import HowWeWork from './HowWeWork';
 
 const HomePageV2 = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
@@ -108,105 +109,157 @@ const HomePageV2 = () => {
   return (
     <>
       {/* section-1 */}
-      <div className="bg-heroBg bg-cover bg-top bg-no-repeat">
-        <div className="relative mx-auto w-full max-w-[1680px] px-[120px] py-[154px]">
-          <motion.div
-            animate={{ y: [0, -15, 0] }}
-            transition={{
-              duration: 1.8,
-              ease: 'easeIn',
-              repeat: Infinity,
-              repeatDelay: 0.3,
-            }}
-            className="absolute left-[10%] top-[50px]"
-          >
-            <Image src={shape1} alt="shape-1" width={96} height={84} />
-          </motion.div>
-          <motion.div
-            animate={{ x: [0, -20, 0] }}
-            transition={{
-              duration: 1.8,
-              ease: 'easeIn',
-              repeat: Infinity,
-              repeatDelay: 0.3,
-            }}
-            className="absolute bottom-[70px] left-[20%]"
-          >
-            <Image src={shape2} alt="shape-1" width={96} height={84} />
-          </motion.div>
-          <motion.div
-            animate={{ rotate: 90 }} // rotate full circle
-            transition={{
-              duration: 0.6, // speed (2s per rotation)
-              ease: 'linear', // constant speed (no easing)
-              repeat: Infinity,
-              repeatDelay: 0.6,
-            }}
-            className="absolute right-[8%] top-[80px]"
-          >
-            <Image src={shape3} alt="shape-1" width={70} height={64} />
-          </motion.div>
-          <motion.div
-            animate={{ x: [0, -20, 0] }}
-            transition={{
-              duration: 1.8,
-              ease: 'easeIn',
-              repeat: Infinity,
-              repeatDelay: 0.3,
-            }}
-            className="absolute bottom-[50px] right-[3%]"
-          >
-            <Image src={shape4} alt="shape-1" width={96} height={84} />
-          </motion.div>
-          <div className="flex items-center justify-between gap-[60px]">
-            <div className="flex w-full max-w-[860px] flex-col gap-[50px]">
-              <div className="flex flex-col gap-[20px]">
-                <h2 className="whitespace-pre-line font-Inter text-[60px] font-bold uppercase leading-tight text-black">
-                  Bring Your
-                  <br />
-                  <span className="text-red">App Vision </span>to Life,
-                  <br /> Anytime with AI.
-                </h2>
-                <p className="w-full max-w-[800px] font-Inter text-[18px] font-normal leading-[24px] text-[#5E5E5E]">
-                  We&#39;re a full-stack agency specializing in digital
-                  transformation. Crafting experiences for startups, SMEs, and
-                  Fortune 500 companies.
-                </p>
-              </div>
-              <button
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                onMouseUp={handleMouseEnter}
-                onMouseDown={handleMouseLeave}
-                type="button"
-                className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-white"
-              >
-                Learn more
-                <AnimatedArrow hover={hover} />
-              </button>
-            </div>
+      <div
+        style={{
+          backgroundImage:
+            'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)',
+        }}
+      >
+        <div
+          style={{ backgroundSize: '100% 100%' }}
+          className="bg-heroBg bg-no-repeat"
+        >
+          <div className="relative mx-auto w-full max-w-[1680px] px-[120px] py-[184px]">
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+              animate={{ y: [0, -15, 0] }}
               transition={{
-                duration: 0.8,
+                duration: 1.8,
                 ease: 'easeIn',
+                repeat: Infinity,
+                repeatDelay: 0.3,
               }}
+              className="absolute left-[10%] top-[50px]"
             >
-              <div className="relative z-30 w-max">
-                <Image src={heroImg} alt="hero-img" width={558} height={515} />
-              </div>
+              <Image src={shape1} alt="shape-1" width={96} height={84} />
             </motion.div>
+            <motion.div
+              animate={{ x: [0, -20, 0] }}
+              transition={{
+                duration: 1.8,
+                ease: 'easeIn',
+                repeat: Infinity,
+                repeatDelay: 0.3,
+              }}
+              className="absolute bottom-[70px] left-[20%]"
+            >
+              <Image src={shape2} alt="shape-1" width={96} height={84} />
+            </motion.div>
+            <motion.div
+              animate={{ rotate: 90 }} // rotate full circle
+              transition={{
+                duration: 0.6, // speed (2s per rotation)
+                ease: 'linear', // constant speed (no easing)
+                repeat: Infinity,
+                repeatDelay: 0.6,
+              }}
+              className="absolute right-[8%] top-[80px]"
+            >
+              <Image src={shape3} alt="shape-1" width={70} height={64} />
+            </motion.div>
+            <motion.div
+              animate={{ x: [0, -20, 0] }}
+              transition={{
+                duration: 1.8,
+                ease: 'easeIn',
+                repeat: Infinity,
+                repeatDelay: 0.3,
+              }}
+              className="absolute bottom-[50px] right-[3%]"
+            >
+              <Image src={shape4} alt="shape-1" width={96} height={84} />
+            </motion.div>
+            <div className="flex items-center justify-between gap-[60px]">
+              <div className="flex w-full max-w-[860px] flex-col gap-[50px]">
+                <div className="flex flex-col gap-[20px]">
+                  <h2 className="whitespace-pre-line font-base text-[60px] font-medium leading-tight text-primary">
+                    Bring Your
+                    <br />
+                    <span className="text-red">App Vision </span>to Life,
+                    <br /> Anytime with AI.
+                  </h2>
+                  <p className="w-full max-w-[800px] font-base text-[18px] font-normal leading-[24px] text-secondary opacity-70">
+                    We&#39;re a full-stack agency specializing in digital
+                    transformation. Crafting experiences for startups, SMEs, and
+                    Fortune 500 companies.
+                  </p>
+                </div>
+                <button
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  onMouseUp={handleMouseEnter}
+                  onMouseDown={handleMouseLeave}
+                  type="button"
+                  className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+                >
+                  Learn more
+                  <AnimatedArrow hover={hover} />
+                </button>
+              </div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.8,
+                  ease: 'easeIn',
+                }}
+              >
+                <div className="relative z-30 w-max">
+                  <Image
+                    src={ellips1}
+                    alt=""
+                    width={300}
+                    height={300}
+                    className="absolute -left-[17%] -top-[20%] -z-10 object-contain"
+                  />
+                  <Image
+                    src={ellips1}
+                    alt=""
+                    width={300}
+                    height={300}
+                    className="absolute -bottom-[16%] -right-[20%] -z-10 object-contain"
+                  />
+                  <Image
+                    src={ellipse2}
+                    alt=""
+                    width={400}
+                    height={400}
+                    className="absolute -bottom-[18%] -left-[19%] -z-10 object-contain"
+                  />
+                  <Image
+                    src={ellipse2}
+                    alt=""
+                    width={400}
+                    height={400}
+                    className="absolute -top-[8%] right-[6%] -z-10 object-contain"
+                  />
+                  <Image
+                    src={heroImg}
+                    alt="hero-img"
+                    width={450}
+                    height={450}
+                    className=""
+                  />
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>
       {/* logo */}
-      <div className="mx-auto mt-[50px] w-full max-w-[1680px] px-[120px]">
-        <div className="flex flex-col items-center gap-[25px] rounded-2xl border border-darkGray bg-black px-5 pb-[22px] pt-[30px] shadow-lg 5xl:rounded-[24px]">
-          <span className="text-center font-Poppins text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
-            Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
-          </span>
-          <LogoAnimation logo={logoIcons} />
+      <div
+        style={{
+          boxShadow:
+            '0 -6px 11px 0px rgb(0 0 0 / 0.05),0 0 3px -3px rgb(0 0 0 / 0.2)',
+        }}
+        className="bg-white pt-10"
+      >
+        <div className="mx-auto w-full max-w-[1680px] px-[120px]">
+          <div className="flex flex-col items-center gap-[25px] rounded-2xl border border-darkGray bg-black px-5 pb-[22px] pt-[30px] shadow-lg 5xl:rounded-[24px]">
+            <span className="text-center font-base text-base font-normal leading-[1.6rem] text-subtle md:text-lg md:leading-7">
+              Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
+            </span>
+            <LogoAnimation logo={logoIcons} />
+          </div>
         </div>
       </div>
       {/* section-3 */}
@@ -215,8 +268,7 @@ const HomePageV2 = () => {
         className="my-[100px] bg-our-expertise bg-cover bg-no-repeat"
       >
         <div className="flex flex-col gap-8">
-          <h3 className="mx-auto w-full max-w-[1680px] px-[120px] font-Inter text-[48px] font-bold leading-[52px] text-black">
-            {' '}
+          <h3 className="mx-auto w-full max-w-[1680px] px-[120px] font-base text-[48px] font-medium leading-[52px] text-primary">
             Our Expertise
           </h3>
           <div className="w-full">
@@ -237,10 +289,10 @@ const HomePageV2 = () => {
                     <div className="flex items-center gap-[65px]">
                       <div className="flex w-full max-w-[799px] flex-col gap-[40px]">
                         <div className="flex flex-col gap-5">
-                          <h5 className="font-Inter text-[28px] font-bold leading-[32px] text-[#1B1B1B]">
+                          <h5 className="font-base text-[28px] font-medium leading-[32px] text-primary">
                             {item?.title}
                           </h5>
-                          <p className="font-Inter text-[18px] font-normal leading-6 text-[#5E5E5E]">
+                          <p className="font-base text-[18px] font-normal leading-6 text-iconSubtle opacity-50">
                             {item?.description}
                           </p>
                         </div>
@@ -250,7 +302,7 @@ const HomePageV2 = () => {
                           onMouseUp={handleMouseEnterViewAll}
                           onMouseDown={handleMouseLeaveViewAl}
                           type="button"
-                          className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-white"
+                          className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
                         >
                           {item?.button}
                           <AnimatedArrow hover={hoverViewAl} />
@@ -279,11 +331,11 @@ const HomePageV2 = () => {
             <div className="flex flex-col gap-[20px]">
               <div
                 style={{ backgroundSize: '100% 100%' }}
-                className="flex w-full items-center justify-center bg-card-1 bg-cover bg-no-repeat py-[40px] font-Inter text-[48px] font-semibold leading-[52px] text-black"
+                className="flex w-full items-center justify-center bg-card-1 bg-cover bg-no-repeat py-[40px] font-base text-[48px] font-medium leading-[52px] text-primary"
               >
                 20+
               </div>
-              <span className="text-center font-Inter text-[18px] font-semibold leading-[24px] text-black">
+              <span className="text-center font-base text-[18px] font-normal leading-[24px] text-primary">
                 Happy Clients
               </span>
             </div>
@@ -292,11 +344,11 @@ const HomePageV2 = () => {
             <div className="flex flex-col gap-[20px]">
               <div
                 style={{ backgroundSize: '100% 100%' }}
-                className="flex w-full items-center justify-center bg-card-2 bg-cover bg-no-repeat py-[40px] font-Inter text-[48px] font-semibold leading-[52px] text-black"
+                className="flex w-full items-center justify-center bg-card-2 bg-cover bg-no-repeat py-[40px] font-base text-[48px] font-medium leading-[52px] text-primary"
               >
                 50+
               </div>
-              <span className="text-center font-Inter text-[18px] font-semibold leading-[24px] text-black">
+              <span className="text-center font-base text-[18px] font-normal leading-[24px] text-primary">
                 Finished Projects
               </span>
             </div>
@@ -305,11 +357,11 @@ const HomePageV2 = () => {
             <div className="flex flex-col gap-[20px]">
               <div
                 style={{ backgroundSize: '100% 100%' }}
-                className="flex w-full items-center justify-center bg-card-3 bg-cover bg-no-repeat py-[40px] font-Inter text-[48px] font-semibold leading-[52px] text-black"
+                className="flex w-full items-center justify-center bg-card-3 bg-cover bg-no-repeat py-[40px] font-base text-[48px] font-medium leading-[52px] text-primary"
               >
                 10+
               </div>
-              <span className="text-center font-Inter text-[18px] font-semibold leading-[24px] text-black">
+              <span className="text-center font-base text-[18px] font-normal leading-[24px] text-primary">
                 Skilled Experts
               </span>
             </div>
@@ -322,7 +374,7 @@ const HomePageV2 = () => {
         className="bg-tech-we-work bg-cover bg-no-repeat"
       >
         <div className="mx-auto flex w-full max-w-[1680px] flex-col gap-[60px] px-[120px] py-[100px]">
-          <h3 className="font-Inter text-[48px] font-bold leading-[52px] text-white">
+          <h3 className="font-base text-[48px] font-medium leading-[52px] text-white">
             Technologies we work with
           </h3>
           <div
@@ -345,7 +397,7 @@ const HomePageV2 = () => {
                         width={254}
                         height={339}
                       />
-                      <span className="mt-auto p-[14px] font-Inter text-[20px] font-medium leading-[24px] text-white">
+                      <span className="mt-auto p-[14px] font-base text-[20px] font-medium leading-[24px] text-white">
                         {item?.heading}
                       </span>
                     </div>
@@ -356,22 +408,14 @@ const HomePageV2 = () => {
         </div>
       </div>
       {/* section-6 */}
-      <HowWeWork />
-      {/* section-7 */}
-      <div
-        style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
-        className="bg-tech-we-work bg-cover bg-no-repeat py-[100px]"
-      >
+      <div className="py-[100px]">
         <div className="flex flex-col gap-[80px]">
           <div className="mx-auto flex w-full max-w-[1680px] items-center justify-between px-[120px]">
-            <h4 className="font-Inter text-[48px] font-bold leading-[52px] text-white">
+            <h4 className="font-base text-[48px] font-medium leading-[52px] text-primary">
               Successfully deployed projects
             </h4>
             <div className="flex w-max items-center gap-10">
               <button className="custom-prev" ref={prevRef}>
-                <Image src={arrow} alt="arrow" width={24} height={24} />
-              </button>
-              <button className="custom-next" ref={nextRef}>
                 <Image
                   src={arrow}
                   alt="arrow"
@@ -379,6 +423,9 @@ const HomePageV2 = () => {
                   height={24}
                   className="rotate-180"
                 />
+              </button>
+              <button className="custom-next" ref={nextRef}>
+                <Image src={arrow} alt="arrow" width={24} height={24} />
               </button>
             </div>
           </div>
@@ -398,8 +445,8 @@ const HomePageV2 = () => {
               {projectWeDone &&
                 projectWeDone.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <div className="flex justify-between gap-[30px] rounded-xl bg-white p-[28px]">
-                      <h6 className="font-Inter text-[33px] font-bold leading-[38px] text-black">
+                    <div className="flex justify-between gap-[30px] rounded-xl bg-[#f0f3f5]/70 p-[28px]">
+                      <h6 className="font-base text-[33px] font-medium leading-[38px] text-primary">
                         {item?.projectName}
                       </h6>
                       <Image
@@ -417,132 +464,121 @@ const HomePageV2 = () => {
         </div>
       </div>
       {/* ssection - 8 */}
-      <div className="relative mx-auto max-w-[1680px] py-[100px]">
-        <div
-          style={{
-            backgroundImage: "url('/images/homePagev2/Line1.png')",
-            WebkitMaskImage:
-              'linear-gradient(90deg, rgba(102, 102, 102, 0.11) 0.6%, #666666 50.78%, rgba(102, 102, 102, 0.11) 100%)',
-          }}
-          className="absolute inset-y-0 left-[119px] w-[1px] bg-cover"
-        ></div>
-        <div
-          style={{
-            backgroundImage: "url('/images/homePagev2/Line1.png')",
-            WebkitMaskImage:
-              'linear-gradient(90deg, rgba(102, 102, 102, 0.11) 0.6%, #666666 50.78%, rgba(102, 102, 102, 0.11) 100%)',
-          }}
-          className="-0 absolute inset-y-0 right-[119px] w-[1px] bg-cover"
-        ></div>
-        <div className="relative px-[120px]">
+      <div
+        style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
+        className="bg-tech-we-work bg-cover bg-no-repeat"
+      >
+        <div className="relative mx-auto max-w-[1680px] py-[100px]">
           <div
             style={{
-              WebkitMaskImage:
-                'linear-gradient(90deg, rgba(102,102,102,0.11) 0.6%, #666666 50.78%, rgba(102,102,102,0.11) 100%)',
+              backgroundImage: "url('/images/homePagev2/Line1.png')",
             }}
-            className="absolute inset-x-0 -top-[3px] h-[1px] border-1 border-dashed border-gray opacity-30"
+            className="absolute inset-y-0 left-[119px] w-[1px] bg-cover"
           ></div>
           <div
             style={{
-              WebkitMaskImage:
-                'linear-gradient(90deg, rgba(102,102,102,0.11) 0.6%, #666666 50.78%, rgba(102,102,102,0.11) 100%)',
+              backgroundImage: "url('/images/homePagev2/Line1.png')",
             }}
-            className="absolute inset-x-0 bottom-[-3px] !h-[1px] border-1 border-dashed border-gray opacity-30"
+            className="-0 absolute inset-y-0 right-[119px] w-[1px] bg-cover"
           ></div>
+          <div className="relative px-[120px]">
+            <div className="absolute inset-x-0 -top-[3px] h-[1px] border-1 border-dashed border-gray opacity-30"></div>
+            <div className="absolute inset-x-0 bottom-[-3px] !h-[1px] border-1 border-dashed border-gray opacity-30"></div>
 
-          <div className="grid grid-cols-3 gap-5">
-            <motion.div
-              onMouseMove={(e) => {
-                const rect = e.currentTarget.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
+            <div className="grid grid-cols-3 gap-5">
+              <motion.div
+                onMouseMove={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  const x = e.clientX - rect.left - rect.width / 2;
+                  const y = e.clientY - rect.top - rect.height / 2;
 
-                e.currentTarget.style.transform = `
+                  e.currentTarget.style.transform = `
               perspective(1000px) 
               rotateX(${-y / 60}deg) 
               rotateY(${x / 60}deg) 
               scale(1.02)
             `;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = `
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = `
               perspective(1000px) 
               rotateX(0deg) 
               rotateY(0deg) 
               scale(1)
             `;
-              }}
-              style={{
-                transition: 'transform 0.3s ease-out',
-              }}
-              className="col-start-3 row-span-2 row-start-2"
-            >
-              <div className="flex h-full flex-col justify-between rounded-[17px] bg-black px-[28px] py-[32px]">
-                <p className="font-Inter text-[50px] font-extrabold leading-[56px] text-white">
-                  Let’s Build Something Great Together
-                </p>
-                <button
-                  onMouseEnter={handleMouseEnterContact}
-                  onMouseLeave={handleMouseLeaveContact}
-                  onMouseUp={handleMouseEnterContact}
-                  onMouseDown={handleMouseLeaveContact}
-                  type="button"
-                  className="flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-black"
-                >
-                  Contact us
-                  <AnimatedArrow hover={hoverContact} />
-                </button>
-              </div>
-            </motion.div>
-            {client &&
-              client.map((item, index) => (
-                <motion.div
-                  key={index}
-                  onMouseMove={(e) => {
-                    const rect = e.currentTarget.getBoundingClientRect();
-                    const x = e.clientX - rect.left - rect.width / 2;
-                    const y = e.clientY - rect.top - rect.height / 2;
+                }}
+                style={{
+                  transition: 'transform 0.3s ease-out',
+                }}
+                className="col-start-3 row-span-2 row-start-2"
+              >
+                <div className="flex h-full flex-col justify-between rounded-[17px] bg-white/10 px-[28px] py-[32px] backdrop-blur-lg">
+                  <p className="font-base text-[50px] font-extrabold leading-[56px] text-white">
+                    Let’s Build Something Great Together
+                  </p>
+                  <button
+                    onMouseEnter={handleMouseEnterContact}
+                    onMouseLeave={handleMouseLeaveContact}
+                    onMouseUp={handleMouseEnterContact}
+                    onMouseDown={handleMouseLeaveContact}
+                    type="button"
+                    className="flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-primary"
+                  >
+                    Contact us
+                    <AnimatedArrow hover={hoverContact} />
+                  </button>
+                </div>
+              </motion.div>
+              {client &&
+                client.map((item, index) => (
+                  <motion.div
+                    key={index}
+                    onMouseMove={(e) => {
+                      const rect = e.currentTarget.getBoundingClientRect();
+                      const x = e.clientX - rect.left - rect.width / 2;
+                      const y = e.clientY - rect.top - rect.height / 2;
 
-                    e.currentTarget.style.transform = `
+                      e.currentTarget.style.transform = `
               perspective(1000px) 
               rotateX(${-y / 20}deg) 
               rotateY(${x / 20}deg) 
               scale(1.05)
             `;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = `
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = `
               perspective(1000px) 
               rotateX(0deg) 
               rotateY(0deg) 
               scale(1)
             `;
-                  }}
-                  style={{
-                    transition: 'transform 0.3s ease-out',
-                  }}
-                >
-                  <div
-                    className={`rounded-[17px] p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
+                    }}
+                    style={{
+                      transition: 'transform 0.3s ease-out',
+                    }}
                   >
-                    <p className="line-clamp-5 font-Inter text-lg font-normal leading-7 text-[#2A2A30]">
-                      {item?.message}
-                    </p>
-                    <div className="flex items-center justify-between gap-2.5">
-                      <p className="font-Inter text-base font-normal leading-5 text-[#5E5E5E]">
-                        {item?.role}
+                    <div
+                      className={`rounded-[17px] p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
+                    >
+                      <p className="line-clamp-5 font-base text-lg font-normal leading-7 text-secondary opacity-80">
+                        {item?.message}
                       </p>
-                      <Image
-                        src={item?.avatar}
-                        alt="client"
-                        width={67}
-                        height={67}
-                        className="h-[67px] w-[67px] rounded-[12px] object-cover outline outline-[2px] -outline-offset-1 outline-[#0000001A]"
-                      />
+                      <div className="flex items-center justify-between gap-2.5">
+                        <p className="font-base text-base font-normal leading-5 text-subtle">
+                          {item?.role}
+                        </p>
+                        <Image
+                          src={item?.avatar}
+                          alt="client"
+                          width={67}
+                          height={67}
+                          className="h-[67px] w-[67px] rounded-[12px] object-cover outline outline-[2px] -outline-offset-1 outline-[#0000001A]"
+                        />
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
-              ))}
+                  </motion.div>
+                ))}
+            </div>
           </div>
         </div>
       </div>
@@ -556,10 +592,10 @@ const HomePageV2 = () => {
         >
           <div className="flex items-center justify-between">
             <div className="flex w-full max-w-[570px] flex-col gap-5">
-              <h4 className="font-Inter text-[60px] font-semibold leading-[65px] text-white">
+              <h4 className="font-base text-[60px] font-medium leading-[65px] text-white">
                 We’re Here to <span className="text-red"> Help, Anytime.</span>
               </h4>
-              <p className="pr-[76px] font-Inter text-[18px] font-light leading-tight text-white">
+              <p className="pr-[76px] font-base text-[18px] font-normal leading-tight text-subtle">
                 Our support team is ready to provide prompt solutions and
                 guidance to ensure your experience with us is seamless and
                 satisfying.
@@ -571,28 +607,28 @@ const HomePageV2 = () => {
                   <input
                     type="text"
                     placeholder="First Name"
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
+                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                   />
                   <input
                     type="text"
                     placeholder="Last Name"
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
+                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                   />
                 </div>
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
+                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
+                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <textarea
                   rows={2}
                   placeholder="Description"
-                  className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-Inter text-base font-normal leading-tight text-white/70 focus:outline-none"
+                  className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                 />
               </div>
               <button
@@ -601,7 +637,7 @@ const HomePageV2 = () => {
                 onMouseUp={handleMouseEnterSubmit}
                 onMouseDown={handleMouseLeaveSubmit}
                 type="button"
-                className="flex w-max items-center gap-1 rounded-[50px] bg-red px-5 py-2 font-Inter text-base font-normal leading-tight text-white"
+                className="flex w-max items-center gap-1 rounded-[50px] bg-red px-5 py-2 font-base text-base font-normal leading-tight text-white"
               >
                 Submit
                 <AnimatedArrow hover={hoverSubmit} />
@@ -619,7 +655,7 @@ const HomePageV2 = () => {
             height={57.09}
             className="w-full max-w-[130px] xl:max-w-[150px]"
           />
-          <span className="text-center font-Inter text-lg font-light leading-7 text-[#2A2A30]">
+          <span className="text-center font-base text-lg font-normal leading-7 text-secondary">
             426, 4th Floor, Swarnim Business Hub-1, opp. Global International
             school, Godrej Garden City Road, Ahmedabad, Gujarat 382470
           </span>

@@ -52,16 +52,16 @@ const AllPageContent = ({ data }: IPropsType) => {
         <div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row 4xl:gap-16">
           <div className="flex w-full flex-col gap-6 lg:max-w-[736px] xl:gap-8 4xl:gap-12">
             <div className="flex flex-col gap-3 md:gap-8">
-              <h2 className="font-Inter text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 4xl:text-[55px] 4xl:leading-[60px] 5xl:text-[60px] 5xl:font-semibold 5xl:leading-[64px]">
+              <h2 className="font-base text-[26px] font-medium capitalize leading-[2.3rem] text-lightBlack md:text-4xl md:leading-10 lg:text-start 3xl:text-[40px] 3xl:leading-[44px] 4xl:text-[55px] 4xl:leading-[60px] 5xl:text-[60px] 5xl:font-semibold 5xl:leading-[64px]">
                 {data?.HeroSectionData?.heading}
               </h2>
-              <p className="font-Inter text-lg font-normal leading-[29px] text-[#7c7676]">
+              <p className="font-base text-lg font-normal leading-[29px] text-[#7c7676]">
                 {data?.HeroSectionData?.description}
               </p>
             </div>
             <Link
               href={data?.HeroSectionData?.btnLink}
-              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
+              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-base text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
             >
               {data?.HeroSectionData?.btnName}{' '}
               <Image
@@ -76,11 +76,11 @@ const AllPageContent = ({ data }: IPropsType) => {
               {data?.HeroSectionData?.workWithTechnology &&
                 data?.HeroSectionData?.workWithTechnology.map((item, index) => (
                   <div key={index} className="flex flex-col items-start gap-1">
-                    <span className="font-Poppins text-2xl font-medium leading-6 text-red md:text-3xl md:leading-[44.8px]">
+                    <span className="font-base text-2xl font-medium leading-6 text-red md:text-3xl md:leading-[44.8px]">
                       {item?.title}
                     </span>
                     <p
-                      className={`font-Poppins text-lg font-normal leading-6 text-[#212529] 5xl:text-xl 5xl:leading-[28.8px]`}
+                      className={`font-base text-lg font-normal leading-6 text-[#212529] 5xl:text-xl 5xl:leading-[28.8px]`}
                     >
                       {item?.description}
                     </p>
@@ -105,10 +105,10 @@ const AllPageContent = ({ data }: IPropsType) => {
               ) : (
                 <form className="flex w-full max-w-[620px] flex-col gap-[14px] rounded-3xl bg-[#e2f7f8] bg-cover px-[26px] py-[30px]">
                   <div className="flex flex-col gap-1.5">
-                    <h3 className="font-Inter text-2xl font-semibold leading-7 text-black 3xl:text-3xl 3xl:leading-9">
+                    <h3 className="font-base text-2xl font-semibold leading-7 text-primary 3xl:text-3xl 3xl:leading-9">
                       Book a Developer Interview
                     </h3>
-                    <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] 3xl:text-xl 3xl:leading-7">
+                    <p className="font-base text-lg font-normal leading-6 text-[#504C4C] 3xl:text-xl 3xl:leading-7">
                       Provide details about the skills you need, and we’ll find
                       the right candidate for you.
                     </p>
@@ -117,18 +117,18 @@ const AllPageContent = ({ data }: IPropsType) => {
                     <input
                       type="text"
                       placeholder="Your name.."
-                      className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
+                      className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-base text-base font-light leading-6 text-[#192020] focus:outline-none"
                     />
                     <input
                       type="text"
                       placeholder="Email address.."
-                      className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
+                      className="w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-base text-base font-light leading-6 text-[#192020] focus:outline-none"
                     />
                     <PhoneInput
                       className="w-full !space-x-5 border-none"
                       placeholder="Phone number"
                       defaultCountry="in" // Use lowercase 'in' for India
-                      inputClassName="w-full !border !border-[#19202033]  !px-[15px] !py-[14.59px] font-Inter !text-base font-light !leading-6 !text-[#192020] focus:outline-none !outline-none !rounded-[10px] !bg-white !min-h-[54px]"
+                      inputClassName="w-full !border !border-[#19202033]  !px-[15px] !py-[14.59px] font-base !text-base font-light !leading-6 !text-[#192020] focus:outline-none !outline-none !rounded-[10px] !bg-white !min-h-[54px]"
                       countrySelectorStyleProps={{
                         className: '  !z-[99]',
                         buttonClassName:
@@ -139,11 +139,11 @@ const AllPageContent = ({ data }: IPropsType) => {
                     <textarea
                       rows={3}
                       placeholder="Tell us about your project.."
-                      className="appearance-[#ffffff4a] w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-Inter text-base font-light leading-6 text-[#192020] focus:outline-none"
+                      className="appearance-[#ffffff4a] w-full rounded-[10px] border border-[#19202033] bg-white px-[15px] py-[14.59px] font-base text-base font-light leading-6 text-[#192020] focus:outline-none"
                     />
                     <button
                       type="submit"
-                      className="mt-[5px] flex w-max cursor-pointer items-center gap-2.5 rounded-[39px] bg-red px-4 py-3 font-Inter text-sm font-medium uppercase text-white md:px-[21px] md:py-4 md:text-lg md:leading-[24.2px]"
+                      className="mt-[5px] flex w-max cursor-pointer items-center gap-2.5 rounded-[39px] bg-red px-4 py-3 font-base text-sm font-medium uppercase text-white md:px-[21px] md:py-4 md:text-lg md:leading-[24.2px]"
                     >
                       inquire now{' '}
                       <Image src={arrow} alt="Arrow" width={24} height={24} />
@@ -160,7 +160,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         style={{ backgroundSize: '100% 100%' }}
       >
         <div className="flex flex-col items-center gap-[25px] rounded-2xl border border-darkGray bg-black px-5 pb-[22px] pt-[30px] 5xl:rounded-[24px]">
-          <span className="text-center font-Poppins text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
+          <span className="text-center font-base text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
           </span>
           <Marquee gradient={true} gradientColor="black" speed={55}>
@@ -201,10 +201,10 @@ const AllPageContent = ({ data }: IPropsType) => {
                   key={index}
                   className="flex flex-col gap-2.5 rounded-[26.89px] bg-[#B5B5B51a] p-6 xl:p-[30px]"
                 >
-                  <h3 className="font-Inter text-2xl font-semibold leading-7 text-black 3xl:text-3xl 3xl:leading-9">
+                  <h3 className="font-base text-2xl font-semibold leading-7 text-primary 3xl:text-3xl 3xl:leading-9">
                     {item?.heading}
                   </h3>
-                  <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] opacity-70 3xl:text-xl 3xl:leading-7">
+                  <p className="font-base text-lg font-normal leading-6 text-[#504C4C] opacity-70 3xl:text-xl 3xl:leading-7">
                     {item?.description}
                   </p>
                 </div>
@@ -212,7 +212,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             </div>
             <Link
               href={data?.AppDevelopment?.btnLink}
-              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
+              className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-base text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
             >
               {data?.AppDevelopment?.btnName}{' '}
               <Image
@@ -234,16 +234,16 @@ const AllPageContent = ({ data }: IPropsType) => {
           <div className="flex items-center justify-between gap-6 rounded-2xl bg-technologbg bg-cover bg-center bg-no-repeat px-5 md:rounded-[40px] md:pl-16 md:pr-[42px] 5xl:items-center">
             <div className="flex w-full flex-col gap-[30px] py-5 md:py-10 xl:max-w-[759px]">
               <div className="flex flex-col gap-5">
-                <h3 className="font-Inter text-2xl font-semibold leading-7 text-white 3xl:text-4xl 3xl:leading-[43.57px]">
+                <h3 className="font-base text-2xl font-semibold leading-7 text-white 3xl:text-4xl 3xl:leading-[43.57px]">
                   {data?.NextGen?.heading}
                 </h3>
-                <p className="font-Inter text-base font-normal leading-6 text-white 4xl:text-lg 4xl:leading-6">
+                <p className="font-base text-base font-normal leading-6 text-white 4xl:text-lg 4xl:leading-6">
                   {data?.NextGen?.description}
                 </p>
               </div>
               <Link
                 href={data?.NextGen?.btnLink}
-                className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
+                className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-base text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
               >
                 {data?.NextGen?.btnName}
                 <Image
@@ -263,7 +263,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                     index <= 3 && (
                       <li
                         key={index}
-                        className={`flex items-center gap-2 text-nowrap rounded-[30px] border border-[#192020] p-3 font-Poppins text-sm font-normal leading-[25.6px] text-white backdrop-blur-3xl ${index === 2 ? '' : '-ml-5'} w-max`}
+                        className={`flex items-center gap-2 text-nowrap rounded-[30px] border border-[#192020] p-3 font-base text-sm font-normal leading-[25.6px] text-white backdrop-blur-3xl ${index === 2 ? '' : '-ml-5'} w-max`}
                       >
                         <Image
                           src={item?.accuraceyImg}
@@ -290,7 +290,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                     index <= 1 && (
                       <li
                         key={index}
-                        className={`flex items-center gap-2 text-nowrap rounded-[30px] border border-[#192020] p-3 font-Poppins text-sm font-normal leading-[25.6px] text-white backdrop-blur-3xl ${index === 0 ? '' : '-ml-5'} w-max`}
+                        className={`flex items-center gap-2 text-nowrap rounded-[30px] border border-[#192020] p-3 font-base text-sm font-normal leading-[25.6px] text-white backdrop-blur-3xl ${index === 0 ? '' : '-ml-5'} w-max`}
                       >
                         <Image
                           src={item?.accuraceyImg}
@@ -352,7 +352,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                           <React.Fragment key={index}>
                             <Image src={image} alt="" width={34} height={34} />
                             {index < item.images.length - 1 && (
-                              <span className="font-Poppins text-3xl font-medium">
+                              <span className="font-base text-3xl font-medium">
                                 +
                               </span>
                             )}
@@ -360,10 +360,10 @@ const AllPageContent = ({ data }: IPropsType) => {
                         ))}
                       </div>
                       <div className="flex flex-col gap-4">
-                        <h5 className="font-Inter text-[26px] font-semibold leading-8 text-black group-hover:text-lightBlue">
+                        <h5 className="font-base text-[26px] font-semibold leading-8 text-primary group-hover:text-lightBlue">
                           {item?.heading}
                         </h5>
-                        <p className="font-Inter text-lg font-light leading-[28.8px] text-[#504C4C]">
+                        <p className="font-base text-lg font-light leading-[28.8px] text-[#504C4C]">
                           {item?.description}
                         </p>
                       </div>
@@ -376,7 +376,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         <div className="mx-auto w-full max-w-[1620px] px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-20 5xl:px-0">
           <Link
             href={data?.TechnologiesIntegrations?.btnLink}
-            className="float-left flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
+            className="float-left flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-base text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
           >
             {data?.TechnologiesIntegrations?.btnName}{' '}
             <Image
@@ -446,15 +446,15 @@ const AllPageContent = ({ data }: IPropsType) => {
                         <div
                           className={`flex flex-col gap-4 px-6 py-5 ${index % 2 === 0 ? 'bg-[#02ade11a]' : 'rounded-t-[40px] bg-[#e94e2540]'} `}
                         >
-                          <h3 className="font-Inter text-[34px] font-semibold leading-8 text-black">
+                          <h3 className="font-base text-[34px] font-semibold leading-8 text-primary">
                             {item?.deployProjectHeading}
                           </h3>
-                          <p className="font-Inter text-lg font-light leading-7 text-black">
+                          <p className="font-base text-lg font-light leading-7 text-primary">
                             {item?.deployProjectDescription}
                           </p>
                           <Link
                             href={item?.caseStudyLink}
-                            className="mt-2 flex w-max items-center gap-2.5 rounded-[39.35px] bg-[#02ADE1] px-[21.29px] py-[19.5px] font-Inter text-[21px] font-medium capitalize leading-[26px] text-white"
+                            className="mt-2 flex w-max items-center gap-2.5 rounded-[39.35px] bg-[#02ADE1] px-[21.29px] py-[19.5px] font-base text-[21px] font-medium capitalize leading-[26px] text-white"
                           >
                             {' '}
                             case study{' '}
@@ -489,10 +489,10 @@ const AllPageContent = ({ data }: IPropsType) => {
                   key={index}
                   className="flex flex-col gap-3 rounded-[26.89px] bg-[#B5B5B51a] p-6 xl:p-[30px]"
                 >
-                  <h3 className="font-Inter text-2xl font-semibold leading-7 text-black 3xl:text-3xl 3xl:leading-9">
+                  <h3 className="font-base text-2xl font-semibold leading-7 text-primary 3xl:text-3xl 3xl:leading-9">
                     {item?.heading}
                   </h3>
-                  <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] 3xl:text-xl 3xl:leading-7">
+                  <p className="font-base text-lg font-normal leading-6 text-[#504C4C] 3xl:text-xl 3xl:leading-7">
                     {item?.description}
                   </p>
                 </div>
@@ -557,14 +557,14 @@ const AllPageContent = ({ data }: IPropsType) => {
                         />
                       </div>
                       <div className="flex h-full flex-col gap-[17.39px]">
-                        <span className="font-Inter text-sm font-medium leading-5 text-red">
+                        <span className="font-base text-sm font-medium leading-5 text-red">
                           {item?.label}
                         </span>
                         <div className="flex flex-col gap-3">
-                          <h3 className="font-Poppins text-xl font-medium leading-6 text-[#fff]">
+                          <h3 className="font-base text-xl font-medium leading-6 text-[#fff]">
                             {item?.title}
                           </h3>
-                          <p className="font-Poppins text-base font-light leading-[1.6rem] text-[#fff]">
+                          <p className="font-base text-base font-light leading-[1.6rem] text-[#fff]">
                             {item?.description}
                           </p>
                         </div>
@@ -603,7 +603,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                           height={31}
                         />
                       </div>
-                      <span className="font-Inter text-xl font-medium leading-6 text-[#192020] sm:text-2xl sm:leading-[30px] 3xl:text-[28px] 3xl:leading-[35px]">
+                      <span className="font-base text-xl font-medium leading-6 text-[#192020] sm:text-2xl sm:leading-[30px] 3xl:text-[28px] 3xl:leading-[35px]">
                         {item?.servicesName}
                       </span>
                     </div>
@@ -620,7 +620,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                             height={24}
                             className="!w-5 sm:w-max"
                           />
-                          <span className="line-clamp-1 font-Inter text-sm font-medium leading-4 text-[#192020] sm:line-clamp-none sm:text-base sm:leading-6">
+                          <span className="line-clamp-1 font-base text-sm font-medium leading-4 text-[#192020] sm:line-clamp-none sm:text-base sm:leading-6">
                             {items}
                           </span>
                         </div>
@@ -632,7 +632,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           </div>
           <Link
             href={data?.TechnologyWeUseInDevelopment?.btnLink}
-            className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-Inter text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
+            className="flex w-max items-center gap-2.5 rounded-[39.35px] bg-red px-4 py-2.5 font-base text-base font-medium capitalize leading-6 text-white sm:px-[21.71px] md:py-3 xl:text-[21px] xl:leading-[26.27px] 5xl:py-[19.56px]"
           >
             {data?.TechnologyWeUseInDevelopment?.btnName}{' '}
             <Image
@@ -651,7 +651,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           description={data?.Resources?.description}
           btnName={data?.Resources?.btnName}
           className="4xl:!gap-5"
-          btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
+          btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-primary sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
           LinkName={data?.Resources?.linkName}
         />
         <div className="h-full w-full">
@@ -703,17 +703,17 @@ const AllPageContent = ({ data }: IPropsType) => {
                     </div>
                     <div className="flex h-full flex-col justify-between gap-[17.39px]">
                       <div className="flex flex-col gap-3">
-                        <h3 className="font-Poppins text-xl font-medium leading-6 text-[#192020]">
+                        <h3 className="font-base text-xl font-medium leading-6 text-[#192020]">
                           {item?.title}
                         </h3>
-                        <p className="font-Poppins text-base font-light leading-[1.6rem] text-[#192020]">
+                        <p className="font-base text-base font-light leading-[1.6rem] text-[#192020]">
                           {item?.description}
                         </p>
                       </div>
                       <div className="flex flex-col gap-3">
                         <Link
                           href={'/'}
-                          className="font-Poppins text-sm font-medium leading-[19.6px] text-red"
+                          className="font-base text-sm font-medium leading-[19.6px] text-red"
                         >
                           Continue Reading
                         </Link>
@@ -745,10 +745,10 @@ const AllPageContent = ({ data }: IPropsType) => {
                   className={`w-full object-cover ${index % 2 !== 0 ? 'rounded-b-[15px]' : 'rounded-t-[15px]'}`}
                 />
                 <div className="flex flex-col items-center justify-center gap-[18px]">
-                  <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+                  <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                     {item?.basicInfo}
                   </h5>
-                  <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
+                  <span className="text-nowrap font-base text-[26px] font-normal leading-[52px] text-primary">
                     {item?.description}
                   </span>
                 </div>
@@ -817,11 +817,11 @@ const AllPageContent = ({ data }: IPropsType) => {
                           svgIconViewBox="0 0 22 22"
                           svgIconPath={yellowStarPath}
                         />{' '}
-                        <p className="mt-1.5 font-Inter text-lg font-normal leading-6 text-[#212529]">
+                        <p className="mt-1.5 font-base text-lg font-normal leading-6 text-[#212529]">
                           {item?.rating || 0}
                         </p>
                       </div>
-                      <span className="text-center font-Inter text-xl font-light leading-[32.29px] text-[#212529]">
+                      <span className="text-center font-base text-xl font-light leading-[32.29px] text-[#212529]">
                         {item?.title}
                       </span>
                     </div>

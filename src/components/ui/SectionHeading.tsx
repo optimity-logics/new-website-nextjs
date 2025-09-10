@@ -38,15 +38,15 @@ const SectionHeading = ({
   headingStyle,
 }: IHeadingProps) => {
   return (
-    <div className={`mx-auto flex flex-col items-center gap-3 ${className} `}>
+    <div className={`flex flex-col items-center gap-3 ${className} `}>
       {btnName && <Button btnName={btnName} className={btnStyle} />}
       <HighlitedDescription
         dangerouslySetInnerHTML={{ __html: heading }}
-        className={`text-center font-Poppins text-[25px] font-medium capitalize leading-7 sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[48px] 3xl:font-semibold 4xl:text-[45px] 4xl:leading-[50px] 5xl:text-[50px] 5xl:leading-[55px] ${isDark ? 'text-white' : 'text-charcoalBlue'} ${headingStyle}`}
+        className={`text-center font-base text-[25px] font-medium capitalize leading-7 sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[48px] 4xl:text-[45px] 4xl:leading-[50px] 5xl:text-[50px] 5xl:leading-[55px] ${isDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
       />
       {description && (
         <p
-          className={`text-center font-Poppins text-base font-normal leading-[21.15px] md:text-lg 5xl:text-xl 5xl:leading-7 ${isDark ? 'text-white opacity-70' : 'text-primaryGray'} ${descriptionStyle}`}
+          className={`text-center font-base text-base font-normal leading-[21.15px] md:text-lg 5xl:text-xl 5xl:leading-7 ${isDark ? 'text-white opacity-70' : 'text-secondary opacity-70'} ${descriptionStyle}`}
         >
           {description}
         </p>
@@ -54,7 +54,7 @@ const SectionHeading = ({
       {LinkName && (
         <Link
           href={'/'}
-          className={`${LinkStyle} flex items-center gap-[15.32px] font-Poppins text-base font-semibold leading-6 text-red`}
+          className={`${LinkStyle} flex items-center gap-[15.32px] font-base text-base font-semibold leading-6 text-red`}
         >
           {' '}
           {LinkName}

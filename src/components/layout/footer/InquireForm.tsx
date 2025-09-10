@@ -62,7 +62,7 @@ const InquireForm = () => {
 
   return (
     <div className="flex w-full max-w-[620px] flex-col gap-5 rounded-3xl border border-[#ffffff4a] bg-white/5 px-[22.5px] py-9">
-      <h3 className="font-Poppins text-xl font-medium leading-6 text-white xl:text-2xl xl:leading-7 5xl:text-[26px] 5xl:leading-8">
+      <h3 className="font-base text-xl font-medium leading-6 text-white xl:text-2xl xl:leading-7 5xl:text-[26px] 5xl:leading-8">
         Collaborate with Optimity Logics
       </h3>
       <form onSubmit={formik.handleSubmit} className="space-y-6">
@@ -77,7 +77,7 @@ const InquireForm = () => {
               value={formik.values.firstName}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-base text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
             />
             {formik.touched.firstName && formik.errors.firstName ? (
               <div className="mt-1 text-sm text-red">
@@ -95,7 +95,7 @@ const InquireForm = () => {
               value={formik.values.lastName}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-base text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
             />
             {formik.touched.lastName && formik.errors.lastName ? (
               <div className="mt-1 text-sm text-red">
@@ -115,7 +115,7 @@ const InquireForm = () => {
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              className="w-full border-b border-b-[#ffffff4a] bg-transparent !pb-5 !pr-4 !pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
+              className="w-full border-b border-b-[#ffffff4a] bg-transparent !pb-5 !pr-4 !pt-4 font-base text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
             />
             {formik.touched.email && formik.errors.email ? (
               <div className="mt-1 text-sm text-red">{formik.errors.email}</div>
@@ -136,7 +136,7 @@ const InquireForm = () => {
                 }
               }}
               onBlur={() => formik.setFieldTouched('country', true)}
-              className="!placeholder:text-[#ffffff80] w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] !text-[#ffffff80] focus:outline-none"
+              className="!placeholder:text-[#ffffff80] w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-base text-base font-normal leading-[19.36px] !text-[#ffffff80] focus:outline-none"
             />
             {formik.touched.country && formik.errors.country ? (
               <div className="mt-1 text-sm text-red">
@@ -153,7 +153,7 @@ const InquireForm = () => {
             className="w-full border-none"
             placeholder="Phone number"
             defaultCountry="in" // Use lowercase 'in' for India
-            inputClassName="w-full !border-b !border-b-[#ffffff4a] !bg-transparent pr-4 pb-5 pt-4 !font-Poppins !text-base !font-normal !leading-[19.36px] !placeholder:text-[#ffffff80] focus:outline-none !outline-none !border-transparent !rounded-none !text-[#ffffff80]"
+            inputClassName="w-full !border-b !border-b-[#ffffff4a] !bg-transparent pr-4 pb-5 pt-4 !font-base !text-base !font-normal !leading-[19.36px] !placeholder:text-[#ffffff80] focus:outline-none !outline-none !border-transparent !rounded-none !text-[#ffffff80]"
             countrySelectorStyleProps={{
               className: '!border-none  !z-[99]',
               buttonClassName: '!border-none !rounded-l-lg !bg-transparent ',
@@ -173,7 +173,7 @@ const InquireForm = () => {
             value={formik.values.aboutProject}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            className="appearance-[#ffffff4a] w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-Poppins text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
+            className="appearance-[#ffffff4a] w-full border-b border-b-[#ffffff4a] bg-transparent pb-5 pr-4 pt-4 font-base text-base font-normal leading-[19.36px] text-[#ffffff80] placeholder:text-[#ffffff80] focus:outline-none sm:px-4"
           />
           {formik.touched.aboutProject && formik.errors.aboutProject ? (
             <div className="mt-1 text-sm text-red">
@@ -192,7 +192,7 @@ const InquireForm = () => {
             minWidth="100%"
             height="175px"
           />
-          <p className="font-Poppins text-base font-normal leading-5 text-[#ffffff4a]">
+          <p className="font-base text-base font-normal leading-5 text-[#ffffff4a]">
             Please upload a file with one of the following extensions: .pdf,
             .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt
           </p>
@@ -202,7 +202,7 @@ const InquireForm = () => {
         </div>
         <button
           type="submit"
-          className="flex cursor-pointer items-center gap-2.5 rounded-[30px] bg-white px-4 py-3 font-Poppins text-sm font-semibold uppercase md:px-[15px] md:py-3 md:text-base md:leading-6"
+          className="flex cursor-pointer items-center gap-2.5 rounded-[30px] bg-white px-4 py-3 font-base text-sm font-semibold uppercase md:px-[15px] md:py-3 md:text-base md:leading-6"
         >
           inquire now <Image src={arrow} alt="Arrow" width={20} height={20} />
         </button>

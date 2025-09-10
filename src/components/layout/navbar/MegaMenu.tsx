@@ -104,17 +104,17 @@ export default function MegaMenu() {
             {item.megaMenuItem.length === 0 ? (
               <Link
                 href={`/${item.menuTitle.toLowerCase().replace(/\s+/g, '-')}`}
-                className={`cursor-pointer py-7 font-Poppins font-normal uppercase leading-6 tracking-[0.5px] text-darkBlack transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''} `}
+                className={`cursor-pointer py-7 font-base font-normal capitalize leading-6 tracking-[0.5px] text-iconSubtle transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''} `}
               >
-                <span className="text-base uppercase tracking-wide">
+                <span className="whitespace-pre text-base tracking-wide">
                   {item.menuTitle}
                 </span>
               </Link>
             ) : (
               <div
-                className={`cursor-pointer py-7 font-Poppins font-normal uppercase leading-6 tracking-[0.5px] text-darkBlack transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''}`}
+                className={`cursor-pointer py-7 font-base font-normal capitalize leading-6 tracking-[0.5px] text-iconSubtle transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''}`}
               >
-                <span className="text-base uppercase tracking-wide">
+                <span className="text-base tracking-wide">
                   {item.menuTitle}
                 </span>
               </div>
@@ -144,10 +144,10 @@ export default function MegaMenu() {
                       <motion.div
                         key={index}
                         variants={itemVariants}
-                        className="flex w-full flex-col gap-6"
+                        className="flex flex-col gap-6"
                       >
                         <div
-                          className="flex items-center gap-3 rounded-[15px] px-3 py-2.5"
+                          className="flex items-center gap-3 rounded-[15px] py-2.5 pl-4 pr-5"
                           style={{
                             backgroundColor: category.backgroundColor,
                           }}
@@ -160,7 +160,7 @@ export default function MegaMenu() {
                               height={24}
                             />
                           </div>
-                          <h4 className="font-Poppins text-base font-medium capitalize leading-6 text-[#192020]">
+                          <h4 className="whitespace-pre font-base text-base font-medium capitalize leading-6 text-iconSubtle">
                             {category.title}
                           </h4>
                         </div>
@@ -169,11 +169,11 @@ export default function MegaMenu() {
                             <li
                               key={idx}
                               onClick={() => setActiveMenu(null)}
-                              className="group w-full cursor-pointer pl-2 font-Poppins text-[15px] font-normal capitalize leading-[18px] text-gray transition-all duration-300 hover:text-charcoalBlue"
+                              className="group cursor-pointer pl-2 font-base text-[15px] font-normal capitalize leading-[18px] text-primarySubtle transition-all duration-300 hover:text-primary"
                             >
                               <Link
                                 href={items.techLink}
-                                className="flex items-center gap-2"
+                                className="flex items-center gap-2 whitespace-pre"
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +181,7 @@ export default function MegaMenu() {
                                   height="12"
                                   viewBox="0 0 12 18"
                                   fill="currentColor"
-                                  className="transition-all duration-300 group-hover:text-charcoalBlue"
+                                  className="transition-all duration-300 group-hover:text-primary"
                                 >
                                   <path d="M1.51749 0.782258C1.98612 0.313629 2.74592 0.313629 3.21455 0.782258L9.96455 7.53226C10.4332 8.00089 10.4332 8.76069 9.96455 9.22932L3.21455 15.9793C2.74592 16.4479 1.98612 16.4479 1.51749 15.9793C1.04886 15.5106 1.04886 14.7509 1.51749 14.2822L7.41896 8.38079L1.51749 2.47932C1.04886 2.01069 1.04886 1.25089 1.51749 0.782258Z" />
                                 </svg>
@@ -202,10 +202,10 @@ export default function MegaMenu() {
                           <Image src={phone} alt="" width={24} height={24} />
                         </div>
                         <div className="flex flex-col gap-2">
-                          <h6 className="font-Inter text-sm font-normal capitalize leading-4 text-gray">
+                          <h6 className="font-base text-sm font-medium capitalize leading-4 text-primary">
                             India
                           </h6>
-                          <span className="font-Inter text-sm font-medium lowercase leading-4 text-black">
+                          <span className="font-base text-sm font-normal lowercase leading-4 text-gray">
                             {' '}
                             +91 1234567890
                           </span>
@@ -216,10 +216,10 @@ export default function MegaMenu() {
                           <Image src={mail} alt="" width={24} height={24} />
                         </div>
                         <div className="flex flex-col gap-2">
-                          <h6 className="font-Inter text-sm font-normal capitalize leading-4 text-gray">
+                          <h6 className="font-base text-sm font-medium capitalize leading-4 text-primary">
                             hr enquiries
                           </h6>
-                          <span className="font-Inter text-[15px] font-medium lowercase leading-4 text-black">
+                          <span className="font-base text-[15px] font-normal lowercase leading-4 text-gray">
                             {' '}
                             hr@optimitylogics.com
                           </span>
@@ -230,10 +230,10 @@ export default function MegaMenu() {
                           <Image src={mail} alt="" width={24} height={24} />
                         </div>
                         <div className="flex flex-col gap-2">
-                          <h6 className="font-Inter text-sm font-normal capitalize leading-4 text-gray">
+                          <h6 className="font-base text-sm font-medium capitalize leading-4 text-primary">
                             sales enquiries
                           </h6>
-                          <span className="font-Inter text-[15px] font-medium lowercase leading-4 text-black">
+                          <span className="font-base text-[15px] font-normal lowercase leading-4 text-gray">
                             {' '}
                             sales@optimitylogics.com
                           </span>

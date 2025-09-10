@@ -13,12 +13,12 @@ const Faqs = () => {
     setHover(false);
   };
   return (
-    <div className="mx-auto w-full max-w-[1680px] px-[120px] pb-[100px]">
+    <div className="mx-auto w-full max-w-[1680px] px-[120px] py-[100px]">
       <div className="flex w-full items-center gap-8 rounded-xl bg-[#F7F7F8] px-[60px] py-[100px] lg:gap-6 3xl:gap-10 4xl:gap-[80px]">
-        <div className="flex w-full max-w-[450px] flex-col gap-7">
+        <div className="flex w-full max-w-[450px] flex-col gap-6">
           <SectionHeading
             heading="FAQs"
-            className="!items-start !gap-5"
+            className="!items-start !gap-3"
             description="We’ve compiled the answers to your burning questions!"
             descriptionStyle="!text-base !leading-5 !text-start"
           />
@@ -28,7 +28,7 @@ const Faqs = () => {
             onMouseUp={handleMouseEnter}
             onMouseDown={handleMouseLeave}
             type="button"
-            className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-white"
+            className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
           >
             Get In Touch
             <AnimatedArrow hover={hover} />

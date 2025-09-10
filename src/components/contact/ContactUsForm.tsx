@@ -44,7 +44,7 @@ const ContactUsForm = () => {
 
   return (
     <div className="flex w-full flex-col gap-[30px] rounded-[20px] border border-[#D9D9D9] bg-white p-5 shadow-lg md:p-8 lg:-mt-[124px] lg:max-w-[678px] 3xl:gap-[26.53px] 4xl:p-11 5xl:p-[56px]">
-      <h3 className="text-center font-Poppins text-xl font-medium leading-6 text-charcoalBlue md:text-start 5xl:text-2xl 5xl:leading-7">
+      <h3 className="font-base text-xl font-medium leading-6 text-primary md:text-start 5xl:text-2xl 5xl:leading-7">
         Fill the below details
       </h3>
       <form
@@ -54,7 +54,7 @@ const ContactUsForm = () => {
         <div className="flex w-full flex-col gap-3">
           <label
             htmlFor="name"
-            className="font-Poppins text-lg font-normal leading-6 text-charcoalBlue"
+            className="font-base text-lg font-normal leading-6 text-primary"
           >
             Name<span className="text-cyanBlue">*</span>
           </label>
@@ -66,10 +66,10 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}
-            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-Poppins text-lg font-normal leading-6 text-charcoalBlue outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
+            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-base text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
           />
           {formik.touched.name && formik.errors.name ? (
-            <div className="font-Poppins text-base font-light leading-4 text-red">
+            <div className="font-base text-base font-light leading-4 text-red">
               {formik.errors.name}
             </div>
           ) : null}
@@ -78,7 +78,7 @@ const ContactUsForm = () => {
         <div className="flex w-full flex-col gap-3">
           <label
             htmlFor="email"
-            className="font-Poppins text-lg font-normal leading-6 text-charcoalBlue"
+            className="font-base text-lg font-normal leading-6 text-primary"
           >
             Email<span className="text-cyanBlue">*</span>
           </label>
@@ -90,10 +90,10 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
-            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-Poppins text-lg font-normal leading-6 text-charcoalBlue outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
+            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-base text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
           />
           {formik.touched.email && formik.errors.email ? (
-            <div className="font-Poppins text-base font-light leading-4 text-red">
+            <div className="font-base text-base font-light leading-4 text-red">
               {formik.errors.email}
             </div>
           ) : null}
@@ -102,7 +102,7 @@ const ContactUsForm = () => {
         <div className="flex w-full flex-col gap-3">
           <label
             htmlFor="phoneNumber"
-            className="font-Poppins text-lg font-normal leading-6 text-charcoalBlue"
+            className="font-base text-lg font-normal leading-6 text-primary"
           >
             Phone Number<span className="text-cyanBlue">*</span>
           </label>
@@ -114,10 +114,10 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.phoneNumber}
-            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-Poppins text-lg font-normal leading-6 text-charcoalBlue outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
+            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-base text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
           />
           {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-            <div className="font-Poppins text-base font-light leading-4 text-red">
+            <div className="font-base text-base font-light leading-4 text-red">
               {formik.errors.phoneNumber}
             </div>
           ) : null}
@@ -126,7 +126,7 @@ const ContactUsForm = () => {
         <div className="flex w-full flex-col gap-3">
           <label
             htmlFor="message"
-            className="font-Poppins text-lg font-normal leading-6 text-charcoalBlue"
+            className="font-base text-lg font-normal leading-6 text-primary"
           >
             Message<span className="text-cyanBlue">*</span>
           </label>
@@ -137,10 +137,10 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
-            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-Poppins text-lg font-normal leading-6 text-charcoalBlue outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
+            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-base text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
           />
           {formik.touched.message && formik.errors.message ? (
-            <div className="font-Poppins text-base font-light leading-4 text-red">
+            <div className="font-base text-base font-light leading-4 text-red">
               {formik.errors.message}
             </div>
           ) : null}

@@ -64,9 +64,16 @@ const NavBar = () => {
     };
   }, []);
   return (
-    <div className="sticky top-0 z-[9999]">
+    <div
+      style={{
+        backgroundImage: !small
+          ? 'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)'
+          : '',
+      }}
+      className={`sticky ${small ? 'top-2' : 'top-0'} z-[9999]`}
+    >
       <div
-        className={`easing_func ${small ? 'small rounded-full bg-white/30 backdrop-blur-lg xl:px-4' : 'large bg-white xl:px-10'} mx-auto max-w-[1920px] px-4 py-4 sm:px-6 md:px-8 lg:py-0`}
+        className={`easing_func ${small ? 'small rounded-full bg-white/30 shadow-card backdrop-blur-sm xl:px-4 xl:py-0' : 'large bg-transparent lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-4 py-4 sm:px-6 md:px-8`}
       >
         <div className="navigation">
           <div className="flex w-full items-center justify-between">
@@ -93,7 +100,7 @@ const NavBar = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center gap-14">
+            <div className="flex items-center gap-32">
               <div className="hidden lg:block">
                 <Link href="/">
                   {small ? (
@@ -121,7 +128,7 @@ const NavBar = () => {
               {menuData?.map((item, index) => (
                 <li
                   key={index}
-                  className={`cursor-pointer py-7 font-Poppins text-base font-normal uppercase leading-6 tracking-[0.5px] text-darkBlack transition-all duration-300 hover:text-lightBlue lg:py-[24px] ${activeMenu?.toLowerCase() === item.menuTitle.toLowerCase() && 'text-lightBlue'}`}
+                  className={`cursor-pointer py-7 font-base text-base font-normal uppercase leading-6 tracking-[0.5px] text-darkBlack transition-all duration-300 hover:text-lightBlue lg:py-[24px] ${activeMenu?.toLowerCase() === item.menuTitle.toLowerCase() && 'text-lightBlue'}`}
                   onClick={() =>
                     handleClickOnMenuItem(
                       item?.menuTitle,
@@ -163,7 +170,7 @@ const NavBar = () => {
                                       height={24}
                                     />
                                   </div>
-                                  <h4 className="font-Poppins text-lg font-medium capitalize leading-6 text-[#192020]">
+                                  <h4 className="font-base text-lg font-medium capitalize leading-6 text-[#192020]">
                                     {item.title}
                                   </h4>
                                 </div>
@@ -172,7 +179,7 @@ const NavBar = () => {
                                     <li
                                       key={idx}
                                       onClick={() => setActiveMenu(null)}
-                                      className="group w-full cursor-pointer pl-2 font-Poppins text-[15px] font-normal capitalize leading-[18px] text-gray transition-all duration-300 hover:text-charcoalBlue"
+                                      className="group w-full cursor-pointer pl-2 font-base text-[15px] font-normal capitalize leading-[18px] text-gray transition-all duration-300 hover:text-primary"
                                     >
                                       <Link
                                         href={items.techLink}
@@ -184,7 +191,7 @@ const NavBar = () => {
                                           height="12"
                                           viewBox="0 0 12 18"
                                           fill="currentColor"
-                                          className="transition-all duration-300 group-hover:text-charcoalBlue"
+                                          className="transition-all duration-300 group-hover:text-primary"
                                         >
                                           <path d="M1.51749 0.782258C1.98612 0.313629 2.74592 0.313629 3.21455 0.782258L9.96455 7.53226C10.4332 8.00089 10.4332 8.76069 9.96455 9.22932L3.21455 15.9793C2.74592 16.4479 1.98612 16.4479 1.51749 15.9793C1.04886 15.5106 1.04886 14.7509 1.51749 14.2822L7.41896 8.38079L1.51749 2.47932C1.04886 2.01069 1.04886 1.25089 1.51749 0.782258Z" />
                                         </svg>
@@ -206,10 +213,10 @@ const NavBar = () => {
                             <Image src={phone} alt="" width={24} height={24} />
                           </div>
                           <div className="flex flex-col gap-2">
-                            <h6 className="font-Inter text-sm font-normal capitalize leading-4 text-gray">
+                            <h6 className="font-base text-sm font-normal capitalize leading-4 text-gray">
                               India
                             </h6>
-                            <span className="font-Inter text-[15px] font-medium lowercase leading-4 text-black">
+                            <span className="font-base text-[15px] font-medium lowercase leading-4 text-primary">
                               {' '}
                               +91 1234567890
                             </span>
@@ -220,10 +227,10 @@ const NavBar = () => {
                             <Image src={mail} alt="" width={24} height={24} />
                           </div>
                           <div className="flex flex-col gap-2">
-                            <h6 className="font-Inter text-sm font-normal capitalize leading-4 text-gray">
+                            <h6 className="font-base text-sm font-normal capitalize leading-4 text-gray">
                               hr enquiries
                             </h6>
-                            <span className="font-Inter text-[15px] font-medium lowercase leading-4 text-black">
+                            <span className="font-base text-[15px] font-medium lowercase leading-4 text-primary">
                               {' '}
                               hr@optimitylogics.com
                             </span>
@@ -234,10 +241,10 @@ const NavBar = () => {
                             <Image src={mail} alt="" width={24} height={24} />
                           </div>
                           <div className="flex flex-col gap-2">
-                            <h6 className="font-Inter text-sm font-normal capitalize leading-4 text-gray">
+                            <h6 className="font-base text-sm font-normal capitalize leading-4 text-gray">
                               sales enquiries
                             </h6>
-                            <span className="font-Inter text-[15px] font-medium lowercase leading-4 text-black">
+                            <span className="font-base text-[15px] font-medium lowercase leading-4 text-primary">
                               {' '}
                               sales@optimitylogics.com
                             </span>
@@ -260,7 +267,7 @@ const NavBar = () => {
               onMouseUp={handleMouseEnter}
               onMouseDown={handleMouseLeave}
               type="button"
-              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-Inter text-[14px] font-normal leading-tight text-white"
+              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
             >
               Contact us
               <AnimatedArrow hover={hover} />

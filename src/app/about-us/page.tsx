@@ -46,7 +46,7 @@ const AboutUs = () => {
     <>
       <div className="bg-careerBanner bg-cover bg-center bg-no-repeat">
         <Container className="mb-10 py-[120px] md:mb-12 xl:mb-16 4xl:mb-[100px]">
-          <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
+          <h2 className="text-center font-base text-4xl font-medium leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
             About Us
           </h2>
         </Container>
@@ -74,7 +74,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="flex w-full max-w-[752px] flex-col gap-[22px]">
-            <span className="font-Inter text-[26px] font-bold leading-[37.13px] tracking-[-0.26px] text-lightBlue">
+            <span className="font-base text-[26px] font-bold leading-[37.13px] tracking-[-0.26px] text-lightBlue">
               Who we are
             </span>
             <div className="flex flex-col gap-[15px]">
@@ -82,9 +82,9 @@ const AboutUs = () => {
                 dangerouslySetInnerHTML={{
                   __html: `Highly Tailored <span> IT Design, Management & Support </span>Services.`,
                 }}
-                className="font-Inter text-[25px] font-medium capitalize leading-[2rem] text-charcoalBlue sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px]"
+                className="font-base text-[25px] font-medium capitalize leading-[2rem] text-primary sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px]"
               />
-              <p className="font-Inter text-lg font-normal leading-[29px] text-[#7C7676]">
+              <p className="font-base text-lg font-normal leading-[29px] text-[#7C7676]">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&#39;s standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -111,20 +111,20 @@ const AboutUs = () => {
               className="w-full object-cover"
             />
             <div className="flex flex-col items-center justify-center gap-[18px]">
-              <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+              <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                 354+
               </h5>
-              <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
+              <span className="text-nowrap font-base text-[26px] font-normal leading-[52px] text-primary">
                 Completed Projects
               </span>
             </div>
           </div>
           <div className="flex h-full flex-col justify-between gap-5 rounded-[15px] bg-[#92E6FF] pt-5">
             <div className="flex flex-col items-center justify-center gap-[18px] px-[70.5px]">
-              <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+              <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                 15+
               </h5>
-              <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
+              <span className="text-nowrap font-base text-[26px] font-normal leading-[52px] text-primary">
                 Employees
               </span>
             </div>
@@ -145,20 +145,20 @@ const AboutUs = () => {
               className="w-full rounded-t-[15px] object-cover"
             />
             <div className="flex flex-col items-center justify-center gap-[18px] px-[70.5px]">
-              <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+              <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                 02+
               </h5>
-              <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
+              <span className="text-nowrap font-base text-[26px] font-normal leading-[52px] text-primary">
                 Countries Served
               </span>
             </div>
           </div>
           <div className="flex h-full flex-col justify-between gap-5 rounded-[15px] bg-[#92E6FF] pt-5 sm:bg-[#FFD9CF] xl:bg-[#92E6FF]">
             <div className="flex flex-col items-center justify-center gap-[18px] px-[70.5px]">
-              <h5 className="font-Inter text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+              <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                 05+
               </h5>
-              <span className="text-nowrap font-Inter text-[26px] font-normal leading-[52px] text-black">
+              <span className="text-nowrap font-base text-[26px] font-normal leading-[52px] text-primary">
                 Year Of Experience
               </span>
             </div>
@@ -174,16 +174,16 @@ const AboutUs = () => {
       </Container>
       <div className="mb-10 bg-technologbg bg-cover bg-center bg-no-repeat py-10 md:mb-12 xl:mb-16 3xl:py-14 4xl:mb-[100px] 5xl:py-20">
         <Container className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[60px]">
-          <h2 className="text-center font-Inter text-[25px] font-medium capitalize leading-[2rem] text-white sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px]">
+          <h2 className="text-center font-base text-[25px] font-medium capitalize leading-[2rem] text-white sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px]">
             Who We are?
           </h2>
           <div className="flex flex-col items-center gap-[30px]">
             <div className="flex flex-col gap-[23px] md:flex-row">
               <div className="flex w-full flex-col gap-2 rounded-[15px] bg-[#FFD9CF] p-5 md:w-1/2 3xl:px-[45.87px]">
-                <h3 className="font-Inter text-3xl font-semibold leading-9 text-black xxl:text-[37.99px] xxl:leading-[42px]">
+                <h3 className="font-base text-3xl font-semibold leading-9 text-primary xxl:text-[37.99px] xxl:leading-[42px]">
                   Our Mission
                 </h3>
-                <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] xl:text-xl xl:leading-[26px]">
+                <p className="font-base text-lg font-normal leading-6 text-[#504C4C] xl:text-xl xl:leading-[26px]">
                   Our mission is to expedite the integration of new technologies
                   within enterprises, addressing the inevitable challenges that
                   accompany digital expansion and fostering continuous
@@ -194,10 +194,10 @@ const AboutUs = () => {
                 </p>
               </div>
               <div className="flex w-full flex-col gap-2 rounded-[15px] bg-[#FBFDFF] p-5 md:w-1/2 3xl:px-[45.87px]">
-                <h3 className="font-Inter text-3xl font-semibold leading-9 text-black xxl:text-[37.99px] xxl:leading-[42px]">
+                <h3 className="font-base text-3xl font-semibold leading-9 text-primary xxl:text-[37.99px] xxl:leading-[42px]">
                   Our Vision
                 </h3>
-                <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] xl:text-xl xl:leading-[26px]">
+                <p className="font-base text-lg font-normal leading-6 text-[#504C4C] xl:text-xl xl:leading-[26px]">
                   We aspire to lead as a top web solutions provider in IT,
                   surpassing our current market standing. Committed to our
                   customers success, we recognize our growth is linked to
@@ -210,10 +210,10 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-[15px] bg-[#B1EDFF] p-5 3xl:px-[45.87px]">
-              <h3 className="font-Inter text-3xl font-semibold leading-9 text-black xxl:text-[37.99px] xxl:leading-[42px]">
+              <h3 className="font-base text-3xl font-semibold leading-9 text-primary xxl:text-[37.99px] xxl:leading-[42px]">
                 Our Values
               </h3>
-              <p className="font-Inter text-lg font-normal leading-6 text-[#504C4C] xl:text-xl xl:leading-[26px]">
+              <p className="font-base text-lg font-normal leading-6 text-[#504C4C] xl:text-xl xl:leading-[26px]">
                 Trust is fundamental in our relationships; we prioritize
                 empathy, understanding others needs, challenges, and
                 aspirations. Through attentive listening and proactive
@@ -232,7 +232,7 @@ const AboutUs = () => {
           dangerouslySetInnerHTML={{
             __html: `Our <span> Achievements </span>`,
           }}
-          className="mx-auto max-w-[1612px] px-4 font-Inter text-[25px] font-medium capitalize leading-[2rem] text-charcoalBlue sm:px-6 sm:text-4xl sm:leading-10 md:px-8 xl:px-10 xl:text-[40px] xl:leading-[40px] 3xl:px-20 3xl:font-semibold 4xl:px-[100px] 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px]"
+          className="mx-auto max-w-[1612px] px-4 font-base text-[25px] font-medium capitalize leading-[2rem] text-primary sm:px-6 sm:text-4xl sm:leading-10 md:px-8 xl:px-10 xl:text-[40px] xl:leading-[40px] 3xl:px-20 3xl:font-semibold 4xl:px-[100px] 4xl:text-[50px] 4xl:leading-[54px] 5xl:text-[60px] 5xl:leading-[65px]"
         />
         <div className="h-full w-full">
           <Swiper
@@ -294,11 +294,11 @@ const AboutUs = () => {
                           svgIconViewBox="0 0 22 22"
                           svgIconPath={yellowStarPath}
                         />{' '}
-                        <p className="mt-1.5 font-Inter text-lg font-normal leading-6 text-[#212529]">
+                        <p className="mt-1.5 font-base text-lg font-normal leading-6 text-[#212529]">
                           {item?.rating || 0}
                         </p>
                       </div>
-                      <span className="text-center font-Inter text-xl font-light leading-[32.29px] text-[#212529]">
+                      <span className="text-center font-base text-xl font-light leading-[32.29px] text-[#212529]">
                         {item?.title}
                       </span>
                     </div>
@@ -365,10 +365,10 @@ const AboutUs = () => {
                       <div className="flex items-start gap-[11.85px]">
                         <div className="h-[47px] w-[23px] bg-export-team-gradient"></div>
                         <div className="flex flex-col gap-[22.5px]">
-                          <h3 className="max-w-[150px] font-Inter text-[26px] font-semibold leading-[28.42px] tracking-[-0.19px] text-white">
+                          <h3 className="max-w-[150px] font-base text-[26px] font-semibold leading-[28.42px] tracking-[-0.19px] text-white">
                             {item?.name}
                           </h3>
-                          <span className="font-Inter text-sm font-normal leading-7 text-white">
+                          <span className="font-base text-sm font-normal leading-7 text-white">
                             {item?.position}
                           </span>
                         </div>
@@ -398,17 +398,17 @@ const AboutUs = () => {
                     <div className="flex h-[56px] w-[56px] items-center justify-center rounded-full bg-black">
                       <Image src={item?.img} alt="" width={24} height={24} />
                     </div>
-                    <h4 className="text-center font-Inter text-lg font-normal leading-7 text-black">
+                    <h4 className="text-center font-base text-lg font-normal leading-7 text-primary">
                       {item?.title}
                     </h4>
                   </div>
                 ))}
             </div>
             <div className="flex flex-col items-center gap-4">
-              <h3 className="font-Inter text-[26px] font-semibold leading-[28.42px] tracking-[-0.19px] text-black 3xl:text-4xl">
+              <h3 className="font-base text-[26px] font-semibold leading-[28.42px] tracking-[-0.19px] text-primary 3xl:text-4xl">
                 Want to Join Team Optimity Logics?
               </h3>
-              <p className="font-Inter text-lg font-normal leading-[29px] text-[#7C7676]">
+              <p className="font-base text-lg font-normal leading-[29px] text-[#7C7676]">
                 Find your suitable job role openings and apply right away to get
                 to work on exciting projects!
               </p>
@@ -464,7 +464,7 @@ const AboutUs = () => {
 
               <div className="flex h-full cursor-pointer items-end rounded-[15px] bg-[#1a1a1a] p-4 lg:p-8">
                 <div className="flex flex-col gap-3">
-                  <span className="font-Poppins text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
+                  <span className="font-base text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
                     Explore more
                   </span>
                   <Image

@@ -41,10 +41,10 @@ const Insights = () => {
         style={{ backgroundSize: '100% 100%' }}
       >
         <div className="mx-auto flex max-w-[1217px] flex-col items-center gap-2 px-4 py-[46px] sm:px-6 md:px-8 xl:px-10 3xl:px-0">
-          <h2 className="text-center font-Inter text-4xl font-semibold leading-[44px] tracking-[-2%] text-black lg:text-[44px] lg:leading-[82.3px] 4xl:text-[60px]">
+          <h2 className="font-base text-4xl font-semibold leading-[44px] tracking-[-2%] text-primary lg:text-[44px] lg:leading-[82.3px] 4xl:text-[60px]">
             Discover Your Space for Tech Insights
           </h2>
-          <p className="text-center font-Inter text-lg font-normal leading-[29px] text-[#727265] 4xl:px-2">
+          <p className="text-center font-base text-lg font-normal leading-[29px] text-[#727265] 4xl:px-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&#39;s standard dummy
             text ever since the 1500s, when an unknown printer took a galley of
@@ -52,7 +52,7 @@ const Insights = () => {
           </p>
           <Link
             href="/"
-            className="mt-5 flex items-center gap-2.5 rounded-[39px] bg-red px-[21px] py-4 font-Inter text-lg font-normal leading-[22px] text-white"
+            className="mt-5 flex items-center gap-2.5 rounded-[39px] bg-red px-[21px] py-4 font-base text-lg font-normal leading-[22px] text-white"
           >
             View Blogs <Image src={arrow} alt="arrow" width={24} height={24} />
           </Link>
@@ -67,14 +67,14 @@ const Insights = () => {
               aria-labelledby="technology-tabs"
               radius="full"
               selectedKey={activeKey}
-              className="!font-Poppins !text-base !font-normal !leading-[28.8px]"
+              className="!font-base !text-base !font-normal !leading-[28.8px]"
               onSelectionChange={(e) => handlChangeTechnology(e as string)}
             >
               {insightsPageData.map((tech) => (
                 <Tab
                   key={tech.technologyName}
                   title={tech.technologyName}
-                  className="h-11 !px-[22px] !py-4 !font-Poppins !text-base !font-normal !leading-5"
+                  className="h-11 !px-[22px] !py-4 !font-base !text-base !font-normal !leading-5"
                 ></Tab>
               ))}
             </Tabs>
@@ -97,14 +97,14 @@ const Insights = () => {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-2.5">
-                      <span className="font-Inter text-lg font-medium leading-6 text-red">
+                      <span className="font-base text-lg font-medium leading-6 text-red">
                         {item?.technologyWeWorkOn}
                       </span>
-                      <h3 className="font-Inter text-xl font-normal leading-[26px] text-black md:text-[21px] md:font-medium">
+                      <h3 className="font-base text-xl font-normal leading-[26px] text-primary md:text-[21px] md:font-medium">
                         {item?.techHeading}
                       </h3>
                     </div>
-                    <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-[#524c4c] md:text-xl">
+                    <p className="line-clamp-2 font-base text-lg font-light leading-6 text-[#524c4c] md:text-xl">
                       {item?.techDescription}
                     </p>
                   </div>
@@ -132,7 +132,7 @@ const Insights = () => {
                 aria-labelledby="technology-tabs"
                 radius="full"
                 selectedKey={activeKeyForLatest}
-                className="latest !font-Poppins !text-base !font-normal !leading-[28.8px]"
+                className="latest !font-base !text-base !font-normal !leading-[28.8px]"
                 onSelectionChange={(e) =>
                   handlChangeLatestInsights(e as string)
                 }
@@ -141,7 +141,7 @@ const Insights = () => {
                   <Tab
                     key={tech.technologyName}
                     title={tech.technologyName}
-                    className="h-11 !px-[22px] !py-4 !font-Poppins !text-base !font-normal !leading-5"
+                    className="h-11 !px-[22px] !py-4 !font-base !text-base !font-normal !leading-5"
                   ></Tab>
                 ))}
               </Tabs>
@@ -164,14 +164,14 @@ const Insights = () => {
                     </div>
                     <div className="flex flex-col gap-4">
                       <div className="flex flex-col gap-2.5">
-                        <span className="font-Inter text-lg font-medium leading-6 text-white">
+                        <span className="font-base text-lg font-medium leading-6 text-white">
                           {item?.technologyWeWorkOn}
                         </span>
-                        <h3 className="font-Inter text-xl font-normal leading-[26px] text-white md:text-[21px] md:font-medium">
+                        <h3 className="font-base text-xl font-normal leading-[26px] text-white md:text-[21px] md:font-medium">
                           {item?.techHeading}
                         </h3>
                       </div>
-                      <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-white md:text-xl">
+                      <p className="line-clamp-2 font-base text-lg font-light leading-6 text-white md:text-xl">
                         {item?.techDescription}
                       </p>
                     </div>
@@ -206,14 +206,14 @@ const Insights = () => {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-2.5">
-                      <span className="font-Inter text-lg font-medium leading-6 text-red">
+                      <span className="font-base text-lg font-medium leading-6 text-red">
                         {item?.technologyWeWorkOn}
                       </span>
-                      <h3 className="font-Inter text-xl font-normal leading-[26px] text-black md:text-[21px] md:font-medium">
+                      <h3 className="font-base text-xl font-normal leading-[26px] text-primary md:text-[21px] md:font-medium">
                         {item?.techHeading}
                       </h3>
                     </div>
-                    <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-[#524c4c] md:text-xl">
+                    <p className="line-clamp-2 font-base text-lg font-light leading-6 text-[#524c4c] md:text-xl">
                       {item?.techDescription}
                     </p>
                   </div>
@@ -252,14 +252,14 @@ const Insights = () => {
                     </div>
                     <div className="flex flex-col gap-4">
                       <div className="flex flex-col gap-2.5">
-                        <span className="font-Inter text-lg font-medium leading-6 text-white">
+                        <span className="font-base text-lg font-medium leading-6 text-white">
                           {item?.technologyWeWorkOn}
                         </span>
-                        <h3 className="font-Inter text-xl font-normal leading-[26px] text-white md:text-[21px] md:font-medium">
+                        <h3 className="font-base text-xl font-normal leading-[26px] text-white md:text-[21px] md:font-medium">
                           {item?.techHeading}
                         </h3>
                       </div>
-                      <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-white md:text-xl">
+                      <p className="line-clamp-2 font-base text-lg font-light leading-6 text-white md:text-xl">
                         {item?.techDescription}
                       </p>
                     </div>
@@ -294,14 +294,14 @@ const Insights = () => {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-2.5">
-                      <span className="font-Inter text-lg font-medium leading-6 text-red">
+                      <span className="font-base text-lg font-medium leading-6 text-red">
                         {item?.technologyWeWorkOn}
                       </span>
-                      <h3 className="font-Inter text-xl font-normal leading-[26px] text-black md:text-[21px] md:font-medium">
+                      <h3 className="font-base text-xl font-normal leading-[26px] text-primary md:text-[21px] md:font-medium">
                         {item?.techHeading}
                       </h3>
                     </div>
-                    <p className="line-clamp-2 font-Inter text-lg font-light leading-6 text-[#524c4c] md:text-xl">
+                    <p className="line-clamp-2 font-base text-lg font-light leading-6 text-[#524c4c] md:text-xl">
                       {item?.techDescription}
                     </p>
                   </div>
@@ -314,10 +314,10 @@ const Insights = () => {
         <Container className="py-10 3xl:py-14 5xl:py-20">
           <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-4">
-              <h5 className="font-Inter text-[26px] font-medium leading-8 text-black">
+              <h5 className="font-base text-[26px] font-medium leading-8 text-primary">
                 Sign Up for the Latest Insights
               </h5>
-              <p className="text-center font-Inter text-lg font-normal leading-6 text-black">
+              <p className="text-center font-base text-lg font-normal leading-6 text-primary">
                 Get a free access of our exclusive research and tech strategies
                 to level up your knowledge about the digital realm.
               </p>
@@ -329,18 +329,18 @@ const Insights = () => {
                 <input
                   type="email"
                   placeholder="Enter your email..."
-                  className="w-full rounded-[30px] border-none bg-transparent p-3 font-Inter text-base font-normal leading-6 focus:outline-none sm:min-w-[450px] md:py-4 md:pl-5 md:text-lg"
+                  className="w-full rounded-[30px] border-none bg-transparent p-3 font-base text-base font-normal leading-6 focus:outline-none sm:min-w-[450px] md:py-4 md:pl-5 md:text-lg"
                 />
                 <button
                   type="submit"
-                  className="cursor-pointer rounded-[30px] bg-lightBlue px-[15px] py-2.5 font-Inter text-sm font-semibold uppercase leading-4 text-white md:py-3.5 md:text-lg md:leading-5"
+                  className="cursor-pointer rounded-[30px] bg-lightBlue px-[15px] py-2.5 font-base text-sm font-semibold uppercase leading-4 text-white md:py-3.5 md:text-lg md:leading-5"
                 >
                   subscribe
                 </button>
               </div>
               <div className="flex items-start gap-1 lg:items-center">
                 <input type="checkbox" className="mt-1 lg:mt-0" />
-                <span className="font-Inter text-base font-normal leading-5 text-[#192020] lg:text-lg lg:leading-6">
+                <span className="font-base text-base font-normal leading-5 text-[#192020] lg:text-lg lg:leading-6">
                   I hereby agree to receive newsletters from Optimity Logics and
                   acknowledge company&#39;s
                   <Link href={''} className="text-lightBlue underline">

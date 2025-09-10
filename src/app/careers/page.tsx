@@ -38,10 +38,10 @@ const Career = () => {
     <>
       <div className="bg-careerBanner bg-cover bg-no-repeat">
         <div className="mx-auto mb-10 flex max-w-[1217px] flex-col items-center gap-[22px] px-4 py-12 sm:px-6 md:mb-12 md:px-8 xl:mb-16 4xl:mb-[100px]">
-          <h2 className="text-center font-Poppins text-4xl font-medium leading-[40px] tracking-[-0.16px] text-black md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
+          <h2 className="text-center font-base text-4xl font-medium leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:leading-[50px] 4xl:text-[50px] 4xl:font-semibold 5xl:text-[55px] 5xl:leading-[60px]">
             Join the team
           </h2>
-          <p className="text-center font-Inter text-lg font-light leading-[29px] text-[#727265]">
+          <p className="text-center font-base text-lg font-light leading-[29px] text-[#727265]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&#39;s standard dummy
             text ever since the 1500s, when an unknown printer took a galley of
@@ -49,7 +49,7 @@ const Career = () => {
           </p>
           <Link
             href={'/'}
-            className="flex items-center gap-1.5 rounded-[40px] bg-red p-3 font-Poppins text-base font-normal leading-5 text-white xl:gap-2.5 xl:p-5 xl:text-[21px] xl:leading-[26px]"
+            className="flex items-center gap-1.5 rounded-[40px] bg-red p-3 font-base text-base font-normal leading-5 text-white xl:gap-2.5 xl:p-5 xl:text-[21px] xl:leading-[26px]"
           >
             <span>Join the team</span>
             <Image src={fatArrow} alt="arrow icon" width={24} height={24} />
@@ -79,7 +79,7 @@ const Career = () => {
                     height={45}
                     className="w-8 object-contain"
                   />
-                  <span className="font-Poppins text-lg font-normal leading-6 text-black md:text-xl md:leading-6">
+                  <span className="font-base text-lg font-normal leading-6 text-primary md:text-xl md:leading-6">
                     {items?.benefitesName}
                   </span>
                 </div>
@@ -133,7 +133,7 @@ const Career = () => {
 
                 <div className="flex h-full cursor-pointer items-end rounded-[15px] bg-[#1a1a1a] p-4 lg:p-8">
                   <div className="flex flex-col gap-3">
-                    <span className="font-Poppins text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
+                    <span className="font-base text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
                       Explore more
                     </span>
                     <Image
@@ -169,9 +169,9 @@ const Career = () => {
                     }
                   >
                     <span
-                      className={`font-Poppins text-lg leading-5 md:text-xl lg:text-[22px] lg:leading-[35px] ${
+                      className={`font-base text-lg leading-5 md:text-xl lg:text-[22px] lg:leading-[35px] ${
                         item?.positionName.toLowerCase() === isSelectPositions
-                          ? 'font-normal text-white md:font-medium md:text-black'
+                          ? 'font-normal text-white md:font-medium md:text-primary'
                           : 'font-normal text-[#504c4c]'
                       }`}
                     >
@@ -180,7 +180,7 @@ const Career = () => {
                   </li>
                 ))}
               </ul>
-              <span className="font-Poppins text-base font-normal leading-6 text-[#504c4c] xl:text-[21px] xl:leading-[27px]">
+              <span className="font-base text-base font-normal leading-6 text-[#504c4c] xl:text-[21px] xl:leading-[27px]">
                 We are always seeking talented people. In case you cannot find
                 your desired position here, please send us your LinkedIn profile
                 and give us your contact information. We will be in touch.
@@ -199,27 +199,27 @@ const Career = () => {
                     >
                       <div className="flex h-full flex-col justify-between gap-3 md:gap-5 lg:gap-8">
                         <div className="flex flex-col gap-2.5">
-                          <h3 className="font-Poppins text-2xl leading-6 text-black md:leading-7 xl:text-4xl xl:leading-[43px]">
+                          <h3 className="font-base text-2xl leading-6 text-primary md:leading-7 xl:text-4xl xl:leading-[43px]">
                             {detail?.title}
                           </h3>
                           <ul className="flex flex-wrap items-center gap-2.5">
                             {detail?.workModes.map((mode, modeIndex) => (
                               <li
                                 key={modeIndex}
-                                className="rounded-[40px] border-1.5 border-black px-3 py-2 font-Poppins text-sm font-medium leading-5 text-[#090808] md:px-5 md:py-2.5 md:text-lg"
+                                className="rounded-[40px] border-1.5 border-black px-3 py-2 font-base text-sm font-medium leading-5 text-[#090808] md:px-5 md:py-2.5 md:text-lg"
                               >
                                 {mode}
                               </li>
                             ))}
                           </ul>
-                          <p className="mt-2.5 font-Poppins text-base font-normal leading-5 text-[#504c4c] md:text-lg md:leading-6 lg:text-xl lg:leading-7">
+                          <p className="mt-2.5 font-base text-base font-normal leading-5 text-[#504c4c] md:text-lg md:leading-6 lg:text-xl lg:leading-7">
                             {detail?.description}
                           </p>
                         </div>
                         <div className="ml-auto">
                           <Link
                             href={'/positions'}
-                            className="flex items-center gap-1.5 rounded-[40px] bg-red p-3 font-Poppins text-base font-normal leading-5 text-white xl:gap-2.5 xl:p-5 xl:text-[21px] xl:leading-[26px]"
+                            className="flex items-center gap-1.5 rounded-[40px] bg-red p-3 font-base text-base font-normal leading-5 text-white xl:gap-2.5 xl:p-5 xl:text-[21px] xl:leading-[26px]"
                           >
                             <span>See positions</span>
                             <Image
@@ -247,7 +247,7 @@ const Career = () => {
               dangerouslySetInnerHTML={{
                 __html: `<span>Follow us</span> on social to see what we're up to!`,
               }}
-              className="max-w-[482px] font-Poppins text-[25px] font-medium capitalize leading-[2rem] text-charcoalBlue sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 5xl:text-[50px] 5xl:leading-[54px]"
+              className="max-w-[482px] font-base text-[25px] font-medium capitalize leading-[2rem] text-primary sm:text-4xl sm:leading-10 xl:text-[40px] xl:leading-[40px] 3xl:font-semibold 5xl:text-[50px] 5xl:leading-[54px]"
             />
             <Image
               src={team}
@@ -281,7 +281,7 @@ const Career = () => {
               />
             </div>
             <div className="col-span-2 flex flex-col gap-3 lg:mt-5 lg:gap-7">
-              <h4 className="font-Poppins text-lg font-medium leading-[1.6rem] text-charcoalBlue md:text-xl md:leading-6 3xl:text-[30px] 3xl:leading-8">
+              <h4 className="font-base text-lg font-medium leading-[1.6rem] text-primary md:text-xl md:leading-6 3xl:text-[30px] 3xl:leading-8">
                 Follow Us
               </h4>
               <ul className="flex items-center gap-3">

@@ -16,10 +16,10 @@ const OurExpertise = () => {
       <div className="mb-10 flex flex-col items-stretch gap-[30px] overflow-x-hidden md:mb-12 md:ml-8 lg:flex-row xl:mb-16 3xl:ml-10 4xl:mb-[100px]">
         <div className="flex w-full max-w-[375px] flex-col justify-between gap-5 lg:gap-[100px]">
           <div className="flex flex-col gap-3 lg:gap-[25px]">
-            <h3 className="font-Poppins text-[26px] font-medium leading-[2.3rem] text-charcoalBlue sm:text-4xl sm:leading-10 4xl:text-[45px] 4xl:leading-[48px] 5xl:text-[55px] 5xl:font-semibold 5xl:leading-[60px]">
+            <h3 className="font-base text-[26px] font-medium leading-[2.3rem] text-primary sm:text-4xl sm:leading-10 4xl:text-[45px] 4xl:leading-[48px] 5xl:text-[55px] 5xl:font-semibold 5xl:leading-[60px]">
               Our <span className="text-red lg:block">Expertise</span>
             </h3>
-            <p className="font-Poppins text-lg font-normal leading-[26px] text-lavenderGray">
+            <p className="font-base text-lg font-normal leading-[26px] text-lavenderGray">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore
             </p>
@@ -80,10 +80,10 @@ const OurExpertise = () => {
                     </div>
                     <div className="flex h-full flex-col justify-between gap-5">
                       <div className="flex flex-col gap-5">
-                        <h5 className="font-Poppins text-2xl font-semibold leading-[29.05px] text-charcoalBlue">
+                        <h5 className="font-base text-2xl font-semibold leading-[29.05px] text-primary">
                           {item.techHeading}
                         </h5>
-                        <p className="font-Poppins text-lg font-normal leading-[21.78px] text-lavenderGray">
+                        <p className="font-base text-lg font-normal leading-[21.78px] text-lavenderGray">
                           {item.techDescription}
                         </p>
                       </div>

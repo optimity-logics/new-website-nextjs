@@ -25,10 +25,10 @@
 //                 howWeWorkData.map((item, index) => (
 //                   <div key={index}>
 //                     <div className="flex items-center gap-[25px]">
-//                       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-center font-Poppins text-xl font-bold leading-6 text-black lg:h-14 lg:w-14 lg:text-2xl">
+//                       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-center font-base text-xl font-bold leading-6 text-primary lg:h-14 lg:w-14 lg:text-2xl">
 //                         {`0${index + 1}`}
 //                       </div>
-//                       <p className="font-Poppins text-base font-light leading-6 text-white lg:text-xl">
+//                       <p className="font-base text-base font-light leading-6 text-white lg:text-xl">
 //                         {item}
 //                       </p>
 //                     </div>
@@ -144,7 +144,7 @@ export default function HowWeWork() {
       className="my-[100px] bg-our-expertise bg-cover bg-no-repeat"
     >
       <div className="mx-auto my-[100px] w-full max-w-[1680px] px-[120px]">
-        <h2 className="text-gray-900 mb-12 text-4xl font-bold md:text-5xl">
+        <h2 className="text-gray-900 mb-12 font-base text-4xl font-medium md:text-5xl">
           How we work
         </h2>
         <div className="flex gap-10">
@@ -153,10 +153,10 @@ export default function HowWeWork() {
               <div key={step.id} className="rounded-xl shadow-tab">
                 <button
                   onClick={() => handleStepClick(step.id)}
-                  className={`relative w-full overflow-hidden rounded-xl border-l-4 px-6 py-4 text-left font-Inter text-lg font-medium leading-6 transition-all duration-200 ${
+                  className={`relative w-full overflow-hidden rounded-xl border-l-4 px-6 py-4 text-left font-base text-lg font-medium leading-6 transition-all duration-200 ${
                     activeStep === step.id
                       ? 'border-l-red bg-[#F7F7F8] text-white shadow-lg'
-                      : 'text-gray-700 border-l-black bg-white hover:bg-[#F7F7F8]'
+                      : 'border-l-black bg-white text-primary hover:bg-[#F7F7F8]'
                   } `}
                 >
                   {activeStep === step.id ? (
@@ -179,13 +179,13 @@ export default function HowWeWork() {
             ))}
           </div>
 
-          <div className="h-min w-full rounded-[20px] bg-white p-10 shadow-how-work-card">
+          <div className="h-min w-full rounded-[20px] bg-white p-7 shadow-how-work-card">
             {activeContent && (
-              <div className="flex flex-col gap-5">
-                <h3 className="font-Inter text-3xl font-bold leading-9 text-[#2E323C]">
+              <div className="flex flex-col gap-3">
+                <h3 className="font-base text-2xl font-medium leading-9 text-primary">
                   {activeContent.title}
                 </h3>
-                <p className="font-Inter text-base font-normal leading-6 text-[#5E5E5E]">
+                <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50">
                   {activeContent.description}
                 </p>
               </div>

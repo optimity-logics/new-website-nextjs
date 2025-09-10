@@ -12,7 +12,7 @@ const Sitemap = () => {
         className="bg-siteMap bg-cover bg-no-repeat"
         style={{ backgroundSize: '100% 100%' }}
       >
-        <h2 className="px-4 py-16 text-center font-Inter text-4xl font-semibold leading-[44px] tracking-[-2%] text-black sm:px-6 md:px-8 md:py-24 lg:text-[44px] lg:leading-[82.3px] xl:px-10 3xl:px-0 4xl:text-[60px]">
+        <h2 className="px-4 py-16 font-base text-4xl font-semibold leading-[44px] tracking-[-2%] text-primary sm:px-6 md:px-8 md:py-24 lg:text-[44px] lg:leading-[82.3px] xl:px-10 3xl:px-0 4xl:text-[60px]">
           {' '}
           Privacy Policy
         </h2>
@@ -22,7 +22,7 @@ const Sitemap = () => {
           {siteMapData &&
             siteMapData.map((items, index) => (
               <div key={index} className="flex flex-col gap-6">
-                <h3 className="font-Inter text-[26px] font-medium capitalize leading-[32px] text-[#192020]">
+                <h3 className="font-base text-[26px] font-medium capitalize leading-[32px] text-[#192020]">
                   {items?.title}
                 </h3>
                 {items?.items.length > 0 && (

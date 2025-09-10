@@ -21,7 +21,7 @@ const Resources = () => {
           description="Insights on the global impact of artificial intelligence across multiple domains"
           btnName="Resources"
           className="4xl:!gap-5"
-          btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-charcoalBlue sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
+          btnStyle="!rounded-[42px] bg-herobtnbg bg-cover bg-no-repeat !px-[23px] !py-[10px] !text-lg font-normal leading-5 !text-primary sm:!text-xl sm:!leading-6 3xl:text-2xl 3xl:leading-7"
           LinkName="Explore all blogs"
         />
         <div className="h-full w-full">
@@ -73,17 +73,17 @@ const Resources = () => {
                     </div>
                     <div className="flex h-full flex-col justify-between gap-[17.39px]">
                       <div className="flex flex-col gap-3">
-                        <h3 className="font-Poppins text-xl font-medium leading-6 text-[#192020]">
+                        <h3 className="font-base text-xl font-medium leading-6 text-[#192020]">
                           {item?.title}
                         </h3>
-                        <p className="font-Poppins text-base font-light leading-[1.6rem] text-[#192020]">
+                        <p className="font-base text-base font-light leading-[1.6rem] text-[#192020]">
                           {item?.description}
                         </p>
                       </div>
                       <div className="flex flex-col gap-3">
                         <Link
                           href={'/'}
-                          className="font-Poppins text-sm font-medium leading-[19.6px] text-red"
+                          className="font-base text-sm font-medium leading-[19.6px] text-red"
                         >
                           Continue Reading
                         </Link>
