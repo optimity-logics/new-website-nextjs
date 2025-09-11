@@ -1,7 +1,7 @@
 import { Accordion, AccordionItem } from '@nextui-org/accordion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 import close from '../../../public/svg/close.svg';
@@ -9,8 +9,7 @@ import mobileScreenLogo from '../../../public/svg/mobileScreenLogo.svg';
 import useWindowSize from '../hooks/useWindowSize';
 import { menuSidebar } from '../utils/Constant';
 import React from 'react';
-import router from 'next/router';
-import Button from '../ui/Button';
+import AnimatedArrow from '../common/AnimatedArrow';
 interface IMenuSidebarProps {
   isOpen: boolean;
   setIsOpen: (val: boolean) => void;
@@ -18,6 +17,13 @@ interface IMenuSidebarProps {
 
 const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
   const { width } = useWindowSize();
+  const [hover, setHover] = useState(false);
+
+  const handleMouseEnter = () => setHover(true);
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
+
   useEffect(() => {
     if (width >= 1024) {
       setIsOpen(false);
@@ -150,14 +156,17 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                   );
                 })}
             </Accordion>
-          </div>
-
-          <div className="mb-5 flex items-center justify-center">
-            <Button
-              btnName="Contact Us"
-              className="bg-lightBlue px-4 lg:px-6 xl:px-[30px]"
-              onClick={() => router.push('/contact-us')}
-            />
+            <button
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              onMouseUp={handleMouseEnter}
+              onMouseDown={handleMouseLeave}
+              type="button"
+              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+            >
+              Contact us
+              <AnimatedArrow hover={hover} />
+            </button>
           </div>
         </div>
       </Drawer>

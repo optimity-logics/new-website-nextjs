@@ -20,7 +20,7 @@ const FaqsAccordion = ({ data }: IAccordionProps) => {
 
   return (
     <NextUIProvider>
-      <Accordion variant="splitted">
+      <Accordion variant="splitted" className="!px-0">
         {data &&
           data.map((item, index) => {
             const isExpanded = expandedIndex === index;
