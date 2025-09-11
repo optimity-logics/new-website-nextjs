@@ -1,46 +1,36 @@
-import ketoCycle from '../../../public/svg/client-logo-slider/ketocycle.svg';
-import hts from '../../../public/svg/client-logo-slider/hts.svg';
-import hopper from '../../../public/svg/client-logo-slider/hopper.svg';
-import wikifarmer from '../../../public/svg/client-logo-slider/wikifarmer.svg';
-import gocaution from '../../../public/svg/client-logo-slider/gocaution.svg';
-import heycollab from '../../../public/svg/client-logo-slider/heycollab.svg';
-import loloco from '../../../public/svg/client-logo-slider/loloco.svg';
-import propftx from '../../../public/svg/client-logo-slider/propftx.svg';
-import everpretty from '../../../public/svg/client-logo-slider/everpretty.svg';
-import datapacket from '../../../public/svg/client-logo-slider/datapacket.svg';
-import gobrochures from '../../../public/svg/client-logo-slider/gobrochures.svg';
-import hungrytripper from '../../../public/svg/client-logo-slider/hungrytripper.svg';
-import blueprint from '../../../public/svg/client-logo-slider/blueprint.svg';
-import edqan from '../../../public/svg/client-logo-slider/edqan.svg';
-import yhonk from '../../../public/svg/client-logo-slider/yhonk.svg';
-import woodlogs from '../../../public/svg/client-logo-slider/woodlogs.svg';
-import helpingjobseekers from '../../../public/svg/client-logo-slider/helpingjobseekers.svg';
-import yellowbird from '../../../public/svg/client-logo-slider/yellowbird.svg';
-import waosim from '../../../public/svg/client-logo-slider/waosim.svg';
-import teqdiligent from '../../../public/svg/client-logo-slider/teqdiligent.svg';
-import portsv from '../../../public/svg/client-logo-slider/portsv.svg';
-import blueBunglow from '../../../public/svg/client-logo-slider/bluebungalow.svg';
-
-import htsBlack from '../../../public/svg/client-logo-slider/black-icon/hts.svg';
-import hopperBlack from '../../../public/svg/client-logo-slider/black-icon/hopper.svg';
-import wikifarmerBlack from '../../../public/svg/client-logo-slider/black-icon/wikifarmer.svg';
-import gocautionBlack from '../../../public/svg/client-logo-slider/black-icon/gocaution.svg';
-import heycollabBlack from '../../../public/svg/client-logo-slider/black-icon/heycollab.svg';
-import lolocoBlack from '../../../public/svg/client-logo-slider/black-icon/loloco.svg';
-import propftxBlack from '../../../public/svg/client-logo-slider/black-icon/propftx.svg';
-import everprettyBlack from '../../../public/svg/client-logo-slider/black-icon/everpretty.svg';
-import datapacketBlack from '../../../public/svg/client-logo-slider/black-icon/datapacket.svg';
-import gobrochuresBlack from '../../../public/svg/client-logo-slider/black-icon/gobrochures.svg';
-import hungrytripperBlack from '../../../public/svg/client-logo-slider/black-icon/hungrytripper.svg';
-import blueprintBlack from '../../../public/svg/client-logo-slider/black-icon/blueprint.svg';
-import edqanBlack from '../../../public/svg/client-logo-slider/black-icon/edqan.svg';
-import yhonkBlack from '../../../public/svg/client-logo-slider/black-icon/yhonk.svg';
-import woodlogsBlack from '../../../public/svg/client-logo-slider/black-icon/woodlogs.svg';
-import helpingjobseekersBlack from '../../../public/svg/client-logo-slider/black-icon/helpingjobseekers.svg';
-import yellowbirdBlack from '../../../public/svg/client-logo-slider/black-icon/yellowbird.svg';
-import waosimBlack from '../../../public/svg/client-logo-slider/black-icon/waosim.svg';
-import teqdiligentBlack from '../../../public/svg/client-logo-slider/black-icon/teqdiligent.svg';
-import portsvBlack from '../../../public/svg/client-logo-slider/black-icon/portsv.svg';
+import ketoCycle from '../../../public/webp/client-logo/ketocycle.webp';
+import hts from '../../../public/webp/client-logo/hts.webp';
+import hopper from '../../../public/webp/client-logo/hopper.webp';
+import wikifarmer from '../../../public/webp/client-logo/wikifarmer.webp';
+import gocaution from '../../../public/webp/client-logo/gocaution.webp';
+import afterDark from '../../../public/webp/client-logo/afterdark.webp';
+import blueBungalow from '../../../public/webp/client-logo/bluebungalow.webp';
+import blueprint from '../../../public/webp/client-logo/blueprint.webp';
+import builderspace from '../../../public/webp/client-logo/buildersspec.webp';
+import datepacket from '../../../public/webp/client-logo/datapacket.webp';
+import echt from '../../../public/webp/client-logo/echt.webp';
+import edqan from '../../../public/webp/client-logo/edqan.webp';
+import everpretty from '../../../public/webp/client-logo/everpretty.webp';
+import gobrochures from '../../../public/webp/client-logo/gobrochures.webp';
+import havescripts from '../../../public/webp/client-logo/havescripts.webp';
+import helpjobseeker from '../../../public/webp/client-logo/helpingjobseekers.webp';
+import hetcollab from '../../../public/webp/client-logo/heycollab.webp';
+import hopeonindia from '../../../public/webp/client-logo/hopeonindia.webp';
+import hungrytripper from '../../../public/webp/client-logo/hungrytripper.webp';
+import loloco from '../../../public/webp/client-logo/loloco.webp';
+import nextwave from '../../../public/webp/client-logo/nextwave.webp';
+import portsv from '../../../public/webp/client-logo/portsv.webp';
+import propftx from '../../../public/webp/client-logo/propftx.webp';
+import satisfind from '../../../public/webp/client-logo/satisfind.webp';
+import spacerenta from '../../../public/webp/client-logo/spacerenta.webp';
+import tarshari from '../../../public/webp/client-logo/tarshari.webp';
+import teqdiligent from '../../../public/webp/client-logo/teqdiligent.webp';
+import trady from '../../../public/webp/client-logo/trady.webp';
+import uphail from '../../../public/webp/client-logo/uphail.webp';
+import whiskerspaws from '../../../public/webp/client-logo/whiskerspaws.webp';
+import woodlogs from '../../../public/webp/client-logo/woodlogs.webp';
+import yellowbird from '../../../public/webp/client-logo/yellowbird.webp';
+import yhonk from '../../../public/webp/client-logo/yhonk.webp';
 
 // social media icons
 
@@ -150,32 +140,40 @@ export const NavBarData = [
     link: '/blog',
   },
 ];
-
 export const logoIcons = [
   ketoCycle,
-  heycollab,
   hts,
-  loloco,
   hopper,
-  gocaution,
-  propftx,
   wikifarmer,
-  everpretty,
-  datapacket,
-  gobrochures,
-  hungrytripper,
-  blueprint,
-  edqan,
-  yhonk,
-  woodlogs,
-  helpingjobseekers,
-  yellowbird,
-  waosim,
-  teqdiligent,
-  portsv,
-  blueBunglow,
-  loloco,
   gocaution,
+  afterDark,
+  blueBungalow,
+  blueprint,
+  builderspace,
+  datepacket,
+  echt,
+  edqan,
+  everpretty,
+  gobrochures,
+  havescripts,
+  helpjobseeker,
+  hetcollab,
+  hopeonindia,
+  hungrytripper,
+  loloco,
+  nextwave,
+  portsv,
+  propftx,
+  satisfind,
+  spacerenta,
+  tarshari,
+  yellowbird,
+  teqdiligent,
+  trady,
+  uphail,
+  whiskerspaws,
+  woodlogs,
+  yhonk,
 ];
 
 export const servicesMegmenuDate = [
@@ -1448,29 +1446,6 @@ export const exportTeamData = [
     position: 'CEO & Founder, techwix',
     employeImg: '/webp/about-us/expert-team/employee3.webp',
   },
-];
-
-export const blackLogoIcon = [
-  heycollabBlack,
-  htsBlack,
-  lolocoBlack,
-  hopperBlack,
-  gocautionBlack,
-  propftxBlack,
-  wikifarmerBlack,
-  everprettyBlack,
-  datapacketBlack,
-  gobrochuresBlack,
-  hungrytripperBlack,
-  blueprintBlack,
-  edqanBlack,
-  yhonkBlack,
-  woodlogsBlack,
-  helpingjobseekersBlack,
-  yellowbirdBlack,
-  waosimBlack,
-  teqdiligentBlack,
-  portsvBlack,
 ];
 
 export const blogData = [

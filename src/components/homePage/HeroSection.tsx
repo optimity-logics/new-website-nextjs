@@ -5,6 +5,7 @@ import Container from '../ui/Container';
 import LogoAnimation from './LogoAnimation';
 
 const HeroSection = () => {
+  const logos = logoIcons.map((image) => image?.src);
   return (
     <div className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
       <div
@@ -88,7 +89,7 @@ const HeroSection = () => {
               ))}
             </div>
           </Marquee> */}
-          <LogoAnimation logo={logoIcons} />
+          <LogoAnimation logo={logos} />
         </div>
       </div>
     </div>

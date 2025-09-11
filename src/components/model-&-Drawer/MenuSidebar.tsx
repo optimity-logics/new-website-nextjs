@@ -84,7 +84,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                       aria-label={`Accordion ${index + 1}`}
                       title={
                         <div className={`!py-0`}>
-                          <span className="font-base text-lg font-medium leading-[21.78px] text-secBlack md:text-xl md:leading-6">
+                          <span className="font-base text-base font-medium leading-[21.78px] text-iconSubtle md:text-xl md:leading-6">
                             {item?.menuTitle}
                           </span>
                         </div>
@@ -112,7 +112,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                                       height={24}
                                     />
                                   </div>
-                                  <h4 className="font-base text-lg font-medium capitalize leading-6 text-[#192020]">
+                                  <h4 className="font-base text-lg font-medium capitalize leading-6 text-iconSubtle">
                                     {itm?.title}
                                   </h4>
                                 </div>
@@ -121,7 +121,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                                     <li
                                       key={idx}
                                       onClick={handleCloseDrower}
-                                      className="w-full cursor-pointer pl-2 font-base text-[15px] font-normal capitalize leading-[18px] text-gray transition-all duration-300 hover:text-primary"
+                                      className="w-full cursor-pointer pl-2 font-base text-[15px] font-normal capitalize leading-[18px] text-primarySubtle transition-all duration-300 hover:text-primary"
                                     >
                                       <Link
                                         href={items.techLink}
