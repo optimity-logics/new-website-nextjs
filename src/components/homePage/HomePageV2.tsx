@@ -679,13 +679,13 @@ const HomePageV2 = () => {
               <h4 className="font-base text-[45px] font-medium leading-tight text-primary xl:text-white 4xl:text-[60px] 4xl:leading-[65px]">
                 We’re Here to <span className="text-red"> Help, Anytime.</span>
               </h4>
-              <p className="pr-[76px] font-base text-[18px] font-normal leading-tight text-subtle">
+              <p className="font-base text-[18px] font-normal leading-tight text-subtle lg:pr-[76px]">
                 Our support team is ready to provide prompt solutions and
                 guidance to ensure your experience with us is seamless and
                 satisfying.
               </p>
             </div>
-            <form className="flex w-full max-w-[737px] flex-col gap-10 rounded-2xl bg-tech-we-work bg-full p-6 shadow-xl backdrop-blur-sm xl:bg-[#f0f3f5]/10 xl:px-[23px] xl:py-[52px] xl:shadow-none">
+            <form className="flex w-full max-w-full flex-col gap-10 rounded-2xl bg-tech-we-work bg-full p-6 shadow-xl backdrop-blur-sm lg:max-w-[737px] xl:bg-[#f0f3f5]/10 xl:px-[23px] xl:py-[52px] xl:shadow-none">
               <div className="flex flex-col gap-[26px]">
                 <div className="flex items-center gap-6">
                   <input
