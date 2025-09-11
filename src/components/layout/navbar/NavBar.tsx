@@ -64,67 +64,68 @@ const NavBar = () => {
     };
   }, []);
   return (
-    <div
-      style={{
-        backgroundImage: !small
-          ? 'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)'
-          : '',
-      }}
-      className={`sticky ${small ? 'top-2 mx-4 xl:mx-0' : 'top-0'} z-[9999]`}
-    >
+    <>
       <div
-        className={`easing_func ${small ? 'small rounded-full bg-white/30 shadow-card backdrop-blur-sm md:px-4 xl:py-0' : 'large bg-transparent md:px-8 lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-4 py-4 sm:px-6`}
+        style={{
+          backgroundImage: !small
+            ? 'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)'
+            : '',
+        }}
+        className={`sticky ${small ? 'top-2 mx-4 xl:mx-0' : 'top-0'} z-[99]`}
       >
-        <div className="navigation">
-          <div className="flex w-full items-center justify-between">
-            <div className="flex items-center gap-5 xl:hidden">
-              <div
-                onClick={handleOpenMenuDrawer}
-                className="block cursor-pointer xl:hidden"
-              >
-                <Image
-                  src={hamburger}
-                  alt="hamburger-menu"
-                  width={24}
-                  height={24}
-                />
-              </div>
-              <div>
-                <Link href="/">
+        <div
+          className={`easing_func ${small ? 'small rounded-full bg-white/30 shadow-card backdrop-blur-sm md:px-4 xl:py-0' : 'large bg-transparent md:px-8 lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-4 py-4 sm:px-6`}
+        >
+          <div className="navigation">
+            <div className="flex w-full items-center justify-between">
+              <div className="flex items-center gap-5 xl:hidden">
+                <div
+                  onClick={handleOpenMenuDrawer}
+                  className="block cursor-pointer xl:hidden"
+                >
                   <Image
-                    src={mobileScreenLogo}
-                    alt="nav-logo"
-                    width={42}
-                    height={39}
+                    src={hamburger}
+                    alt="hamburger-menu"
+                    width={24}
+                    height={24}
                   />
-                </Link>
-              </div>
-            </div>
-            <div className="flex items-center gap-10 3xl:gap-32">
-              <div className="hidden xl:block">
-                <Link href="/">
-                  {small ? (
+                </div>
+                <div>
+                  <Link href="/">
                     <Image
                       src={mobileScreenLogo}
                       alt="nav-logo"
-                      width={40}
-                      height={40}
+                      width={42}
+                      height={39}
                     />
-                  ) : (
-                    <Image
-                      src={logo}
-                      alt="nav-logo"
-                      width={202}
-                      height={57.09}
-                      className="w-full max-w-[130px] xl:max-w-[140px]"
-                    />
-                  )}
-                </Link>
+                  </Link>
+                </div>
               </div>
-              <MegaMenu />
-            </div>
+              <div className="flex items-center gap-10 3xl:gap-32">
+                <div className="hidden xl:block">
+                  <Link href="/">
+                    {small ? (
+                      <Image
+                        src={mobileScreenLogo}
+                        alt="nav-logo"
+                        width={40}
+                        height={40}
+                      />
+                    ) : (
+                      <Image
+                        src={logo}
+                        alt="nav-logo"
+                        width={202}
+                        height={57.09}
+                        className="w-full max-w-[130px] xl:max-w-[140px]"
+                      />
+                    )}
+                  </Link>
+                </div>
+                <MegaMenu />
+              </div>
 
-            {/* <ul className="relative hidden items-center gap-3 lg:flex lg:gap-4 xl:gap-[30px]">
+              {/* <ul className="relative hidden items-center gap-3 lg:flex lg:gap-4 xl:gap-[30px]">
               {menuData?.map((item, index) => (
                 <li
                   key={index}
@@ -256,27 +257,28 @@ const NavBar = () => {
                 )}
               </AnimatePresence>
             </ul> */}
-            {/* <Button
+              {/* <Button
               btnName="Contact Us"
               className="bg-lightBlue px-4 lg:px-6 xl:px-[30px]"
               onClick={() => router.push('/contact-us')}
             /> */}
-            <button
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onMouseUp={handleMouseEnter}
-              onMouseDown={handleMouseLeave}
-              type="button"
-              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
-            >
-              Contact us
-              <AnimatedArrow hover={hover} />
-            </button>
+              <button
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                onMouseUp={handleMouseEnter}
+                onMouseDown={handleMouseLeave}
+                type="button"
+                className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+              >
+                Contact us
+                <AnimatedArrow hover={hover} />
+              </button>
+            </div>
           </div>
         </div>
-        <MenuSidebar isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
-    </div>
+      <MenuSidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+    </>
   );
 };
 
