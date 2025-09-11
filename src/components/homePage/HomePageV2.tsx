@@ -193,7 +193,7 @@ const HomePageV2 = () => {
             <div className="flex flex-col justify-between gap-10 lg:flex-row xl:items-center 3xl:gap-[60px]">
               <div className="flex w-full max-w-[560px] flex-col gap-[50px] 4xl:max-w-[860px]">
                 <div className="flex flex-col gap-[20px]">
-                  <h1 className="line-clamp-1 rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1.5 font-base text-sm text-primary shadow-default duration-500 sm:w-max">
+                  <h1 className="max-w-max overflow-hidden rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-2 font-base text-[12px] text-primary shadow-default duration-500 md:text-sm">
                     Top Web and Mobile Application Development Services Company
                   </h1>
                   <h2 className="whitespace-pre-line font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]">
