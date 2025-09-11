@@ -11,7 +11,7 @@ export default function LogoAnimation({ logo }: LogoSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Split logos into 4 columns dynamically
-  const columnsDeskTop = ChunkArray(logo, 4);
+  const columnsDeskTop = ChunkArray(logo, 6);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,7 +22,7 @@ export default function LogoAnimation({ logo }: LogoSliderProps) {
 
   return (
     <>
-      <ul className="grid w-full max-w-full grid-cols-3 items-center justify-center gap-3 lg:grid-cols-6 lg:gap-x-10">
+      <ul className="grid w-full max-w-full grid-cols-3 items-center justify-center gap-3 lg:grid-cols-6 lg:gap-x-6">
         {columnsDeskTop.map((column, columnIndex) => (
           <li
             key={columnIndex}
@@ -45,7 +45,7 @@ export default function LogoAnimation({ logo }: LogoSliderProps) {
                         transform: `translateY(${(cycleIndex * column.length + logoIndex) * 100}%)`,
                       }}
                     >
-                      <div className="P-4 flex h-full w-full items-center justify-center">
+                      <div className="flex h-full w-full items-center justify-center">
                         <Image
                           src={logoItem}
                           alt="logo"

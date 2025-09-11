@@ -26,7 +26,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Mousewheel, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import Faqs from './Faqs';
 import AnimatedArrow from '../common/AnimatedArrow';
 import Container from '../ui/Container';
@@ -55,7 +55,8 @@ const HomePageV2 = () => {
   const handleMouseLeaveContact = () => {
     setHoverContact(false);
   };
-
+  const logos = logoIcons.map((image) => image?.src);
+  console.log(logoIcons.length);
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
 
   useEffect(() => {
@@ -193,7 +194,7 @@ const HomePageV2 = () => {
             <div className="flex flex-col justify-between gap-10 lg:flex-row xl:items-center 3xl:gap-[60px]">
               <div className="flex w-full max-w-[560px] flex-col gap-[50px] 4xl:max-w-[860px]">
                 <div className="flex flex-col gap-[20px]">
-                  <h1 className="max-w-max overflow-hidden rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-2 font-base text-[12px] text-primary shadow-default duration-500 md:text-sm">
+                  <h1 className="line-clamp-1 rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1 font-base text-sm leading-7 text-primary shadow-default duration-500 sm:w-max">
                     Top Web and Mobile Application Development Services Company
                   </h1>
                   <h2 className="whitespace-pre-line font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]">
@@ -202,7 +203,7 @@ const HomePageV2 = () => {
                     <span className="text-red">App Vision </span>to Life,
                     <br className="hidden xs:block" /> Anytime with AI.
                   </h2>
-                  <p className="w-full max-w-[800px] font-base text-[18px] font-normal leading-[24px] text-secondary opacity-70">
+                  <p className="w-full max-w-[800px] font-base text-lg font-normal leading-6 text-primary opacity-50">
                     We&#39;re a full-stack agency specializing in digital
                     transformation. Crafting experiences for startups, SMEs, and
                     Fortune 500 companies.
@@ -279,11 +280,11 @@ const HomePageV2 = () => {
         className="bg-white pt-10"
       >
         <Container>
-          <div className="flex flex-col items-center gap-[25px] rounded-2xl border border-darkGray bg-black px-5 pb-[22px] pt-[30px] shadow-lg xl:flex-row 5xl:rounded-[24px]">
-            <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-subtle md:text-lg md:leading-7 xl:text-start">
+          <div className="flex flex-col items-center gap-[25px] px-5 pb-[22px] pt-[30px] xl:flex-row 5xl:rounded-[24px]">
+            <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
               Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
             </span>
-            <LogoAnimation logo={logoIcons} />
+            <LogoAnimation logo={logos} />
           </div>
         </Container>
       </div>
@@ -302,11 +303,8 @@ const HomePageV2 = () => {
             <Swiper
               spaceBetween={10}
               slidesPerView={1.2}
-              modules={[Autoplay, Mousewheel]}
+              modules={[Autoplay]}
               centeredSlides={true}
-              mousewheel={{
-                invert: true,
-              }}
               breakpoints={{
                 540: {
                   slidesPerView: 1.6,
@@ -672,11 +670,11 @@ const HomePageV2 = () => {
       <div className="xl:mx-[30px]">
         <Container
           styleClass={{ backgroundSize: '100% 100%' }}
-          className="bg-contain bg-no-repeat py-[70px] xl:bg-contact xl:pb-[130px] xl:pt-[140px] 3xl:px-[80px]"
+          className="mb-[60px] bg-black bg-tech-we-work bg-no-repeat py-[70px] lg:bg-contain xl:mb-0 xl:bg-transparent xl:bg-contact xl:pb-[130px] xl:pt-[140px] 3xl:px-[80px]"
         >
           <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-center">
             <div className="flex w-full max-w-[570px] flex-col gap-3 xl:gap-5">
-              <h4 className="font-base text-[45px] font-medium leading-tight text-primary xl:text-white 4xl:text-[60px] 4xl:leading-[65px]">
+              <h4 className="font-base text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]">
                 We’re Here to <span className="text-red"> Help, Anytime.</span>
               </h4>
               <p className="font-base text-[18px] font-normal leading-tight text-subtle lg:pr-[76px]">
@@ -685,7 +683,7 @@ const HomePageV2 = () => {
                 satisfying.
               </p>
             </div>
-            <form className="flex w-full max-w-full flex-col gap-10 rounded-2xl bg-tech-we-work bg-full p-6 shadow-xl backdrop-blur-sm lg:max-w-[737px] xl:bg-[#f0f3f5]/10 xl:px-[23px] xl:py-[52px] xl:shadow-none">
+            <form className="flex w-full max-w-full flex-col gap-10 rounded-2xl bg-[#f0f3f5]/10 p-6 shadow-xl backdrop-blur-sm lg:max-w-[737px] xl:px-[23px] xl:py-[52px] xl:shadow-none">
               <div className="flex flex-col gap-[26px]">
                 <div className="flex items-center gap-6">
                   <input

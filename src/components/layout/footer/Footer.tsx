@@ -107,7 +107,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center justify-between gap-5 py-[26.8px] lg:flex-row">
           <span className="order-2 text-center font-base text-sm font-normal leading-[1.6rem] text-subtle sm:text-start lg:order-1">
-            © 2024 Optimity Logics. All rights reserved.
+            © {new Date().getFullYear()} Optimity Logics. All rights reserved.
           </span>
           <ul className="order-1 flex flex-wrap items-center justify-center gap-y-2 font-base text-sm font-normal leading-6 text-subtle lg:order-2">
             <li className="cursor-pointer border-r border-r-[#ffffff4a] px-5 transition-all duration-300 hover:text-lightBlue">
