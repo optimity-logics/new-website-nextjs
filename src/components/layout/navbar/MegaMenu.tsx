@@ -90,7 +90,7 @@ export default function MegaMenu() {
   const activeMenuData = menuData.find((menu) => menu.menuTitle === activeMenu);
 
   return (
-    <nav className="relative">
+    <nav className="relative hidden xl:block">
       <ul className="flex items-center gap-8">
         {menuData.map((item, index) => (
           <li

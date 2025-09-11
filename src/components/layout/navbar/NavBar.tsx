@@ -70,17 +70,17 @@ const NavBar = () => {
           ? 'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)'
           : '',
       }}
-      className={`sticky ${small ? 'top-2' : 'top-0'} z-[9999]`}
+      className={`sticky ${small ? 'top-2 mx-4 xl:mx-0' : 'top-0'} z-[9999]`}
     >
       <div
-        className={`easing_func ${small ? 'small rounded-full bg-white/30 shadow-card backdrop-blur-sm xl:px-4 xl:py-0' : 'large bg-transparent lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-4 py-4 sm:px-6 md:px-8`}
+        className={`easing_func ${small ? 'small rounded-full bg-white/30 shadow-card backdrop-blur-sm md:px-4 xl:py-0' : 'large bg-transparent md:px-8 lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-4 py-4 sm:px-6`}
       >
         <div className="navigation">
           <div className="flex w-full items-center justify-between">
-            <div className="flex items-center gap-5 lg:hidden">
+            <div className="flex items-center gap-5 xl:hidden">
               <div
                 onClick={handleOpenMenuDrawer}
-                className="block cursor-pointer lg:hidden"
+                className="block cursor-pointer xl:hidden"
               >
                 <Image
                   src={hamburger}
@@ -100,8 +100,8 @@ const NavBar = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center gap-32">
-              <div className="hidden lg:block">
+            <div className="flex items-center gap-10 3xl:gap-32">
+              <div className="hidden xl:block">
                 <Link href="/">
                   {small ? (
                     <Image

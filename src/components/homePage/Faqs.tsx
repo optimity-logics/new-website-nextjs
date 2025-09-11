@@ -4,6 +4,7 @@ import { faqsData } from '../utils/Constant';
 import FaqsAccordion from '../ui/FaqsAccordion';
 import { useState } from 'react';
 import AnimatedArrow from '../common/AnimatedArrow';
+import Container from '../ui/Container';
 
 const Faqs = () => {
   const [hover, setHover] = useState(false);
@@ -13,8 +14,8 @@ const Faqs = () => {
     setHover(false);
   };
   return (
-    <div className="mx-auto w-full max-w-[1680px] px-[120px] py-[100px]">
-      <div className="flex w-full items-center gap-8 rounded-xl bg-[#F7F7F8] px-[60px] py-[100px] lg:gap-6 3xl:gap-10 4xl:gap-[80px]">
+    <Container className="py-[60px] 4xl:py-[100px]">
+      <div className="flex w-full flex-col gap-8 rounded-xl bg-[#F7F7F8] px-6 py-[60px] lg:gap-6 xl:flex-row xl:items-center 3xl:gap-10 4xl:gap-[80px] 4xl:px-[60px] 4xl:py-[100px]">
         <div className="flex w-full max-w-[450px] flex-col gap-6">
           <SectionHeading
             heading="FAQs"
@@ -38,7 +39,7 @@ const Faqs = () => {
           <FaqsAccordion data={faqsData} />
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
