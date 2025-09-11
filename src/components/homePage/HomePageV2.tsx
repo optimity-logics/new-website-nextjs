@@ -280,7 +280,7 @@ const HomePageV2 = () => {
         className="bg-white pt-10"
       >
         <Container>
-          <div className="flex flex-col items-center gap-[25px] px-5 pb-[22px] pt-[30px] xl:flex-row 5xl:rounded-[24px]">
+          <div className="flex flex-col items-center gap-[25px] xl:flex-row 5xl:rounded-[24px]">
             <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
               Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
             </span>
