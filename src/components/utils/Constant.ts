@@ -1,36 +1,38 @@
-import ketoCycle from '../../../public/webp/client-logo/ketocycle.webp';
-import hts from '../../../public/webp/client-logo/hts.webp';
-import hopper from '../../../public/webp/client-logo/hopper.webp';
-import wikifarmer from '../../../public/webp/client-logo/wikifarmer.webp';
-import gocaution from '../../../public/webp/client-logo/gocaution.webp';
-import afterDark from '../../../public/webp/client-logo/afterdark.webp';
-import blueBungalow from '../../../public/webp/client-logo/bluebungalow.webp';
-import blueprint from '../../../public/webp/client-logo/blueprint.webp';
-import builderspace from '../../../public/webp/client-logo/buildersspec.webp';
-import datepacket from '../../../public/webp/client-logo/datapacket.webp';
-import echt from '../../../public/webp/client-logo/echt.webp';
-import edqan from '../../../public/webp/client-logo/edqan.webp';
-import everpretty from '../../../public/webp/client-logo/everpretty.webp';
-import gobrochures from '../../../public/webp/client-logo/gobrochures.webp';
-import havescripts from '../../../public/webp/client-logo/havescripts.webp';
-import helpjobseeker from '../../../public/webp/client-logo/helpingjobseekers.webp';
-import hetcollab from '../../../public/webp/client-logo/heycollab.webp';
-import hopeonindia from '../../../public/webp/client-logo/hopeonindia.webp';
-import hungrytripper from '../../../public/webp/client-logo/hungrytripper.webp';
-import loloco from '../../../public/webp/client-logo/loloco.webp';
-import nextwave from '../../../public/webp/client-logo/nextwave.webp';
-import portsv from '../../../public/webp/client-logo/portsv.webp';
-import propftx from '../../../public/webp/client-logo/propftx.webp';
-import satisfind from '../../../public/webp/client-logo/satisfind.webp';
-import spacerenta from '../../../public/webp/client-logo/spacerenta.webp';
-import tarshari from '../../../public/webp/client-logo/tarshari.webp';
-import teqdiligent from '../../../public/webp/client-logo/teqdiligent.webp';
-import trady from '../../../public/webp/client-logo/trady.webp';
-import uphail from '../../../public/webp/client-logo/uphail.webp';
-import whiskerspaws from '../../../public/webp/client-logo/whiskerspaws.webp';
-import woodlogs from '../../../public/webp/client-logo/woodlogs.webp';
-import yellowbird from '../../../public/webp/client-logo/yellowbird.webp';
-import yhonk from '../../../public/webp/client-logo/yhonk.webp';
+import ketoCycle from '../../../public/webp/client-logos/ketocycle.webp';
+import hts from '../../../public/webp/client-logos/hts.webp';
+import hopper from '../../../public/webp/client-logos/hopper.webp';
+import wikifarmer from '../../../public/webp/client-logos/wikifarmer.webp';
+import gocaution from '../../../public/webp/client-logos/gocaution.webp';
+import afterDark from '../../../public/webp/client-logos/afterdark.webp';
+import blueBungalow from '../../../public/webp/client-logos/bluebungalow.webp';
+import blueprint from '../../../public/webp/client-logos/blueprint.webp';
+import builderspace from '../../../public/webp/client-logos/buildersspec.webp';
+import datepacket from '../../../public/webp/client-logos/datapacket.webp';
+import echt from '../../../public/webp/client-logos/echt.webp';
+import edqan from '../../../public/webp/client-logos/edqan.webp';
+import everpretty from '../../../public/webp/client-logos/everpretty.webp';
+import gobrochures from '../../../public/webp/client-logos/gobrochures.webp';
+import havescripts from '../../../public/webp/client-logos/havescripts.webp';
+import helpjobseeker from '../../../public/webp/client-logos/helpingjobseekers.webp';
+import hetcollab from '../../../public/webp/client-logos/heycollab.webp';
+import hopeonindia from '../../../public/webp/client-logos/hopeonindia.webp';
+import hungrytripper from '../../../public/webp/client-logos/hungrytripper.webp';
+import loloco from '../../../public/webp/client-logos/loloco.webp';
+import nextwave from '../../../public/webp/client-logos/nextwave.webp';
+import portsv from '../../../public/webp/client-logos/portsv.webp';
+import propftx from '../../../public/webp/client-logos/propftx.webp';
+import satisfind from '../../../public/webp/client-logos/satisfind.webp';
+import spacerenta from '../../../public/webp/client-logos/spacerenta.webp';
+import tarshari from '../../../public/webp/client-logos/tarshari.webp';
+import teqdiligent from '../../../public/webp/client-logos/teqdiligent.webp';
+import trady from '../../../public/webp/client-logos/trady.webp';
+import uphail from '../../../public/webp/client-logos/uphail.webp';
+import whiskerspaws from '../../../public/webp/client-logos/whiskerspaws.webp';
+import woodlogs from '../../../public/webp/client-logos/woodlogs.webp';
+import yellowbird from '../../../public/webp/client-logos/yellowbird.webp';
+import yhonk from '../../../public/webp/client-logos/yhonk.webp';
+import lovemyswag from '../../../public/webp/client-logos/lovemyswag.webp';
+import waosim from '../../../public/webp/client-logos/waosim.webp';
 
 // social media icons
 
@@ -151,6 +153,8 @@ export const logoIcons = [
   blueprint,
   builderspace,
   datepacket,
+  lovemyswag,
+  waosim,
   echt,
   edqan,
   everpretty,
@@ -844,34 +848,6 @@ export const howWeWorkData = [
   'Design & branding',
   'Development & testing',
   'Delivery & maintenance',
-];
-
-export const faqsData = [
-  {
-    question: 'How much does it cost to build an app?',
-    answer:
-      'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-  },
-  {
-    question: 'How much does it cost to build an app?',
-    answer:
-      'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-  },
-  {
-    question: 'Is it possible to create an app for free?',
-    answer:
-      'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-  },
-  {
-    question: 'How do I start creating my own app?',
-    answer:
-      'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-  },
-  {
-    question: 'What’s involved in launching an app?',
-    answer:
-      'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-  },
 ];
 
 export const footerData: IFooterDataType[] = [
@@ -4066,44 +4042,6 @@ export const caseStudyData = [
       'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
   },
 ];
-export const ourExpertise = [
-  {
-    title: 'Mobile App',
-    description:
-      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
-    button: 'View All',
-    img: expertise,
-  },
-  {
-    title: 'Mobile App',
-    description:
-      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
-    button: 'View All',
-    img: expertise,
-  },
-  {
-    title: 'Mobile App',
-    description:
-      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
-    button: 'View All',
-    img: expertise,
-  },
-  {
-    title: 'Mobile App',
-    description:
-      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
-    button: 'View All',
-    img: expertise,
-  },
-  {
-    title: 'Mobile App',
-    description:
-      'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
-    button: 'View All',
-    img: expertise,
-  },
-];
-
 export const techWeWork = [
   {
     heading: 'Mobile',
@@ -4145,87 +4083,68 @@ export const projectWeDone = [
     img: builderV2,
   },
 ];
-export const client = [
-  {
-    id: 1,
-    message:
-      'The Optimity Logics team excelled in delivering the project within a tight timeframe, maintaining exemplary coding standards, and achieving remarkable results. Their proficiency in React, Node.js, MongoDB, Express, and AWS was evident. I highly recommend their top-notch development services and look forward to future collaborations.',
-    role: '- Product Owner (UK)',
-    avatar: '/client/JJ.webp',
-  },
-  {
-    id: 2,
-    message:
-      ' Optimity Logics excelled with our website project, delivering exceptional results promptly. Their efficiency and dedication to excellence impressed us. Dealing with Optimity Logics is always a pleasure; their team exemplifies professionalism and expertise. We eagerly anticipate future collaborations with such a standout company.',
-    role: '- Founder and CEO (USA)',
-    avatar: '/client/MS.webp',
-  },
-  {
-    id: 3,
-    message:
-      'Optimity Logics executed a flawless server migration, showcasing AWS expertise. Their swift work, coupled with invaluable support, was remarkable. We extend heartfelt gratitude for their outstanding service.',
-    role: '- General Manager (USA)',
-    avatar: '/client/KP.webp',
-  },
-  {
-    id: 4,
-    message:
-      'We are grateful that Optimity Logics joined our project as a Next.js / React / Tailwind developer. Optimity Logics is a top-tier team that delivers features and fixes at a very fast pace with high quality. The quality and reliability of their work significantly reduce testing and project management effort. They communicate effectively: they are responsive, proactive, and kept us informed throughout the entire project. We believe Optimity Logics is a highly valuable asset to any project and our top choice when seeking to expand our front-end engineering team.',
-    role: '- CTO (Greece)',
-    avatar: '/client/PK.webp',
-  },
-  {
-    id: 5,
-    message:
-      'Optimity Logics was an absolute pleasure to work with! They did a wonderful job building our website on Contentful and went above and beyond by providing best practices and guidance for our team to use moving forward. They operated as dedicated and thoughtful members of our organization throughout the project. The end result delighted everyone on our team, including exec leadership. I would recommend them to anyone looking for web or IT work. I hope to work with them again in the future!',
-    role: '- PR Manager (USA)',
-    avatar: '/client/EB.webp',
-  },
-  {
-    id: 6,
-    message:
-      "I am thrilled to share my experience working with Optimity Logics. They did an outstanding job migrating our production server flawlessly, ensuring our product's stability. Additionally, they identified and resolved an existing issue with the AutoDesk Viewer, including 360 View, Floor Plan, 3D Model, and Gallery View integration. I am extremely impressed with their responsiveness, expertise, and dedication to this task. Optimity Logics' work exceeded my expectations, and I will definitely keep them in mind for future projects. Highly recommended!",
-    role: '- CEO (UK)',
-    avatar: '/client/MB.webp',
-  },
-  {
-    id: 7,
-    message:
-      "I recently had the pleasure of collaborating with Optimity Logics on a development project, and their performance exceeded all expectations. The team demonstrated exceptional expertise, professionalism, and dedication throughout the project, showcasing a profound understanding of the task at hand. Their technical proficiency was evident in every aspect, from meticulous planning to flawless execution, combined with a proactive approach to problem-solving and a commitment to delivering high-quality results. Communication was seamless, with regular updates and prompt resolutions to any concerns, ensuring smooth progress from start to finish. Optimity Logics went above and beyond to meet our needs, and their contributions were invaluable to the project's success. I am immensely grateful for their work and would not hesitate to recommend them to anyone seeking skilled and reliable development partners.",
-    role: '- CEO (Nigeria)',
-    avatar: '/client/KO.webp',
-  },
-  {
-    id: 8,
-    message:
-      'The Optimity Logics team showcased outstanding expertise in Fullstack development. Their collaborative efforts resulted in timely delivery and exceptional communication throughout the project. I would confidently engage their team again and wholeheartedly recommend them to others.',
-    role: '- Founder and Senior Manager (USA)',
-    avatar: '/client/NP.webp',
-  },
-  {
-    id: 9,
-    message:
-      'Optimity Logics did an amazing job bringing complex user stories and requirements to life through their invaluable knowledge and expertise. We appreciate all the feedback, guidance, and encouragement they provided to our junior developers. They are easy to communicate with and ask the right questions. They were consistent with daily scrum meetings and displayed great leadership skills.',
-    role: '- Sr. Ventures Manager (USA)',
-    avatar: '/client/MP.webp',
-  },
-];
 
 export const homePageData = {
-  baddge: 'Top Web and Mobile Application Development Services Company',
-  heroTitle: `'Bring Your
-<span className="text-red"> App Vision </span>to Life,
-Anytime with AI.'`,
-  heroDescription: `We're a full-stack agency specializing in digital transformation. Crafting experiences for startups, SMEs, and Fortune 500 companies.`,
+  baddge: 'Accelerate Your Growth with AI',
+  heroTitle: `Software Solutions 
+  Powered by <span class="text-red">AI</span> 
+  to Promote Business Excellence`,
+  heroDescription: `A group of highly skilled software and artificial intelligence experts, Optimitylogics is committed to providing customized, top-notch solutions to companies of all sizes. We create and develop intelligent software solutions and AI-powered digital products that foster innovation, optimize processes, and promote long-term growth.`,
   heroContactUsBtn: 'Contact Us',
   heroContactUsBtnLink: '',
   trustedClient:
     'Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies',
   ourExpertiseTitle: 'Our Expertise',
+  ourExpertise: [
+    {
+      title: 'Mobile App',
+      description:
+        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+      button: 'View All',
+      buttonLink: '',
+      img: expertise,
+    },
+    {
+      title: 'Mobile App',
+      description:
+        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+      button: 'View All',
+      buttonLink: '',
+      img: expertise,
+    },
+    {
+      title: 'Mobile App',
+      description:
+        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+      button: 'View All',
+      buttonLink: '',
+      img: expertise,
+    },
+    {
+      title: 'Mobile App',
+      description:
+        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+      button: 'View All',
+      buttonLink: '',
+      img: expertise,
+    },
+    {
+      title: 'Mobile App',
+      description:
+        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+      button: 'View All',
+      buttonLink: '',
+      img: expertise,
+    },
+  ],
   OurWork: [
-    { title: '20+', description: 'Happy Clients' },
-    { title: '50+', description: 'Finished Projects' },
-    { title: '10+', description: 'Skilled Experts' },
+    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
+    {
+      title: '50+',
+      description: 'Finished Projects',
+      backGrouund: 'bg-card-2',
+    },
+    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
   technologyWeWorkTitle: 'Technologies we work with',
   technologyWeWork: [
@@ -4337,6 +4256,71 @@ Anytime with AI.'`,
   contactUsCardTitle: 'Let’s Build Something Great Together',
   contactUsCardBtn: 'Contact Us',
   contactUsCardBtnLink: '',
+  clientReview: [
+    {
+      id: 1,
+      message:
+        'The Optimity Logics team excelled in delivering the project within a tight timeframe, maintaining exemplary coding standards, and achieving remarkable results. Their proficiency in React, Node.js, MongoDB, Express, and AWS was evident. I highly recommend their top-notch development services and look forward to future collaborations.',
+      role: '- Product Owner (UK)',
+      avatar: '/client/JJ.webp',
+    },
+    {
+      id: 2,
+      message:
+        ' Optimity Logics excelled with our website project, delivering exceptional results promptly. Their efficiency and dedication to excellence impressed us. Dealing with Optimity Logics is always a pleasure; their team exemplifies professionalism and expertise. We eagerly anticipate future collaborations with such a standout company.',
+      role: '- Founder and CEO (USA)',
+      avatar: '/client/MS.webp',
+    },
+    {
+      id: 3,
+      message:
+        'Optimity Logics executed a flawless server migration, showcasing AWS expertise. Their swift work, coupled with invaluable support, was remarkable. We extend heartfelt gratitude for their outstanding service.',
+      role: '- General Manager (USA)',
+      avatar: '/client/KP.webp',
+    },
+    {
+      id: 4,
+      message:
+        'We are grateful that Optimity Logics joined our project as a Next.js / React / Tailwind developer. Optimity Logics is a top-tier team that delivers features and fixes at a very fast pace with high quality. The quality and reliability of their work significantly reduce testing and project management effort. They communicate effectively: they are responsive, proactive, and kept us informed throughout the entire project. We believe Optimity Logics is a highly valuable asset to any project and our top choice when seeking to expand our front-end engineering team.',
+      role: '- CTO (Greece)',
+      avatar: '/client/PK.webp',
+    },
+    {
+      id: 5,
+      message:
+        'Optimity Logics was an absolute pleasure to work with! They did a wonderful job building our website on Contentful and went above and beyond by providing best practices and guidance for our team to use moving forward. They operated as dedicated and thoughtful members of our organization throughout the project. The end result delighted everyone on our team, including exec leadership. I would recommend them to anyone looking for web or IT work. I hope to work with them again in the future!',
+      role: '- PR Manager (USA)',
+      avatar: '/client/EB.webp',
+    },
+    {
+      id: 6,
+      message:
+        "I am thrilled to share my experience working with Optimity Logics. They did an outstanding job migrating our production server flawlessly, ensuring our product's stability. Additionally, they identified and resolved an existing issue with the AutoDesk Viewer, including 360 View, Floor Plan, 3D Model, and Gallery View integration. I am extremely impressed with their responsiveness, expertise, and dedication to this task. Optimity Logics' work exceeded my expectations, and I will definitely keep them in mind for future projects. Highly recommended!",
+      role: '- CEO (UK)',
+      avatar: '/client/MB.webp',
+    },
+    {
+      id: 7,
+      message:
+        "I recently had the pleasure of collaborating with Optimity Logics on a development project, and their performance exceeded all expectations. The team demonstrated exceptional expertise, professionalism, and dedication throughout the project, showcasing a profound understanding of the task at hand. Their technical proficiency was evident in every aspect, from meticulous planning to flawless execution, combined with a proactive approach to problem-solving and a commitment to delivering high-quality results. Communication was seamless, with regular updates and prompt resolutions to any concerns, ensuring smooth progress from start to finish. Optimity Logics went above and beyond to meet our needs, and their contributions were invaluable to the project's success. I am immensely grateful for their work and would not hesitate to recommend them to anyone seeking skilled and reliable development partners.",
+      role: '- CEO (Nigeria)',
+      avatar: '/client/KO.webp',
+    },
+    {
+      id: 8,
+      message:
+        'The Optimity Logics team showcased outstanding expertise in Fullstack development. Their collaborative efforts resulted in timely delivery and exceptional communication throughout the project. I would confidently engage their team again and wholeheartedly recommend them to others.',
+      role: '- Founder and Senior Manager (USA)',
+      avatar: '/client/NP.webp',
+    },
+    {
+      id: 9,
+      message:
+        'Optimity Logics did an amazing job bringing complex user stories and requirements to life through their invaluable knowledge and expertise. We appreciate all the feedback, guidance, and encouragement they provided to our junior developers. They are easy to communicate with and ask the right questions. They were consistent with daily scrum meetings and displayed great leadership skills.',
+      role: '- Sr. Ventures Manager (USA)',
+      avatar: '/client/MP.webp',
+    },
+  ],
   faqTitle: 'FAQs',
   faqsDescription: 'We’ve compiled the answers to your burning questions!',
   getInTouchBtn: 'Get In Touch',
@@ -4369,7 +4353,7 @@ Anytime with AI.'`,
     },
   ],
   contactUsFormTitle:
-    'We’re Here to <span className="text-red">Help, Anytime.</span>',
+    'We’re Here to <span class="text-red">Help, Anytime.</span>',
   contactUsFormDescription:
     'Our support team is ready to provide prompt solutions and guidance to ensure your experience with us is seamless and satisfying.',
   formFirstName: 'First Name',

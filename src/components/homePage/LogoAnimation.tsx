@@ -45,13 +45,13 @@ export default function LogoAnimation({ logo }: LogoSliderProps) {
                         transform: `translateY(${(cycleIndex * column.length + logoIndex) * 100}%)`,
                       }}
                     >
-                      <div className="flex h-full w-full items-center justify-center p-4">
+                      <div className="flex h-full w-full items-center justify-center p-1.5">
                         <Image
                           src={logoItem}
                           alt="logo"
                           width={150}
-                          height={100}
-                          className="h-[30px] !w-max max-w-[110px] object-contain"
+                          height={60}
+                          className="!w-max max-w-[150px] object-contain"
                         />
                       </div>
                     </li>
