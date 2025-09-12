@@ -202,7 +202,7 @@ const HomePageV2 = () => {
                     }}
                     className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]"
                   />
-                  <p className="w-full max-w-[800px] font-base text-lg font-normal leading-6 text-primary opacity-50">
+                  <p className=" w-full max-w-[800px] font-base text-lg font-normal leading-6 text-primary opacity-50">
                     {homePageData?.heroDescription}
                   </p>
                 </div>
