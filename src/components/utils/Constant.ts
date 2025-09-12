@@ -3,8 +3,6 @@ import hts from '../../../public/webp/client-logos/hts.webp';
 import hopper from '../../../public/webp/client-logos/hopper.webp';
 import wikifarmer from '../../../public/webp/client-logos/wikifarmer.webp';
 import gocaution from '../../../public/webp/client-logos/gocaution.webp';
-import afterDark from '../../../public/webp/client-logos/afterdark.webp';
-import blueBungalow from '../../../public/webp/client-logos/bluebungalow.webp';
 import blueprint from '../../../public/webp/client-logos/blueprint.webp';
 import builderspace from '../../../public/webp/client-logos/buildersspec.webp';
 import datepacket from '../../../public/webp/client-logos/datapacket.webp';
@@ -15,7 +13,6 @@ import gobrochures from '../../../public/webp/client-logos/gobrochures.webp';
 import havescripts from '../../../public/webp/client-logos/havescripts.webp';
 import helpjobseeker from '../../../public/webp/client-logos/helpingjobseekers.webp';
 import hetcollab from '../../../public/webp/client-logos/heycollab.webp';
-import hopeonindia from '../../../public/webp/client-logos/hopeonindia.webp';
 import hungrytripper from '../../../public/webp/client-logos/hungrytripper.webp';
 import loloco from '../../../public/webp/client-logos/loloco.webp';
 import nextwave from '../../../public/webp/client-logos/nextwave.webp';
@@ -30,9 +27,6 @@ import uphail from '../../../public/webp/client-logos/uphail.webp';
 import whiskerspaws from '../../../public/webp/client-logos/whiskerspaws.webp';
 import woodlogs from '../../../public/webp/client-logos/woodlogs.webp';
 import yellowbird from '../../../public/webp/client-logos/yellowbird.webp';
-import yhonk from '../../../public/webp/client-logos/yhonk.webp';
-import lovemyswag from '../../../public/webp/client-logos/lovemyswag.webp';
-import waosim from '../../../public/webp/client-logos/waosim.webp';
 
 // social media icons
 
@@ -148,13 +142,9 @@ export const logoIcons = [
   hopper,
   wikifarmer,
   gocaution,
-  afterDark,
-  blueBungalow,
   blueprint,
   builderspace,
   datepacket,
-  lovemyswag,
-  waosim,
   echt,
   edqan,
   everpretty,
@@ -162,7 +152,6 @@ export const logoIcons = [
   havescripts,
   helpjobseeker,
   hetcollab,
-  hopeonindia,
   hungrytripper,
   loloco,
   nextwave,
@@ -177,7 +166,6 @@ export const logoIcons = [
   uphail,
   whiskerspaws,
   woodlogs,
-  yhonk,
 ];
 
 export const servicesMegmenuDate = [

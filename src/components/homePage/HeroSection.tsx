@@ -3,6 +3,8 @@ import Button from '../ui/Button';
 import { logoIcons } from '../utils/Constant';
 import Container from '../ui/Container';
 import LogoAnimation from './LogoAnimation';
+import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
 
 const HeroSection = () => {
   const logos = logoIcons.map((image) => image?.src);
@@ -42,10 +44,10 @@ const HeroSection = () => {
           <span className="text-center font-base text-base font-normal leading-[1.6rem] text-white md:text-lg md:leading-7">
             Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
           </span>
-          {/* <Marquee
+          <Marquee
             speed={55}
             gradient={true}
-            gradientColor="black"
+            gradientColor="white"
             pauseOnHover={true}
           >
             <div className="!last-of-type:4xl:mr-[69px] flex items-center justify-between">
@@ -58,21 +60,21 @@ const HeroSection = () => {
                     <Image
                       src={item}
                       alt="icon"
-                      width={60}
-                      height={38}
-                      className="h-10 w-[100px] object-contain"
+                      width={150}
+                      height={60}
+                      className="object-contain"
                     />
                   </div>
                 ))}
             </div>
-          </Marquee> */}
-          {/* <Marquee
+          </Marquee>
+          <Marquee
             speed={55}
             pauseOnHover={true}
             gradient={true}
-            gradientColor="black"
+            gradientColor="white"
           >
-            <div className="flex items-center justify-between gap-6">
+            <div className="flex items-center justify-between gap-6 lg:hidden">
               {logoIcons?.map((item, index) => (
                 <div
                   key={index}
@@ -88,8 +90,8 @@ const HeroSection = () => {
                 </div>
               ))}
             </div>
-          </Marquee> */}
-          <LogoAnimation logo={logos} />
+          </Marquee>
+            <LogoAnimation logo={logos} />
         </div>
       </div>
     </div>

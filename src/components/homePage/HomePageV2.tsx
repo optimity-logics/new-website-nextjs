@@ -26,6 +26,7 @@ import AnimatedArrow from '../common/AnimatedArrow';
 import Container from '../ui/Container';
 import Link from 'next/link';
 import styled from 'styled-components';
+import Marquee from 'react-fast-marquee';
 
 const HighlitedDescription = styled.h2``;
 const HomePageV2 = () => {
@@ -189,7 +190,7 @@ const HomePageV2 = () => {
               />
             </motion.div>
             <div className="flex flex-col justify-between gap-10 lg:flex-row xl:items-center 3xl:gap-[60px]">
-              <div className="flex w-full flex-col gap-[50px] lg:max-w-[560px] 4xl:max-w-[860px]">
+              <div className="flex w-full flex-col gap-[50px] xl:max-w-[560px] 4xl:max-w-[860px]">
                 <div className="flex flex-col gap-[20px]">
                   <div className="w-max rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1 shadow-default">
                     <h1 className="line-clamp-1 font-base text-sm leading-7 text-primary">
@@ -202,7 +203,7 @@ const HomePageV2 = () => {
                     }}
                     className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]"
                   />
-                  <p className=" w-full max-w-[800px] font-base text-lg font-normal leading-6 text-primary opacity-50">
+                  <p className="w-full max-w-[800px] font-base text-lg font-normal leading-6 text-primary opacity-50">
                     {homePageData?.heroDescription}
                   </p>
                 </div>
@@ -281,6 +282,26 @@ const HomePageV2 = () => {
             <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
               {homePageData?.trustedClient}
             </span>
+            <Marquee
+              speed={55}
+              pauseOnHover={true}
+              gradient={true}
+              gradientColor="white"
+            >
+              <div className="flex items-center justify-between gap-8 lg:hidden">
+                {logoIcons?.map((item, index) => (
+                  <div key={index} className="flex items-center justify-center">
+                    <Image
+                      src={item}
+                      alt="icon"
+                      width={150}
+                      height={50}
+                      className="h-[50px] max-w-[100px] object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            </Marquee>
             <LogoAnimation logo={logos} />
           </div>
         </Container>

@@ -22,7 +22,7 @@ export default function LogoAnimation({ logo }: LogoSliderProps) {
 
   return (
     <>
-      <ul className="grid w-full max-w-full grid-cols-3 items-center justify-center gap-3 lg:grid-cols-6 lg:gap-x-6">
+      <ul className="hidden w-full max-w-full grid-cols-3 items-center justify-center gap-3 lg:grid lg:grid-cols-6 lg:gap-x-6">
         {columnsDeskTop.map((column, columnIndex) => (
           <li
             key={columnIndex}
