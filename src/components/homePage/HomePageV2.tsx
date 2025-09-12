@@ -13,13 +13,7 @@ import ellips1 from '../../../public/images/homePagev2/ellips1.png';
 import ellipse2 from '../../../public/images/homePagev2/ellipse2.png';
 import LogoAnimation from './LogoAnimation';
 
-import {
-  client,
-  logoIcons,
-  ourExpertise,
-  projectWeDone,
-  techWeWork,
-} from '../utils/Constant';
+import { homePageData, logoIcons, projectWeDone } from '../utils/Constant';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -30,7 +24,10 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import Faqs from './Faqs';
 import AnimatedArrow from '../common/AnimatedArrow';
 import Container from '../ui/Container';
+import Link from 'next/link';
+import styled from 'styled-components';
 
+const HighlitedDescription = styled.h2``;
 const HomePageV2 = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
@@ -192,34 +189,34 @@ const HomePageV2 = () => {
               />
             </motion.div>
             <div className="flex flex-col justify-between gap-10 lg:flex-row xl:items-center 3xl:gap-[60px]">
-              <div className="flex w-full max-w-[560px] flex-col gap-[50px] 4xl:max-w-[860px]">
+              <div className="flex w-full flex-col gap-[50px] lg:max-w-[560px] 4xl:max-w-[860px]">
                 <div className="flex flex-col gap-[20px]">
-                  <h1 className="line-clamp-1 rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1 font-base text-sm leading-7 text-primary shadow-default duration-500 sm:w-max">
-                    Top Web and Mobile Application Development Services Company
-                  </h1>
-                  <h2 className="whitespace-pre-line font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]">
-                    Bring Your
-                    <br className="hidden xs:block" />
-                    <span className="text-red">App Vision </span>to Life,
-                    <br className="hidden xs:block" /> Anytime with AI.
-                  </h2>
+                  <div className="w-max rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1 shadow-default">
+                    <h1 className="line-clamp-1 font-base text-sm leading-7 text-primary">
+                      {homePageData?.baddge}
+                    </h1>
+                  </div>
+                  <HighlitedDescription
+                    dangerouslySetInnerHTML={{
+                      __html: homePageData?.heroTitle,
+                    }}
+                    className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]"
+                  />
                   <p className="w-full max-w-[800px] font-base text-lg font-normal leading-6 text-primary opacity-50">
-                    We&#39;re a full-stack agency specializing in digital
-                    transformation. Crafting experiences for startups, SMEs, and
-                    Fortune 500 companies.
+                    {homePageData?.heroDescription}
                   </p>
                 </div>
-                <button
+                <Link
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseEnter}
                   onMouseDown={handleMouseLeave}
-                  type="button"
+                  href={homePageData?.heroContactUsBtnLink}
                   className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
                 >
-                  Learn more
+                  {homePageData?.heroContactUsBtn}
                   <AnimatedArrow hover={hover} />
-                </button>
+                </Link>
               </div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -282,7 +279,7 @@ const HomePageV2 = () => {
         <Container>
           <div className="flex flex-col items-center gap-[25px] xl:flex-row 5xl:rounded-[24px]">
             <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
-              Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies
+              {homePageData?.trustedClient}
             </span>
             <LogoAnimation logo={logos} />
           </div>
@@ -296,7 +293,7 @@ const HomePageV2 = () => {
         <div className="flex flex-col gap-8">
           <Container>
             <h3 className="font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
-              Our Expertise
+              {homePageData?.ourExpertiseTitle}
             </h3>
           </Container>
           <div className="w-full">
@@ -318,8 +315,8 @@ const HomePageV2 = () => {
               speed={1000}
               loop={false}
             >
-              {ourExpertise &&
-                ourExpertise.map((item, index) => (
+              {homePageData?.ourExpertise &&
+                homePageData?.ourExpertise.map((item, index) => (
                   <SwiperSlide key={index}>
                     <div className="flex flex-col-reverse items-center gap-6 xl:flex-row 4xl:gap-[65px]">
                       <div className="flex w-full max-w-[799px] flex-col gap-5 xl:gap-[40px]">
@@ -331,17 +328,17 @@ const HomePageV2 = () => {
                             {item?.description}
                           </p>
                         </div>
-                        <button
+                        <Link
                           onMouseEnter={handleMouseEnterViewAll}
                           onMouseLeave={handleMouseLeaveViewAl}
                           onMouseUp={handleMouseEnterViewAll}
                           onMouseDown={handleMouseLeaveViewAl}
-                          type="button"
+                          href={item?.buttonLink}
                           className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
                         >
                           {item?.button}
                           <AnimatedArrow hover={hoverViewAl} />
-                        </button>
+                        </Link>
                       </div>
                       <div>
                         <Image
@@ -362,45 +359,25 @@ const HomePageV2 = () => {
       {/* section-4 */}
       <Container className="mb-[60px] w-full max-w-[1680px] 4xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
-          <div className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]">
-            <div className="flex flex-col gap-3 xl:gap-[20px]">
+          {homePageData?.OurWork &&
+            homePageData?.OurWork.map((item, index) => (
               <div
-                style={{ backgroundSize: '100% 100%' }}
-                className="flex w-full items-center justify-center bg-card-1 bg-cover bg-no-repeat py-2.5 font-base text-[38px] font-medium leading-tight text-primary lg:py-5 xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]"
+                key={index}
+                className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]"
               >
-                20+
+                <div className="flex flex-col gap-3 xl:gap-[20px]">
+                  <div
+                    style={{ backgroundSize: '100% 100%' }}
+                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-base text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
+                  >
+                    {item?.title}
+                  </div>
+                  <span className="text-center font-base text-base font-normal leading-[24px] text-primary xl:text-[18px]">
+                    {item?.description}
+                  </span>
+                </div>
               </div>
-              <span className="text-center font-base text-base font-normal leading-[24px] text-primary xl:text-[18px]">
-                Happy Clients
-              </span>
-            </div>
-          </div>
-          <div className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]">
-            <div className="flex flex-col gap-3 xl:gap-[20px]">
-              <div
-                style={{ backgroundSize: '100% 100%' }}
-                className="flex w-full items-center justify-center bg-card-2 bg-cover bg-no-repeat py-2.5 font-base text-[38px] font-medium leading-tight text-primary lg:py-5 xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]"
-              >
-                50+
-              </div>
-              <span className="text-center font-base text-base font-normal leading-[24px] text-primary xl:text-[18px]">
-                Finished Projects
-              </span>
-            </div>
-          </div>
-          <div className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]">
-            <div className="flex flex-col gap-3 xl:gap-[20px]">
-              <div
-                style={{ backgroundSize: '100% 100%' }}
-                className="flex w-full items-center justify-center bg-card-3 bg-cover bg-no-repeat py-2.5 font-base text-[38px] font-medium leading-tight text-primary lg:py-5 xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]"
-              >
-                10+
-              </div>
-              <span className="text-center font-base text-base font-normal leading-[24px] text-primary xl:text-[18px]">
-                Skilled Experts
-              </span>
-            </div>
-          </div>
+            ))}
         </div>
       </Container>
       {/* section-5 */}
@@ -410,14 +387,14 @@ const HomePageV2 = () => {
       >
         <Container className="flex flex-col gap-8 py-[60px] 4xl:gap-[60px] 4xl:py-[100px]">
           <h3 className="font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
-            Technologies we work with
+            {homePageData?.technologyWeWorkTitle}
           </h3>
           <div
             ref={(el) => addToRefs(el, 0)}
             className="hidden h-full w-full grid-cols-6 gap-6 3xl:grid"
           >
-            {techWeWork &&
-              techWeWork.map((item, index) => {
+            {homePageData?.technologyWeWork &&
+              homePageData?.technologyWeWork.map((item, index) => {
                 const isOddColumn = index % 2 === 0;
                 return (
                   <div
@@ -427,14 +404,14 @@ const HomePageV2 = () => {
                   >
                     <div className="parallax-card grid h-full w-full rounded-[20px] bg-cover p-[8px] transition-transform duration-100 ease-out grid-stack">
                       <Image
-                        src={item?.img}
+                        src={item?.techImg}
                         alt="technology"
                         width={254}
                         height={339}
                         className="aspect-auto"
                       />
                       <span className="mt-auto p-[14px] font-base text-[20px] font-medium leading-[24px] text-white">
-                        {item?.heading}
+                        {item?.techName}
                       </span>
                     </div>
                   </div>
@@ -445,22 +422,22 @@ const HomePageV2 = () => {
             ref={(el) => addToRefs(el, 0)}
             className="hide-scrollbar flex h-full w-full gap-6 overflow-x-auto 3xl:hidden"
           >
-            {techWeWork &&
-              techWeWork.map((item, index) => (
+            {homePageData?.technologyWeWork &&
+              homePageData?.technologyWeWork.map((item, index) => (
                 <div
                   className={`rounded-[24px] bg-overly bg-cover bg-no-repeat transition-transform duration-500 ease-out ${index % 2 === 0 ? 'mt-4' : ''} h-max`}
                   key={index}
                 >
                   <div className="parallax-card grid h-full w-[200px] rounded-[20px] bg-cover p-[8px] transition-transform duration-100 ease-out grid-stack">
                     <Image
-                      src={item?.img}
+                      src={item?.techImg}
                       alt="technology"
                       width={254}
                       height={339}
                       className="aspect-auto"
                     />
                     <span className="mt-auto p-[14px] font-base text-[20px] font-medium leading-[24px] text-white">
-                      {item?.heading}
+                      {item?.techName}
                     </span>
                   </div>
                 </div>
@@ -473,7 +450,7 @@ const HomePageV2 = () => {
         <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[80px]">
           <Container className="flex items-center justify-between">
             <h4 className="font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
-              Successfully deployed projects
+              {homePageData?.deployedProjectsTitle}
             </h4>
             <div className="flex w-max items-center gap-10">
               <button className="custom-prev" ref={prevRef}>
@@ -523,7 +500,7 @@ const HomePageV2 = () => {
               speed={1000}
               loop={false}
             >
-              {projectWeDone &&
+              {homePageData?.deployedProjectsList &&
                 projectWeDone.map((item, index) => (
                   <SwiperSlide key={index}>
                     <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-[#f0f3f5]/70 p-4 lg:flex-row xl:p-6">
@@ -596,23 +573,23 @@ const HomePageV2 = () => {
               >
                 <div className="flex h-full flex-col justify-between gap-14 rounded-[17px] bg-white/10 p-5 backdrop-blur-lg md:px-[28px] md:py-[32px]">
                   <p className="font-base text-2xl font-extrabold leading-8 text-white md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
-                    Let’s Build Something Great Together
+                    {homePageData?.contactUsCardTitle}
                   </p>
-                  <button
+                  <Link
                     onMouseEnter={handleMouseEnterContact}
                     onMouseLeave={handleMouseLeaveContact}
                     onMouseUp={handleMouseEnterContact}
                     onMouseDown={handleMouseLeaveContact}
-                    type="button"
+                    href={homePageData?.contactUsCardBtnLink}
                     className="flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-primary"
                   >
-                    Contact us
+                    {homePageData?.contactUsCardBtn}
                     <AnimatedArrow hover={hoverContact} />
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
-              {client &&
-                client.map((item, index) => (
+              {homePageData?.clientReview &&
+                homePageData?.clientReview.map((item, index) => (
                   <motion.div
                     key={index}
                     onMouseMove={(e) => {
@@ -674,13 +651,16 @@ const HomePageV2 = () => {
         >
           <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-center">
             <div className="flex w-full max-w-[570px] flex-col gap-3 xl:gap-5">
-              <h4 className="font-base text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]">
-                We’re Here to <span className="text-red"> Help, Anytime.</span>
-              </h4>
+              {/* <h4 className="font-base text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]"> */}
+              <HighlitedDescription
+                dangerouslySetInnerHTML={{
+                  __html: homePageData?.contactUsFormTitle,
+                }}
+                className="font-base text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]"
+              />
+              {/* </h4> */}
               <p className="font-base text-[18px] font-normal leading-tight text-subtle lg:pr-[76px]">
-                Our support team is ready to provide prompt solutions and
-                guidance to ensure your experience with us is seamless and
-                satisfying.
+                {homePageData?.contactUsFormDescription}
               </p>
             </div>
             <form className="flex w-full max-w-full flex-col gap-10 rounded-2xl bg-[#f0f3f5]/10 p-6 shadow-xl backdrop-blur-sm lg:max-w-[737px] xl:px-[23px] xl:py-[52px] xl:shadow-none">
@@ -688,28 +668,28 @@ const HomePageV2 = () => {
                 <div className="flex items-center gap-6">
                   <input
                     type="text"
-                    placeholder="First Name"
+                    placeholder={homePageData?.formFirstName}
                     className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                   />
                   <input
                     type="text"
-                    placeholder="Last Name"
+                    placeholder={homePageData?.formLastName}
                     className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                   />
                 </div>
                 <input
                   type="email"
-                  placeholder="Email Address"
+                  placeholder={homePageData?.formEmail}
                   className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <input
                   type="text"
-                  placeholder="Subject"
+                  placeholder={homePageData?.formSubject}
                   className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <textarea
                   rows={2}
-                  placeholder="Description"
+                  placeholder={homePageData?.formDescription}
                   className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
                 />
               </div>
@@ -721,7 +701,7 @@ const HomePageV2 = () => {
                 type="button"
                 className="flex w-max items-center gap-1 rounded-[50px] bg-red px-5 py-2 font-base text-base font-normal leading-tight text-white"
               >
-                Submit
+                {homePageData?.formSubmitBtn}
                 <AnimatedArrow hover={hoverSubmit} />
               </button>
             </form>
@@ -738,8 +718,7 @@ const HomePageV2 = () => {
             className="w-full max-w-[130px] xl:max-w-[150px]"
           />
           <span className="text-center font-base text-lg font-normal leading-6 text-secondary">
-            426, 4th Floor, Swarnim Business Hub-1, opp. Global International
-            school, Godrej Garden City Road, Ahmedabad, Gujarat 382470
+            {homePageData?.companyLocation}
           </span>
         </div>
       </Container>
