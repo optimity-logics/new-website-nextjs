@@ -54,7 +54,6 @@ const HomePageV2 = () => {
     setHoverContact(false);
   };
   const logos = logoIcons.map((image) => image?.src);
-  console.log(logoIcons.length);
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
 
   useEffect(() => {
@@ -278,7 +277,7 @@ const HomePageV2 = () => {
         className="bg-white pt-10"
       >
         <Container>
-          <div className="flex flex-col items-center gap-[25px] xl:flex-row 5xl:rounded-[24px]">
+          <div className="flex flex-col items-center gap-[25px] lg:hidden xl:flex-row 5xl:rounded-[24px]">
             <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
               {homePageData?.trustedClient}
             </span>
@@ -288,9 +287,12 @@ const HomePageV2 = () => {
               gradient={true}
               gradientColor="white"
             >
-              <div className="flex items-center justify-between gap-8 lg:hidden">
+              <div className="flex items-center justify-between gap-8 md:gap-10">
                 {logoIcons?.map((item, index) => (
-                  <div key={index} className="flex items-center justify-center">
+                  <div
+                    key={index}
+                    className="first-of-type::md:ml-10 grid place-items-center justify-center first-of-type:ml-8"
+                  >
                     <Image
                       src={item}
                       alt="icon"
@@ -302,6 +304,11 @@ const HomePageV2 = () => {
                 ))}
               </div>
             </Marquee>
+          </div>
+          <div className="hidden flex-col items-center gap-[25px] lg:flex xl:flex-row 5xl:rounded-[24px]">
+            <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
+              {homePageData?.trustedClient}
+            </span>
             <LogoAnimation logo={logos} />
           </div>
         </Container>

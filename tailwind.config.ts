@@ -71,7 +71,6 @@ export default {
         'our-expertise': "url('/images/homePagev2/our-expertise.png')",
         footerv2: "url('/images/homePagev2/footer.png')",
         heroBg: "url('/images/homePagev2/circuit.svg')",
-        'hero-radial-Bg': "url('/images/homePagev2/12.svg')",
       },
       fontFamily: {
         Inter: ['Inter'],
