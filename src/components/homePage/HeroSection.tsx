@@ -91,7 +91,7 @@ const HeroSection = () => {
               ))}
             </div>
           </Marquee>
-            <LogoAnimation logo={logos} />
+          <LogoAnimation logo={logos} />
         </div>
       </div>
     </div>

@@ -71,7 +71,7 @@ const NavBar = () => {
             ? 'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)'
             : '',
         }}
-        className={`sticky ${small ? 'top-2 mx-4 xl:mx-0' : 'top-0'} z-[99]`}
+        className={`sticky ${small ? 'top-1.5 mx-4 xl:mx-0' : 'top-0'} z-[99]`}
       >
         <div
           className={`easing_func ${small ? 'small rounded-full bg-white shadow-card md:px-4 xl:py-0' : 'large bg-transparent md:px-8 lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-4 py-4 sm:px-6`}
