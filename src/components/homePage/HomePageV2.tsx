@@ -446,10 +446,7 @@ const HomePageV2 = () => {
                 );
               })}
           </div>
-          <div
-            ref={(el) => addToRefs(el, 0)}
-            className="hide-scrollbar flex h-full w-full gap-6 overflow-x-auto 3xl:hidden"
-          >
+          <div className="hide-scrollbar flex h-full w-full gap-6 overflow-x-auto 3xl:hidden">
             {homePageData?.technologyWeWork &&
               homePageData?.technologyWeWork.map((item, index) => (
                 <div
