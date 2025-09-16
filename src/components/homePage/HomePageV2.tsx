@@ -305,7 +305,7 @@ const HomePageV2 = () => {
               </div>
             </Marquee>
           </div>
-          <div className="hidden flex-col items-center gap-[25px] lg:flex xl:flex-row 5xl:rounded-[24px]">
+          <div className="hidden flex-col items-center gap-[25px] lg:flex xl:flex-row xl:justify-between 5xl:rounded-[24px]">
             <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
               {homePageData?.trustedClient}
             </span>

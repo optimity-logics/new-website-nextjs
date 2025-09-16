@@ -4074,10 +4074,8 @@ export const projectWeDone = [
 
 export const homePageData = {
   baddge: 'Accelerate Your Growth with AI',
-  heroTitle: `Software Solutions 
-  Powered by <span class="text-red">AI</span> 
-  to Promote Business Excellence`,
-  heroDescription: `A group of highly skilled software and artificial intelligence experts, Optimitylogics is committed to providing customized, top-notch solutions to companies of all sizes. We create and develop intelligent software solutions and AI-powered digital products that foster innovation, optimize processes, and promote long-term growth.`,
+  heroTitle: `Empowering Businesses with Next-Gen <span class="text-red">AI</span> Solutions.`,
+  heroDescription: `Transform your digital infrastructure with intelligent automation, data-driven insights, and cutting-edge AI technologies designed for scalable growth and superior performance.`,
   heroContactUsBtn: 'Contact Us',
   heroContactUsBtnLink: '',
   trustedClient:
