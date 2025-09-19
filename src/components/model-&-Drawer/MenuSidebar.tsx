@@ -91,9 +91,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                           ) : (
                             <Link
                               key={`link-${item.menuTitle || index}`}
-                              href={item?.menuLink || ''}
-                              target="_blank"
-                              rel="noopener noreferrer"
+                              href={`/${item?.menuTitle?.toLowerCase().replace(/\s+/g, '-')}`}
                               onClick={handleCloseDrower}
                               className="block !w-full font-base text-base font-medium leading-[21.78px] text-iconSubtle md:text-xl md:leading-6"
                             >

@@ -2352,12 +2352,10 @@ export const menuData = [
   },
   {
     menuTitle: 'About Us',
-    menuLink: 'about-us',
     megaMenuItem: [],
   },
   {
     menuTitle: 'Our Works',
-    menuLink: '',
     megaMenuItem: [],
   },
   {
@@ -2530,7 +2528,6 @@ export const menuData = [
   },
   {
     menuTitle: 'Blog',
-    menuLink: 'https:/optimitylogics.com/blog/',
     megaMenuItem: [],
   },
 ];
@@ -2834,12 +2831,10 @@ export const menuSidebar = [
   },
   {
     menuTitle: 'About Us',
-    menuLink: '/about-us',
     megaMenuItem: [],
   },
   {
     menuTitle: 'Our Works',
-    menuLink: '',
     megaMenuItem: [],
   },
   {
@@ -3012,7 +3007,6 @@ export const menuSidebar = [
   },
   {
     menuTitle: 'Blog',
-    menuLink: 'https:/optimitylogics.com/blog/',
     megaMenuItem: [],
   },
 ];
