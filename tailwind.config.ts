@@ -71,6 +71,8 @@ export default {
         'our-expertise': "url('/images/homePagev2/our-expertise.png')",
         footerv2: "url('/images/homePagev2/footer.png')",
         heroBg: "url('/images/homePagev2/circuit.svg')",
+        aboutUsHeroBg: "url('/images/about-us/about_us.png')",
+        benefits: 'linear-gradient(189.81deg, #000000 49.32%, #02ADE1 107.86%)',
       },
       fontFamily: {
         Inter: ['Inter'],
