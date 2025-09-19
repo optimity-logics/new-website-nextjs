@@ -104,6 +104,8 @@ export default function MegaMenu() {
             {item.megaMenuItem.length === 0 ? (
               <Link
                 href={item?.menuLink || ''}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`cursor-pointer py-7 font-base font-normal capitalize leading-6 tracking-[0.5px] text-iconSubtle transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''} `}
               >
                 <span className="whitespace-pre text-base tracking-wide">
