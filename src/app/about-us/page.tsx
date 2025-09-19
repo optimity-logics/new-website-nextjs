@@ -31,7 +31,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-no-repeat">
+      <div className="bg-aboutUsHeroBg -mt-20 bg-full bg-no-repeat">
         <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:flex-row">
           <div className="relative z-30 mx-auto w-full px-4 sm:px-6 md:px-8 xl:px-10 3xl:ml-1 3xl:pl-[120px]">
             <div className="mx-auto flex w-full max-w-[910px] flex-col gap-7">
@@ -63,7 +63,7 @@ const AboutUs = () => {
               alt=""
               width={450}
               height={700}
-              className="absolute -top-24 left-0 z-10 -rotate-6 md:-left-40"
+              className="absolute -top-24 left-0 z-10 md:-left-40 md:-rotate-6"
             />
             <Image
               src={aboutUsPage?.hero_image}
@@ -149,7 +149,7 @@ const AboutUs = () => {
             aboutUsPage?.benefitesList.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center gap-[18px] rounded-[10px] bg-benefits px-[22px] py-[30px]"
+                className="bg-benefits flex items-center gap-[18px] rounded-[10px] px-[22px] py-[30px]"
               >
                 <Image
                   src={item?.benefitesIcon}
