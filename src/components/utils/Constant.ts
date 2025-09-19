@@ -27,6 +27,7 @@ import uphail from '../../../public/webp/client-logos/uphail.webp';
 import whiskerspaws from '../../../public/webp/client-logos/whiskerspaws.webp';
 import woodlogs from '../../../public/webp/client-logos/woodlogs.webp';
 import yellowbird from '../../../public/webp/client-logos/yellowbird.webp';
+import aboutUsHeroImage from '../../../public/images/about-us/about_us_hero.png';
 
 // social media icons
 
@@ -61,6 +62,20 @@ import rocketLaunch from '../../../public/svg/careers/benefits/rocketLaunch.svg'
 import wallet from '../../../public/svg/careers/benefits/wallet.svg';
 import target from '../../../public/svg/careers/benefits/target.svg';
 import shieldCheck from '../../../public/svg/careers/benefits/shieldCheck.svg';
+
+import clockv2 from '../../../public/svg/careers/benefitsv2/Clock.svg';
+import handClappingv2 from '../../../public/svg/careers/benefitsv2/HandsClapping.svg';
+import babyv2 from '../../../public/svg/careers/benefitsv2/Baby.svg';
+import barbellv2 from '../../../public/svg/careers/benefitsv2/Barbell.svg';
+import cakev2 from '../../../public/svg/careers/benefitsv2/Cake.svg';
+import calendarv2 from '../../../public/svg/careers/benefitsv2/Calendar.svg';
+import confettiv2 from '../../../public/svg/careers/benefitsv2/Confetti.svg';
+import eyeglassesv2 from '../../../public/svg/careers/benefitsv2/Eyeglasses.svg';
+import gradutaionCapv2 from '../../../public/svg/careers/benefitsv2/GraduationCap.svg';
+import rocketLaunchv2 from '../../../public/svg/careers/benefitsv2/RocketLaunch.svg';
+import walletv2 from '../../../public/svg/careers/benefitsv2/Wallet.svg';
+import targetv2 from '../../../public/svg/careers/benefitsv2/Target.svg';
+import shieldCheckv2 from '../../../public/svg/careers/benefitsv2/ShieldCheck.svg';
 
 import pm from '../../../public/images/homePagev2/pm.png';
 
@@ -4350,4 +4365,99 @@ export const homePageData = {
   formSubmitBtn: 'Submit',
   companyLocation:
     '426, 4th Floor, Swarnim Business Hub-1, opp. Global International school, Godrej Garden City Road, Ahmedabad, Gujarat 382470',
+};
+
+export const aboutUsPage = {
+  heding: `Highly Tailored
+<span>IT Design, Management & Support Services.<span>`,
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  aboutUsBtn: 'About Us',
+  aboutUsBtnLink: '',
+  hero_image: aboutUsHeroImage,
+  OurWork: [
+    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
+    {
+      title: '50+',
+      description: 'Finished Projects',
+      backGrouund: 'bg-card-2',
+    },
+    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
+  ],
+  woWeAre: 'Wo We Are?',
+  woWeAreList: [
+    {
+      title: 'Our Mission',
+      description: `Our mission is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation. Whether it's a consumer-focused application or a game-changing enterprise solution, our company spearheads the journey from inception and conceptualization to final delivery, offering steadfast support throughout the process.`,
+      bgImg: '/images/about-us/howWeWork1.png',
+    },
+    {
+      title: 'Our Vision',
+      description: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
+      bgImg: '/images/about-us/howWeWork2.png',
+    },
+    {
+      title: 'Our Values',
+      description: `Trust is fundamental in our relationships; we prioritize empathy, understanding others' needs, challenges, and aspirations. Through attentive listening and proactive responses, we enhance connections. Open dialogue and collaboration shape our strategies, fostering mutual respect. Together, we establish shared rules, promoting accountability. Embracing partnership, we work toward common goals, offering support, generating ideas, and sharing experiences.
+`,
+      bgImg: '/images/about-us/howWeWork3.png',
+    },
+  ],
+  benefitesTitle: 'What <span>benefits</span> are waiting for you?',
+  benefitesDescription:
+    'Visioncraft offers a variety of hand-picked benefits that you can take advantage of!',
+  benefitesList: [
+    {
+      benefitesIcon: clockv2,
+      benefitesName: 'Flexible working hours',
+    },
+    {
+      benefitesIcon: barbellv2,
+      benefitesName: 'Sport compensation',
+    },
+    {
+      benefitesIcon: shieldCheckv2,
+      benefitesName: 'Health care Insurance',
+    },
+    {
+      benefitesIcon: handClappingv2,
+      benefitesName: 'Marriage bonus',
+    },
+    {
+      benefitesIcon: confettiv2,
+      benefitesName: 'Fun team events',
+    },
+    {
+      benefitesIcon: rocketLaunchv2,
+      benefitesName: 'Perfessional grow budget',
+    },
+    {
+      benefitesIcon: calendarv2,
+      benefitesName: '30 days paid vacation',
+    },
+    {
+      benefitesIcon: walletv2,
+      benefitesName: 'Competitive salary',
+    },
+    {
+      benefitesIcon: eyeglassesv2,
+      benefitesName: 'Compensation for eyeglasses',
+    },
+    {
+      benefitesIcon: gradutaionCapv2,
+      benefitesName: 'Allowance for first-graders',
+    },
+    {
+      benefitesIcon: babyv2,
+      benefitesName: 'Allowance for first-graders',
+    },
+
+    {
+      benefitesIcon: targetv2,
+      benefitesName: 'Employee referral bonus',
+    },
+    {
+      benefitesIcon: cakev2,
+      benefitesName: 'Birthdays celebration',
+    },
+  ],
 };
