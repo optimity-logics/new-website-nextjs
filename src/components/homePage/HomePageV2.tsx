@@ -113,8 +113,9 @@ const HomePageV2 = () => {
           backgroundImage:
             'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)',
         }}
+        className="-mt-20"
       >
-        <div className="bg-heroBg bg-cover bg-center bg-no-repeat lg:bg-full">
+        <div className="bg-heroBg bg-cover bg-center bg-no-repeat pt-20 lg:bg-full">
           <Container className="relative py-[50px] lg:py-[100px] 3xl:py-[140px] 4xl:py-[184px]">
             <motion.div
               animate={{ y: [0, -15, 0] }}

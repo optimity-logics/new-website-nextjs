@@ -43,11 +43,6 @@ const NavBar = () => {
   return (
     <>
       <div
-        style={{
-          backgroundImage: !small
-            ? 'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)'
-            : '',
-        }}
         className={`sticky ${small ? 'top-1.5 mx-4 xl:mx-0' : 'top-0'} z-[99]`}
       >
         <div
