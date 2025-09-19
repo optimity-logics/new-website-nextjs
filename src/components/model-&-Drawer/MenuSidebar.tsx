@@ -83,14 +83,24 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                       key={index}
                       aria-label={`Accordion ${index + 1}`}
                       title={
-                        <div className={`!py-0`}>
-                          <span className="font-base text-base font-medium leading-[21.78px] text-iconSubtle md:text-xl md:leading-6">
-                            {item?.menuTitle}
-                          </span>
-                        </div>
+                        <>
+                          {hasMegaMenu ? (
+                            <span className="font-base text-base font-medium leading-[21.78px] text-iconSubtle md:text-xl md:leading-6">
+                              {item?.menuTitle}
+                            </span>
+                          ) : (
+                            <Link
+                              key={`link-${item.menuTitle || index}`}
+                              href={`/${item?.menuTitle?.toLowerCase().replace(/\s+/g, '-')}`}
+                              onClick={handleCloseDrower}
+                              className="block !w-full font-base text-base font-medium leading-[21.78px] text-iconSubtle md:text-xl md:leading-6"
+                            >
+                              {item?.menuTitle}
+                            </Link>
+                          )}
+                        </>
                       }
                       className="accordion-title !rounded-none border-b-0 px-0 !opacity-100 !shadow-none"
-                      isDisabled={!hasMegaMenu}
                       indicator={!hasMegaMenu}
                     >
                       {item?.megaMenuItem?.length > 0 && (

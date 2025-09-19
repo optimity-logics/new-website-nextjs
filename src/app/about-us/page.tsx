@@ -31,8 +31,8 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="bg-aboutUsHeroBg bg-full bg-no-repeat">
-        <div className="flex flex-col items-center justify-between pt-[100px] lg:flex-row">
+      <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-no-repeat">
+        <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:flex-row">
           <div className="relative z-30 mx-auto w-full px-4 sm:px-6 md:px-8 xl:px-10 3xl:ml-1 3xl:pl-[120px]">
             <div className="mx-auto flex w-full max-w-[910px] flex-col gap-7">
               <HighlitedDescription
