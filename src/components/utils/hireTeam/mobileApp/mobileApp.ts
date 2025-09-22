@@ -2726,3 +2726,71 @@ achieving your app's success. We stand as the ideal Flutter app development comp
     ],
   },
 };
+
+export const TechnologyWeUseInDevelopment = {
+  heading: 'Technology Stack We Use For <span>Flutter App Development</span>',
+  description:
+    "Here's a list of tools and technologies our Flutter experts excel in, catering to various requirements for Flutter mobile app development services",
+  btnName: 'schedule a developer interview',
+  btnLink: '',
+  technologyServices: [
+    {
+      bgColor: '#FFC0D9',
+      servicesName: 'Frameworks',
+      servicesImg: framework,
+      servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+    },
+    {
+      bgColor: '#B5F1CC',
+      servicesName: 'Tools & Utilities',
+      servicesImg: tools,
+      servicesItems: [
+        'Android studio',
+        'Visual studio code',
+        'IntelliJ',
+        'Version control tools (Git, GitLab, Bit Bucket)',
+      ],
+    },
+    {
+      bgColor: '#9FE9F6',
+      servicesName: 'Databases',
+      servicesImg: database,
+      servicesItems: [
+        'Hive',
+        'ObjectBox',
+        'SQLite',
+        'Firebase realtime database',
+        'Firestore',
+        'Sembast',
+        'StorageMoor',
+      ],
+    },
+    {
+      bgColor: '#FFD8C0',
+      servicesName: 'Plugins & Integrations',
+      servicesImg: plugin,
+      servicesItems: [
+        'Firebase (All service)',
+        'Provider',
+        'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
+        'Social Sign-In (Facebook, Google, Apple)',
+        'Shared preferences',
+        'Image_picker',
+        'In-app Purchase',
+        'Map flutter_ffmpeg',
+        'AWS Amplify',
+        'AWS datastore',
+        'Freezed',
+        'JSON serializable',
+        'flutter_local_notifications',
+        'BLoC',
+      ],
+    },
+    {
+      bgColor: '#D0BFFF',
+      servicesName: 'CI/CD Tools',
+      servicesImg: dns,
+      servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+    },
+  ],
+};

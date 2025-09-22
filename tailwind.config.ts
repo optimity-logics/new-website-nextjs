@@ -105,6 +105,24 @@ export default {
         lightSilver: '#D4D4D4',
         graphite: '#636363',
         lavenderGray: '#888790',
+        black: {
+          DEFAULT: '#000000',
+          900: {
+            alpha: 'rgba(19, 19, 19, 0.9)',
+          },
+          750: {
+            alpha: 'rgba(19, 19, 19, 0.7)',
+          },
+          500: {
+            alpha: 'rgba(19, 19, 19, 0.5)',
+          },
+          250: {
+            alpha: 'rgba(19, 19, 19, 0.3)',
+          },
+          100: {
+            alpha: 'rgba(19, 19, 19, 0.1)',
+          },
+        },
       },
       boxShadow: {
         'work-card': '0px 7px 14px 0px #F4F2EF',
@@ -116,6 +134,7 @@ export default {
         'how-work-card': '0px 8px 24px 0px #1212121A',
         default:
           '0 8px 24px -12px #0a39801a,0 12px 16px -8px #0a398014,0 8px 10px -6px #0a39800d',
+        devCardShadow: '0px 0px 23.7px 0px #0000000D',
       },
     },
   },
