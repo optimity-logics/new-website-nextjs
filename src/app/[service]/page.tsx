@@ -289,7 +289,8 @@ const SubcategoryPage = async (props: { params: Params }) => {
 
   const pageData = mainService ? dataMap[mainService as ServiceKey] : null;
 
-  return pageData ? <AllPageContent data={pageData} /> : <p>Data not found.</p>;
+  return pageData ? <AllPageContent /> : <p>Data not found.</p>;
+  // return pageData ? <AllPageContent data={pageData} /> : <p>Data not found.</p>;
 };
 
 export default SubcategoryPage;

@@ -31,7 +31,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="bg-aboutUsHeroBg -mt-20 bg-full bg-no-repeat">
+      <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-no-repeat">
         <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:flex-row">
           <div className="relative z-30 mx-auto w-full px-4 sm:px-6 md:px-8 xl:px-10 3xl:ml-1 3xl:pl-[120px]">
             <div className="mx-auto flex w-full max-w-[910px] flex-col gap-7">
@@ -144,20 +144,21 @@ const AboutUs = () => {
             {aboutUsPage?.benefitesDescription}
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-10 xl:gap-y-8">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-10 xl:gap-y-8">
           {aboutUsPage?.benefitesList &&
             aboutUsPage?.benefitesList.map((item, index) => (
               <div
                 key={index}
-                className="bg-benefits flex items-center gap-[18px] rounded-[10px] px-[22px] py-[30px]"
+                className="flex items-center gap-3 rounded-[10px] bg-benefits p-3 md:gap-[18px] md:px-[22px] md:py-[30px]"
               >
                 <Image
                   src={item?.benefitesIcon}
                   alt=""
                   width={50}
                   height={50}
+                  className="max-w-7"
                 />
-                <p className="font-base text-base font-normal leading-6 text-white xl:text-[18px]">
+                <p className="font-base text-sm font-normal text-white md:text-base md:leading-6 xl:text-[18px]">
                   {item?.benefitesName}
                 </p>
               </div>
