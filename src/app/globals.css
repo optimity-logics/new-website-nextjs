@@ -445,3 +445,35 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
     url('../..//public/fonts/aeonik-bolditalic.woff2') format('woff2');
   font-display: swap;
 }
+@keyframes draw {
+  from {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+}
+
+.path-1,
+.path-2,
+.path-3,
+.path-4 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  /* Remove animation from default state */
+}
+
+.animate-svg .path-1 {
+  animation: draw 2s linear forwards 0s;
+}
+.animate-svg .path-2 {
+  animation: draw 2s linear forwards 0.8s;
+}
+.animate-svg .path-3 {
+  animation: draw 2s linear forwards 1.2s;
+}
+.animate-svg .path-4 {
+  animation: draw 2s linear forwards 1.4s;
+}
