@@ -727,6 +727,11 @@ export const deployProjects = [
     projectName: 'Ricks Beach',
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
+  {
+    projectImg: '/webp/project/riskbeach.webp',
+    projectName: 'Ricks Beach',
+    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+  },
 ];
 
 export const industriesData = [

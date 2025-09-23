@@ -46,6 +46,7 @@ const AllPageContent = () => {
   const [hoverViewAll, setHoverViewAll] = useState<boolean>(false);
   const [hoverContact, setHoverContact] = useState<boolean>(false);
   const [processDevInd, setProcessDevInd] = useState<number>(0);
+  const [width, setWidth] = useState(0);
   const handleMouseEnter = () => setHover(true);
   const handleMouseLeave = () => {
     setHover(false);
@@ -62,14 +63,15 @@ const AllPageContent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    setWidth(window.innerWidth);
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(entry.target); // optional: run only once
+          observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.3 }, // triggers when 30% of the section is visible
+      { threshold: 0.3 },
     );
 
     if (sectionRef.current) {
@@ -210,7 +212,7 @@ const AllPageContent = () => {
               whyChooseOptimity.map((item, Index) => (
                 <li
                   key={Index}
-                  className="font-base text-xl font-normal leading-7 text-white md:list-disc"
+                  className="font-base text-lg font-normal leading-7 text-white md:list-disc"
                 >
                   {item?.title} - {item?.title}
                 </li>
@@ -249,7 +251,7 @@ const AllPageContent = () => {
           <div className="flex w-full max-w-[990px] flex-col gap-[38px]">
             <h4 className="mx-auto font-base text-[35px] font-medium leading-10 text-white xxl:text-[65px] xxl:leading-[72px]">
               Want to build a cross platform
-              <span className="capitalize text-red">mobile app</span> using
+              <span className="capitalize text-red">mobile app </span> using
               Flutter?
             </h4>
             <ul className="flex flex-wrap items-center gap-5">
@@ -327,7 +329,7 @@ const AllPageContent = () => {
             text
           </p>
         </div>
-        <div className="flex w-full flex-col gap-5 lg:flex-row lg:gap-0">
+        <div className="flex w-full flex-col gap-5 xl:flex-row xl:gap-0">
           <ul className="flex w-full max-w-[600px] flex-col">
             {developmentProcess &&
               developmentProcess.map((item, index) => (
@@ -337,7 +339,7 @@ const AllPageContent = () => {
                   className="relative flex cursor-pointer items-center pb-8 pl-5 font-base text-lg font-medium leading-5 text-primary last-of-type:pb-0 3xl:pb-16 3xl:text-2xl 3xl:leading-7"
                 >
                   <div
-                    className={`absolute left-[0px] top-1 h-4 w-4 rounded-full transition-all duration-300 ease-in-out md:-left-1.5 md:h-5 md:w-5 lg:top-0 ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
+                    className={`absolute left-[0px] h-4 w-4 rounded-full transition-all duration-300 ease-in-out md:-left-1.5 md:h-5 md:w-5 xl:top-1 ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
                   ></div>
                   {item?.procesDataList.length - 1 !== index && (
                     <div
@@ -349,7 +351,7 @@ const AllPageContent = () => {
                 </li>
               ))}
           </ul>
-          <div className="hide-scrollbar flex w-full flex-row gap-5 overflow-auto p-4 md:max-w-[800px] md:flex-col lg:overflow-hidden">
+          <div className="hide-scrollbar flex w-full flex-row gap-5 overflow-auto p-4 xl:flex-col xl:overflow-hidden xxl:max-w-[800px]">
             {developmentProcess &&
               developmentProcess.map(
                 (item, index) =>
@@ -373,7 +375,7 @@ const AllPageContent = () => {
       </Container>
       <div className="mb-[60px] bg-black bg-tech-we-work bg-full py-[80px] 4xl:mb-[100px]">
         <Container className="flex flex-col gap-11">
-          <div className="flex flex-col justify-between gap-8 md:flex-row md:items-center">
+          <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-center">
             <div className="flex w-full max-w-[800px] flex-col gap-5">
               <h4 className="font-base text-[35px] font-medium leading-10 text-red 4xl:text-[48px] 4xl:leading-[52px]">
                 Explore Projects
@@ -396,12 +398,12 @@ const AllPageContent = () => {
               <AnimatedArrow hover={hoverViewAll} />
             </button>
           </div>
-          <div className="grid grid-cols-1 gap-x-7 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-8 md:gap-y-0 xl:grid-cols-3">
             {deployProjects &&
               deployProjects.map((item, index) => (
                 <div
                   key={index}
-                  className={` ${index % 2 === 0 ? 'md:mt-16' : ''} flex h-max flex-col gap-9`}
+                  className={` ${width >= 1280 ? ((index + 1) % 3 !== 2 ? 'mt-16' : '') : index % 2 === 0 ? 'md:mt-16' : ''} flex h-max flex-col gap-9`}
                 >
                   <div>
                     <Image
