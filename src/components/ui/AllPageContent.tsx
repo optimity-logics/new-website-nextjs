@@ -244,7 +244,7 @@ const AllPageContent = () => {
       <Container className="mb-[60px] 4xl:mb-[100px]">
         <div
           ref={sectionRef}
-          className="flex flex-col gap-10 rounded-3xl bg-black bg-tech-we-work bg-full bg-no-repeat p-7 md:flex-row md:items-end md:gap-14 md:rounded-[40px] md:px-14 md:py-20"
+          className="flex flex-col gap-5 rounded-3xl bg-black bg-tech-we-work bg-full bg-no-repeat p-7 md:flex-row md:items-end md:gap-14 md:rounded-[40px] lg:gap-10 lg:px-14 lg:py-20"
         >
           <div className="flex w-full max-w-[990px] flex-col gap-[38px]">
             <h4 className="mx-auto font-base text-[35px] font-medium leading-10 text-white xxl:text-[65px] xxl:leading-[72px]">
@@ -316,39 +316,40 @@ const AllPageContent = () => {
         </div>
       </Container>
       <Container className="mb-[60px] flex flex-col gap-[60px] 4xl:mb-[100px]">
-        <div className="flex max-w-[506px] flex-col gap-8">
-          <h3 className="text-center font-base text-[35px] font-medium leading-10 text-primary md:text-start 4xl:text-[48px] 4xl:leading-[52px]">
+        <div className="mx-auto flex max-w-full flex-col gap-8 lg:mx-0 lg:max-w-[506px]">
+          <h3 className="text-center font-base text-[35px] font-medium leading-10 text-primary lg:text-start 4xl:text-[48px] 4xl:leading-[52px]">
             <span className="text-red">Mobile App </span>
             Development Process
           </h3>
-          <p className="w-full text-center font-base text-lg font-normal leading-6 text-black-750-alpha md:text-start">
+          <p className="w-full text-center font-base text-lg font-normal leading-6 text-black-750-alpha lg:text-start">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&#39;s standard dummy
             text
           </p>
         </div>
-        <div className="flex w-full flex-col gap-5 md:flex-row md:gap-0">
-          <ul className="w-full max-w-[600px]">
+        <div className="flex w-full flex-col gap-5 lg:flex-row lg:gap-0">
+          <ul className="flex w-full max-w-[600px] flex-col">
             {developmentProcess &&
               developmentProcess.map((item, index) => (
                 <li
                   key={index}
                   onClick={() => setProcessDevInd(index)}
-                  className="relative flex cursor-pointer items-center pb-8 pl-5 font-base text-lg font-medium leading-6 text-primary last-of-type:pb-0 3xl:pb-16 3xl:text-2xl 3xl:leading-7"
+                  className="relative flex cursor-pointer items-center pb-8 pl-5 font-base text-lg font-medium leading-5 text-primary last-of-type:pb-0 3xl:pb-16 3xl:text-2xl 3xl:leading-7"
                 >
                   <div
-                    className={`absolute -left-[1.8%] top-1 h-4 w-4 rounded-full transition-all duration-300 ease-in-out md:h-5 md:w-5 ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
+                    className={`absolute left-[0px] top-1 h-4 w-4 rounded-full transition-all duration-300 ease-in-out md:-left-1.5 md:h-5 md:w-5 lg:top-0 ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
                   ></div>
                   {item?.procesDataList.length - 1 !== index && (
                     <div
-                      className={`absolute left-0 top-1 h-full w-1 transition-all duration-300 ease-in-out md:-left-[3px] ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
+                      className={`absolute left-1.5 top-2 mb-1 block h-12 w-1 transition-all duration-300 ease-in-out md:left-0.5 3xl:h-24 ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
                     ></div>
                   )}
+
                   {item?.processHeading}
                 </li>
               ))}
           </ul>
-          <div className="hide-scrollbar flex w-full flex-row gap-5 overflow-auto p-4 md:max-w-[800px] md:flex-col">
+          <div className="hide-scrollbar flex w-full flex-row gap-5 overflow-auto p-4 md:max-w-[800px] md:flex-col lg:overflow-hidden">
             {developmentProcess &&
               developmentProcess.map(
                 (item, index) =>
@@ -356,7 +357,7 @@ const AllPageContent = () => {
                   item?.procesDataList.map((items, ind) => (
                     <div
                       key={ind}
-                      className={`flex w-full min-w-[500px] flex-col gap-3 rounded-xl border-l-2 border-l-transparent bg-white p-6 shadow-devCardShadow scrollbar-hide first:border-l-red md:max-w-full`}
+                      className={`flex w-full min-w-[400px] flex-col gap-3 rounded-xl border-l-2 border-l-transparent bg-white p-6 shadow-devCardShadow scrollbar-hide first:border-l-red md:max-w-full lg:min-w-full`}
                     >
                       <h4 className="font-base text-[22px] font-medium leading-7 text-primary">
                         {items?.title}
@@ -395,12 +396,12 @@ const AllPageContent = () => {
               <AnimatedArrow hover={hoverViewAll} />
             </button>
           </div>
-          <div className="grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-7 md:grid-cols-2">
             {deployProjects &&
               deployProjects.map((item, index) => (
                 <div
                   key={index}
-                  className={` ${index % 2 === 0 ? 'md:mt-16' : ''} flex flex-col gap-9`}
+                  className={` ${index % 2 === 0 ? 'md:mt-16' : ''} flex h-max flex-col gap-9`}
                 >
                   <div>
                     <Image
