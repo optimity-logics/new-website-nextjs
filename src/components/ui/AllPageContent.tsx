@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Container from './Container';
 import checkMark from '../../../public/svg/check-mark.svg';
 import Link from 'next/link';
@@ -58,6 +58,28 @@ const AllPageContent = () => {
   const handleMouseLeaveContact = () => {
     setHoverContact(false);
   };
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target); // optional: run only once
+        }
+      },
+      { threshold: 0.3 }, // triggers when 30% of the section is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, []);
 
   return (
     <>
@@ -69,6 +91,7 @@ const AllPageContent = () => {
                 <span className="text-red">Flutter</span> App Development
                 Company
               </h2>
+
               <p className="w-full max-w-[800px] font-base text-lg font-normal leading-6 text-primary opacity-50">
                 Optimity Logics is a top-notch Flutter app development company
                 in USA offering robust cross-platform app development solutions.
@@ -161,7 +184,7 @@ const AllPageContent = () => {
             developmentServices.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-4 rounded-[15px] p-[30px] shadow-devCardShadow"
+                className="flex flex-col gap-4 rounded-[15px] p-5 shadow-devCardShadow md:p-[30px]"
               >
                 <h5 className="font-base text-2xl font-medium leading-8 text-primary">
                   {item?.title}
@@ -219,10 +242,13 @@ const AllPageContent = () => {
         </div>
       </Container>
       <Container className="mb-[60px] 4xl:mb-[100px]">
-        <div className="flex flex-col gap-10 rounded-3xl bg-black bg-tech-we-work bg-full bg-no-repeat p-7 md:flex-row md:items-end md:gap-14 md:rounded-[40px] md:px-14 md:py-20">
+        <div
+          ref={sectionRef}
+          className="flex flex-col gap-10 rounded-3xl bg-black bg-tech-we-work bg-full bg-no-repeat p-7 md:flex-row md:items-end md:gap-14 md:rounded-[40px] md:px-14 md:py-20"
+        >
           <div className="flex w-full max-w-[990px] flex-col gap-[38px]">
             <h4 className="mx-auto font-base text-[35px] font-medium leading-10 text-white xxl:text-[65px] xxl:leading-[72px]">
-              Want to build a cross platform{' '}
+              Want to build a cross platform
               <span className="capitalize text-red">mobile app</span> using
               Flutter?
             </h4>
@@ -239,7 +265,42 @@ const AllPageContent = () => {
                 ))}
             </ul>
           </div>
-          <div>
+          <div className="flex w-full max-w-[250px] flex-col gap-4">
+            <div className="mx-auto">
+              <svg
+                width="219"
+                height="131"
+                viewBox="0 0 219 131"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className={`w-full max-w-[180px] stroke-white ${isVisible ? 'animate-svg' : ''}`}
+              >
+                <path
+                  d="M216 28.1006C205.615 18.0512 198.568 15.0557 188 13.6006C177.432 12.1455 169.5 13.6006 156 19.1006C150.874 21.1892 145.819 24.8642 141.521 28.6195C132.853 36.1928 124.212 47.8132 125.895 59.1996V59.1996C127.843 72.3748 145.371 76.4986 155.507 67.8597C160.518 63.5893 164.249 57.6943 165 52.1006C166.559 40.4858 165 35.6006 161.5 28.1006C158 20.6006 150.122 13.2343 141.5 8.60069C132.879 3.96706 119.5 3.10075 119.5 3.10075C106.542 2.61201 94.3167 3.81594 81.5 8.6006C69.8894 13.5288 61.571 18.5113 51.5 28.1006C44.9678 35.8305 41.0005 39.6007 36.5002 48.1007C32 56.6007 29 64.1007 29 64.1007"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  className="path-1"
+                />
+                <path
+                  d="M38 76.5L56 60.5"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  className="path-2"
+                />
+                <path
+                  d="M10 47L17 70"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  className="path-3"
+                />
+                <path
+                  d="M3.00009 84.4939L16.6532 121.185C17.5522 123.601 18.7045 125.963 20.4949 127.817V127.817M3.00009 83C2.96338 83.2281 14.1525 84.3191 25.255 85.7426M25.255 85.7426C36.3344 87.163 47.3275 88.9145 46.9925 90.4696C46.4554 92.9627 28.7908 116.135 23.9526 124.69C23.1638 126.085 21.6077 128.97 20.4949 127.817V127.817M25.255 85.7426L20.4949 127.817"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  className="path-4"
+                />
+              </svg>
+            </div>
             <Link
               onMouseEnter={handleMouseEnterContact}
               onMouseLeave={handleMouseLeaveContact}
@@ -287,7 +348,7 @@ const AllPageContent = () => {
                 </li>
               ))}
           </ul>
-          <div className="hide-scrollbar flex w-full flex-row gap-5 overflow-auto py-4 md:max-w-[800px] md:flex-col md:py-0">
+          <div className="hide-scrollbar flex w-full flex-row gap-5 overflow-auto p-4 md:max-w-[800px] md:flex-col">
             {developmentProcess &&
               developmentProcess.map(
                 (item, index) =>
@@ -339,7 +400,7 @@ const AllPageContent = () => {
               deployProjects.map((item, index) => (
                 <div
                   key={index}
-                  className={` ${index % 2 === 0 ? 'md:l:mt-16' : ''} flex flex-col gap-9`}
+                  className={` ${index % 2 === 0 ? 'md:mt-16' : ''} flex flex-col gap-9`}
                 >
                   <div>
                     <Image
