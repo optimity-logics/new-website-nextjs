@@ -477,3 +477,20 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
 .animate-svg .path-4 {
   animation: draw 2s linear forwards 1.4s;
 }
+
+.helow {
+  -webkit-mask-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    linear-gradient(162.73deg, #ffffff 11.61%, rgba(255, 255, 255, 0) 16.03%);
+  mask-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    linear-gradient(162.73deg, #ffffff 11.61%, rgba(255, 255, 255, 0) 16.03%);
+
+  border: 1.59px solid;
+}

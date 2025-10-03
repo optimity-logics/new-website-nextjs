@@ -135,6 +135,8 @@ export default {
         default:
           '0 8px 24px -12px #0a39801a,0 12px 16px -8px #0a398014,0 8px 10px -6px #0a39800d',
         devCardShadow: '0px 0px 23.7px 0px #0000000D',
+        ourIndustries:
+          '0px 1.41px 2.83px -1.41px #0000001A,0px 1.41px 4.24px 0px #0000001A,0px 0px 0px 1.41px #1313160D',
       },
     },
   },

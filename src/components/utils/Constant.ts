@@ -28,6 +28,12 @@ import whiskerspaws from '../../../public/webp/client-logos/whiskerspaws.webp';
 import woodlogs from '../../../public/webp/client-logos/woodlogs.webp';
 import yellowbird from '../../../public/webp/client-logos/yellowbird.webp';
 import aboutUsHeroImage from '../../../public/images/about-us/about_us_hero.png';
+import realEstate from '../../../public/images/homePagev2/realEstate.png';
+import fintech from '../../../public/images/homePagev2/fintech.png';
+import logistics from '../../../public/images/homePagev2/logistics.png';
+import edTech from '../../../public/images/homePagev2/edTech.png';
+import FB from '../../../public/images/homePagev2/f&b.png';
+import healthCare from '../../../public/images/homePagev2/healthCare.png';
 
 // social media icons
 
@@ -100,7 +106,12 @@ import byBusunessScale from '../../../public/svg/megaMenu/by-bussiness-scale.svg
 import appDevelopment from '../../../public/svg/megaMenu/app-devlopment.svg';
 import industryExperties from '../../../public/svg/megaMenu/industry-experties.svg';
 import customSolution from '../../../public/svg/megaMenu/custom-solution.svg';
-import expertise from '../../../public/images/homePagev2/expertise1.png';
+import mobileApp from '../../../public/images/homePagev2/mobile-app.png';
+import webApp from '../../../public/images/homePagev2/web-apps.png';
+import uiux from '../../../public/images/homePagev2/ui-ux.png';
+import qa from '../../../public/images/homePagev2/qa.png';
+import digitalMarketing from '../../../public/images/homePagev2/digital-marketing.png';
+import devopsTech from '../../../public/images/homePagev2/devops-tech.png';
 import mobiles from '../../../public/images/homePagev2/mobile.png';
 import frontend from '../../../public/images/homePagev2/frontend.png';
 import backend from '../../../public/images/homePagev2/backend.png';
@@ -4106,8 +4117,8 @@ export const projectWeDone = [
 
 export const homePageData = {
   baddge: 'Accelerate Your Growth with AI',
-  heroTitle: `Empowering Businesses with Next-Gen <span class="text-red">AI</span> Solutions.`,
-  heroDescription: `Transform your digital infrastructure with intelligent automation, data-driven insights, and cutting-edge AI technologies designed for scalable growth and superior performance.`,
+  heroTitle: `AI-Powered Tech for Smarter Business Results`,
+  heroDescription: `Optimitylogics creates AI-powered software solutions that boost productivity, encourage creativity, and facilitate long-term company expansion.`,
   heroContactUsBtn: 'Contact Us',
   heroContactUsBtnLink: '',
   trustedClient:
@@ -4115,44 +4126,160 @@ export const homePageData = {
   ourExpertiseTitle: 'Our Expertise',
   ourExpertise: [
     {
-      title: 'Mobile App',
+      title: 'Mobile App Development',
       description:
-        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+        'We create intuitive and interactive mobile applications that elevate your business. Our team specializes in:',
+      subDescription: `With years of experience, we've empowered businesses to thrive by providing comprehensive mobile app development services, giving them a competitive edge in their respective industries. `,
+      techBenefits: [
+        {
+          title: 'Native iOS & Android Apps:',
+          description:
+            ' Leveraging Swift, Kotlin, and Java for seamless performance.',
+        },
+        {
+          title: 'Cross-Platform Development:',
+          description: ' Utilizing React Native and Flutter for broader reach.',
+        },
+        {
+          title: 'Hybrid & PWA:',
+          description:
+            ' Combining the best of web and mobile technologies for enhanced user engagement.',
+        },
+      ],
       button: 'View All',
       buttonLink: '',
-      img: expertise,
+      img: mobileApp,
     },
     {
-      title: 'Mobile App',
-      description:
-        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+      title: 'Web App Development',
+      description: `Strengthen your presence in today's digital landscape with our web development services. We specialize in:`,
+      subDescription: `Our focus is on delivering scalable web development services to help you gain a competitive edge.`,
+      techBenefits: [
+        {
+          title: 'Custom Web Development:',
+          description:
+            ' Tailored solutions to meet your unique business requirements.',
+        },
+        {
+          title: 'E-commerce Solutions:',
+          description: 'Building robust platforms for online retail.',
+        },
+        {
+          title: 'CMS Development: ',
+          description: ' Empowering you to manage content effortlessly.',
+        },
+        {
+          title: 'API & Backend Development: ',
+          description: ' Ensuring seamless integration and functionality.',
+        },
+      ],
       button: 'View All',
       buttonLink: '',
-      img: expertise,
+      img: webApp,
     },
     {
-      title: 'Mobile App',
+      title: 'UI/UX Design',
       description:
-        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+        'Captivate your visitors with mesmerizing web design that enchants from the moment they arrive. Our services include:',
+      subDescription: `Our team of creative designers specializes in crafting dynamic websites, web apps, and mobile designs to innovate your business presence.`,
+      techBenefits: [
+        {
+          title: 'Wireframing & Prototyping:',
+          description: ' Visualizing the user journey for better clarity.',
+        },
+        {
+          title: 'Responsive Web Design:',
+          description: ' Ensuring a seamless experience across devices.',
+        },
+        {
+          title: 'Mobile App Design:',
+          description: ' Crafting engaging interfaces for mobile platforms.',
+        },
+        {
+          title: 'Logo & Branding:',
+          description: ' Building a strong brand identity.',
+        },
+      ],
       button: 'View All',
       buttonLink: '',
-      img: expertise,
+      img: uiux,
     },
     {
-      title: 'Mobile App',
+      title: 'Digital Marketing',
       description:
-        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+        'Boost your business with our comprehensive digital marketing services, including:',
+      subDescription: `Our team of expert digital marketers specializes in Google Ads, social media management, influencer collaboration, affiliate marketing, email campaigns, and marketing automation.`,
+      techBenefits: [
+        {
+          title: 'SEO & SEM:',
+          description: ' Enhancing your online visibility.',
+        },
+        {
+          title: 'Content Writing: ',
+          description: ' Engaging your audience with compelling content.',
+        },
+        {
+          title: 'PPC Campaigns:',
+          description: ' Driving targeted traffic to your website.',
+        },
+        {
+          title: 'Social Media Marketing:',
+          description: ' Building your brand presence on social platforms.',
+        },
+      ],
       button: 'View All',
       buttonLink: '',
-      img: expertise,
+      img: digitalMarketing,
     },
     {
-      title: 'Mobile App',
+      title: 'DevOps',
       description:
-        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app development lifecycle for your scalable business. Our seasoned mobile app developers possess extensive experience in delivering comprehensive app solutions across global markets and diverse industries. With a steadfast focus on product engineering, we ensure that your app not only meets but exceeds expectations, driving success for your business.',
+        'Optimize your design, development, and deployment workflows with our comprehensive suite of DevOps services. We offer:',
+      subDescription: `Our DevOps services and solutions enable the development and utilization of high-quality software products and services.`,
+      techBenefits: [
+        {
+          title: 'Infrastructure Management:',
+          description: ' Ensuring reliable and scalable systems.',
+        },
+        {
+          title: 'CI/CD Implementation:',
+          description: ' Streamlining development and deployment processes.',
+        },
+        {
+          title: 'Network & System Monitoring:',
+          description: ' Maintaining optimal performance.',
+        },
+        {
+          title: 'Security Audits:',
+          description: ' Identifying and mitigating potential vulnerabilities.',
+        },
+      ],
       button: 'View All',
       buttonLink: '',
-      img: expertise,
+      img: devopsTech,
+    },
+    {
+      title: 'Quality Assurance',
+      description: `Your business's success hinges on the quality of your applications. Our QA services include:`,
+      subDescription: `With decades of experience in testing, we understand the diverse perspectives and nuances involved.`,
+      techBenefits: [
+        {
+          title: 'Manual & Automated Testing: ',
+          description: ' Ensuring functionality and performance.',
+        },
+        {
+          title: 'Mobile & Web Testing:',
+          description:
+            ' Covering all platforms for comprehensive quality assurance.',
+        },
+        {
+          title: 'Security Testing:',
+          description: ' Protecting your applications from potential threats.',
+        },
+      ],
+      button: 'View All',
+      buttonLink: '',
+      img: qa,
     },
   ],
   OurWork: [
@@ -4345,29 +4472,42 @@ export const homePageData = {
   getInTouchBtnLink: '',
   faqsList: [
     {
-      question: 'How much does it cost to build an app?',
-      answer:
-        'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+      question: 'How can I get started with Optimity Logics?',
+      answer: `Simply contact us to discuss your project. We'll schedule a consultation to understand your requirements and craft a tailored solution.`,
     },
     {
-      question: 'How much does it cost to build an app?',
+      question:
+        'How does Optimity Logics incorporate emerging technologies into digital transformation strategies?',
       answer:
-        'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+        'Optimity Logics leverages the latest technologies, including AI, IoT, React Native, Flutter, and cloud platforms like AWS and Azure, to build innovative digital solutions. They integrate these technologies strategically to enhance business processes and create competitive advantages for clients across industries.',
     },
     {
-      question: 'Is it possible to create an app for free?',
+      question:
+        'How do you ensure the scalability of solutions for future growth?',
       answer:
-        'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+        'All solutions are built with modular architecture and cloud-ready frameworks, allowing easy scaling to accommodate business growth, higher traffic, and future enhancements without compromising performance.',
     },
     {
-      question: 'How do I start creating my own app?',
+      question: 'How do you ensure projects are delivered on time?',
       answer:
-        'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+        'Optimity Logics follows Agile project management practices with clearly defined milestones, regular updates, and continuous collaboration with clients to ensure timely delivery while maintaining quality standards.',
     },
     {
-      question: 'What’s involved in launching an app?',
+      question:
+        ' How do you make sure solutions remain adaptable to future technological changes?',
       answer:
-        'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+        'By using forward-compatible technologies, flexible APIs, and modular system designs, Optimity Logics ensures that your digital products can easily adapt to new tools, frameworks, and industry trends in the future.',
+    },
+    {
+      question:
+        'How are security concerns addressed in digital transformation projects?',
+      answer:
+        'Security is embedded into every stage of development. Optimity Logics implements best practices, including secure coding, vulnerability testing, data encryption, authentication protocols, and continuous system monitoring.',
+    },
+    {
+      question: 'Do you provide ongoing support, updates, and maintenance?',
+      answer:
+        'Yes, Optimity Logics offers end-to-end support including software updates, performance monitoring, bug fixes, and system maintenance to ensure your solutions remain secure, efficient, and up-to-date.',
     },
   ],
   contactUsFormTitle:
@@ -4646,5 +4786,140 @@ export const developmentProcess = [
           'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
       },
     ],
+  },
+];
+
+export const ourIndustries = [
+  {
+    id: 'real-estate',
+    label: 'Real Estate',
+    title: 'AI-Powered Real Estate Optimisation',
+    description:
+      'We develop AI-driven real estate platforms that automate leasing procedures, improve property valuations, and predict changes in the market. Our sophisticated systems combine workflow automation, predictive insights, and geospatial analytics to improve portfolio performance with unparalleled accuracy.',
+    sectionTitle: 'Perspectives on Property Value:',
+    features: [
+      'Predictive analytics models for automated property valuation',
+      'Analysis of market sentiment to guide timing and pricing',
+      'Dashboards of portfolio performance that provide useful investment signals',
+      'Automation of transaction workflow reducing the mean close times',
+    ],
+    image: realEstate,
+    LearnMore: 'Learn More',
+    link: '',
+  },
+  {
+    id: 'fintech',
+    label: 'Fintech',
+    title: 'Fintech Accuracy Driven by AI',
+    description:
+      'Our AI fintech solutions give banks and financial institutions automated fraud prevention, adaptive compliance tools, and extremely accurate risk modelling. In dynamic financial environments, we provide safe, predictive frameworks that improve decision-making and maintain confidence.',
+    sectionTitle: 'Capabilities for Risk Management:',
+    features: [
+      'Adaptive thresholds for real-time transaction monitoring',
+      'Automated KYC checks that incorporate identity verification processes',
+      'Predictive analytics-powered credit scoring models',
+      'Automation of regulatory reporting greatly lowers compliance overhead.',
+    ],
+    image: fintech,
+    LearnMore: 'Learn More',
+    link: '',
+  },
+  {
+    id: 'logistics',
+    label: 'Logistics',
+    title: 'AI-Optimized Logistics Flow',
+    description:
+      'We create AI-powered logistics ecosystems that automate route planning, predict changes in demand, and provide real-time shipment visibility. Our scalable platforms guarantee agility in changing global supply networks, optimise warehouse operations, and reduce transit delays.',
+    sectionTitle: 'Efficiency in Operations Measures:',
+    features: [
+      'Fuel consumption and distance are decreased by predictive routeing.',
+      'Utilisation rates are consistently improved by dynamic load balancing.',
+      'visibility in real time throughout the entire delivery network',
+      'Autonomous scheduling consistently reduces delays and downtime.',
+    ],
+    image: logistics,
+    LearnMore: 'Learn More',
+    link: '',
+  },
+  {
+    id: 'edtech',
+    label: 'EdTech',
+    title: 'EdTech AI Learning Customisation EdTech',
+    description:
+      'Our AI-powered EdTech platforms offer predictive learning analytics, real-time performance monitoring, and flexible curriculum pathways. With safe, scalable frameworks, we enable educational institutions to enhance student engagement, personalise instruction at scale, and attain quantifiable academic success.',
+    sectionTitle: 'Features of Adaptive Learning:',
+    features: [
+      'Learner analytics-powered personalised learning pathways',
+      'Grading procedures that are automated lowering the workload of instructors considerably',
+      'Targeted intervention strategies informed by engagement analytics In a timely manner',
+      'Scalable platform architecture that facilitates environments for blended learning',
+      'Change the Way People Learn',
+    ],
+    image: edTech,
+    LearnMore: 'Learn More',
+    link: '',
+  },
+  {
+    id: 'food-beverage',
+    label: 'Food and Beverage',
+    title: 'AI-Refined Food and Drink Systems',
+    description:
+      'In food and beverage operations, we create AI solutions that predict consumer demand, streamline supply chains, and protect product quality. Our intelligent platforms facilitate quick decision-making, increase consistency, and cut waste for long-term, sustainable industry growth.',
+    features: [
+      'Forecasting demand and streamlining production and procurement schedules',
+      'Stockouts and excess inventory are decreased by automated replenishment.',
+      'Consistent product standards are guaranteed by AI quality monitoring.',
+      'Optimising the production line for effective throughput control',
+    ],
+    image: FB,
+    LearnMore: 'Learn More',
+    link: '',
+  },
+  {
+    id: 'healthCare',
+    label: 'Healthcare',
+    title: 'Advances in Healthcare Driven by AI',
+    description:
+      'Our AI-powered medical systems streamline hospital resource management, expedite diagnostics, and customise treatment regimens. By utilising predictive analytics, patient data modelling, and advanced medical imaging, we improve results while maintaining operational excellence and compliance.',
+    sectionTitle: 'Clinical Impact Measures:',
+    features: [
+      'Early detection rates are consistently increased by predictive diagnostics.',
+      'Effectively prioritising critical patient care through automated triage',
+      'Automation of clinical workflow greatly lessens the administrative load.',
+      'Optimising resource allocation during times of high demand',
+    ],
+    image: healthCare,
+    LearnMore: 'Learn More',
+    link: '',
+  },
+];
+export const services = [
+  {
+    title: 'Solutions for Data Science',
+    description:
+      'Customised intelligent data solutions, including data engineering, advanced analytics, and natural language processing (NLP), can help your company realise the full potential of its data.',
+  },
+  {
+    title: 'Progress in AI Research and Development',
+    description:
+      'Improve your products, automate your processes, and empower your team to make better decisions with the help of our deep AI knowledge.',
+  },
+  {
+    title: 'Advancements in Computer Vision',
+    description: `Whether it's object detection, visual analytics, or image recognition, we build bespoke computer vision solutions to meet your specific business needs and boost efficiency.`,
+  },
+  {
+    title: 'The Advancement of Machine Learning',
+    description: `Boost your company's performance with cutting-edge solutions, automated processes, and predictive insights made possible by machine learning applied to your datasets.`,
+  },
+  {
+    title: 'Integrating AI',
+    description:
+      'Maximise value and efficiency by seamlessly integrating advanced AI capabilities—including forecasting, conversational AI, workflow automation, predictive analytics, and more—into your existing systems.',
+  },
+  {
+    title: 'AI Solutions for Generative Tasks',
+    description:
+      'Intelligent chatbots, financial robo-advisors, IT lifecycle automation, and other next-gen solutions are designed by our generative AI experts to empower your business with cutting-edge AI innovations.',
   },
 ];

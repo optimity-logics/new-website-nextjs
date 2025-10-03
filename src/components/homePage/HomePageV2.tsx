@@ -11,9 +11,18 @@ import shape4 from '../../../public/images/homePagev2/shape-4.png';
 import arrow from '../../../public/images/homePagev2/arrow-black.png';
 import ellips1 from '../../../public/images/homePagev2/ellips1.png';
 import ellipse2 from '../../../public/images/homePagev2/ellipse2.png';
+import blackTick from '../../../public/images/homePagev2/blackTick.svg';
+import robot from '../../../public/images/homePagev2/robot.svg';
+import mobileRobot from '../../../public/images/homePagev2/mobile-robot.png';
 import LogoAnimation from './LogoAnimation';
 
-import { homePageData, logoIcons, projectWeDone } from '../utils/Constant';
+import {
+  homePageData,
+  logoIcons,
+  projectWeDone,
+  ourIndustries,
+  services,
+} from '../utils/Constant';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -29,10 +38,12 @@ import styled from 'styled-components';
 import Marquee from 'react-fast-marquee';
 
 const HighlitedDescription = styled.h2``;
+const HighlitedDescriptionHero = styled.h1``;
 const HomePageV2 = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
   const [hover, setHover] = useState<boolean>(false);
+  const [hoverLearnMore, setHoverLearnMore] = useState<boolean>(false);
   const [hoverSubmit, setHoverSubmit] = useState<boolean>(false);
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
   const [hoverContact, setHoverContact] = useState<boolean>(false);
@@ -40,6 +51,10 @@ const HomePageV2 = () => {
   const handleMouseEnter = () => setHover(true);
   const handleMouseLeave = () => {
     setHover(false);
+  };
+  const handleMouseEnterLearnMore = () => setHoverLearnMore(true);
+  const handleMouseLeaveLearnMore = () => {
+    setHoverLearnMore(false);
   };
   const handleMouseEnterSubmit = () => setHoverSubmit(true);
   const handleMouseLeaveSubmit = () => {
@@ -104,7 +119,10 @@ const HomePageV2 = () => {
   const addToRefs = (el: HTMLElement | null, index: number) => {
     sectionsRef.current[index] = el;
   };
+  const [activeTab, setActiveTab] = useState('real-estate');
 
+  const currentTab =
+    ourIndustries.find((tab) => tab.id === activeTab) || ourIndustries[0];
   return (
     <>
       {/* section-1 */}
@@ -189,15 +207,15 @@ const HomePageV2 = () => {
                 className="max-w-[50px] 3xl:max-w-[75px] 4xl:max-w-max"
               />
             </motion.div>
-            <div className="flex flex-col justify-between gap-10 lg:flex-row xl:items-center 3xl:gap-[60px]">
+            <div className="flex flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
               <div className="flex w-full flex-col gap-[50px] xl:max-w-[560px] 4xl:max-w-[860px]">
                 <div className="flex flex-col gap-[20px]">
                   <div className="w-max rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1 shadow-default">
-                    <h1 className="line-clamp-1 font-base text-sm leading-7 text-primary">
+                    <span className="line-clamp-1 font-base text-sm leading-7 text-primary">
                       {homePageData?.baddge}
-                    </h1>
+                    </span>
                   </div>
-                  <HighlitedDescription
+                  <HighlitedDescriptionHero
                     dangerouslySetInnerHTML={{
                       __html: homePageData?.heroTitle,
                     }}
@@ -356,6 +374,23 @@ const HomePageV2 = () => {
                           <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
                             {item?.description}
                           </p>
+                          <ul className="ml-10 flex list-disc flex-col gap-3 text-primary">
+                            {item?.techBenefits &&
+                              item?.techBenefits.map((benefitsItem, idx) => (
+                                <li
+                                  key={idx}
+                                  className="font-base text-lg font-semibold text-primary"
+                                >
+                                  {benefitsItem?.title}
+                                  <span className="font-normal text-black-750-alpha">
+                                    {benefitsItem?.description}
+                                  </span>
+                                </li>
+                              ))}
+                          </ul>
+                          <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
+                            {item?.subDescription}
+                          </p>
                         </div>
                         <Link
                           onMouseEnter={handleMouseEnterViewAll}
@@ -375,7 +410,7 @@ const HomePageV2 = () => {
                           alt="img"
                           width={698}
                           height={600}
-                          className="w-full object-contain"
+                          className="w-full rounded-[14px] object-contain"
                         />
                       </div>
                     </div>
@@ -409,29 +444,126 @@ const HomePageV2 = () => {
             ))}
         </div>
       </Container>
-      {/* section-5 */}
       <div
         style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
-        className="bg-tech-we-work bg-cover bg-no-repeat"
+        className="mb-[60px] bg-our-expertise bg-cover bg-no-repeat py-[60px] 4xl:mb-[100px] 4xl:py-[100px]"
       >
-        <Container className="flex flex-col gap-8 py-[60px] 4xl:gap-[60px] 4xl:py-[100px]">
-          <h3 className="font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
-            {homePageData?.technologyWeWorkTitle}
-          </h3>
-          <div
-            ref={(el) => addToRefs(el, 0)}
-            className="hidden h-full w-full grid-cols-6 gap-6 3xl:grid"
-          >
-            {homePageData?.technologyWeWork &&
-              homePageData?.technologyWeWork.map((item, index) => {
-                const isOddColumn = index % 2 === 0;
-                return (
+        <Container className="flex flex-col gap-10 4xl:gap-[60px]">
+          <div className="mx-auto flex w-full max-w-[1100px] flex-col items-center gap-5">
+            <h3 className="text-center font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
+              Automated Data Intelligence
+            </h3>
+            <p className="w-full text-center font-base text-lg font-normal leading-6 text-subtle">
+              Data and AI/ML technologies can revolutionise your company. Find
+              out what you need to know and automate critical processes to
+              increase productivity, efficiency, and long-term growth.
+            </p>
+          </div>
+          <div className="flex flex-col gap-6 md:hidden">
+            <div className="">
+              <Image
+                src={mobileRobot}
+                alt="robot"
+                width={250}
+                height={500}
+                className="mx-auto"
+              />
+            </div>
+            <div className="hide-scrollbar flex gap-7 overflow-auto">
+              {services &&
+                services.map((item, index) => (
                   <div
-                    className={`w-full rounded-[24px] bg-overly bg-cover bg-no-repeat transition-transform duration-500 ease-out`}
-                    data-parallax-group={isOddColumn ? 'odd' : 'even'}
+                    key={index}
+                    className="flex w-full min-w-[320px] flex-1 flex-col gap-4"
+                  >
+                    <h4 className="font-base text-xl font-medium leading-6 text-white">
+                      {item?.title}
+                    </h4>
+                    <p className="font-base text-base font-normal leading-5 text-subtle">
+                      {item?.description}
+                    </p>
+                  </div>
+                ))}
+            </div>
+          </div>
+          <div className="hidden justify-center gap-5 md:flex">
+            <div className="flex w-full max-w-[500px] flex-col gap-10">
+              {services &&
+                services.slice(0, 3).map((item, index) => (
+                  <div key={index} className="flex flex-col gap-4">
+                    <h4 className="font-base text-xl font-medium leading-6 text-white">
+                      {item?.title}
+                    </h4>
+                    <p className="font-base text-base font-normal leading-5 text-subtle">
+                      {item?.description}
+                    </p>
+                  </div>
+                ))}
+            </div>
+            <div className="hidden w-max items-end lg:flex">
+              <Image
+                src={robot}
+                alt="robot"
+                width={585}
+                height={408}
+                className="mt-auto w-full 4xl:h-[500px]"
+              />
+            </div>
+            <div className="flex w-full max-w-[500px] flex-col gap-10">
+              {services &&
+                services.slice(3).map((item, index) => (
+                  <div key={index} className="flex flex-col gap-4">
+                    <h4 className="font-base text-xl font-medium leading-6 text-white">
+                      {item?.title}
+                    </h4>
+                    <p className="font-base text-base font-normal leading-5 text-subtle">
+                      {item?.description}
+                    </p>
+                  </div>
+                ))}
+            </div>
+          </div>
+          <div className="flex flex-col gap-8 4xl:gap-[60px]">
+            <h3 className="font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
+              {homePageData?.technologyWeWorkTitle}
+            </h3>
+            <div
+              ref={(el) => addToRefs(el, 0)}
+              className="hidden h-full w-full grid-cols-6 gap-6 3xl:grid"
+            >
+              {homePageData?.technologyWeWork &&
+                homePageData?.technologyWeWork.map((item, index) => {
+                  const isOddColumn = index % 2 === 0;
+                  return (
+                    <div
+                      className={`w-full rounded-[24px] bg-overly bg-cover bg-no-repeat transition-transform duration-500 ease-out`}
+                      data-parallax-group={isOddColumn ? 'odd' : 'even'}
+                      key={index}
+                    >
+                      <div className="parallax-card grid h-full w-full rounded-[20px] bg-cover p-[8px] transition-transform duration-100 ease-out grid-stack">
+                        <Image
+                          src={item?.techImg}
+                          alt="technology"
+                          width={254}
+                          height={339}
+                          className="aspect-auto"
+                        />
+                        <span className="mt-auto p-[14px] font-base text-[20px] font-medium leading-[24px] text-white">
+                          {item?.techName}
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+            <div className="hide-scrollbar flex h-full w-full gap-6 overflow-x-auto 3xl:hidden">
+              {homePageData?.technologyWeWork &&
+                homePageData?.technologyWeWork.map((item, index) => (
+                  <div
+                    className={`rounded-[24px] bg-overly bg-cover bg-no-repeat transition-transform duration-500 ease-out ${index % 2 === 0 ? 'mt-4' : ''} h-max`}
                     key={index}
                   >
-                    <div className="parallax-card grid h-full w-full rounded-[20px] bg-cover p-[8px] transition-transform duration-100 ease-out grid-stack">
+                    <div className="parallax-card grid h-full w-[200px] rounded-[20px] bg-cover p-[8px] transition-transform duration-100 ease-out grid-stack">
                       <Image
                         src={item?.techImg}
                         alt="technology"
@@ -444,35 +576,86 @@ const HomePageV2 = () => {
                       </span>
                     </div>
                   </div>
-                );
-              })}
-          </div>
-          <div className="hide-scrollbar flex h-full w-full gap-6 overflow-x-auto 3xl:hidden">
-            {homePageData?.technologyWeWork &&
-              homePageData?.technologyWeWork.map((item, index) => (
-                <div
-                  className={`rounded-[24px] bg-overly bg-cover bg-no-repeat transition-transform duration-500 ease-out ${index % 2 === 0 ? 'mt-4' : ''} h-max`}
-                  key={index}
-                >
-                  <div className="parallax-card grid h-full w-[200px] rounded-[20px] bg-cover p-[8px] transition-transform duration-100 ease-out grid-stack">
-                    <Image
-                      src={item?.techImg}
-                      alt="technology"
-                      width={254}
-                      height={339}
-                      className="aspect-auto"
-                    />
-                    <span className="mt-auto p-[14px] font-base text-[20px] font-medium leading-[24px] text-white">
-                      {item?.techName}
-                    </span>
-                  </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
         </Container>
       </div>
+      <Container className="mb-[60px] flex flex-col gap-8 4xl:mb-[100px] 4xl:gap-[60px]">
+        <h2 className="text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
+          Our Industries
+        </h2>
+        <div className="hide-scrollbar flex w-full items-center gap-5 overflow-auto px-2 py-2 xl:gap-[30px]">
+          {ourIndustries &&
+            ourIndustries.map((item, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => setActiveTab(item?.id)}
+                className={`w-max text-nowrap rounded-2xl shadow-ourIndustries transition-all duration-500 ease-in-out ${activeTab === item?.id ? 'bg-primary text-white' : 'bg-[#F7F7F8] text-primary'} px-5 py-2 text-center font-base text-base leading-7`}
+              >
+                {item?.label}
+              </button>
+            ))}
+        </div>
+        <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:items-end">
+          <div className="flex w-full max-w-full flex-col gap-10 lg:max-w-[650px] xxl:max-w-[800px]">
+            <div className="flex flex-col gap-[30px]">
+              <h3 className="font-base text-4xl font-medium leading-10 text-primary">
+                {currentTab?.title}
+              </h3>
+              <p className="font-base text-lg font-normal leading-6 text-black-750-alpha">
+                {currentTab?.description}
+              </p>
+            </div>
+            <div className="block lg:hidden">
+              <Image
+                src={currentTab?.image}
+                alt="industries"
+                width={400}
+                height={400}
+                className="mx-auto"
+              />
+            </div>
+            <div className="flex flex-col gap-8">
+              <h4 className="font-base text-2xl font-medium leading-7 text-lightBlue">
+                {currentTab?.sectionTitle}
+              </h4>
+              <ul className="flex flex-col gap-4">
+                {currentTab?.features.map((list, index) => (
+                  <li key={index} className="flex items-center gap-5">
+                    <Image src={blackTick} alt="tick" width={24} height={24} />
+                    <p className="font-base text-lg font-normal leading-6 text-black-750-alpha">
+                      {list}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                onMouseEnter={handleMouseEnterLearnMore}
+                onMouseLeave={handleMouseLeaveLearnMore}
+                onMouseUp={handleMouseEnterLearnMore}
+                onMouseDown={handleMouseLeaveLearnMore}
+                href={currentTab?.link}
+                className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+              >
+                {currentTab?.LearnMore}
+                <AnimatedArrow hover={hoverLearnMore} />
+              </Link>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <Image
+              src={currentTab?.image}
+              alt="industries"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+      </Container>
       {/* section-6 */}
-      <div className="py-[60px] 4xl:py-[100px]">
+      <div className="mb-[60px] 4xl:mb-[100px]">
         <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[80px]">
           <Container className="flex items-center justify-between">
             <h4 className="font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
