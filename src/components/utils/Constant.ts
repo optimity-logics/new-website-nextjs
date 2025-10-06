@@ -883,45 +883,90 @@ export const howWeWorkData = [
 
 export const footerData: IFooterDataType[] = [
   {
-    heading: 'Services',
+    heading: 'Data',
     items: [
+      { title: 'Data Engineering', link: '' },
+      { title: 'Data Science Solutions', link: '' },
+      { title: 'Data Analytics Services', link: '' },
+      { title: 'Big Data Services', link: '' },
+      { title: 'Business Intelligence', link: '' },
+    ],
+  },
+  {
+    heading: 'AI/ML',
+    items: [
+      { title: 'AI ML Development', link: '' },
+      { title: 'Generative AI Development', link: '' },
+      { title: 'Computer Vision Development', link: '' },
+      { title: 'AI Agent Development', link: '' },
+      { title: 'LLM Development Services', link: '' },
+    ],
+  },
+  {
+    heading: 'Cloud',
+    items: [
+      { title: 'Cloud Engineering', link: '' },
+      { title: 'Cloud App Development', link: '' },
+      { title: 'Cloud Managed Services', link: '' },
+      { title: 'Cloud Security Services', link: '' },
+      { title: 'Cloud Consulting', link: '' },
+    ],
+  },
+  {
+    heading: 'Software',
+    items: [
+      { title: 'Software Development', link: '' },
+      { title: 'Software Product Development', link: '' },
+      { title: 'Startups Software Development', link: '' },
+      { title: 'Enterprise Software Development', link: '' },
+      { title: 'Software Development Outsourcing', link: '' },
+    ],
+  },
+  {
+    heading: 'Application',
+    items: [
+      { title: 'Web Development', link: '' },
       { title: 'Mobile App Development', link: '' },
-      { title: 'Web App Development', link: '' },
-      { title: 'Design', link: '' },
-      { title: 'Digital Marketing', link: '' },
-      { title: 'DevOps', link: '' },
-      { title: 'QA', link: '' },
+      { title: 'SaaS Development', link: '' },
+      { title: 'PWA Development', link: '' },
+      { title: 'Game Development', link: '' },
+      { title: 'Digital Twin Services', link: '' },
+      { title: 'Unreal Development', link: '' },
     ],
   },
   {
-    heading: 'Technology',
+    heading: 'Hire',
     items: [
-      { title: 'Mobile', link: '' },
-      { title: 'Backend', link: '' },
-      { title: 'Frontend', link: '' },
-      { title: 'Database', link: '' },
-      { title: 'DevOps', link: '' },
-      { title: 'CMS', link: '' },
+      { title: 'Hire Dedicated Developers', link: '' },
+      { title: 'Hire Dedicated Developers', link: '' },
+      { title: 'Software Developers', link: '' },
+      { title: 'Mobile App Developers', link: '' },
+      { title: 'Frontend Developers', link: '' },
+      { title: 'Backend Developers', link: '' },
+      { title: 'Unreal Engine Developers', link: '' },
     ],
   },
   {
-    heading: 'Hire Us!',
+    heading: 'Industries',
     items: [
-      { title: 'React.js Development', link: '' },
-      { title: 'Flutter App Development', link: '' },
-      { title: 'Vue.js Development', link: '' },
-      { title: 'Angular.js Development', link: '' },
-      { title: 'Node.js Development', link: '' },
-      { title: 'React Native Development', link: '' },
+      { title: 'Healthcare', link: '' },
+      { title: 'Education', link: '' },
+      { title: 'Sports', link: '' },
+      { title: 'Real Estate', link: '' },
+      { title: 'Fitness', link: '' },
+      { title: 'Finance', link: '' },
+      { title: 'Retail', link: '' },
     ],
   },
   {
     heading: 'Company',
     items: [
-      { title: 'About', link: '' },
+      { title: 'About Us', link: '' },
       { title: 'Career', link: '/careers' },
-      { title: 'Our Works', link: '' },
-      { title: 'Contact', link: '' },
+      { title: 'Life@OptimityLogics', link: '' },
+      { title: 'Partnership', link: '' },
+      { title: 'Client Testimonials', link: '' },
+      { title: 'FAQs', link: '' },
     ],
   },
 ];
@@ -4521,7 +4566,7 @@ export const homePageData = {
   formDescription: 'Description',
   formSubmitBtn: 'Submit',
   companyLocation:
-    '426, 4th Floor, Swarnim Business Hub-1, opp. Global International school, Godrej Garden City Road, Ahmedabad, Gujarat 382470',
+    'A-566, Money Plant High Street, Jagatpur Road, Sarkhej - Gandhinagar Hwy, nr. BSNL Office, Gota, Ahmedabad, Gujarat 382470',
 };
 
 export const aboutUsPage = {

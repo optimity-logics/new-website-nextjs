@@ -164,7 +164,7 @@ const Career = () => {
                   </li>
                 ))}
               </ul>
-              <span className="font-base text-base font-normal leading-6 text-black-500-alpha xl:text-lg xl:leading-6">
+              <span className="font-base text-base font-normal leading-6 text-black-750-alpha xl:text-lg xl:leading-6">
                 We are always seeking talented people. In case you cannot find
                 your desired position here, please send us your LinkedIn profile
                 and give us your contact information. We will be in touch.
@@ -183,20 +183,20 @@ const Career = () => {
                     >
                       <div className="flex h-full flex-col justify-between gap-3 md:gap-5 lg:gap-8">
                         <div className="flex flex-col gap-2.5">
-                          <h3 className="font-base text-2xl leading-6 text-primary md:leading-7 xl:text-3xl xl:leading-9">
+                          <h3 className="font-base text-2xl leading-6 text-iconSubtle md:leading-7 xl:text-3xl xl:leading-9">
                             {detail?.title}
                           </h3>
                           <ul className="flex flex-wrap items-center gap-2.5">
                             {detail?.workModes.map((mode, modeIndex) => (
                               <li
                                 key={modeIndex}
-                                className="rounded-[40px] border-1.5 border-black px-3 py-2 font-base text-sm font-medium leading-5 text-[#090808]"
+                                className="rounded-[40px] border-1.5 border-subtle px-3 py-2 font-base text-sm font-medium leading-5 text-black-750-alpha"
                               >
                                 {mode}
                               </li>
                             ))}
                           </ul>
-                          <p className="mt-2.5 font-base text-base font-normal leading-5 text-[#504c4c]">
+                          <p className="mt-2.5 font-base text-base font-normal leading-5 text-black-750-alpha">
                             Optimity#Logics
                             {detail?.description}
                           </p>
@@ -222,7 +222,7 @@ const Career = () => {
         </div>
       </Container>
       <div
-        className="bg-projectSectionBg bg-cover bg-right bg-no-repeat"
+        className="bg-tech-we-work bg-cover bg-no-repeat"
         style={{ backgroundColor: '#192020' }}
       >
         <Container className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">

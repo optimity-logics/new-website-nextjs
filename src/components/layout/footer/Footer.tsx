@@ -45,9 +45,7 @@ const Footer = () => {
                       />
                     </div>
                     <span className="font-base text-base font-light leading-[1.6rem] text-white md:pr-[26px] 5xl:text-lg 5xl:leading-7">
-                      426, 4th Floor, Swarnim Business Hub-1, opp. Global
-                      International school, Godrej Garden City Road, Ahmedabad,
-                      Gujarat 382470
+                     A-566, Money Plant High Street, Jagatpur Road, Sarkhej - Gandhinagar Hwy, nr. BSNL Office, Gota, Ahmedabad, Gujarat 382470
                     </span>
                   </div>
                   <div className="flex flex-col gap-1">
@@ -85,7 +83,7 @@ const Footer = () => {
             <InquireForm />
           </div> */}
           <Review />
-          <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-4 xl:gap-[70px] 3xl:gap-20 4xl:gap-[95.14px]">
+          <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-x-4 md:gap-y-10 lg:grid-cols-4 xl:gap-[70px] 3xl:gap-20 4xl:gap-[95.14px]">
             {footerData.map((section, index) => (
               <div key={index} className="flex flex-col gap-[21.37px]">
                 <h3 className="font-base text-xl font-normal leading-[1.875rem] text-white">
@@ -95,7 +93,7 @@ const Footer = () => {
                   {section.items.map((item, idx) => (
                     <li
                       key={idx}
-                      className="w-max cursor-pointer text-nowrap font-base text-base font-light leading-[1.8rem] text-subtle transition-all duration-300 hover:text-lightBlue"
+                      className="cursor-pointer font-base text-base font-light leading-[1.8rem] text-subtle transition-all duration-300 hover:text-lightBlue xl:w-max xl:text-nowrap"
                     >
                       <Link href={item?.link}> {item?.title}</Link>
                     </li>

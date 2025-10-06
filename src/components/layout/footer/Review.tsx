@@ -5,7 +5,7 @@ import star from '../../../../public/svg/review-on-site/star.svg';
 
 const Review = () => {
   return (
-    <div className="rounded-2xl border border-[#ffffff4a] p-2 lg:rounded-3xl lg:px-6 lg:py-9">
+    <div className="rounded-2xl border border-[#ffffff4a] p-2 lg:rounded-3xl lg:p-3 xxl:px-6 xxl:py-9">
       <div className="no-scrollbar flex w-full flex-nowrap items-center gap-5 overflow-x-scroll">
         {reviewsData.map((item, index) => (
           <div

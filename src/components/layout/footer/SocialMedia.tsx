@@ -6,20 +6,23 @@ import Link from 'next/link';
 const SocialMedia = () => {
   return (
     <div className="flex flex-col gap-4">
-      <h4 className="font-base text-sm font-normal leading-[1.6rem] text-white 5xl:text-base">
+      <h4 className="font-base text-base font-normal leading-6 text-white">
         Follow Us
       </h4>
       <ul className="flex items-center gap-3">
         {socialMediaIcons &&
           socialMediaIcons.map((item, index) => (
-            <li key={index}>
+            <li
+              key={index}
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-[#f0f3f5]/10 backdrop-blur-sm"
+            >
               <Link href={item?.link} target="_blank">
                 <Image
                   src={item?.icon}
-                  alt={item?.icon}
-                  width={30}
-                  height={31}
-                  className="object-scale-down align-middle"
+                  alt="social-media-icon"
+                  width={24}
+                  height={24}
+                  className="object-contain"
                 />
               </Link>
             </li>

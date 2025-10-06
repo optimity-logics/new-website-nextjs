@@ -1,4 +1,3 @@
-import { Accordion, AccordionItem } from '@nextui-org/accordion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -10,6 +9,7 @@ import useWindowSize from '../hooks/useWindowSize';
 import { menuSidebar } from '../utils/Constant';
 import React from 'react';
 import AnimatedArrow from '../common/AnimatedArrow';
+import downArrow from '../../../public/svg/arrow.svg';
 interface IMenuSidebarProps {
   isOpen: boolean;
   setIsOpen: (val: boolean) => void;
@@ -18,7 +18,15 @@ interface IMenuSidebarProps {
 const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
   const { width } = useWindowSize();
   const [hover, setHover] = useState(false);
+  const [selectMenu, setSelectMenu] = useState<string | null>(null);
 
+  const toggleMenu = (menuTitle: string) => {
+    if (selectMenu === menuTitle) {
+      setSelectMenu(null);
+    } else {
+      setSelectMenu(menuTitle);
+    }
+  };
   const handleMouseEnter = () => setHover(true);
   const handleMouseLeave = () => {
     setHover(false);
@@ -31,6 +39,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
   }, [width, setIsOpen]);
   const handleCloseDrower = () => {
     setIsOpen(false);
+    setSelectMenu(null);
   };
 
   useEffect(() => {
@@ -73,38 +82,51 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
               onClick={handleCloseDrower}
             />
           </div>
-          <div className="flex flex-col gap-2 p-5">
-            <Accordion variant="splitted">
+          <div className="flex flex-col gap-5 p-5">
+            <ul className="flex flex-col gap-5">
               {menuSidebar &&
                 menuSidebar.map((item, index) => {
                   const hasMegaMenu = item?.megaMenuItem?.length > 0;
                   return (
-                    <AccordionItem
-                      key={index}
-                      aria-label={`Accordion ${index + 1}`}
-                      title={
-                        <>
-                          {hasMegaMenu ? (
-                            <span className="font-base text-base font-medium leading-[21.78px] text-iconSubtle md:text-xl md:leading-6">
-                              {item?.menuTitle}
-                            </span>
-                          ) : (
+                    <li key={index} className="flex flex-col gap-5">
+                      <div
+                        onClick={() =>
+                          hasMegaMenu && toggleMenu(item?.menuTitle)
+                        }
+                        className="flex w-full cursor-pointer items-center justify-between"
+                      >
+                        {hasMegaMenu ? (
+                          <span className="font-base text-base font-normal leading-[21.78px] text-iconSubtle md:text-xl md:leading-6">
+                            {item?.menuTitle}
+                          </span>
+                        ) : (
+                          <div
+                            onClick={handleCloseDrower}
+                            className="w-full cursor-pointer"
+                          >
                             <Link
                               key={`link-${item.menuTitle || index}`}
                               href={`/${item?.menuTitle?.toLowerCase().replace(/\s+/g, '-')}`}
-                              onClick={handleCloseDrower}
-                              className="block !w-full font-base text-base font-medium leading-[21.78px] text-iconSubtle md:text-xl md:leading-6"
+                              className="block !w-full font-base text-base font-normal leading-[21.78px] text-iconSubtle md:text-xl md:leading-6"
                             >
                               {item?.menuTitle}
                             </Link>
-                          )}
-                        </>
-                      }
-                      className="accordion-title !rounded-none border-b-0 px-0 !opacity-100 !shadow-none"
-                      indicator={!hasMegaMenu}
-                    >
+                          </div>
+                        )}
+                        {item?.megaMenuItem?.length > 0 && (
+                          <Image
+                            src={downArrow}
+                            alt="down-arrow"
+                            width={22}
+                            height={22}
+                            className={`${selectMenu === item?.menuTitle ? '-rotate-90' : 'rotate-90'}`}
+                          />
+                        )}
+                      </div>
                       {item?.megaMenuItem?.length > 0 && (
-                        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                        <div
+                          className={`${selectMenu === item?.menuTitle ? 'grid' : 'hidden opacity-0'} grid-cols-1 gap-5 transition-all duration-250 ease-in-out sm:grid-cols-2`}
+                        >
                           {item?.megaMenuItem.map((itm, ind) => (
                             <React.Fragment key={ind}>
                               <div className="flex w-full flex-col gap-6">
@@ -151,7 +173,6 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                                             d="M1.51749 0.782258C1.98612 0.313629 2.74592 0.313629 3.21455 0.782258L9.96455 7.53226C10.4332 8.00089 10.4332 8.76069 9.96455 9.22932L3.21455 15.9793C2.74592 16.4479 1.98612 16.4479 1.51749 15.9793C1.04886 15.5106 1.04886 14.7509 1.51749 14.2822L7.41896 8.38079L1.51749 2.47932C1.04886 2.01069 1.04886 1.25089 1.51749 0.782258Z"
                                           />
                                         </svg>
-
                                         {items?.techName}
                                       </Link>
                                     </li>
@@ -162,10 +183,10 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                           ))}
                         </div>
                       )}
-                    </AccordionItem>
+                    </li>
                   );
                 })}
-            </Accordion>
+            </ul>
             <button
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}

@@ -52,9 +52,9 @@ const ContactUs = () => {
                 Address
               </h5>
               <span className="max-w-[500px] font-base text-lg font-normal leading-6 text-primary">
-                426, 4th Floor, Swarnim Business Hub-1, opp. Global
-                International school, Godrej Garden City Road, Ahmedabad,
-                Gujarat 382470
+                A-566, Money Plant High Street, Jagatpur Road, Sarkhej -
+                Gandhinagar Hwy, nr. BSNL Office, Gota, Ahmedabad, Gujarat
+                382470
               </span>
             </div>
           </div>

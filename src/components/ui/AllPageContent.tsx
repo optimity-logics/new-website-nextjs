@@ -118,7 +118,7 @@ const AllPageContent = () => {
           <div className="w-full max-w-[400px]">
             <Image src={flutter} alt="technology" width={512} height={512} />
           </div>
-          <span className="absolute -bottom-[5%] block font-base text-[100px] font-medium text-[#161616] opacity-10 md:-bottom-[25%] md:left-1/4 md:text-[280px]">
+          <span className="absolute -bottom-[5%] block font-base text-[100px] font-medium text-[#161616] opacity-10 md:-bottom-[18%] md:left-[21%] md:text-[200px] xl:-bottom-[25%] xl:left-1/4 xl:text-[280px]">
             Flutter
           </span>
         </Container>
@@ -336,7 +336,7 @@ const AllPageContent = () => {
                 <li
                   key={index}
                   onClick={() => setProcessDevInd(index)}
-                  className="relative flex cursor-pointer items-center pb-8 pl-5 font-base text-lg font-medium leading-5 text-primary last-of-type:pb-0 3xl:pb-16 3xl:text-2xl 3xl:leading-7"
+                  className="relative flex cursor-pointer items-center pb-8 pl-5 font-base text-lg font-medium leading-5 text-primary last-of-type:pb-0 3xl:pb-16 3xl:text-[22px] 3xl:leading-7"
                 >
                   <div
                     className={`absolute left-[0px] h-4 w-4 rounded-full transition-all duration-300 ease-in-out md:-left-1.5 md:h-5 md:w-5 xl:top-1 ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
