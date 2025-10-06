@@ -15,7 +15,8 @@ import blackTick from '../../../public/images/homePagev2/blackTick.svg';
 import robot from '../../../public/images/homePagev2/robot.svg';
 import mobileRobot from '../../../public/images/homePagev2/mobile-robot.png';
 import LogoAnimation from './LogoAnimation';
-
+import phone from '../../../public/svg/footer/phone.svg';
+import email from '../../../public/svg/footer/mail.svg';
 import {
   homePageData,
   logoIcons,
@@ -36,6 +37,7 @@ import Container from '../ui/Container';
 import Link from 'next/link';
 import styled from 'styled-components';
 import Marquee from 'react-fast-marquee';
+import SocialMedia from '../layout/footer/SocialMedia';
 
 const HighlitedDescription = styled.h2``;
 const HighlitedDescriptionHero = styled.h1``;
@@ -343,81 +345,82 @@ const HomePageV2 = () => {
               {homePageData?.ourExpertiseTitle}
             </h3>
           </Container>
-          <div className="w-full">
-            <Swiper
-              spaceBetween={10}
-              slidesPerView={1.2}
-              modules={[Autoplay]}
-              centeredSlides={true}
-              breakpoints={{
-                540: {
-                  slidesPerView: 1.6,
-                  spaceBetween: 30,
-                },
-                1439: {
-                  slidesPerView: 1.8,
-                  spaceBetween: 50,
-                },
-              }}
-              speed={1000}
-              loop={false}
-            >
-              {homePageData?.ourExpertise &&
-                homePageData?.ourExpertise.map((item, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="flex flex-col-reverse items-center gap-6 xl:flex-row 4xl:gap-[65px]">
-                      <div className="flex w-full max-w-[799px] flex-col gap-5 xl:gap-[40px]">
-                        <div className="flex flex-col gap-4 xl:gap-5">
-                          <h5 className="font-base text-2xl font-medium leading-7 text-primary xl:text-[28px] xl:leading-[32px]">
-                            {item?.title}
-                          </h5>
-                          <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
-                            {item?.description}
-                          </p>
-                          <ul className="ml-10 flex list-disc flex-col gap-3 text-primary">
-                            {item?.techBenefits &&
-                              item?.techBenefits.map((benefitsItem, idx) => (
-                                <li
-                                  key={idx}
-                                  className="font-base text-lg font-semibold text-primary"
-                                >
-                                  {benefitsItem?.title}
-                                  <span className="font-normal text-black-750-alpha">
-                                    {benefitsItem?.description}
-                                  </span>
-                                </li>
-                              ))}
-                          </ul>
-                          <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
-                            {item?.subDescription}
-                          </p>
-                        </div>
-                        <Link
-                          onMouseEnter={handleMouseEnterViewAll}
-                          onMouseLeave={handleMouseLeaveViewAl}
-                          onMouseUp={handleMouseEnterViewAll}
-                          onMouseDown={handleMouseLeaveViewAl}
-                          href={item?.buttonLink}
-                          className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
-                        >
-                          {item?.button}
-                          <AnimatedArrow hover={hoverViewAl} />
-                        </Link>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1.2}
+            centeredSlides={true}
+            breakpoints={{
+              540: {
+                slidesPerView: 1.6,
+                spaceBetween: 30,
+              },
+              1439: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+              },
+            }}
+            speed={1000}
+            loop={false}
+            className="!h-auto w-full"
+          >
+            {homePageData?.ourExpertise &&
+              homePageData?.ourExpertise.map((item, index) => (
+                <SwiperSlide
+                  key={index}
+                  className="!flex !h-auto items-stretch"
+                >
+                  <div className="flex w-full flex-col-reverse items-center gap-6 xl:flex-row 4xl:gap-[65px]">
+                    <div className="flex h-full w-full max-w-[799px] flex-col justify-between gap-5 xl:gap-[40px]">
+                      <div className="flex flex-col gap-4 xl:gap-5">
+                        <h5 className="font-base text-2xl font-medium leading-7 text-primary xl:text-[28px] xl:leading-[32px]">
+                          {item?.title}
+                        </h5>
+                        <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
+                          {item?.description}
+                        </p>
+                        <ul className="ml-10 flex list-disc flex-col gap-3 text-primary">
+                          {item?.techBenefits &&
+                            item?.techBenefits.map((benefitsItem, idx) => (
+                              <li
+                                key={idx}
+                                className="font-base text-lg font-semibold text-primary"
+                              >
+                                {benefitsItem?.title}
+                                <span className="font-normal text-black-750-alpha">
+                                  {benefitsItem?.description}
+                                </span>
+                              </li>
+                            ))}
+                        </ul>
+                        <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
+                          {item?.subDescription}
+                        </p>
                       </div>
-                      <div>
-                        <Image
-                          src={item?.img}
-                          alt="img"
-                          width={698}
-                          height={600}
-                          className="w-full rounded-[14px] object-contain"
-                        />
-                      </div>
+                      <Link
+                        onMouseEnter={handleMouseEnterViewAll}
+                        onMouseLeave={handleMouseLeaveViewAl}
+                        onMouseUp={handleMouseEnterViewAll}
+                        onMouseDown={handleMouseLeaveViewAl}
+                        href={item?.buttonLink}
+                        className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+                      >
+                        {item?.button}
+                        <AnimatedArrow hover={hoverViewAl} />
+                      </Link>
                     </div>
-                  </SwiperSlide>
-                ))}
-            </Swiper>
-          </div>
+                    <div className="w-[500px]">
+                      <Image
+                        src={item?.img}
+                        alt="img"
+                        width={698}
+                        height={600}
+                        className="w-full rounded-[14px] object-contain"
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+          </Swiper>
         </div>
       </div>
       {/* section-4 */}
@@ -858,7 +861,7 @@ const HomePageV2 = () => {
           styleClass={{ backgroundSize: '100% 100%' }}
           className="mb-[60px] bg-black bg-tech-we-work bg-no-repeat py-[70px] lg:bg-contain xl:mb-0 xl:bg-transparent xl:bg-contact xl:pb-[130px] xl:pt-[140px] 3xl:px-[80px]"
         >
-          <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-center">
+          <div className="flex flex-col justify-between gap-10 md:flex-row md:items-center">
             <div className="flex w-full max-w-[570px] flex-col gap-3 xl:gap-5">
               {/* <h4 className="font-base text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]"> */}
               <HighlitedDescription
@@ -868,13 +871,44 @@ const HomePageV2 = () => {
                 className="font-base text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]"
               />
               {/* </h4> */}
-              <p className="font-base text-[18px] font-normal leading-tight text-subtle lg:pr-[76px]">
+              <p className="font-base text-[18px] font-normal leading-tight text-white lg:pr-[76px]">
                 {homePageData?.contactUsFormDescription}
               </p>
+              <div className="flex flex-col gap-[15px]">
+                <div className="flex flex-col gap-1">
+                  <div className="flex items-center gap-2 sm:gap-[15px]">
+                    <div className="w-full max-w-max">
+                      <Image
+                        src={phone}
+                        alt="phone-icon"
+                        width={22}
+                        height={22}
+                      />
+                    </div>
+                    <span className="font-base text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
+                      +91 635 301 5499
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 sm:gap-[15px]">
+                    <div className="w-full max-w-max">
+                      <Image
+                        src={email}
+                        alt="email-icon"
+                        width={22}
+                        height={22}
+                      />
+                    </div>
+                    <span className="font-base text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
+                      info@optimitylogics.com
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <SocialMedia />
             </div>
             <form className="flex w-full max-w-full flex-col gap-10 rounded-2xl bg-[#f0f3f5]/10 p-6 shadow-xl backdrop-blur-sm lg:max-w-[737px] xl:px-[23px] xl:py-[52px] xl:shadow-none">
               <div className="flex flex-col gap-[26px]">
-                <div className="flex items-center gap-6">
+                <div className="flex flex-row items-center gap-6 md:flex-col lg:flex-row">
                   <input
                     type="text"
                     placeholder={homePageData?.formFirstName}

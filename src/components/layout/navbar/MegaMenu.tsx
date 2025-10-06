@@ -206,8 +206,7 @@ export default function MegaMenu() {
                             India
                           </h6>
                           <span className="font-base text-sm font-normal lowercase leading-4 text-gray">
-                            {' '}
-                            +91 1234567890
+                            +91 635 301 5499
                           </span>
                         </div>
                       </div>
@@ -234,8 +233,7 @@ export default function MegaMenu() {
                             sales enquiries
                           </h6>
                           <span className="font-base text-[15px] font-normal lowercase leading-4 text-gray">
-                            {' '}
-                            sales@optimitylogics.com
+                            info@optimitylogics.com
                           </span>
                         </div>
                       </div>
