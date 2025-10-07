@@ -119,7 +119,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                             alt="down-arrow"
                             width={22}
                             height={22}
-                            className={`${selectMenu === item?.menuTitle ? '-rotate-90' : 'rotate-90'}`}
+                            className={`${selectMenu === item?.menuTitle ? '-rotate-90' : 'rotate-90'} transition-all duration-400 ease-in`}
                           />
                         )}
                       </div>
