@@ -117,7 +117,7 @@ const Career = () => {
               aboutUsPage?.benefitesList.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 rounded-[10px] bg-benefits p-3 md:gap-[18px] md:px-[22px] md:py-[30px]"
+                  className="flex items-center gap-3 rounded-[10px] bg-benefits p-3 md:gap-[18px] md:px-[22px] md:py-5"
                 >
                   <Image
                     src={item?.benefitesIcon}

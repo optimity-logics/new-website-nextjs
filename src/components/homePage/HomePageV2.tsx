@@ -346,7 +346,7 @@ const HomePageV2 = () => {
             </h3>
           </Container>
           <Swiper
-            spaceBetween={10}
+            spaceBetween={15}
             slidesPerView={1.2}
             centeredSlides={true}
             breakpoints={{
@@ -375,7 +375,7 @@ const HomePageV2 = () => {
                         <h5 className="font-base text-2xl font-medium leading-7 text-primary xl:text-[28px] xl:leading-[32px]">
                           {item?.title}
                         </h5>
-                        <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
+                        <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-lg">
                           {item?.description}
                         </p>
                         <ul className="ml-10 flex list-disc flex-col gap-3 text-primary">
@@ -408,7 +408,7 @@ const HomePageV2 = () => {
                         <AnimatedArrow hover={hoverViewAl} />
                       </Link>
                     </div>
-                    <div className="w-[500px]">
+                    <div className="xxl:w-[500px]">
                       <Image
                         src={item?.img}
                         alt="img"
@@ -628,7 +628,7 @@ const HomePageV2 = () => {
                 {currentTab?.features.map((list, index) => (
                   <li key={index} className="flex items-center gap-5">
                     <Image src={blackTick} alt="tick" width={24} height={24} />
-                    <p className="font-base text-lg font-normal leading-6 text-black-750-alpha">
+                    <p className="font-base text-base font-normal leading-5 text-black-750-alpha md:text-lg md:leading-6">
                       {list}
                     </p>
                   </li>
@@ -664,7 +664,7 @@ const HomePageV2 = () => {
             <h4 className="font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
               {homePageData?.deployedProjectsTitle}
             </h4>
-            <div className="flex w-max items-center gap-10">
+            <div className="flex w-max items-center gap-5 md:gap-10">
               <button className="custom-prev" ref={prevRef}>
                 <Image
                   src={arrow}

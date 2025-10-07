@@ -102,17 +102,21 @@ const NavBar = () => {
                 <MegaMenu />
               </div>
 
-              <button
+              <div
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 onMouseUp={handleMouseEnter}
                 onMouseDown={handleMouseLeave}
-                type="button"
-                className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+                className="w-max"
               >
-                Contact us
-                <AnimatedArrow hover={hover} />
-              </button>
+                <Link
+                  href="/contact-us"
+                  className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+                >
+                  Contact us
+                  <AnimatedArrow hover={hover} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
