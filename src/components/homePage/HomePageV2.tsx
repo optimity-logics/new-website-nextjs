@@ -4,15 +4,10 @@ import heroImg from '../../../public/images/homePagev2/logov3.svg';
 import logo from '../../../public/svg/logo.svg';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import shape1 from '../../../public/images/homePagev2/shape-1.png';
-import shape2 from '../../../public/images/homePagev2/shape-2.png';
-import shape3 from '../../../public/images/homePagev2/shape-3.png';
-import shape4 from '../../../public/images/homePagev2/shape-4.png';
 import arrow from '../../../public/images/homePagev2/arrow-black.png';
 import ellips1 from '../../../public/images/homePagev2/ellips1.png';
 import ellipse2 from '../../../public/images/homePagev2/ellipse2.png';
 import blackTick from '../../../public/images/homePagev2/blackTick.svg';
-import robot from '../../../public/images/homePagev2/robot.svg';
 import mobileRobot from '../../../public/images/homePagev2/mobile-robot.png';
 import LogoAnimation from './LogoAnimation';
 import phone from '../../../public/svg/footer/phone.svg';
@@ -127,7 +122,6 @@ const HomePageV2 = () => {
     ourIndustries.find((tab) => tab.id === activeTab) || ourIndustries[0];
   return (
     <>
-      {/* section-1 */}
       <div
         style={{
           backgroundImage:
@@ -137,78 +131,6 @@ const HomePageV2 = () => {
       >
         <div className="bg-heroBg bg-cover bg-center bg-no-repeat pt-20 lg:bg-full">
           <Container className="relative py-[50px] lg:py-[100px] 3xl:py-[140px] 4xl:py-[184px]">
-            <motion.div
-              animate={{ y: [0, -15, 0] }}
-              transition={{
-                duration: 1.8,
-                ease: 'easeIn',
-                repeat: Infinity,
-                repeatDelay: 0.3,
-              }}
-              className="absolute left-[10%] top-[30px] hidden lg:block 3xl:top-[50px]"
-            >
-              <Image
-                src={shape1}
-                alt="shape-1"
-                width={96}
-                height={84}
-                className="max-w-[50px] 3xl:max-w-[65px] 4xl:max-w-max"
-              />
-            </motion.div>
-            <motion.div
-              animate={{ x: [0, -20, 0] }}
-              transition={{
-                duration: 1.8,
-                ease: 'easeIn',
-                repeat: Infinity,
-                repeatDelay: 0.3,
-              }}
-              className="absolute bottom-[20px] left-[10%] hidden lg:block 3xl:bottom-[70px] 3xl:left-[20%]"
-            >
-              <Image
-                src={shape2}
-                alt="shape-1"
-                width={96}
-                height={84}
-                className="max-w-[50px] 3xl:max-w-[65px] 4xl:max-w-max"
-              />
-            </motion.div>
-            <motion.div
-              animate={{ rotate: 90 }}
-              transition={{
-                duration: 0.6,
-                ease: 'linear',
-                repeat: Infinity,
-                repeatDelay: 0.6,
-              }}
-              className="absolute right-[8%] top-[30px] hidden lg:block 3xl:top-[80px]"
-            >
-              <Image
-                src={shape3}
-                alt="shape-1"
-                width={70}
-                height={64}
-                className="max-w-[40px] 3xl:max-w-[60px] 4xl:max-w-max"
-              />
-            </motion.div>
-            <motion.div
-              animate={{ x: [0, -20, 0] }}
-              transition={{
-                duration: 1.8,
-                ease: 'easeIn',
-                repeat: Infinity,
-                repeatDelay: 0.3,
-              }}
-              className="absolute bottom-[20px] right-[3%] hidden lg:block 3xl:bottom-[50px]"
-            >
-              <Image
-                src={shape4}
-                alt="shape-1"
-                width={96}
-                height={84}
-                className="max-w-[50px] 3xl:max-w-[75px] 4xl:max-w-max"
-              />
-            </motion.div>
             <div className="flex flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
               <div className="flex w-full flex-col gap-[50px] xl:max-w-[560px] 4xl:max-w-[860px]">
                 <div className="flex flex-col gap-[20px]">
@@ -289,7 +211,6 @@ const HomePageV2 = () => {
           </Container>
         </div>
       </div>
-      {/* logo */}
       <div
         style={{
           boxShadow:
@@ -334,7 +255,6 @@ const HomePageV2 = () => {
           </div>
         </Container>
       </div>
-      {/* section-3 */}
       <div
         style={{ backgroundSize: '100% 100%' }}
         className="my-[60px] bg-our-expertise bg-cover bg-no-repeat 4xl:my-[100px]"
@@ -345,85 +265,87 @@ const HomePageV2 = () => {
               {homePageData?.ourExpertiseTitle}
             </h3>
           </Container>
-          <Swiper
-            spaceBetween={15}
-            slidesPerView={1.2}
-            centeredSlides={true}
-            breakpoints={{
-              540: {
-                slidesPerView: 1.6,
-                spaceBetween: 30,
-              },
-              1439: {
-                slidesPerView: 2,
-                spaceBetween: 50,
-              },
-            }}
-            speed={1000}
-            loop={false}
-            className="!h-auto w-full"
+          <div
+            className={`ml-auto w-full max-w-[1680px] px-4 sm:pl-6 md:pl-10 xl:pl-16`}
           >
-            {homePageData?.ourExpertise &&
-              homePageData?.ourExpertise.map((item, index) => (
-                <SwiperSlide
-                  key={index}
-                  className="!flex !h-auto items-stretch"
-                >
-                  <div className="flex w-full flex-col-reverse items-center gap-6 xl:flex-row 4xl:gap-[65px]">
-                    <div className="flex h-full w-full max-w-[799px] flex-col justify-between gap-5 xl:gap-[40px]">
-                      <div className="flex flex-col gap-4 xl:gap-5">
-                        <h5 className="font-base text-2xl font-medium leading-7 text-primary xl:text-[28px] xl:leading-[32px]">
-                          {item?.title}
-                        </h5>
-                        <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-lg">
-                          {item?.description}
-                        </p>
-                        <ul className="ml-10 flex list-disc flex-col gap-3 text-primary">
-                          {item?.techBenefits &&
-                            item?.techBenefits.map((benefitsItem, idx) => (
-                              <li
-                                key={idx}
-                                className="font-base text-lg font-semibold text-primary"
-                              >
-                                {benefitsItem?.title}
-                                <span className="font-normal text-black-750-alpha">
-                                  {benefitsItem?.description}
-                                </span>
-                              </li>
-                            ))}
-                        </ul>
-                        <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
-                          {item?.subDescription}
-                        </p>
+            <Swiper
+              spaceBetween={15}
+              slidesPerView={1.2}
+              breakpoints={{
+                540: {
+                  slidesPerView: 1.6,
+                  spaceBetween: 30,
+                },
+                1439: {
+                  slidesPerView: 2,
+                  spaceBetween: 50,
+                },
+              }}
+              speed={1000}
+              loop={false}
+              className="!h-auto w-full"
+            >
+              {homePageData?.ourExpertise &&
+                homePageData?.ourExpertise.map((item, index) => (
+                  <SwiperSlide
+                    key={index}
+                    className="!flex !h-auto items-stretch"
+                  >
+                    <div className="flex w-full flex-col-reverse items-center gap-6 xl:flex-row 4xl:gap-[65px]">
+                      <div className="flex h-full w-full max-w-[799px] flex-col justify-between gap-5 xl:gap-[40px]">
+                        <div className="flex flex-col gap-4 xl:gap-5">
+                          <h5 className="font-base text-2xl font-medium leading-7 text-primary xl:text-[28px] xl:leading-[32px]">
+                            {item?.title}
+                          </h5>
+                          <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-lg">
+                            {item?.description}
+                          </p>
+                          <ul className="ml-10 flex list-disc flex-col gap-3 text-primary">
+                            {item?.techBenefits &&
+                              item?.techBenefits.map((benefitsItem, idx) => (
+                                <li
+                                  key={idx}
+                                  className="font-base text-lg font-semibold text-primary"
+                                >
+                                  {benefitsItem?.title}
+                                  <span className="font-normal text-black-750-alpha">
+                                    {benefitsItem?.description}
+                                  </span>
+                                </li>
+                              ))}
+                          </ul>
+                          <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
+                            {item?.subDescription}
+                          </p>
+                        </div>
+                        <Link
+                          onMouseEnter={handleMouseEnterViewAll}
+                          onMouseLeave={handleMouseLeaveViewAl}
+                          onMouseUp={handleMouseEnterViewAll}
+                          onMouseDown={handleMouseLeaveViewAl}
+                          href={item?.buttonLink}
+                          className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+                        >
+                          {item?.button}
+                          <AnimatedArrow hover={hoverViewAl} />
+                        </Link>
                       </div>
-                      <Link
-                        onMouseEnter={handleMouseEnterViewAll}
-                        onMouseLeave={handleMouseLeaveViewAl}
-                        onMouseUp={handleMouseEnterViewAll}
-                        onMouseDown={handleMouseLeaveViewAl}
-                        href={item?.buttonLink}
-                        className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
-                      >
-                        {item?.button}
-                        <AnimatedArrow hover={hoverViewAl} />
-                      </Link>
+                      <div className="xxl:w-[500px]">
+                        <Image
+                          src={item?.img}
+                          alt="img"
+                          width={698}
+                          height={600}
+                          className="w-full rounded-[14px] object-contain"
+                        />
+                      </div>
                     </div>
-                    <div className="xxl:w-[500px]">
-                      <Image
-                        src={item?.img}
-                        alt="img"
-                        width={698}
-                        height={600}
-                        className="w-full rounded-[14px] object-contain"
-                      />
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-          </Swiper>
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+          </div>
         </div>
       </div>
-      {/* section-4 */}
       <Container className="mb-[60px] w-full max-w-[1680px] 4xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
           {homePageData?.OurWork &&
@@ -489,8 +411,8 @@ const HomePageV2 = () => {
                 ))}
             </div>
           </div>
-          <div className="hidden justify-center gap-5 md:flex">
-            <div className="flex w-full max-w-[500px] flex-col gap-10">
+          <div className="hidden grid-cols-3 gap-8 md:grid">
+            <div className="flex w-full flex-col gap-10">
               {services &&
                 services.slice(0, 3).map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
@@ -503,16 +425,16 @@ const HomePageV2 = () => {
                   </div>
                 ))}
             </div>
-            <div className="hidden w-max items-end lg:flex">
+            <div className="sticky top-[100px] hidden h-min lg:block">
               <Image
-                src={robot}
+                src={mobileRobot}
                 alt="robot"
-                width={585}
-                height={408}
-                className="mt-auto w-full 4xl:h-[500px]"
+                width={300}
+                height={250}
+                className="mx-auto h-auto max-w-[180px]"
               />
             </div>
-            <div className="flex w-full max-w-[500px] flex-col gap-10">
+            <div className="flex w-full flex-col gap-10">
               {services &&
                 services.slice(3).map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
@@ -657,7 +579,6 @@ const HomePageV2 = () => {
           </div>
         </div>
       </Container>
-      {/* section-6 */}
       <div className="mb-[60px] 4xl:mb-[100px]">
         <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[80px]">
           <Container className="flex items-center justify-between">
@@ -734,7 +655,6 @@ const HomePageV2 = () => {
           </div>
         </div>
       </div>
-      {/* ssection - 8 */}
       <div
         style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
         className="bg-tech-we-work bg-cover bg-no-repeat"
@@ -853,9 +773,7 @@ const HomePageV2 = () => {
           </div>
         </div>
       </div>
-      {/* section- 9 */}
       <Faqs />
-      {/* section - 10 */}
       <div className="xl:mx-[30px]">
         <Container
           styleClass={{ backgroundSize: '100% 100%' }}

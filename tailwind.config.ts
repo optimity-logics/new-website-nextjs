@@ -13,6 +13,7 @@ export default {
     extend: {
       screens: {
         xs: '350px',
+        xss: '480px',
         sm: '640px',
         md: '768px',
         lg: '1024px',
@@ -72,7 +73,8 @@ export default {
         footerv2: "url('/images/homePagev2/footer.png')",
         heroBg: "url('/images/homePagev2/circuit.svg')",
         aboutUsHeroBg: "url('/images/about-us/about_us.png')",
-        benefits: 'linear-gradient(189.81deg, #000000 49.32%, #02ADE1 107.86%)',
+        contactUsBg: "url('/images/contact-us-frame.png')",
+        benefits: "url('/images/benefits.png')",
       },
       fontFamily: {
         Inter: ['Inter'],
@@ -137,6 +139,8 @@ export default {
         devCardShadow: '0px 0px 23.7px 0px #0000000D',
         ourIndustries:
           '0px 1.41px 2.83px -1.41px #0000001A,0px 1.41px 4.24px 0px #0000001A,0px 0px 0px 1.41px #1313160D',
+        howWorkCard: '0px 8px 24px 0px #1212121A',
+        WhatWeDo: `0 2px 4px rgba(0, 0, 0, 0.08)`,
       },
     },
   },

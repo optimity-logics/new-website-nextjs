@@ -34,6 +34,7 @@ import logistics from '../../../public/images/homePagev2/logistics.png';
 import edTech from '../../../public/images/homePagev2/edTech.png';
 import FB from '../../../public/images/homePagev2/f&b.png';
 import healthCare from '../../../public/images/homePagev2/healthCare.png';
+import healthare from '../../../public/images/vanue.png';
 
 // social media icons
 
@@ -62,26 +63,24 @@ import barbell from '../../../public/svg/careers/benefits/barbell.svg';
 import cake from '../../../public/svg/careers/benefits/cake.svg';
 import calendar from '../../../public/svg/careers/benefits/calendar.svg';
 import confetti from '../../../public/svg/careers/benefits/confetti.svg';
-import eyeglasses from '../../../public/svg/careers/benefits/eyeglasses.svg';
 import gradutaionCap from '../../../public/svg/careers/benefits/graduationCap.svg';
 import rocketLaunch from '../../../public/svg/careers/benefits/rocketLaunch.svg';
 import wallet from '../../../public/svg/careers/benefits/wallet.svg';
 import target from '../../../public/svg/careers/benefits/target.svg';
 import shieldCheck from '../../../public/svg/careers/benefits/shieldCheck.svg';
 
-import clockv2 from '../../../public/svg/careers/benefitsv2/Clock.svg';
-import handClappingv2 from '../../../public/svg/careers/benefitsv2/HandsClapping.svg';
-import babyv2 from '../../../public/svg/careers/benefitsv2/Baby.svg';
-import barbellv2 from '../../../public/svg/careers/benefitsv2/Barbell.svg';
-import cakev2 from '../../../public/svg/careers/benefitsv2/Cake.svg';
-import calendarv2 from '../../../public/svg/careers/benefitsv2/Calendar.svg';
-import confettiv2 from '../../../public/svg/careers/benefitsv2/Confetti.svg';
-import eyeglassesv2 from '../../../public/svg/careers/benefitsv2/Eyeglasses.svg';
-import gradutaionCapv2 from '../../../public/svg/careers/benefitsv2/GraduationCap.svg';
-import rocketLaunchv2 from '../../../public/svg/careers/benefitsv2/RocketLaunch.svg';
-import walletv2 from '../../../public/svg/careers/benefitsv2/Wallet.svg';
-import targetv2 from '../../../public/svg/careers/benefitsv2/Target.svg';
-import shieldCheckv2 from '../../../public/svg/careers/benefitsv2/ShieldCheck.svg';
+import clockv2 from '../../../public/svg/careers/benefitsv2/Clockv3.svg';
+import handClappingv2 from '../../../public/svg/careers/benefitsv2/HandsClappingv3.svg';
+import babyv2 from '../../../public/svg/careers/benefitsv2/Babyv3.svg';
+import barbellv2 from '../../../public/svg/careers/benefitsv2/Barbellv3.svg';
+import cakev2 from '../../../public/svg/careers/benefitsv2/Cakev3.svg';
+import calendarv2 from '../../../public/svg/careers/benefitsv2/Calendarv3.svg';
+import confettiv2 from '../../../public/svg/careers/benefitsv2/Confettiv3.svg';
+import gradutaionCapv2 from '../../../public/svg/careers/benefitsv2/GraduationCapv3.svg';
+import rocketLaunchv2 from '../../../public/svg/careers/benefitsv2/RocketLaunchv3.svg';
+import walletv2 from '../../../public/svg/careers/benefitsv2/Walletv3.svg';
+import targetv2 from '../../../public/svg/careers/benefitsv2/Targetv3.svg';
+import shieldCheckv2 from '../../../public/svg/careers/benefitsv2/ShieldCheckv3.svg';
 
 import pm from '../../../public/images/homePagev2/pm.png';
 
@@ -339,7 +338,7 @@ export const solutionMegmenuDate = [
     items: [
       {
         techName: 'DevOps Solutions',
-        techLink: '/devops-Solutions-service',
+        techLink: '/devops-solutions-service',
       },
       {
         techName: 'Cloud Solutions',
@@ -709,39 +708,6 @@ export const ourExpertiseData = [
     techDescription:
       'Our UI and UX designers embody creative imagination, successfully deploying innovative web design',
     techbg: '/svg/ui-uxbg.svg',
-  },
-];
-
-export const deployProjects = [
-  {
-    projectImg: '/webp/project/riskbeach.webp',
-    projectName: 'Ricks Beach Rentals',
-    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-  },
-  {
-    projectImg: '/webp/project/hts.webp',
-    projectName: 'HTS',
-    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-  },
-  {
-    projectImg: '/webp/project/hopper.webp',
-    projectName: 'Hopper',
-    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-  },
-  {
-    projectImg: '/webp/project/riskbeach.webp',
-    projectName: 'Ricks Beach',
-    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-  },
-  {
-    projectImg: '/webp/project/riskbeach.webp',
-    projectName: 'Ricks Beach',
-    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-  },
-  {
-    projectImg: '/webp/project/riskbeach.webp',
-    projectName: 'Ricks Beach',
-    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
 ];
 
@@ -1240,10 +1206,6 @@ export const careerBenefites = [
   {
     benefitesIcon: wallet,
     benefitesName: 'Competitive salary',
-  },
-  {
-    benefitesIcon: eyeglasses,
-    benefitesName: 'Compensation for eyeglasses',
   },
   {
     benefitesIcon: gradutaionCap,
@@ -2269,7 +2231,7 @@ export const menuData = [
         items: [
           {
             techName: 'DevOps Solutions',
-            techLink: '/devops-Solutions',
+            techLink: '/devops-solutions',
           },
           {
             techName: 'Cloud Solutions',
@@ -2748,7 +2710,7 @@ export const menuSidebar = [
         items: [
           {
             techName: 'DevOps Solutions',
-            techLink: '/devops-Solutions',
+            techLink: '/devops-solutions',
           },
           {
             techName: 'Cloud Solutions',
@@ -3511,7 +3473,7 @@ export const siteMapData = [
       },
       {
         techName: 'devOps solutions',
-        techLink: '/devops-Solutions',
+        techLink: '/devops-solutions',
       },
       {
         techName: 'SaaS development',
@@ -4570,9 +4532,9 @@ export const homePageData = {
 };
 
 export const aboutUsPage = {
-  heding: `Highly Tailored
-<span>IT Design, Management & Support Services.<span>`,
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  surTitle: 'Transform the Way You Grow with AI',
+  heding: `Harness the power of <span> Artificial Intelligence</span> to revolutionize your business.`,
+  description: `Optimity Logics develops next-gen AI solutions that empower smarter workflows, accelerate performance, and ensure sustainable growth.`,
   aboutUsBtn: 'About Us',
   aboutUsBtnLink: '',
   hero_image: aboutUsHeroImage,
@@ -4589,19 +4551,214 @@ export const aboutUsPage = {
   woWeAreList: [
     {
       title: 'Our Mission',
-      description: `Our mission is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation. Whether it's a consumer-focused application or a game-changing enterprise solution, our company spearheads the journey from inception and conceptualization to final delivery, offering steadfast support throughout the process.`,
-      bgImg: '/images/about-us/howWeWork1.png',
+      description: ` To transform ideas into high impact digital products. We strive to combine design, development, and technology in such a way that businesses can harness digital transformation seamlessly—improving efficiency, user engagement, and long-term growth.`,
+      bgImg: '/images/about-us/our-mission.png',
     },
     {
       title: 'Our Vision',
-      description: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
-      bgImg: '/images/about-us/howWeWork2.png',
+      description: `To be a globally respected partner for companies looking to breakthrough in the digital age - delivering software and experiences that are reliable, beautifully crafted, and aligned with the evolving needs of our users and clients.`,
+      bgImg: '/images/about-us/our-vision.png',
+    },
+  ],
+  ourCoreValue: {
+    title: 'our core values',
+    img: '/images/about-us/core-value.png',
+    values: [
+      {
+        title: 'User-Centricity',
+        description:
+          'Every feature, every design, every decision is made with the end user in mind.',
+      },
+      {
+        title: 'Integrity & Transparency',
+        description:
+          'We believe in clear communication, honest feedback, and doing what we say.',
+      },
+      {
+        title: 'Quality over Speed',
+        description:
+          'We deliver quickly—but never at the cost of craftsmanship and stability.',
+      },
+      {
+        title: 'Innovation & Continuous Learning',
+        description:
+          'We stay on top of new tools, methods, and technologies, constantly pushing ourselves to be better.',
+      },
+      {
+        title: 'Collaboration & Partnership',
+        description:
+          'We see ourselves as an extension of our clients’ teams, sharing goals, ideas, and ownership.',
+      },
+    ],
+  },
+  whatWeDoTitle: 'What <span class="text-red">We Do (Our Services)</span>',
+  viewAllBtn: 'View All',
+  viewAllBtnLink: '/',
+  whatWeDo: [
+    {
+      img: '/images/about-us/app-dev.png',
+      title: 'Web & Mobile Application Development',
+      description:
+        'Custom apps, full stack, progressive web apps, hybrid & native.',
     },
     {
-      title: 'Our Values',
-      description: `Trust is fundamental in our relationships; we prioritize empathy, understanding others' needs, challenges, and aspirations. Through attentive listening and proactive responses, we enhance connections. Open dialogue and collaboration shape our strategies, fostering mutual respect. Together, we establish shared rules, promoting accountability. Embracing partnership, we work toward common goals, offering support, generating ideas, and sharing experiences.
-`,
-      bgImg: '/images/about-us/howWeWork3.png',
+      img: '/images/about-us/ui-ux.png',
+      title: 'UI / UX Design',
+      description: 'Intuitive designs that delight and retain users',
+    },
+    {
+      img: '/images/about-us/marketing.png',
+      title: 'Digital Marketing & Branding',
+      description:
+        'Helping brands take off through SEO, social media, paid campaigns, and visual identity.',
+    },
+    {
+      img: '/images/about-us/dev-ops.png',
+      title: 'DevOps, Cloud & Infrastructure',
+      description:
+        'Fast, secure, manageable deployments; automation; performance & scalability.',
+    },
+    {
+      img: '/images/about-us/qa-test.png',
+      title: 'Quality Assurance & Testing',
+      description:
+        'Ensuring everything works as intended through rigorous manual + automated testing.',
+    },
+  ],
+  expertiseTitle: '',
+  expertise: [
+    {
+      img: '/images/about-us/web-apps.png',
+      title: 'Web Apps',
+      description:
+        'cancellation make it easy to rethink your booking if your plans change.',
+    },
+    {
+      img: '/images/about-us/mobile-apps.png',
+      title: 'Mobile apps',
+      description:
+        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app',
+    },
+    {
+      img: '/images/about-us/digital-marketing.png',
+      title: 'Digital Marketing',
+      description:
+        'We create websites that are favored by search engines. With our search engine optimization',
+    },
+    {
+      img: '/images/about-us/digital-marketing.png',
+      title: 'UI/UX',
+      description:
+        'Our UI and UX designers embody creative imagination, successfully deploying innovative web design',
+    },
+    {
+      img: '/images/about-us/web-apps.png',
+      title: 'Web Apps',
+      description:
+        'cancellation make it easy to rethink your booking if your plans change.',
+    },
+    {
+      img: '/images/about-us/mobile-apps.png',
+      title: 'Mobile apps',
+      description:
+        'From concept to completion, Optimity Logics seamlessly manages the entire mobile app',
+    },
+    {
+      img: '/images/about-us/digital-marketing.png',
+      title: 'Digital Marketing',
+      description:
+        'We create websites that are favored by search engines. With our search engine optimization',
+    },
+    {
+      img: '/images/about-us/digital-marketing.png',
+      title: 'UI/UX',
+      description:
+        'Our UI and UX designers embody creative imagination, successfully deploying innovative web design',
+    },
+  ],
+  ourProcess: 'Our process',
+  ourProcessDescription:
+    'To ensure consistency, transparency, and client satisfaction, here’s how we deliver',
+  ourProcessImg: '/images/about-us/our-process-img.png',
+  ourProcessList: [
+    {
+      title: 'Discovery & Requirements Gathering',
+      subTitle: 'Understand your goals, users, and constraints.',
+    },
+    {
+      title: 'Prototyping & Design',
+      subTitle: 'Wireframes, mockups, and user flows.',
+    },
+    {
+      title: 'Development & Engineering',
+      subTitle: 'Build with best practices, clean code, test early & often.',
+    },
+    {
+      title: 'Quality Assurance',
+      subTitle: 'Manual + automated testing to catch and resolve issues.',
+    },
+    {
+      title: 'Deployment & Maintenance',
+      subTitle: 'Launch reliably; monitor performance; iterate as needed.',
+    },
+  ],
+  whyChooseUsTitle: 'Why Choose Us',
+  whyChooseUsDescription:
+    'At Optimity Logics, we go beyond just building software — we build long-term partnerships. Our approach blends strategy, creativity, and technology to help businesses scale confidently and sustainably.',
+  whyChooseUsList: [
+    {
+      title: 'One-Stop Partner - From Concept to Deployment & Beyond',
+      description: `We handle everything - from ideation and UI/UX design to development, testing, deployment, and ongoing support.
+ Whether it’s a startup MVP or a large-scale enterprise platform, our in-house team manages the entire lifecycle to deliver consistent quality and peace of mind.`,
+    },
+    {
+      title: 'Excellent Communication — Always in the Loop',
+      description: `Transparent communication is at the heart of every successful collaboration.
+ We keep you updated with regular progress reports, sprint reviews, and open communication channels through Slack, Teams, or your preferred tool — so there are no surprises, only clarity.`,
+    },
+    {
+      title: 'Scalable Solutions — Built to Grow with You',
+      description: `Every product we build is designed for scalability and flexibility.
+ We leverage modern frameworks, cloud architecture, and modular design patterns that make it easy to expand functionality, handle user growth, and adapt to evolving business needs — without costly overhauls.`,
+    },
+    {
+      title: 'Cost Efficiency — Premium Quality Without Overhead',
+      description: `We combine global expertise with local value to ensure you get the best return on your investment.
+ Our agile methodology minimizes waste and maximizes output, delivering world-class digital products that stay within your budget — without cutting corners on quality or performance.`,
+    },
+    {
+      title: 'Ongoing Support & Maintenance — Long-Term Partnership',
+      description: `Our relationship doesn’t end after launch.
+ We offer continuous monitoring, updates, security patches, and performance optimization to ensure your software stays secure, fast, and future-ready.
+ You focus on growth — we take care of the tech.`,
+    },
+  ],
+  ourTeam: 'Our Team & Culture',
+  shortDescription: `We’re a diverse team of developers, designers, testers, and strategists who believe work should be challenging, rewarding, and fun. Continuous learning, peer feedback, and open culture are part of our DNA.`,
+  ourTeamList: [
+    {
+      img: '/images/about-us/team1.jpg',
+      name: 'Johnee Honie',
+      position: 'CEO, techwix',
+      aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
+    },
+    {
+      img: '/images/about-us/team2.jpg',
+      name: 'Johnee Honie',
+      position: 'CEO, techwix',
+      aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
+    },
+    {
+      img: '/images/about-us/team1.jpg',
+      name: 'Johnee Honie',
+      position: 'CEO, techwix',
+      aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
+    },
+    {
+      img: '/images/about-us/team2.jpg',
+      name: 'Johnee Honie',
+      position: 'CEO, techwix',
+      aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
     },
   ],
   benefitesTitle: 'What <span>benefits</span> are waiting for you?',
@@ -4641,10 +4798,6 @@ export const aboutUsPage = {
       benefitesName: 'Competitive salary',
     },
     {
-      benefitesIcon: eyeglassesv2,
-      benefitesName: 'Compensation for eyeglasses',
-    },
-    {
       benefitesIcon: gradutaionCapv2,
       benefitesName: 'Allowance for first-graders',
     },
@@ -4664,38 +4817,6 @@ export const aboutUsPage = {
   ],
 };
 
-export const developmentServices = [
-  {
-    title: 'Custom Flutter App Development',
-    description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-  },
-  {
-    title: 'Custom Flutter App Development',
-    description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-  },
-  {
-    title: 'Custom Flutter App Development',
-    description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-  },
-  {
-    title: 'Custom Flutter App Development',
-    description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-  },
-  {
-    title: 'Custom Flutter App Development',
-    description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-  },
-  {
-    title: 'Custom Flutter App Development',
-    description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-  },
-];
 export const whyChooseOptimity = [
   {
     title: `Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text`,
@@ -4729,111 +4850,6 @@ export const flutterCrossApp = [
     title: '100% refund policy*',
   },
 ];
-
-export const developmentProcess = [
-  {
-    processHeading: 'Strategy and Planning',
-    procesDataList: [
-      {
-        title: 'Strategy and Planning',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Intuitive UX and UI Designing',
-        description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-      },
-      {
-        title: 'Development and Testing',
-        description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-      },
-      {
-        title: 'Deployment and Support',
-        description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-      },
-    ],
-  },
-  {
-    processHeading: 'Intuitive UX and UI Designing',
-    procesDataList: [
-      {
-        title: 'Intuitive UX and UI Designing',
-        description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-      },
-      {
-        title: 'Strategy and Planning',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Development and Testing',
-        description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-      },
-      {
-        title: 'Deployment and Support',
-        description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-      },
-    ],
-  },
-  {
-    processHeading: 'Development and Testing',
-    procesDataList: [
-      {
-        title: 'Development and Testing',
-        description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-      },
-      {
-        title: 'Strategy and Planning',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Intuitive UX and UI Designing',
-        description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-      },
-
-      {
-        title: 'Deployment and Support',
-        description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-      },
-    ],
-  },
-  {
-    processHeading: 'Deployment and Support',
-    procesDataList: [
-      {
-        title: 'Deployment and Support',
-        description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-      },
-      {
-        title: 'Strategy and Planning',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Intuitive UX and UI Designing',
-        description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-      },
-      {
-        title: 'Development and Testing',
-        description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-      },
-    ],
-  },
-];
-
 export const ourIndustries = [
   {
     id: 'real-estate',
@@ -4966,5 +4982,152 @@ export const services = [
     title: 'AI Solutions for Generative Tasks',
     description:
       'Intelligent chatbots, financial robo-advisors, IT lifecycle automation, and other next-gen solutions are designed by our generative AI experts to empower your business with cutting-edge AI innovations.',
+  },
+];
+
+export const ourWorks = [
+  {
+    categories: 'All',
+    subcategories: [
+      {
+        name: 'Sports',
+        articles: [],
+      },
+      {
+        name: 'Fitness',
+        articles: [],
+      },
+      {
+        name: 'Finance',
+        articles: [],
+      },
+    ],
+  },
+  {
+    categories: 'Industries',
+    subcategories: [
+      {
+        name: 'Healthcare',
+        articles: [
+          {
+            id: 1,
+            date: 'September 29, 2025',
+            readTime: '10 Min Read',
+            title: 'Full Stack Developer vs Specialized: A Complete Guide',
+            description:
+              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+            image: healthare,
+            buttonText: 'Read More',
+          },
+          {
+            id: 2,
+            date: 'September 29, 2025',
+            readTime: '10 Min Read',
+            title: 'Full Stack Developer vs Specialized: A Complete Guide',
+            description:
+              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+            image: healthare,
+            buttonText: 'Read More',
+          },
+          {
+            id: 3,
+            date: 'September 29, 2025',
+            readTime: '10 Min Read',
+            title: 'Full Stack Developer vs Specialized: A Complete Guide',
+            description:
+              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+            image: healthare,
+            buttonText: 'Read More',
+          },
+        ],
+      },
+      {
+        name: 'Real Estate',
+        articles: [
+          {
+            id: 3,
+            date: 'September 29, 2025',
+            readTime: '10 Min Read',
+            title: 'Full Stack Developer vs Specialized: A Complete Guide',
+            description:
+              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+            image: healthare,
+            buttonText: 'Read More',
+          },
+        ],
+      },
+      {
+        name: 'Education',
+        articles: [
+          {
+            id: 4,
+            date: 'September 29, 2025',
+            readTime: '10 Min Read',
+            title: 'Full Stack Developer vs Specialized: A Complete Guide',
+            description:
+              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+            image: healthare,
+            buttonText: 'Read More',
+          },
+        ],
+      },
+      {
+        name: 'Sports',
+        articles: [],
+      },
+      {
+        name: 'Fitness',
+        articles: [],
+      },
+      {
+        name: 'Finance',
+        articles: [],
+      },
+    ],
+  },
+  {
+    categories: 'Services',
+    subcategories: [
+      {
+        name: 'Web-development',
+        articles: [],
+      },
+      {
+        name: 'Mobile Apps',
+        articles: [],
+      },
+    ],
+  },
+];
+export const deployProjects = [
+  {
+    projectImg: '/webp/project/riskbeach.webp',
+    projectName: 'Ricks Beach Rentals',
+    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+  },
+  {
+    projectImg: '/webp/project/hts.webp',
+    projectName: 'HTS',
+    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+  },
+  {
+    projectImg: '/webp/project/hopper.webp',
+    projectName: 'Hopper',
+    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+  },
+  {
+    projectImg: '/webp/project/riskbeach.webp',
+    projectName: 'Ricks Beach',
+    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+  },
+  {
+    projectImg: '/webp/project/riskbeach.webp',
+    projectName: 'Ricks Beach',
+    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+  },
+  {
+    projectImg: '/webp/project/riskbeach.webp',
+    projectName: 'Ricks Beach',
+    projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
   },
 ];
