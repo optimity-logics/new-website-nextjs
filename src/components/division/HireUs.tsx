@@ -1,0 +1,463 @@
+'use client';
+import AnimatedArrow from '@/components/common/AnimatedArrow';
+import Container from '@/components/ui/Container';
+import { homePageData } from '@/components/utils/Constant';
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import MarqueeWrapper from '@/components/model-&-Drawer/MarqueeWrapper';
+
+const HireUs = () => {
+  const [hover, setHover] = useState<boolean>(false);
+  const [hoverContact, setHoverContact] = useState<boolean>(false);
+
+  const handleMouseEnter = () => setHover(true);
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
+  const handleMouseEnterContact = () => setHoverContact(true);
+  const handleMouseLeaveContact = () => {
+    setHoverContact(false);
+  };
+  const workStep = [
+    {
+      title: 'Research & analysis',
+      description:
+        'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+    },
+    {
+      title: 'Concept & sketch',
+      description:
+        'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+    },
+    {
+      title: 'Design & branding',
+      description:
+        'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+    },
+    {
+      title: 'Development & testing',
+      description:
+        'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+    },
+    {
+      title: 'Delivery & maintenance',
+      description:
+        'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+    },
+  ];
+  const advantagesCard = [
+    {
+      title: 'Your Team, Your Selection',
+      description:
+        'You will get complete access to talk with the chosen developers at all times through Skype, email and phone with scheduled audio/video conferencing to overcome the communication barrier.',
+    },
+    {
+      title: 'Direct Communication',
+      description:
+        'You will get complete access to talk with the chosen developers at all times through Skype, email and phone with scheduled audio/video conferencing to overcome the communication barrier. You will get complete access to talk with the chosen develop.',
+    },
+    {
+      title: 'ZERO Upfront Investment',
+      description:
+        'You will get complete access to talk with the chosen developers at all times through Skype, email and phone with scheduled audio/video conferencing to overcome the communication barrier.',
+    },
+    {
+      title: 'Your Team, Your Selection',
+      description:
+        'You will get complete access to talk with the chosen developers at all times through Skype, email and phone with scheduled audio/video conferencing to overcome the communication barrier.',
+    },
+  ];
+  const marqueeOne = [
+    '/images/hire-us/marquee_1_2.png',
+    '/images/hire-us/marquee_1_2_3.png',
+    '/images/hire-us/marquee_1_2.png',
+    '/images/hire-us/marquee_1_2_3.png',
+    '/images/hire-us/marquee_1_2.png',
+  ];
+  const marqueeSec = [
+    '/images/hire-us/marquee_2.png',
+    '/images/hire-us/marquee_2_2.png',
+    '/images/hire-us/marquee_2.png',
+    '/images/hire-us/marquee_2_2.png',
+    '/images/hire-us/marquee_2.png',
+    '/images/hire-us/marquee_2_2.png',
+  ];
+  return (
+    <>
+      <Container className="mb-[60px] flex flex-col-reverse items-center justify-between gap-10 md:flex-row xxl:mb-[100px]">
+        <div className="flex w-full max-w-[600px] flex-col gap-10">
+          <div className="flec flex-col gap-4">
+            <h2 className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]">
+              Engage Dedicated Offshore Developers
+            </h2>
+            <p className="w-full font-base text-lg font-normal leading-6 text-primary opacity-50">
+              At Optimity Logics, you&#39;ll find a powerhouse of top-tier
+              industrial talents spanning web developers, project managers, QA
+              analysts, UI/UX designers, business analysts, technical experts,
+              and consultants.
+            </p>
+          </div>
+          <Link
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            onMouseUp={handleMouseEnter}
+            onMouseDown={handleMouseLeave}
+            href={'/'}
+            className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+          >
+            Let’s consult with our expert
+            <AnimatedArrow hover={hover} />
+          </Link>
+        </div>
+        <div className="relative">
+          <Image
+            src="/images/hire-us/hire-us.png"
+            alt="hire-us"
+            width={400}
+            height={100}
+            className="absolute -left-1/2 bottom-5 hidden h-auto 3xl:block"
+          />
+          <Image
+            src="/images/hire-us/hire-us-main.png"
+            alt="hire-us"
+            width={600}
+            height={100}
+            className="h-auto: w-full max-w-[500px]"
+          />
+        </div>
+      </Container>
+      <Container className="mb-[60px] flex flex-col gap-8 4xl:mb-[100px] 4xl:gap-[60px]">
+        <h3 className="text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
+          <span className="text-red">Hire Based</span> on Your Requirement
+        </h3>
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-stack">
+            <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
+              <span className="rounded-lg bg-white/30 px-4 py-2 font-base text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
+                full time
+              </span>
+              <p className="font-base text-2xl font-normal leading-7 text-white">
+                8 hours / day 5 days / week
+              </p>
+            </div>
+            <Image
+              src={'/images/hire-us/full-time.png'}
+              alt="hire-us"
+              width={533}
+              height={333}
+              className="w-full md:w-max"
+            />
+          </div>
+          <div className="grid grid-stack">
+            <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
+              <span className="rounded-lg bg-white/30 px-4 py-2 font-base text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
+                Part time
+              </span>
+              <p className="font-base text-2xl font-normal leading-7 text-white">
+                4 hours / day 5 days / week
+              </p>
+            </div>
+            <Image
+              src={'/images/hire-us/part-time.png'}
+              alt="hire-us"
+              width={533}
+              height={333}
+              className="w-full md:w-max"
+            />
+          </div>
+          <div className="grid grid-stack">
+            <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
+              <span className="rounded-lg bg-white/30 px-4 py-2 font-base text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
+                hourly basis
+              </span>
+              <p className="font-base text-2xl font-normal leading-7 text-white">
+                Starts with 40 hours Pay as you go
+              </p>
+            </div>
+            <Image
+              src={'/images/hire-us/hours-base.png'}
+              alt="hire-us"
+              width={533}
+              height={333}
+              className="w-full md:w-max"
+            />
+          </div>
+        </div>
+      </Container>
+      <div
+        style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
+        className="mb-[60px] bg-tech-we-work bg-cover bg-no-repeat 4xl:mb-[100px]"
+      >
+        <Container className="flex flex-col items-center justify-between gap-10 py-12 lg:flex-row">
+          <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-5">
+              <h5 className="font-base text-3xl font-normal leading-8 text-white opacity-80">
+                Choose Your Ideal Engagement Model.{' '}
+              </h5>
+              <h3 className="font-base text-5xl font-medium italic text-red">
+                Flexible, Simple, and Efficient.
+              </h3>
+            </div>
+            <Link
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              onMouseUp={handleMouseEnter}
+              onMouseDown={handleMouseLeave}
+              href={'/'}
+              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal capitalize leading-tight text-white"
+            >
+              contact us
+              <AnimatedArrow hover={hover} />
+            </Link>
+          </div>
+          <div className="">
+            <Image
+              src="/images/hire-us/world-wide.png"
+              alt=""
+              width={550}
+              height={400}
+              className="h-auto max-w-[350px]"
+            />
+          </div>
+        </Container>
+      </div>
+      <div className="grid bg-[#F7F7F8] py-10 xxl:py-20">
+        <Container className="relative z-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="absolute -z-10 flex h-full w-full items-center justify-center">
+            <Image
+              src="/images/hire-us/circle.png"
+              alt="circle"
+              width={550}
+              height={500}
+            />
+          </div>
+          <div className="flex flex-col gap-6">
+            <h4 className="font-base text-5xl font-medium text-black">
+              How we work
+            </h4>
+            <p className="font-base text-lg font-normal leading-6 text-black-500-alpha">
+              Lorem Ipsum is to expedite the integration of new technologies
+              within enterprises, addressing the inevitable challenges that
+              accompany digital expansion and fostering continuous innovation.
+              Whether it&#39;s a consumer-focused application or a game-changing
+              enterprise solution.
+            </p>
+          </div>
+          {workStep &&
+            workStep.map((item, i) => (
+              <div
+                key={i}
+                className="flex flex-col gap-[30px] rounded-[20px] bg-white/70 p-[30px] shadow-howWorkCard backdrop-blur-sm"
+              >
+                <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] font-base text-xl font-medium text-white">
+                  0{i + 1}
+                </span>
+                <div className="flex flex-col gap-3">
+                  <h5 className="font-base text-2xl font-medium leading-6 text-black">
+                    {item?.title}
+                  </h5>
+                  <p className="font-base text-lg font-normal leading-6 text-black/50">
+                    {item?.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+        </Container>
+      </div>
+      <div
+        style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
+        className="mb-[60px] bg-tech-we-work bg-cover bg-no-repeat 4xl:mb-[100px]"
+      >
+        <div className="flex flex-col items-center gap-10 py-12">
+          <h3 className="mx-auto w-full max-w-[800px] text-center font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
+            <span className="text-red">Advantages!</span> Things You Will Always
+            Love to Have
+          </h3>
+          <div className="flex w-full items-stretch gap-4 overflow-x-auto px-7 scrollbar-hide">
+            {advantagesCard &&
+              advantagesCard.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex w-full min-w-[300px] flex-col gap-3 rounded-2xl bg-white/10 p-[30px] backdrop-blur-md sm:min-w-[550px]"
+                >
+                  <h5 className="font-base text-2xl font-medium leading-6 text-white">
+                    {item?.title}
+                  </h5>
+                  <p className="line-clamp-6 font-base text-lg font-normal leading-6 text-subtle">
+                    {item?.description}
+                  </p>
+                </div>
+              ))}
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col items-center gap-10">
+        <h3 className="mx-auto w-full max-w-[800px] text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
+          <span className="text-red">Hire Based </span> on Your Requirement
+        </h3>
+
+        <MarqueeWrapper speed={100} pauseOnHover direction="right">
+          {marqueeOne &&
+            marqueeOne.map((item, i) => (
+              <div key={i} className="h-auto max-w-[400px] last-of-type:mr-10">
+                <Image
+                  src={item}
+                  alt="img"
+                  width={540}
+                  height={460}
+                  className="h-max w-max rounded-2xl"
+                />
+              </div>
+            ))}
+        </MarqueeWrapper>
+        <MarqueeWrapper speed={100} pauseOnHover direction="left">
+          {marqueeSec &&
+            marqueeSec.map((item, i) => (
+              <div key={i} className="h-auto max-w-[400px] last-of-type:mr-10">
+                <Image
+                  src={item}
+                  alt="img"
+                  width={600}
+                  height={640}
+                  className="h-max w-max rounded-2xl"
+                />
+              </div>
+            ))}
+        </MarqueeWrapper>
+      </div>
+      <div className="relative mx-auto max-w-[1680px] py-[60px] 4xl:py-[100px]">
+        <div
+          style={{
+            backgroundImage: "url('/images/homePagev2/Line1.png')",
+            WebkitMaskImage:
+              'linear-gradient(90deg, rgba(102, 102, 102, 0.11) 0.6%, #666666 50.78%, rgba(102, 102, 102, 0.11) 100%)',
+          }}
+          className="absolute inset-y-0 left-[15px] w-[1px] bg-cover sm:left-[22px] md:left-[31px] xl:left-[39px] 3xl:left-[119px]"
+        ></div>
+        <div
+          style={{
+            backgroundImage: "url('/images/homePagev2/Line1.png')",
+            WebkitMaskImage:
+              'linear-gradient(90deg, rgba(102, 102, 102, 0.11) 0.6%, #666666 50.78%, rgba(102, 102, 102, 0.11) 100%)',
+          }}
+          className="-0 absolute inset-y-0 right-[15px] w-[1px] bg-cover sm:right-[22px] md:right-[31px] xl:right-[39px] 3xl:right-[119px]"
+        ></div>
+        <div className="relative px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-[120px]">
+          <div
+            style={{
+              WebkitMaskImage:
+                'linear-gradient(90deg, rgba(102,102,102,0.11) 0.6%, #666666 50.78%, rgba(102,102,102,0.11) 100%)',
+            }}
+            className="absolute inset-x-0 -top-[3px] h-[1px] border-1 border-dashed border-gray opacity-30"
+          ></div>
+          <div
+            style={{
+              WebkitMaskImage:
+                'linear-gradient(90deg, rgba(102,102,102,0.11) 0.6%, #666666 50.78%, rgba(102,102,102,0.11) 100%)',
+            }}
+            className="absolute inset-x-0 bottom-[-3px] !h-[1px] border-1 border-dashed border-gray opacity-30"
+          ></div>
+
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <motion.div
+              onMouseMove={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+
+                e.currentTarget.style.transform = `
+              perspective(1000px) 
+              rotateX(${-y / 60}deg) 
+              rotateY(${x / 60}deg) 
+              scale(1.02)
+            `;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = `
+              perspective(1000px) 
+              rotateX(0deg) 
+              rotateY(0deg) 
+              scale(1)
+            `;
+              }}
+              style={{
+                transition: 'transform 0.3s ease-out',
+              }}
+              className="row-start-3 md:col-start-2 md:row-span-2 md:row-start-4 xl:col-start-3 xl:row-start-2"
+            >
+              <div className="flex h-full flex-col justify-between gap-14 rounded-[17px] bg-black p-5 backdrop-blur-lg md:px-[28px] md:py-[32px]">
+                <p className="font-base text-2xl font-extrabold leading-8 text-white md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
+                  {homePageData?.contactUsCardTitle}
+                </p>
+                <Link
+                  onMouseEnter={handleMouseEnterContact}
+                  onMouseLeave={handleMouseLeaveContact}
+                  onMouseUp={handleMouseEnterContact}
+                  onMouseDown={handleMouseLeaveContact}
+                  href={homePageData?.contactUsCardBtnLink}
+                  className="flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-primary"
+                >
+                  {homePageData?.contactUsCardBtn}
+                  <AnimatedArrow hover={hoverContact} />
+                </Link>
+              </div>
+            </motion.div>
+            {homePageData?.clientReview &&
+              homePageData?.clientReview.map((item, index) => (
+                <motion.div
+                  key={index}
+                  onMouseMove={(e) => {
+                    const rect = e.currentTarget.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+
+                    e.currentTarget.style.transform = `
+              perspective(1000px) 
+              rotateX(${-y / 20}deg) 
+              rotateY(${x / 20}deg) 
+              scale(1.05)
+            `;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = `
+              perspective(1000px) 
+              rotateX(0deg) 
+              rotateY(0deg) 
+              scale(1)
+            `;
+                  }}
+                  style={{
+                    transition: 'transform 0.3s ease-out',
+                  }}
+                >
+                  <div
+                    className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
+                  >
+                    <p className="line-clamp-5 font-base text-base font-normal leading-6 text-secondary opacity-80 md:text-lg md:leading-7">
+                      {item?.message}
+                    </p>
+                    <div className="flex items-center justify-between gap-2.5">
+                      <p className="font-base text-base font-normal leading-5 text-subtle">
+                        {item?.role}
+                      </p>
+                      <Image
+                        src={item?.avatar}
+                        alt="client"
+                        width={67}
+                        height={67}
+                        className="h-[67px] w-[67px] rounded-[12px] object-cover outline outline-[2px] -outline-offset-1 outline-[#0000001A]"
+                      />
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default HireUs;

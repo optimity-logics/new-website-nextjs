@@ -112,21 +112,23 @@ const Career = () => {
             }
             className="4xl:gap-[30px]"
           />
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-10 xl:gap-y-8">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:gap-6 xxl:grid-cols-4">
             {aboutUsPage?.benefitesList &&
               aboutUsPage?.benefitesList.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 rounded-[10px] bg-benefits p-3 md:gap-[18px] md:px-[22px] md:py-5"
+                  className="flex min-h-[150px] flex-col items-center justify-between gap-9 rounded-[10px] bg-benefits bg-full bg-bottom bg-no-repeat p-12 md:gap-[18px]"
                 >
-                  <Image
-                    src={item?.benefitesIcon}
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="max-w-7"
-                  />
-                  <p className="font-base text-sm font-normal text-white md:text-base md:leading-6 xl:text-[18px]">
+                  <div className="-mt-14 flex h-[60px] w-[60px] items-center justify-center rounded-xl bg-white shadow-card">
+                    <Image
+                      src={item?.benefitesIcon}
+                      alt=""
+                      width={50}
+                      height={50}
+                      className="max-w-7"
+                    />
+                  </div>
+                  <p className="px-10 text-center font-base text-base font-normal text-primary md:text-base md:leading-7 xl:text-[18px]">
                     {item?.benefitesName}
                   </p>
                 </div>

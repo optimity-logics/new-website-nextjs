@@ -107,6 +107,8 @@ import { internetOfThingsData } from '@/components/utils/technology/trending/iot
 import { Metadata } from 'next';
 import { generateSEOMetadata } from '@/components/utils/MetaData';
 import { SEO } from '@/components/utils/TitleAndDescription';
+import HireUs from '@/components/division/HireUs';
+import Solution from '@/components/division/Solution';
 
 type Params = Promise<{ service: string }>;
 
@@ -288,9 +290,33 @@ const SubcategoryPage = async (props: { params: Params }) => {
             : service.split('-')[0];
 
   const pageData = mainService ? dataMap[mainService as ServiceKey] : null;
+  if (!pageData) return <p>Data not found.</p>;
+  if (service.startsWith('hire')) {
+    return <HireUs />;
+  }
+  if (
+    [
+      'healthcare',
+      'fintech',
+      'real',
+      'ecommerce',
+      'educational',
+      'logistics',
+      'educational',
+      'logistics',
+      'devops',
+      'cloud',
+      'product',
+      'on',
+      'startup',
+      'enterprise',
+    ].includes(mainService)
+  ) {
+    return <Solution />;
+  }
 
-  return pageData ? <AllPageContent /> : <p>Data not found.</p>;
-  // return pageData ? <AllPageContent data={pageData} /> : <p>Data not found.</p>;
+  // Default → technology
+  return <AllPageContent data={pageData} />;
 };
 
 export default SubcategoryPage;

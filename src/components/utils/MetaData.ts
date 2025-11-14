@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 interface SEOParams {
-  title: string;
+  title?: string;
   description?: string;
   og_url?: string;
   og_image?: string;
@@ -14,7 +14,7 @@ export function generateSEOMetadata({
   og_image,
 }: SEOParams): Metadata {
   return {
-    title,
+    title: title || 'Optimity Logics',
     description:
       description ||
       'As a prominent Node.js development firm, Optimity Logics specializes in crafting fast, scalable, and real-time applications.',
