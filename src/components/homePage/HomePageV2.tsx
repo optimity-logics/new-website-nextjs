@@ -794,7 +794,10 @@ const HomePageV2 = () => {
               </p>
               <div className="flex flex-col gap-[15px]">
                 <div className="flex flex-col gap-1">
-                  <div className="flex items-center gap-2 sm:gap-[15px]">
+                  <Link
+                    href={`tel:+91 635 301 5499`}
+                    className="flex items-center gap-2 sm:gap-[15px]"
+                  >
                     <div className="w-full max-w-max">
                       <Image
                         src={phone}
@@ -806,8 +809,11 @@ const HomePageV2 = () => {
                     <span className="font-base text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
                       +91 635 301 5499
                     </span>
-                  </div>
-                  <div className="flex items-center gap-2 sm:gap-[15px]">
+                  </Link>
+                  <Link
+                    href={'mailto: info@optimitylogics.com'}
+                    className="flex items-center gap-2 sm:gap-[15px]"
+                  >
                     <div className="w-full max-w-max">
                       <Image
                         src={email}
@@ -819,7 +825,7 @@ const HomePageV2 = () => {
                     <span className="font-base text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
                       info@optimitylogics.com
                     </span>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <SocialMedia />

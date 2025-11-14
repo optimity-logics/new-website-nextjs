@@ -88,7 +88,7 @@ const HireUs = () => {
     <>
       <Container className="mb-[60px] flex flex-col-reverse items-center justify-between gap-10 md:flex-row xxl:mb-[100px]">
         <div className="flex w-full max-w-[600px] flex-col gap-10">
-          <div className="flec flex-col gap-4">
+          <div className="flex flex-col gap-5">
             <h2 className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]">
               Engage Dedicated Offshore Developers
             </h2>
