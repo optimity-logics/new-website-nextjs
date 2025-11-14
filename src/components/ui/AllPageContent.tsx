@@ -99,7 +99,7 @@ const AllPageContent = ({ data }: IPropsType) => {
   return (
     <>
       <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-full bg-no-repeat pt-20">
-        <Container className="relative flex flex-col items-center justify-between gap-5 py-20 md:flex-row">
+        <Container className="relative z-20 flex flex-col items-center justify-between gap-5 py-20 md:flex-row">
           <div className="flex w-full max-w-[877px] flex-col gap-10">
             <div className="flex flex-col gap-[30px]">
               <HighlitedDescription
@@ -135,7 +135,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             )}
           </div>
           {data?.HeroSectionData?.techName && (
-            <span className="absolute -bottom-[5%] left-1/2 block -translate-x-1/2 text-center font-base text-[100px] font-medium text-[#161616] opacity-10 md:-bottom-[18%] md:text-[200px] xl:-bottom-[25%] xl:text-[280px]">
+            <span className="absolute -bottom-[1.5%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-base text-[45px] font-medium text-[#161616] opacity-10 sm:-bottom-[3%] sm:text-[70px] md:-bottom-[6%] md:text-[100px]">
               {data?.HeroSectionData?.techName}
             </span>
           )}
