@@ -314,8 +314,6 @@ const SubcategoryPage = async (props: { params: Params }) => {
   ) {
     return <Solution />;
   }
-
-  // Default → technology
   return <AllPageContent data={pageData} />;
 };
 
