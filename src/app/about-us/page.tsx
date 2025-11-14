@@ -415,7 +415,11 @@ const AboutUs = () => {
             slidesPerView={1}
             breakpoints={{
               540: {
-                slidesPerView: 2.3,
+                slidesPerView: 1.5,
+                spaceBetween: 30,
+              },
+              1280: {
+                slidesPerView: 1.8,
                 spaceBetween: 30,
               },
             }}
@@ -429,7 +433,7 @@ const AboutUs = () => {
               aboutUsPage?.ourTeamList.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="!flex !h-auto !flex-col gap-6 rounded-2xl bg-white !p-5 shadow-lg lg:!flex-row"
+                  className="!flex !h-auto !flex-col !items-center gap-6 rounded-2xl bg-white !p-5 shadow-lg lg:!flex-row"
                 >
                   <div
                     className={`flex w-full max-w-[300px] items-center justify-center rounded-2xl bg-lightBlue/50 p-2 ${index % 2 !== 0 ? 'rounded-[0_100%_100%_100%]' : 'rounded-[100%_100%_0_100%]'}`}
