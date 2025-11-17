@@ -66,7 +66,7 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}
-            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-base text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
+            className="w-ful lbg-transparent font-base border-b border-b-[#D1D9E6] pb-4 text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
           />
           {formik.touched.name && formik.errors.name ? (
             <div className="font-base text-base font-light leading-4 text-red">
@@ -90,7 +90,7 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
-            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-base text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
+            className="w-ful lbg-transparent font-base border-b border-b-[#D1D9E6] pb-4 text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
           />
           {formik.touched.email && formik.errors.email ? (
             <div className="font-base text-base font-light leading-4 text-red">
@@ -114,7 +114,7 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.phoneNumber}
-            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-base text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
+            className="w-ful lbg-transparent font-base border-b border-b-[#D1D9E6] pb-4 text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
           />
           {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
             <div className="font-base text-base font-light leading-4 text-red">
@@ -137,7 +137,7 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
-            className="w-ful lbg-transparent border-b border-b-[#D1D9E6] pb-4 font-base text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
+            className="w-ful lbg-transparent font-base border-b border-b-[#D1D9E6] pb-4 text-lg font-normal leading-6 text-primary outline-none placeholder:text-[#999999] focus:border-b-charcoalBlue"
           />
           {formik.touched.message && formik.errors.message ? (
             <div className="font-base text-base font-light leading-4 text-red">

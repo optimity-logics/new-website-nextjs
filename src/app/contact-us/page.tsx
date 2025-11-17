@@ -51,7 +51,7 @@ const ContactUs = () => {
               <h5 className="font-base text-xl font-medium leading-7 text-primary">
                 Address
               </h5>
-              <span className="max-w-[500px] font-base text-lg font-normal leading-6 text-primary">
+              <span className="font-base max-w-[500px] text-lg font-normal leading-6 text-primary">
                 A-566, Money Plant High Street, Jagatpur Road, Sarkhej -
                 Gandhinagar Hwy, nr. BSNL Office, Gota, Ahmedabad, Gujarat
                 382470

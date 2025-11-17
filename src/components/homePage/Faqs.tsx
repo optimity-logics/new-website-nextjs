@@ -1,5 +1,5 @@
 'use client';
-import SectionHeading from '../ui/SectionHeading';
+import SectionHeading from '../ui/HeroSectionHeading';
 import { homePageData } from '../utils/Constant';
 import FaqsAccordion from '../ui/FaqsAccordion';
 import { useState } from 'react';
@@ -22,7 +22,7 @@ const Faqs = () => {
             heading={homePageData?.faqTitle}
             className="!items-start !gap-3"
             description={homePageData?.faqsDescription}
-            descriptionStyle="!text-base !leading-5 !text-start"
+            descriptionStyle="!text-lg !leading-6 !text-start"
           />
           <Link
             onMouseEnter={handleMouseEnter}
@@ -30,7 +30,7 @@ const Faqs = () => {
             onMouseUp={handleMouseEnter}
             onMouseDown={handleMouseLeave}
             href={homePageData?.getInTouchBtnLink}
-            className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+            className="font-base flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] text-base font-normal leading-tight text-white"
           >
             {homePageData?.getInTouchBtn}
             <AnimatedArrow hover={hover} />

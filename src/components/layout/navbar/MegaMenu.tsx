@@ -104,7 +104,7 @@ export default function MegaMenu() {
             {item.megaMenuItem.length === 0 ? (
               <Link
                 href={`/${item.menuTitle.toLowerCase().replace(/\s+/g, '-')}`}
-                className={`cursor-pointer py-7 font-base font-normal capitalize leading-6 tracking-[0.5px] text-iconSubtle transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''} `}
+                className={`cursor-pointer py-7 font-opt font-normal capitalize leading-6 tracking-[0.5px] text-iconSubtle transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''} `}
               >
                 <span className="whitespace-pre text-base tracking-wide">
                   {item.menuTitle}
@@ -112,7 +112,7 @@ export default function MegaMenu() {
               </Link>
             ) : (
               <div
-                className={`cursor-pointer py-7 font-base font-normal capitalize leading-6 tracking-[0.5px] text-iconSubtle transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''}`}
+                className={`cursor-pointer py-7 font-opt font-normal capitalize leading-6 tracking-[0.5px] text-iconSubtle transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''}`}
               >
                 <span className="text-base tracking-wide">
                   {item.menuTitle}
@@ -160,7 +160,7 @@ export default function MegaMenu() {
                               height={24}
                             />
                           </div>
-                          <h4 className="whitespace-pre font-base text-base font-medium capitalize leading-6 text-iconSubtle">
+                          <h4 className="whitespace-pre font-opt text-base font-medium capitalize leading-6 text-iconSubtle">
                             {category.title}
                           </h4>
                         </div>
@@ -169,7 +169,7 @@ export default function MegaMenu() {
                             <li
                               key={idx}
                               onClick={() => setActiveMenu(null)}
-                              className="group cursor-pointer pl-2 font-base text-[15px] font-normal capitalize leading-[18px] text-primarySubtle transition-all duration-300 hover:text-primary"
+                              className="group cursor-pointer pl-2 font-opt text-[15px] font-normal capitalize leading-[18px] text-primarySubtle transition-all duration-300 hover:text-primary"
                             >
                               <Link
                                 href={items.techLink}
@@ -202,10 +202,10 @@ export default function MegaMenu() {
                           <Image src={phone} alt="" width={24} height={24} />
                         </div>
                         <div className="flex flex-col gap-2">
-                          <h6 className="font-base text-sm font-medium capitalize leading-4 text-primary">
+                          <h6 className="font-opt text-sm font-medium capitalize leading-4 text-primary">
                             India
                           </h6>
-                          <span className="font-base text-sm font-normal lowercase leading-4 text-gray">
+                          <span className="font-opt text-sm font-normal lowercase leading-4 text-gray">
                             +91 635 301 5499
                           </span>
                         </div>
@@ -215,10 +215,10 @@ export default function MegaMenu() {
                           <Image src={mail} alt="" width={24} height={24} />
                         </div>
                         <div className="flex flex-col gap-2">
-                          <h6 className="font-base text-sm font-medium capitalize leading-4 text-primary">
+                          <h6 className="font-opt text-sm font-medium capitalize leading-4 text-primary">
                             hr enquiries
                           </h6>
-                          <span className="font-base text-[15px] font-normal lowercase leading-4 text-gray">
+                          <span className="font-opt text-[15px] font-normal lowercase leading-4 text-gray">
                             {' '}
                             hr@optimitylogics.com
                           </span>
@@ -229,10 +229,10 @@ export default function MegaMenu() {
                           <Image src={mail} alt="" width={24} height={24} />
                         </div>
                         <div className="flex flex-col gap-2">
-                          <h6 className="font-base text-sm font-medium capitalize leading-4 text-primary">
+                          <h6 className="font-opt text-sm font-medium capitalize leading-4 text-primary">
                             sales enquiries
                           </h6>
-                          <span className="font-base text-[15px] font-normal lowercase leading-4 text-gray">
+                          <span className="font-opt text-[15px] font-normal lowercase leading-4 text-gray">
                             info@optimitylogics.com
                           </span>
                         </div>

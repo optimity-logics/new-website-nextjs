@@ -2,8 +2,12 @@ import { StaticImageData } from 'next/image';
 import { ReactNode } from 'react';
 
 export interface IFooterDataType {
-  heading: string;
-  items: { title: string; link: string }[];
+  copyRight: string;
+  footerLinks: {
+    heading: string;
+    items: { title: string; link: string }[];
+  }[];
+  otherLinks: { title: string; link: string }[];
 }
 
 export interface IFaqsData {
