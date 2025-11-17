@@ -225,7 +225,6 @@ const AboutUs = () => {
             <SectionHeader
               headingText={aboutUsPage?.expertiseTitle}
               isSectionDark={true}
-              className="w-max"
             />
             <Link
               onMouseEnter={handleMouseEnterViewAll}
