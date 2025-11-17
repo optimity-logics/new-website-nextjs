@@ -18,7 +18,7 @@ const CaseStudy = () => {
     <>
       <Container className="mb-10 pt-8 md:mb-12 xl:mb-16 xl:pt-10 3xl:pt-14 4xl:mb-[100px] 4xl:pt-20">
         <div className="flex flex-col items-center gap-7 lg:gap-10 xl:gap-12 3xl:gap-20">
-          <h3 className="mx-auto max-w-[1044px] text-center font-base text-xl font-medium text-[#192020] lg:text-2xl xl:text-3xl 3xl:text-4xl 5xl:text-[50px] 5xl:leading-[60px]">
+          <h3 className="font-base mx-auto max-w-[1044px] text-center text-xl font-medium text-[#192020] lg:text-2xl xl:text-3xl 3xl:text-4xl 5xl:text-[50px] 5xl:leading-[60px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry.
           </h3>
@@ -191,7 +191,7 @@ const CaseStudy = () => {
                           <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                             354+
                           </h5>
-                          <span className="text-nowrap font-base text-[26px] font-normal leading-[52px] text-primary">
+                          <span className="font-base text-nowrap text-[26px] font-normal leading-[52px] text-primary">
                             Completed Projects
                           </span>
                         </div>
@@ -201,7 +201,7 @@ const CaseStudy = () => {
                           <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                             15+
                           </h5>
-                          <span className="text-nowrap font-base text-[26px] font-normal leading-[52px] text-primary">
+                          <span className="font-base text-nowrap text-[26px] font-normal leading-[52px] text-primary">
                             Employees
                           </span>
                         </div>
@@ -226,7 +226,7 @@ const CaseStudy = () => {
                           <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                             05+
                           </h5>
-                          <span className="text-nowrap font-base text-[26px] font-normal leading-[52px] text-primary">
+                          <span className="font-base text-nowrap text-[26px] font-normal leading-[52px] text-primary">
                             Year Of Experience
                           </span>
                         </div>

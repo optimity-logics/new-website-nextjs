@@ -847,95 +847,105 @@ export const howWeWorkData = [
   'Delivery & maintenance',
 ];
 
-export const footerData: IFooterDataType[] = [
-  {
-    heading: 'Data',
-    items: [
-      { title: 'Data Engineering', link: '' },
-      { title: 'Data Science Solutions', link: '' },
-      { title: 'Data Analytics Services', link: '' },
-      { title: 'Big Data Services', link: '' },
-      { title: 'Business Intelligence', link: '' },
-    ],
-  },
-  {
-    heading: 'AI/ML',
-    items: [
-      { title: 'AI ML Development', link: '' },
-      { title: 'Generative AI Development', link: '' },
-      { title: 'Computer Vision Development', link: '' },
-      { title: 'AI Agent Development', link: '' },
-      { title: 'LLM Development Services', link: '' },
-    ],
-  },
-  {
-    heading: 'Cloud',
-    items: [
-      { title: 'Cloud Engineering', link: '' },
-      { title: 'Cloud App Development', link: '' },
-      { title: 'Cloud Managed Services', link: '' },
-      { title: 'Cloud Security Services', link: '' },
-      { title: 'Cloud Consulting', link: '' },
-    ],
-  },
-  {
-    heading: 'Software',
-    items: [
-      { title: 'Software Development', link: '' },
-      { title: 'Software Product Development', link: '' },
-      { title: 'Startups Software Development', link: '' },
-      { title: 'Enterprise Software Development', link: '' },
-      { title: 'Software Development Outsourcing', link: '' },
-    ],
-  },
-  {
-    heading: 'Application',
-    items: [
-      { title: 'Web Development', link: '' },
-      { title: 'Mobile App Development', link: '' },
-      { title: 'SaaS Development', link: '' },
-      { title: 'PWA Development', link: '' },
-      { title: 'Game Development', link: '' },
-      { title: 'Digital Twin Services', link: '' },
-      { title: 'Unreal Development', link: '' },
-    ],
-  },
-  {
-    heading: 'Hire',
-    items: [
-      { title: 'Hire Dedicated Developers', link: '' },
-      { title: 'Hire Dedicated Developers', link: '' },
-      { title: 'Software Developers', link: '' },
-      { title: 'Mobile App Developers', link: '' },
-      { title: 'Frontend Developers', link: '' },
-      { title: 'Backend Developers', link: '' },
-      { title: 'Unreal Engine Developers', link: '' },
-    ],
-  },
-  {
-    heading: 'Industries',
-    items: [
-      { title: 'Healthcare', link: '' },
-      { title: 'Education', link: '' },
-      { title: 'Sports', link: '' },
-      { title: 'Real Estate', link: '' },
-      { title: 'Fitness', link: '' },
-      { title: 'Finance', link: '' },
-      { title: 'Retail', link: '' },
-    ],
-  },
-  {
-    heading: 'Company',
-    items: [
-      { title: 'About Us', link: '' },
-      { title: 'Career', link: '/careers' },
-      { title: 'Life@OptimityLogics', link: '' },
-      { title: 'Partnership', link: '' },
-      { title: 'Client Testimonials', link: '' },
-      { title: 'FAQs', link: '' },
-    ],
-  },
-];
+export const footerData: IFooterDataType = {
+  copyRight: 'Optimity Logics. All rights reserved.',
+  footerLinks: [
+    {
+      heading: 'Data',
+      items: [
+        { title: 'Data Engineering', link: '' },
+        { title: 'Data Science Solutions', link: '' },
+        { title: 'Data Analytics Services', link: '' },
+        { title: 'Big Data Services', link: '' },
+        { title: 'Business Intelligence', link: '' },
+      ],
+    },
+    {
+      heading: 'AI/ML',
+      items: [
+        { title: 'AI ML Development', link: '' },
+        { title: 'Generative AI Development', link: '' },
+        { title: 'Computer Vision Development', link: '' },
+        { title: 'AI Agent Development', link: '' },
+        { title: 'LLM Development Services', link: '' },
+      ],
+    },
+    {
+      heading: 'Cloud',
+      items: [
+        { title: 'Cloud Engineering', link: '' },
+        { title: 'Cloud App Development', link: '' },
+        { title: 'Cloud Managed Services', link: '' },
+        { title: 'Cloud Security Services', link: '' },
+        { title: 'Cloud Consulting', link: '' },
+      ],
+    },
+    {
+      heading: 'Software',
+      items: [
+        { title: 'Software Development', link: '' },
+        { title: 'Software Product Development', link: '' },
+        { title: 'Startups Software Development', link: '' },
+        { title: 'Enterprise Software Development', link: '' },
+        { title: 'Software Development Outsourcing', link: '' },
+      ],
+    },
+    {
+      heading: 'Application',
+      items: [
+        { title: 'Web Development', link: '' },
+        { title: 'Mobile App Development', link: '' },
+        { title: 'SaaS Development', link: '' },
+        { title: 'PWA Development', link: '' },
+        { title: 'Game Development', link: '' },
+        { title: 'Digital Twin Services', link: '' },
+        { title: 'Unreal Development', link: '' },
+      ],
+    },
+    {
+      heading: 'Hire',
+      items: [
+        { title: 'Hire Dedicated Developers', link: '' },
+        { title: 'Hire Dedicated Developers', link: '' },
+        { title: 'Software Developers', link: '' },
+        { title: 'Mobile App Developers', link: '' },
+        { title: 'Frontend Developers', link: '' },
+        { title: 'Backend Developers', link: '' },
+        { title: 'Unreal Engine Developers', link: '' },
+      ],
+    },
+    {
+      heading: 'Industries',
+      items: [
+        { title: 'Healthcare', link: '' },
+        { title: 'Education', link: '' },
+        { title: 'Sports', link: '' },
+        { title: 'Real Estate', link: '' },
+        { title: 'Fitness', link: '' },
+        { title: 'Finance', link: '' },
+        { title: 'Retail', link: '' },
+      ],
+    },
+    {
+      heading: 'Company',
+      items: [
+        { title: 'About Us', link: '' },
+        { title: 'Career', link: '/careers' },
+        { title: 'Life@OptimityLogics', link: '' },
+        { title: 'Partnership', link: '' },
+        { title: 'Client Testimonials', link: '' },
+        { title: 'FAQs', link: '' },
+      ],
+    },
+  ],
+  otherLinks: [
+    { title: 'About Us', link: '/about-us' },
+    { title: 'Insights', link: '' },
+    { title: 'Careers', link: '/careers' },
+    { title: 'Privacy Policy', link: '/privacy-policy' },
+    { title: 'Sitemap', link: '/sitemap' },
+  ],
+};
 
 export const technologyWeWorkData = [
   {
@@ -4298,6 +4308,144 @@ export const homePageData = {
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  aiSectionHeqading: 'Automated Data Intelligence',
+  aiSectionDescription:
+    'Data and AI/ML technologies can revolutionise your company. Find out what you need to know and automate critical processes to increase productivity, efficiency, and long-term growth.',
+  aiServices: [
+    {
+      title: 'Solutions for Data Science',
+      description:
+        'Customised intelligent data solutions, including data engineering, advanced analytics, and natural language processing (NLP), can help your company realise the full potential of its data.',
+    },
+    {
+      title: 'Progress in AI Research and Development',
+      description:
+        'Improve your products, automate your processes, and empower your team to make better decisions with the help of our deep AI knowledge.',
+    },
+    {
+      title: 'Advancements in Computer Vision',
+      description: `Whether it's object detection, visual analytics, or image recognition, we build bespoke computer vision solutions to meet your specific business needs and boost efficiency.`,
+    },
+    {
+      title: 'The Advancement of Machine Learning',
+      description: `Boost your company's performance with cutting-edge solutions, automated processes, and predictive insights made possible by machine learning applied to your datasets.`,
+    },
+    {
+      title: 'Integrating AI',
+      description:
+        'Maximise value and efficiency by seamlessly integrating advanced AI capabilities—including forecasting, conversational AI, workflow automation, predictive analytics, and more—into your existing systems.',
+    },
+    {
+      title: 'AI Solutions for Generative Tasks',
+      description:
+        'Intelligent chatbots, financial robo-advisors, IT lifecycle automation, and other next-gen solutions are designed by our generative AI experts to empower your business with cutting-edge AI innovations.',
+    },
+  ],
+  ourIndustriesTitle: 'Our Industries',
+  ourIndustries: [
+    {
+      id: 'real-estate',
+      label: 'Real Estate',
+      title: 'AI-Powered Real Estate Optimisation',
+      description:
+        'We develop AI-driven real estate platforms that automate leasing procedures, improve property valuations, and predict changes in the market. Our sophisticated systems combine workflow automation, predictive insights, and geospatial analytics to improve portfolio performance with unparalleled accuracy.',
+      sectionTitle: 'Perspectives on Property Value:',
+      features: [
+        'Predictive analytics models for automated property valuation',
+        'Analysis of market sentiment to guide timing and pricing',
+        'Dashboards of portfolio performance that provide useful investment signals',
+        'Automation of transaction workflow reducing the mean close times',
+      ],
+      image: realEstate,
+      LearnMore: 'Learn More',
+      link: '',
+    },
+    {
+      id: 'fintech',
+      label: 'Fintech',
+      title: 'Fintech Accuracy Driven by AI',
+      description:
+        'Our AI fintech solutions give banks and financial institutions automated fraud prevention, adaptive compliance tools, and extremely accurate risk modelling. In dynamic financial environments, we provide safe, predictive frameworks that improve decision-making and maintain confidence.',
+      sectionTitle: 'Capabilities for Risk Management:',
+      features: [
+        'Adaptive thresholds for real-time transaction monitoring',
+        'Automated KYC checks that incorporate identity verification processes',
+        'Predictive analytics-powered credit scoring models',
+        'Automation of regulatory reporting greatly lowers compliance overhead.',
+      ],
+      image: fintech,
+      LearnMore: 'Learn More',
+      link: '',
+    },
+    {
+      id: 'logistics',
+      label: 'Logistics',
+      title: 'AI-Optimized Logistics Flow',
+      description:
+        'We create AI-powered logistics ecosystems that automate route planning, predict changes in demand, and provide real-time shipment visibility. Our scalable platforms guarantee agility in changing global supply networks, optimise warehouse operations, and reduce transit delays.',
+      sectionTitle: 'Efficiency in Operations Measures:',
+      features: [
+        'Fuel consumption and distance are decreased by predictive routeing.',
+        'Utilisation rates are consistently improved by dynamic load balancing.',
+        'visibility in real time throughout the entire delivery network',
+        'Autonomous scheduling consistently reduces delays and downtime.',
+      ],
+      image: logistics,
+      LearnMore: 'Learn More',
+      link: '',
+    },
+    {
+      id: 'edtech',
+      label: 'EdTech',
+      title: 'EdTech AI Learning Customisation EdTech',
+      description:
+        'Our AI-powered EdTech platforms offer predictive learning analytics, real-time performance monitoring, and flexible curriculum pathways. With safe, scalable frameworks, we enable educational institutions to enhance student engagement, personalise instruction at scale, and attain quantifiable academic success.',
+      sectionTitle: 'Features of Adaptive Learning:',
+      features: [
+        'Learner analytics-powered personalised learning pathways',
+        'Grading procedures that are automated lowering the workload of instructors considerably',
+        'Targeted intervention strategies informed by engagement analytics In a timely manner',
+        'Scalable platform architecture that facilitates environments for blended learning',
+        'Change the Way People Learn',
+      ],
+      image: edTech,
+      LearnMore: 'Learn More',
+      link: '',
+    },
+    {
+      id: 'food-beverage',
+      label: 'Food and Beverage',
+      title: 'AI-Refined Food and Drink Systems',
+      description:
+        'In food and beverage operations, we create AI solutions that predict consumer demand, streamline supply chains, and protect product quality. Our intelligent platforms facilitate quick decision-making, increase consistency, and cut waste for long-term, sustainable industry growth.',
+      features: [
+        'Forecasting demand and streamlining production and procurement schedules',
+        'Stockouts and excess inventory are decreased by automated replenishment.',
+        'Consistent product standards are guaranteed by AI quality monitoring.',
+        'Optimising the production line for effective throughput control',
+      ],
+      image: FB,
+      LearnMore: 'Learn More',
+      link: '',
+    },
+    {
+      id: 'healthCare',
+      label: 'Healthcare',
+      title: 'Advances in Healthcare Driven by AI',
+      description:
+        'Our AI-powered medical systems streamline hospital resource management, expedite diagnostics, and customise treatment regimens. By utilising predictive analytics, patient data modelling, and advanced medical imaging, we improve results while maintaining operational excellence and compliance.',
+      sectionTitle: 'Clinical Impact Measures:',
+      features: [
+        'Early detection rates are consistently increased by predictive diagnostics.',
+        'Effectively prioritising critical patient care through automated triage',
+        'Automation of clinical workflow greatly lessens the administrative load.',
+        'Optimising resource allocation during times of high demand',
+      ],
+      image: healthCare,
+      LearnMore: 'Learn More',
+      link: '',
+    },
+  ],
   technologyWeWorkTitle: 'Technologies we work with',
   technologyWeWork: [
     {
@@ -4521,6 +4669,8 @@ export const homePageData = {
     'We’re Here to <span class="text-red">Help, Anytime.</span>',
   contactUsFormDescription:
     'Our support team is ready to provide prompt solutions and guidance to ensure your experience with us is seamless and satisfying.',
+  contactNumber: ' +91 635 301 5499',
+  contactEmail: 'info@optimitylogics.com',
   formFirstName: 'First Name',
   formLastName: 'Last Name',
   formEmail: 'Email Address',
@@ -4625,7 +4775,7 @@ export const aboutUsPage = {
         'Ensuring everything works as intended through rigorous manual + automated testing.',
     },
   ],
-  expertiseTitle: '',
+  expertiseTitle: 'Technology & Industry Expertise',
   expertise: [
     {
       img: '/images/about-us/web-apps.png',
@@ -4761,7 +4911,8 @@ export const aboutUsPage = {
       aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
     },
   ],
-  benefitesTitle: 'What <span>benefits</span> are waiting for you?',
+  benefitesTitle:
+    'What <span class="text-red">benefits</span> are waiting for you?',
   benefitesDescription:
     'Visioncraft offers a variety of hand-picked benefits that you can take advantage of!',
   benefitesList: [
@@ -4850,255 +5001,125 @@ export const flutterCrossApp = [
     title: '100% refund policy*',
   },
 ];
-export const ourIndustries = [
-  {
-    id: 'real-estate',
-    label: 'Real Estate',
-    title: 'AI-Powered Real Estate Optimisation',
-    description:
-      'We develop AI-driven real estate platforms that automate leasing procedures, improve property valuations, and predict changes in the market. Our sophisticated systems combine workflow automation, predictive insights, and geospatial analytics to improve portfolio performance with unparalleled accuracy.',
-    sectionTitle: 'Perspectives on Property Value:',
-    features: [
-      'Predictive analytics models for automated property valuation',
-      'Analysis of market sentiment to guide timing and pricing',
-      'Dashboards of portfolio performance that provide useful investment signals',
-      'Automation of transaction workflow reducing the mean close times',
-    ],
-    image: realEstate,
-    LearnMore: 'Learn More',
-    link: '',
-  },
-  {
-    id: 'fintech',
-    label: 'Fintech',
-    title: 'Fintech Accuracy Driven by AI',
-    description:
-      'Our AI fintech solutions give banks and financial institutions automated fraud prevention, adaptive compliance tools, and extremely accurate risk modelling. In dynamic financial environments, we provide safe, predictive frameworks that improve decision-making and maintain confidence.',
-    sectionTitle: 'Capabilities for Risk Management:',
-    features: [
-      'Adaptive thresholds for real-time transaction monitoring',
-      'Automated KYC checks that incorporate identity verification processes',
-      'Predictive analytics-powered credit scoring models',
-      'Automation of regulatory reporting greatly lowers compliance overhead.',
-    ],
-    image: fintech,
-    LearnMore: 'Learn More',
-    link: '',
-  },
-  {
-    id: 'logistics',
-    label: 'Logistics',
-    title: 'AI-Optimized Logistics Flow',
-    description:
-      'We create AI-powered logistics ecosystems that automate route planning, predict changes in demand, and provide real-time shipment visibility. Our scalable platforms guarantee agility in changing global supply networks, optimise warehouse operations, and reduce transit delays.',
-    sectionTitle: 'Efficiency in Operations Measures:',
-    features: [
-      'Fuel consumption and distance are decreased by predictive routeing.',
-      'Utilisation rates are consistently improved by dynamic load balancing.',
-      'visibility in real time throughout the entire delivery network',
-      'Autonomous scheduling consistently reduces delays and downtime.',
-    ],
-    image: logistics,
-    LearnMore: 'Learn More',
-    link: '',
-  },
-  {
-    id: 'edtech',
-    label: 'EdTech',
-    title: 'EdTech AI Learning Customisation EdTech',
-    description:
-      'Our AI-powered EdTech platforms offer predictive learning analytics, real-time performance monitoring, and flexible curriculum pathways. With safe, scalable frameworks, we enable educational institutions to enhance student engagement, personalise instruction at scale, and attain quantifiable academic success.',
-    sectionTitle: 'Features of Adaptive Learning:',
-    features: [
-      'Learner analytics-powered personalised learning pathways',
-      'Grading procedures that are automated lowering the workload of instructors considerably',
-      'Targeted intervention strategies informed by engagement analytics In a timely manner',
-      'Scalable platform architecture that facilitates environments for blended learning',
-      'Change the Way People Learn',
-    ],
-    image: edTech,
-    LearnMore: 'Learn More',
-    link: '',
-  },
-  {
-    id: 'food-beverage',
-    label: 'Food and Beverage',
-    title: 'AI-Refined Food and Drink Systems',
-    description:
-      'In food and beverage operations, we create AI solutions that predict consumer demand, streamline supply chains, and protect product quality. Our intelligent platforms facilitate quick decision-making, increase consistency, and cut waste for long-term, sustainable industry growth.',
-    features: [
-      'Forecasting demand and streamlining production and procurement schedules',
-      'Stockouts and excess inventory are decreased by automated replenishment.',
-      'Consistent product standards are guaranteed by AI quality monitoring.',
-      'Optimising the production line for effective throughput control',
-    ],
-    image: FB,
-    LearnMore: 'Learn More',
-    link: '',
-  },
-  {
-    id: 'healthCare',
-    label: 'Healthcare',
-    title: 'Advances in Healthcare Driven by AI',
-    description:
-      'Our AI-powered medical systems streamline hospital resource management, expedite diagnostics, and customise treatment regimens. By utilising predictive analytics, patient data modelling, and advanced medical imaging, we improve results while maintaining operational excellence and compliance.',
-    sectionTitle: 'Clinical Impact Measures:',
-    features: [
-      'Early detection rates are consistently increased by predictive diagnostics.',
-      'Effectively prioritising critical patient care through automated triage',
-      'Automation of clinical workflow greatly lessens the administrative load.',
-      'Optimising resource allocation during times of high demand',
-    ],
-    image: healthCare,
-    LearnMore: 'Learn More',
-    link: '',
-  },
-];
-export const services = [
-  {
-    title: 'Solutions for Data Science',
-    description:
-      'Customised intelligent data solutions, including data engineering, advanced analytics, and natural language processing (NLP), can help your company realise the full potential of its data.',
-  },
-  {
-    title: 'Progress in AI Research and Development',
-    description:
-      'Improve your products, automate your processes, and empower your team to make better decisions with the help of our deep AI knowledge.',
-  },
-  {
-    title: 'Advancements in Computer Vision',
-    description: `Whether it's object detection, visual analytics, or image recognition, we build bespoke computer vision solutions to meet your specific business needs and boost efficiency.`,
-  },
-  {
-    title: 'The Advancement of Machine Learning',
-    description: `Boost your company's performance with cutting-edge solutions, automated processes, and predictive insights made possible by machine learning applied to your datasets.`,
-  },
-  {
-    title: 'Integrating AI',
-    description:
-      'Maximise value and efficiency by seamlessly integrating advanced AI capabilities—including forecasting, conversational AI, workflow automation, predictive analytics, and more—into your existing systems.',
-  },
-  {
-    title: 'AI Solutions for Generative Tasks',
-    description:
-      'Intelligent chatbots, financial robo-advisors, IT lifecycle automation, and other next-gen solutions are designed by our generative AI experts to empower your business with cutting-edge AI innovations.',
-  },
-];
+export const ourWorkPage = {
+  headingTitle: 'Our Works',
+  headingDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  ourWorks: [
+    {
+      categories: 'All',
+      subcategories: [
+        {
+          name: 'Sports',
+          articles: [],
+        },
+        {
+          name: 'Fitness',
+          articles: [],
+        },
+        {
+          name: 'Finance',
+          articles: [],
+        },
+      ],
+    },
+    {
+      categories: 'Industries',
+      subcategories: [
+        {
+          name: 'Healthcare',
+          articles: [
+            {
+              id: 1,
+              date: 'September 29, 2025',
+              readTime: '10 Min Read',
+              title: 'Full Stack Developer vs Specialized: A Complete Guide',
+              description:
+                'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+              image: healthare,
+              buttonText: 'Read More',
+            },
+            {
+              id: 2,
+              date: 'September 29, 2025',
+              readTime: '10 Min Read',
+              title: 'Full Stack Developer vs Specialized: A Complete Guide',
+              description:
+                'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+              image: healthare,
+              buttonText: 'Read More',
+            },
+            {
+              id: 3,
+              date: 'September 29, 2025',
+              readTime: '10 Min Read',
+              title: 'Full Stack Developer vs Specialized: A Complete Guide',
+              description:
+                'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+              image: healthare,
+              buttonText: 'Read More',
+            },
+          ],
+        },
+        {
+          name: 'Real Estate',
+          articles: [
+            {
+              id: 3,
+              date: 'September 29, 2025',
+              readTime: '10 Min Read',
+              title: 'Full Stack Developer vs Specialized: A Complete Guide',
+              description:
+                'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+              image: healthare,
+              buttonText: 'Read More',
+            },
+          ],
+        },
+        {
+          name: 'Education',
+          articles: [
+            {
+              id: 4,
+              date: 'September 29, 2025',
+              readTime: '10 Min Read',
+              title: 'Full Stack Developer vs Specialized: A Complete Guide',
+              description:
+                'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+              image: healthare,
+              buttonText: 'Read More',
+            },
+          ],
+        },
+        {
+          name: 'Sports',
+          articles: [],
+        },
+        {
+          name: 'Fitness',
+          articles: [],
+        },
+        {
+          name: 'Finance',
+          articles: [],
+        },
+      ],
+    },
+    {
+      categories: 'Services',
+      subcategories: [
+        {
+          name: 'Web-development',
+          articles: [],
+        },
+        {
+          name: 'Mobile Apps',
+          articles: [],
+        },
+      ],
+    },
+  ],
+};
 
-export const ourWorks = [
-  {
-    categories: 'All',
-    subcategories: [
-      {
-        name: 'Sports',
-        articles: [],
-      },
-      {
-        name: 'Fitness',
-        articles: [],
-      },
-      {
-        name: 'Finance',
-        articles: [],
-      },
-    ],
-  },
-  {
-    categories: 'Industries',
-    subcategories: [
-      {
-        name: 'Healthcare',
-        articles: [
-          {
-            id: 1,
-            date: 'September 29, 2025',
-            readTime: '10 Min Read',
-            title: 'Full Stack Developer vs Specialized: A Complete Guide',
-            description:
-              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
-            image: healthare,
-            buttonText: 'Read More',
-          },
-          {
-            id: 2,
-            date: 'September 29, 2025',
-            readTime: '10 Min Read',
-            title: 'Full Stack Developer vs Specialized: A Complete Guide',
-            description:
-              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
-            image: healthare,
-            buttonText: 'Read More',
-          },
-          {
-            id: 3,
-            date: 'September 29, 2025',
-            readTime: '10 Min Read',
-            title: 'Full Stack Developer vs Specialized: A Complete Guide',
-            description:
-              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
-            image: healthare,
-            buttonText: 'Read More',
-          },
-        ],
-      },
-      {
-        name: 'Real Estate',
-        articles: [
-          {
-            id: 3,
-            date: 'September 29, 2025',
-            readTime: '10 Min Read',
-            title: 'Full Stack Developer vs Specialized: A Complete Guide',
-            description:
-              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
-            image: healthare,
-            buttonText: 'Read More',
-          },
-        ],
-      },
-      {
-        name: 'Education',
-        articles: [
-          {
-            id: 4,
-            date: 'September 29, 2025',
-            readTime: '10 Min Read',
-            title: 'Full Stack Developer vs Specialized: A Complete Guide',
-            description:
-              'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
-            image: healthare,
-            buttonText: 'Read More',
-          },
-        ],
-      },
-      {
-        name: 'Sports',
-        articles: [],
-      },
-      {
-        name: 'Fitness',
-        articles: [],
-      },
-      {
-        name: 'Finance',
-        articles: [],
-      },
-    ],
-  },
-  {
-    categories: 'Services',
-    subcategories: [
-      {
-        name: 'Web-development',
-        articles: [],
-      },
-      {
-        name: 'Mobile Apps',
-        articles: [],
-      },
-    ],
-  },
-];
 export const deployProjects = [
   {
     projectImg: '/webp/project/riskbeach.webp',

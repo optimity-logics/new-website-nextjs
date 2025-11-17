@@ -107,7 +107,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                             <Link
                               key={`link-${item.menuTitle || index}`}
                               href={`/${item?.menuTitle?.toLowerCase().replace(/\s+/g, '-')}`}
-                              className="block !w-full font-base text-base font-normal leading-[21.78px] text-iconSubtle md:text-xl md:leading-6"
+                              className="font-base block !w-full text-base font-normal leading-[21.78px] text-iconSubtle md:text-xl md:leading-6"
                             >
                               {item?.menuTitle}
                             </Link>
@@ -153,7 +153,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                                     <li
                                       key={idx}
                                       onClick={handleCloseDrower}
-                                      className="w-full cursor-pointer pl-2 font-base text-[15px] font-normal capitalize leading-[18px] text-primarySubtle transition-all duration-300 hover:text-primary"
+                                      className="font-base w-full cursor-pointer pl-2 text-[15px] font-normal capitalize leading-[18px] text-primarySubtle transition-all duration-300 hover:text-primary"
                                     >
                                       <Link
                                         href={items.techLink}
@@ -193,7 +193,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
               onMouseUp={handleMouseEnter}
               onMouseDown={handleMouseLeave}
               type="button"
-              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+              className="font-base flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] text-base font-normal leading-5 text-white"
             >
               Contact us
               <AnimatedArrow hover={hover} />

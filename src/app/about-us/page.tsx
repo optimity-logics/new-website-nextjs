@@ -1,7 +1,6 @@
 'use client';
 import Container from '@/components/ui/Container';
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import { aboutUsPage, homePageData } from '@/components/utils/Constant';
 import heroBgRight from '../../../public/svg/about-us/about-shape.svg';
 import AnimatedArrow from '@/components/common/AnimatedArrow';
@@ -13,21 +12,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-const HighlitedDescription = styled.h1`
-  span {
-    color: #e94e25;
-  }
-`;
+import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
+import SectionHeader from '@/components/ui/SectionHeader';
 
 const AboutUs = () => {
-  const [hover, setHover] = useState<boolean>(false);
   const [hoverContact, setHoverContact] = useState<boolean>(false);
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
-  const HighlitedDescriptionHero = styled.h3``;
-  const handleMouseEnter = () => setHover(true);
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
+
   const handleMouseEnterContact = () => setHoverContact(true);
   const handleMouseLeaveContact = () => {
     setHoverContact(false);
@@ -55,33 +46,15 @@ const AboutUs = () => {
     <>
       <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-no-repeat">
         <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:flex-row">
-          <div className="relative z-30 ml-auto flex w-full max-w-[900px] flex-col gap-7 px-4 sm:px-6 sm:pb-[120px] md:px-8 xl:px-10 3xl:ml-16 3xl:pl-[100px]">
-            <div className="w-max rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1 shadow-default">
-              <span className="line-clamp-1 font-base text-sm leading-7 text-primary">
-                {aboutUsPage?.surTitle}
-              </span>
-            </div>
-            <HighlitedDescription
-              dangerouslySetInnerHTML={{
-                __html: aboutUsPage?.heding,
-              }}
-              className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]"
-            />
-            <p className="w-full max-w-[800px] font-base text-lg font-normal leading-6 text-primary opacity-50">
-              {aboutUsPage?.description}
-            </p>
-            <Link
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onMouseUp={handleMouseEnter}
-              onMouseDown={handleMouseLeave}
-              href={homePageData?.heroContactUsBtnLink}
-              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
-            >
-              {homePageData?.heroContactUsBtn}
-              <AnimatedArrow hover={hover} />
-            </Link>
-          </div>
+          <HeroSectionHeading
+            badgeTitle={aboutUsPage?.surTitle}
+            heading={aboutUsPage?.heding}
+            description={aboutUsPage?.description}
+            LinkName={homePageData?.heroContactUsBtn}
+            link={aboutUsPage?.aboutUsBtnLink}
+            className="relative z-30 ml-auto flex w-full max-w-[900px] flex-col gap-7 px-4 sm:px-6 sm:pb-[120px] md:px-8 xl:px-10 3xl:ml-16 3xl:pl-[100px]"
+          />
+
           <div className="relative">
             <Image
               src={heroBgRight}
@@ -111,11 +84,11 @@ const AboutUs = () => {
                 <div className="flex flex-col gap-3 xl:gap-[20px]">
                   <div
                     style={{ backgroundSize: '100% 100%' }}
-                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-base text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
+                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-opt text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
                   >
                     {item?.title}
                   </div>
-                  <span className="text-center font-base text-base font-normal leading-[24px] text-primary xl:text-[18px]">
+                  <span className="text-center font-opt text-xl font-normal leading-[24px] text-optDesc xl:text-[18px]">
                     {item?.description}
                   </span>
                 </div>
@@ -125,9 +98,11 @@ const AboutUs = () => {
       </Container>
       <Container className="mb-[60px] 3xl:mb-[100px]">
         <div className="flex flex-col gap-10">
-          <h3 className="text-center font-base text-[35px] font-bold leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
-            {aboutUsPage?.woWeAre}
-          </h3>
+          <SectionHeader
+            headingText={aboutUsPage?.woWeAre}
+            headingStyle="text-center"
+          />
+
           {aboutUsPage?.woWeAreList &&
             aboutUsPage?.woWeAreList.map((item, index) => (
               <div
@@ -146,17 +121,17 @@ const AboutUs = () => {
                 <div
                   className={`${index % 2 === 0 ? 'lg:-ml-[130px]' : 'relative z-30 lg:-mr-[130px]'} -mt-16 flex w-full max-w-[320px] flex-col gap-6 rounded-[20px] bg-white p-5 shadow-md xss:max-w-[430px] sm:-mt-[100px] sm:max-w-[600px] sm:p-[30px] lg:mt-0 lg:max-w-[1000px]`}
                 >
-                  <h4 className="font-base text-[34px] font-medium capitalize leading-9 text-lightBlue">
+                  <h4 className="font-opt text-[32px] font-semibold capitalize leading-9 text-lightBlue">
                     {item?.title}
                   </h4>
-                  <p className="font-base text-lg font-normal leading-7 text-black-750-alpha">
+                  <p className="font-opt text-lg font-normal leading-6 text-optDesc">
                     {item.description}
                   </p>
                 </div>
               </div>
             ))}
           <div className="flex flex-col gap-5">
-            <h2 className="font-base text-[34px] font-medium capitalize leading-9 text-lightBlue">
+            <h2 className="font-opt text-[32px] font-semibold capitalize leading-9 text-lightBlue">
               {aboutUsPage?.ourCoreValue?.title}
             </h2>
             <div className="relative z-10 grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -166,14 +141,14 @@ const AboutUs = () => {
                     key={i}
                     className="flex flex-col gap-[30px] rounded-[20px] bg-white/50 p-[30px] shadow-howWorkCard backdrop-blur-sm"
                   >
-                    <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] font-base text-xl font-medium text-white">
+                    <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] font-opt text-xl font-medium text-white">
                       0{i + 1}
                     </span>
                     <div className="flex flex-col gap-3">
-                      <h5 className="font-base text-2xl font-medium leading-6 text-black">
+                      <h5 className="font-opt text-2xl font-medium leading-6 text-primary">
                         {items?.title}
                       </h5>
-                      <p className="font-base text-lg font-normal leading-6 text-black/50">
+                      <p className="font-opt text-lg font-normal leading-6 text-optDesc">
                         {items?.description}
                       </p>
                     </div>
@@ -209,11 +184,9 @@ const AboutUs = () => {
         </div>
       </Container>
       <Container className="mb-[60px] flex flex-col gap-[60px] 4xl:mb-[100px]">
-        <HighlitedDescriptionHero
-          dangerouslySetInnerHTML={{
-            __html: aboutUsPage?.whatWeDoTitle,
-          }}
-          className="text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]"
+        <SectionHeader
+          headingText={aboutUsPage?.whatWeDoTitle}
+          headingStyle="text-center"
         />
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
           {aboutUsPage?.whatWeDo &&
@@ -232,10 +205,10 @@ const AboutUs = () => {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <h6 className="font-base text-xl font-medium leading-6 text-primary">
+                  <h6 className="font-opt text-2xl font-medium leading-8 text-primary">
                     {item?.title}
                   </h6>
-                  <p className="font-base text-lg font-normal leading-5 text-subtle">
+                  <p className="font-opt text-lg font-normal leading-6 text-optDesc">
                     {item?.description}
                   </p>
                 </div>
@@ -249,16 +222,18 @@ const AboutUs = () => {
       >
         <Container className="flex flex-col gap-[60px]">
           <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
-            <h3 className="font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
-              Technology & Industry Expertise
-            </h3>
+            <SectionHeader
+              headingText={aboutUsPage?.expertiseTitle}
+              isSectionDark={true}
+              className="w-max"
+            />
             <Link
               onMouseEnter={handleMouseEnterViewAll}
               onMouseLeave={handleMouseLeaveViewAl}
               onMouseUp={handleMouseEnterViewAll}
               onMouseDown={handleMouseLeaveViewAl}
               href={aboutUsPage?.viewAllBtnLink}
-              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+              className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-6 text-white"
             >
               {aboutUsPage?.viewAllBtn}
               <AnimatedArrow hover={hoverViewAl} />
@@ -298,10 +273,10 @@ const AboutUs = () => {
                       </div>
                     </div>
                     <div className="flex flex-col gap-4">
-                      <h5 className="font-base text-xl font-medium leading-6 text-primary">
+                      <h5 className="font-opt text-2xl font-medium leading-6 text-primary">
                         {item?.title}
                       </h5>
-                      <p className="font-base text-lg font-normal leading-6 text-black/45">
+                      <p className="font-opt text-lg font-normal leading-6 text-optDesc">
                         {item?.description}
                       </p>
                     </div>
@@ -312,14 +287,11 @@ const AboutUs = () => {
         </Container>
       </div>
       <Container className="mb-[60px] flex flex-col gap-[60px] 4xl:mb-[100px]">
-        <div className="flex flex-col items-center gap-6">
-          <h3 className="text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
-            {aboutUsPage?.ourProcess}
-          </h3>
-          <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-lg xl:leading-6">
-            {aboutUsPage?.ourProcessDescription}
-          </p>
-        </div>
+        <SectionHeader
+          headingText={aboutUsPage?.ourProcess}
+          descriptionText={aboutUsPage?.ourProcessDescription}
+          className="items-center"
+        />
         <div className="grid grid-cols-1 items-center gap-5 md:grid-cols-2">
           <div className="relative flex flex-col gap-6">
             {aboutUsPage?.ourProcessList?.map((item, i) => (
@@ -339,20 +311,20 @@ const AboutUs = () => {
 
                 {/* Foreground content */}
                 <div
-                  className={`relative z-10 flex h-11 w-11 items-center justify-center rounded-lg font-base text-base font-medium leading-5 ${i === activeIndex ? 'bg-red/25 text-red' : 'bg-lightBlue/45 text-white backdrop-blur-sm'}`}
+                  className={`relative z-10 flex h-11 w-11 items-center justify-center rounded-lg font-opt text-base font-medium leading-5 ${i === activeIndex ? 'bg-red/25 text-red' : 'bg-lightBlue/45 text-white backdrop-blur-sm'}`}
                 >
                   {i + 1}
                 </div>
 
-                <div className="relative z-10 flex flex-col gap-2">
+                <div className="relative z-10 flex flex-col gap-3">
                   <h4
-                    className={`font-base text-xl font-medium leading-6 transition-colors duration-500 ${
+                    className={`font-opt text-2xl font-medium leading-7 transition-colors duration-500 ${
                       i === activeIndex ? 'text-red' : 'text-black'
                     }`}
                   >
                     {item?.title}
                   </h4>
-                  <p className="font-base text-lg font-normal leading-none text-black-500-alpha">
+                  <p className="font-opt text-lg font-normal leading-none text-optDesc">
                     {item?.subTitle}
                   </p>
                 </div>
@@ -374,14 +346,12 @@ const AboutUs = () => {
         className="mb-[60px] bg-tech-we-work bg-cover bg-no-repeat py-[60px] 4xl:mb-[100px]"
       >
         <Container className="flex flex-col gap-[60px]">
-          <div className="flex flex-col items-center gap-6">
-            <h3 className="text-center font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
-              {aboutUsPage?.whyChooseUsTitle}
-            </h3>
-            <p className="mx-auto max-w-[900px] text-center font-base text-base font-normal leading-6 text-subtle opacity-50 xl:text-lg xl:leading-6">
-              {aboutUsPage?.whyChooseUsDescription}
-            </p>
-          </div>
+          <SectionHeader
+            headingText={aboutUsPage?.whyChooseUsTitle}
+            descriptionText={aboutUsPage?.whyChooseUsDescription}
+            className="items-center"
+            isSectionDark={true}
+          />
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
             {aboutUsPage?.whyChooseUsList &&
               aboutUsPage?.whyChooseUsList.map((item, i) => (
@@ -389,10 +359,10 @@ const AboutUs = () => {
                   key={i}
                   className="flex flex-col gap-4 rounded-xl bg-[#f7f9fa] p-6"
                 >
-                  <h3 className="font-base text-xl font-medium leading-6 text-black">
+                  <h3 className="font-opt text-2xl font-medium leading-7 text-black">
                     {item?.title}
                   </h3>
-                  <p className="font-base text-lg font-normal leading-5 text-subtle">
+                  <p className="font-opt text-lg font-normal leading-6 text-optDesc">
                     {item?.description}
                   </p>
                 </div>
@@ -401,14 +371,12 @@ const AboutUs = () => {
         </Container>
       </div>
       <div className="my-[40px] flex flex-col gap-[60px] 4xl:my-[80px]">
-        <div className="flex flex-col gap-6">
-          <h3 className="text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
-            {aboutUsPage?.ourTeam}
-          </h3>
-          <p className="mx-auto max-w-[900px] text-center font-base text-base font-normal leading-6 text-black-900-alpha opacity-50 xl:text-lg xl:leading-6">
-            {aboutUsPage?.shortDescription}
-          </p>
-        </div>
+        <SectionHeader
+          headingText={aboutUsPage?.ourTeam}
+          descriptionText={aboutUsPage?.shortDescription}
+          className="items-center"
+        />
+
         <div className="">
           <Swiper
             spaceBetween={15}
@@ -448,14 +416,14 @@ const AboutUs = () => {
                   </div>
                   <div className="flex w-full max-w-[500px] flex-col gap-3">
                     <div className="flex flex-col gap-1">
-                      <h2 className="font-base text-2xl font-medium text-primary">
+                      <h2 className="font-opt text-2xl font-medium text-primary">
                         {item?.name}
                       </h2>
-                      <span className="font-base text-sm font-normal text-subtle">
+                      <span className="font-opt text-sm font-normal text-black-100-alpha">
                         {item?.position}
                       </span>
                     </div>
-                    <p className="font-base text-base font-normal text-iconSubtle">
+                    <p className="font-opt text-base font-normal text-optDesc">
                       {item?.aboutUs}
                     </p>
                   </div>
@@ -465,17 +433,11 @@ const AboutUs = () => {
         </div>
       </div>
       <Container className="flex flex-col gap-[60px]">
-        <div className="flex flex-col items-center gap-6">
-          <HighlitedDescription
-            dangerouslySetInnerHTML={{
-              __html: aboutUsPage?.benefitesTitle,
-            }}
-            className="text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]"
-          />
-          <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-lg xl:leading-6">
-            {aboutUsPage?.benefitesDescription}
-          </p>
-        </div>
+        <SectionHeader
+          headingText={aboutUsPage?.benefitesTitle}
+          descriptionText={aboutUsPage?.benefitesDescription}
+          className="items-center"
+        />
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:gap-6 xxl:grid-cols-4">
           {aboutUsPage?.benefitesList &&
             aboutUsPage?.benefitesList.map((item, index) => (
@@ -492,7 +454,7 @@ const AboutUs = () => {
                     className="max-w-7"
                   />
                 </div>
-                <p className="px-10 text-center font-base text-base font-normal text-primary md:text-base md:leading-7 xl:text-[18px]">
+                <p className="px-10 text-center font-opt text-base font-normal leading-5 text-primary xl:text-lg xl:leading-6">
                   {item?.benefitesName}
                 </p>
               </div>
@@ -560,7 +522,7 @@ const AboutUs = () => {
               className="row-start-3 md:col-start-2 md:row-span-2 md:row-start-4 xl:col-start-3 xl:row-start-2"
             >
               <div className="flex h-full flex-col justify-between gap-14 rounded-[17px] bg-black p-5 backdrop-blur-lg md:px-[28px] md:py-[32px]">
-                <p className="font-base text-2xl font-extrabold leading-8 text-white md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
+                <p className="font-opt text-2xl font-extrabold leading-8 text-optDesc md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
                   {homePageData?.contactUsCardTitle}
                 </p>
                 <Link
@@ -569,7 +531,7 @@ const AboutUs = () => {
                   onMouseUp={handleMouseEnterContact}
                   onMouseDown={handleMouseLeaveContact}
                   href={homePageData?.contactUsCardBtnLink}
-                  className="flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-primary"
+                  className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-primary"
                 >
                   {homePageData?.contactUsCardBtn}
                   <AnimatedArrow hover={hoverContact} />
@@ -607,11 +569,11 @@ const AboutUs = () => {
                   <div
                     className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
                   >
-                    <p className="line-clamp-5 font-base text-base font-normal leading-6 text-secondary opacity-80 md:text-lg md:leading-7">
+                    <p className="line-clamp-5 font-opt text-base font-normal leading-6 text-optDesc opacity-80 md:text-lg md:leading-7">
                       {item?.message}
                     </p>
                     <div className="flex items-center justify-between gap-2.5">
-                      <p className="font-base text-base font-normal leading-5 text-subtle">
+                      <p className="font-opt text-lg font-normal leading-5 text-iconSubtle">
                         {item?.role}
                       </p>
                       <Image

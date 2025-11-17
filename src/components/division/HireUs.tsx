@@ -92,7 +92,7 @@ const HireUs = () => {
             <h2 className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]">
               Engage Dedicated Offshore Developers
             </h2>
-            <p className="w-full font-base text-lg font-normal leading-6 text-primary opacity-50">
+            <p className="font-base w-full text-lg font-normal leading-6 text-primary opacity-50">
               At Optimity Logics, you&#39;ll find a powerhouse of top-tier
               industrial talents spanning web developers, project managers, QA
               analysts, UI/UX designers, business analysts, technical experts,
@@ -105,7 +105,7 @@ const HireUs = () => {
             onMouseUp={handleMouseEnter}
             onMouseDown={handleMouseLeave}
             href={'/'}
-            className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+            className="font-base flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal leading-tight text-white"
           >
             Let’s consult with our expert
             <AnimatedArrow hover={hover} />
@@ -129,13 +129,13 @@ const HireUs = () => {
         </div>
       </Container>
       <Container className="mb-[60px] flex flex-col gap-8 4xl:mb-[100px] 4xl:gap-[60px]">
-        <h3 className="text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
+        <h3 className="font-base text-center text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
           <span className="text-red">Hire Based</span> on Your Requirement
         </h3>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           <div className="grid grid-stack">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="rounded-lg bg-white/30 px-4 py-2 font-base text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
+              <span className="font-base rounded-lg bg-white/30 px-4 py-2 text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
                 full time
               </span>
               <p className="font-base text-2xl font-normal leading-7 text-white">
@@ -152,7 +152,7 @@ const HireUs = () => {
           </div>
           <div className="grid grid-stack">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="rounded-lg bg-white/30 px-4 py-2 font-base text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
+              <span className="font-base rounded-lg bg-white/30 px-4 py-2 text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
                 Part time
               </span>
               <p className="font-base text-2xl font-normal leading-7 text-white">
@@ -169,7 +169,7 @@ const HireUs = () => {
           </div>
           <div className="grid grid-stack">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="rounded-lg bg-white/30 px-4 py-2 font-base text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
+              <span className="font-base rounded-lg bg-white/30 px-4 py-2 text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
                 hourly basis
               </span>
               <p className="font-base text-2xl font-normal leading-7 text-white">
@@ -206,7 +206,7 @@ const HireUs = () => {
               onMouseUp={handleMouseEnter}
               onMouseDown={handleMouseLeave}
               href={'/'}
-              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal capitalize leading-tight text-white"
+              className="font-base flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal capitalize leading-tight text-white"
             >
               contact us
               <AnimatedArrow hover={hover} />
@@ -251,7 +251,7 @@ const HireUs = () => {
                 key={i}
                 className="flex flex-col gap-[30px] rounded-[20px] bg-white/70 p-[30px] shadow-howWorkCard backdrop-blur-sm"
               >
-                <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] font-base text-xl font-medium text-white">
+                <span className="font-base flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] text-xl font-medium text-white">
                   0{i + 1}
                 </span>
                 <div className="flex flex-col gap-3">
@@ -271,7 +271,7 @@ const HireUs = () => {
         className="mb-[60px] bg-tech-we-work bg-cover bg-no-repeat 4xl:mb-[100px]"
       >
         <div className="flex flex-col items-center gap-10 py-12">
-          <h3 className="mx-auto w-full max-w-[800px] text-center font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
+          <h3 className="font-base mx-auto w-full max-w-[800px] text-center text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
             <span className="text-red">Advantages!</span> Things You Will Always
             Love to Have
           </h3>
@@ -285,7 +285,7 @@ const HireUs = () => {
                   <h5 className="font-base text-2xl font-medium leading-6 text-white">
                     {item?.title}
                   </h5>
-                  <p className="line-clamp-6 font-base text-lg font-normal leading-6 text-subtle">
+                  <p className="font-base line-clamp-6 text-lg font-normal leading-6 text-subtle">
                     {item?.description}
                   </p>
                 </div>
@@ -294,7 +294,7 @@ const HireUs = () => {
         </div>
       </div>
       <div className="flex flex-col items-center gap-10">
-        <h3 className="mx-auto w-full max-w-[800px] text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
+        <h3 className="font-base mx-auto w-full max-w-[800px] text-center text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
           <span className="text-red">Hire Based </span> on Your Requirement
         </h3>
 
@@ -397,7 +397,7 @@ const HireUs = () => {
                   onMouseUp={handleMouseEnterContact}
                   onMouseDown={handleMouseLeaveContact}
                   href={homePageData?.contactUsCardBtnLink}
-                  className="flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-primary"
+                  className="font-base flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal leading-tight text-primary"
                 >
                   {homePageData?.contactUsCardBtn}
                   <AnimatedArrow hover={hoverContact} />
@@ -435,7 +435,7 @@ const HireUs = () => {
                   <div
                     className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
                   >
-                    <p className="line-clamp-5 font-base text-base font-normal leading-6 text-secondary opacity-80 md:text-lg md:leading-7">
+                    <p className="font-base line-clamp-5 text-base font-normal leading-6 text-secondary opacity-80 md:text-lg md:leading-7">
                       {item?.message}
                     </p>
                     <div className="flex items-center justify-between gap-2.5">

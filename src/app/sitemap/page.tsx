@@ -14,7 +14,7 @@ const Sitemap = () => {
         style={{ backgroundSize: '100% 100%' }}
       >
         <Container>
-          <h2 className="px-4 py-16 font-base text-4xl font-semibold leading-[44px] tracking-[-2%] text-primary sm:px-6 md:px-8 md:py-24 lg:text-[44px] lg:leading-[82.3px] xl:px-10 3xl:px-0 4xl:text-[60px]">
+          <h2 className="font-base px-4 py-16 text-4xl font-semibold leading-[44px] tracking-[-2%] text-primary sm:px-6 md:px-8 md:py-24 lg:text-[44px] lg:leading-[82.3px] xl:px-10 3xl:px-0 4xl:text-[60px]">
             Sitemap
           </h2>
         </Container>

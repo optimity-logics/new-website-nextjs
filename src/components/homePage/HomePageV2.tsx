@@ -12,13 +12,7 @@ import mobileRobot from '../../../public/images/homePagev2/mobile-robot.png';
 import LogoAnimation from './LogoAnimation';
 import phone from '../../../public/svg/footer/phone.svg';
 import email from '../../../public/svg/footer/mail.svg';
-import {
-  homePageData,
-  logoIcons,
-  projectWeDone,
-  ourIndustries,
-  services,
-} from '../utils/Constant';
+import { homePageData, logoIcons, projectWeDone } from '../utils/Constant';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -33,9 +27,10 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import Marquee from 'react-fast-marquee';
 import SocialMedia from '../layout/footer/SocialMedia';
+import HeroSectionHeading from '../ui/HeroSectionHeading';
+import SectionHeader from '../ui/SectionHeader';
 
 const HighlitedDescription = styled.h2``;
-const HighlitedDescriptionHero = styled.h1``;
 const HomePageV2 = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
@@ -119,7 +114,8 @@ const HomePageV2 = () => {
   const [activeTab, setActiveTab] = useState('real-estate');
 
   const currentTab =
-    ourIndustries.find((tab) => tab.id === activeTab) || ourIndustries[0];
+    homePageData?.ourIndustries.find((tab) => tab.id === activeTab) ||
+    homePageData?.ourIndustries[0];
   return (
     <>
       <div
@@ -133,29 +129,18 @@ const HomePageV2 = () => {
           <Container className="relative py-[50px] lg:py-[100px] 3xl:py-[140px] 4xl:py-[184px]">
             <div className="flex flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
               <div className="flex w-full flex-col gap-[50px] xl:max-w-[560px] 4xl:max-w-[860px]">
-                <div className="flex flex-col gap-[20px]">
-                  <div className="w-max rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1 shadow-default">
-                    <span className="line-clamp-1 font-base text-sm leading-7 text-primary">
-                      {homePageData?.baddge}
-                    </span>
-                  </div>
-                  <HighlitedDescriptionHero
-                    dangerouslySetInnerHTML={{
-                      __html: homePageData?.heroTitle,
-                    }}
-                    className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]"
-                  />
-                  <p className="w-full max-w-[800px] font-base text-lg font-normal leading-6 text-primary opacity-50">
-                    {homePageData?.heroDescription}
-                  </p>
-                </div>
+                <HeroSectionHeading
+                  badgeTitle={homePageData?.baddge}
+                  heading={homePageData?.heroTitle}
+                  description={homePageData?.heroDescription}
+                />
                 <Link
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseEnter}
                   onMouseDown={handleMouseLeave}
                   href={homePageData?.heroContactUsBtnLink}
-                  className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+                  className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
                 >
                   {homePageData?.heroContactUsBtn}
                   <AnimatedArrow hover={hover} />
@@ -220,7 +205,7 @@ const HomePageV2 = () => {
       >
         <Container>
           <div className="flex flex-col items-center gap-[25px] lg:hidden xl:flex-row 5xl:rounded-[24px]">
-            <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
+            <span className="max-w-[400px] text-center font-opt text-base font-normal leading-[1.6rem] text-optDesc md:text-lg md:leading-7 xl:text-start">
               {homePageData?.trustedClient}
             </span>
             <Marquee
@@ -248,7 +233,7 @@ const HomePageV2 = () => {
             </Marquee>
           </div>
           <div className="hidden flex-col items-center gap-[25px] lg:flex xl:flex-row xl:justify-between 5xl:rounded-[24px]">
-            <span className="max-w-[400px] text-center font-base text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
+            <span className="max-w-[400px] text-center font-opt text-base font-normal leading-[1.6rem] text-optDesc md:text-lg md:leading-7 xl:text-start">
               {homePageData?.trustedClient}
             </span>
             <LogoAnimation logo={logos} />
@@ -261,9 +246,7 @@ const HomePageV2 = () => {
       >
         <div className="flex flex-col gap-8">
           <Container>
-            <h3 className="font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
-              {homePageData?.ourExpertiseTitle}
-            </h3>
+            <SectionHeader headingText={homePageData?.ourExpertiseTitle} />
           </Container>
           <div
             className={`ml-auto w-full max-w-[1680px] px-4 sm:pl-6 md:pl-10 xl:pl-16`}
@@ -293,11 +276,11 @@ const HomePageV2 = () => {
                   >
                     <div className="flex w-full flex-col-reverse items-center gap-6 xl:flex-row 4xl:gap-[65px]">
                       <div className="flex h-full w-full max-w-[799px] flex-col justify-between gap-5 xl:gap-[40px]">
-                        <div className="flex flex-col gap-4 xl:gap-5">
-                          <h5 className="font-base text-2xl font-medium leading-7 text-primary xl:text-[28px] xl:leading-[32px]">
+                        <div className="flex flex-col gap-4">
+                          <h5 className="font-opt text-2xl font-medium leading-7 text-primary">
                             {item?.title}
                           </h5>
-                          <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-lg">
+                          <p className="font-opt text-base font-normal leading-6 text-optDesc xl:text-lg">
                             {item?.description}
                           </p>
                           <ul className="ml-10 flex list-disc flex-col gap-3 text-primary">
@@ -305,16 +288,16 @@ const HomePageV2 = () => {
                               item?.techBenefits.map((benefitsItem, idx) => (
                                 <li
                                   key={idx}
-                                  className="font-base text-lg font-semibold text-primary"
+                                  className="font-opt text-lg font-semibold text-primary"
                                 >
                                   {benefitsItem?.title}
-                                  <span className="font-normal text-black-750-alpha">
-                                    {benefitsItem?.description}
+                                  <span className="font-normal text-optDesc">
+                                    &nbsp;{benefitsItem?.description}
                                   </span>
                                 </li>
                               ))}
                           </ul>
-                          <p className="font-base text-base font-normal leading-6 text-iconSubtle opacity-50 xl:text-[18px]">
+                          <p className="font-opt text-base font-normal leading-6 text-optDesc xl:text-[18px]">
                             {item?.subDescription}
                           </p>
                         </div>
@@ -324,7 +307,7 @@ const HomePageV2 = () => {
                           onMouseUp={handleMouseEnterViewAll}
                           onMouseDown={handleMouseLeaveViewAl}
                           href={item?.buttonLink}
-                          className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+                          className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-[14px] font-normal leading-tight text-white"
                         >
                           {item?.button}
                           <AnimatedArrow hover={hoverViewAl} />
@@ -357,11 +340,11 @@ const HomePageV2 = () => {
                 <div className="flex flex-col gap-3 xl:gap-[20px]">
                   <div
                     style={{ backgroundSize: '100% 100%' }}
-                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-base text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
+                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-opt text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
                   >
                     {item?.title}
                   </div>
-                  <span className="text-center font-base text-base font-normal leading-[24px] text-primary xl:text-[18px]">
+                  <span className="text-center font-opt text-base font-normal leading-[24px] text-optDesc xl:text-xl">
                     {item?.description}
                   </span>
                 </div>
@@ -374,16 +357,13 @@ const HomePageV2 = () => {
         className="mb-[60px] bg-our-expertise bg-cover bg-no-repeat py-[60px] 4xl:mb-[100px] 4xl:py-[100px]"
       >
         <Container className="flex flex-col gap-10 4xl:gap-[60px]">
-          <div className="mx-auto flex w-full max-w-[1100px] flex-col items-center gap-5">
-            <h3 className="text-center font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
-              Automated Data Intelligence
-            </h3>
-            <p className="w-full text-center font-base text-lg font-normal leading-6 text-subtle">
-              Data and AI/ML technologies can revolutionise your company. Find
-              out what you need to know and automate critical processes to
-              increase productivity, efficiency, and long-term growth.
-            </p>
-          </div>
+          <SectionHeader
+            headingText={homePageData?.aiSectionHeqading}
+            descriptionText={homePageData?.aiSectionDescription}
+            descriptionStyle="text-center"
+            className="mx-auto max-w-[1000px] items-center"
+            isSectionDark={true}
+          />
           <div className="flex flex-col gap-6 md:hidden">
             <div className="">
               <Image
@@ -395,16 +375,16 @@ const HomePageV2 = () => {
               />
             </div>
             <div className="hide-scrollbar flex gap-7 overflow-auto">
-              {services &&
-                services.map((item, index) => (
+              {homePageData?.aiServices &&
+                homePageData?.aiServices.map((item, index) => (
                   <div
                     key={index}
                     className="flex w-full min-w-[320px] flex-1 flex-col gap-4"
                   >
-                    <h4 className="font-base text-xl font-medium leading-6 text-white">
+                    <h4 className="font-opt text-2xl font-medium leading-7 text-white">
                       {item?.title}
                     </h4>
-                    <p className="font-base text-base font-normal leading-5 text-subtle">
+                    <p className="font-opt text-lg font-normal leading-6 text-subtle">
                       {item?.description}
                     </p>
                   </div>
@@ -413,13 +393,13 @@ const HomePageV2 = () => {
           </div>
           <div className="hidden grid-cols-3 gap-8 md:grid">
             <div className="flex w-full flex-col gap-10">
-              {services &&
-                services.slice(0, 3).map((item, index) => (
+              {homePageData?.aiServices &&
+                homePageData?.aiServices.slice(0, 3).map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
-                    <h4 className="font-base text-xl font-medium leading-6 text-white">
+                    <h4 className="font-opt text-2xl font-medium leading-7 text-white">
                       {item?.title}
                     </h4>
-                    <p className="font-base text-base font-normal leading-5 text-subtle">
+                    <p className="font-opt text-lg font-normal leading-6 text-subtle">
                       {item?.description}
                     </p>
                   </div>
@@ -430,18 +410,18 @@ const HomePageV2 = () => {
                 src={mobileRobot}
                 alt="robot"
                 width={300}
-                height={250}
+                height={350}
                 className="mx-auto h-auto max-w-[180px]"
               />
             </div>
             <div className="flex w-full flex-col gap-10">
-              {services &&
-                services.slice(3).map((item, index) => (
+              {homePageData?.aiServices &&
+                homePageData?.aiServices.slice(3).map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
-                    <h4 className="font-base text-xl font-medium leading-6 text-white">
+                    <h4 className="font-opt text-2xl font-medium leading-7 text-white">
                       {item?.title}
                     </h4>
-                    <p className="font-base text-base font-normal leading-5 text-subtle">
+                    <p className="font-opt text-lg font-normal leading-6 text-subtle">
                       {item?.description}
                     </p>
                   </div>
@@ -449,9 +429,10 @@ const HomePageV2 = () => {
             </div>
           </div>
           <div className="flex flex-col gap-8 4xl:gap-[60px]">
-            <h3 className="font-base text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
-              {homePageData?.technologyWeWorkTitle}
-            </h3>
+            <SectionHeader
+              headingText={homePageData?.technologyWeWorkTitle}
+              isSectionDark={true}
+            />
             <div
               ref={(el) => addToRefs(el, 0)}
               className="hidden h-full w-full grid-cols-6 gap-6 3xl:grid"
@@ -473,7 +454,7 @@ const HomePageV2 = () => {
                           height={339}
                           className="aspect-auto"
                         />
-                        <span className="mt-auto p-[14px] font-base text-[20px] font-medium leading-[24px] text-white">
+                        <span className="mt-auto p-[14px] font-opt text-[20px] font-medium leading-[24px] text-white">
                           {item?.techName}
                         </span>
                       </div>
@@ -496,7 +477,7 @@ const HomePageV2 = () => {
                         height={339}
                         className="aspect-auto"
                       />
-                      <span className="mt-auto p-[14px] font-base text-[20px] font-medium leading-[24px] text-white">
+                      <span className="mt-auto p-[14px] font-opt text-[20px] font-medium leading-[24px] text-white">
                         {item?.techName}
                       </span>
                     </div>
@@ -507,17 +488,18 @@ const HomePageV2 = () => {
         </Container>
       </div>
       <Container className="mb-[60px] flex flex-col gap-8 4xl:mb-[100px] 4xl:gap-[60px]">
-        <h2 className="text-center font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
-          Our Industries
-        </h2>
+        <SectionHeader
+          headingText={homePageData?.ourIndustriesTitle}
+          headingStyle="text-center"
+        />
         <div className="hide-scrollbar flex w-full items-center gap-5 overflow-auto px-2 py-2 xl:gap-[30px]">
-          {ourIndustries &&
-            ourIndustries.map((item, index) => (
+          {homePageData?.ourIndustries &&
+            homePageData?.ourIndustries.map((item, index) => (
               <button
                 key={index}
                 type="button"
                 onClick={() => setActiveTab(item?.id)}
-                className={`w-max text-nowrap rounded-2xl shadow-ourIndustries transition-all duration-500 ease-in-out ${activeTab === item?.id ? 'bg-primary text-white' : 'bg-[#F7F7F8] text-primary'} px-5 py-2 text-center font-base text-base leading-7`}
+                className={`w-max text-nowrap rounded-2xl shadow-ourIndustries transition-all duration-500 ease-in-out ${activeTab === item?.id ? 'bg-primary text-white' : 'bg-[#F7F7F8] text-primary'} px-5 py-2 text-center font-opt text-lg leading-7`}
               >
                 {item?.label}
               </button>
@@ -526,10 +508,10 @@ const HomePageV2 = () => {
         <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:items-end">
           <div className="flex w-full max-w-full flex-col gap-10 lg:max-w-[650px] xxl:max-w-[800px]">
             <div className="flex flex-col gap-[30px]">
-              <h3 className="font-base text-4xl font-medium leading-10 text-primary">
+              <h3 className="font-opt text-[42px] font-semibold leading-[50px] text-primary">
                 {currentTab?.title}
               </h3>
-              <p className="font-base text-lg font-normal leading-6 text-black-750-alpha">
+              <p className="font-opt text-xl font-normal leading-7 text-optDesc">
                 {currentTab?.description}
               </p>
             </div>
@@ -543,14 +525,14 @@ const HomePageV2 = () => {
               />
             </div>
             <div className="flex flex-col gap-8">
-              <h4 className="font-base text-2xl font-medium leading-7 text-lightBlue">
+              <h4 className="font-opt text-[26px] font-medium leading-8 text-lightBlue">
                 {currentTab?.sectionTitle}
               </h4>
               <ul className="flex flex-col gap-4">
                 {currentTab?.features.map((list, index) => (
                   <li key={index} className="flex items-center gap-5">
                     <Image src={blackTick} alt="tick" width={24} height={24} />
-                    <p className="font-base text-base font-normal leading-5 text-black-750-alpha md:text-lg md:leading-6">
+                    <p className="font-opt text-xl font-normal leading-6 text-optDesc">
                       {list}
                     </p>
                   </li>
@@ -562,7 +544,7 @@ const HomePageV2 = () => {
                 onMouseUp={handleMouseEnterLearnMore}
                 onMouseDown={handleMouseLeaveLearnMore}
                 href={currentTab?.link}
-                className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-white"
+                className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
               >
                 {currentTab?.LearnMore}
                 <AnimatedArrow hover={hoverLearnMore} />
@@ -582,9 +564,7 @@ const HomePageV2 = () => {
       <div className="mb-[60px] 4xl:mb-[100px]">
         <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[80px]">
           <Container className="flex items-center justify-between">
-            <h4 className="font-base text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
-              {homePageData?.deployedProjectsTitle}
-            </h4>
+            <SectionHeader headingText={homePageData?.deployedProjectsTitle} />
             <div className="flex w-max items-center gap-5 md:gap-10">
               <button className="custom-prev" ref={prevRef}>
                 <Image
@@ -637,7 +617,7 @@ const HomePageV2 = () => {
                 projectWeDone.map((item, index) => (
                   <SwiperSlide key={index}>
                     <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-[#f0f3f5]/70 p-4 lg:flex-row xl:p-6">
-                      <h6 className="w-max font-base text-xl font-medium leading-6 text-primary 4xl:text-[33px] 4xl:leading-[38px]">
+                      <h6 className="w-max font-opt text-xl font-medium leading-6 text-primary 3xl:text-3xl 4xl:leading-10">
                         {item?.projectName}
                       </h6>
                       <div className="relative h-0 w-full pb-[50%]">
@@ -704,7 +684,7 @@ const HomePageV2 = () => {
                 className="row-start-3 md:col-start-2 md:row-span-2 md:row-start-4 xl:col-start-3 xl:row-start-2"
               >
                 <div className="flex h-full flex-col justify-between gap-14 rounded-[17px] bg-white/10 p-5 backdrop-blur-lg md:px-[28px] md:py-[32px]">
-                  <p className="font-base text-2xl font-extrabold leading-8 text-white md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
+                  <p className="font-opt text-2xl font-extrabold leading-8 text-white md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
                     {homePageData?.contactUsCardTitle}
                   </p>
                   <Link
@@ -713,7 +693,7 @@ const HomePageV2 = () => {
                     onMouseUp={handleMouseEnterContact}
                     onMouseDown={handleMouseLeaveContact}
                     href={homePageData?.contactUsCardBtnLink}
-                    className="flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-base text-[14px] font-normal leading-tight text-primary"
+                    className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-primary"
                   >
                     {homePageData?.contactUsCardBtn}
                     <AnimatedArrow hover={hoverContact} />
@@ -751,11 +731,11 @@ const HomePageV2 = () => {
                     <div
                       className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
                     >
-                      <p className="line-clamp-5 font-base text-base font-normal leading-6 text-secondary opacity-80 md:text-lg md:leading-7">
+                      <p className="line-clamp-5 font-opt text-base font-normal leading-6 text-optDesc md:text-lg md:leading-7">
                         {item?.message}
                       </p>
                       <div className="flex items-center justify-between gap-2.5">
-                        <p className="font-base text-base font-normal leading-5 text-subtle">
+                        <p className="font-opt text-lg font-normal leading-5 text-iconSubtle">
                           {item?.role}
                         </p>
                         <Image
@@ -781,21 +761,21 @@ const HomePageV2 = () => {
         >
           <div className="flex flex-col justify-between gap-10 md:flex-row md:items-center">
             <div className="flex w-full max-w-[570px] flex-col gap-3 xl:gap-5">
-              {/* <h4 className="font-base text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]"> */}
+              {/* <h4 className="font-opt text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]"> */}
               <HighlitedDescription
                 dangerouslySetInnerHTML={{
                   __html: homePageData?.contactUsFormTitle,
                 }}
-                className="font-base text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]"
+                className="font-opt text-[45px] font-bold leading-tight text-white 4xl:text-[64px] 4xl:leading-[68px]"
               />
               {/* </h4> */}
-              <p className="font-base text-[18px] font-normal leading-tight text-white lg:pr-[76px]">
+              <p className="font-opt text-[18px] font-normal leading-tight text-white lg:pr-[76px]">
                 {homePageData?.contactUsFormDescription}
               </p>
               <div className="flex flex-col gap-[15px]">
                 <div className="flex flex-col gap-1">
                   <Link
-                    href={`tel:+91 635 301 5499`}
+                    href={`tel:${homePageData?.contactNumber}`}
                     className="flex items-center gap-2 sm:gap-[15px]"
                   >
                     <div className="w-full max-w-max">
@@ -806,12 +786,12 @@ const HomePageV2 = () => {
                         height={22}
                       />
                     </div>
-                    <span className="font-base text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
-                      +91 635 301 5499
+                    <span className="font-opt text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
+                      {homePageData?.contactNumber}
                     </span>
                   </Link>
                   <Link
-                    href={'mailto: info@optimitylogics.com'}
+                    href={`mailto: ${homePageData?.contactEmail}`}
                     className="flex items-center gap-2 sm:gap-[15px]"
                   >
                     <div className="w-full max-w-max">
@@ -822,8 +802,8 @@ const HomePageV2 = () => {
                         height={22}
                       />
                     </div>
-                    <span className="font-base text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
-                      info@optimitylogics.com
+                    <span className="font-opt text-base font-light leading-[1.6rem] text-white 5xl:text-lg 5xl:leading-7">
+                      {homePageData?.contactEmail}
                     </span>
                   </Link>
                 </div>
@@ -836,28 +816,28 @@ const HomePageV2 = () => {
                   <input
                     type="text"
                     placeholder={homePageData?.formFirstName}
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
+                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
                   />
                   <input
                     type="text"
                     placeholder={homePageData?.formLastName}
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
+                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
                   />
                 </div>
                 <input
                   type="email"
                   placeholder={homePageData?.formEmail}
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
+                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder={homePageData?.formSubject}
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
+                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
                 />
                 <textarea
                   rows={2}
                   placeholder={homePageData?.formDescription}
-                  className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-base text-base font-normal leading-tight text-white/70 focus:outline-none"
+                  className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
                 />
               </div>
               <button
@@ -866,7 +846,7 @@ const HomePageV2 = () => {
                 onMouseUp={handleMouseEnterSubmit}
                 onMouseDown={handleMouseLeaveSubmit}
                 type="button"
-                className="flex w-max items-center gap-1 rounded-[50px] bg-red px-5 py-2 font-base text-base font-normal leading-tight text-white"
+                className="flex w-max items-center gap-1 rounded-[50px] bg-red px-5 py-2 font-opt text-base font-normal leading-tight text-white"
               >
                 {homePageData?.formSubmitBtn}
                 <AnimatedArrow hover={hoverSubmit} />
@@ -884,7 +864,7 @@ const HomePageV2 = () => {
             height={57.09}
             className="w-full max-w-[130px] xl:max-w-[150px]"
           />
-          <span className="text-center font-base text-lg font-normal leading-6 text-secondary">
+          <span className="text-center font-opt text-lg font-normal leading-6 text-optDesc">
             {homePageData?.companyLocation}
           </span>
         </div>

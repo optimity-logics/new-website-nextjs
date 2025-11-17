@@ -77,12 +77,11 @@ export default {
         benefits: "url('/images/benefits.png')",
       },
       fontFamily: {
-        Inter: ['Inter'],
-        Poppins: ['Poppins'],
-        base: ['Aeonik', 'sans-serif'],
+        opt: ['var(--font-opt)'],
+        dmSans: ['var(--font-dmSans)'],
       },
       colors: {
-        primary: '#0A1013',
+        primary: '#0A081B',
         secondary: '#41494D',
         subtle: '#9CA5A9',
         iconSubtle: '#131313',
@@ -107,6 +106,7 @@ export default {
         lightSilver: '#D4D4D4',
         graphite: '#636363',
         lavenderGray: '#888790',
+        optDesc: '#3B5068',
         black: {
           DEFAULT: '#000000',
           900: {
