@@ -20,7 +20,7 @@ const SectionHeader = ({
 }: sectionProps) => {
   return (
     <>
-      <div className={`flex w-full flex-col gap-5 ${className}`}>
+      <div className={`flex flex-col gap-5 ${className}`}>
         {headingText && (
           <HighlitedDescription
             dangerouslySetInnerHTML={{
