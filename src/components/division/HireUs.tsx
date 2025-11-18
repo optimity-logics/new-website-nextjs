@@ -105,6 +105,8 @@ const HireUs = () => {
             alt="hire-us"
             width={400}
             height={100}
+            priority
+            fetchPriority="high"
             className="absolute -left-1/2 bottom-5 hidden h-auto 3xl:block"
           />
           <Image
@@ -112,6 +114,8 @@ const HireUs = () => {
             alt="hire-us"
             width={600}
             height={100}
+            priority
+            fetchPriority="high"
             className="h-auto: w-full max-w-[500px]"
           />
         </div>

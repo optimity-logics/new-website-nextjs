@@ -108,6 +108,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                 alt="technology"
                 fill
                 priority
+                fetchPriority="high"
                 className="object-contain"
               />
             )}
