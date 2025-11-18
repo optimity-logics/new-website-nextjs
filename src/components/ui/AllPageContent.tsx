@@ -94,7 +94,7 @@ const AllPageContent = ({ data }: IPropsType) => {
     <>
       <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-full bg-no-repeat">
         <div className="flex h-full min-h-screen items-center justify-center">
-          <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-0">
+          <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-20">
             <HeroSectionHeading
               className="!gap-10 lg:max-w-[600px] 3xl:max-w-[720px] 4xl:max-w-[860px]"
               heading={data?.HeroSectionData?.heading}
