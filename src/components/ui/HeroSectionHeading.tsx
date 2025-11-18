@@ -55,7 +55,7 @@ const HeroSectionHeading = ({
       )}
       <HighlitedDescription
         dangerouslySetInnerHTML={{ __html: heading }}
-        className={`font-opt text-4xl font-semibold leading-10 lg:font-bold xl:text-[40px] xl:leading-[48px] 3xl:text-[62px] 3xl:leading-[68px] ${isDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
+        className={`font-opt text-4xl font-semibold leading-10 lg:text-[40px] lg:font-bold lg:leading-[48px] 3xl:text-[62px] 3xl:leading-[68px] ${isDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
       />
       {description && (
         <p

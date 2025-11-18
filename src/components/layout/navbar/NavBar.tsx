@@ -46,7 +46,7 @@ const NavBar = () => {
         className={`sticky ${small ? 'top-1.5 mx-4 xl:mx-0' : 'top-0'} z-[99]`}
       >
         <div
-          className={`easing_func ${small ? 'small rounded-full bg-white shadow-card md:px-4 xl:py-0' : 'large bg-transparent md:px-8 lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-4 py-4 sm:px-6`}
+          className={`easing_func ${small ? 'small rounded-full bg-white shadow-card md:px-4 xl:py-0' : 'large bg-transparent md:px-8 lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-2 py-2 sm:px-6 lg:py-4`}
         >
           <div className="navigation">
             <div className="flex items-center justify-between">
@@ -60,6 +60,7 @@ const NavBar = () => {
                     alt="hamburger-menu"
                     width={24}
                     height={24}
+                    className="h-auto max-w-[22px]"
                   />
                 </div>
                 <div>
@@ -69,6 +70,7 @@ const NavBar = () => {
                       alt="nav-logo"
                       width={42}
                       height={39}
+                      className="h-auto max-w-[30px]"
                     />
                   </Link>
                 </div>
@@ -111,10 +113,10 @@ const NavBar = () => {
               >
                 <Link
                   href="/contact-us"
-                  className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-opt text-base font-normal leading-5 text-white"
+                  className="flex h-9 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-3 py-[8px] font-opt text-sm font-normal text-white lg:h-10 lg:px-4 lg:pr-[14px] lg:text-base lg:leading-5"
                 >
                   Contact us
-                  <span className="mt-0.5">
+                  <span className="lg:mt-0.5">
                     <AnimatedArrow hover={hover} />
                   </span>
                 </Link>

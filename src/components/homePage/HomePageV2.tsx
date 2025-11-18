@@ -123,77 +123,79 @@ const HomePageV2 = () => {
           backgroundImage:
             'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)',
         }}
-        className="-mt-20"
+        className="-mt-[94px]"
       >
-        <div className="bg-heroBg bg-cover bg-center bg-no-repeat pt-20 lg:bg-full">
-          <Container className="relative py-[50px] lg:py-[100px] 3xl:py-[140px] 4xl:py-[184px]">
-            <div className="flex flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
-              <div className="flex w-full flex-col gap-[50px] xl:max-w-[560px] 4xl:max-w-[860px]">
-                <HeroSectionHeading
-                  badgeTitle={homePageData?.baddge}
-                  heading={homePageData?.heroTitle}
-                  description={homePageData?.heroDescription}
-                />
-                <Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                  onMouseUp={handleMouseEnter}
-                  onMouseDown={handleMouseLeave}
-                  href={homePageData?.heroContactUsBtnLink}
-                  className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
-                >
-                  {homePageData?.heroContactUsBtn}
-                  <AnimatedArrow hover={hover} />
-                </Link>
-              </div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.8,
-                  ease: 'easeIn',
-                }}
-              >
-                <div className="relative z-30 mx-auto w-max">
-                  <Image
-                    src={ellips1}
-                    alt=""
-                    width={300}
-                    height={300}
-                    className="absolute -left-[17%] -top-[20%] -z-10 max-w-[200px] object-contain xl:max-w-full"
+        <div className="bg-heroBg bg-cover bg-center bg-no-repeat lg:bg-full">
+          <div className="flex h-full min-h-screen items-center justify-center">
+            <Container className="relative h-full pb-14 pt-[130px] lg:py-[50px]">
+              <div className="flex w-full flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
+                <div className="flex w-full flex-col gap-[50px] xl:max-w-[600px] 3xl:max-w-[780px] 4xl:max-w-[860px]">
+                  <HeroSectionHeading
+                    badgeTitle={homePageData?.baddge}
+                    heading={homePageData?.heroTitle}
+                    description={homePageData?.heroDescription}
                   />
-                  <Image
-                    src={ellips1}
-                    alt=""
-                    width={300}
-                    height={300}
-                    className="absolute -bottom-[16%] -right-[10%] -z-10 max-w-[200px] object-contain xl:-right-[20%] xl:max-w-full"
-                  />
-                  <Image
-                    src={ellipse2}
-                    alt=""
-                    width={400}
-                    height={400}
-                    className="absolute -bottom-[18%] -left-[19%] -z-10 max-w-[200px] object-contain xl:max-w-full"
-                  />
-                  <Image
-                    src={ellipse2}
-                    alt=""
-                    width={400}
-                    height={400}
-                    className="absolute -top-[8%] right-[6%] -z-10 max-w-[200px] object-contain xl:max-w-full"
-                  />
-                  <Image
-                    src={heroImg}
-                    alt="hero-img"
-                    width={450}
-                    height={450}
-                    className="max-w-[300px] 3xl:max-w-[350px] 4xl:max-w-max"
-                  />
+                  <Link
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    onMouseUp={handleMouseEnter}
+                    onMouseDown={handleMouseLeave}
+                    href={homePageData?.heroContactUsBtnLink}
+                    className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
+                  >
+                    {homePageData?.heroContactUsBtn}
+                    <AnimatedArrow hover={hover} />
+                  </Link>
                 </div>
-              </motion.div>
-            </div>
-          </Container>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.8,
+                    ease: 'easeIn',
+                  }}
+                >
+                  <div className="relative z-30 mx-auto w-max">
+                    <Image
+                      src={ellips1}
+                      alt=""
+                      width={300}
+                      height={300}
+                      className="absolute -left-[17%] -top-[20%] -z-10 max-w-[200px] object-contain xl:max-w-full"
+                    />
+                    <Image
+                      src={ellips1}
+                      alt=""
+                      width={300}
+                      height={300}
+                      className="absolute -bottom-[16%] -right-[10%] -z-10 max-w-[200px] object-contain xl:-right-[20%] xl:max-w-full"
+                    />
+                    <Image
+                      src={ellipse2}
+                      alt=""
+                      width={400}
+                      height={400}
+                      className="absolute -bottom-[18%] -left-[19%] -z-10 max-w-[200px] object-contain xl:max-w-full"
+                    />
+                    <Image
+                      src={ellipse2}
+                      alt=""
+                      width={400}
+                      height={400}
+                      className="absolute -top-[8%] right-[6%] -z-10 max-w-[200px] object-contain xl:max-w-full"
+                    />
+                    <Image
+                      src={heroImg}
+                      alt="hero-img"
+                      width={450}
+                      height={450}
+                      className="max-w-[300px] lg:max-w-[350px] 4xl:max-w-max"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+            </Container>
+          </div>
         </div>
       </div>
       <div

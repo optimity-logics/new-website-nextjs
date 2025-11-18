@@ -44,7 +44,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-no-repeat">
+      <div className="-mt-[94px] bg-aboutUsHeroBg bg-full bg-no-repeat">
         <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:flex-row">
           <HeroSectionHeading
             badgeTitle={aboutUsPage?.surTitle}

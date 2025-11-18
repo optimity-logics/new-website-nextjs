@@ -2283,7 +2283,7 @@ export const menuData = [
         img: mobile,
         items: [
           {
-            techName: 'ios',
+            techName: 'iOS',
             techLink: '/ios-development-service',
           },
           {
@@ -2376,35 +2376,27 @@ export const menuData = [
         img: trending,
         items: [
           {
-            techName: 'Wearable App Development',
-            techLink: '/wearable-app-development-service',
-          },
-          {
-            techName: 'Internet of Things',
-            techLink: '/internet-of-things-development-service',
+            techName: 'Generative AI',
+            techLink: '/generative-ai-development-service',
           },
           {
             techName: 'Tailwind CSS',
-            techLink: '/hire-tailwind-css-developers',
-          },
-          {
-            techName: 'Generative AI',
-            techLink: '/generative-ai-development-service',
+            techLink: '/tailwind-css-development-service',
           },
         ],
       },
     ],
   },
   {
-    menuTitle: 'About Us',
+    menuTitle: 'About',
     megaMenuItem: [],
   },
   {
-    menuTitle: 'Our Works',
+    menuTitle: 'Work',
     megaMenuItem: [],
   },
   {
-    menuTitle: 'Hire Us',
+    menuTitle: 'Hire',
     megaMenuItem: [
       {
         title: 'data & ai',
