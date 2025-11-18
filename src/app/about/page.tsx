@@ -14,6 +14,7 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import SectionHeader from '@/components/ui/SectionHeader';
+import { div } from 'framer-motion/client';
 
 const AboutUs = () => {
   const [hoverContact, setHoverContact] = useState<boolean>(false);
@@ -45,7 +46,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="-mt-[94px] bg-aboutUsHeroBg bg-full bg-no-repeat">
-        <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:flex-row">
+        <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:h-screen lg:flex-row">
           <HeroSectionHeading
             badgeTitle={aboutUsPage?.surTitle}
             heading={aboutUsPage?.heding}
@@ -55,7 +56,7 @@ const AboutUs = () => {
             className="relative z-30 ml-auto flex w-full max-w-[900px] flex-col gap-7 px-4 sm:px-6 sm:pb-[120px] md:px-8 xl:px-10 3xl:ml-16 3xl:pl-[100px]"
           />
 
-          <div className="relative">
+          <div className="relative lg:-mb-[132px]">
             <Image
               src={heroBgRight}
               alt=""

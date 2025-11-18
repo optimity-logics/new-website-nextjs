@@ -123,13 +123,13 @@ const HomePageV2 = () => {
           backgroundImage:
             'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)',
         }}
-        className="-mt-[94px]"
+        className="-mt-20"
       >
         <div className="bg-heroBg bg-cover bg-center bg-no-repeat lg:bg-full">
           <div className="flex h-full min-h-screen items-center justify-center">
             <Container className="relative h-full pb-14 pt-[130px] lg:py-[50px]">
               <div className="flex w-full flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
-                <div className="flex w-full flex-col gap-[50px] xl:max-w-[600px] 3xl:max-w-[780px] 4xl:max-w-[860px]">
+                <div className="flex w-full flex-col gap-[50px] xl:max-w-[600px] 3xl:max-w-[620px] 4xl:max-w-[860px]">
                   <HeroSectionHeading
                     badgeTitle={homePageData?.baddge}
                     heading={homePageData?.heroTitle}

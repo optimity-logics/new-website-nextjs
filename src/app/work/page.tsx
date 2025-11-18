@@ -26,19 +26,21 @@ const OurWorks = () => {
         className="-mt-20 bg-aboutUsHeroBg bg-cover bg-no-repeat"
         style={{ backgroundSize: '100% 100%' }}
       >
-        <Container className="mx-auto flex h-full w-full max-w-[1000px] flex-col items-center justify-between gap-12 pb-[100px] pt-[150px] lg:flex-row">
+        <Container className="mx-auto flex w-full max-w-[1000px] flex-col items-center justify-between gap-12 pb-[100px] pt-[150px] lg:h-screen lg:flex-row">
           <HeroSectionHeading
             heading={ourWorkPage?.headingTitle}
             description={ourWorkPage?.headingDescription}
             className="w-full max-w-[800px]"
           />
-          <Image
-            src="/images/our-work/our-work-hero.png"
-            alt=""
-            width={450}
-            height={350}
-            className="h-auto max-w-[350px] xl:max-w-max"
-          />
+          <div className="relative aspect-[5/4] h-full w-full max-w-[400px]">
+            <Image
+              src="/images/our-work/our-work-hero.png"
+              alt=""
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
         </Container>
       </div>
       <Container className="-mt-[30px] mb-[60px] flex flex-col gap-[60px] 3xl:mb-[100px]">

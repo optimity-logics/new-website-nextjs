@@ -46,7 +46,7 @@ const NavBar = () => {
         className={`sticky ${small ? 'top-1.5 mx-4 xl:mx-0' : 'top-0'} z-[99]`}
       >
         <div
-          className={`easing_func ${small ? 'small rounded-full bg-white shadow-card md:px-4 xl:py-0' : 'large bg-transparent md:px-8 lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-2 py-2 sm:px-6 lg:py-4`}
+          className={`easing_func ${small ? 'small rounded-full bg-white shadow-card md:px-3 xl:py-0' : 'large bg-transparent md:px-8 lg:py-2 xl:px-10'} mx-auto max-w-[1920px] px-2 py-2`}
         >
           <div className="navigation">
             <div className="flex items-center justify-between">
