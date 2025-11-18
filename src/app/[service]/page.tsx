@@ -109,6 +109,7 @@ import { generateSEOMetadata } from '@/components/utils/MetaData';
 import { SEO } from '@/components/utils/TitleAndDescription';
 import HireUs from '@/components/division/HireUs';
 import Solution from '@/components/division/Solution';
+import { tailwindData } from '@/components/utils/technology/trending/tailwindcss';
 
 type Params = Promise<{ service: string }>;
 
@@ -137,6 +138,7 @@ const dataMap = {
   // Trending
   wearable: weareableAppData,
   internet: internetOfThingsData,
+  tailwind: tailwindData,
   // services
   software: softwareProductDevelopment,
   ui: uiuxData,
