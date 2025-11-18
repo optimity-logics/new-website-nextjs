@@ -12,7 +12,7 @@ const Button = ({ btnName, className, onClick, type }: ButtonProps) => {
     <button
       type={type}
       onClick={onClick}
-      className={`font-base cursor-pointer rounded-[5px] py-[14px] text-base leading-[19.36px] text-white 5xl:text-lg ${className}`}
+      className={`cursor-pointer rounded-[5px] py-[14px] font-opt text-base leading-[19.36px] text-white 5xl:text-lg ${className}`}
     >
       {btnName}
     </button>

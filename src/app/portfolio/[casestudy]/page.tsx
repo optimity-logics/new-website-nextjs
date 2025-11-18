@@ -18,7 +18,7 @@ const CaseStudy = () => {
     <>
       <Container className="mb-10 pt-8 md:mb-12 xl:mb-16 xl:pt-10 3xl:pt-14 4xl:mb-[100px] 4xl:pt-20">
         <div className="flex flex-col items-center gap-7 lg:gap-10 xl:gap-12 3xl:gap-20">
-          <h3 className="font-base mx-auto max-w-[1044px] text-center text-xl font-medium text-[#192020] lg:text-2xl xl:text-3xl 3xl:text-4xl 5xl:text-[50px] 5xl:leading-[60px]">
+          <h3 className="mx-auto max-w-[1044px] text-center font-opt text-xl font-medium text-[#192020] lg:text-2xl xl:text-3xl 3xl:text-4xl 5xl:text-[50px] 5xl:leading-[60px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry.
           </h3>
@@ -33,48 +33,48 @@ const CaseStudy = () => {
           <div className="grid grid-cols-1 gap-5 md:grid-cols-3 xl:gap-8 3xl:gap-12 4xl:gap-[62px]">
             <div className="sticky top-[110px] col-span-1 hidden h-max flex-col gap-[18px] rounded-[25px] border border-[#000]/20 bg-white px-9 py-[29px] shadow-md md:flex">
               <div className="flex flex-col gap-1">
-                <h4 className="font-base text-[22px] font-semibold leading-9 text-[#192020]">
+                <h4 className="font-opt text-[22px] font-semibold leading-9 text-[#192020]">
                   lorem ipsum{' '}
                 </h4>
                 <Link
                   href={'/'}
-                  className="font-base text-xl font-light leading-9 text-[#192020]"
+                  className="font-opt text-xl font-light leading-9 text-[#192020]"
                 >
                   lorem ipsum text
                 </Link>
               </div>
               <span className="w-full border-[0.5px] border-[#000]/20"></span>
               <div className="flex flex-col gap-1">
-                <h4 className="font-base text-[22px] font-semibold leading-9 text-[#192020]">
+                <h4 className="font-opt text-[22px] font-semibold leading-9 text-[#192020]">
                   lorem ipsum{' '}
                 </h4>
                 <Link
                   href={'/'}
-                  className="font-base text-xl font-light leading-9 text-[#192020]"
+                  className="font-opt text-xl font-light leading-9 text-[#192020]"
                 >
                   lorem ipsum text
                 </Link>
                 <Link
                   href={'/'}
-                  className="font-base text-xl font-light leading-9 text-[#192020]"
+                  className="font-opt text-xl font-light leading-9 text-[#192020]"
                 >
                   lorem ipsum text
                 </Link>
                 <Link
                   href={'/'}
-                  className="font-base text-xl font-light leading-9 text-[#192020]"
+                  className="font-opt text-xl font-light leading-9 text-[#192020]"
                 >
                   lorem ipsum text
                 </Link>
               </div>
               <span className="w-full border-[0.5px] border-[#000]/20"></span>
               <div className="flex flex-col gap-1">
-                <h4 className="font-base text-[22px] font-semibold leading-9 text-[#192020]">
+                <h4 className="font-opt text-[22px] font-semibold leading-9 text-[#192020]">
                   lorem ipsum{' '}
                 </h4>
                 <Link
                   href={'/'}
-                  className="font-base text-xl font-light leading-9 text-[#192020]"
+                  className="font-opt text-xl font-light leading-9 text-[#192020]"
                 >
                   lorem ipsum text
                 </Link>
@@ -83,15 +83,15 @@ const CaseStudy = () => {
             <div className="col-span-2 flex flex-col gap-8 xl:gap-10 3xl:gap-12 4xl:gap-20">
               <div className="flex flex-col gap-5 lg:gap-8 4xl:gap-[45px]">
                 <div className="flex flex-col gap-[15px]">
-                  <h3 className="font-base text-2xl font-medium leading-7 text-[#000] 4xl:text-[41px] 4xl:leading-[58px]">
+                  <h3 className="font-opt text-2xl font-medium leading-7 text-[#000] 4xl:text-[41px] 4xl:leading-[58px]">
                     The Brief
                   </h3>
                   <div className="flex flex-col gap-2">
-                    <span className="font-base text-xl font-medium leading-6 text-[#000] xl:text-[22px] xl:leading-9">
+                    <span className="font-opt text-xl font-medium leading-6 text-[#000] xl:text-[22px] xl:leading-9">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </span>
-                    <p className="font-base text-xl font-normal leading-6 text-[#504c4c] 4xl:text-[22px] 4xl:leading-8">
+                    <p className="font-opt text-xl font-normal leading-6 text-[#504c4c] 4xl:text-[22px] 4xl:leading-8">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the
                       industry&#39;s standard dummy text ever since the 1500s,
@@ -109,15 +109,15 @@ const CaseStudy = () => {
               </div>
               <div className="flex flex-col gap-5 lg:gap-8 4xl:gap-[45px]">
                 <div className="flex flex-col gap-[15px]">
-                  <h3 className="font-base text-2xl font-medium leading-7 text-[#000] 4xl:text-[41px] 4xl:leading-[58px]">
+                  <h3 className="font-opt text-2xl font-medium leading-7 text-[#000] 4xl:text-[41px] 4xl:leading-[58px]">
                     The Challenge
                   </h3>
                   <div className="flex flex-col gap-2">
-                    <span className="font-base text-xl font-medium leading-6 text-[#000] xl:text-[22px] xl:leading-9">
+                    <span className="font-opt text-xl font-medium leading-6 text-[#000] xl:text-[22px] xl:leading-9">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </span>
-                    <p className="font-base text-xl font-normal leading-6 text-[#504c4c] 4xl:text-[22px] 4xl:leading-8">
+                    <p className="font-opt text-xl font-normal leading-6 text-[#504c4c] 4xl:text-[22px] 4xl:leading-8">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the
                       industry&#39;s standard dummy text ever since the 1500s,
@@ -132,15 +132,15 @@ const CaseStudy = () => {
               </div>
               <div className="flex flex-col gap-5 lg:gap-8 4xl:gap-[45px]">
                 <div className="flex flex-col gap-[15px]">
-                  <h3 className="font-base text-2xl font-medium leading-7 text-[#000] 4xl:text-[41px] 4xl:leading-[58px]">
+                  <h3 className="font-opt text-2xl font-medium leading-7 text-[#000] 4xl:text-[41px] 4xl:leading-[58px]">
                     The Solution
                   </h3>
                   <div className="flex flex-col gap-2">
-                    <span className="font-base text-xl font-medium leading-6 text-[#000] xl:text-[22px] xl:leading-9">
+                    <span className="font-opt text-xl font-medium leading-6 text-[#000] xl:text-[22px] xl:leading-9">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </span>
-                    <p className="font-base text-xl font-normal leading-6 text-[#504c4c] 4xl:text-[22px] 4xl:leading-8">
+                    <p className="font-opt text-xl font-normal leading-6 text-[#504c4c] 4xl:text-[22px] 4xl:leading-8">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the
                       industry&#39;s standard dummy text ever since the 1500s,
@@ -158,10 +158,10 @@ const CaseStudy = () => {
                         key={index}
                         className="flex flex-col gap-3 rounded-[25px] bg-white p-5 shadow-md 4xl:px-9 4xl:py-[34px]"
                       >
-                        <h3 className="font-base text-2xl font-medium leading-7 text-[#192020] 5xl:text-[30px] 5xl:leading-[39px]">
+                        <h3 className="font-opt text-2xl font-medium leading-7 text-[#192020] 5xl:text-[30px] 5xl:leading-[39px]">
                           {item?.heading}
                         </h3>
-                        <p className="font-base text-xl font-normal leading-6 text-[#504c4c] 5xl:text-2xl 5xl:leading-[34px]">
+                        <p className="font-opt text-xl font-normal leading-6 text-[#504c4c] 5xl:text-2xl 5xl:leading-[34px]">
                           {item?.description}
                         </p>
                       </div>
@@ -170,11 +170,11 @@ const CaseStudy = () => {
               </div>
               <div className="flex flex-col gap-5 lg:gap-8 4xl:gap-[45px]">
                 <div className="flex flex-col gap-[15px]">
-                  <h3 className="font-base text-2xl font-medium leading-7 text-[#000] 4xl:text-[41px] 4xl:leading-[58px]">
+                  <h3 className="font-opt text-2xl font-medium leading-7 text-[#000] 4xl:text-[41px] 4xl:leading-[58px]">
                     The Impact
                   </h3>
                   <div className="flex flex-col gap-5 md:gap-10 4xl:gap-14">
-                    <span className="font-base text-xl font-medium leading-6 text-[#000] xl:text-[22px] xl:leading-9">
+                    <span className="font-opt text-xl font-medium leading-6 text-[#000] xl:text-[22px] xl:leading-9">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </span>
@@ -188,20 +188,20 @@ const CaseStudy = () => {
                           className="w-full object-cover"
                         />
                         <div className="flex flex-col items-center justify-center gap-[18px]">
-                          <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+                          <h5 className="font-opt text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                             354+
                           </h5>
-                          <span className="font-base text-nowrap text-[26px] font-normal leading-[52px] text-primary">
+                          <span className="text-nowrap font-opt text-[26px] font-normal leading-[52px] text-primary">
                             Completed Projects
                           </span>
                         </div>
                       </div>
                       <div className="flex h-full flex-col justify-between gap-5 rounded-[15px] bg-[#92E6FF] pt-5">
                         <div className="flex flex-col items-center justify-center gap-[18px] px-[70.5px]">
-                          <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+                          <h5 className="font-opt text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                             15+
                           </h5>
-                          <span className="font-base text-nowrap text-[26px] font-normal leading-[52px] text-primary">
+                          <span className="text-nowrap font-opt text-[26px] font-normal leading-[52px] text-primary">
                             Employees
                           </span>
                         </div>
@@ -223,10 +223,10 @@ const CaseStudy = () => {
                           className="w-full rounded-t-[15px] object-cover"
                         />
                         <div className="flex flex-col items-center justify-center gap-[18px] px-[70.5px]">
-                          <h5 className="font-base text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
+                          <h5 className="font-opt text-4xl font-semibold leading-[40px] tracking-[-0.16px] text-primary md:text-[40px] md:leading-[44px] 3xl:text-[45px] 3xl:font-bold 3xl:leading-[50px] 4xl:text-[50px] 5xl:text-[60px] 5xl:leading-[51.99px]">
                             05+
                           </h5>
-                          <span className="font-base text-nowrap text-[26px] font-normal leading-[52px] text-primary">
+                          <span className="text-nowrap font-opt text-[26px] font-normal leading-[52px] text-primary">
                             Year Of Experience
                           </span>
                         </div>

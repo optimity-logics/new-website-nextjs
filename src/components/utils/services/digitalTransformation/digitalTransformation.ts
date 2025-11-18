@@ -1,19 +1,24 @@
-import softwareProductDevelopmentImg from '../../../../../public/webp/services/software-product-development.webp';
+import softwareProductDevelopmentImg from '../../../../../public/images/services/software-development.png';
 import { IPropsDataTypes } from '@/components/type/type';
 import framework from '../../../../../public/svg/technology/mobile/framework.svg';
 import tools from '../../../../../public/svg/technology/mobile/tools&utilities.svg';
 import database from '../../../../../public/svg/technology/mobile/database.svg';
 import plugin from '../../../../../public/svg/technology/mobile/plugin.svg';
 import dns from '../../../../../public/svg/technology/mobile/dns.svg';
-import uiux from '../../../../../public/webp/services/uiux.webp';
-import digitalMarketingImage from '../../../../../public/webp/services/digital-marketing.webp';
-import qa from '../../../../../public/webp/services/quality-engineer.webp';
-import hireDedicatedDev from '../../../../../public/webp/services/hire-dedicated-devs.webp';
+import uiux from '../../../../../public/images/services/uiux.png';
+import digitalMarketingImage from '../../../../../public/images/services/digital-marketing.png';
+import qa from '../../../../../public/images/services/qe.png';
+import hireDedicatedDev from '../../../../../public/images/services/dedicated-team.png';
+import cto from '../../../../../public/images/services/cto.png';
+import nda from '../../../../../public/svg/services/nda.svg';
+import hiringModal from '../../../../../public/svg/services/hiring-models.svg';
+import refundPolicy from '../../../../../public/svg/services/refund-policy.svg';
+import resource from '../../../../../public/svg/services/resource.svg';
 
 export const softwareProductDevelopment: IPropsDataTypes = {
   HeroSectionData: {
     heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
+    techName: 'Software',
     description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
@@ -115,11 +120,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -367,7 +394,7 @@ fledged development solutions aligned with your business objectives. `,
 export const uiuxData: IPropsDataTypes = {
   HeroSectionData: {
     heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
+    techName: 'UI/UX',
     description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
@@ -469,11 +496,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -721,7 +770,7 @@ fledged development solutions aligned with your business objectives. `,
 export const digitalMarketing: IPropsDataTypes = {
   HeroSectionData: {
     heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
+    techName: 'Digital Marketing',
     description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
@@ -823,11 +872,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -1074,7 +1145,7 @@ fledged development solutions aligned with your business objectives. `,
 export const qualityEngineer: IPropsDataTypes = {
   HeroSectionData: {
     heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
+    techName: 'Quality Engineering',
     description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
@@ -1176,11 +1247,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -1427,7 +1520,7 @@ fledged development solutions aligned with your business objectives. `,
 export const hireDedicatedDevs: IPropsDataTypes = {
   HeroSectionData: {
     heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
+    techName: 'Hire Developer',
     description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
@@ -1529,11 +1622,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -1780,12 +1895,12 @@ fledged development solutions aligned with your business objectives. `,
 export const ctoServices: IPropsDataTypes = {
   HeroSectionData: {
     heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
+    techName: 'CTO Services',
     description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: hireDedicatedDev,
+    techImg: cto,
     btnName: `Let’s Connect`,
     btnLink: '',
   },
@@ -1882,11 +1997,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {

@@ -23,15 +23,21 @@ const OurWorks = () => {
   return (
     <>
       <div
-        className="-mt-20 h-screen bg-aboutUsHeroBg bg-cover bg-no-repeat"
+        className="-mt-20 bg-aboutUsHeroBg bg-cover bg-no-repeat"
         style={{ backgroundSize: '100% 100%' }}
       >
-        <Container className="mx-auto flex h-full w-full max-w-[1000px] flex-col items-center justify-center gap-5">
+        <Container className="mx-auto flex h-full w-full max-w-[1000px] flex-col items-center justify-between gap-12 pb-[100px] pt-[150px] lg:flex-row">
           <HeroSectionHeading
             heading={ourWorkPage?.headingTitle}
             description={ourWorkPage?.headingDescription}
-            descriptionStyle="text-center  max-w-[900px]"
-            className="items-center justify-center"
+            className="w-full max-w-[800px]"
+          />
+          <Image
+            src="/images/our-work/our-work-hero.png"
+            alt=""
+            width={450}
+            height={350}
+            className="h-auto max-w-[350px] xl:max-w-max"
           />
         </Container>
       </div>

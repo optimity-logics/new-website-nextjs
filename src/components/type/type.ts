@@ -210,6 +210,10 @@ type ITechnologyWeUse = {
     servicesItems: string[];
   }[];
 };
+type ICrossPlatformBenefits = {
+  img: string;
+  title: string;
+};
 export type IPropsDataTypes = {
   HeroSectionData: IHeroSectionData;
   development: IDevelopments;
@@ -220,4 +224,8 @@ export type IPropsDataTypes = {
   WhyOptimityForDevelopment: IWhyOptimityForDevelopment;
   Faqs: IFaqs;
   deployProject?: IDeployProject;
+  crossPlatformBenefitsTitle: string;
+  crossPlatformBenefits: ICrossPlatformBenefits[];
+  crossPlatformBenefitsContactBtn: string;
+  crossPlatformBenefitsContactBtnLink: string;
 };

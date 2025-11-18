@@ -7,6 +7,8 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import MarqueeWrapper from '@/components/model-&-Drawer/MarqueeWrapper';
+import SectionHeader from '../ui/SectionHeader';
+import HeroSectionHeading from '../ui/HeroSectionHeading';
 
 const HireUs = () => {
   const [hover, setHover] = useState<boolean>(false);
@@ -87,30 +89,16 @@ const HireUs = () => {
   return (
     <>
       <Container className="mb-[60px] flex flex-col-reverse items-center justify-between gap-10 md:flex-row xxl:mb-[100px]">
-        <div className="flex w-full max-w-[600px] flex-col gap-10">
-          <div className="flex flex-col gap-5">
-            <h2 className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]">
-              Engage Dedicated Offshore Developers
-            </h2>
-            <p className="font-base w-full text-lg font-normal leading-6 text-primary opacity-50">
-              At Optimity Logics, you&#39;ll find a powerhouse of top-tier
+        <HeroSectionHeading
+          heading="<span class='text-red'>Engage Dedicated</span> Offshore Developers"
+          description="At Optimity Logics, you&#39;ll find a powerhouse of top-tier
               industrial talents spanning web developers, project managers, QA
               analysts, UI/UX designers, business analysts, technical experts,
-              and consultants.
-            </p>
-          </div>
-          <Link
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            onMouseUp={handleMouseEnter}
-            onMouseDown={handleMouseLeave}
-            href={'/'}
-            className="font-base flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal leading-tight text-white"
-          >
-            Let’s consult with our expert
-            <AnimatedArrow hover={hover} />
-          </Link>
-        </div>
+              and consultants. "
+          LinkName="Let’s consult with our expert"
+          link=""
+          className="max-w-[630px] !gap-10"
+        />
         <div className="relative">
           <Image
             src="/images/hire-us/hire-us.png"
@@ -129,16 +117,17 @@ const HireUs = () => {
         </div>
       </Container>
       <Container className="mb-[60px] flex flex-col gap-8 4xl:mb-[100px] 4xl:gap-[60px]">
-        <h3 className="font-base text-center text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
-          <span className="text-red">Hire Based</span> on Your Requirement
-        </h3>
+        <SectionHeader
+          headingText={`<span class="text-red">Hire Based</span> on Your Requirement`}
+          headingStyle="text-center"
+        />
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           <div className="grid grid-stack">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="font-base rounded-lg bg-white/30 px-4 py-2 text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
+              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-2xl font-medium capitalize leading-7 text-primary backdrop-blur-sm">
                 full time
               </span>
-              <p className="font-base text-2xl font-normal leading-7 text-white">
+              <p className="font-opt text-2xl font-normal leading-7 text-white/80">
                 8 hours / day 5 days / week
               </p>
             </div>
@@ -152,10 +141,10 @@ const HireUs = () => {
           </div>
           <div className="grid grid-stack">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="font-base rounded-lg bg-white/30 px-4 py-2 text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
+              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-2xl font-medium capitalize leading-7 text-primary backdrop-blur-sm">
                 Part time
               </span>
-              <p className="font-base text-2xl font-normal leading-7 text-white">
+              <p className="font-opt text-2xl font-normal leading-7 text-white/80">
                 4 hours / day 5 days / week
               </p>
             </div>
@@ -169,10 +158,10 @@ const HireUs = () => {
           </div>
           <div className="grid grid-stack">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="font-base rounded-lg bg-white/30 px-4 py-2 text-2xl font-normal capitalize leading-7 text-black backdrop-blur-sm">
+              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-2xl font-medium capitalize leading-7 text-primary backdrop-blur-sm">
                 hourly basis
               </span>
-              <p className="font-base text-2xl font-normal leading-7 text-white">
+              <p className="font-opt text-2xl font-normal leading-7 text-white/80">
                 Starts with 40 hours Pay as you go
               </p>
             </div>
@@ -193,10 +182,10 @@ const HireUs = () => {
         <Container className="flex flex-col items-center justify-between gap-10 py-12 lg:flex-row">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-5">
-              <h5 className="font-base text-3xl font-normal leading-8 text-white opacity-80">
+              <h5 className="font-opt text-3xl font-normal leading-8 text-white/45">
                 Choose Your Ideal Engagement Model.{' '}
               </h5>
-              <h3 className="font-base text-5xl font-medium italic text-red">
+              <h3 className="font-opt text-5xl font-medium italic text-red">
                 Flexible, Simple, and Efficient.
               </h3>
             </div>
@@ -206,10 +195,12 @@ const HireUs = () => {
               onMouseUp={handleMouseEnter}
               onMouseDown={handleMouseLeave}
               href={'/'}
-              className="font-base flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal capitalize leading-tight text-white"
+              className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal capitalize leading-tight text-white"
             >
               contact us
-              <AnimatedArrow hover={hover} />
+              <span className="mt-0.5">
+                <AnimatedArrow hover={hover} />
+              </span>
             </Link>
           </div>
           <div className="">
@@ -233,32 +224,30 @@ const HireUs = () => {
               height={500}
             />
           </div>
-          <div className="flex flex-col gap-6">
-            <h4 className="font-base text-5xl font-medium text-black">
-              How we work
-            </h4>
-            <p className="font-base text-lg font-normal leading-6 text-black-500-alpha">
-              Lorem Ipsum is to expedite the integration of new technologies
+          <SectionHeader
+            headingText="How we work"
+            descriptionText="Lorem Ipsum is to expedite the integration of new technologies
               within enterprises, addressing the inevitable challenges that
               accompany digital expansion and fostering continuous innovation.
               Whether it&#39;s a consumer-focused application or a game-changing
-              enterprise solution.
-            </p>
-          </div>
+              enterprise solution."
+            className="items-start"
+            descriptionStyle="text-start"
+          />
           {workStep &&
             workStep.map((item, i) => (
               <div
                 key={i}
                 className="flex flex-col gap-[30px] rounded-[20px] bg-white/70 p-[30px] shadow-howWorkCard backdrop-blur-sm"
               >
-                <span className="font-base flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] text-xl font-medium text-white">
+                <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] font-opt text-xl font-medium text-white">
                   0{i + 1}
                 </span>
                 <div className="flex flex-col gap-3">
-                  <h5 className="font-base text-2xl font-medium leading-6 text-black">
+                  <h5 className="font-opt text-2xl font-medium leading-6 text-primary">
                     {item?.title}
                   </h5>
-                  <p className="font-base text-lg font-normal leading-6 text-black/50">
+                  <p className="font-opt text-lg font-normal leading-6 text-optDesc">
                     {item?.description}
                   </p>
                 </div>
@@ -271,10 +260,14 @@ const HireUs = () => {
         className="mb-[60px] bg-tech-we-work bg-cover bg-no-repeat 4xl:mb-[100px]"
       >
         <div className="flex flex-col items-center gap-10 py-12">
-          <h3 className="font-base mx-auto w-full max-w-[800px] text-center text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]">
-            <span className="text-red">Advantages!</span> Things You Will Always
-            Love to Have
-          </h3>
+          <SectionHeader
+            headingText={`<span className="text-red">Advantages!</span> Things You Will Always
+            Love to Have`}
+            className="mx-auto max-w-[800px]"
+            isSectionDark={true}
+            headingStyle="text-center"
+          />
+
           <div className="flex w-full items-stretch gap-4 overflow-x-auto px-7 scrollbar-hide">
             {advantagesCard &&
               advantagesCard.map((item, i) => (
@@ -282,10 +275,10 @@ const HireUs = () => {
                   key={i}
                   className="flex w-full min-w-[300px] flex-col gap-3 rounded-2xl bg-white/10 p-[30px] backdrop-blur-md sm:min-w-[550px]"
                 >
-                  <h5 className="font-base text-2xl font-medium leading-6 text-white">
+                  <h5 className="font-opt text-2xl font-medium leading-6 text-white">
                     {item?.title}
                   </h5>
-                  <p className="font-base line-clamp-6 text-lg font-normal leading-6 text-subtle">
+                  <p className="line-clamp-6 font-opt text-lg font-normal leading-6 text-white/45">
                     {item?.description}
                   </p>
                 </div>
@@ -294,7 +287,7 @@ const HireUs = () => {
         </div>
       </div>
       <div className="flex flex-col items-center gap-10">
-        <h3 className="font-base mx-auto w-full max-w-[800px] text-center text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
+        <h3 className="mx-auto w-full max-w-[800px] text-center font-opt text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]">
           <span className="text-red">Hire Based </span> on Your Requirement
         </h3>
 
@@ -388,7 +381,7 @@ const HireUs = () => {
               className="row-start-3 md:col-start-2 md:row-span-2 md:row-start-4 xl:col-start-3 xl:row-start-2"
             >
               <div className="flex h-full flex-col justify-between gap-14 rounded-[17px] bg-black p-5 backdrop-blur-lg md:px-[28px] md:py-[32px]">
-                <p className="font-base text-2xl font-extrabold leading-8 text-white md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
+                <p className="font-opt text-2xl font-extrabold leading-8 text-optDesc md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
                   {homePageData?.contactUsCardTitle}
                 </p>
                 <Link
@@ -397,7 +390,7 @@ const HireUs = () => {
                   onMouseUp={handleMouseEnterContact}
                   onMouseDown={handleMouseLeaveContact}
                   href={homePageData?.contactUsCardBtnLink}
-                  className="font-base flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal leading-tight text-primary"
+                  className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-primary"
                 >
                   {homePageData?.contactUsCardBtn}
                   <AnimatedArrow hover={hoverContact} />
@@ -435,11 +428,11 @@ const HireUs = () => {
                   <div
                     className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
                   >
-                    <p className="font-base line-clamp-5 text-base font-normal leading-6 text-secondary opacity-80 md:text-lg md:leading-7">
+                    <p className="line-clamp-5 font-opt text-lg font-normal leading-6 text-optDesc opacity-80">
                       {item?.message}
                     </p>
                     <div className="flex items-center justify-between gap-2.5">
-                      <p className="font-base text-base font-normal leading-5 text-subtle">
+                      <p className="font-opt text-lg font-normal leading-6 text-iconSubtle">
                         {item?.role}
                       </p>
                       <Image

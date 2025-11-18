@@ -3,7 +3,6 @@ import Container from '@/components/ui/Container';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import {
   aboutUsPage,
-  homePageData,
   jobOpenings,
 } from '@/components/utils/Constant';
 import Image from 'next/image';
@@ -19,17 +18,13 @@ import Link from 'next/link';
 import AnimatedArrow from '@/components/common/AnimatedArrow';
 import heroBgRight from '../../../public/svg/about-us/about-shape.svg';
 import heroCareer from '../../../public/images/homePagev2/career.png';
-import logo from '../../../public/svg/logo.svg';
+import SectionHeader from '@/components/ui/SectionHeader';
 
 const Career = () => {
   const [isSelectPositions, setIsSelectPositions] =
     useState<string>('all positions (17)');
-  const [hover, setHover] = useState<boolean>(false);
   const [hoverPosition, setHoverPosition] = useState<boolean>(false);
-  const handleMouseEnter = () => setHover(true);
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
+  
   const handleMouseEnterPosition = () => setHoverPosition(true);
   const handleMouseLeavePosition = () => {
     setHoverPosition(false);
@@ -39,28 +34,15 @@ const Career = () => {
       <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-no-repeat">
         <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:flex-row">
           <div className="relative z-30 mx-auto w-full px-4 sm:px-6 md:px-8 xl:px-10 3xl:ml-1 3xl:pl-[120px]">
-            <div className="mx-auto flex w-full max-w-[910px] flex-col gap-7">
-              <h1 className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]">
-                Join the team
-              </h1>
-              <p className="font-base w-full max-w-[800px] text-lg font-normal leading-6 text-primary opacity-50">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+            <HeroSectionHeading
+              heading="Join the team"
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&#39;s standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-              <Link
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                onMouseUp={handleMouseEnter}
-                onMouseDown={handleMouseLeave}
-                href={homePageData?.heroContactUsBtnLink}
-                className="font-base flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal leading-tight text-white"
-              >
-                Join the team
-                <AnimatedArrow hover={hover} />
-              </Link>
-            </div>
+                of type and scrambled it to make a type specimen book."
+              className="max-w-[910px] !gap-10"
+              LinkName="Join the team"
+            />
           </div>
           <div className="relative">
             <Image
@@ -91,11 +73,11 @@ const Career = () => {
                 <div className="flex flex-col gap-3 xl:gap-[20px]">
                   <div
                     style={{ backgroundSize: '100% 100%' }}
-                    className={`flex w-full items-center justify-center ${item?.backGrouund} font-base bg-cover bg-no-repeat py-5 text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
+                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-opt text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
                   >
                     {item?.title}
                   </div>
-                  <span className="font-base text-center text-base font-normal leading-[24px] text-primary xl:text-[18px]">
+                  <span className="text-center font-opt text-base font-normal leading-[24px] text-optDesc xl:text-xl">
                     {item?.description}
                   </span>
                 </div>
@@ -105,12 +87,13 @@ const Career = () => {
       </Container>
       <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-7 md:gap-10 4xl:gap-[60px]">
-          <HeroSectionHeading
-            heading="What <span>benefits</span> are waiting for you?"
-            description={
+          <SectionHeader
+            headingText="What <span class='text-red'>benefits</span> are waiting for you?"
+            descriptionText={
               'Visioncraft offers a variety of hand-picked benefits that you can take advantage of!'
             }
-            className="4xl:gap-[30px]"
+            descriptionStyle="text-center"
+            headingStyle="text-center"
           />
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:gap-6 xxl:grid-cols-4">
             {aboutUsPage?.benefitesList &&
@@ -128,7 +111,7 @@ const Career = () => {
                       className="max-w-7"
                     />
                   </div>
-                  <p className="font-base px-10 text-center text-base font-normal text-primary md:text-base md:leading-7 xl:text-[18px]">
+                  <p className="px-10 text-center font-opt text-base font-normal text-primary md:text-base md:leading-7 xl:text-[18px]">
                     {item?.benefitesName}
                   </p>
                 </div>
@@ -138,7 +121,7 @@ const Career = () => {
       </Container>
       <Container className="mb-10 md:mb-12 xl:mb-16 4xl:mb-[100px]">
         <div className="flex flex-col items-center gap-[60px]">
-          <HeroSectionHeading heading="We have 17 open <span>positions</span> now!" />
+          <SectionHeader headingText="We have 17 open <span class='text-red'>positions</span> now!" />
           <div className="flex w-full flex-col items-start gap-10 md:flex-row">
             <div className="flex w-full flex-col gap-11 md:sticky md:top-24 md:max-w-[389px]">
               <ul className="no-scrollbar flex flex-row overflow-x-scroll md:flex-col">
@@ -155,10 +138,10 @@ const Career = () => {
                     }
                   >
                     <span
-                      className={`font-base text-base leading-5 md:text-lg md:leading-6 ${
+                      className={`font-opt text-base leading-5 md:text-lg md:leading-6 ${
                         item?.positionName.toLowerCase() === isSelectPositions
                           ? 'font-normal text-white md:font-medium md:text-primary'
-                          : 'font-normal text-black-500-alpha'
+                          : 'font-normal text-optDesc'
                       }`}
                     >
                       {item?.positionName}
@@ -166,7 +149,7 @@ const Career = () => {
                   </li>
                 ))}
               </ul>
-              <span className="font-base text-base font-normal leading-6 text-black-750-alpha xl:text-lg xl:leading-6">
+              <span className="font-opt text-base font-normal leading-6 text-optDesc xl:text-lg xl:leading-6">
                 We are always seeking talented people. In case you cannot find
                 your desired position here, please send us your LinkedIn profile
                 and give us your contact information. We will be in touch.
@@ -185,20 +168,20 @@ const Career = () => {
                     >
                       <div className="flex h-full flex-col justify-between gap-3 md:gap-5 lg:gap-8">
                         <div className="flex flex-col gap-2.5">
-                          <h3 className="font-base text-2xl leading-6 text-iconSubtle md:leading-7 xl:text-3xl xl:leading-9">
+                          <h3 className="font-opt text-2xl font-medium leading-6 text-primary md:leading-7 xl:text-3xl xl:leading-9">
                             {detail?.title}
                           </h3>
                           <ul className="flex flex-wrap items-center gap-2.5">
                             {detail?.workModes.map((mode, modeIndex) => (
                               <li
                                 key={modeIndex}
-                                className="font-base rounded-[40px] border-1.5 border-subtle px-3 py-2 text-sm font-medium leading-5 text-black-750-alpha"
+                                className="rounded-[40px] border-1.5 border-optDesc/20 px-3 py-2 font-opt text-sm font-medium leading-5 text-black-750-alpha"
                               >
                                 {mode}
                               </li>
                             ))}
                           </ul>
-                          <p className="font-base mt-2.5 text-base font-normal leading-5 text-black-750-alpha">
+                          <p className="mt-2.5 font-opt text-lg font-normal leading-6 text-optDesc">
                             Optimity#Logics
                             {detail?.description}
                           </p>
@@ -209,7 +192,7 @@ const Career = () => {
                           onMouseUp={handleMouseEnterPosition}
                           onMouseDown={handleMouseLeavePosition}
                           href={'/position'}
-                          className="font-base flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal leading-tight text-white"
+                          className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
                         >
                           See position
                           <AnimatedArrow hover={hoverPosition} />
@@ -229,10 +212,11 @@ const Career = () => {
       >
         <Container className="mb-10 py-10 md:mb-12 xl:mb-16 4xl:mb-[100px] 4xl:py-20">
           <div className="flex flex-col items-center gap-10 3xl:gap-[50px] 4xl:gap-[80px]">
-            <HeroSectionHeading
-              heading="Get a <span>glimpse of the magic happening</span>   at optimity logics!"
-              isDark={true}
-              className="max-w-[1000px]"
+            <SectionHeader
+              headingText="Get a <span class='text-red'>glimpse of the magic happening</span>   at optimity logics!"
+              isSectionDark={true}
+              className="max-w-[800px]"
+              headingStyle="text-center"
             />
             <div className="no-scrollbar overflow-x-scroll">
               <div className="grid w-full grid-cols-2 grid-rows-2 gap-[21px] md:grid-cols-4 lg:grid-rows-3">
@@ -269,7 +253,7 @@ const Career = () => {
 
                 <div className="flex h-full cursor-pointer items-end rounded-[15px] bg-[#1a1a1a] p-4 lg:p-8">
                   <div className="flex flex-col gap-3">
-                    <span className="font-base text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
+                    <span className="font-opt text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
                       Explore more
                     </span>
                     <Image
@@ -286,20 +270,6 @@ const Career = () => {
           </div>
         </Container>
       </div>
-      <Container className="mb-[60px]">
-        <div className="mx-auto flex max-w-[692px] flex-col items-center gap-6 4xl:gap-10">
-          <Image
-            src={logo}
-            alt="nav-logo"
-            width={202}
-            height={57.09}
-            className="w-full max-w-[130px] xl:max-w-[150px]"
-          />
-          <span className="font-base text-center text-lg font-normal leading-6 text-secondary">
-            {homePageData?.companyLocation}
-          </span>
-        </div>
-      </Container>
     </>
   );
 };

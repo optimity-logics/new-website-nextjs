@@ -24,7 +24,7 @@ const Review = () => {
             <div className="flex items-center gap-5">
               <div className="flex items-center gap-1.5">
                 <Image src={star} alt="star" width={15} height={14} />
-                <span className="font-base text-base font-semibold leading-7 text-white">
+                <span className="font-opt text-base font-semibold leading-7 text-white">
                   {item?.review}
                 </span>
               </div>

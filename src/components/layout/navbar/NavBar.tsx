@@ -111,7 +111,7 @@ const NavBar = () => {
               >
                 <Link
                   href="/contact-us"
-                  className="font-base flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] text-base font-normal leading-5 text-white"
+                  className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-opt text-base font-normal leading-5 text-white"
                 >
                   Contact us
                   <span className="mt-0.5">

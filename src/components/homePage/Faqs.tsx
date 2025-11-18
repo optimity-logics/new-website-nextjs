@@ -30,7 +30,7 @@ const Faqs = () => {
             onMouseUp={handleMouseEnter}
             onMouseDown={handleMouseLeave}
             href={homePageData?.getInTouchBtnLink}
-            className="font-base flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] text-base font-normal leading-tight text-white"
+            className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
           >
             {homePageData?.getInTouchBtn}
             <AnimatedArrow hover={hover} />

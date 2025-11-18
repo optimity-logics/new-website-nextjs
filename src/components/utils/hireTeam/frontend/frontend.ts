@@ -4,6 +4,10 @@ import tools from '../../../../../public/svg/technology/mobile/tools&utilities.s
 import database from '../../../../../public/svg/technology/mobile/database.svg';
 import plugin from '../../../../../public/svg/technology/mobile/plugin.svg';
 import dns from '../../../../../public/svg/technology/mobile/dns.svg';
+import nda from '../../../../../public/svg/services/nda.svg';
+import hiringModal from '../../../../../public/svg/services/hiring-models.svg';
+import refundPolicy from '../../../../../public/svg/services/refund-policy.svg';
+import resource from '../../../../../public/svg/services/resource.svg';
 
 export const hireReactDeveloper: IPropsDataTypes = {
   HeroSectionData: {
@@ -110,11 +114,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -463,11 +489,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -816,11 +864,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -1169,11 +1239,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -1522,11 +1614,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -1875,11 +1989,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -2228,11 +2364,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {
@@ -2581,11 +2739,33 @@ fledged development solutions aligned with your business objectives. `,
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+  crossPlatformBenefitsTitle:
+    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+  crossPlatformBenefitsContactBtn: `Contact Us`,
+  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefits: [
+    {
+      img: nda,
+      title: '100% NDA-protected contract',
+    },
+    {
+      img: resource,
+      title: '100% resource substitution*',
+    },
+    {
+      img: hiringModal,
+      title: 'Flexible hiring models',
+    },
+    {
+      img: refundPolicy,
+      title: '100% refund policy*',
+    },
+  ],
   developmentProcess: {
     heading: `<span class="text-red"> Mobile App </span>
             Development Process`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
+            industry. Lorem Ipsum has been the industry's standard dummy
             text`,
     developmentProcessStep: [
       {

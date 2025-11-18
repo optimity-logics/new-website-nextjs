@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import AnimatedArrow from '../common/AnimatedArrow';
-import { homePageData } from '../utils/Constant';
 
 interface IHeadingProps {
   heading: string;
@@ -56,7 +55,7 @@ const HeroSectionHeading = ({
       )}
       <HighlitedDescription
         dangerouslySetInnerHTML={{ __html: heading }}
-        className={`font-opt text-4xl font-semibold leading-10 lg:font-bold xl:text-[40px] xl:leading-[48px] 3xl:text-[62px] 4xl:leading-[68px] ${isDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
+        className={`font-opt text-4xl font-semibold leading-10 lg:font-bold xl:text-[40px] xl:leading-[48px] 3xl:text-[62px] 3xl:leading-[68px] ${isDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
       />
       {description && (
         <p
@@ -74,7 +73,7 @@ const HeroSectionHeading = ({
           href={link || ''}
           className={`flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white ${LinkStyle}`}
         >
-          {homePageData?.heroContactUsBtn}
+          {LinkName}
           <AnimatedArrow hover={hover} />
         </Link>
       )}
