@@ -126,8 +126,8 @@ const HomePageV2 = () => {
         className="-mt-20"
       >
         <div className="bg-heroBg bg-cover bg-center bg-no-repeat lg:bg-full">
-          <div className="flex h-full min-h-screen items-center justify-center">
-            <Container className="relative h-full pb-14 pt-[130px] lg:py-[50px]">
+          <div className="flex h-full items-center justify-center lg:min-h-screen">
+            <Container className="relative h-full pb-14 pt-[150px] lg:py-[50px]">
               <div className="flex w-full flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
                 <div className="flex w-full flex-col gap-[50px] xl:max-w-[600px] 3xl:max-w-[620px] 4xl:max-w-[860px]">
                   <HeroSectionHeading

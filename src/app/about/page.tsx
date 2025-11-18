@@ -14,8 +14,6 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { div } from 'framer-motion/client';
-
 const AboutUs = () => {
   const [hoverContact, setHoverContact] = useState<boolean>(false);
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);

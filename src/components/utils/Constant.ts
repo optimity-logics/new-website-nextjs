@@ -2847,14 +2847,6 @@ export const menuSidebar = [
         img: trending,
         items: [
           {
-            techName: 'Wearable App Development',
-            techLink: '/wearable-app-development-service',
-          },
-          {
-            techName: 'Internet of Things',
-            techLink: '/internet-of-things-development-service',
-          },
-          {
             techName: 'Tailwind CSS',
             techLink: '/tailwind-css-development-service',
           },
@@ -2867,15 +2859,15 @@ export const menuSidebar = [
     ],
   },
   {
-    menuTitle: 'About Us',
+    menuTitle: 'About',
     megaMenuItem: [],
   },
   {
-    menuTitle: 'Our Works',
+    menuTitle: 'Work',
     megaMenuItem: [],
   },
   {
-    menuTitle: 'Hire Us',
+    menuTitle: 'Hire',
     megaMenuItem: [
       {
         title: 'data & ai',
