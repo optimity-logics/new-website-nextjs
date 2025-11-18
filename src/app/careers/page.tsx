@@ -1,10 +1,7 @@
 'use client';
 import Container from '@/components/ui/Container';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
-import {
-  aboutUsPage,
-  jobOpenings,
-} from '@/components/utils/Constant';
+import { aboutUsPage, jobOpenings } from '@/components/utils/Constant';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import first from '../../../public/webp/careers/1.webp';
@@ -24,7 +21,7 @@ const Career = () => {
   const [isSelectPositions, setIsSelectPositions] =
     useState<string>('all positions (17)');
   const [hoverPosition, setHoverPosition] = useState<boolean>(false);
-  
+
   const handleMouseEnterPosition = () => setHoverPosition(true);
   const handleMouseLeavePosition = () => {
     setHoverPosition(false);
