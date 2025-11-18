@@ -31,7 +31,7 @@ const SectionHeader = ({
         )}
         {descriptionText && (
           <p
-            className={`w-full max-w-[900px] text-center font-opt text-xl font-normal leading-7 ${isSectionDark ? 'text-white/40' : 'text-subtle'} ${descriptionStyle}`}
+            className={`w-full max-w-[900px] text-center font-opt text-xl font-normal leading-7 ${isSectionDark ? 'text-white/40' : 'text-optDesc'} ${descriptionStyle}`}
           >
             {descriptionText}
           </p>

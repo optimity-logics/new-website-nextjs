@@ -3,14 +3,15 @@ import React, { useEffect, useRef, useState } from 'react';
 import Container from './Container';
 import checkMark from '../../../public/svg/check-mark.svg';
 import Link from 'next/link';
-import { flutterCrossApp, homePageData, logoIcons } from '../utils/Constant';
+import { homePageData, logoIcons } from '../utils/Constant';
 import 'react-international-phone/style.css';
 import AnimatedArrow from '../common/AnimatedArrow';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import LogoAnimation from '../homePage/LogoAnimation';
 import { IPropsDataTypes } from '../type/type';
-import styled from 'styled-components';
+import HeroSectionHeading from './HeroSectionHeading';
+import SectionHeader from './SectionHeader';
 
 interface IPropsType {
   data: IPropsDataTypes;
@@ -33,15 +34,12 @@ const AllPageContent = ({ data }: IPropsType) => {
   //   path.toLowerCase().includes(link.path.toLowerCase()),
   // );
   const logos = logoIcons.map((image) => image?.src);
-  const [hover, setHover] = useState<boolean>(false);
   const [hoverServicesTab, setHoverServicesTab] = useState<
     Record<number, boolean>
   >({
     0: false,
     1: false,
   });
-  const HighlitedDescriptionHero = styled.h3``;
-  const HighlitedDescription = styled.h1``;
   const [hoverViewAll, setHoverViewAll] = useState<boolean>(false);
   const [hoverContact, setHoverContact] = useState<boolean>(false);
   const [processDevInd, setProcessDevInd] = useState<number>(0);
@@ -52,10 +50,6 @@ const AllPageContent = ({ data }: IPropsType) => {
       (tab) => tab.id === activeTab,
     )?.content;
   const [width, setWidth] = useState(0);
-  const handleMouseEnter = () => setHover(true);
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
   const handleMouseEnterServicesTab = (i: number) =>
     setHoverServicesTab((prev) => ({ ...prev, [i]: true }));
   const handleMouseLeaveServicesTab = (i: number) => {
@@ -99,43 +93,27 @@ const AllPageContent = ({ data }: IPropsType) => {
   return (
     <>
       <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-full bg-no-repeat pt-20">
-        <Container className="relative z-20 flex flex-col items-center justify-between gap-5 py-20 md:flex-row">
-          <div className="flex w-full max-w-[877px] flex-col gap-10">
-            <div className="flex flex-col gap-[30px]">
-              <HighlitedDescription
-                dangerouslySetInnerHTML={{
-                  __html: data?.HeroSectionData?.heading,
-                }}
-                className="font-base text-[40px] font-medium leading-tight text-primary lg:text-[45px] 3xl:text-[60px]"
-              />
-              <p className="font-base w-full max-w-[800px] text-lg font-normal leading-6 text-primary opacity-50">
-                {data?.HeroSectionData?.description}
-              </p>
-            </div>
-            <Link
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onMouseUp={handleMouseEnter}
-              onMouseDown={handleMouseLeave}
-              href={data?.HeroSectionData?.btnLink}
-              className="font-base flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal leading-tight text-white"
-            >
-              {data?.HeroSectionData?.btnName}
-              <AnimatedArrow hover={hover} />
-            </Link>
-          </div>
-          <div className="w-full max-w-[400px]">
+        <Container className="relative z-20 flex h-screen flex-col items-center justify-between gap-5 py-20 lg:flex-row">
+          <HeroSectionHeading
+            className="max-w-[900px] !gap-10"
+            heading={data?.HeroSectionData?.heading}
+            description={data?.HeroSectionData?.description}
+            LinkName={data?.HeroSectionData?.btnName}
+            link={data?.HeroSectionData?.btnLink}
+          />
+          <div className="relative aspect-[5/4] h-auto w-full max-w-[500px]">
             {data?.HeroSectionData?.techImg && (
               <Image
                 src={data?.HeroSectionData?.techImg || ''}
                 alt="technology"
-                width={512}
-                height={512}
+                fill
+                priority
+                className="object-contain"
               />
             )}
           </div>
           {data?.HeroSectionData?.techName && (
-            <span className="font-base absolute -bottom-[1.5%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center text-[45px] font-medium text-[#161616] opacity-10 sm:-bottom-[3%] sm:text-[70px] md:-bottom-[6%] md:text-[100px]">
+            <span className="absolute -bottom-[3%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px]">
               {data?.HeroSectionData?.techName}
             </span>
           )}
@@ -150,7 +128,7 @@ const AllPageContent = ({ data }: IPropsType) => {
       >
         <Container>
           <div className="flex flex-col items-center gap-[25px] lg:hidden xl:flex-row 5xl:rounded-[24px]">
-            <span className="font-base max-w-[400px] text-center text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
+            <span className="max-w-[400px] text-center font-opt text-base font-normal leading-[1.6rem] text-optDesc md:text-lg md:leading-7 xl:text-start">
               {homePageData?.trustedClient}
             </span>
             <Marquee
@@ -178,7 +156,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             </Marquee>
           </div>
           <div className="hidden flex-col items-center gap-[25px] lg:flex xl:flex-row xl:justify-between 5xl:rounded-[24px]">
-            <span className="font-base max-w-[400px] text-center text-base font-normal leading-[1.6rem] text-primary md:text-lg md:leading-7 xl:text-start">
+            <span className="max-w-[400px] text-center font-opt text-base font-normal leading-[1.6rem] text-optDesc md:text-lg md:leading-7 xl:text-start">
               {homePageData?.trustedClient}
             </span>
             <LogoAnimation logo={logos} />
@@ -186,17 +164,12 @@ const AllPageContent = ({ data }: IPropsType) => {
         </Container>
       </div>
       <Container className="mb-[60px] flex flex-col items-center gap-[60px] 4xl:mb-[100px]">
-        <div className="mx-auto flex w-full max-w-[1100px] flex-col items-center gap-5">
-          <HighlitedDescriptionHero
-            dangerouslySetInnerHTML={{
-              __html: data?.development?.heading,
-            }}
-            className="font-base text-center text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]"
-          />
-          <p className="font-base w-full text-center text-lg font-normal leading-6 text-black-750-alpha">
-            {data?.development?.description}
-          </p>
-        </div>
+        <SectionHeader
+          headingText={data?.development?.heading}
+          descriptionText={data?.development?.description}
+          headingStyle="text-center"
+          className="max-w-[900px] items-center"
+        />
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
           {data?.development?.developmentServices &&
             data?.development?.developmentServices.map((item, index) => (
@@ -204,10 +177,10 @@ const AllPageContent = ({ data }: IPropsType) => {
                 key={index}
                 className="flex flex-col gap-4 rounded-[15px] p-5 shadow-devCardShadow md:p-[30px]"
               >
-                <h5 className="font-base text-2xl font-medium leading-8 text-primary">
+                <h5 className="font-opt text-2xl font-medium leading-8 text-primary">
                   {item?.title}
                 </h5>
-                <p className="font-base text-base font-light text-black-750-alpha">
+                <p className="font-opt text-xl font-normal leading-7 text-optDesc">
                   {item?.description}
                 </p>
               </div>
@@ -219,12 +192,13 @@ const AllPageContent = ({ data }: IPropsType) => {
         className="mb-[60px] bg-tech-we-work bg-cover bg-no-repeat 4xl:mb-[100px]"
       >
         <Container className="flex flex-col items-center gap-[60px] py-[60px] 4xl:py-[100px]">
-          <HighlitedDescriptionHero
-            dangerouslySetInnerHTML={{
-              __html: data?.WhyOptimityForDevelopment?.heading,
-            }}
-            className="font-base mx-auto max-w-[1000px] text-center text-[35px] font-medium leading-10 text-white 4xl:text-[48px] 4xl:leading-[52px]"
+          <SectionHeader
+            headingText={data?.WhyOptimityForDevelopment?.heading}
+            className="max-w-[900px]"
+            headingStyle="text-center"
+            isSectionDark={true}
           />
+
           <div className="flex w-full flex-col gap-10 md:flex-row">
             <div className="flex w-full flex-col gap-4 md:max-w-[400px]">
               {data?.WhyOptimityForDevelopment?.developmentServicesStep &&
@@ -237,9 +211,9 @@ const AllPageContent = ({ data }: IPropsType) => {
                       onMouseLeave={() => handleMouseLeaveServicesTab(i)}
                       onMouseUp={() => handleMouseEnterServicesTab(i)}
                       onMouseDown={() => handleMouseLeaveServicesTab(i)}
-                      className={`font-base flex items-center justify-between rounded-full px-6 py-4 text-base font-normal transition-all duration-300 ${
+                      className={`flex items-center justify-between rounded-full px-6 py-4 font-opt text-lg font-normal transition-all duration-300 ${
                         activeTab === tab.id
-                          ? 'bg-white text-black shadow-lg'
+                          ? 'bg-white text-primary shadow-lg'
                           : 'bg-[#f0f3f5]/10 text-white backdrop-blur-sm'
                       }`}
                     >
@@ -255,10 +229,10 @@ const AllPageContent = ({ data }: IPropsType) => {
               {activeContent && (
                 <div className="flex flex-col gap-5">
                   <div className="flex flex-col gap-4">
-                    <h2 className="font-base text-2xl font-normal leading-7 text-white">
+                    <h2 className="font-opt text-2xl font-normal leading-7 text-white">
                       {activeContent.heading}
                     </h2>
-                    <p className="font-base text-sm font-normal leading-5 text-subtle">
+                    <p className="font-opt text-base font-normal leading-6 text-white/45">
                       {activeContent.desc}
                     </p>
                   </div>
@@ -272,7 +246,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                           width={25}
                           height={25}
                         />
-                        <p className="font-base text-base font-normal leading-5 text-white">
+                        <p className="font-opt text-base font-normal leading-5 text-white">
                           {point}
                         </p>
                       </div>
@@ -295,11 +269,11 @@ const AllPageContent = ({ data }: IPropsType) => {
                 <div className="flex flex-col gap-3 xl:gap-[20px]">
                   <div
                     style={{ backgroundSize: '100% 100%' }}
-                    className={`flex w-full items-center justify-center ${item?.backGrouund} font-base bg-cover bg-no-repeat py-5 text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
+                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-opt text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
                   >
                     {item?.title}
                   </div>
-                  <span className="font-base text-center text-base font-normal leading-[24px] text-primary xl:text-[18px]">
+                  <span className="text-center font-opt text-base font-normal leading-[24px] text-optDesc xl:text-xl">
                     {item?.description}
                   </span>
                 </div>
@@ -313,17 +287,17 @@ const AllPageContent = ({ data }: IPropsType) => {
           className="flex flex-col gap-5 rounded-3xl bg-black bg-tech-we-work bg-full bg-no-repeat p-7 md:flex-row md:items-end md:gap-14 md:rounded-[40px] lg:gap-10 lg:px-14 lg:py-20"
         >
           <div className="flex w-full max-w-[990px] flex-col gap-[38px]">
-            <h4 className="font-base mx-auto text-[35px] font-medium leading-10 text-white xxl:text-[60px] xxl:leading-[72px]">
-              Want to build a cross platform
-              <span className="capitalize text-red"> mobile app </span> using
-              Flutter?
-            </h4>
+            <SectionHeader
+              headingText={data?.crossPlatformBenefitsTitle}
+              headingStyle="3xl:text-[55px]"
+              isSectionDark={true}
+            />
             <ul className="flex flex-wrap items-center gap-5">
-              {flutterCrossApp &&
-                flutterCrossApp.map((item, index) => (
+              {data?.crossPlatformBenefits &&
+                data?.crossPlatformBenefits.map((item, index) => (
                   <li
                     key={index}
-                    className="font-base flex items-center gap-2 rounded-full border-[1px] border-[#192020] p-3 text-sm font-normal text-white backdrop-blur-[44px]"
+                    className="flex items-center gap-2 rounded-full border-[1px] border-[#192020] p-3 font-opt text-sm font-normal text-white backdrop-blur-[44px]"
                   >
                     <Image src={item?.img} alt="" width={15} height={15} />{' '}
                     {item?.title}
@@ -372,27 +346,22 @@ const AllPageContent = ({ data }: IPropsType) => {
               onMouseLeave={handleMouseLeaveContact}
               onMouseUp={handleMouseEnterContact}
               onMouseDown={handleMouseLeaveContact}
-              href="/"
-              className="font-base flex w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] text-[14px] font-normal leading-tight text-primary"
+              href={data?.crossPlatformBenefitsContactBtnLink}
+              className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-6 text-optDesc"
             >
-              Contact Us
+              {data?.crossPlatformBenefitsContactBtn}
               <AnimatedArrow hover={hoverContact} />
             </Link>
           </div>
         </div>
       </Container>
       <Container className="mb-[60px] flex flex-col gap-[60px] 4xl:mb-[100px]">
-        <div className="mx-auto flex max-w-full flex-col gap-8 lg:mx-0 lg:max-w-[506px]">
-          <HighlitedDescriptionHero
-            dangerouslySetInnerHTML={{
-              __html: data?.developmentProcess?.heading,
-            }}
-            className="font-base text-center text-[35px] font-medium leading-10 text-primary lg:text-start 4xl:text-[48px] 4xl:leading-[52px]"
-          />
-          <p className="font-base w-full text-center text-lg font-normal leading-6 text-black-750-alpha lg:text-start">
-            {data?.developmentProcess?.description}
-          </p>
-        </div>
+        <SectionHeader
+          headingText={data?.developmentProcess?.heading}
+          descriptionText={data?.developmentProcess?.description}
+          descriptionStyle="text-start"
+          className="max-w-full lg:max-w-[506px]"
+        />
         <div className="flex w-full flex-col gap-5 xl:flex-row xl:gap-0">
           <ul className="flex w-full max-w-[600px] flex-col">
             {data?.developmentProcess?.developmentProcessStep &&
@@ -401,7 +370,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                   <li
                     key={index}
                     onClick={() => setProcessDevInd(index)}
-                    className="font-base relative flex cursor-pointer items-center pb-8 pl-5 text-lg font-medium leading-5 text-primary last-of-type:pb-0 3xl:pb-16 3xl:text-[22px] 3xl:leading-7"
+                    className="relative flex cursor-pointer items-center pb-8 pl-5 font-opt text-lg font-medium leading-5 text-primary last-of-type:pb-0 3xl:pb-16 3xl:text-[22px] 3xl:leading-7"
                   >
                     <div
                       className={`absolute left-[0px] h-4 w-4 rounded-full transition-all duration-300 ease-in-out md:-left-1.5 md:h-5 md:w-5 xl:top-1 ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
@@ -427,10 +396,10 @@ const AllPageContent = ({ data }: IPropsType) => {
                       key={ind}
                       className={`flex w-full min-w-[400px] flex-col gap-3 rounded-xl border-l-2 border-l-transparent bg-white p-6 shadow-devCardShadow scrollbar-hide first:border-l-red md:max-w-full lg:min-w-full`}
                     >
-                      <h4 className="font-base text-[22px] font-medium leading-7 text-primary">
+                      <h4 className="font-opt text-[22px] font-medium leading-7 text-primary">
                         {items?.title}
                       </h4>
-                      <p className="font-base text-base font-normal leading-6 text-black-750-alpha">
+                      <p className="font-opt text-lg font-normal leading-6 text-optDesc">
                         {items?.description}
                       </p>
                     </div>
@@ -442,21 +411,22 @@ const AllPageContent = ({ data }: IPropsType) => {
       <div className="mb-[60px] bg-black bg-tech-we-work bg-full py-[80px] 4xl:mb-[100px]">
         <Container className="flex flex-col gap-11">
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-center">
-            <div className="flex w-full max-w-[800px] flex-col gap-5">
-              <h4 className="font-base text-[35px] font-medium leading-10 text-red 4xl:text-[48px] 4xl:leading-[52px]">
-                {data?.exploreProjects?.heading}
-              </h4>
-              <p className="font-base w-full text-lg font-normal leading-6 text-subtle">
-                {data?.exploreProjects?.description}
-              </p>
-            </div>
+            <SectionHeader
+              headingText={data?.exploreProjects?.heading}
+              descriptionText={data?.exploreProjects?.description}
+              headingStyle="!text-red"
+              className="max-w-[800px] items-start"
+              isSectionDark={true}
+              descriptionStyle="text-start "
+            />
+
             <Link
               href={data?.exploreProjects?.buttonLink}
               onMouseEnter={handleMouseEnterViewAll}
               onMouseLeave={handleMouseLeaveViewAll}
               onMouseUp={handleMouseEnterViewAll}
               onMouseDown={handleMouseLeaveViewAll}
-              className="font-base flex w-max items-center gap-1 rounded-[50px] text-[14px] font-normal leading-tight text-white"
+              className="flex w-max items-center gap-1 rounded-[50px] font-opt text-base font-normal leading-tight text-white"
             >
               {data?.exploreProjects?.buttonName}
               <AnimatedArrow hover={hoverViewAll} />
@@ -479,10 +449,10 @@ const AllPageContent = ({ data }: IPropsType) => {
                     />
                   </div>
                   <div className="flex flex-col gap-3">
-                    <h3 className="font-base text-2xl font-medium leading-7 text-white">
+                    <h3 className="font-opt text-2xl font-medium leading-7 text-white">
                       {item?.projectName}
                     </h3>
-                    <p className="font-base text-base font-normal leading-6 text-white opacity-50">
+                    <p className="font-opt text-lg font-normal leading-6 text-white/45">
                       {item?.projectDescription}
                     </p>
                   </div>
@@ -492,17 +462,13 @@ const AllPageContent = ({ data }: IPropsType) => {
         </Container>
       </div>
       <Container className="mb-[60px] flex flex-col gap-[60px] 4xl:mb-[100px]">
-        <div className="mx-auto flex max-w-[760px] flex-col gap-8">
-          <HighlitedDescriptionHero
-            dangerouslySetInnerHTML={{
-              __html: data?.technologyWeUse?.heading,
-            }}
-            className="font-base text-center text-[35px] font-medium leading-10 text-primary 4xl:text-[48px] 4xl:leading-[52px]"
-          />
-          <p className="font-base w-full text-center text-lg font-normal leading-6 text-primary opacity-50">
-            {data?.technologyWeUse?.description}
-          </p>
-        </div>
+        <SectionHeader
+          headingText={data?.technologyWeUse?.heading}
+          descriptionText={data?.technologyWeUse?.description}
+          className="mx-auto max-w-[800px] items-center"
+          headingStyle="text-center"
+          descriptionStyle="text-center"
+        />
         <div className="flex flex-col gap-5 3xl:gap-2">
           {data?.technologyWeUse?.technologyServices &&
             data?.technologyWeUse?.technologyServices.map((item, index) => (
@@ -525,7 +491,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                         height={31}
                       />
                     </div>
-                    <span className="font-base text-xl font-medium leading-6 text-iconSubtle sm:text-2xl sm:leading-[30px]">
+                    <span className="font-opt text-xl font-medium leading-6 text-optDesc sm:text-2xl sm:leading-[30px]">
                       {item?.servicesName}
                     </span>
                   </div>
@@ -534,7 +500,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                   {item?.servicesItems?.map((items, ind) => (
                     <div
                       key={ind}
-                      className="flex items-center gap-2 rounded-[33.61px] border-1.5 border-[#EEEEEE] p-3.5"
+                      className="flex items-center gap-2 rounded-[33.61px] border-1.5 border-optDesc/20 p-3.5"
                     >
                       <Image
                         src={checkMark}
@@ -543,7 +509,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                         height={24}
                         className="!w-5 sm:w-max"
                       />
-                      <span className="font-base line-clamp-1 text-sm font-normal leading-4 text-iconSubtle sm:line-clamp-none sm:text-base sm:leading-6">
+                      <span className="line-clamp-1 font-opt text-sm font-medium leading-4 text-optDesc sm:line-clamp-none sm:text-base sm:leading-6">
                         {items}
                       </span>
                     </div>
