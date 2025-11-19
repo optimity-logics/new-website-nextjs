@@ -12,7 +12,7 @@ const Sitemap = () => {
   return (
     <>
       <div
-        className="bg-siteMap bg-cover bg-no-repeat"
+        className="bg-siteMap bg-cover bg-fixed bg-no-repeat"
         style={{ backgroundSize: '100% 100%' }}
       >
         <Container className="py-16 md:py-24">

@@ -83,7 +83,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
             />
           </div>
           <div className="flex flex-col gap-5 p-5">
-            <ul className="flex flex-col gap-5">
+            <ul className="flex flex-col gap-3">
               {menuSidebar &&
                 menuSidebar.map((item, index) => {
                   const hasMegaMenu = item?.megaMenuItem?.length > 0;
@@ -96,7 +96,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                         className="flex w-full cursor-pointer items-center justify-between"
                       >
                         {hasMegaMenu ? (
-                          <span className="font-opt text-base font-normal leading-[21.78px] text-iconSubtle md:text-xl md:leading-6">
+                          <span className="font-opt text-base font-normal leading-[21.78px] text-optDesc">
                             {item?.menuTitle}
                           </span>
                         ) : (
@@ -107,7 +107,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                             <Link
                               key={`link-${item.menuTitle || index}`}
                               href={`/${item?.menuTitle?.toLowerCase().replace(/\s+/g, '-')}`}
-                              className="block !w-full font-opt text-base font-normal leading-[21.78px] text-iconSubtle md:text-xl md:leading-6"
+                              className="block !w-full font-opt text-base font-normal leading-[21.78px] text-optDesc"
                             >
                               {item?.menuTitle}
                             </Link>
@@ -153,7 +153,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                                     <li
                                       key={idx}
                                       onClick={handleCloseDrower}
-                                      className="w-full cursor-pointer pl-2 font-opt text-[15px] font-normal capitalize leading-[18px] text-primarySubtle transition-all duration-300 hover:text-primary"
+                                      className="w-full cursor-pointer pl-2 font-opt text-base font-normal capitalize leading-[18px] text-optDesc transition-all duration-300 hover:text-primary"
                                     >
                                       <Link
                                         href={items.techLink}
@@ -187,17 +187,18 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                   );
                 })}
             </ul>
-            <button
+            <Link
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               onMouseUp={handleMouseEnter}
               onMouseDown={handleMouseLeave}
-              type="button"
+              href={'/contact-us'}
+              onClick={() => handleCloseDrower()}
               className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-opt text-base font-normal leading-5 text-white"
             >
               Contact us
               <AnimatedArrow hover={hover} />
-            </button>
+            </Link>
           </div>
         </div>
       </Drawer>

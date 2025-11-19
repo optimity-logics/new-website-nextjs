@@ -104,7 +104,7 @@ export default function MegaMenu() {
             {item.megaMenuItem.length === 0 ? (
               <Link
                 href={`/${item.menuTitle.toLowerCase().replace(/\s+/g, '-')}`}
-                className={`cursor-pointer py-7 font-opt font-normal leading-6 tracking-[0.5px] text-iconSubtle transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''} `}
+                className={`cursor-pointer py-7 font-opt font-medium leading-6 tracking-[0.5px] text-optDesc transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''} `}
               >
                 <span className="whitespace-pre text-base tracking-wide">
                   {item.menuTitle}
@@ -112,7 +112,7 @@ export default function MegaMenu() {
               </Link>
             ) : (
               <div
-                className={`cursor-pointer py-7 font-opt font-normal leading-6 tracking-[0.5px] text-iconSubtle transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''}`}
+                className={`cursor-pointer py-7 font-opt font-medium leading-6 tracking-[0.5px] text-optDesc transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''}`}
               >
                 <span className="text-base tracking-wide">
                   {item.menuTitle}
@@ -193,11 +193,12 @@ export default function MegaMenu() {
                       </motion.div>
                     ))}
                   </div>
-
-                  {/* Contact Information */}
                   <motion.div variants={itemVariants}>
                     <div className="flex items-center justify-evenly gap-5 border-t border-t-[#f0f0f0] px-2 pt-5">
-                      <div className="flex items-center gap-[15px]">
+                      <Link
+                        href="tel: +91 635 301 5499"
+                        className="flex items-center gap-[15px]"
+                      >
                         <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightBlue">
                           <Image src={phone} alt="" width={24} height={24} />
                         </div>
@@ -209,8 +210,11 @@ export default function MegaMenu() {
                             +91 635 301 5499
                           </span>
                         </div>
-                      </div>
-                      <div className="flex items-center gap-[15px]">
+                      </Link>
+                      <Link
+                        href="mailto:hr@optimitylogics.com"
+                        className="flex items-center gap-[15px]"
+                      >
                         <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightBlue">
                           <Image src={mail} alt="" width={24} height={24} />
                         </div>
@@ -223,8 +227,11 @@ export default function MegaMenu() {
                             hr@optimitylogics.com
                           </span>
                         </div>
-                      </div>
-                      <div className="flex items-center gap-[15px]">
+                      </Link>
+                      <Link
+                        href="mailto:info@optimitylogics.com"
+                        className="flex items-center gap-[15px]"
+                      >
                         <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightBlue">
                           <Image src={mail} alt="" width={24} height={24} />
                         </div>
@@ -236,7 +243,7 @@ export default function MegaMenu() {
                             info@optimitylogics.com
                           </span>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </motion.div>
                 </div>

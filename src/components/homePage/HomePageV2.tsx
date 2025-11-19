@@ -29,6 +29,7 @@ import Marquee from 'react-fast-marquee';
 import SocialMedia from '../layout/footer/SocialMedia';
 import HeroSectionHeading from '../ui/HeroSectionHeading';
 import SectionHeader from '../ui/SectionHeader';
+import OurWorkCard from '../common/OurWorkCard';
 
 const HighlitedDescription = styled.h2``;
 const HomePageV2 = () => {
@@ -125,7 +126,7 @@ const HomePageV2 = () => {
         }}
         className="-mt-20"
       >
-        <div className="bg-heroBg bg-cover bg-center bg-no-repeat lg:bg-full">
+        <div className="bg-heroBg bg-cover bg-fixed bg-center bg-no-repeat lg:bg-full">
           <div className="flex h-full items-center justify-center lg:min-h-screen">
             <Container className="relative h-full pb-14 pt-[150px] lg:py-[50px]">
               <div className="flex w-full flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
@@ -189,6 +190,7 @@ const HomePageV2 = () => {
                       alt="hero-img"
                       width={450}
                       height={450}
+                      priority
                       className="max-w-[300px] lg:max-w-[350px] 4xl:max-w-max"
                     />
                   </div>
@@ -227,6 +229,7 @@ const HomePageV2 = () => {
                       alt="icon"
                       width={150}
                       height={50}
+                      loading="lazy"
                       className="h-[50px] max-w-[100px] object-contain"
                     />
                   </div>
@@ -321,6 +324,7 @@ const HomePageV2 = () => {
                           alt="img"
                           width={698}
                           height={600}
+                          loading="lazy"
                           className="w-full rounded-[14px] object-contain"
                         />
                       </div>
@@ -334,23 +338,8 @@ const HomePageV2 = () => {
       <Container className="mb-[60px] w-full max-w-[1680px] 4xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
           {homePageData?.OurWork &&
-            homePageData?.OurWork.map((item, index) => (
-              <div
-                key={index}
-                className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]"
-              >
-                <div className="flex flex-col gap-3 xl:gap-[20px]">
-                  <div
-                    style={{ backgroundSize: '100% 100%' }}
-                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-opt text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
-                  >
-                    {item?.title}
-                  </div>
-                  <span className="text-center font-opt text-base font-normal leading-[24px] text-optDesc xl:text-xl">
-                    {item?.description}
-                  </span>
-                </div>
-              </div>
+            homePageData?.OurWork.map((item, i) => (
+              <OurWorkCard key={i} data={item} />
             ))}
         </div>
       </Container>
@@ -373,6 +362,7 @@ const HomePageV2 = () => {
                 alt="robot"
                 width={250}
                 height={500}
+                loading="lazy"
                 className="mx-auto"
               />
             </div>
@@ -413,6 +403,7 @@ const HomePageV2 = () => {
                 alt="robot"
                 width={300}
                 height={350}
+                loading="lazy"
                 className="mx-auto h-auto max-w-[180px]"
               />
             </div>
@@ -454,6 +445,7 @@ const HomePageV2 = () => {
                           alt="technology"
                           width={254}
                           height={339}
+                          loading="lazy"
                           className="aspect-auto"
                         />
                         <span className="mt-auto p-[14px] font-opt text-[20px] font-medium leading-[24px] text-white">
@@ -477,6 +469,7 @@ const HomePageV2 = () => {
                         alt="technology"
                         width={254}
                         height={339}
+                        loading="lazy"
                         className="aspect-auto"
                       />
                       <span className="mt-auto p-[14px] font-opt text-[20px] font-medium leading-[24px] text-white">
@@ -494,14 +487,14 @@ const HomePageV2 = () => {
           headingText={homePageData?.ourIndustriesTitle}
           headingStyle="text-center"
         />
-        <div className="hide-scrollbar flex w-full items-center gap-5 overflow-auto px-2 py-2 xl:gap-[30px]">
+        <div className="hide-scrollbar flex w-full items-center gap-5 overflow-auto px-2 py-2">
           {homePageData?.ourIndustries &&
             homePageData?.ourIndustries.map((item, index) => (
               <button
                 key={index}
                 type="button"
                 onClick={() => setActiveTab(item?.id)}
-                className={`w-max text-nowrap rounded-2xl shadow-ourIndustries transition-all duration-500 ease-in-out ${activeTab === item?.id ? 'bg-primary text-white' : 'bg-[#F7F7F8] text-primary'} px-5 py-2 text-center font-opt text-lg leading-7`}
+                className={`w-max text-nowrap rounded-lg shadow-ourIndustries transition-all duration-500 ease-in-out ${activeTab === item?.id ? 'bg-primary text-white' : 'bg-[#F7F7F8] text-primary'} px-5 py-2 text-center font-opt text-lg leading-7`}
               >
                 {item?.label}
               </button>
@@ -523,6 +516,7 @@ const HomePageV2 = () => {
                 alt="industries"
                 width={400}
                 height={400}
+                loading="lazy"
                 className="mx-auto"
               />
             </div>
@@ -533,7 +527,13 @@ const HomePageV2 = () => {
               <ul className="flex flex-col gap-4">
                 {currentTab?.features.map((list, index) => (
                   <li key={index} className="flex items-center gap-5">
-                    <Image src={blackTick} alt="tick" width={24} height={24} />
+                    <Image
+                      src={blackTick}
+                      alt="tick"
+                      loading="lazy"
+                      width={24}
+                      height={24}
+                    />
                     <p className="font-opt text-xl font-normal leading-6 text-optDesc">
                       {list}
                     </p>
@@ -559,6 +559,7 @@ const HomePageV2 = () => {
               alt="industries"
               width={400}
               height={400}
+              loading="lazy"
             />
           </div>
         </div>
@@ -574,6 +575,7 @@ const HomePageV2 = () => {
                   alt="arrow"
                   width={24}
                   height={24}
+                  loading="lazy"
                   className="max-w-4 rotate-180 xxl:max-w-full"
                 />
               </button>
@@ -583,6 +585,7 @@ const HomePageV2 = () => {
                   alt="arrow"
                   width={24}
                   height={24}
+                  loading="lazy"
                   className="max-w-4 xxl:max-w-full"
                 />
               </button>
@@ -627,6 +630,7 @@ const HomePageV2 = () => {
                           src={item?.img}
                           alt="image"
                           fill
+                          loading="lazy"
                           className="h-full w-full rounded-[10px] object-cover"
                         />
                       </div>
@@ -745,6 +749,7 @@ const HomePageV2 = () => {
                           alt="client"
                           width={67}
                           height={67}
+                          loading="lazy"
                           className="h-[67px] w-[67px] rounded-[12px] object-cover outline outline-[2px] -outline-offset-1 outline-[#0000001A]"
                         />
                       </div>
@@ -784,6 +789,7 @@ const HomePageV2 = () => {
                       <Image
                         src={phone}
                         alt="phone-icon"
+                        loading="lazy"
                         width={22}
                         height={22}
                       />
@@ -800,6 +806,7 @@ const HomePageV2 = () => {
                       <Image
                         src={email}
                         alt="email-icon"
+                        loading="lazy"
                         width={22}
                         height={22}
                       />
@@ -864,6 +871,7 @@ const HomePageV2 = () => {
             alt="nav-logo"
             width={202}
             height={57.09}
+            loading="lazy"
             className="w-full max-w-[130px] xl:max-w-[150px]"
           />
           <span className="text-center font-opt text-lg font-normal leading-6 text-optDesc">
