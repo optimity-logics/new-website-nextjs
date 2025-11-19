@@ -44,14 +44,14 @@ const AboutUs = () => {
   return (
     <>
       <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
-        <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:h-screen lg:flex-row">
+        <div className="flex h-full flex-col items-center justify-between pt-[150px] lg:h-screen lg:flex-row">
           <HeroSectionHeading
             badgeTitle={aboutUsPage?.surTitle}
             heading={aboutUsPage?.heding}
             description={aboutUsPage?.description}
             LinkName={homePageData?.heroContactUsBtn}
             link={aboutUsPage?.aboutUsBtnLink}
-            className="relative z-30 ml-auto flex w-full max-w-[900px] flex-col gap-7 px-4 sm:px-6 sm:pb-[120px] md:px-8 xl:px-10 3xl:ml-16 3xl:pl-[100px]"
+            className="relative z-30 ml-auto flex w-full max-w-[900px] flex-col gap-7 px-4 sm:px-6 sm:pb-[120px] md:px-8 xl:px-10 xl:pl-[60px] 3xl:ml-16 4xl:pl-[100px]"
           />
 
           <div className="relative lg:-mb-[132px]">
