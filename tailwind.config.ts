@@ -75,6 +75,7 @@ export default {
         aboutUsHeroBg: "url('/images/about-us/about_us.png')",
         contactUsBg: "url('/images/contact-us-frame.png')",
         benefits: "url('/images/benefits.png')",
+        bgHealthCare: "url('/images/services/healthcare.jpg')",
       },
       fontFamily: {
         opt: ['var(--font-opt)'],

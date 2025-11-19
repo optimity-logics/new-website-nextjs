@@ -12,6 +12,8 @@ import LogoAnimation from '../homePage/LogoAnimation';
 import { IPropsDataTypes } from '../type/type';
 import HeroSectionHeading from './HeroSectionHeading';
 import SectionHeader from './SectionHeader';
+import OurWorkCard from '../common/OurWorkCard';
+import ProjectCard from '../common/ProjectCard';
 
 interface IPropsType {
   data: IPropsDataTypes;
@@ -49,7 +51,7 @@ const AllPageContent = ({ data }: IPropsType) => {
     data?.WhyOptimityForDevelopment?.developmentServicesStep.find(
       (tab) => tab.id === activeTab,
     )?.content;
-  const [width, setWidth] = useState(0);
+
   const handleMouseEnterServicesTab = (i: number) =>
     setHoverServicesTab((prev) => ({ ...prev, [i]: true }));
   const handleMouseLeaveServicesTab = (i: number) => {
@@ -67,8 +69,6 @@ const AllPageContent = ({ data }: IPropsType) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
-
     const currentSection = sectionRef.current; // ✅ Copy the ref value
 
     const observer = new IntersectionObserver(
@@ -92,7 +92,7 @@ const AllPageContent = ({ data }: IPropsType) => {
 
   return (
     <>
-      <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-full bg-no-repeat">
+      <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
         <div className="flex h-full min-h-screen items-center justify-center">
           <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-20">
             <HeroSectionHeading
@@ -265,22 +265,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
           {data?.OurWork &&
             data?.OurWork.map((item, index) => (
-              <div
-                key={index}
-                className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]"
-              >
-                <div className="flex flex-col gap-3 xl:gap-[20px]">
-                  <div
-                    style={{ backgroundSize: '100% 100%' }}
-                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-opt text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
-                  >
-                    {item?.title}
-                  </div>
-                  <span className="text-center font-opt text-base font-normal leading-[24px] text-optDesc xl:text-xl">
-                    {item?.description}
-                  </span>
-                </div>
-              </div>
+              <OurWorkCard key={index} data={item} />
             ))}
         </div>
       </Container>
@@ -437,29 +422,8 @@ const AllPageContent = ({ data }: IPropsType) => {
           </div>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-8 md:gap-y-0 xl:grid-cols-3">
             {data?.exploreProjects?.deployProjects &&
-              data?.exploreProjects?.deployProjects.map((item, index) => (
-                <div
-                  key={index}
-                  className={` ${width >= 1280 ? ((index + 1) % 3 !== 2 ? 'mt-16' : '') : index % 2 === 0 ? 'md:mt-16' : ''} flex h-max flex-col gap-9`}
-                >
-                  <div>
-                    <Image
-                      src={item?.projectImg}
-                      alt={item?.projectName}
-                      width={500}
-                      height={500}
-                      className="aspect-[19/15] w-full rounded-[20px]"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-3">
-                    <h3 className="font-opt text-2xl font-medium leading-7 text-white">
-                      {item?.projectName}
-                    </h3>
-                    <p className="font-opt text-lg font-normal leading-6 text-white/45">
-                      {item?.projectDescription}
-                    </p>
-                  </div>
-                </div>
+              data?.exploreProjects?.deployProjects.map((item, i) => (
+                <ProjectCard key={i} data={item} />
               ))}
           </div>
         </Container>

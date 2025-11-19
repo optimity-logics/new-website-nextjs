@@ -28,7 +28,7 @@ const Career = () => {
   };
   return (
     <>
-      <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-no-repeat">
+      <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
         <div className="flex flex-col items-center justify-between pt-[150px] sm:pt-[180px] lg:flex-row">
           <div className="relative z-30 mx-auto w-full px-4 sm:px-6 md:px-8 xl:px-10 3xl:ml-1 3xl:pl-[120px]">
             <HeroSectionHeading

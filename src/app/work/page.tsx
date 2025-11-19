@@ -23,7 +23,7 @@ const OurWorks = () => {
   return (
     <>
       <div
-        className="-mt-20 bg-aboutUsHeroBg bg-cover bg-no-repeat"
+        className="-mt-20 bg-aboutUsHeroBg bg-cover bg-fixed bg-no-repeat"
         style={{ backgroundSize: '100% 100%' }}
       >
         <Container className="mx-auto flex w-full max-w-[1000px] flex-col items-center justify-between gap-12 pb-[100px] pt-[150px] lg:h-screen lg:flex-row">
@@ -53,12 +53,14 @@ const OurWorks = () => {
                     key={index}
                     className="relative w-full min-w-[200px] max-w-[200px] cursor-pointer rounded-full"
                   >
-                    <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-[#e26b4b]"></div>
+                    {selectedCategories === categories?.categories && (
+                      <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-[#8ca7bc]"></div>
+                    )}
                     <div
                       onClick={() =>
                         setSelectedCategories(categories?.categories)
                       }
-                      className={`flex items-center justify-center rounded-full px-6 py-4 font-opt text-base ${selectedCategories === categories?.categories ? 'bg-gray text-white' : 'bg-white text-primary'}`}
+                      className={`flex h-full items-center justify-center rounded-full px-6 py-4 font-opt text-lg font-medium text-optDesc ${selectedCategories === categories?.categories ? 'bg-[#F3F4F8]' : 'border border-[#E8ECF2] bg-white'}`}
                     >
                       {categories?.categories}
                     </div>
@@ -75,10 +77,12 @@ const OurWorks = () => {
                     key={ind}
                     className="relative w-full min-w-[200px] max-w-[200px] cursor-pointer rounded-full"
                   >
-                    <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-[#e26b4b]"></div>
+                    {selectedSubCategories === subCate?.name && (
+                      <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-[#8ca7bc]"></div>
+                    )}
                     <div
                       onClick={() => setSelectedSubCategories(subCate?.name)}
-                      className={`flex items-center justify-center rounded-full px-6 py-4 font-opt text-base ${selectedSubCategories === subCate?.name ? 'bg-gray text-white' : 'bg-white text-primary'}`}
+                      className={`flex h-full items-center justify-center rounded-full px-6 py-4 font-opt text-lg font-medium text-optDesc ${selectedSubCategories === subCate?.name ? 'bg-[#F3F4F8]' : 'border border-[#E8ECF2] bg-white'}`}
                     >
                       {subCate?.name}
                     </div>
