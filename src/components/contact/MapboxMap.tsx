@@ -8,8 +8,7 @@ mapboxgl.accessToken =
 
 // Move this OUTSIDE the component (fixes warning)
 const officeLocation: [number, number] = [
-  72.53891144685224,
-  23.114256493077406,
+  72.53891144685224, 23.114256493077406,
 ];
 
 const MapboxMap: React.FC = () => {
