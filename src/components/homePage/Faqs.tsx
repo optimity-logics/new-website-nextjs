@@ -22,7 +22,7 @@ const Faqs = () => {
             heading={homePageData?.faqTitle}
             className="!items-start !gap-3"
             description={homePageData?.faqsDescription}
-            descriptionStyle="!text-lg !leading-6 !text-start"
+            descriptionStyle="!text-start"
           />
           <Link
             onMouseEnter={handleMouseEnter}
@@ -30,7 +30,7 @@ const Faqs = () => {
             onMouseUp={handleMouseEnter}
             onMouseDown={handleMouseLeave}
             href={homePageData?.getInTouchBtnLink}
-            className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
+            className={`flex h-[38px] w-max items-center justify-center gap-1 rounded-[50px] border border-optDesc px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-optDesc transition-all duration-250 ease-in hover:border-transparent hover:bg-[#1A6AA3] hover:text-white hover:shadow-lg`}
           >
             {homePageData?.getInTouchBtn}
             <AnimatedArrow hover={hover} />

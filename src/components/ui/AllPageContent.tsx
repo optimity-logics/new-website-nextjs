@@ -96,7 +96,7 @@ const AllPageContent = ({ data }: IPropsType) => {
         <div className="flex h-full min-h-screen items-center justify-center">
           <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-20">
             <HeroSectionHeading
-              className="!gap-10 lg:max-w-[600px] 3xl:max-w-[720px] 4xl:max-w-[860px]"
+              className="!gap-10"
               heading={data?.HeroSectionData?.heading}
               description={data?.HeroSectionData?.description}
               LinkName={data?.HeroSectionData?.btnName}
@@ -180,10 +180,10 @@ const AllPageContent = ({ data }: IPropsType) => {
                 key={index}
                 className="flex flex-col gap-4 rounded-[15px] p-5 shadow-devCardShadow md:p-[30px]"
               >
-                <h5 className="font-opt text-2xl font-medium leading-8 text-primary">
+                <h5 className="font-opt text-xl font-medium leading-6 text-primary">
                   {item?.title}
                 </h5>
-                <p className="font-opt text-xl font-normal leading-7 text-optDesc">
+                <p className="font-opt text-base font-normal leading-5 text-optDesc">
                   {item?.description}
                 </p>
               </div>
@@ -232,7 +232,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               {activeContent && (
                 <div className="flex flex-col gap-5">
                   <div className="flex flex-col gap-4">
-                    <h2 className="font-opt text-2xl font-normal leading-7 text-white">
+                    <h2 className="font-opt text-xl font-normal leading-6 text-white">
                       {activeContent.heading}
                     </h2>
                     <p className="font-opt text-base font-normal leading-6 text-white/45">
@@ -277,7 +277,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           <div className="flex w-full max-w-[990px] flex-col gap-[38px]">
             <SectionHeader
               headingText={data?.crossPlatformBenefitsTitle}
-              headingStyle="3xl:text-[55px]"
+              headingStyle="3xl:text-[55px] 3xl:leading-[60px]"
               isSectionDark={true}
             />
             <ul className="flex flex-wrap items-center gap-5">
@@ -335,9 +335,11 @@ const AllPageContent = ({ data }: IPropsType) => {
               onMouseUp={handleMouseEnterContact}
               onMouseDown={handleMouseLeaveContact}
               href={data?.crossPlatformBenefitsContactBtnLink}
-              className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-6 text-optDesc"
+              className="flex w-max items-center gap-1 rounded-[50px] border border-transparent bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-sm font-normal leading-5 text-optDesc transition-all duration-200 ease-in hover:border-white hover:bg-transparent hover:text-white"
             >
-              {data?.crossPlatformBenefitsContactBtn}
+              <span className="mt-0.5">
+                {data?.crossPlatformBenefitsContactBtn}
+              </span>
               <AnimatedArrow hover={hoverContact} />
             </Link>
           </div>
@@ -387,7 +389,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                       <h4 className="font-opt text-[22px] font-medium leading-7 text-primary">
                         {items?.title}
                       </h4>
-                      <p className="font-opt text-lg font-normal leading-6 text-optDesc">
+                      <p className="font-opt text-base font-normal leading-5 text-optDesc">
                         {items?.description}
                       </p>
                     </div>
@@ -423,7 +425,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-8 md:gap-y-0 xl:grid-cols-3">
             {data?.exploreProjects?.deployProjects &&
               data?.exploreProjects?.deployProjects.map((item, i) => (
-                <ProjectCard key={i} data={item} />
+                <ProjectCard key={i} data={item} i={i} />
               ))}
           </div>
         </Container>
@@ -458,16 +460,16 @@ const AllPageContent = ({ data }: IPropsType) => {
                         height={31}
                       />
                     </div>
-                    <span className="font-opt text-xl font-medium leading-6 text-optDesc sm:text-2xl sm:leading-[30px]">
+                    <span className="font-opt text-xl font-medium leading-6 text-optDesc">
                       {item?.servicesName}
                     </span>
                   </div>
                 </div>
-                <div className="flex flex-wrap items-center gap-[11px] p-5 md:p-7 xl:col-span-5">
+                <div className="flex flex-wrap items-center gap-[11px] p-5 xl:col-span-5">
                   {item?.servicesItems?.map((items, ind) => (
                     <div
                       key={ind}
-                      className="flex items-center gap-2 rounded-[33.61px] border-1.5 border-optDesc/20 p-3.5"
+                      className="flex items-center gap-2 rounded-[33.61px] border-1.5 border-optDesc/20 px-4 py-2"
                     >
                       <Image
                         src={checkMark}

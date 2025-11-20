@@ -20,12 +20,7 @@ import SectionHeader from '@/components/ui/SectionHeader';
 const Career = () => {
   const [isSelectPositions, setIsSelectPositions] =
     useState<string>('all positions (17)');
-  const [hoverPosition, setHoverPosition] = useState<boolean>(false);
-
-  const handleMouseEnterPosition = () => setHoverPosition(true);
-  const handleMouseLeavePosition = () => {
-    setHoverPosition(false);
-  };
+  const [hoverPosition, setHoverPosition] = useState<number | null>(null);
   return (
     <>
       <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
@@ -37,7 +32,7 @@ const Career = () => {
                 industry. Lorem Ipsum has been the industry&#39;s standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book."
-              className="max-w-[910px] !gap-10"
+              className="!gap-10"
               LinkName="Join the team"
             />
           </div>
@@ -120,12 +115,12 @@ const Career = () => {
         <div className="flex flex-col items-center gap-[60px]">
           <SectionHeader headingText="We have 17 open <span class='text-red'>positions</span> now!" />
           <div className="flex w-full flex-col items-start gap-10 md:flex-row">
-            <div className="flex w-full flex-col gap-11 md:sticky md:top-24 md:max-w-[389px]">
+            <div className="flex w-full flex-col gap-6 md:sticky md:top-24 md:max-w-[389px]">
               <ul className="no-scrollbar flex flex-row overflow-x-scroll md:flex-col">
                 {jobOpenings.map((item, index) => (
                   <li
                     key={index}
-                    className={`flex w-full cursor-pointer items-center gap-3 text-nowrap px-4 py-3 md:border-l-4 lg:py-4 ${
+                    className={`flex w-full cursor-pointer items-center gap-3 text-nowrap px-4 py-3 md:border-l-4 ${
                       item?.positionName.toLowerCase() === isSelectPositions
                         ? 'rounded bg-orange md:border-l-orange md:bg-transparent'
                         : 'md:border-l-transparent'
@@ -135,7 +130,7 @@ const Career = () => {
                     }
                   >
                     <span
-                      className={`font-opt text-base leading-5 md:text-lg md:leading-6 ${
+                      className={`font-opt text-base leading-5 ${
                         item?.positionName.toLowerCase() === isSelectPositions
                           ? 'font-normal text-white md:font-medium md:text-primary'
                           : 'font-normal text-optDesc'
@@ -146,7 +141,7 @@ const Career = () => {
                   </li>
                 ))}
               </ul>
-              <span className="font-opt text-base font-normal leading-6 text-optDesc xl:text-lg xl:leading-6">
+              <span className="font-opt text-base font-normal leading-5 text-optDesc">
                 We are always seeking talented people. In case you cannot find
                 your desired position here, please send us your LinkedIn profile
                 and give us your contact information. We will be in touch.
@@ -164,8 +159,8 @@ const Career = () => {
                       className="w-full min-w-[350px] rounded-[15px] bg-white p-7 shadow-card"
                     >
                       <div className="flex h-full flex-col justify-between gap-3 md:gap-5 lg:gap-8">
-                        <div className="flex flex-col gap-2.5">
-                          <h3 className="font-opt text-2xl font-medium leading-6 text-primary md:leading-7 xl:text-3xl xl:leading-9">
+                        <div className="flex flex-col gap-4">
+                          <h3 className="font-opt text-2xl font-medium leading-6 text-primary">
                             {detail?.title}
                           </h3>
                           <ul className="flex flex-wrap items-center gap-2.5">
@@ -178,21 +173,23 @@ const Career = () => {
                               </li>
                             ))}
                           </ul>
-                          <p className="mt-2.5 font-opt text-lg font-normal leading-6 text-optDesc">
+                          <p className="font-opt text-base font-normal leading-5 text-optDesc">
                             Optimity#Logics
                             {detail?.description}
                           </p>
                         </div>
                         <Link
-                          onMouseEnter={handleMouseEnterPosition}
-                          onMouseLeave={handleMouseLeavePosition}
-                          onMouseUp={handleMouseEnterPosition}
-                          onMouseDown={handleMouseLeavePosition}
+                          onMouseEnter={() => setHoverPosition(detailIndex)}
+                          onMouseLeave={() => setHoverPosition(null)}
+                          onMouseUp={() => setHoverPosition(detailIndex)}
+                          onMouseDown={() => setHoverPosition(null)}
                           href={'/position'}
-                          className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
+                          className={`flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-200 ease-in ${detailIndex % 2 === 0 ? 'border-transparent bg-[#1A6AA3] text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc text-optDesc hover:border-transparent hover:bg-[#1A6AA3] hover:text-white'}`}
                         >
-                          See position
-                          <AnimatedArrow hover={hoverPosition} />
+                          <span>See position</span>
+                          <AnimatedArrow
+                            hover={hoverPosition === detailIndex}
+                          />
                         </Link>
                       </div>
                     </div>

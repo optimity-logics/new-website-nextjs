@@ -83,7 +83,7 @@ const Solution = () => {
         <div className="flex h-full min-h-screen items-center justify-center">
           <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-20">
             <HeroSectionHeading
-              className="items-start justify-center !gap-10 lg:max-w-[600px] 3xl:max-w-[720px] 4xl:max-w-[860px]"
+              className="items-start justify-center !gap-10"
               heading="Healthcare & Life Sciences"
               description="Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations."
               LinkName="Let’s Connect"
@@ -137,15 +137,15 @@ Healthcare Operations'
             <h2 className="font-opt text-3xl font-semibold leading-8 text-primary">
               {healthcareData?.title}
             </h2>
-            <p className="font-opt text-lg font-normal leading-7 text-optDesc">
+            <p className="font-opt text-base font-normal leading-6 text-optDesc">
               {healthcareData?.description}
             </p>
-            <ul className="space-y-5">
+            <ul className="space-y-3">
               {healthcareData?.services &&
                 healthcareData?.services.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-center gap-2.5 font-opt text-lg font-medium leading-5 text-primary"
+                    className="flex items-center gap-2.5 font-opt text-base font-medium leading-5 text-primary"
                   >
                     <Image
                       src={healthcareData?.icon}
@@ -197,7 +197,7 @@ Healthcare Operations'
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-8 md:gap-y-0 xl:grid-cols-3">
             {healthcareData?.exploreProjects?.deployProjects &&
               healthcareData?.exploreProjects?.deployProjects.map((item, i) => (
-                <ProjectCard key={i} data={item} />
+                <ProjectCard key={i} data={item} i={i} />
               ))}
           </div>
         </Container>

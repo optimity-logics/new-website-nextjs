@@ -31,12 +31,12 @@ const FaqsAccordion = ({ data }: IAccordionProps) => {
                 aria-label={`Accordion ${index + 1}`}
                 title={
                   <div
-                    className={`flex items-center gap-6 ${isExpanded ? 'py-0' : 'py-1'}`}
+                    className={`flex items-center gap-6 ${isExpanded ? 'py-0' : 'py-0'}`}
                   >
-                    <span className="font-dmSans text-xl font-semibold leading-7 text-primary sm:font-bold">
+                    <span className="font-dmSans text-lg font-semibold leading-[22px] text-primary">
                       {index + 1 < 10 ? `0${index + 1}` : index + 1}
                     </span>
-                    <span className="font-dmSans text-lg font-medium leading-5 text-primary sm:text-xl sm:leading-6">
+                    <span className="font-dmSans text-lg font-normal leading-[22px] text-primary">
                       {item?.question}
                     </span>
                   </div>
@@ -53,7 +53,7 @@ const FaqsAccordion = ({ data }: IAccordionProps) => {
                 className="!rounded-none border-b !border-b-bluishGray !bg-transparent !px-0 !py-0 !shadow-none"
                 onPress={() => handleToggle(index)}
               >
-                <p className="w-full max-w-[619px] pb-3 font-dmSans text-lg font-normal text-optDesc lg:ml-[52px]">
+                <p className="w-full max-w-[619px] pb-3 font-dmSans text-base font-normal leading-5 text-optDesc lg:ml-[52px]">
                   {item?.answer}
                 </p>
               </AccordionItem>

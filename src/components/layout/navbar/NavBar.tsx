@@ -113,10 +113,10 @@ const NavBar = () => {
               >
                 <Link
                   href="/contact-us"
-                  className="flex h-9 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-3 py-[8px] font-opt text-sm font-normal text-white lg:h-10 lg:px-4 lg:pr-[14px] lg:text-base lg:leading-5"
+                  className={`flex h-[38px] w-max items-center justify-center gap-1 rounded-[50px] border border-transparent bg-[#1A6AA3] px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-white transition-all duration-250 ease-in hover:border-optDesc hover:bg-transparent hover:text-optDesc hover:shadow-lg`}
                 >
-                  Contact us
-                  <span className="lg:mt-0.5">
+                  <span>Contact us</span>
+                  <span>
                     <AnimatedArrow hover={hover} />
                   </span>
                 </Link>

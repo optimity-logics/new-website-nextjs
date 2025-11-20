@@ -35,16 +35,11 @@ const HighlitedDescription = styled.h2``;
 const HomePageV2 = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
-  const [hover, setHover] = useState<boolean>(false);
   const [hoverLearnMore, setHoverLearnMore] = useState<boolean>(false);
   const [hoverSubmit, setHoverSubmit] = useState<boolean>(false);
-  const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
+  const [hoverViewAll, setHoverViewAll] = useState<number | null>(null);
   const [hoverContact, setHoverContact] = useState<boolean>(false);
 
-  const handleMouseEnter = () => setHover(true);
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
   const handleMouseEnterLearnMore = () => setHoverLearnMore(true);
   const handleMouseLeaveLearnMore = () => {
     setHoverLearnMore(false);
@@ -53,10 +48,7 @@ const HomePageV2 = () => {
   const handleMouseLeaveSubmit = () => {
     setHoverSubmit(false);
   };
-  const handleMouseEnterViewAll = () => setHoverViewAl(true);
-  const handleMouseLeaveViewAl = () => {
-    setHoverViewAl(false);
-  };
+
   const handleMouseEnterContact = () => setHoverContact(true);
   const handleMouseLeaveContact = () => {
     setHoverContact(false);
@@ -130,24 +122,13 @@ const HomePageV2 = () => {
           <div className="flex h-full items-center justify-center lg:min-h-screen">
             <Container className="relative h-full pb-14 pt-[150px] lg:py-[50px]">
               <div className="flex w-full flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
-                <div className="flex w-full flex-col gap-[50px] xl:max-w-[600px] 3xl:max-w-[620px] 4xl:max-w-[860px]">
-                  <HeroSectionHeading
-                    badgeTitle={homePageData?.baddge}
-                    heading={homePageData?.heroTitle}
-                    description={homePageData?.heroDescription}
-                  />
-                  <Link
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    onMouseUp={handleMouseEnter}
-                    onMouseDown={handleMouseLeave}
-                    href={homePageData?.heroContactUsBtnLink}
-                    className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
-                  >
-                    {homePageData?.heroContactUsBtn}
-                    <AnimatedArrow hover={hover} />
-                  </Link>
-                </div>
+                <HeroSectionHeading
+                  badgeTitle={homePageData?.baddge}
+                  heading={homePageData?.heroTitle}
+                  description={homePageData?.heroDescription}
+                  LinkName={homePageData?.heroContactUsBtn}
+                  link={homePageData?.heroContactUsBtnLink}
+                />
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -209,7 +190,7 @@ const HomePageV2 = () => {
       >
         <Container>
           <div className="flex flex-col items-center gap-[25px] lg:hidden xl:flex-row 5xl:rounded-[24px]">
-            <span className="max-w-[400px] text-center font-opt text-base font-normal leading-[1.6rem] text-optDesc md:text-lg md:leading-7 xl:text-start">
+            <span className="max-w-[400px] text-center font-opt text-base font-normal leading-5 text-optDesc xl:text-start">
               {homePageData?.trustedClient}
             </span>
             <Marquee
@@ -238,7 +219,7 @@ const HomePageV2 = () => {
             </Marquee>
           </div>
           <div className="hidden flex-col items-center gap-[25px] lg:flex xl:flex-row xl:justify-between 5xl:rounded-[24px]">
-            <span className="max-w-[400px] text-center font-opt text-base font-normal leading-[1.6rem] text-optDesc md:text-lg md:leading-7 xl:text-start">
+            <span className="max-w-[400px] text-center font-opt text-base font-normal leading-6 text-optDesc xl:text-start">
               {homePageData?.trustedClient}
             </span>
             <LogoAnimation logo={logos} />
@@ -282,10 +263,10 @@ const HomePageV2 = () => {
                     <div className="flex w-full flex-col-reverse items-center gap-6 xl:flex-row 4xl:gap-[65px]">
                       <div className="flex h-full w-full max-w-[799px] flex-col justify-between gap-5 xl:gap-[40px]">
                         <div className="flex flex-col gap-4">
-                          <h5 className="font-opt text-2xl font-medium leading-7 text-primary">
+                          <h5 className="font-opt text-xl font-semibold leading-6 text-primary">
                             {item?.title}
                           </h5>
-                          <p className="font-opt text-base font-normal leading-6 text-optDesc xl:text-lg">
+                          <p className="font-opt text-base font-normal leading-5 text-optDesc">
                             {item?.description}
                           </p>
                           <ul className="ml-10 flex list-disc flex-col gap-3 text-primary">
@@ -293,29 +274,31 @@ const HomePageV2 = () => {
                               item?.techBenefits.map((benefitsItem, idx) => (
                                 <li
                                   key={idx}
-                                  className="font-opt text-lg font-semibold text-primary"
+                                  className="font-opt text-lg font-medium leading-5 text-primary"
                                 >
                                   {benefitsItem?.title}
-                                  <span className="font-normal text-optDesc">
+                                  <span className="text-base font-normal leading-5 text-optDesc">
                                     &nbsp;{benefitsItem?.description}
                                   </span>
                                 </li>
                               ))}
                           </ul>
-                          <p className="font-opt text-base font-normal leading-6 text-optDesc xl:text-[18px]">
+                          <p className="font-opt text-base font-normal leading-5 text-optDesc">
                             {item?.subDescription}
                           </p>
                         </div>
                         <Link
-                          onMouseEnter={handleMouseEnterViewAll}
-                          onMouseLeave={handleMouseLeaveViewAl}
-                          onMouseUp={handleMouseEnterViewAll}
-                          onMouseDown={handleMouseLeaveViewAl}
+                          onMouseEnter={() => setHoverViewAll(index)}
+                          onMouseLeave={() => setHoverViewAll(null)}
+                          onMouseUp={() => setHoverViewAll(index)}
+                          onMouseDown={() => setHoverViewAll(null)}
                           href={item?.buttonLink}
-                          className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-[14px] font-normal leading-tight text-white"
+                          className={`flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-200 ease-in ${index % 2 === 0 ? 'border-transparent bg-[#1A6AA3] text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc text-optDesc hover:border-transparent hover:bg-[#1A6AA3] hover:text-white'}`}
                         >
-                          {item?.button}
-                          <AnimatedArrow hover={hoverViewAl} />
+                          <span className="mt-0.5">{item?.button}</span>
+                          <span>
+                            <AnimatedArrow hover={hoverViewAll === index} />
+                          </span>
                         </Link>
                       </div>
                       <div className="xxl:w-[500px]">
@@ -373,10 +356,10 @@ const HomePageV2 = () => {
                     key={index}
                     className="flex w-full min-w-[320px] flex-1 flex-col gap-4"
                   >
-                    <h4 className="font-opt text-2xl font-medium leading-7 text-white">
+                    <h4 className="font-opt text-lg font-medium leading-6 text-white">
                       {item?.title}
                     </h4>
-                    <p className="font-opt text-lg font-normal leading-6 text-subtle">
+                    <p className="font-opt text-base font-normal leading-5 text-subtle">
                       {item?.description}
                     </p>
                   </div>
@@ -384,14 +367,14 @@ const HomePageV2 = () => {
             </div>
           </div>
           <div className="hidden grid-cols-3 gap-8 md:grid">
-            <div className="flex w-full flex-col gap-10">
+            <div className="mx-auto flex w-full max-w-[350px] flex-col gap-10">
               {homePageData?.aiServices &&
                 homePageData?.aiServices.slice(0, 3).map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
-                    <h4 className="font-opt text-2xl font-medium leading-7 text-white">
+                    <h4 className="font-opt text-lg font-medium leading-6 text-white">
                       {item?.title}
                     </h4>
-                    <p className="font-opt text-lg font-normal leading-6 text-subtle">
+                    <p className="font-opt text-base font-normal leading-5 text-subtle">
                       {item?.description}
                     </p>
                   </div>
@@ -407,14 +390,14 @@ const HomePageV2 = () => {
                 className="mx-auto h-auto max-w-[180px]"
               />
             </div>
-            <div className="flex w-full flex-col gap-10">
+            <div className="mx-auto flex w-full max-w-[350px] flex-col gap-10">
               {homePageData?.aiServices &&
                 homePageData?.aiServices.slice(3).map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
-                    <h4 className="font-opt text-2xl font-medium leading-7 text-white">
+                    <h4 className="font-opt text-lg font-medium leading-6 text-white">
                       {item?.title}
                     </h4>
-                    <p className="font-opt text-lg font-normal leading-6 text-subtle">
+                    <p className="font-opt text-base font-normal leading-5 text-subtle">
                       {item?.description}
                     </p>
                   </div>
@@ -482,31 +465,31 @@ const HomePageV2 = () => {
           </div>
         </Container>
       </div>
-      <Container className="mb-[60px] flex flex-col gap-8 4xl:mb-[100px] 4xl:gap-[60px]">
+      <Container className="mb-[60px] flex flex-col gap-8 4xl:mb-[100px] 4xl:gap-10">
         <SectionHeader
           headingText={homePageData?.ourIndustriesTitle}
           headingStyle="text-center"
         />
-        <div className="hide-scrollbar flex w-full items-center gap-5 overflow-auto px-2 py-2">
+        <div className="hide-scrollbar flex w-full items-center gap-4 overflow-auto px-2 py-2">
           {homePageData?.ourIndustries &&
             homePageData?.ourIndustries.map((item, index) => (
               <button
                 key={index}
                 type="button"
                 onClick={() => setActiveTab(item?.id)}
-                className={`w-max text-nowrap rounded-lg shadow-ourIndustries transition-all duration-500 ease-in-out ${activeTab === item?.id ? 'bg-primary text-white' : 'bg-[#F7F7F8] text-primary'} px-5 py-2 text-center font-opt text-lg leading-7`}
+                className={`flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-200 ease-in ${activeTab === item?.id ? 'border-transparent bg-[#1A6AA3] text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc text-optDesc hover:border-transparent hover:bg-[#1A6AA3] hover:text-white'}`}
               >
-                {item?.label}
+                <span className="mt-0.5">{item?.label}</span>
               </button>
             ))}
         </div>
         <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:items-end">
-          <div className="flex w-full max-w-full flex-col gap-10 lg:max-w-[650px] xxl:max-w-[800px]">
-            <div className="flex flex-col gap-[30px]">
-              <h3 className="font-opt text-[42px] font-semibold leading-[50px] text-primary">
+          <div className="flex w-full max-w-full flex-col gap-6 lg:max-w-[650px] xxl:max-w-[800px]">
+            <div className="flex flex-col gap-2.5">
+              <h3 className="font-opt text-3xl font-semibold leading-8 text-primary">
                 {currentTab?.title}
               </h3>
-              <p className="font-opt text-xl font-normal leading-7 text-optDesc">
+              <p className="font-opt text-base font-normal leading-5 text-optDesc">
                 {currentTab?.description}
               </p>
             </div>
@@ -520,21 +503,21 @@ const HomePageV2 = () => {
                 className="mx-auto"
               />
             </div>
-            <div className="flex flex-col gap-8">
-              <h4 className="font-opt text-[26px] font-medium leading-8 text-lightBlue">
+            <div className="flex flex-col gap-6">
+              <h4 className="font-opt text-xl font-medium leading-6 text-lightBlue">
                 {currentTab?.sectionTitle}
               </h4>
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-2">
                 {currentTab?.features.map((list, index) => (
-                  <li key={index} className="flex items-center gap-5">
+                  <li key={index} className="flex items-center gap-4">
                     <Image
                       src={blackTick}
                       alt="tick"
                       loading="lazy"
-                      width={24}
-                      height={24}
+                      width={20}
+                      height={20}
                     />
-                    <p className="font-opt text-xl font-normal leading-6 text-optDesc">
+                    <p className="font-opt text-base font-normal leading-5 text-optDesc">
                       {list}
                     </p>
                   </li>
@@ -546,10 +529,13 @@ const HomePageV2 = () => {
                 onMouseUp={handleMouseEnterLearnMore}
                 onMouseDown={handleMouseLeaveLearnMore}
                 href={currentTab?.link}
-                className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white"
+                className={`flex w-max items-center justify-center gap-1 rounded-[50px] border border-optDesc px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-optDesc transition-all duration-250 ease-in hover:border-transparent hover:bg-[#1A6AA3] hover:text-white hover:shadow-lg`}
               >
-                {currentTab?.LearnMore}
-                <AnimatedArrow hover={hoverLearnMore} />
+                <span>{currentTab?.LearnMore}</span>
+
+                <span>
+                  <AnimatedArrow hover={hoverLearnMore} />
+                </span>
               </Link>
             </div>
           </div>
@@ -699,7 +685,7 @@ const HomePageV2 = () => {
                     onMouseUp={handleMouseEnterContact}
                     onMouseDown={handleMouseLeaveContact}
                     href={homePageData?.contactUsCardBtnLink}
-                    className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-primary"
+                    className={`flex h-[38px] w-max items-center justify-center gap-1 rounded-[50px] border border-transparent bg-[#1A6AA3] px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-white transition-all duration-250 ease-in hover:border-white hover:bg-transparent hover:text-white hover:shadow-lg`}
                   >
                     {homePageData?.contactUsCardBtn}
                     <AnimatedArrow hover={hoverContact} />
@@ -737,11 +723,11 @@ const HomePageV2 = () => {
                     <div
                       className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
                     >
-                      <p className="line-clamp-5 font-opt text-base font-normal leading-6 text-optDesc md:text-lg md:leading-7">
+                      <p className="line-clamp-6 font-opt text-sm font-normal text-optDesc">
                         {item?.message}
                       </p>
                       <div className="flex items-center justify-between gap-2.5">
-                        <p className="font-opt text-lg font-normal leading-5 text-iconSubtle">
+                        <p className="font-opt text-base font-normal text-iconSubtle">
                           {item?.role}
                         </p>
                         <Image
@@ -768,15 +754,13 @@ const HomePageV2 = () => {
         >
           <div className="flex flex-col justify-between gap-10 md:flex-row md:items-center">
             <div className="flex w-full max-w-[570px] flex-col gap-3 xl:gap-5">
-              {/* <h4 className="font-opt text-[45px] font-medium leading-tight text-white 4xl:text-[60px] 4xl:leading-[65px]"> */}
               <HighlitedDescription
                 dangerouslySetInnerHTML={{
                   __html: homePageData?.contactUsFormTitle,
                 }}
                 className="font-opt text-[45px] font-bold leading-tight text-white 4xl:text-[64px] 4xl:leading-[68px]"
               />
-              {/* </h4> */}
-              <p className="font-opt text-[18px] font-normal leading-tight text-white lg:pr-[76px]">
+              <p className="font-opt text-base font-normal leading-normal text-white lg:pr-[76px]">
                 {homePageData?.contactUsFormDescription}
               </p>
               <div className="flex flex-col gap-[15px]">
@@ -855,7 +839,7 @@ const HomePageV2 = () => {
                 onMouseUp={handleMouseEnterSubmit}
                 onMouseDown={handleMouseLeaveSubmit}
                 type="button"
-                className="flex w-max items-center gap-1 rounded-[50px] bg-red px-5 py-2 font-opt text-base font-normal leading-tight text-white"
+                className={`flex h-[38px] w-max items-center justify-center gap-1 rounded-[50px] border border-transparent bg-[#1A6AA3] px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-white transition-all duration-250 ease-in hover:border-subtle hover:bg-transparent hover:shadow-lg`}
               >
                 {homePageData?.formSubmitBtn}
                 <AnimatedArrow hover={hoverSubmit} />

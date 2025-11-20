@@ -13,11 +13,11 @@ const OurWorkCard = ({ key, data }: cardProps) => {
       <div className="flex flex-col gap-3 xl:gap-[20px]">
         <div
           style={{ backgroundSize: '100% 100%' }}
-          className={`flex w-full items-center justify-center ${data?.backGrouund} bg-cover bg-no-repeat py-5 font-opt text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
+          className={`flex w-full items-center justify-center ${data?.backGrouund} bg-cover bg-no-repeat py-6 font-opt text-[38px] font-medium leading-[42px] text-primary`}
         >
           {data?.title}
         </div>
-        <span className="text-center font-opt text-base font-normal leading-[24px] text-optDesc xl:text-xl">
+        <span className="text-center font-opt text-base font-normal leading-5 text-optDesc">
           {data?.description}
         </span>
       </div>
