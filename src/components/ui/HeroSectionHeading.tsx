@@ -43,7 +43,7 @@ const HeroSectionHeading = ({
     setHover(false);
   };
   return (
-    <div className={`flex flex-col gap-5 ${className} `}>
+    <div className={`flex flex-col gap-5 ${className} max-w-[600px]`}>
       {badgeTitle && (
         <div
           className={`w-max rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1 shadow-default ${badgeStyle}`}
@@ -55,11 +55,11 @@ const HeroSectionHeading = ({
       )}
       <HighlitedDescription
         dangerouslySetInnerHTML={{ __html: heading }}
-        className={`font-opt text-4xl font-semibold leading-10 lg:text-[40px] lg:font-bold lg:leading-[48px] 3xl:text-[62px] 3xl:leading-[68px] ${isDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
+        className={`font-opt text-4xl font-semibold leading-10 lg:text-[40px] lg:font-bold lg:leading-[48px] 3xl:text-[60px] 3xl:leading-[64px] ${isDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
       />
       {description && (
         <p
-          className={`font-opt text-lg font-normal leading-6 3xl:text-xl 3xl:leading-7 ${isDark ? 'text-white opacity-70' : 'text-optDesc'} ${descriptionStyle}`}
+          className={`font-opt text-base font-normal leading-6 ${isDark ? 'text-white opacity-70' : 'text-optDesc'} ${descriptionStyle}`}
         >
           {description}
         </p>
@@ -71,10 +71,12 @@ const HeroSectionHeading = ({
           onMouseUp={handleMouseEnter}
           onMouseDown={handleMouseLeave}
           href={link || ''}
-          className={`flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-white ${LinkStyle}`}
+          className={`flex w-max items-center justify-center gap-1 rounded-[50px] border border-optDesc px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-optDesc transition-all duration-250 ease-in hover:border-transparent hover:bg-[#1A6AA3] hover:text-white hover:shadow-lg ${LinkStyle}`}
         >
-          {LinkName}
-          <AnimatedArrow hover={hover} />
+          <span className="mt-0.5">{LinkName}</span>
+          <span>
+            <AnimatedArrow hover={hover} />
+          </span>
         </Link>
       )}
     </div>

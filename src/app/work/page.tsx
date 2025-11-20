@@ -30,7 +30,7 @@ const OurWorks = () => {
           <HeroSectionHeading
             heading={ourWorkPage?.headingTitle}
             description={ourWorkPage?.headingDescription}
-            className="w-full max-w-[800px]"
+            className="w-full"
           />
           <div className="relative aspect-[5/4] h-full w-full max-w-[400px]">
             <Image
@@ -51,7 +51,7 @@ const OurWorks = () => {
                 ourWorkPage?.ourWorks.map((categories, index) => (
                   <div
                     key={index}
-                    className="relative w-full min-w-[200px] max-w-[200px] cursor-pointer rounded-full"
+                    className="relative w-full cursor-pointer rounded-full"
                   >
                     {selectedCategories === categories?.categories && (
                       <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-[#8ca7bc]"></div>
@@ -60,7 +60,7 @@ const OurWorks = () => {
                       onClick={() =>
                         setSelectedCategories(categories?.categories)
                       }
-                      className={`flex h-full items-center justify-center rounded-full px-6 py-4 font-opt text-lg font-medium text-optDesc ${selectedCategories === categories?.categories ? 'bg-[#F3F4F8]' : 'border border-[#E8ECF2] bg-white'}`}
+                      className={`flex h-full items-center justify-center rounded-full px-6 py-2 font-opt text-base font-normal text-optDesc ${selectedCategories === categories?.categories ? 'bg-[#F3F4F8]' : 'border border-[#E8ECF2] bg-white'}`}
                     >
                       {categories?.categories}
                     </div>
@@ -75,14 +75,14 @@ const OurWorks = () => {
                 ?.subcategories.map((subCate, ind) => (
                   <div
                     key={ind}
-                    className="relative w-full min-w-[200px] max-w-[200px] cursor-pointer rounded-full"
+                    className="relative w-full cursor-pointer rounded-full"
                   >
                     {selectedSubCategories === subCate?.name && (
                       <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-[#8ca7bc]"></div>
                     )}
                     <div
                       onClick={() => setSelectedSubCategories(subCate?.name)}
-                      className={`flex h-full items-center justify-center rounded-full px-6 py-4 font-opt text-lg font-medium text-optDesc ${selectedSubCategories === subCate?.name ? 'bg-[#F3F4F8]' : 'border border-[#E8ECF2] bg-white'}`}
+                      className={`flex h-full items-center justify-center rounded-full px-6 py-2.5 font-opt text-base font-normal leading-5 text-optDesc ${selectedSubCategories === subCate?.name ? 'bg-[#F3F4F8]' : 'border border-[#E8ECF2] bg-white'}`}
                     >
                       {subCate?.name}
                     </div>
@@ -113,14 +113,14 @@ const OurWorks = () => {
                           {item?.date}
                         </div>
                       </div>
-                      <span className="px-2 font-opt text-base font-normal leading-5 text-optDesc">
+                      <span className="px-2 font-opt text-sm font-normal leading-5 text-optDesc">
                         {item?.readTime}
                       </span>
                       <div className="flex flex-col gap-1.5 px-2 pb-2">
-                        <h3 className="font-opt text-xl font-semibold leading-7 text-primary">
+                        <h3 className="font-opt text-lg font-semibold leading-6 text-primary">
                           {item?.title}
                         </h3>
-                        <p className="font-opt text-lg font-normal leading-6 text-optDesc">
+                        <p className="font-opt text-base font-normal leading-5 text-optDesc">
                           {item?.description}
                         </p>
                       </div>
@@ -136,10 +136,10 @@ const OurWorks = () => {
           </div>
           <div className="top-24 flex h-max w-full flex-col gap-16 rounded-xl bg-contactUsBg bg-cover bg-center bg-no-repeat p-8 lg:sticky 3xl:bg-full">
             <div className="flex flex-col gap-5">
-              <h4 className="font-opt text-2xl font-medium leading-7 text-white">
+              <h4 className="font-opt text-xl font-medium leading-6 text-white">
                 Looking to re-imagine your business operations?
               </h4>
-              <p className="lea font-opt text-xl font-light text-white">
+              <p className="lea font-opt text-base font-light leading-5 text-white">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&#39;s standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -155,7 +155,7 @@ const OurWorks = () => {
             >
               <Link
                 href="/contact-us"
-                className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-white px-[16px] py-[8px] pr-[14px] font-opt text-base font-normal leading-tight text-lightBlue"
+                className="flex w-max items-center gap-1 rounded-[50px] border border-transparent bg-white px-[16px] py-[8px] pr-[14px] font-opt text-sm font-normal leading-5 text-lightBlue transition-all duration-200 ease-in hover:border-white hover:bg-transparent hover:text-white"
               >
                 Contact us
                 <AnimatedArrow hover={hover} />

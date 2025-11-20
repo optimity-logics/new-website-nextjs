@@ -14,6 +14,7 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import SectionHeader from '@/components/ui/SectionHeader';
+import OurWorkCard from '@/components/common/OurWorkCard';
 const AboutUs = () => {
   const [hoverContact, setHoverContact] = useState<boolean>(false);
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
@@ -76,22 +77,7 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
           {aboutUsPage?.OurWork &&
             aboutUsPage?.OurWork.map((item, index) => (
-              <div
-                key={index}
-                className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]"
-              >
-                <div className="flex flex-col gap-3 xl:gap-[20px]">
-                  <div
-                    style={{ backgroundSize: '100% 100%' }}
-                    className={`flex w-full items-center justify-center ${item?.backGrouund} bg-cover bg-no-repeat py-5 font-opt text-[38px] font-medium leading-tight text-primary xl:text-[48px] xl:leading-[52px] 4xl:py-[40px]`}
-                  >
-                    {item?.title}
-                  </div>
-                  <span className="text-center font-opt text-xl font-normal leading-[24px] text-optDesc xl:text-[18px]">
-                    {item?.description}
-                  </span>
-                </div>
-              </div>
+              <OurWorkCard key={index} data={item} />
             ))}
         </div>
       </Container>
@@ -118,12 +104,12 @@ const AboutUs = () => {
                   />
                 </div>
                 <div
-                  className={`${index % 2 === 0 ? 'lg:-ml-[130px]' : 'relative z-30 lg:-mr-[130px]'} -mt-16 flex w-full max-w-[320px] flex-col gap-6 rounded-[20px] bg-white p-5 shadow-md xss:max-w-[430px] sm:-mt-[100px] sm:max-w-[600px] sm:p-[30px] lg:mt-0 lg:max-w-[1000px]`}
+                  className={`${index % 2 === 0 ? 'lg:-ml-[130px]' : 'relative z-30 lg:-mr-[130px]'} -mt-16 flex w-full max-w-[320px] flex-col gap-4 rounded-[20px] bg-white p-5 shadow-md xss:max-w-[430px] sm:-mt-[100px] sm:max-w-[600px] lg:mt-0 lg:max-w-[1000px]`}
                 >
-                  <h4 className="font-opt text-[32px] font-semibold capitalize leading-9 text-lightBlue">
+                  <h4 className="font-opt text-2xl font-semibold capitalize leading-7 text-lightBlue">
                     {item?.title}
                   </h4>
-                  <p className="font-opt text-lg font-normal leading-6 text-optDesc">
+                  <p className="font-opt text-base font-normal leading-5 text-optDesc">
                     {item.description}
                   </p>
                 </div>
@@ -138,16 +124,16 @@ const AboutUs = () => {
                 aboutUsPage?.ourCoreValue?.values.map((items, i) => (
                   <div
                     key={i}
-                    className="flex flex-col gap-[30px] rounded-[20px] bg-white/50 p-[30px] shadow-howWorkCard backdrop-blur-sm"
+                    className="flex flex-col gap-[30px] rounded-[20px] bg-white/50 p-5 shadow-howWorkCard backdrop-blur-sm"
                   >
                     <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] font-opt text-xl font-medium text-white">
                       0{i + 1}
                     </span>
                     <div className="flex flex-col gap-3">
-                      <h5 className="font-opt text-2xl font-medium leading-6 text-primary">
+                      <h5 className="font-opt text-xl font-medium leading-6 text-primary">
                         {items?.title}
                       </h5>
-                      <p className="font-opt text-lg font-normal leading-6 text-optDesc">
+                      <p className="font-opt text-base font-normal leading-5 text-optDesc">
                         {items?.description}
                       </p>
                     </div>
@@ -204,10 +190,10 @@ const AboutUs = () => {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <h6 className="font-opt text-2xl font-medium leading-8 text-primary">
+                  <h6 className="font-opt text-xl font-medium leading-6 text-primary">
                     {item?.title}
                   </h6>
-                  <p className="font-opt text-lg font-normal leading-6 text-optDesc">
+                  <p className="font-opt text-base font-normal leading-5 text-optDesc">
                     {item?.description}
                   </p>
                 </div>
@@ -271,10 +257,10 @@ const AboutUs = () => {
                       </div>
                     </div>
                     <div className="flex flex-col gap-4">
-                      <h5 className="font-opt text-2xl font-medium leading-6 text-primary">
+                      <h5 className="font-opt text-xl font-medium leading-6 text-primary">
                         {item?.title}
                       </h5>
-                      <p className="font-opt text-lg font-normal leading-6 text-optDesc">
+                      <p className="font-opt text-base font-normal leading-5 text-optDesc">
                         {item?.description}
                       </p>
                     </div>
@@ -316,13 +302,13 @@ const AboutUs = () => {
 
                 <div className="relative z-10 flex flex-col gap-3">
                   <h4
-                    className={`font-opt text-2xl font-medium leading-7 transition-colors duration-500 ${
+                    className={`font-opt text-xl font-medium leading-6 transition-colors duration-500 ${
                       i === activeIndex ? 'text-red' : 'text-black'
                     }`}
                   >
                     {item?.title}
                   </h4>
-                  <p className="font-opt text-lg font-normal leading-none text-optDesc">
+                  <p className="font-opt text-base font-normal leading-5 text-optDesc">
                     {item?.subTitle}
                   </p>
                 </div>
@@ -357,10 +343,10 @@ const AboutUs = () => {
                   key={i}
                   className="flex flex-col gap-4 rounded-xl bg-[#f7f9fa] p-6"
                 >
-                  <h3 className="font-opt text-2xl font-medium leading-7 text-black">
+                  <h3 className="font-opt text-xl font-medium leading-6 text-black">
                     {item?.title}
                   </h3>
-                  <p className="font-opt text-lg font-normal leading-6 text-optDesc">
+                  <p className="font-opt text-base font-normal leading-5 text-optDesc">
                     {item?.description}
                   </p>
                 </div>
@@ -414,14 +400,14 @@ const AboutUs = () => {
                   </div>
                   <div className="flex w-full max-w-[500px] flex-col gap-3">
                     <div className="flex flex-col gap-1">
-                      <h2 className="font-opt text-2xl font-medium text-primary">
+                      <h2 className="font-opt text-xl font-medium leading-6 text-primary">
                         {item?.name}
                       </h2>
-                      <span className="font-opt text-sm font-normal text-black-100-alpha">
+                      <span className="font-opt text-sm font-normal text-black-900-alpha">
                         {item?.position}
                       </span>
                     </div>
-                    <p className="font-opt text-base font-normal text-optDesc">
+                    <p className="font-opt text-base font-normal leading-5 text-optDesc">
                       {item?.aboutUs}
                     </p>
                   </div>
@@ -529,9 +515,12 @@ const AboutUs = () => {
                   onMouseUp={handleMouseEnterContact}
                   onMouseDown={handleMouseLeaveContact}
                   href={homePageData?.contactUsCardBtnLink}
-                  className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-tight text-primary"
+                  className="flex w-max items-center gap-1 rounded-[50px] border border-transparent bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-sm font-normal leading-tight text-primary transition-all duration-200 ease-in hover:border-white hover:bg-transparent hover:text-white"
                 >
-                  {homePageData?.contactUsCardBtn}
+                  <span className="mt-0.5">
+                    {' '}
+                    {homePageData?.contactUsCardBtn}
+                  </span>
                   <AnimatedArrow hover={hoverContact} />
                 </Link>
               </div>
@@ -567,7 +556,7 @@ const AboutUs = () => {
                   <div
                     className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
                   >
-                    <p className="line-clamp-5 font-opt text-base font-normal leading-6 text-optDesc opacity-80 md:text-lg md:leading-7">
+                    <p className="line-clamp-5 font-opt text-base font-normal leading-6 text-optDesc">
                       {item?.message}
                     </p>
                     <div className="flex items-center justify-between gap-2.5">

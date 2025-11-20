@@ -1,5 +1,6 @@
 import './globals.css';
 import Layout from '@/components/layout/Layout';
+import SmoothScroll from '@/components/ui/SmoothScroll';
 import locaFont from 'next/font/local';
 
 const opt = locaFont({
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${opt.variable} ${dmSans.variable}`}>
       <body>
+        <SmoothScroll />
         <Layout>{children}</Layout>
       </body>
     </html>

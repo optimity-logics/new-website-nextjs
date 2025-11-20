@@ -1,110 +1,123 @@
 import Container from '@/components/ui/Container';
+import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
+import { privacyPolicyData } from '@/components/utils/Constant';
+
 import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
     <>
       <div
-        className="bg-PrivacyPolicy bg-cover bg-no-repeat"
+        className="-mt-20 bg-opacity-80 bg-PrivacyPolicy bg-cover bg-fixed bg-no-repeat pt-20"
         style={{ backgroundSize: '100% 100%' }}
       >
-        <div className="mx-auto flex max-w-[1217px] flex-col items-center gap-2 px-4 py-20 sm:px-6 md:px-8 xl:px-10 3xl:px-0">
-          <h2 className="font-opttext-4xl font-semibold leading-[44px] tracking-[-2%] text-primary lg:text-[44px] lg:leading-[82.3px] 4xl:text-[60px]">
-            Privacy Policy
-          </h2>
-          <p className="text-center font-opt text-lg font-normal leading-[29px] text-[#727265] 4xl:px-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book.
-          </p>
+        <div className="mx-auto flex max-w-[1000px] flex-col items-center gap-4 px-4 py-20 sm:px-6 md:px-8 xl:px-10 3xl:px-0">
+          <HeroSectionHeading
+            heading={privacyPolicyData?.title}
+            badgeTitle={privacyPolicyData?.title}
+            className="items-center"
+          />
+          <span className="mt-2 font-opt text-base font-normal leading-5 text-optDesc">
+            Last Updated : {privacyPolicyData?.lastUpdated}
+          </span>
         </div>
       </div>
-      <Container className="py-12 md:py-16 lg:py-20 4xl:py-[100px]">
-        <div className="flex flex-col gap-6 lg:gap-8 4xl:gap-11">
-          <div className="flex flex-col gap-2.5">
-            <h4 className="font-opt text-[22px] font-medium leading-[32px] text-[#000]">
-              Privacy Policy
-            </h4>
-            <p className="text-justify font-opt text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using&#39;Content here,
-              content here&#39;, making it look like readable English. Many
-              desktop publishing packages and web page editors now use Lorem
-              Ipsum as their default model text, and a search for &#39;lorem
-              ipsum&#39; will uncover many web
-            </p>
+      <Container className="max-w-[920px] py-12 md:py-16 lg:py-20 4xl:py-[100px]">
+        <>
+          <div className="space-y-6">
+            {/* Information Paragraphs */}
+            {privacyPolicyData.information &&
+              privacyPolicyData.information.map((info, i) => (
+                <p
+                  key={i}
+                  className="font-opt text-base font-normal leading-5 text-optDesc"
+                >
+                  {info}
+                </p>
+              ))}
+
+            {/* All Sections (inside the same DIV) */}
+            {privacyPolicyData.informationList &&
+              privacyPolicyData.informationList.map((section, index) => (
+                <div key={index} className="space-y-4">
+                  {/* Heading */}
+                  {section.heading && (
+                    <h2 className="font-opt text-2xl font-medium leading-7 text-primary">
+                      {section.heading}
+                    </h2>
+                  )}
+
+                  {/* description array */}
+                  {section.description && (
+                    <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                      {section.description}
+                    </p>
+                  )}
+
+                  {/* itemList */}
+                  {section?.itemList && (
+                    <ul className="ml-4 list-disc space-y-1">
+                      {section.itemList.map((item, i) => (
+                        <li
+                          key={i}
+                          className="font-opt text-base font-normal leading-5 text-optDesc"
+                        >
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {/* Nested list */}
+                  {section.list &&
+                    section.list.map((sub, i) => (
+                      <div key={i} className="space-y-2">
+                        {sub.heading && (
+                          <h3 className="font-opt text-2xl font-medium leading-7 text-primary">
+                            {sub.heading}
+                          </h3>
+                        )}
+
+                        {sub.description && (
+                          <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                            {sub.description}
+                          </p>
+                        )}
+
+                        {sub.itemList && (
+                          <ul className="ml-4 list-disc space-y-1">
+                            {sub.itemList.map((subItem, j) => (
+                              <li
+                                key={j}
+                                className="font-opt text-base font-normal leading-5 text-optDesc"
+                              >
+                                {subItem}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    ))}
+                  {/* descriptionList */}
+                  {section.descriptionList &&
+                    section.descriptionList.map((desc, i) => (
+                      <p
+                        key={i}
+                        className="font-opt text-base font-normal leading-5 text-optDesc"
+                      >
+                        {desc}
+                      </p>
+                    ))}
+                  {/* description1 */}
+                  {section.description1 && (
+                    <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                      {section.description1}
+                    </p>
+                  )}
+                </div>
+              ))}
           </div>
-          <h4 className="font-opt text-[22px] font-medium leading-[32px] text-[#000]">
-            Why We Collect Your Data Once You Permit?
-          </h4>
-          <div className="flex flex-col gap-2.5">
-            <h4 className="font-opt text-[22px] font-medium leading-[32px] text-[#000]">
-              1. Accountability
-            </h4>
-            <p className="text-justify font-opt text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem
-            </p>
-          </div>
-          <div className="flex flex-col gap-2.5">
-            <h4 className="font-opt text-[22px] font-medium leading-[32px] text-[#000]">
-              2. Why do we collect your information?
-            </h4>
-            <p className="text-justify font-opt text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem
-            </p>
-            <p className="text-justify font-opt text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using &#39;Content here,
-              content here&#39;, making it look like readable English. Many
-              desktop publishing packages and web page editors now use Lorem
-              Ipsum as their default model text, and a search for &#39;lorem
-              ipsum&#39; will uncover many web
-            </p>
-          </div>
-          <div className="flex flex-col gap-2.5">
-            <h4 className="font-opt text-[22px] font-medium leading-[32px] text-[#000]">
-              3. Obtaining your Consent
-            </h4>
-            <p className="text-justify font-opt text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
-              We will obtain your consent prior to the collection, use or
-              disclosure of your information. Consent may be expressed or
-              implied. Implied consent means that you provide the information to
-              us, and the purpose of providing such information would be clear
-              to you, even if we did not state it. Our privacy policy, however,
-              does not limit Bridgeo Home Services from collecting and using
-              information that is publicly available. This means, for instance,
-              your name and business email address could be added to our email
-              and / or postal communication list so that we can provide further
-              information to you on our products and services. We will, however,
-              respect your choice not to be contacted. All our marketing email
-              messages contain an option to automatically &#39;opt-out&#39; of
-              receiving messages from us. You may also elect not to receive
-              communication from us by sending an email to info@bridgeohome.com
-              with your name, email address and (if applicable) your postal
-              address to request that we remove your email, address and name
-              from our mailing lists.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2.5">
-            <h4 className="font-opt text-[22px] font-medium leading-[32px] text-[#000]">
-              4. Limiting Collection
-            </h4>
-            <p className="text-justify font-opt text-lg font-light leading-6 text-[#727262] md:text-start lg:text-xl lg:leading-[26px]">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem
-            </p>
-          </div>
-        </div>
+        </>
       </Container>
     </>
   );

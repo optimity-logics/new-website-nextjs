@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-x-4 md:gap-y-10 lg:grid-cols-4">
             {footerData?.footerLinks.map((section, index) => (
               <div key={index} className="flex flex-col gap-3">
-                <h3 className="tracking-[1.5 px] font-opt text-xl font-normal text-white">
+                <h3 className="tracking-[1.5 px] font-opt text-lg font-normal text-white">
                   {section?.heading}
                 </h3>
                 <ul className="flex flex-col gap-2">

@@ -97,7 +97,7 @@ const HireUs = () => {
               and consultants. "
           LinkName="Let’s consult with our expert"
           link=""
-          className="max-w-[630px] !gap-10"
+          className="!gap-10"
         />
         <div className="relative">
           <Image
@@ -128,10 +128,10 @@ const HireUs = () => {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           <div className="grid grid-stack">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-2xl font-medium capitalize leading-7 text-primary backdrop-blur-sm">
+              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-primary backdrop-blur-sm">
                 full time
               </span>
-              <p className="font-opt text-2xl font-normal leading-7 text-white/80">
+              <p className="font-opt text-xl font-normal leading-6 text-white/80">
                 8 hours / day 5 days / week
               </p>
             </div>
@@ -145,10 +145,10 @@ const HireUs = () => {
           </div>
           <div className="grid grid-stack">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-2xl font-medium capitalize leading-7 text-primary backdrop-blur-sm">
+              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-primary backdrop-blur-sm">
                 Part time
               </span>
-              <p className="font-opt text-2xl font-normal leading-7 text-white/80">
+              <p className="font-opt text-xl font-normal leading-6 text-white/80">
                 4 hours / day 5 days / week
               </p>
             </div>
@@ -162,10 +162,10 @@ const HireUs = () => {
           </div>
           <div className="grid grid-stack">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-2xl font-medium capitalize leading-7 text-primary backdrop-blur-sm">
+              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-primary backdrop-blur-sm">
                 hourly basis
               </span>
-              <p className="font-opt text-2xl font-normal leading-7 text-white/80">
+              <p className="font-opt text-xl font-normal leading-6 text-white/80">
                 Starts with 40 hours Pay as you go
               </p>
             </div>
@@ -199,9 +199,9 @@ const HireUs = () => {
               onMouseUp={handleMouseEnter}
               onMouseDown={handleMouseLeave}
               href={'/'}
-              className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal capitalize leading-tight text-white"
+              className={`flex w-max items-center justify-center gap-1 rounded-[50px] border border-white px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-white transition-all duration-250 ease-in hover:border-transparent hover:bg-[#1A6AA3] hover:shadow-lg`}
             >
-              contact us
+              <span className="mt-0.5">Contact Us</span>
               <span className="mt-0.5">
                 <AnimatedArrow hover={hover} />
               </span>
@@ -248,10 +248,10 @@ const HireUs = () => {
                   0{i + 1}
                 </span>
                 <div className="flex flex-col gap-3">
-                  <h5 className="font-opt text-2xl font-medium leading-6 text-primary">
+                  <h5 className="font-opt text-xl font-medium leading-6 text-primary">
                     {item?.title}
                   </h5>
-                  <p className="font-opt text-lg font-normal leading-6 text-optDesc">
+                  <p className="font-opt text-base font-normal leading-5 text-optDesc">
                     {item?.description}
                   </p>
                 </div>
@@ -279,10 +279,10 @@ const HireUs = () => {
                   key={i}
                   className="flex w-full min-w-[300px] flex-col gap-3 rounded-2xl bg-white/10 p-[30px] backdrop-blur-md sm:min-w-[550px]"
                 >
-                  <h5 className="font-opt text-2xl font-medium leading-6 text-white">
+                  <h5 className="font-opt text-xl font-medium leading-6 text-white">
                     {item?.title}
                   </h5>
-                  <p className="line-clamp-6 font-opt text-lg font-normal leading-6 text-white/45">
+                  <p className="line-clamp-6 font-opt text-base font-normal leading-5 text-white/45">
                     {item?.description}
                   </p>
                 </div>
@@ -432,7 +432,7 @@ const HireUs = () => {
                   <div
                     className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
                   >
-                    <p className="line-clamp-5 font-opt text-lg font-normal leading-6 text-optDesc opacity-80">
+                    <p className="line-clamp-5 font-opt text-base font-normal leading-5 text-optDesc">
                       {item?.message}
                     </p>
                     <div className="flex items-center justify-between gap-2.5">
