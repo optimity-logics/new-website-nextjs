@@ -21,7 +21,6 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import Faqs from './Faqs';
-import AnimatedArrow from '../common/AnimatedArrow';
 import Container from '../ui/Container';
 import Link from 'next/link';
 import styled from 'styled-components';
@@ -30,29 +29,14 @@ import SocialMedia from '../layout/footer/SocialMedia';
 import HeroSectionHeading from '../ui/HeroSectionHeading';
 import SectionHeader from '../ui/SectionHeader';
 import OurWorkCard from '../common/OurWorkCard';
+import Button from '../ui/Button';
+import ClientTestimonial from '../ui/ClientTestimonial';
 
 const HighlitedDescription = styled.h2``;
 const HomePageV2 = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
-  const [hoverLearnMore, setHoverLearnMore] = useState<boolean>(false);
-  const [hoverSubmit, setHoverSubmit] = useState<boolean>(false);
-  const [hoverViewAll, setHoverViewAll] = useState<number | null>(null);
-  const [hoverContact, setHoverContact] = useState<boolean>(false);
 
-  const handleMouseEnterLearnMore = () => setHoverLearnMore(true);
-  const handleMouseLeaveLearnMore = () => {
-    setHoverLearnMore(false);
-  };
-  const handleMouseEnterSubmit = () => setHoverSubmit(true);
-  const handleMouseLeaveSubmit = () => {
-    setHoverSubmit(false);
-  };
-
-  const handleMouseEnterContact = () => setHoverContact(true);
-  const handleMouseLeaveContact = () => {
-    setHoverContact(false);
-  };
   const logos = logoIcons.map((image) => image?.src);
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
 
@@ -126,7 +110,7 @@ const HomePageV2 = () => {
                   badgeTitle={homePageData?.baddge}
                   heading={homePageData?.heroTitle}
                   description={homePageData?.heroDescription}
-                  LinkName={homePageData?.heroContactUsBtn}
+                  btnName={homePageData?.heroContactUsBtn}
                   link={homePageData?.heroContactUsBtnLink}
                 />
                 <motion.div
@@ -287,19 +271,11 @@ const HomePageV2 = () => {
                             {item?.subDescription}
                           </p>
                         </div>
-                        <Link
-                          onMouseEnter={() => setHoverViewAll(index)}
-                          onMouseLeave={() => setHoverViewAll(null)}
-                          onMouseUp={() => setHoverViewAll(index)}
-                          onMouseDown={() => setHoverViewAll(null)}
-                          href={item?.buttonLink}
-                          className={`flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-200 ease-in ${index % 2 === 0 ? 'border-transparent bg-[#1A6AA3] text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc text-optDesc hover:border-transparent hover:bg-[#1A6AA3] hover:text-white'}`}
-                        >
-                          <span className="mt-0.5">{item?.button}</span>
-                          <span>
-                            <AnimatedArrow hover={hoverViewAll === index} />
-                          </span>
-                        </Link>
+                        <Button
+                          btnName={item?.button}
+                          redirectionLink={item?.buttonLink}
+                          isBackgroung={index % 2 === 0 ? true : false}
+                        />
                       </div>
                       <div className="xxl:w-[500px]">
                         <Image
@@ -523,20 +499,11 @@ const HomePageV2 = () => {
                   </li>
                 ))}
               </ul>
-              <Link
-                onMouseEnter={handleMouseEnterLearnMore}
-                onMouseLeave={handleMouseLeaveLearnMore}
-                onMouseUp={handleMouseEnterLearnMore}
-                onMouseDown={handleMouseLeaveLearnMore}
-                href={currentTab?.link}
-                className={`flex w-max items-center justify-center gap-1 rounded-[50px] border border-optDesc px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-optDesc transition-all duration-250 ease-in hover:border-transparent hover:bg-[#1A6AA3] hover:text-white hover:shadow-lg`}
-              >
-                <span>{currentTab?.LearnMore}</span>
-
-                <span>
-                  <AnimatedArrow hover={hoverLearnMore} />
-                </span>
-              </Link>
+              <Button
+                btnName={currentTab?.LearnMore}
+                redirectionLink={currentTab?.link}
+                isBackgroung={false}
+              />
             </div>
           </div>
           <div className="hidden lg:block">
@@ -627,7 +594,7 @@ const HomePageV2 = () => {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
         className="bg-tech-we-work bg-cover bg-no-repeat"
       >
@@ -745,7 +712,8 @@ const HomePageV2 = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <ClientTestimonial isDark={true} />
       <Faqs />
       <div className="xl:mx-[30px]">
         <Container
@@ -833,17 +801,12 @@ const HomePageV2 = () => {
                   className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
                 />
               </div>
-              <button
-                onMouseEnter={handleMouseEnterSubmit}
-                onMouseLeave={handleMouseLeaveSubmit}
-                onMouseUp={handleMouseEnterSubmit}
-                onMouseDown={handleMouseLeaveSubmit}
-                type="button"
-                className={`flex h-[38px] w-max items-center justify-center gap-1 rounded-[50px] border border-transparent bg-[#1A6AA3] px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-white transition-all duration-250 ease-in hover:border-subtle hover:bg-transparent hover:shadow-lg`}
-              >
-                {homePageData?.formSubmitBtn}
-                <AnimatedArrow hover={hoverSubmit} />
-              </button>
+              <Button
+                type="submit"
+                btnName={homePageData?.formSubmitBtn}
+                isButton={true}
+                isBackgroundLight={true}
+              />
             </form>
           </div>
         </Container>

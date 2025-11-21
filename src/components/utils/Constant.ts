@@ -4121,7 +4121,7 @@ export const homePageData = {
   heroTitle: `AI-Powered Tech for Smarter Business Results`,
   heroDescription: `Optimitylogics creates AI-powered software solutions that boost productivity, encourage creativity, and facilitate long-term company expansion.`,
   heroContactUsBtn: 'Contact Us',
-  heroContactUsBtnLink: '',
+  heroContactUsBtnLink: '/',
   trustedClient:
     'Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies',
   ourExpertiseTitle: 'Our Expertise',
@@ -4670,7 +4670,7 @@ export const aboutUsPage = {
   heding: `Harness the power of <span> Artificial Intelligence</span> to revolutionize your business.`,
   description: `Optimity Logics develops next-gen AI solutions that empower smarter workflows, accelerate performance, and ensure sustainable growth.`,
   aboutUsBtn: 'About Us',
-  aboutUsBtnLink: '',
+  aboutUsBtnLink: '/',
   hero_image: aboutUsHeroImage,
   OurWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },

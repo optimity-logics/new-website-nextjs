@@ -6,20 +6,15 @@ import logo from '../../../../public/svg/logo.svg';
 import mobileScreenLogo from '../../../../public/svg/mobileScreenLogo.svg';
 import hamburger from '../../../../public/svg/hamburger-menu.svg';
 import MenuSidebar from '@/components/model-&-Drawer/MenuSidebar';
-import AnimatedArrow from '@/components/common/AnimatedArrow';
 import MegaMenu from './MegaMenu';
+import Button from '@/components/ui/Button';
 
 const NavBar = () => {
   // const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const [small, setSmall] = useState(false);
-  const [hover, setHover] = useState(false);
 
-  const handleMouseEnter = () => setHover(true);
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
   const handleOpenMenuDrawer = () => {
     setIsOpen(true);
   };
@@ -103,24 +98,11 @@ const NavBar = () => {
                 </div>
                 <MegaMenu />
               </div>
-
-              <div
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                onMouseUp={handleMouseEnter}
-                onMouseDown={handleMouseLeave}
-                className="w-max"
-              >
-                <Link
-                  href="/contact-us"
-                  className={`flex h-[38px] w-max items-center justify-center gap-1 rounded-[50px] border border-transparent bg-[#1A6AA3] px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-white transition-all duration-250 ease-in hover:border-optDesc hover:bg-transparent hover:text-optDesc hover:shadow-lg`}
-                >
-                  <span>Contact us</span>
-                  <span>
-                    <AnimatedArrow hover={hover} />
-                  </span>
-                </Link>
-              </div>
+              <Button
+                btnName="Contact us"
+                redirectionLink={'/contact-us'}
+                isBackgroung={true}
+              />
             </div>
           </div>
         </div>

@@ -450,3 +450,33 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
     ),
     linear-gradient(175.2deg, #ffffff 11.61%, rgba(255, 255, 255, 0) 16.03%);
 }
+.cpta input[type='checkbox'] {
+  position: relative;
+  cursor: pointer;
+}
+.cpta input[type='checkbox']:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  border: 2px solid #3b50684d;
+  border-radius: 3px;
+  background-color: white;
+}
+.cpta input[type='checkbox']:checked:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(82, 140, 187);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 3.5px;
+  left: 8px;
+}

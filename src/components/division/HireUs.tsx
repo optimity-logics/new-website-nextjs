@@ -95,8 +95,8 @@ const HireUs = () => {
               industrial talents spanning web developers, project managers, QA
               analysts, UI/UX designers, business analysts, technical experts,
               and consultants. "
-          LinkName="Let’s consult with our expert"
-          link=""
+          btnName="Let’s consult with our expert"
+          link="/"
           className="!gap-10"
         />
         <div className="relative">
