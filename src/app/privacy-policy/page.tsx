@@ -1,8 +1,8 @@
+'use client';
+import React from 'react';
 import Container from '@/components/ui/Container';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import { privacyPolicyData } from '@/components/utils/Constant';
-
-import React from 'react';
 
 const PrivacyPolicy = () => {
   return (

@@ -15,14 +15,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import SectionHeader from '@/components/ui/SectionHeader';
 import OurWorkCard from '@/components/common/OurWorkCard';
+import ClientTestimonial from '@/components/ui/ClientTestimonial';
 const AboutUs = () => {
-  const [hoverContact, setHoverContact] = useState<boolean>(false);
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
 
-  const handleMouseEnterContact = () => setHoverContact(true);
-  const handleMouseLeaveContact = () => {
-    setHoverContact(false);
-  };
   const handleMouseEnterViewAll = () => setHoverViewAl(true);
   const handleMouseLeaveViewAl = () => {
     setHoverViewAl(false);
@@ -50,7 +46,7 @@ const AboutUs = () => {
             badgeTitle={aboutUsPage?.surTitle}
             heading={aboutUsPage?.heding}
             description={aboutUsPage?.description}
-            LinkName={homePageData?.heroContactUsBtn}
+            btnName={homePageData?.heroContactUsBtn}
             link={aboutUsPage?.aboutUsBtnLink}
             className="relative z-30 ml-auto flex w-full max-w-[900px] flex-col gap-7 px-4 sm:px-6 sm:pb-[120px] md:px-8 xl:px-10 xl:pl-[60px] 3xl:ml-16 4xl:pl-[100px]"
           />
@@ -445,138 +441,7 @@ const AboutUs = () => {
             ))}
         </div>
       </Container>
-      <div className="relative mx-auto max-w-[1680px] py-[60px] 4xl:py-[100px]">
-        <div
-          style={{
-            backgroundImage: "url('/images/homePagev2/Line1.png')",
-            WebkitMaskImage:
-              'linear-gradient(90deg, rgba(102, 102, 102, 0.11) 0.6%, #666666 50.78%, rgba(102, 102, 102, 0.11) 100%)',
-          }}
-          className="absolute inset-y-0 left-[15px] w-[1px] bg-cover sm:left-[22px] md:left-[31px] xl:left-[39px] 3xl:left-[119px]"
-        ></div>
-        <div
-          style={{
-            backgroundImage: "url('/images/homePagev2/Line1.png')",
-            WebkitMaskImage:
-              'linear-gradient(90deg, rgba(102, 102, 102, 0.11) 0.6%, #666666 50.78%, rgba(102, 102, 102, 0.11) 100%)',
-          }}
-          className="-0 absolute inset-y-0 right-[15px] w-[1px] bg-cover sm:right-[22px] md:right-[31px] xl:right-[39px] 3xl:right-[119px]"
-        ></div>
-        <div className="relative px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-[120px]">
-          <div
-            style={{
-              WebkitMaskImage:
-                'linear-gradient(90deg, rgba(102,102,102,0.11) 0.6%, #666666 50.78%, rgba(102,102,102,0.11) 100%)',
-            }}
-            className="absolute inset-x-0 -top-[3px] h-[1px] border-1 border-dashed border-gray opacity-30"
-          ></div>
-          <div
-            style={{
-              WebkitMaskImage:
-                'linear-gradient(90deg, rgba(102,102,102,0.11) 0.6%, #666666 50.78%, rgba(102,102,102,0.11) 100%)',
-            }}
-            className="absolute inset-x-0 bottom-[-3px] !h-[1px] border-1 border-dashed border-gray opacity-30"
-          ></div>
-
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
-            <motion.div
-              onMouseMove={(e) => {
-                const rect = e.currentTarget.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-
-                e.currentTarget.style.transform = `
-              perspective(1000px) 
-              rotateX(${-y / 60}deg) 
-              rotateY(${x / 60}deg) 
-              scale(1.02)
-            `;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = `
-              perspective(1000px) 
-              rotateX(0deg) 
-              rotateY(0deg) 
-              scale(1)
-            `;
-              }}
-              style={{
-                transition: 'transform 0.3s ease-out',
-              }}
-              className="row-start-3 md:col-start-2 md:row-span-2 md:row-start-4 xl:col-start-3 xl:row-start-2"
-            >
-              <div className="flex h-full flex-col justify-between gap-14 rounded-[17px] bg-black p-5 backdrop-blur-lg md:px-[28px] md:py-[32px]">
-                <p className="font-opt text-2xl font-extrabold leading-8 text-optDesc md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
-                  {homePageData?.contactUsCardTitle}
-                </p>
-                <Link
-                  onMouseEnter={handleMouseEnterContact}
-                  onMouseLeave={handleMouseLeaveContact}
-                  onMouseUp={handleMouseEnterContact}
-                  onMouseDown={handleMouseLeaveContact}
-                  href={homePageData?.contactUsCardBtnLink}
-                  className="flex w-max items-center gap-1 rounded-[50px] border border-transparent bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-sm font-normal leading-tight text-primary transition-all duration-200 ease-in hover:border-white hover:bg-transparent hover:text-white"
-                >
-                  <span className="mt-0.5">
-                    {' '}
-                    {homePageData?.contactUsCardBtn}
-                  </span>
-                  <AnimatedArrow hover={hoverContact} />
-                </Link>
-              </div>
-            </motion.div>
-            {homePageData?.clientReview &&
-              homePageData?.clientReview.map((item, index) => (
-                <motion.div
-                  key={index}
-                  onMouseMove={(e) => {
-                    const rect = e.currentTarget.getBoundingClientRect();
-                    const x = e.clientX - rect.left - rect.width / 2;
-                    const y = e.clientY - rect.top - rect.height / 2;
-
-                    e.currentTarget.style.transform = `
-              perspective(1000px) 
-              rotateX(${-y / 20}deg) 
-              rotateY(${x / 20}deg) 
-              scale(1.05)
-            `;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = `
-              perspective(1000px) 
-              rotateX(0deg) 
-              rotateY(0deg) 
-              scale(1)
-            `;
-                  }}
-                  style={{
-                    transition: 'transform 0.3s ease-out',
-                  }}
-                >
-                  <div
-                    className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
-                  >
-                    <p className="line-clamp-5 font-opt text-base font-normal leading-6 text-optDesc">
-                      {item?.message}
-                    </p>
-                    <div className="flex items-center justify-between gap-2.5">
-                      <p className="font-opt text-lg font-normal leading-5 text-iconSubtle">
-                        {item?.role}
-                      </p>
-                      <Image
-                        src={item?.avatar}
-                        alt="client"
-                        width={67}
-                        height={67}
-                        className="h-[67px] w-[67px] rounded-[12px] object-cover outline outline-[2px] -outline-offset-1 outline-[#0000001A]"
-                      />
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-          </div>
-        </div>
-      </div>
+      <ClientTestimonial />
     </>
   );
 };

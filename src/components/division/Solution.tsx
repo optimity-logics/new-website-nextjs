@@ -86,7 +86,7 @@ const Solution = () => {
               className="items-start justify-center !gap-10"
               heading="Healthcare & Life Sciences"
               description="Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations."
-              LinkName="Let’s Connect"
+              btnName="Let’s Connect"
               link=""
             />
             <div className="relative aspect-[5/4] h-auto w-full max-w-[450px] 3xl:aspect-[5/6]">
@@ -109,7 +109,7 @@ const Solution = () => {
         <Container className="relative z-30 py-[150px]">
           <HeroSectionHeading
             heading="Ready to optimize your healthcare operations?"
-            LinkName="Connect Us"
+            btnName="Connect Us"
             link="/contact-us"
             headingStyle="text-white"
             className="max-w-[800px]"

@@ -8,8 +8,8 @@ import mobileScreenLogo from '../../../public/svg/mobileScreenLogo.svg';
 import useWindowSize from '../hooks/useWindowSize';
 import { menuSidebar } from '../utils/Constant';
 import React from 'react';
-import AnimatedArrow from '../common/AnimatedArrow';
 import downArrow from '../../../public/svg/arrow.svg';
+import Button from '../ui/Button';
 interface IMenuSidebarProps {
   isOpen: boolean;
   setIsOpen: (val: boolean) => void;
@@ -17,7 +17,6 @@ interface IMenuSidebarProps {
 
 const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
   const { width } = useWindowSize();
-  const [hover, setHover] = useState(false);
   const [selectMenu, setSelectMenu] = useState<string | null>(null);
 
   const toggleMenu = (menuTitle: string) => {
@@ -27,11 +26,6 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
       setSelectMenu(menuTitle);
     }
   };
-  const handleMouseEnter = () => setHover(true);
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
-
   useEffect(() => {
     if (width >= 1024) {
       setIsOpen(false);
@@ -187,18 +181,11 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                   );
                 })}
             </ul>
-            <Link
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onMouseUp={handleMouseEnter}
-              onMouseDown={handleMouseLeave}
-              href={'/contact-us'}
+            <Button
+              btnName=" Contact us"
+              redirectionLink="/contact-us"
               onClick={() => handleCloseDrower()}
-              className="flex w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] px-[16px] py-[8px] pr-[14px] font-opt text-base font-normal leading-5 text-white"
-            >
-              Contact us
-              <AnimatedArrow hover={hover} />
-            </Link>
+            />
           </div>
         </div>
       </Drawer>

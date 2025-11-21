@@ -14,6 +14,8 @@ import HeroSectionHeading from './HeroSectionHeading';
 import SectionHeader from './SectionHeader';
 import OurWorkCard from '../common/OurWorkCard';
 import ProjectCard from '../common/ProjectCard';
+import Button from './Button';
+import Contact from './Contact';
 
 interface IPropsType {
   data: IPropsDataTypes;
@@ -43,7 +45,6 @@ const AllPageContent = ({ data }: IPropsType) => {
     1: false,
   });
   const [hoverViewAll, setHoverViewAll] = useState<boolean>(false);
-  const [hoverContact, setHoverContact] = useState<boolean>(false);
   const [processDevInd, setProcessDevInd] = useState<number>(0);
   const [activeTab, setActiveTab] = useState(1);
 
@@ -60,10 +61,6 @@ const AllPageContent = ({ data }: IPropsType) => {
   const handleMouseEnterViewAll = () => setHoverViewAll(true);
   const handleMouseLeaveViewAll = () => {
     setHoverViewAll(false);
-  };
-  const handleMouseEnterContact = () => setHoverContact(true);
-  const handleMouseLeaveContact = () => {
-    setHoverContact(false);
   };
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -99,7 +96,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               className="!gap-10"
               heading={data?.HeroSectionData?.heading}
               description={data?.HeroSectionData?.description}
-              LinkName={data?.HeroSectionData?.btnName}
+              btnName={data?.HeroSectionData?.btnName}
               link={data?.HeroSectionData?.btnLink}
             />
             <div className="relative aspect-[5/4] h-auto w-full max-w-[450px] 3xl:aspect-[5/6]">
@@ -115,7 +112,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               )}
             </div>
             {data?.HeroSectionData?.techName && (
-              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[6%]">
+              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[15%] 3xl:text-[200px]">
                 {data?.HeroSectionData?.techName}
               </span>
             )}
@@ -329,19 +326,11 @@ const AllPageContent = ({ data }: IPropsType) => {
                 />
               </svg>
             </div>
-            <Link
-              onMouseEnter={handleMouseEnterContact}
-              onMouseLeave={handleMouseLeaveContact}
-              onMouseUp={handleMouseEnterContact}
-              onMouseDown={handleMouseLeaveContact}
-              href={data?.crossPlatformBenefitsContactBtnLink}
-              className="flex w-max items-center gap-1 rounded-[50px] border border-transparent bg-white py-[8px] pl-[16px] pr-[14px] font-opt text-sm font-normal leading-5 text-optDesc transition-all duration-200 ease-in hover:border-white hover:bg-transparent hover:text-white"
-            >
-              <span className="mt-0.5">
-                {data?.crossPlatformBenefitsContactBtn}
-              </span>
-              <AnimatedArrow hover={hoverContact} />
-            </Link>
+            <Button
+              btnName={data?.crossPlatformBenefitsContactBtn}
+              redirectionLink={data?.crossPlatformBenefitsContactBtnLink}
+              isBackgroundLight={true}
+            />
           </div>
         </div>
       </Container>
@@ -488,6 +477,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             ))}
         </div>
       </Container>
+      <Contact />
     </>
   );
 };

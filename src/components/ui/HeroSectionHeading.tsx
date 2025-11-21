@@ -1,8 +1,6 @@
-'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import Link from 'next/link';
-import AnimatedArrow from '../common/AnimatedArrow';
+import Button from './Button';
 
 interface IHeadingProps {
   heading: string;
@@ -10,12 +8,13 @@ interface IHeadingProps {
   className?: string;
   badgeTitle?: string;
   badgeStyle?: string;
-  LinkName?: string;
-  LinkStyle?: string;
+  btnName?: string;
+  btnStyle?: string;
   descriptionStyle?: string;
   isDark?: boolean;
   headingStyle?: string;
   link?: string;
+  isBtnBackgroundLight?: boolean;
 }
 
 const HighlitedDescription = styled.h1`
@@ -30,18 +29,14 @@ const HeroSectionHeading = ({
   className,
   badgeTitle,
   badgeStyle,
-  LinkName,
-  LinkStyle,
+  btnName,
+  btnStyle,
   isDark,
   descriptionStyle,
   headingStyle,
+  isBtnBackgroundLight,
   link,
 }: IHeadingProps) => {
-  const [hover, setHover] = useState<boolean>(false);
-  const handleMouseEnter = () => setHover(true);
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
   return (
     <div className={`flex flex-col gap-5 ${className} max-w-[600px]`}>
       {badgeTitle && (
@@ -64,20 +59,13 @@ const HeroSectionHeading = ({
           {description}
         </p>
       )}
-      {LinkName && (
-        <Link
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          onMouseUp={handleMouseEnter}
-          onMouseDown={handleMouseLeave}
-          href={link || ''}
-          className={`flex w-max items-center justify-center gap-1 rounded-[50px] border border-optDesc px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-optDesc transition-all duration-250 ease-in hover:border-transparent hover:bg-[#1A6AA3] hover:text-white hover:shadow-lg ${LinkStyle}`}
-        >
-          <span className="mt-0.5">{LinkName}</span>
-          <span>
-            <AnimatedArrow hover={hover} />
-          </span>
-        </Link>
+      {btnName && (
+        <Button
+          btnName={btnName}
+          redirectionLink={link}
+          className={btnStyle}
+          isBackgroundLight={isBtnBackgroundLight}
+        />
       )}
     </div>
   );
