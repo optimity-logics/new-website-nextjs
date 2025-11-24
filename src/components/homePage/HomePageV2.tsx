@@ -31,6 +31,7 @@ import SectionHeader from '../ui/SectionHeader';
 import OurWorkCard from '../common/OurWorkCard';
 import Button from '../ui/Button';
 import ClientTestimonial from '../ui/ClientTestimonial';
+import HomeContactForm from '../contact/HomeContactForm';
 
 const HighlitedDescription = styled.h2``;
 const HomePageV2 = () => {
@@ -771,43 +772,7 @@ const HomePageV2 = () => {
               </div>
               <SocialMedia />
             </div>
-            <form className="flex w-full max-w-full flex-col gap-10 rounded-2xl bg-[#f0f3f5]/10 p-6 shadow-xl backdrop-blur-sm lg:max-w-[737px] xl:px-[23px] xl:py-[52px] xl:shadow-none">
-              <div className="flex flex-col gap-[26px]">
-                <div className="flex flex-row items-center gap-6 md:flex-col lg:flex-row">
-                  <input
-                    type="text"
-                    placeholder={homePageData?.formFirstName}
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
-                  />
-                  <input
-                    type="text"
-                    placeholder={homePageData?.formLastName}
-                    className="w-full rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
-                  />
-                </div>
-                <input
-                  type="email"
-                  placeholder={homePageData?.formEmail}
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
-                />
-                <input
-                  type="text"
-                  placeholder={homePageData?.formSubject}
-                  className="rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
-                />
-                <textarea
-                  rows={2}
-                  placeholder={homePageData?.formDescription}
-                  className="resize-none rounded-[20px] border border-[#CCCCCC5C] bg-[#CCCCCC5C]/30 px-4 py-5 font-opt text-lg font-normal leading-tight text-white/70 focus:outline-none"
-                />
-              </div>
-              <Button
-                type="submit"
-                btnName={homePageData?.formSubmitBtn}
-                isButton={true}
-                isBackgroundLight={true}
-              />
-            </form>
+            <HomeContactForm />
           </div>
         </Container>
       </div>
