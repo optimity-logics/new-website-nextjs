@@ -16,6 +16,7 @@ import OurWorkCard from '../common/OurWorkCard';
 import ProjectCard from '../common/ProjectCard';
 import Button from './Button';
 import Contact from './Contact';
+import { motion } from 'framer-motion';
 
 interface IPropsType {
   data: IPropsDataTypes;
@@ -101,16 +102,27 @@ const AllPageContent = ({ data }: IPropsType) => {
             />
             <div className="relative aspect-[5/4] h-auto w-full max-w-[450px] 3xl:aspect-[5/6]">
               {data?.HeroSectionData?.techImg && (
-                <Image
-                  src={data?.HeroSectionData?.techImg || ''}
-                  alt="technology"
-                  fill
-                  priority
-                  fetchPriority="high"
-                  className="object-contain"
-                />
+                <motion.div
+                  className="relative h-full w-full" // ADD THIS
+                  initial={{ opacity: 0, x: 150 }} // slide from right
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{
+                    duration: 1,
+                    ease: 'easeIn',
+                  }}
+                >
+                  <Image
+                    src={data?.HeroSectionData?.techImg || ''}
+                    alt="technology"
+                    fill
+                    priority
+                    fetchPriority="high"
+                    className="object-contain"
+                  />
+                </motion.div>
               )}
             </div>
+
             {data?.HeroSectionData?.techName && (
               <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[15%] 3xl:text-[200px]">
                 {data?.HeroSectionData?.techName}
