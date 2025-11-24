@@ -1,15 +1,11 @@
 import React from 'react';
 
 type cardProps = {
-  key: number;
   data: { backGrouund: string; description: string; title: string };
 };
-const OurWorkCard = ({ key, data }: cardProps) => {
+const OurWorkCard = ({ data }: cardProps) => {
   return (
-    <div
-      key={key}
-      className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]"
-    >
+    <div className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]">
       <div className="flex flex-col gap-3 xl:gap-[20px]">
         <div
           style={{ backgroundSize: '100% 100%' }}

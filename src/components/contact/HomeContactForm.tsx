@@ -3,7 +3,6 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Button from '../ui/Button';
-import GoogleCaptcha from '../common/GoogleCaptcha';
 import { homePageData } from '../utils/Constant';
 
 const HomeContactForm = () => {
@@ -140,13 +139,11 @@ const HomeContactForm = () => {
             <p className="text-sm text-red">{formik.errors.description}</p>
           )}
         </div>
-
-        {/* GOOGLE CAPTCHA (COMMON COMPONENT) */}
-        <GoogleCaptcha
+        {/* <GoogleCaptcha
           onChange={(token) => formik.setFieldValue('captchaToken', token)}
           error={formik.errors.captchaToken}
           touched={formik.touched.captchaToken}
-        />
+        /> */}
       </div>
 
       {/* SUBMIT BUTTON */}
