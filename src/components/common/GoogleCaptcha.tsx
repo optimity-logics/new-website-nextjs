@@ -18,7 +18,7 @@ const GoogleCaptcha = ({
   return (
     <div className={`flex w-full flex-col gap-2 ${className || ''}`}>
       <ReCAPTCHA
-        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY! || ''}
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
         onChange={onChange}
       />
 
