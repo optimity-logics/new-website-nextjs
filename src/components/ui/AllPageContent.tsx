@@ -103,11 +103,16 @@ const AllPageContent = ({ data }: IPropsType) => {
             <div className="relative aspect-[5/4] h-auto w-full max-w-[450px] 3xl:aspect-[5/6]">
               {data?.HeroSectionData?.techImg && (
                 <motion.div
+                  key={
+                    typeof data?.HeroSectionData?.techImg === 'string'
+                      ? data.HeroSectionData.techImg
+                      : data.HeroSectionData.techImg?.src
+                  }
                   className="relative h-full w-full" // ADD THIS
-                  initial={{ opacity: 0, x: 150 }} // slide from right
-                  animate={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
                   transition={{
-                    duration: 1,
+                    duration: 0.8,
                     ease: 'easeIn',
                   }}
                 >
@@ -124,7 +129,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             </div>
 
             {data?.HeroSectionData?.techName && (
-              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[15%] 3xl:text-[200px]">
+              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[13.7%] 3xl:text-[200px]">
                 {data?.HeroSectionData?.techName}
               </span>
             )}
