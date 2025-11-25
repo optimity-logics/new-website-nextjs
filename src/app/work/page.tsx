@@ -4,6 +4,7 @@ import AnimatedArrow from '@/components/common/AnimatedArrow';
 import Container from '@/components/ui/Container';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import { ourWorkPage } from '@/components/utils/Constant';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -32,14 +33,25 @@ const OurWorks = () => {
             description={ourWorkPage?.headingDescription}
             className="w-full"
           />
+
           <div className="relative aspect-[5/4] h-full w-full max-w-[400px]">
-            <Image
-              src="/images/our-work/our-work-hero.png"
-              alt=""
-              fill
-              priority
-              className="object-contain"
-            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                ease: 'easeIn',
+              }}
+              className="relative h-full w-full"
+            >
+              <Image
+                src="/images/our-work/our-work-hero.png"
+                alt=""
+                fill
+                priority
+                className="object-contain"
+              />
+            </motion.div>
           </div>
         </Container>
       </div>

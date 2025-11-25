@@ -78,6 +78,10 @@ export default {
         bgHealthCare: "url('/images/services/healthcare.jpg')",
         bgContact: "url('/images/services/desktop-cntc.webp')",
         contactMobileBg: "url('/images/services/mobile-contactus.webp')",
+        detailHeroGradient:
+          ' linear-gradient(176.48deg, #41D1FF 11.59%, #034C63 38.07%);',
+        frame: "url('/images/our-work/frame.png')",
+        userframe: "url('/images/our-work/users.jpg')",
       },
       fontFamily: {
         opt: ['var(--font-opt)'],
