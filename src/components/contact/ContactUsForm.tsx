@@ -3,6 +3,7 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Button from '../ui/Button';
+import GoogleCaptcha from '../common/GoogleCaptcha';
 
 interface FormValues {
   name: string;
@@ -136,11 +137,11 @@ const ContactUsForm = () => {
         </div>
 
         {/* REAL GOOGLE RECAPTCHA */}
-        {/* <GoogleCaptcha
+        <GoogleCaptcha
           onChange={(token) => formik.setFieldValue('captchaToken', token)}
           error={formik.errors.captchaToken}
           touched={formik.touched.captchaToken}
-        /> */}
+        />
 
         <Button isButton={true} btnName="Submit" type="submit" />
       </form>

@@ -16,6 +16,7 @@ import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import SectionHeader from '@/components/ui/SectionHeader';
 import OurWorkCard from '@/components/common/OurWorkCard';
 import ClientTestimonial from '@/components/ui/ClientTestimonial';
+import ProcessCard from '@/components/common/ProcessCard';
 const AboutUs = () => {
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
 
@@ -118,22 +119,7 @@ const AboutUs = () => {
             <div className="relative z-10 grid grid-cols-1 gap-5 md:grid-cols-2">
               {aboutUsPage?.ourCoreValue.values &&
                 aboutUsPage?.ourCoreValue?.values.map((items, i) => (
-                  <div
-                    key={i}
-                    className="flex flex-col gap-[30px] rounded-[20px] bg-white/50 p-5 shadow-howWorkCard backdrop-blur-sm"
-                  >
-                    <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] font-opt text-xl font-medium text-white">
-                      0{i + 1}
-                    </span>
-                    <div className="flex flex-col gap-3">
-                      <h5 className="font-opt text-xl font-medium leading-6 text-primary">
-                        {items?.title}
-                      </h5>
-                      <p className="font-opt text-base font-normal leading-5 text-optDesc">
-                        {items?.description}
-                      </p>
-                    </div>
-                  </div>
+                  <ProcessCard key={i} data={items} index={i} />
                 ))}
               <div className="absolute inset-0 -z-10 hidden items-center justify-center overflow-hidden md:flex">
                 <motion.div
@@ -279,7 +265,6 @@ const AboutUs = () => {
                 key={i}
                 className={`relative flex flex-col gap-5 overflow-hidden rounded-lg px-5 py-6 ${i === activeIndex ? 'border-l border-l-red' : ''} shadow-sm`}
               >
-                {/* Background animation (top to bottom) */}
                 {i === activeIndex && (
                   <motion.div
                     initial={{ y: '-100%' }}
