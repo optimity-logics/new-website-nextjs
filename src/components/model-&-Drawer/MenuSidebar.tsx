@@ -6,7 +6,7 @@ import 'react-modern-drawer/dist/index.css';
 import close from '../../../public/svg/close.svg';
 import mobileScreenLogo from '../../../public/svg/mobileScreenLogo.svg';
 import useWindowSize from '../hooks/useWindowSize';
-import { menuSidebar } from '../utils/Constant';
+import { menuData } from '../utils/Constant';
 import React from 'react';
 import downArrow from '../../../public/svg/arrow.svg';
 import Button from '../ui/Button';
@@ -78,8 +78,8 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
           </div>
           <div className="flex flex-col gap-5 p-5">
             <ul className="flex flex-col gap-3">
-              {menuSidebar &&
-                menuSidebar.map((item, index) => {
+              {menuData &&
+                menuData.map((item, index) => {
                   const hasMegaMenu = item?.megaMenuItem?.length > 0;
                   return (
                     <li key={index} className="flex flex-col gap-5">

@@ -27,14 +27,14 @@ import uphail from '../../../public/webp/client-logos/uphail.webp';
 import whiskerspaws from '../../../public/webp/client-logos/whiskerspaws.webp';
 import woodlogs from '../../../public/webp/client-logos/woodlogs.webp';
 import yellowbird from '../../../public/webp/client-logos/yellowbird.webp';
-import aboutUsHeroImage from '../../../public/images/about-us/about_us_hero.png';
-import realEstate from '../../../public/images/homePagev2/realEstate.png';
-import fintech from '../../../public/images/homePagev2/fintech.png';
-import logistics from '../../../public/images/homePagev2/logistics.png';
-import edTech from '../../../public/images/homePagev2/edTech.png';
-import FB from '../../../public/images/homePagev2/f&b.png';
-import healthCare from '../../../public/images/homePagev2/healthCare.png';
-import healthare from '../../../public/images/vanue.png';
+import aboutUsHeroImage from '../../../public/webp/about-us/about_us_hero.webp';
+import realEstate from '../../../public/webp/homePagev2/realEstate.webp';
+import fintech from '../../../public/webp/homePagev2/fintech.webp';
+import logistics from '../../../public/webp/homePagev2/logistics.webp';
+import edTech from '../../../public/webp/homePagev2/edTech.webp';
+import FB from '../../../public/webp/homePagev2/f&b.webp';
+import healthCare from '../../../public/webp/homePagev2/healthCare.webp';
+import healthare from '../../../public/webp/our-work/vanue.webp';
 
 // social media icons
 
@@ -82,7 +82,7 @@ import walletv2 from '../../../public/svg/careers/benefitsv2/Walletv3.svg';
 import targetv2 from '../../../public/svg/careers/benefitsv2/Targetv3.svg';
 import shieldCheckv2 from '../../../public/svg/careers/benefitsv2/ShieldCheckv3.svg';
 
-import pm from '../../../public/images/homePagev2/pm.png';
+import pm from '../../../public/webp/homePagev2/pm.webp';
 
 import clutch from '../../../public/svg/about-us/clutch.svg';
 import designrush from '../../../public/svg/about-us/designrush.svg';
@@ -105,21 +105,21 @@ import byBusunessScale from '../../../public/svg/megaMenu/by-bussiness-scale.svg
 import appDevelopment from '../../../public/svg/megaMenu/app-devlopment.svg';
 import industryExperties from '../../../public/svg/megaMenu/industry-experties.svg';
 import customSolution from '../../../public/svg/megaMenu/custom-solution.svg';
-import mobileApp from '../../../public/images/homePagev2/mobile-app.png';
-import webApp from '../../../public/images/homePagev2/web-apps.png';
-import uiux from '../../../public/images/homePagev2/ui-ux.png';
-import qa from '../../../public/images/homePagev2/qa.png';
-import digitalMarketing from '../../../public/images/homePagev2/digital-marketing.png';
-import devopsTech from '../../../public/images/homePagev2/devops-tech.png';
-import mobiles from '../../../public/images/homePagev2/mobile.png';
-import frontend from '../../../public/images/homePagev2/frontend.png';
-import backend from '../../../public/images/homePagev2/backend.png';
-import database from '../../../public/images/homePagev2/database.png';
-import cms from '../../../public/images/homePagev2/cms.png';
-import devops from '../../../public/images/homePagev2/devops.png';
-import htsV2 from '../../../public/images/homePagev2/hts.png';
-import builderV2 from '../../../public/images/homePagev2/builder-spec.png';
-import wikifarmerV2 from '../../../public/images/homePagev2/wikifarmer.png';
+import mobileApp from '../../../public/webp/homePagev2/mobile-app.webp';
+import webApp from '../../../public/webp/homePagev2/web-apps.webp';
+import uiux from '../../../public/webp/homePagev2/ui-ux.webp';
+import qa from '../../../public/webp/homePagev2/qa.webp';
+import digitalMarketing from '../../../public/webp/homePagev2/digital-marketing.webp';
+import devopsTech from '../../../public/webp/homePagev2/devops-tech.webp';
+import mobiles from '../../../public/webp/homePagev2/mobile.webp';
+import frontend from '../../../public/webp/homePagev2/frontend.webp';
+import backend from '../../../public/webp/homePagev2/backend.webp';
+import database from '../../../public/webp/homePagev2/database.webp';
+import cms from '../../../public/webp/homePagev2/cms.webp';
+import devops from '../../../public/webp/homePagev2/devops.webp';
+import htsV2 from '../../../public/webp/homePagev2/hts.webp';
+import builderV2 from '../../../public/webp/homePagev2/builder-spec.webp';
+import wikifarmerV2 from '../../../public/webp/homePagev2/wikifarmer.webp';
 // types
 
 // services bond sign
@@ -939,7 +939,7 @@ export const footerData: IFooterDataType = {
     },
   ],
   otherLinks: [
-    { title: 'About Us', link: '/about-us' },
+    { title: 'About Us', link: '/about' },
     { title: 'Insights', link: '' },
     { title: 'Careers', link: '/careers' },
     { title: 'Privacy Policy', link: '/privacy-policy' },
@@ -2298,14 +2298,6 @@ export const menuData = [
             techName: 'Flutter',
             techLink: '/flutter-development-service',
           },
-          {
-            techName: 'Swift',
-            techLink: '/swift-development-service',
-          },
-          {
-            techName: 'Iconic',
-            techLink: '/iconic-development-service',
-          },
         ],
       },
       {
@@ -2330,8 +2322,8 @@ export const menuData = [
             techLink: 'vue-js-development-service',
           },
           {
-            techName: 'Backbone.js',
-            techLink: 'backbone-js-development-service',
+            techName: 'Svelte.js',
+            techLink: 'svelte-js-development-service',
           },
           {
             techName: 'JavaSctipt',
@@ -2364,15 +2356,80 @@ export const menuData = [
             techName: 'PHP',
             techLink: '/php-development-service',
           },
+        ],
+      },
+      // {
+      //   title: 'Database',
+      //   backgroundColor: '#A3D8FD',
+      //   img: trending,
+      //   items: [
+      //     {
+      //       techName: 'MySQL',
+      //       techLink: '/',
+      //     },
+      //     {
+      //       techName: 'PostgreSQL',
+      //       techLink: '/tailwind-css-development-service',
+      //     },
+      //     {
+      //       techName: 'MongoDB',
+      //       techLink: '/tailwind-css-development-service',
+      //     },
+      //     {
+      //       techName: 'Redis',
+      //       techLink: '/tailwind-css-development-service',
+      //     },
+      //     {
+      //       techName: 'Firebase',
+      //       techLink: '/tailwind-css-development-service',
+      //     },
+      //   ],
+      // },
+      {
+        title: 'CMS',
+        backgroundColor: '#bdf4dc',
+        img: trending,
+        items: [
           {
-            techName: 'Meteor.js',
-            techLink: '/meteor-js-development-service',
+            techName: 'Wordpress',
+            techLink: '/wordpress-service',
+          },
+          {
+            techName: 'Contentful',
+            techLink: '/contentful-cloud-service',
+          },
+          {
+            techName: 'Craft CMS',
+            techLink: '/craft-cms-service',
+          },
+          {
+            techName: 'Magento',
+            techLink: '/magento-cms-service',
           },
         ],
       },
+      // {
+      //   title: 'DevOps',
+      //   backgroundColor: '#97c2ff',
+      //   img: trending,
+      //   items: [
+      //     {
+      //       techName: 'AWS',
+      //       techLink: '/AWS-service',
+      //     },
+      //     {
+      //       techName: 'Google Cloud',
+      //       techLink: '/google-cloud-service',
+      //     },
+      //     {
+      //       techName: 'Azure',
+      //       techLink: '/azure-service',
+      //     },
+      //   ],
+      // },
       {
         title: 'Trending',
-        backgroundColor: '#A3D8FD',
+        backgroundColor: '#f4bdc8',
         img: trending,
         items: [
           {
@@ -2568,478 +2625,6 @@ export const menuData = [
     megaMenuItem: [],
   },
 ];
-export const menuSidebar = [
-  {
-    menuTitle: 'Services',
-    megaMenuItem: [
-      {
-        title: 'Digital Transformationurces',
-        backgroundColor: '#73BDF2',
-        img: digitalTransFormation,
-        items: [
-          {
-            techName: 'Software Product Development',
-            techLink: '/software-product-development-service',
-          },
-          {
-            techName: 'UI/UX Design',
-            techLink: '/ui-ux-design-service',
-          },
-          {
-            techName: 'Digital Marketing',
-            techLink: '/digital-marketing-service',
-          },
-          {
-            techName: 'Quality Engineering',
-            techLink: '/quality-engineering-service',
-          },
-          {
-            techName: 'Dedicated Team Augmentation',
-            techLink: '/dedicated-team-augmentation-service',
-          },
-          {
-            techName: 'CTO As A Service',
-            techLink: '/cto-as-service',
-          },
-        ],
-      },
-      {
-        title: 'Data and AI',
-        backgroundColor: '#FFCABC',
-        img: dataAi,
-        items: [
-          {
-            techName: 'Data Science',
-            techLink: '/data-science-service',
-          },
-          {
-            techName: 'Machine Learning',
-            techLink: '/machine-learning-development-service',
-          },
-          {
-            techName: 'Artificial Intelligence (AI)',
-            techLink: '/artificial-intelligence-service',
-          },
-          {
-            techName: 'Robotic Process Automation',
-            techLink: '/robotic-process-automation-service',
-          },
-          {
-            techName: 'Computer Vision Development',
-            techLink: '/computer-vision-development-service',
-          },
-          {
-            techName: 'Generative AI Development',
-            techLink: '/generative-ai-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Application Development',
-        backgroundColor: '#FDD8A3',
-        img: appDevelopment,
-        items: [
-          {
-            techName: 'Web App Development',
-            techLink: '/web-app-development-service',
-          },
-          {
-            techName: 'Mobile App Development',
-            techLink: '/mobile-app-development-service',
-          },
-          {
-            techName: 'Software Development',
-            techLink: '/software-development-service',
-          },
-          {
-            techName: 'SaaS App Development',
-            techLink: '/saas-app-development-service',
-          },
-          {
-            techName: 'MVP Development',
-            techLink: '/mvp-development-service',
-          },
-          {
-            techName: 'App Modernization',
-            techLink: '/app-modernization-development-service',
-          },
-          {
-            techName: 'Game Development',
-            techLink: '/game-development-service',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    menuTitle: 'Solution',
-    megaMenuItem: [
-      {
-        title: 'Industry Expertise',
-        backgroundColor: '#73BDF2',
-        img: industryExperties,
-        items: [
-          {
-            techName: 'Healthcare',
-            techLink: '/healthcare-solutions',
-          },
-          {
-            techName: 'Finance',
-            techLink: '/fintech-solutions',
-          },
-          {
-            techName: 'Real Estate',
-            techLink: '/real-estate-app-development',
-          },
-          {
-            techName: 'Retail',
-            techLink: '/ecommerce-solutions',
-          },
-          {
-            techName: 'Education',
-            techLink: '/educational-app-development-solutions',
-          },
-          {
-            techName: 'Logistics',
-            techLink: '/logistics-app-development',
-          },
-        ],
-      },
-      {
-        title: 'Custom Solutions',
-        backgroundColor: '#FDD8A3',
-        img: customSolution,
-        items: [
-          {
-            techName: 'DevOps Solutions',
-            techLink: '/devops-solutions',
-          },
-          {
-            techName: 'Cloud Solutions',
-            techLink: '/cloud-computing-solutions',
-          },
-          {
-            techName: 'Product Prototype Solutions',
-            techLink: '/product-prototype-solutions-service',
-          },
-          {
-            techName: 'On-demand Business Solutions',
-            techLink: '/on-demand-app-development',
-          },
-        ],
-      },
-      {
-        title: 'By Business Scales',
-        backgroundColor: '#FFCABC',
-        img: byBusunessScale,
-        items: [
-          {
-            techName: 'Startup Solutions',
-            techLink: '/startup-app-development-service',
-          },
-          {
-            techName: 'Enterprise Solutions',
-            techLink: '/enterprise-app-development-service',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    menuTitle: 'Technology',
-    megaMenuItem: [
-      {
-        title: 'Mobile',
-        backgroundColor: '#73BDF2',
-        img: mobile,
-        items: [
-          {
-            techName: 'ios',
-            techLink: '/ios-development-service',
-          },
-          {
-            techName: 'Android',
-            techLink: '/android-development-service',
-          },
-          {
-            techName: 'React Native',
-            techLink: '/react-native-development-service',
-          },
-          {
-            techName: 'Flutter',
-            techLink: '/flutter-development-service',
-          },
-          {
-            techName: 'Swift',
-            techLink: '/swift-development-service',
-          },
-          {
-            techName: 'Iconic',
-            techLink: '/iconic-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Frontend',
-        backgroundColor: '#FFCABC',
-        img: frontEnd,
-        items: [
-          {
-            techName: 'Next.js',
-            techLink: 'next-js-development-service',
-          },
-          {
-            techName: 'React',
-            techLink: 'react-js-development-service',
-          },
-          {
-            techName: 'Angular',
-            techLink: 'angular-js-development-service',
-          },
-          {
-            techName: 'Vue',
-            techLink: 'vue-js-development-service',
-          },
-          {
-            techName: 'Backbone.js',
-            techLink: 'backbone-js-development-service',
-          },
-          {
-            techName: 'JavaSctipt',
-            techLink: 'javascript-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Backend',
-        backgroundColor: '#FDD8A3',
-        img: backEnd,
-        items: [
-          {
-            techName: 'Python',
-            techLink: '/python-development-service',
-          },
-          {
-            techName: 'Golang',
-            techLink: '/golang-development-service',
-          },
-          {
-            techName: 'Node.js',
-            techLink: '/node-js-development-service',
-          },
-          {
-            techName: 'Laravel',
-            techLink: '/laravel-development-service',
-          },
-          {
-            techName: 'PHP',
-            techLink: '/php-development-service',
-          },
-          {
-            techName: 'Meteor.js',
-            techLink: '/meteor-js-development-service',
-          },
-        ],
-      },
-      {
-        title: 'Trending',
-        backgroundColor: '#A3D8FD',
-        img: trending,
-        items: [
-          {
-            techName: 'Tailwind CSS',
-            techLink: '/tailwind-css-development-service',
-          },
-          {
-            techName: 'Generative AI',
-            techLink: '/generative-ai-development-service',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    menuTitle: 'About',
-    megaMenuItem: [],
-  },
-  {
-    menuTitle: 'Work',
-    megaMenuItem: [],
-  },
-  {
-    menuTitle: 'Hire',
-    megaMenuItem: [
-      {
-        title: 'data & ai',
-        backgroundColor: '#73BDF2',
-        img: dataAi,
-        items: [
-          {
-            techName: 'AI Developers',
-            techLink: '/hire-ai-developers',
-          },
-          {
-            techName: 'ML Developers',
-            techLink: '/hire-machine-learning-developers',
-          },
-          {
-            techName: 'Data Scientists',
-            techLink: '/hire-data-scientists-developers',
-          },
-        ],
-      },
-      {
-        title: 'Mobile App',
-        backgroundColor: '#FFCABC',
-        img: mobile,
-        items: [
-          {
-            techName: 'ios Developers',
-            techLink: '/hire-ios-developers',
-          },
-          {
-            techName: 'Android Developers',
-            techLink: '/hire-android-developers',
-          },
-          {
-            techName: 'React Native Developers',
-            techLink: '/hire-react-native-developers',
-          },
-          {
-            techName: 'Flutter Developers',
-            techLink: '/hire-flutter-developers',
-          },
-          {
-            techName: 'Swift Developers',
-            techLink: '/hire-swift-developers',
-          },
-          {
-            techName: 'Iconic Developers',
-            techLink: '/hire-iconic-developers',
-          },
-        ],
-      },
-      {
-        title: 'Frontend',
-        backgroundColor: '#FDD8A3',
-        img: frontEnd,
-        items: [
-          {
-            techName: 'Next.js Developers',
-            techLink: '/hire-next-js-developers',
-          },
-          {
-            techName: 'React Developers',
-            techLink: '/hire-react-js-developers',
-          },
-          {
-            techName: 'Angular Developers',
-            techLink: '/hire-angular-js-developers',
-          },
-          {
-            techName: 'Vue Developers',
-            techLink: '/hire-vue-js-developers',
-          },
-          {
-            techName: 'Backbone.js Developers',
-            techLink: '/hire-backbone-js-developers',
-          },
-          {
-            techName: 'JavaSctipt Developers',
-            techLink: '/hire-javascript-developers',
-          },
-          {
-            techName: 'Tailwind CSS Developers',
-            techLink: '/hire-tailwind-css-developers',
-          },
-          {
-            techName: 'Webflow Developers',
-            techLink: '/hire-webflow-developers',
-          },
-        ],
-      },
-      {
-        title: 'Backend',
-        backgroundColor: '#A3D8FD',
-        img: backEnd,
-        items: [
-          {
-            techName: 'Python Developers',
-            techLink: '/hire-python-developers',
-          },
-          {
-            techName: 'FastAPI Developers',
-            techLink: '/hire-fastapi-developers',
-          },
-          {
-            techName: 'Django Developers',
-            techLink: '/hire-django-developers',
-          },
-          {
-            techName: 'Flask Developers',
-            techLink: '/hire-flask-developers',
-          },
-          {
-            techName: 'Golang Developers',
-            techLink: '/hire-golang-developers',
-          },
-          {
-            techName: 'Node.js Developers',
-            techLink: '/hire-node-js-developers',
-          },
-          {
-            techName: 'Laravel Developers',
-            techLink: '/hire-laravel-developers',
-          },
-          {
-            techName: 'PHP Developers',
-            techLink: '/hire-php-developers',
-          },
-        ],
-      },
-      {
-        title: 'Trending',
-        backgroundColor: '#9fe9f6',
-        img: trending,
-        items: [
-          {
-            techName: 'Unreal Engine Developers',
-            techLink: '/hire-unreal-app-developers',
-          },
-          {
-            techName: 'UI/UX Designers',
-            techLink: '/hire-internet-of-things-developers',
-          },
-          {
-            techName: 'Software Developers',
-            techLink: '/hire-software-developers',
-          },
-          {
-            techName: 'DevOps Engineers',
-            techLink: '/hire-devops-developers',
-          },
-          {
-            techName: 'MERN Stack Developers',
-            techLink: '/hire-mern-stack-developers',
-          },
-          {
-            techName: 'MEAN Stack Developers',
-            techLink: '/hire-mean-stack-developers',
-          },
-          {
-            techName: 'Game Developers',
-            techLink: '/hire-game-developers',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    menuTitle: 'Blog',
-    megaMenuItem: [],
-  },
-];
-
 export const siteMapData = [
   {
     title: 'Application Development',
@@ -3049,7 +2634,7 @@ export const siteMapData = [
         techLink: '/mobile-app-development-service',
       },
       {
-        techName: 'IOS App Development',
+        techName: 'iOS App Development',
         techLink: 'ios-development-service',
       },
       {
@@ -3063,26 +2648,6 @@ export const siteMapData = [
       {
         techName: 'React Native App Development',
         techLink: '/react-native-development-service',
-      },
-      {
-        techName: 'Swift App Development',
-        techLink: '/swift-development-service',
-      },
-      {
-        techName: 'Iconic App Development',
-        techLink: '/iconic-development-service',
-      },
-      {
-        techName: 'iBeacon App Development',
-        techLink: '',
-      },
-      {
-        techName: 'Wearable App Development',
-        techLink: '/wearable-app-development-service',
-      },
-      {
-        techName: 'IoT App Development',
-        techLink: '/internet-of-things-development-service',
       },
       {
         techName: 'Enterprise App Development',
@@ -3150,7 +2715,7 @@ export const siteMapData = [
         techLink: '',
       },
       {
-        techName: 'entertaintment app development',
+        techName: 'enterprise app development',
         techLink: '/enterprise-app-development-service',
       },
       {
@@ -3167,24 +2732,20 @@ export const siteMapData = [
         techLink: '/javascript-development-service',
       },
       {
-        techName: 'reactJs development',
+        techName: 'next.js development',
+        techLink: '/next-js-development-service',
+      },
+      {
+        techName: 'react.js development',
         techLink: '/react-js-development-service',
       },
       {
-        techName: 'vueJs development',
+        techName: 'vue.js development',
         techLink: '/vue-js-development-service',
       },
       {
         techName: 'angular development',
         techLink: '/angular-js-development-service',
-      },
-      {
-        techName: 'meterorJs development',
-        techLink: '/meteor-js-development-service',
-      },
-      {
-        techName: 'backboneJs development',
-        techLink: '/backbone-js-development-service',
       },
       {
         techName: 'node.Js development',
@@ -3211,7 +2772,7 @@ export const siteMapData = [
         techLink: '',
       },
       {
-        techName: 'progessive web app development ',
+        techName: 'PWA development ',
         techLink: '',
       },
       {
@@ -3252,19 +2813,15 @@ export const siteMapData = [
         techLink: '/hire-react-native-developers',
       },
       {
-        techName: 'hire iconic app developers',
-        techLink: '/hire-iconic-developers',
-      },
-      {
         techName: 'hire angular developers',
         techLink: '/hire-angular-js-developers',
       },
       {
-        techName: 'hire reactJs developers',
+        techName: 'hire react.js developers',
         techLink: '/hire-react-js-developers',
       },
       {
-        techName: 'hire vueJs developers',
+        techName: 'hire vue.js developers',
         techLink: '/hire-vue-js-developers',
       },
       {
@@ -4119,7 +3676,7 @@ export const projectWeDone = [
 export const homePageData = {
   baddge: 'Accelerate Your Growth with AI',
   heroTitle: `AI-Powered Tech for Smarter Business Results`,
-  heroDescription: `Optimitylogics creates AI-powered software solutions that boost productivity, encourage creativity, and facilitate long-term company expansion.`,
+  heroDescription: `Optimity Logics creates AI-powered software solutions that boost productivity, encourage creativity, and facilitate long-term company expansion.`,
   heroContactUsBtn: 'Contact Us',
   heroContactUsBtnLink: '/',
   trustedClient:
@@ -4325,6 +3882,48 @@ export const homePageData = {
         'Intelligent chatbots, financial robo-advisors, IT lifecycle automation, and other next-gen solutions are designed by our generative AI experts to empower your business with cutting-edge AI innovations.',
     },
   ],
+  technologyWeWorkTitle: 'Technologies we work with',
+  technologyWeWork: [
+    {
+      techName: 'Mobile',
+      techImg: mobiles,
+    },
+    {
+      techName: 'Frontend',
+      techImg: frontend,
+    },
+    {
+      techName: 'Backend',
+      techImg: backend,
+    },
+    {
+      techName: 'CMS',
+      techImg: cms,
+    },
+    {
+      techName: 'Database',
+      techImg: database,
+    },
+    {
+      techName: 'DevOps',
+      techImg: devops,
+    },
+  ],
+  deployedProjectsTitle: 'Successfully deployed projects',
+  deployedProjectsList: [
+    {
+      projectName: 'Wikifarmer',
+      img: wikifarmerV2,
+    },
+    {
+      projectName: 'HTS',
+      img: htsV2,
+    },
+    {
+      projectName: 'Builders Spec',
+      img: builderV2,
+    },
+  ],
   ourIndustriesTitle: 'Our Industries',
   ourIndustries: [
     {
@@ -4430,113 +4029,6 @@ export const homePageData = {
       link: '',
     },
   ],
-  technologyWeWorkTitle: 'Technologies we work with',
-  technologyWeWork: [
-    {
-      techName: 'Mobile',
-      techImg: mobiles,
-    },
-    {
-      techName: 'Frontend',
-      techImg: frontend,
-    },
-    {
-      techName: 'Backend',
-      techImg: backend,
-    },
-    {
-      techName: 'CMS',
-      techImg: cms,
-    },
-    {
-      techName: 'Database',
-      techImg: database,
-    },
-    {
-      techName: 'DevOps',
-      techImg: devops,
-    },
-  ],
-  deployedProjectsTitle: 'Successfully deployed projects',
-  deployedProjectsList: [
-    {
-      projectName: 'Wikifarmer',
-      img: wikifarmerV2,
-    },
-    {
-      projectName: 'HTS',
-      img: htsV2,
-    },
-    {
-      projectName: 'Builders Spec',
-      img: builderV2,
-    },
-  ],
-  clientTestimonial: [
-    {
-      id: 1,
-      message:
-        'The Optimity Logics team excelled in delivering the project within a tight timeframe, maintaining exemplary coding standards, and achieving remarkable results. Their proficiency in React, Node.js, MongoDB, Express, and AWS was evident. I highly recommend their top-notch development services and look forward to future collaborations.',
-      role: '- Product Owner (UK)',
-      avatar: '/client/JJ.webp',
-    },
-    {
-      id: 2,
-      message:
-        ' Optimity Logics excelled with our website project, delivering exceptional results promptly. Their efficiency and dedication to excellence impressed us. Dealing with Optimity Logics is always a pleasure; their team exemplifies professionalism and expertise. We eagerly anticipate future collaborations with such a standout company.',
-      role: '- Founder and CEO (USA)',
-      avatar: '/client/MS.webp',
-    },
-    {
-      id: 3,
-      message:
-        'Optimity Logics executed a flawless server migration, showcasing AWS expertise. Their swift work, coupled with invaluable support, was remarkable. We extend heartfelt gratitude for their outstanding service.',
-      role: '- General Manager (USA)',
-      avatar: '/client/KP.webp',
-    },
-    {
-      id: 4,
-      message:
-        'We are grateful that Optimity Logics joined our project as a Next.js / React / Tailwind developer. Optimity Logics is a top-tier team that delivers features and fixes at a very fast pace with high quality. The quality and reliability of their work significantly reduce testing and project management effort. They communicate effectively: they are responsive, proactive, and kept us informed throughout the entire project. We believe Optimity Logics is a highly valuable asset to any project and our top choice when seeking to expand our front-end engineering team.',
-      role: '- CTO (Greece)',
-      avatar: '/client/PK.webp',
-    },
-    {
-      id: 5,
-      message:
-        'Optimity Logics was an absolute pleasure to work with! They did a wonderful job building our website on Contentful and went above and beyond by providing best practices and guidance for our team to use moving forward. They operated as dedicated and thoughtful members of our organization throughout the project. The end result delighted everyone on our team, including exec leadership. I would recommend them to anyone looking for web or IT work. I hope to work with them again in the future!',
-      role: '- PR Manager (USA)',
-      avatar: '/client/EB.webp',
-    },
-    {
-      id: 6,
-      message:
-        "I am thrilled to share my experience working with Optimity Logics. They did an outstanding job migrating our production server flawlessly, ensuring our product's stability. Additionally, they identified and resolved an existing issue with the AutoDesk Viewer, including 360 View, Floor Plan, 3D Model, and Gallery View integration. I am extremely impressed with their responsiveness, expertise, and dedication to this task. Optimity Logics' work exceeded my expectations, and I will definitely keep them in mind for future projects. Highly recommended!",
-      role: '- CEO (UK)',
-      avatar: '/client/MB.webp',
-    },
-    {
-      id: 7,
-      message:
-        "I recently had the pleasure of collaborating with Optimity Logics on a development project, and their performance exceeded all expectations. The team demonstrated exceptional expertise, professionalism, and dedication throughout the project, showcasing a profound understanding of the task at hand. Their technical proficiency was evident in every aspect, from meticulous planning to flawless execution, combined with a proactive approach to problem-solving and a commitment to delivering high-quality results. Communication was seamless, with regular updates and prompt resolutions to any concerns, ensuring smooth progress from start to finish. Optimity Logics went above and beyond to meet our needs, and their contributions were invaluable to the project's success. I am immensely grateful for their work and would not hesitate to recommend them to anyone seeking skilled and reliable development partners.",
-      role: '- CEO (Nigeria)',
-      avatar: '/client/KO.webp',
-    },
-    {
-      id: 8,
-      message:
-        'The Optimity Logics team showcased outstanding expertise in Fullstack development. Their collaborative efforts resulted in timely delivery and exceptional communication throughout the project. I would confidently engage their team again and wholeheartedly recommend them to others.',
-      role: '- Founder and Senior Manager (USA)',
-      avatar: '/client/NP.webp',
-    },
-    {
-      id: 9,
-      message:
-        'Optimity Logics did an amazing job bringing complex user stories and requirements to life through their invaluable knowledge and expertise. We appreciate all the feedback, guidance, and encouragement they provided to our junior developers. They are easy to communicate with and ask the right questions. They were consistent with daily scrum meetings and displayed great leadership skills.',
-      role: '- Sr. Ventures Manager (USA)',
-      avatar: '/client/MP.webp',
-    },
-  ],
   contactUsCardTitle: 'Let’s Build Something Great Together',
   contactUsCardBtn: 'Contact Us',
   contactUsCardBtnLink: '',
@@ -4544,65 +4036,65 @@ export const homePageData = {
     {
       id: 1,
       message:
-        'The Optimity Logics team excelled in delivering the project within a tight timeframe, maintaining exemplary coding standards, and achieving remarkable results. Their proficiency in React, Node.js, MongoDB, Express, and AWS was evident. I highly recommend their top-notch development services and look forward to future collaborations.',
-      role: '- Product Owner (UK)',
-      avatar: '/client/JJ.webp',
-    },
-    {
-      id: 2,
-      message:
-        ' Optimity Logics excelled with our website project, delivering exceptional results promptly. Their efficiency and dedication to excellence impressed us. Dealing with Optimity Logics is always a pleasure; their team exemplifies professionalism and expertise. We eagerly anticipate future collaborations with such a standout company.',
-      role: '- Founder and CEO (USA)',
-      avatar: '/client/MS.webp',
-    },
-    {
-      id: 3,
-      message:
-        'Optimity Logics executed a flawless server migration, showcasing AWS expertise. Their swift work, coupled with invaluable support, was remarkable. We extend heartfelt gratitude for their outstanding service.',
-      role: '- General Manager (USA)',
-      avatar: '/client/KP.webp',
-    },
-    {
-      id: 4,
-      message:
         'We are grateful that Optimity Logics joined our project as a Next.js / React / Tailwind developer. Optimity Logics is a top-tier team that delivers features and fixes at a very fast pace with high quality. The quality and reliability of their work significantly reduce testing and project management effort. They communicate effectively: they are responsive, proactive, and kept us informed throughout the entire project. We believe Optimity Logics is a highly valuable asset to any project and our top choice when seeking to expand our front-end engineering team.',
       role: '- CTO (Greece)',
       avatar: '/client/PK.webp',
     },
     {
-      id: 5,
+      id: 2,
       message:
         'Optimity Logics was an absolute pleasure to work with! They did a wonderful job building our website on Contentful and went above and beyond by providing best practices and guidance for our team to use moving forward. They operated as dedicated and thoughtful members of our organization throughout the project. The end result delighted everyone on our team, including exec leadership. I would recommend them to anyone looking for web or IT work. I hope to work with them again in the future!',
       role: '- PR Manager (USA)',
       avatar: '/client/EB.webp',
     },
     {
-      id: 6,
+      id: 3,
       message:
         "I am thrilled to share my experience working with Optimity Logics. They did an outstanding job migrating our production server flawlessly, ensuring our product's stability. Additionally, they identified and resolved an existing issue with the AutoDesk Viewer, including 360 View, Floor Plan, 3D Model, and Gallery View integration. I am extremely impressed with their responsiveness, expertise, and dedication to this task. Optimity Logics' work exceeded my expectations, and I will definitely keep them in mind for future projects. Highly recommended!",
       role: '- CEO (UK)',
       avatar: '/client/MB.webp',
     },
     {
-      id: 7,
+      id: 4,
       message:
         "I recently had the pleasure of collaborating with Optimity Logics on a development project, and their performance exceeded all expectations. The team demonstrated exceptional expertise, professionalism, and dedication throughout the project, showcasing a profound understanding of the task at hand. Their technical proficiency was evident in every aspect, from meticulous planning to flawless execution, combined with a proactive approach to problem-solving and a commitment to delivering high-quality results. Communication was seamless, with regular updates and prompt resolutions to any concerns, ensuring smooth progress from start to finish. Optimity Logics went above and beyond to meet our needs, and their contributions were invaluable to the project's success. I am immensely grateful for their work and would not hesitate to recommend them to anyone seeking skilled and reliable development partners.",
       role: '- CEO (Nigeria)',
       avatar: '/client/KO.webp',
     },
     {
-      id: 8,
+      id: 5,
       message:
         'The Optimity Logics team showcased outstanding expertise in Fullstack development. Their collaborative efforts resulted in timely delivery and exceptional communication throughout the project. I would confidently engage their team again and wholeheartedly recommend them to others.',
       role: '- Founder and Senior Manager (USA)',
       avatar: '/client/NP.webp',
     },
     {
-      id: 9,
+      id: 6,
       message:
         'Optimity Logics did an amazing job bringing complex user stories and requirements to life through their invaluable knowledge and expertise. We appreciate all the feedback, guidance, and encouragement they provided to our junior developers. They are easy to communicate with and ask the right questions. They were consistent with daily scrum meetings and displayed great leadership skills.',
       role: '- Sr. Ventures Manager (USA)',
       avatar: '/client/MP.webp',
+    },
+    {
+      id: 7,
+      message:
+        'The Optimity Logics team excelled in delivering the project within a tight timeframe, maintaining exemplary coding standards, and achieving remarkable results. Their proficiency in React, Node.js, MongoDB, Express, and AWS was evident. I highly recommend their top-notch development services and look forward to future collaborations.',
+      role: '- Product Owner (UK)',
+      avatar: '/client/JJ.webp',
+    },
+    {
+      id: 8,
+      message:
+        ' Optimity Logics excelled with our website project, delivering exceptional results promptly. Their efficiency and dedication to excellence impressed us. Dealing with Optimity Logics is always a pleasure; their team exemplifies professionalism and expertise. We eagerly anticipate future collaborations with such a standout company.',
+      role: '- Founder and CEO (USA)',
+      avatar: '/client/MS.webp',
+    },
+    {
+      id: 9,
+      message:
+        'Optimity Logics executed a flawless server migration, showcasing AWS expertise. Their swift work, coupled with invaluable support, was remarkable. We extend heartfelt gratitude for their outstanding service.',
+      role: '- General Manager (USA)',
+      avatar: '/client/KP.webp',
     },
   ],
   faqTitle: 'FAQs',
@@ -4686,17 +4178,17 @@ export const aboutUsPage = {
     {
       title: 'Our Mission',
       description: ` To transform ideas into high impact digital products. We strive to combine design, development, and technology in such a way that businesses can harness digital transformation seamlessly—improving efficiency, user engagement, and long-term growth.`,
-      bgImg: '/images/about-us/our-mission.png',
+      bgImg: '/webp/about-us/our-mission.webp',
     },
     {
       title: 'Our Vision',
       description: `To be a globally respected partner for companies looking to breakthrough in the digital age - delivering software and experiences that are reliable, beautifully crafted, and aligned with the evolving needs of our users and clients.`,
-      bgImg: '/images/about-us/our-vision.png',
+      bgImg: '/webp/about-us/our-vision.webp',
     },
   ],
   ourCoreValue: {
     title: 'our core values',
-    img: '/images/about-us/core-value.png',
+    img: '/webp/about-us/core-value.webp',
     values: [
       {
         title: 'User-Centricity',
@@ -4730,30 +4222,30 @@ export const aboutUsPage = {
   viewAllBtnLink: '/',
   whatWeDo: [
     {
-      img: '/images/about-us/app-dev.png',
+      img: '/webp/about-us/app-dev.webp',
       title: 'Web & Mobile Application Development',
       description:
         'Custom apps, full stack, progressive web apps, hybrid & native.',
     },
     {
-      img: '/images/about-us/ui-ux.png',
+      img: '/webp/about-us/ui-ux.webp',
       title: 'UI / UX Design',
       description: 'Intuitive designs that delight and retain users',
     },
     {
-      img: '/images/about-us/marketing.png',
+      img: '/webp/about-us/marketing.webp',
       title: 'Digital Marketing & Branding',
       description:
         'Helping brands take off through SEO, social media, paid campaigns, and visual identity.',
     },
     {
-      img: '/images/about-us/dev-ops.png',
+      img: '/webp/about-us/dev-ops.webp',
       title: 'DevOps, Cloud & Infrastructure',
       description:
         'Fast, secure, manageable deployments; automation; performance & scalability.',
     },
     {
-      img: '/images/about-us/qa-test.png',
+      img: '/webp/about-us/qa-test.webp',
       title: 'Quality Assurance & Testing',
       description:
         'Ensuring everything works as intended through rigorous manual + automated testing.',
@@ -4762,49 +4254,49 @@ export const aboutUsPage = {
   expertiseTitle: 'Technology & Industry Expertise',
   expertise: [
     {
-      img: '/images/about-us/web-apps.png',
+      img: '/webp/about-us/web-apps.webp',
       title: 'Web Apps',
       description:
         'cancellation make it easy to rethink your booking if your plans change.',
     },
     {
-      img: '/images/about-us/mobile-apps.png',
+      img: '/webp/about-us/mobile-apps.webp',
       title: 'Mobile apps',
       description:
         'From concept to completion, Optimity Logics seamlessly manages the entire mobile app',
     },
     {
-      img: '/images/about-us/digital-marketing.png',
+      img: '/webp/about-us/digital-marketing.webp',
       title: 'Digital Marketing',
       description:
         'We create websites that are favored by search engines. With our search engine optimization',
     },
     {
-      img: '/images/about-us/digital-marketing.png',
+      img: '/webp/about-us/digital-marketing.webp',
       title: 'UI/UX',
       description:
         'Our UI and UX designers embody creative imagination, successfully deploying innovative web design',
     },
     {
-      img: '/images/about-us/web-apps.png',
+      img: '/webp/about-us/web-apps.webp',
       title: 'Web Apps',
       description:
         'cancellation make it easy to rethink your booking if your plans change.',
     },
     {
-      img: '/images/about-us/mobile-apps.png',
+      img: '/webp/about-us/mobile-apps.webp',
       title: 'Mobile apps',
       description:
         'From concept to completion, Optimity Logics seamlessly manages the entire mobile app',
     },
     {
-      img: '/images/about-us/digital-marketing.png',
+      img: '/webp/about-us/digital-marketing.webp',
       title: 'Digital Marketing',
       description:
         'We create websites that are favored by search engines. With our search engine optimization',
     },
     {
-      img: '/images/about-us/digital-marketing.png',
+      img: '/webp/about-us/digital-marketing.webp',
       title: 'UI/UX',
       description:
         'Our UI and UX designers embody creative imagination, successfully deploying innovative web design',
@@ -4813,7 +4305,7 @@ export const aboutUsPage = {
   ourProcess: 'Our process',
   ourProcessDescription:
     'To ensure consistency, transparency, and client satisfaction, here’s how we deliver',
-  ourProcessImg: '/images/about-us/our-process-img.png',
+  ourProcessImg: '/webp/about-us/our-process-img.webp',
   ourProcessList: [
     {
       title: 'Discovery & Requirements Gathering',
@@ -4871,19 +4363,19 @@ export const aboutUsPage = {
   shortDescription: `We’re a diverse team of developers, designers, testers, and strategists who believe work should be challenging, rewarding, and fun. Continuous learning, peer feedback, and open culture are part of our DNA.`,
   ourTeamList: [
     {
-      img: '/images/about-us/team1.jpg',
+      img: '/webp/about-us/team1.webp',
       name: 'Johnee Honie',
       position: 'CEO, techwix',
       aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
     },
     {
-      img: '/images/about-us/team2.jpg',
+      img: '/webp/about-us/team2.webp',
       name: 'Johnee Honie',
       position: 'CEO, techwix',
       aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
     },
     {
-      img: '/images/about-us/team1.jpg',
+      img: '/webp/about-us/team1.webp',
       name: 'Johnee Honie',
       position: 'CEO, techwix',
       aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
@@ -4988,6 +4480,7 @@ export const flutterCrossApp = [
 export const ourWorkPage = {
   headingTitle: 'Our Works',
   headingDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  heroRightImage: '/webp/our-work/our-work-hero.webp',
   ourWorks: [
     {
       categories: 'All',

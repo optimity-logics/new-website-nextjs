@@ -2,7 +2,7 @@
 import Container from '@/components/ui/Container';
 import React, { useEffect, useState } from 'react';
 import { aboutUsPage, homePageData } from '@/components/utils/Constant';
-import heroBgRight from '../../../public/svg/about-us/about-shape.svg';
+import heroBgRight from '../../../public/webp/about-us/about-shape.webp';
 import AnimatedArrow from '@/components/common/AnimatedArrow';
 import Link from 'next/link';
 import { motion } from 'framer-motion';

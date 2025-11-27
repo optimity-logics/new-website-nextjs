@@ -1,7 +1,8 @@
 import './globals.css';
 import Layout from '@/components/layout/Layout';
-import SmoothScroll from '@/components/ui/SmoothScroll';
 import locaFont from 'next/font/local';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const opt = locaFont({
   src: [
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${opt.variable} ${dmSans.variable}`}>
       <body>
-        <SmoothScroll />
+        <ToastContainer position="top-right" autoClose={3000} theme="light" />
         <Layout>{children}</Layout>
       </body>
     </html>

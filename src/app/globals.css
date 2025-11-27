@@ -492,3 +492,6 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
   opacity: 1;
   z-index: 10;
 }
+#rc-anchor-container {
+  background: transparent !important;
+}

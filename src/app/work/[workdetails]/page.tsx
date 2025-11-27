@@ -59,7 +59,7 @@ const page = () => {
             loading="lazy"
             width={1200}
             height={200}
-            className="object- h-full w-full rounded-t-xl object-contain lg:rounded-t-[0px]"
+            className="h-full w-full rounded-t-xl object-contain"
           />
           <p className="p-5 font-opt text-xl font-medium leading-7 text-optDesc md:p-10 md:text-[44px] md:leading-[46px]">
             Next-level travel tools to grow your business
@@ -134,16 +134,16 @@ const page = () => {
           </Swiper>
         </div>
       </div>
-      <Container className="mb-[60px] 4xl:mb-[100px]">
-        <div className="relative z-[-1] grid grid-stack after:absolute after:inset-0 after:z-[1] after:rounded-xl after:bg-[#00000033] lg:max-h-[600px] lg:after:rounded-[20px]">
+      <Container className="mb-[60px] h-screen 4xl:mb-[100px]">
+        <div className="relative z-[-1] grid grid-stack after:absolute after:inset-0 after:z-[1] after:rounded-xl after:bg-[#00000033] lg:after:rounded-[20px]">
           <Image
             src="/images/our-work/users.jpg"
             alt="user"
             width={600}
             height={500}
-            className="w-full rounded-xl md:rounded-[20px] lg:max-h-[600px]"
+            className="w-full rounded-xl md:rounded-[20px]"
           />
-          <div className="relative z-10 m-2 flex w-full max-w-[300px] flex-col justify-between gap-10 rounded-xl bg-[#00000073] p-3 sm:m-3 md:m-8 lg:max-w-[350px]">
+          <div className="relative z-10 m-2 flex h-max w-full max-w-[350px] flex-col justify-between gap-10 rounded-xl bg-[#00000073] p-3 sm:m-3 md:m-8">
             <span className="text-white">Logo</span>
             <p className="flex-col font-opt text-xl font-medium leading-6 text-white">
               Powerful travel platforms engineered for your business success

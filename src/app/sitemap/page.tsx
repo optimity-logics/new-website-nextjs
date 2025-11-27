@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import AnimatedArrow from '@/components/common/AnimatedArrow';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import SectionHeader from '@/components/ui/SectionHeader';
+import { formatTechName } from '@/components/utils/helper/formatTechName';
 
 const Sitemap = () => {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
@@ -43,9 +44,9 @@ const Sitemap = () => {
                       >
                         <Link
                           href={tech?.techLink}
-                          className="group flex items-center gap-1.5 text-nowrap rounded-[30px] border border-dashed border-[#192020] px-[18px] py-2.5 text-base font-normal capitalize transition-all duration-400 ease-in-out hover:border-[#1A6AA3] hover:bg-[#1A6AA3] hover:text-white"
+                          className="group flex items-center gap-1.5 text-nowrap rounded-[30px] border border-dashed border-[#192020] px-[18px] py-2.5 text-base font-normal transition-all duration-400 ease-in-out hover:border-[#1A6AA3] hover:bg-[#1A6AA3] hover:text-white"
                         >
-                          {tech?.techName}
+                          {formatTechName(tech?.techName)}
                           <span className="mt-0.5">
                             <AnimatedArrow
                               hover={hoveredTech === tech?.techName}
