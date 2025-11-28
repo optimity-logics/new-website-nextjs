@@ -10,7 +10,6 @@ import MegaMenu from './MegaMenu';
 import Button from '@/components/ui/Button';
 
 const NavBar = () => {
-  // const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const [small, setSmall] = useState(false);
@@ -98,11 +97,18 @@ const NavBar = () => {
                 </div>
                 <MegaMenu />
               </div>
-              <Button
-                btnName="Contact us"
-                redirectionLink={'/contact-us'}
-                isBackgroung={true}
-              />
+              <div className="flex items-center gap-4">
+                <Button
+                  btnName="Book A Call"
+                  redirectionLink={'/schedule-a-call'}
+                />
+                <Button
+                  btnName="Contact us"
+                  redirectionLink={'/contact-us'}
+                  isBackgroung={true}
+                  className="hidden lg:flex"
+                />
+              </div>
             </div>
           </div>
         </div>

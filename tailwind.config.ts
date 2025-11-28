@@ -82,6 +82,8 @@ export default {
           ' linear-gradient(176.48deg, #41D1FF 11.59%, #034C63 38.07%);',
         frame: "url('/images/our-work/frame.png')",
         userframe: "url('/images/our-work/users.jpg')",
+        scheduleCall:
+          'linear-gradient(289.62deg, #02ADE1 6.97%, #1A6AA3 94.65%)',
       },
       fontFamily: {
         opt: ['var(--font-opt)'],
