@@ -10,6 +10,7 @@ import Link from 'next/link';
 import AnimatedArrow from '../common/AnimatedArrow';
 import ProjectCard from '../common/ProjectCard';
 import Faqs from '../homePage/Faqs';
+import { motion } from 'framer-motion';
 
 const Solution = () => {
   const healthcareData = {
@@ -89,15 +90,26 @@ const Solution = () => {
               btnName="Let’s Connect"
               link=""
             />
+
             <div className="relative aspect-[5/4] h-auto w-full max-w-[450px] 3xl:aspect-[5/6]">
-              <Image
-                src="/images/solution/healthCare.png"
-                alt="solution"
-                fill
-                priority
-                fetchPriority="high"
-                className="object-contain"
-              />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.8,
+                  ease: 'easeIn',
+                }}
+                className="relative h-full w-full"
+              >
+                <Image
+                  src="/images/solution/healthCare.png"
+                  alt="solution"
+                  fill
+                  priority
+                  fetchPriority="high"
+                  className="object-contain"
+                />
+              </motion.div>
             </div>
             <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[6%]">
               Healthcare
@@ -113,6 +125,7 @@ const Solution = () => {
             link="/contact-us"
             headingStyle="text-white"
             className="max-w-[800px]"
+            isBtnBackgroundLight={true}
           />
         </Container>
       </div>

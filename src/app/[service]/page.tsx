@@ -1,4 +1,4 @@
-import AllPageContent from '@/components/ui/AllPageContent';
+import AllPageContent from '@/components/division/AllPageContent';
 import { GolangData } from '@/components/utils/technology/back-end/golang';
 import { LaravelData } from '@/components/utils/technology/back-end/laravel';
 import { MeteorData } from '@/components/utils/technology/back-end/meteor';
