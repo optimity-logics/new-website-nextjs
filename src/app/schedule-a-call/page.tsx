@@ -13,7 +13,7 @@ const Page = () => {
     { text: 'Transparent Payment Policies' },
   ];
   return (
-    <div className="h-full">
+    <div className="h-screen md:h-full">
       <div className="h-full grid-cols-7 md:grid">
         {/* Logo Top (Visible on all devices) */}
         <div className="sticky top-0 block bg-scheduleCall p-6 md:hidden">
