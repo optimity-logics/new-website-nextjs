@@ -12,7 +12,7 @@ import mobileRobot from '../../../public/webp/homePagev2/mobile-robot.webp';
 import LogoAnimation from './LogoAnimation';
 import phone from '../../../public/svg/footer/phone.svg';
 import email from '../../../public/svg/footer/mail.svg';
-import { homePageData, logoIcons, projectWeDone } from '../utils/Constant';
+import { homePageData, logoIcons } from '../utils/Constant';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -583,7 +583,7 @@ const HomePageV2 = () => {
               loop={false}
             >
               {homePageData?.deployedProjectsList &&
-                projectWeDone.map((item, index) => (
+                homePageData?.deployedProjectsList.map((item, index) => (
                   <SwiperSlide key={index}>
                     <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-[#f0f3f5]/70 p-4 lg:flex-row xl:p-6">
                       <h6 className="w-max font-opt text-xl font-medium leading-6 text-primary 3xl:text-3xl 4xl:leading-10">
