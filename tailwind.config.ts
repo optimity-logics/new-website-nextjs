@@ -76,7 +76,7 @@ export default {
         contactUsBg: "url('/webp/our-work/contact-us-frame.webp')",
         benefits: "url('/images/benefits.png')",
         bgHealthCare: "url('/images/services/healthcare.jpg')",
-        bgContact: "url('/images/services/a-contact.webp')",
+        bgContact: "url('/webp/services/contact-us.webp')",
         contactMobileBg: "url('/images/services/mobile-contactus.webp')",
         detailHeroGradient:
           ' linear-gradient(176.48deg, #41D1FF 11.59%, #034C63 38.07%);',

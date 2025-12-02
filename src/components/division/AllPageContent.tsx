@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import Container from './Container';
+import Container from '../ui/Container';
 import checkMark from '../../../public/svg/check-mark.svg';
 import Link from 'next/link';
 import { homePageData, logoIcons } from '../utils/Constant';
@@ -10,12 +10,12 @@ import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import LogoAnimation from '../homePage/LogoAnimation';
 import { IPropsDataTypes } from '../type/type';
-import HeroSectionHeading from './HeroSectionHeading';
-import SectionHeader from './SectionHeader';
+import HeroSectionHeading from '../ui/HeroSectionHeading';
+import SectionHeader from '../ui/SectionHeader';
 import OurWorkCard from '../common/OurWorkCard';
 import ProjectCard from '../common/ProjectCard';
-import Button from './Button';
-import Contact from './Contact';
+import Button from '../ui/Button';
+import Contact from '../ui/Contact';
 import { motion } from 'framer-motion';
 
 interface IPropsType {
@@ -221,30 +221,47 @@ const AllPageContent = ({ data }: IPropsType) => {
               {data?.WhyOptimityForDevelopment?.developmentServicesStep &&
                 data?.WhyOptimityForDevelopment?.developmentServicesStep.map(
                   (tab, i) => (
-                    <button
+                    <motion.button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
                       onMouseEnter={() => handleMouseEnterServicesTab(i)}
                       onMouseLeave={() => handleMouseLeaveServicesTab(i)}
                       onMouseUp={() => handleMouseEnterServicesTab(i)}
                       onMouseDown={() => handleMouseLeaveServicesTab(i)}
-                      className={`flex items-center justify-between rounded-full px-6 py-4 font-opt text-lg font-normal transition-all duration-300 ${
+                      // ⭐ Framer Motion Animations
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.25, delay: i * 0.06 }}
+                      className={`group relative flex items-center justify-between overflow-hidden rounded-full px-6 py-4 font-opt text-lg font-normal transition-all duration-300 ${
                         activeTab === tab.id
-                          ? 'bg-white text-primary shadow-lg'
+                          ? 'bg-white/80 text-primary shadow-lg backdrop-blur-sm'
                           : 'bg-[#f0f3f5]/10 text-white backdrop-blur-sm'
-                      }`}
+                      } `}
                     >
+                      {/* ✨ Glass Glow Overlay */}
+                      <span className="pointer-events-none absolute inset-0 bg-white/10 opacity-0 transition-all duration-500 group-hover:opacity-20" />
+
+                      {/* ✨ Sweep Shine Animation */}
+                      <span className="absolute left-[-100%] top-0 h-full w-[60%] rounded-full bg-gradient-to-r from-white/20 to-transparent opacity-0 transition-all duration-1000 ease-in group-hover:left-[100%] group-hover:opacity-100" />
+
                       {tab.title}
-                      <AnimatedArrow
-                        hover={hoverServicesTab[i] ? true : false}
-                      />
-                    </button>
+                      <AnimatedArrow hover={hoverServicesTab[i]} />
+                    </motion.button>
                   ),
                 )}
             </div>
+
             <div className="w-full max-w-[1000px] rounded-2xl bg-[#FFFFFF24] p-6 backdrop-blur-md">
               {activeContent && (
-                <div className="flex flex-col gap-5">
+                <motion.div
+                  key={activeTab}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                  className="flex flex-col gap-5"
+                >
                   <div className="flex flex-col gap-4">
                     <h2 className="font-opt text-xl font-normal leading-6 text-white">
                       {activeContent.heading}
@@ -269,7 +286,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
               )}
             </div>
           </div>
