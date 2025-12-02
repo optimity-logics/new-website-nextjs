@@ -8,7 +8,7 @@ import arrow from '../../../public/images/homePagev2/arrow-black.png';
 import ellips1 from '../../../public/images/homePagev2/ellips1.png';
 import ellipse2 from '../../../public/images/homePagev2/ellipse2.png';
 import blackTick from '../../../public/images/homePagev2/blackTick.svg';
-import mobileRobot from '../../../public/images/homePagev2/mobile-robot.png';
+import mobileRobot from '../../../public/webp/homePagev2/mobile-robot.webp';
 import LogoAnimation from './LogoAnimation';
 import phone from '../../../public/svg/footer/phone.svg';
 import email from '../../../public/svg/footer/mail.svg';
@@ -31,7 +31,7 @@ import SectionHeader from '../ui/SectionHeader';
 import OurWorkCard from '../common/OurWorkCard';
 import Button from '../ui/Button';
 import ClientTestimonial from '../ui/ClientTestimonial';
-import HomeContactForm from '../contact/HomeContactForm';
+import ProjectInquiry from '../contact/ProjectInquiry';
 
 const HighlitedDescription = styled.h2``;
 const HomePageV2 = () => {
@@ -507,15 +507,25 @@ const HomePageV2 = () => {
               />
             </div>
           </div>
-          <div className="hidden lg:block">
-            <Image
-              src={currentTab?.image}
-              alt="industries"
-              width={400}
-              height={400}
-              loading="lazy"
-            />
-          </div>
+          <motion.div
+            key={currentTab?.id}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              ease: 'easeIn',
+            }}
+          >
+            <div className="hidden lg:block">
+              <Image
+                src={currentTab?.image}
+                alt="industries"
+                width={400}
+                height={400}
+                loading="lazy"
+              />
+            </div>
+          </motion.div>
         </div>
       </Container>
       <div className="mb-[60px] 4xl:mb-[100px]">
@@ -595,125 +605,6 @@ const HomePageV2 = () => {
           </div>
         </div>
       </div>
-      {/* <div
-        style={{ backgroundSize: '100% 100%', backgroundColor: '#000' }}
-        className="bg-tech-we-work bg-cover bg-no-repeat"
-      >
-        <div className="relative mx-auto max-w-[1680px] py-[60px] 4xl:py-[100px]">
-          <div
-            style={{
-              backgroundImage: "url('/images/homePagev2/Line1.png')",
-            }}
-            className="absolute inset-y-0 left-[15px] w-[1px] bg-cover sm:left-[22px] md:left-[31px] xl:left-[39px] 3xl:left-[119px]"
-          ></div>
-          <div
-            style={{
-              backgroundImage: "url('/images/homePagev2/Line1.png')",
-            }}
-            className="-0 absolute inset-y-0 right-[15px] w-[1px] bg-cover sm:right-[22px] md:right-[31px] xl:right-[39px] 3xl:right-[119px]"
-          ></div>
-          <div className="relative px-4 sm:px-6 md:px-8 xl:px-10 3xl:px-[120px]">
-            <div className="absolute inset-x-0 -top-[3px] h-[1px] border-1 border-dashed border-gray opacity-30"></div>
-            <div className="absolute inset-x-0 bottom-[-3px] !h-[1px] border-1 border-dashed border-gray opacity-30"></div>
-
-            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
-              <motion.div
-                onMouseMove={(e) => {
-                  const rect = e.currentTarget.getBoundingClientRect();
-                  const x = e.clientX - rect.left - rect.width / 2;
-                  const y = e.clientY - rect.top - rect.height / 2;
-
-                  e.currentTarget.style.transform = `
-              perspective(1000px) 
-              rotateX(${-y / 60}deg) 
-              rotateY(${x / 60}deg) 
-              scale(1.02)
-            `;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = `
-              perspective(1000px) 
-              rotateX(0deg) 
-              rotateY(0deg) 
-              scale(1)
-            `;
-                }}
-                style={{
-                  transition: 'transform 0.3s ease-out',
-                }}
-                className="row-start-3 md:col-start-2 md:row-span-2 md:row-start-4 xl:col-start-3 xl:row-start-2"
-              >
-                <div className="flex h-full flex-col justify-between gap-14 rounded-[17px] bg-white/10 p-5 backdrop-blur-lg md:px-[28px] md:py-[32px]">
-                  <p className="font-opt text-2xl font-extrabold leading-8 text-white md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]">
-                    {homePageData?.contactUsCardTitle}
-                  </p>
-                  <Link
-                    onMouseEnter={handleMouseEnterContact}
-                    onMouseLeave={handleMouseLeaveContact}
-                    onMouseUp={handleMouseEnterContact}
-                    onMouseDown={handleMouseLeaveContact}
-                    href={homePageData?.contactUsCardBtnLink}
-                    className={`flex h-[38px] w-max items-center justify-center gap-1 rounded-[50px] border border-transparent bg-[#1A6AA3] px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-white transition-all duration-250 ease-in hover:border-white hover:bg-transparent hover:text-white hover:shadow-lg`}
-                  >
-                    {homePageData?.contactUsCardBtn}
-                    <AnimatedArrow hover={hoverContact} />
-                  </Link>
-                </div>
-              </motion.div>
-              {homePageData?.clientReview &&
-                homePageData?.clientReview.map((item, index) => (
-                  <motion.div
-                    key={index}
-                    onMouseMove={(e) => {
-                      const rect = e.currentTarget.getBoundingClientRect();
-                      const x = e.clientX - rect.left - rect.width / 2;
-                      const y = e.clientY - rect.top - rect.height / 2;
-
-                      e.currentTarget.style.transform = `
-              perspective(1000px) 
-              rotateX(${-y / 20}deg) 
-              rotateY(${x / 20}deg) 
-              scale(1.05)
-            `;
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = `
-              perspective(1000px) 
-              rotateX(0deg) 
-              rotateY(0deg) 
-              scale(1)
-            `;
-                    }}
-                    style={{
-                      transition: 'transform 0.3s ease-out',
-                    }}
-                  >
-                    <div
-                      className={`rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
-                    >
-                      <p className="line-clamp-6 font-opt text-sm font-normal text-optDesc">
-                        {item?.message}
-                      </p>
-                      <div className="flex items-center justify-between gap-2.5">
-                        <p className="font-opt text-base font-normal text-iconSubtle">
-                          {item?.role}
-                        </p>
-                        <Image
-                          src={item?.avatar}
-                          alt="client"
-                          width={67}
-                          height={67}
-                          loading="lazy"
-                          className="h-[67px] w-[67px] rounded-[12px] object-cover outline outline-[2px] -outline-offset-1 outline-[#0000001A]"
-                        />
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-            </div>
-          </div>
-        </div>
-      </div> */}
       <ClientTestimonial isDark={true} />
       <Faqs />
       <div className="xl:mx-[30px]">
@@ -772,7 +663,7 @@ const HomePageV2 = () => {
               </div>
               <SocialMedia />
             </div>
-            <HomeContactForm />
+            <ProjectInquiry />
           </div>
         </Container>
       </div>

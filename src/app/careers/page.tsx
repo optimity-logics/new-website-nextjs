@@ -14,7 +14,7 @@ import arrow from '../../../public/svg/arrow-white.svg';
 import Link from 'next/link';
 import AnimatedArrow from '@/components/common/AnimatedArrow';
 import heroBgRight from '../../../public/svg/about-us/about-shape.svg';
-import heroCareer from '../../../public/images/homePagev2/career.png';
+import heroCareer from '../../../public/webp/careers/career.webp';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 const Career = () => {

@@ -5,7 +5,7 @@ import HeroSectionHeading from './HeroSectionHeading';
 const Contact = () => {
   return (
     <Container>
-      <div className="mb-[60px] rounded-3xl bg-contactMobileBg bg-cover bg-center bg-no-repeat px-6 py-20 md:px-10 lg:bg-bgContact lg:bg-full lg:py-[150px] xl:px-20 3xl:mb-[100px]">
+      <div className="mb-[60px] rounded-3xl bg-contactMobileBg bg-cover bg-center bg-no-repeat px-6 py-20 md:px-10 lg:bg-bgContact lg:bg-full xl:px-20 xl:py-[100px] 3xl:mb-[100px] 4xl:py-[130px] 5xl:py-[150px]">
         <HeroSectionHeading
           className="lg:!gap-14"
           heading="Transform Your App Idea into Reality"

@@ -45,7 +45,7 @@ const OurWorks = () => {
               className="relative h-full w-full"
             >
               <Image
-                src="/images/our-work/our-work-hero.png"
+                src={ourWorkPage?.heroRightImage || ''}
                 alt=""
                 fill
                 priority
@@ -108,36 +108,43 @@ const OurWorks = () => {
             {selectedSubCategory?.articles.length ? (
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 {selectedSubCategory.articles.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="rounded-xl border border-black/10 bg-[#F8F8F8] p-2"
+                  <motion.div
+                    key={selectedSubCategory?.name + '-' + idx}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.8,
+                      ease: 'easeIn',
+                    }}
                   >
-                    <div className="flex flex-col gap-3 rounded-md bg-white p-2">
-                      <div className="relative">
-                        <Image
-                          src={item?.image}
-                          alt=""
-                          width={322}
-                          height={182}
-                          className="w-full rounded-md object-cover"
-                        />
-                        <div className="absolute right-2 top-2 rounded-md bg-white px-2 py-1 font-opt text-sm font-normal leading-5 text-optDesc">
-                          {item?.date}
+                    <div className="rounded-xl border border-black/10 bg-[#F8F8F8] p-2">
+                      <div className="flex flex-col gap-3 rounded-md bg-white p-2">
+                        <div className="relative">
+                          <Image
+                            src={item?.image}
+                            alt=""
+                            width={322}
+                            height={182}
+                            className="w-full rounded-md object-cover"
+                          />
+                          <div className="absolute right-2 top-2 rounded-md bg-white px-2 py-1 font-opt text-sm font-normal leading-5 text-optDesc">
+                            {item?.date}
+                          </div>
+                        </div>
+                        <span className="px-2 font-opt text-sm font-normal leading-5 text-optDesc">
+                          {item?.readTime}
+                        </span>
+                        <div className="flex flex-col gap-1.5 px-2 pb-2">
+                          <h3 className="font-opt text-lg font-semibold leading-6 text-primary">
+                            {item?.title}
+                          </h3>
+                          <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                            {item?.description}
+                          </p>
                         </div>
                       </div>
-                      <span className="px-2 font-opt text-sm font-normal leading-5 text-optDesc">
-                        {item?.readTime}
-                      </span>
-                      <div className="flex flex-col gap-1.5 px-2 pb-2">
-                        <h3 className="font-opt text-lg font-semibold leading-6 text-primary">
-                          {item?.title}
-                        </h3>
-                        <p className="font-opt text-base font-normal leading-5 text-optDesc">
-                          {item?.description}
-                        </p>
-                      </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             ) : (
