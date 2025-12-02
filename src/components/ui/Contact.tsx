@@ -10,7 +10,7 @@ const Contact = () => {
           className="lg:!gap-14"
           heading="Transform Your App Idea into Reality"
           description="We design intuitive, fast, and feature-rich mobile apps for Android & iOS. With seamless UI/UX and robust performance, we turn your vision into a powerful mobile solution."
-          link="/"
+          link="/contact-us"
           btnName="Connect With Us"
           descriptionStyle="text-white"
           headingStyle="text-white"

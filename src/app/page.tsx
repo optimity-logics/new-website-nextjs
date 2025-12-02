@@ -1,6 +1,6 @@
 import HomePageV2 from '@/components/homePage/HomePageV2';
-import { generateSEOMetadata } from '@/components/utils/MetaData';
-import { SEO } from '@/components/utils/TitleAndDescription';
+import { generateSEOMetadata } from '@/components/utils/seo/MetaData';
+import { SEO } from '@/components/utils/seo/TitleAndDescription';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = generateSEOMetadata({

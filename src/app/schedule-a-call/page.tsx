@@ -13,20 +13,17 @@ const Page = () => {
     { text: 'Transparent Payment Policies' },
   ];
   return (
-    <>
-      <div className="h-screen max-h-full md:flex">
+    <div className="h-full">
+      <div className="h-full grid-cols-3 md:grid">
+        {/* Logo Top (Visible on all devices) */}
         <div className="sticky top-0 block bg-scheduleCall p-6 md:hidden">
           <Link href="/">
-            <Image
-              src="/images/logo.png"
-              alt="logo"
-              width={140}
-              height={80}
-              className=""
-            />
+            <Image src="/images/logo.png" alt="logo" width={140} height={80} />
           </Link>
         </div>
-        <div className="hidden h-full w-full max-w-[40%] flex-col justify-between gap-6 bg-scheduleCall p-6 md:flex md:p-10 lg:gap-10 xl:p-12 xxl:p-16">
+
+        {/* Left Section */}
+        <div className="col-span-1 hidden h-full w-full flex-col justify-between gap-6 bg-scheduleCall p-6 md:flex md:p-10 lg:gap-10 xl:p-12 xxl:p-16">
           <div className="flex flex-col gap-20">
             <Link href="/">
               <Image
@@ -34,22 +31,22 @@ const Page = () => {
                 alt="logo"
                 width={180}
                 height={80}
-                className="hidden md:block"
               />
             </Link>
 
             <HeroSectionHeading
               heading="Excited to Learn <br/> What You’re Creating Next."
-              description=" Share your project ideas, goals, and challenges we’ll craft the
-                right tech roadmap to deliver measurable results."
+              description="Share your project ideas, goals, and challenges—we’ll craft the
+          right tech roadmap to deliver measurable results."
               headingStyle="text-white !text-[34px] xxl:!text-[42px]"
               descriptionStyle="text-white !text-base xxl:!text-lg"
             />
           </div>
+
           <div className="flex flex-col gap-5 font-opt text-white">
             <SectionHeader
               headingText="What We Promise:"
-              headingStyle="text-lg  text-white"
+              headingStyle="text-lg text-white"
             />
 
             <div className="flex flex-col gap-3">
@@ -72,7 +69,9 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="flex h-full w-full flex-col gap-8 p-4">
+
+        {/* Right Section - Calendar */}
+        <div className="col-span-2 flex h-full min-h-screen w-full flex-col gap-8">
           <iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ36Y_rnJCruCOgeMcn1zxPgvdzP8AjUehVBhM0xJpkt4JDvhHASB2w5vcalE2zZGqfQr2MxzSGb?gv=true"
             style={{ border: 0 }}
@@ -81,7 +80,7 @@ const Page = () => {
           ></iframe>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

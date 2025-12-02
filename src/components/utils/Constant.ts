@@ -82,8 +82,6 @@ import walletv2 from '../../../public/svg/careers/benefitsv2/Walletv3.svg';
 import targetv2 from '../../../public/svg/careers/benefitsv2/Targetv3.svg';
 import shieldCheckv2 from '../../../public/svg/careers/benefitsv2/ShieldCheckv3.svg';
 
-import pm from '../../../public/webp/homePagev2/pm.webp';
-
 import clutch from '../../../public/svg/about-us/clutch.svg';
 import designrush from '../../../public/svg/about-us/designrush.svg';
 import goodfirms from '../../../public/svg/about-us/goodfirm.svg';
@@ -130,42 +128,41 @@ import refundPolicy from '../../../public/svg/services/refund-policy.svg';
 import resource from '../../../public/svg/services/resource.svg';
 
 import { IFooterDataType } from '../type/type';
-
-export const NavBarData = [
+export const caseStudyData = [
   {
-    id: 1,
-    menuItem: 'Home',
-    link: '/',
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
   },
   {
-    id: 2,
-    menuItem: 'Services',
-    link: '/',
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
   },
   {
-    id: 3,
-    menuItem: 'Technology',
-    link: '/',
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
   },
   {
-    id: 4,
-    menuItem: 'About Us',
-    link: '/about-us',
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
   },
   {
-    id: 5,
-    menuItem: 'Our Works',
-    link: '/',
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
   },
   {
-    id: 6,
-    menuItem: 'Hire Us',
-    link: '/',
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
   },
   {
-    id: 7,
-    menuItem: 'Blog',
-    link: '/blog',
+    heading: 'Optimity Logics implemented a comprehensive',
+    description:
+      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
   },
 ];
 export const logoIcons = [
@@ -1472,603 +1469,6 @@ export const exportTeamData = [
   },
 ];
 
-export const blogData = [
-  {
-    blogHeading: 'All Topics',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-  {
-    blogHeading: 'Lorem ',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-  {
-    blogHeading: 'Lorem Ipsu',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-  {
-    blogHeading: 'Lorem Ipsm',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-  {
-    blogHeading: 'Ipsum',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-  {
-    blogHeading: 'Loresum',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-  {
-    blogHeading: 'Lorem Ipum',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-  {
-    blogHeading: 'Lorm Ipsum',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-  {
-    blogHeading: 'Lreum',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-  {
-    blogHeading: 'oresum',
-    data: [
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/AIModel.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In the bustling world of data, where information is the new
-currency, the reliability and efficiency...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/services.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `The AI revolution is here, and it’s continuously changing the
-way we interact with technology ...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-      {
-        projectName: 'Ui/Ux',
-        img: '/images/resources/angular.png',
-        title:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        description: `In a world where technology is reshaping the boundaries of
-every tech possibility and blowing everyo...`,
-        projectManager: pm,
-        projectManagerName: 'john Iren',
-        projectReleaseDate: 'January 7, 2024',
-      },
-    ],
-  },
-];
-
 export const WorkLifeData = [
   {
     img: location,
@@ -2449,7 +1849,7 @@ export const menuData = [
     megaMenuItem: [],
   },
   {
-    menuTitle: 'Work',
+    menuTitle: 'Our-Works',
     megaMenuItem: [],
   },
   {
@@ -3525,160 +2925,12 @@ export const latestIndustryInsightsData = [
   },
 ];
 
-export const latestBlog = [
-  {
-    technologyImage: '/images/resources/AIModel.png',
-    technologyWeWorkOn: 'UI/UX',
-    techHeading:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
-  },
-  {
-    technologyImage: '/images/resources/angular.png',
-    technologyWeWorkOn: 'UI/UX',
-    techHeading:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
-  },
-  {
-    technologyImage: '/images/resources/angular.png',
-    technologyWeWorkOn: 'UI/UX',
-    techHeading:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
-  },
-];
-export const latestPodcast = [
-  {
-    technologyImage: '/images/resources/AIModel.png',
-    technologyWeWorkOn: 'UI/UX',
-    techHeading:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
-  },
-  {
-    technologyImage: '/images/resources/angular.png',
-    technologyWeWorkOn: 'UI/UX',
-    techHeading:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
-  },
-  {
-    technologyImage: '/images/resources/angular.png',
-    technologyWeWorkOn: 'UI/UX',
-    techHeading:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
-  },
-];
-export const latestVideo = [
-  {
-    technologyImage: '/images/resources/AIModel.png',
-    technologyWeWorkOn: 'UI/UX',
-    techHeading:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
-  },
-  {
-    technologyImage: '/images/resources/angular.png',
-    technologyWeWorkOn: 'UI/UX',
-    techHeading:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
-  },
-  {
-    technologyImage: '/images/resources/angular.png',
-    technologyWeWorkOn: 'UI/UX',
-    techHeading:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    techDescription: `In the bustling world of data, where information is the new currency, the reliability and efficiency...`,
-  },
-];
-export const caseStudyData = [
-  {
-    heading: 'Optimity Logics implemented a comprehensive',
-    description:
-      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
-  },
-  {
-    heading: 'Optimity Logics implemented a comprehensive',
-    description:
-      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
-  },
-  {
-    heading: 'Optimity Logics implemented a comprehensive',
-    description:
-      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
-  },
-  {
-    heading: 'Optimity Logics implemented a comprehensive',
-    description:
-      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
-  },
-  {
-    heading: 'Optimity Logics implemented a comprehensive',
-    description:
-      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
-  },
-  {
-    heading: 'Optimity Logics implemented a comprehensive',
-    description:
-      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
-  },
-  {
-    heading: 'Optimity Logics implemented a comprehensive',
-    description:
-      'To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and websit  functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more',
-  },
-];
-export const techWeWork = [
-  {
-    heading: 'Mobile',
-    img: mobiles,
-  },
-  {
-    heading: 'Frontend',
-    img: frontend,
-  },
-  {
-    heading: 'Backend',
-    img: backend,
-  },
-  {
-    heading: 'CMS',
-    img: cms,
-  },
-  {
-    heading: 'Database',
-    img: database,
-  },
-  {
-    heading: 'DevOps',
-    img: devops,
-  },
-];
-
-export const projectWeDone = [
-  {
-    projectName: 'Wikifarmer',
-    img: wikifarmerV2,
-  },
-  {
-    projectName: 'HTS',
-    img: htsV2,
-  },
-  {
-    projectName: 'Builders Spec',
-    img: builderV2,
-  },
-];
-
 export const homePageData = {
   baddge: 'Accelerate Your Growth with AI',
   heroTitle: `AI-Powered Tech for Smarter Business Results`,
   heroDescription: `Optimity Logics creates AI-powered software solutions that boost productivity, encourage creativity, and facilitate long-term company expansion.`,
   heroContactUsBtn: 'Contact Us',
-  heroContactUsBtnLink: '/',
+  heroContactUsBtnLink: '/contact-us',
   trustedClient:
     'Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies',
   ourExpertiseTitle: 'Our Expertise',
@@ -4001,6 +3253,7 @@ export const homePageData = {
       title: 'AI-Refined Food and Drink Systems',
       description:
         'In food and beverage operations, we create AI solutions that predict consumer demand, streamline supply chains, and protect product quality. Our intelligent platforms facilitate quick decision-making, increase consistency, and cut waste for long-term, sustainable industry growth.',
+      sectionTitle: 'Drivers of Operational Efficiency:',
       features: [
         'Forecasting demand and streamlining production and procurement schedules',
         'Stockouts and excess inventory are decreased by automated replenishment.',
@@ -4031,7 +3284,7 @@ export const homePageData = {
   ],
   contactUsCardTitle: 'Let’s Build Something Great Together',
   contactUsCardBtn: 'Contact Us',
-  contactUsCardBtnLink: '',
+  contactUsCardBtnLink: '/contact-us',
   clientReview: [
     {
       id: 1,
@@ -4162,7 +3415,7 @@ export const aboutUsPage = {
   heding: `Harness the power of <span> Artificial Intelligence</span> to revolutionize your business.`,
   description: `Optimity Logics develops next-gen AI solutions that empower smarter workflows, accelerate performance, and ensure sustainable growth.`,
   aboutUsBtn: 'About Us',
-  aboutUsBtnLink: '/',
+  aboutUsBtnLink: '/contact-us',
   hero_image: aboutUsHeroImage,
   OurWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },

@@ -1,22 +1,22 @@
 import AllPageContent from '@/components/division/AllPageContent';
-import { GolangData } from '@/components/utils/technology/back-end/golang';
-import { LaravelData } from '@/components/utils/technology/back-end/laravel';
-import { MeteorData } from '@/components/utils/technology/back-end/meteor';
-import { NodeData } from '@/components/utils/technology/back-end/node';
-import { PhpData } from '@/components/utils/technology/back-end/php';
-import { PythonData } from '@/components/utils/technology/back-end/python';
-import { AngularData } from '@/components/utils/technology/front-end/angularJs';
-import { BackboneJsData } from '@/components/utils/technology/front-end/backboneJs';
-import { JavaScriptData } from '@/components/utils/technology/front-end/javascript';
-import { NextJsData } from '@/components/utils/technology/front-end/nextJs';
-import { VueData } from '@/components/utils/technology/front-end/vueJs';
-import { AndroidData } from '@/components/utils/technology/mobile/android';
-import { FlutterData } from '@/components/utils/technology/mobile/flutter';
-import { Iconic } from '@/components/utils/technology/mobile/iconic';
-import { IosData } from '@/components/utils/technology/mobile/Ios';
-import { ReactNative } from '@/components/utils/technology/mobile/reactNative';
-import { SwiftData } from '@/components/utils/technology/mobile/swift';
-import { ReactJsData } from '@/components/utils/technology/front-end/reactJs';
+import { GolangData } from '@/components/utils/page-data/technology/back-end/golang';
+import { LaravelData } from '@/components/utils/page-data/technology/back-end/laravel';
+import { MeteorData } from '@/components/utils/page-data/technology/back-end/meteor';
+import { NodeData } from '@/components/utils/page-data/technology/back-end/node';
+import { PhpData } from '@/components/utils/page-data/technology/back-end/php';
+import { PythonData } from '@/components/utils/page-data/technology/back-end/python';
+import { AngularData } from '@/components/utils/page-data/technology/front-end/angularJs';
+import { BackboneJsData } from '@/components/utils/page-data/technology/front-end/backboneJs';
+import { JavaScriptData } from '@/components/utils/page-data/technology/front-end/javascript';
+import { NextJsData } from '@/components/utils/page-data/technology/front-end/nextJs';
+import { VueData } from '@/components/utils/page-data/technology/front-end/vueJs';
+import { AndroidData } from '@/components/utils/page-data/technology/mobile/android';
+import { FlutterData } from '@/components/utils/page-data/technology/mobile/flutter';
+import { Iconic } from '@/components/utils/page-data/technology/mobile/iconic';
+import { IosData } from '@/components/utils/page-data/technology/mobile/Ios';
+import { ReactNative } from '@/components/utils/page-data/technology/mobile/reactNative';
+import { SwiftData } from '@/components/utils/page-data/technology/mobile/swift';
+import { ReactJsData } from '@/components/utils/page-data/technology/front-end/reactJs';
 import {
   ctoServices,
   digitalMarketing,
@@ -24,7 +24,7 @@ import {
   qualityEngineer,
   softwareProductDevelopment,
   uiuxData,
-} from '@/components/utils/services/digitalTransformation/digitalTransformation';
+} from '@/components/utils/page-data/services/digitalTransformation/digitalTransformation';
 import {
   artificialIntelligence,
   computerVision,
@@ -32,7 +32,7 @@ import {
   generativeAI,
   machineLerning,
   roboticAutomation,
-} from '@/components/utils/services/dataAndAI/dataAndAi';
+} from '@/components/utils/page-data/services/dataAndAI/dataAndAi';
 import {
   appModernization,
   gameDevelopment,
@@ -41,7 +41,7 @@ import {
   saasDevelopment,
   softwareDevelopment,
   webAppDevelopment,
-} from '@/components/utils/services/applicationDevelopment/applicationDevelopment';
+} from '@/components/utils/page-data/services/applicationDevelopment/applicationDevelopment';
 import {
   education,
   financeSolution,
@@ -49,22 +49,22 @@ import {
   logisticsAppDevelopment,
   realEstate,
   retailSolution,
-} from '@/components/utils/solution/IndustryExpertise/IndustryExpertise';
+} from '@/components/utils/page-data/solution/IndustryExpertise/IndustryExpertise';
 import {
   cloudComputing,
   devOps,
   onDemandApp,
   productPrototype,
-} from '@/components/utils/solution/ customSolutions/customSolution';
+} from '@/components/utils/page-data/solution/ customSolutions/customSolution';
 import {
   enterpriseSolution,
   startUpSolution,
-} from '@/components/utils/solution/businessScales/businessScales';
+} from '@/components/utils/page-data/solution/businessScales/businessScales';
 import {
   hireAIDeveloper,
   hireDataScientist,
   hireMLDeveloper,
-} from '@/components/utils/hireTeam/dataAndAI/DataAndAI';
+} from '@/components/utils/page-data/hireTeam/dataAndAI/DataAndAI';
 import {
   hireAndroidDeveloper,
   hireFlutterDeveloper,
@@ -72,7 +72,7 @@ import {
   hireIosDeveloper,
   hireReactNativeDeveloper,
   hireSwiftDeveloper,
-} from '@/components/utils/hireTeam/mobileApp/mobileApp';
+} from '@/components/utils/page-data/hireTeam/mobileApp/mobileApp';
 import {
   hireAngularDeveloper,
   hireBackboneJs,
@@ -82,7 +82,7 @@ import {
   hireTailwindCssDeveloper,
   hireVueDeveloper,
   hireWebflowDeveloper,
-} from '@/components/utils/hireTeam/frontend/frontend';
+} from '@/components/utils/page-data/hireTeam/frontend/frontend';
 import {
   hireDjangoDeveloper,
   hireFastApiDeveloper,
@@ -92,7 +92,7 @@ import {
   hireNodeJSDeveloper,
   hirePhpDeveloper,
   hirePythonDeveloper,
-} from '@/components/utils/hireTeam/backend/backend';
+} from '@/components/utils/page-data/hireTeam/backend/backend';
 import {
   hireDevOpsDeveloper,
   hireGameDeveloper,
@@ -101,15 +101,15 @@ import {
   hireSoftwareDeveloper,
   hireUIUXDesigner,
   hireUnrealEngineDeveloper,
-} from '@/components/utils/hireTeam/trending/trending';
-import { weareableAppData } from '@/components/utils/technology/trending/wearableApp';
-import { internetOfThingsData } from '@/components/utils/technology/trending/iot';
+} from '@/components/utils/page-data/hireTeam/trending/trending';
+import { weareableAppData } from '@/components/utils/page-data/technology/trending/wearableApp';
+import { internetOfThingsData } from '@/components/utils/page-data/technology/trending/iot';
 import { Metadata } from 'next';
-import { generateSEOMetadata } from '@/components/utils/MetaData';
-import { SEO } from '@/components/utils/TitleAndDescription';
+import { generateSEOMetadata } from '@/components/utils/seo/MetaData';
+import { SEO } from '@/components/utils/seo/TitleAndDescription';
 import HireUs from '@/components/division/HireUs';
 import Solution from '@/components/division/Solution';
-import { tailwindData } from '@/components/utils/technology/trending/tailwindcss';
+import { tailwindData } from '@/components/utils/page-data/technology/trending/tailwindcss';
 
 type Params = Promise<{ service: string }>;
 

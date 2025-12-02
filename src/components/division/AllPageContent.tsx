@@ -244,7 +244,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                       <span className="pointer-events-none absolute inset-0 bg-white/10 opacity-0 transition-all duration-500 group-hover:opacity-20" />
 
                       {/* ✨ Sweep Shine Animation */}
-                      <span className="absolute left-[-100%] top-0 h-full w-[60%] rounded-full bg-gradient-to-r from-white/20 to-transparent opacity-0 transition-all duration-1000 ease-in group-hover:left-[100%] group-hover:opacity-100" />
+                      <span className="absolute left-[-100%] top-0 h-full w-[60%] rounded-full bg-gradient-to-r from-white/20 to-transparent opacity-0 transition-all duration-[850ms] ease-in group-hover:left-[100%] group-hover:opacity-100" />
 
                       {tab.title}
                       <AnimatedArrow hover={hoverServicesTab[i]} />
@@ -253,42 +253,40 @@ const AllPageContent = ({ data }: IPropsType) => {
                 )}
             </div>
 
-            <div className="w-full max-w-[1000px] rounded-2xl bg-[#FFFFFF24] p-6 backdrop-blur-md">
-              {activeContent && (
-                <motion.div
-                  key={activeTab}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="flex flex-col gap-5"
-                >
-                  <div className="flex flex-col gap-4">
-                    <h2 className="font-opt text-xl font-normal leading-6 text-white">
-                      {activeContent.heading}
-                    </h2>
-                    <p className="font-opt text-base font-normal leading-6 text-white/45">
-                      {activeContent.desc}
-                    </p>
-                  </div>
+            {activeContent && (
+              <motion.div
+                key={activeTab}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
+                className="flex w-full max-w-[1000px] flex-col gap-5 rounded-2xl bg-[#FFFFFF24] p-6 backdrop-blur-md"
+              >
+                <div className="flex flex-col gap-4">
+                  <h2 className="font-opt text-xl font-normal leading-6 text-white">
+                    {activeContent.heading}
+                  </h2>
+                  <p className="font-opt text-base font-normal leading-6 text-white/45">
+                    {activeContent.desc}
+                  </p>
+                </div>
 
-                  <div className="grid gap-5 md:grid-cols-2">
-                    {activeContent.points.map((point, i) => (
-                      <div key={i} className="flex items-center gap-3">
-                        <Image
-                          src="/svg/point.svg"
-                          alt="point"
-                          width={25}
-                          height={25}
-                        />
-                        <p className="font-opt text-base font-normal leading-5 text-white">
-                          {point}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-              )}
-            </div>
+                <div className="grid gap-5 md:grid-cols-2">
+                  {activeContent.points.map((point, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <Image
+                        src="/svg/point.svg"
+                        alt="point"
+                        width={25}
+                        height={25}
+                      />
+                      <p className="font-opt text-base font-normal leading-5 text-white">
+                        {point}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
           </div>
         </Container>
       </div>

@@ -27,7 +27,7 @@ const SectionHeader = ({
             dangerouslySetInnerHTML={{
               __html: headingText || '',
             }}
-            className={`font-opt text-[44px] font-medium leading-[44px] ${isSectionDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
+            className={`font-opt text-[44px] font-medium leading-[48px] ${isSectionDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
           />
         )}
         {descriptionText && (
