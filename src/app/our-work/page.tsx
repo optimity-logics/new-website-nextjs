@@ -127,13 +127,13 @@ const OurWorks = () => {
                             height={182}
                             className="w-full rounded-md object-cover"
                           />
-                          <div className="absolute right-2 top-2 rounded-md bg-white px-2 py-1 font-opt text-sm font-normal leading-5 text-optDesc">
+                          {/* <div className="absolute right-2 top-2 rounded-md bg-white px-2 py-1 font-opt text-sm font-normal leading-5 text-optDesc">
                             {item?.date}
-                          </div>
+                          </div> */}
                         </div>
-                        <span className="px-2 font-opt text-sm font-normal leading-5 text-optDesc">
+                        {/* <span className="px-2 font-opt text-sm font-normal leading-5 text-optDesc">
                           {item?.readTime}
-                        </span>
+                        </span> */}
                         <div className="flex flex-col gap-1.5 px-2 pb-2">
                           <h3 className="font-opt text-lg font-semibold leading-6 text-primary">
                             {item?.title}

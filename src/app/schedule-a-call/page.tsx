@@ -14,7 +14,7 @@ const Page = () => {
   ];
   return (
     <div className="h-full">
-      <div className="h-full grid-cols-3 md:grid">
+      <div className="h-full grid-cols-7 md:grid">
         {/* Logo Top (Visible on all devices) */}
         <div className="sticky top-0 block bg-scheduleCall p-6 md:hidden">
           <Link href="/">
@@ -23,7 +23,7 @@ const Page = () => {
         </div>
 
         {/* Left Section */}
-        <div className="col-span-1 hidden h-full w-full flex-col justify-between gap-6 bg-scheduleCall p-6 md:flex md:p-10 lg:gap-10 xl:p-12 xxl:p-16">
+        <div className="col-span-3 hidden h-full w-full flex-col justify-between gap-6 bg-scheduleCall p-6 md:flex md:p-10 lg:gap-10 xl:p-12 xxl:p-16">
           <div className="flex flex-col gap-20">
             <Link href="/">
               <Image
@@ -71,7 +71,7 @@ const Page = () => {
         </div>
 
         {/* Right Section - Calendar */}
-        <div className="col-span-2 flex h-full min-h-screen w-full flex-col gap-8">
+        <div className="col-span-4 flex h-full min-h-screen w-full flex-col gap-8">
           <iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ36Y_rnJCruCOgeMcn1zxPgvdzP8AjUehVBhM0xJpkt4JDvhHASB2w5vcalE2zZGqfQr2MxzSGb?gv=true"
             style={{ border: 0 }}
