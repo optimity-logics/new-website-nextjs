@@ -46,7 +46,6 @@ const AllPageContent = ({ data }: IPropsType) => {
     1: false,
   });
   const [hoverViewAll, setHoverViewAll] = useState<boolean>(false);
-  const [processDevInd, setProcessDevInd] = useState<number>(0);
   const [activeTab, setActiveTab] = useState(1);
 
   const activeContent =
@@ -215,7 +214,6 @@ const AllPageContent = ({ data }: IPropsType) => {
             headingStyle="text-center"
             isSectionDark={true}
           />
-
           <div className="flex w-full flex-col gap-10 md:flex-row">
             <div className="flex w-full flex-col gap-4 md:max-w-[400px]">
               {data?.WhyOptimityForDevelopment?.developmentServicesStep &&
@@ -287,6 +285,47 @@ const AllPageContent = ({ data }: IPropsType) => {
                 </div>
               </motion.div>
             )}
+          </div>
+          <SectionHeader
+            headingText={data?.developmentProcess?.heading}
+            descriptionText={data?.developmentProcess?.description}
+            headingStyle="text-center"
+            className="max-w-full items-center lg:max-w-[900px]"
+            isSectionDark={true}
+          />
+          <div className="space-y-4">
+            {data?.developmentProcess?.developmentProcessStep &&
+              data?.developmentProcess?.developmentProcessStep.map(
+                (item, index) =>
+                  index === 0 &&
+                  item?.procesDataList.map((items, ind) => (
+                    <div
+                      key={ind}
+                      className="grid grid-cols-1 last:overflow-hidden lg:grid-cols-2"
+                    >
+                      <div
+                        className={` ${ind % 2 !== 0 ? 'bg-leftCard col-start-2 border-r-2 border-r-red pl-2 lg:-ml-5' : 'bg-rightCard col-start-1 flex-row-reverse border-l-2 border-l-red pr-2 lg:ml-5'} flex w-full items-start gap-4 rounded-xl p-6 shadow-devCardShadow backdrop-blur-xl scrollbar-hide md:max-w-full lg:min-w-[400px] lg:min-w-full`}
+                      >
+                        <div className={`relative grid flex-col items-center`}>
+                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-black-900-alpha text-white backdrop-blur-md">
+                            {ind + 1}
+                          </div>
+                          <div
+                            className={`bg-gradientLine absolute left-1/2 top-full -z-[1] -mt-2 h-full min-h-[150px] w-[1.5px] translate-x-1/2 rounded-2xl opacity-80 backdrop-blur-sm ${ind % 2 !== 0 ? 'rotate-6' : '-rotate-6'}`}
+                          ></div>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                          <h4 className="font-opt text-[22px] font-medium leading-7 text-white">
+                            {items?.title}
+                          </h4>
+                          <p className="font-opt text-base font-normal leading-5 text-white/70">
+                            {items?.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )),
+              )}
           </div>
         </Container>
       </div>
@@ -363,59 +402,6 @@ const AllPageContent = ({ data }: IPropsType) => {
               redirectionLink={data?.crossPlatformBenefitsContactBtnLink}
               isBackgroundLight={true}
             />
-          </div>
-        </div>
-      </Container>
-      <Container className="mb-[60px] flex flex-col gap-[60px] 4xl:mb-[100px]">
-        <SectionHeader
-          headingText={data?.developmentProcess?.heading}
-          descriptionText={data?.developmentProcess?.description}
-          descriptionStyle="text-start"
-          className="max-w-full lg:max-w-[506px]"
-        />
-        <div className="flex w-full flex-col gap-5 xl:flex-row xl:gap-0">
-          <ul className="flex w-full max-w-[600px] flex-col">
-            {data?.developmentProcess?.developmentProcessStep &&
-              data?.developmentProcess?.developmentProcessStep.map(
-                (item, index) => (
-                  <li
-                    key={index}
-                    onClick={() => setProcessDevInd(index)}
-                    className="relative flex cursor-pointer items-center pb-8 pl-5 font-opt text-lg font-medium leading-5 text-primary last-of-type:pb-0 3xl:pb-16 3xl:text-[22px] 3xl:leading-7"
-                  >
-                    <div
-                      className={`absolute left-[0px] h-4 w-4 rounded-full transition-all duration-300 ease-in-out md:-left-1.5 md:h-5 md:w-5 xl:top-1 ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
-                    ></div>
-                    {item?.procesDataList.length - 1 !== index && (
-                      <div
-                        className={`absolute left-1.5 top-2 mb-1 block h-12 w-1 transition-all duration-300 ease-in-out md:left-0.5 3xl:h-24 ${processDevInd === index || index <= processDevInd ? 'bg-[#1A6AA3]' : 'bg-[#E2E2E2]'}`}
-                      ></div>
-                    )}
-
-                    {item?.processHeading}
-                  </li>
-                ),
-              )}
-          </ul>
-          <div className="hide-scrollbar flex w-full flex-row gap-5 overflow-auto p-4 xl:flex-col xl:overflow-hidden xxl:max-w-[800px]">
-            {data?.developmentProcess?.developmentProcessStep &&
-              data?.developmentProcess?.developmentProcessStep.map(
-                (item, index) =>
-                  processDevInd === index &&
-                  item?.procesDataList.map((items, ind) => (
-                    <div
-                      key={ind}
-                      className={`flex w-full min-w-[400px] flex-col gap-3 rounded-xl border-l-2 border-l-transparent bg-white p-6 shadow-devCardShadow scrollbar-hide first:border-l-red md:max-w-full lg:min-w-full`}
-                    >
-                      <h4 className="font-opt text-[22px] font-medium leading-7 text-primary">
-                        {items?.title}
-                      </h4>
-                      <p className="font-opt text-base font-normal leading-5 text-optDesc">
-                        {items?.description}
-                      </p>
-                    </div>
-                  )),
-              )}
           </div>
         </div>
       </Container>
