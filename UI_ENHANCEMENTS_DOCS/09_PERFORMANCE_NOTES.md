@@ -3,27 +3,34 @@
 ## Optimization Techniques Used
 
 ### 1. GPU Acceleration
+
 All animations use transform and opacity properties which are GPU-accelerated:
+
 ```css
-transform: translateY(-8px);  /* GPU accelerated */
-opacity: 0.5;                 /* GPU accelerated */
+transform: translateY(-8px); /* GPU accelerated */
+opacity: 0.5; /* GPU accelerated */
 ```
 
 ### 2. Will-Change Property
+
 ```css
 [data-parallax-group] {
   will-change: transform;
 }
 ```
+
 Hints to browser which properties will animate.
 
 ### 3. Viewport Once
+
 ```jsx
 viewport={{ once: true }}
 ```
+
 Animations only trigger once, reducing re-renders.
 
 ### 4. CSS Transitions Over JavaScript
+
 Most effects use CSS transitions instead of JavaScript for better performance.
 
 ## Best Practices Implemented
