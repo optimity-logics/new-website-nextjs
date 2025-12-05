@@ -84,6 +84,11 @@ export default {
         userframe: "url('/images/our-work/users.jpg')",
         scheduleCall:
           'linear-gradient(289.62deg, #02ADE1 6.97%, #1A6AA3 94.65%)',
+        leftCard:
+          'linear-gradient(192.59deg, rgba(20, 17, 45, 0.082) 2.01%, rgba(12, 50, 59, 0.82) 96.5%)',
+        rightCard:
+          'linear-gradient(192.59deg, rgba(12, 50, 59, 0.82) 2.01%, rgba(20, 17, 45, 0.082) 96.5%);',
+        gradientLine: 'linear-gradient(#fffc,#0000)',
       },
       fontFamily: {
         opt: ['var(--font-opt)'],

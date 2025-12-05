@@ -343,7 +343,7 @@ const HomePageV2 = () => {
                 ))}
             </div>
           </div>
-          <div className="hidden grid-cols-3 gap-8 md:grid">
+          <div className="hidden grid-cols-2 gap-8 md:grid lg:grid-cols-3">
             <div className="mx-auto flex w-full max-w-[350px] flex-col gap-10">
               {homePageData?.aiServices &&
                 homePageData?.aiServices.slice(0, 3).map((item, index) => (
@@ -607,11 +607,8 @@ const HomePageV2 = () => {
       </div>
       <ClientTestimonial isDark={true} />
       <Faqs />
-      <div className="xl:mx-[30px]">
-        <Container
-          styleClass={{ backgroundSize: '100% 100%' }}
-          className="mb-[60px] bg-black bg-tech-we-work bg-no-repeat py-[70px] lg:bg-contain xl:mb-0 xl:bg-transparent xl:bg-contact xl:pb-[130px] xl:pt-[140px] 3xl:px-[80px]"
-        >
+      <div className="bg-black bg-tech-we-work bg-full bg-no-repeat xl:bg-transparent xl:bg-contact">
+        <Container className="mb-[60px] py-[70px] lg:bg-contain xl:mb-0 xl:pb-[130px] xl:pt-[140px] 3xl:px-[80px]">
           <div className="flex flex-col justify-between gap-10 md:flex-row md:items-center">
             <div className="flex w-full max-w-[570px] flex-col gap-3 xl:gap-5">
               <HighlitedDescription
