@@ -89,6 +89,7 @@ export default {
         rightCard:
           'linear-gradient(192.59deg, rgba(12, 50, 59, 0.82) 2.01%, rgba(20, 17, 45, 0.082) 96.5%);',
         gradientLine: 'linear-gradient(#fffc,#0000)',
+        btnGradientBg: "url('/svg/about-us/ptwbg.svg')",
       },
       fontFamily: {
         opt: ['var(--font-opt)'],
