@@ -42,23 +42,23 @@ const AboutUs = () => {
   return (
     <>
       <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
-        <div className="flex h-full flex-col items-center justify-between pt-[150px] lg:h-screen lg:flex-row">
+        <Container className="flex h-full flex-col items-center justify-between gap-10 overflow-hidden pb-[100px] pt-[150px] lg:h-screen lg:flex-row">
           <HeroSectionHeading
             badgeTitle={aboutUsPage?.surTitle}
             heading={aboutUsPage?.heding}
             description={aboutUsPage?.description}
             btnName={homePageData?.heroContactUsBtn}
             link={aboutUsPage?.aboutUsBtnLink}
-            className="relative z-30 ml-auto flex w-full max-w-[900px] flex-col gap-7 px-4 sm:px-6 sm:pb-[120px] md:px-8 xl:px-10 xl:pl-[60px] 3xl:ml-16 4xl:pl-[100px]"
+            className="relative z-30 flex w-full max-w-full flex-col gap-7 md:max-w-[700px]"
           />
 
-          <div className="relative lg:-mb-[132px]">
+          <div className="relative">
             <Image
               src={heroBgRight}
               alt=""
-              width={450}
+              width={500}
               height={700}
-              className="absolute -top-24 left-0 z-10 md:-left-40 md:-rotate-6"
+              className="absolute -top-24 right-0 z-10 translate-x-1/2 md:-left-40 md:-rotate-6"
             />
             <Image
               src={aboutUsPage?.hero_image}
@@ -68,9 +68,9 @@ const AboutUs = () => {
               className="relative z-20 h-auto xl:max-w-[600px]"
             />
           </div>
-        </div>
+        </Container>
       </div>
-      <Container className="relative z-30 -mt-14 mb-[60px] w-full max-w-[1680px] 3xl:mb-[100px]">
+      <Container className="relative z-30 mb-[60px] mt-14 w-full max-w-[1680px] xl:-mt-14 3xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
           {aboutUsPage?.OurWork &&
             aboutUsPage?.OurWork.map((item, index) => (

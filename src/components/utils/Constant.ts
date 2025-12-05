@@ -1147,7 +1147,7 @@ export const reviewsData = [
     review: '4.6 ',
   },
   {
-    siteIcon: '/svg/review-on-site/goodfirm.svg',
+    siteIcon: '/svg/review-on-site/goodfirms.svg',
     review: '4.7',
   },
   {
@@ -1155,7 +1155,7 @@ export const reviewsData = [
     review: '4.8',
   },
   {
-    siteIcon: '/svg/review-on-site/top-developers.svg',
+    siteIcon: '/svg/review-on-site/topdevelopers.svg',
     review: '4.9',
   },
   {

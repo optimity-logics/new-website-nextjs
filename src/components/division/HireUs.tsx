@@ -121,12 +121,20 @@ const HireUs = () => {
           headingStyle="text-center"
         />
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-          <div className="grid grid-stack">
+          <div className="relative grid rounded-xl shadow-xl ring-4 ring-black/5 grid-stack after:absolute after:inset-0 after:rounded-xl after:bg-black/40">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-primary backdrop-blur-sm">
+              <span
+                style={{
+                  background:
+                    'linear-gradient(244.15deg, rgba(255, 255, 255, 0) 13.76%, rgba(255, 255, 255, 0.2) 47.33%, rgba(255, 255, 255, 0.2) 51.96%, rgba(255, 255, 255, 0) 82.84%), #0A1013',
+                  boxShadow:
+                    '0px 13px 5px rgba(0, 0, 0, 0.03), 0px 7px 4px rgba(0, 0, 0, 0.09), 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18)',
+                }}
+                className="flex items-center justify-center rounded-full bg-no-repeat px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-white"
+              >
                 full time
               </span>
-              <p className="font-opt text-xl font-normal leading-6 text-white/80">
+              <p className="font-opt text-xl font-normal leading-6 text-white">
                 8 hours / day 5 days / week
               </p>
             </div>
@@ -135,15 +143,23 @@ const HireUs = () => {
               alt="hire-us"
               width={533}
               height={333}
-              className="w-full md:w-max"
+              className="w-full rounded-xl md:w-max"
             />
           </div>
-          <div className="grid grid-stack">
+          <div className="relative grid rounded-xl shadow-xl ring-4 ring-black/5 grid-stack after:absolute after:inset-0 after:rounded-xl after:bg-black/40">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-primary backdrop-blur-sm">
+              <span
+                style={{
+                  background:
+                    'linear-gradient(244.15deg, rgba(255, 255, 255, 0) 13.76%, rgba(255, 255, 255, 0.2) 47.33%, rgba(255, 255, 255, 0.2) 51.96%, rgba(255, 255, 255, 0) 82.84%), #0A1013',
+                  boxShadow:
+                    '0px 13px 5px rgba(0, 0, 0, 0.03), 0px 7px 4px rgba(0, 0, 0, 0.09), 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18)',
+                }}
+                className="flex items-center justify-center rounded-full bg-no-repeat px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-white"
+              >
                 Part time
               </span>
-              <p className="font-opt text-xl font-normal leading-6 text-white/80">
+              <p className="font-opt text-xl font-normal leading-6 text-white">
                 4 hours / day 5 days / week
               </p>
             </div>
@@ -152,24 +168,32 @@ const HireUs = () => {
               alt="hire-us"
               width={533}
               height={333}
-              className="w-full md:w-max"
+              className="w-full rounded-xl md:w-max"
             />
           </div>
-          <div className="grid grid-stack">
+          <div className="relative grid rounded-xl shadow-xl ring-4 ring-black/5 grid-stack after:absolute after:inset-0 after:rounded-xl after:bg-black/40">
             <div className="relative z-20 flex h-full flex-col items-start justify-between p-5">
-              <span className="rounded-lg bg-white/30 px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-primary backdrop-blur-sm">
+              <span
+                style={{
+                  background:
+                    'linear-gradient(244.15deg, rgba(255, 255, 255, 0) 13.76%, rgba(255, 255, 255, 0.2) 47.33%, rgba(255, 255, 255, 0.2) 51.96%, rgba(255, 255, 255, 0) 82.84%), #0A1013',
+                  boxShadow:
+                    '0px 13px 5px rgba(0, 0, 0, 0.03), 0px 7px 4px rgba(0, 0, 0, 0.09), 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18)',
+                }}
+                className="flex items-center justify-center rounded-full bg-no-repeat px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-white"
+              >
                 hourly basis
               </span>
-              <p className="font-opt text-xl font-normal leading-6 text-white/80">
+              <p className="font-opt text-xl font-normal leading-6 text-white">
                 Starts with 40 hours Pay as you go
               </p>
             </div>
             <Image
-              src={'/webp/hire-us/hours-base.webp'}
+              src={'/webp/hire-us/hourly-base.webp'}
               alt="hire-us"
               width={533}
               height={333}
-              className="w-full md:w-max"
+              className="w-full rounded-xl md:w-max"
             />
           </div>
         </div>
