@@ -91,16 +91,15 @@ const AllPageContent = ({ data }: IPropsType) => {
     <>
       <div className="overflow-hidden bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
         <div className="flex h-full min-h-screen items-center justify-center">
-          <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:justify-between lg:pt-20">
+          <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-20">
             <HeroSectionHeading
-              className="max-w-[900px] items-center !gap-10"
-              headingStyle="text-center"
+              className="!gap-10"
               heading={data?.HeroSectionData?.heading}
               description={data?.HeroSectionData?.description}
               btnName={data?.HeroSectionData?.btnName}
               link={data?.HeroSectionData?.btnLink}
             />
-            {/* <div className="relative aspect-[5/4] h-auto w-full max-w-[450px] 3xl:aspect-[5/6]">
+            <div className="relative aspect-[5/4] h-auto w-full max-w-[450px] 3xl:aspect-[5/6]">
               {data?.HeroSectionData?.techImg && (
                 <motion.div
                   key={
@@ -126,19 +125,9 @@ const AllPageContent = ({ data }: IPropsType) => {
                   />
                 </motion.div>
               )}
-            </div> */}
-            <div>
-              <Image
-                src="/svg/opt-main-bg.svg"
-                alt="bg-hero"
-                width={1500}
-                height={500}
-                className="rounded-2xl"
-              />
             </div>
-
             {data?.HeroSectionData?.techName && (
-              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[13.7%] 3xl:text-[200px]">
+              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[10.7%] 3xl:text-[130px]">
                 {data?.HeroSectionData?.techName}
               </span>
             )}

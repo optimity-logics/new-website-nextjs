@@ -3,6 +3,7 @@
 ## Card Effects
 
 ### 1. Card Hover Effect
+
 ```css
 .card-hover-effect {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -15,13 +16,16 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 ```
+
 **Features:**
+
 - Lifts card up by 8px
 - Slightly scales up (1.02x)
 - Enhanced shadow on hover
 - Smooth cubic-bezier transition
 
 ### 2. Glassmorphism Effect
+
 ```css
 .glass-effect {
   background: rgba(255, 255, 255, 0.05);
@@ -30,13 +34,16 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 ```
+
 **Usage:** AI service cards
 **Features:**
+
 - Semi-transparent background
 - Backdrop blur effect
 - Subtle border
 
 ### 3. Tech Card Glow
+
 ```css
 .tech-card-glow {
   position: relative;
@@ -51,8 +58,10 @@
   opacity: 0.7;
 }
 ```
+
 **Usage:** Technology cards
 **Features:**
+
 - Gradient glow on hover
 - Lifts up on hover
 - Blur effect for glow
@@ -60,6 +69,7 @@
 ## Button Effects
 
 ### 1. Button Pulse
+
 ```css
 .btn-pulse {
   position: relative;
@@ -71,24 +81,30 @@
   height: 300px;
 }
 ```
+
 **Features:**
+
 - Expanding circle on hover
 - Smooth pulse effect
 
 ### 2. Ripple Effect
+
 ```css
 .ripple-effect:active::after {
   width: 200px;
   height: 200px;
 }
 ```
+
 **Features:**
+
 - Click ripple animation
 - Material design inspired
 
 ## Image Effects
 
 ### 1. Image Hover Zoom
+
 ```css
 .image-hover-zoom {
   overflow: hidden;
@@ -104,7 +120,9 @@
   box-shadow: 0 15px 35px rgba(2, 173, 225, 0.3);
 }
 ```
+
 **Features:**
+
 - Image scales to 110%
 - Slight rotation (2 degrees)
 - Enhanced shadow
@@ -113,6 +131,7 @@
 ## Tab Effects
 
 ### 1. Tab Button Enhanced
+
 ```css
 .tab-button-enhanced::before {
   content: '';
@@ -130,7 +149,9 @@
   width: 80%;
 }
 ```
+
 **Features:**
+
 - Animated underline on hover
 - Gradient color
 - Smooth width transition
@@ -138,6 +159,7 @@
 ## Text Effects
 
 ### 1. Gradient Text Animated
+
 ```css
 .gradient-text-animated {
   background: linear-gradient(90deg, #f38f02, #02ade1, #f38f02);
@@ -148,7 +170,9 @@
   animation: shimmer 3s linear infinite;
 }
 ```
+
 **Features:**
+
 - Moving gradient text
 - Continuous animation
 - Brand colors
@@ -156,11 +180,14 @@
 ## Scroll Effects
 
 ### 1. Scroll Reveal
+
 ```css
 .scroll-reveal {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .scroll-reveal.revealed {
@@ -168,7 +195,9 @@
   transform: translateY(0);
 }
 ```
+
 **Usage:** Triggered by JavaScript on scroll
 **Features:**
+
 - Fade in on scroll
 - Slide up animation
