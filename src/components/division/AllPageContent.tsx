@@ -304,14 +304,14 @@ const AllPageContent = ({ data }: IPropsType) => {
                       className="grid grid-cols-1 last:overflow-hidden lg:grid-cols-2"
                     >
                       <div
-                        className={` ${ind % 2 !== 0 ? 'bg-leftCard col-start-2 border-r-2 border-r-red pl-2 lg:-ml-5' : 'bg-rightCard col-start-1 flex-row-reverse border-l-2 border-l-red pr-2 lg:ml-5'} flex w-full items-start gap-4 rounded-xl p-6 shadow-devCardShadow backdrop-blur-xl scrollbar-hide md:max-w-full lg:min-w-[400px] lg:min-w-full`}
+                        className={` ${ind % 2 !== 0 ? 'col-start-2 border-r-2 border-r-red bg-leftCard pl-2 lg:-ml-5' : 'col-start-1 flex-row-reverse border-l-2 border-l-red bg-rightCard pr-2 lg:ml-5'} flex w-full items-start gap-4 rounded-xl p-6 shadow-devCardShadow backdrop-blur-xl scrollbar-hide md:max-w-full lg:min-w-[400px] lg:min-w-full`}
                       >
                         <div className={`relative grid flex-col items-center`}>
                           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-black-900-alpha text-white backdrop-blur-md">
                             {ind + 1}
                           </div>
                           <div
-                            className={`bg-gradientLine absolute left-1/2 top-full -z-[1] -mt-2 h-full min-h-[150px] w-[1.5px] translate-x-1/2 rounded-2xl opacity-80 backdrop-blur-sm ${ind % 2 !== 0 ? 'rotate-6' : '-rotate-6'}`}
+                            className={`absolute left-1/2 top-full -z-[1] -mt-2 h-full min-h-[150px] w-[1.5px] translate-x-1/2 rounded-2xl bg-gradientLine opacity-80 backdrop-blur-sm ${ind % 2 !== 0 ? 'rotate-6' : '-rotate-6'}`}
                           ></div>
                         </div>
                         <div className="flex flex-col gap-3">
@@ -453,7 +453,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                 className={`grid grid-cols-1 bg-white/80 shadow-devCardShadow xl:grid-cols-7 ${index % 2 === 0 ? 'rounded-br-[35px] rounded-tl-[35px]' : 'rounded-br-[35px] rounded-tl-[35px] xl:!rounded-br-[0px] xl:rounded-bl-[35px] xl:rounded-tl-[0px] xl:rounded-tr-[35px]'}`}
               >
                 <div
-                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-[#f38f01]/40' : 'rounded-tl-[35px] bg-[#05ADE1]/40 xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
+                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-[#E94E2569]' : 'rounded-tl-[35px] bg-[#02ADE13D] xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
                 >
                   <div className="flex h-full items-center justify-start gap-[15px]">
                     <div
