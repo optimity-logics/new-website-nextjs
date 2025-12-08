@@ -1850,7 +1850,7 @@ export const menuData = [
     menuTitle: 'Hire',
     megaMenuItem: [
       {
-        title: 'data & ai',
+        title: 'Data & AI',
         mainTitle: 'Data & AI',
         backgroundColor: '#73BDF2',
         img: dataAi,
@@ -1870,7 +1870,7 @@ export const menuData = [
         ],
       },
       {
-        title: 'Mobile App',
+        title: 'Mobile',
         mainTitle: 'Mobile Developer',
         backgroundColor: '#FFCABC',
         img: mobile,
