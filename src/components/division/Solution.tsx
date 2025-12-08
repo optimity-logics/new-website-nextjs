@@ -4,13 +4,13 @@ import Container from '../ui/Container';
 import HeroSectionHeading from '../ui/HeroSectionHeading';
 import Image from 'next/image';
 import SectionHeader from '../ui/SectionHeader';
-import { homePageData } from '../utils/Constant';
 import OurWorkCard from '../common/OurWorkCard';
 import Link from 'next/link';
 import AnimatedArrow from '../common/AnimatedArrow';
 import ProjectCard from '../common/ProjectCard';
 import Faqs from '../homePage/Faqs';
 import { motion } from 'framer-motion';
+import { homePageData } from '../utils/page-data/homePage';
 
 const Solution = () => {
   const healthcareData = {

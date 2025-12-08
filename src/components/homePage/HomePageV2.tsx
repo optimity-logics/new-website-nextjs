@@ -12,7 +12,7 @@ import mobileRobot from '../../../public/webp/homePagev2/mobile-robot.webp';
 import LogoAnimation from './LogoAnimation';
 import phone from '../../../public/svg/footer/phone.svg';
 import email from '../../../public/svg/footer/mail.svg';
-import { homePageData, logoIcons } from '../utils/Constant';
+import { logoIcons } from '../utils/Constant';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -32,6 +32,7 @@ import OurWorkCard from '../common/OurWorkCard';
 import Button from '../ui/Button';
 import ClientTestimonial from '../ui/ClientTestimonial';
 import ProjectInquiry from '../contact/ProjectInquiry';
+import { homePageData } from '../utils/page-data/homePage';
 
 const HighlitedDescription = styled.h2``;
 const HomePageV2 = () => {

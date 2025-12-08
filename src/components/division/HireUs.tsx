@@ -130,7 +130,7 @@ const HireUs = () => {
                   boxShadow:
                     '0px 13px 5px rgba(0, 0, 0, 0.03), 0px 7px 4px rgba(0, 0, 0, 0.09), 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18)',
                 }}
-                className="flex items-center justify-center rounded-full bg-no-repeat px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-white"
+                className="flex items-center justify-center rounded-full bg-no-repeat px-2.5 py-1 font-opt text-xl font-medium capitalize leading-6 text-white lg:px-4 lg:py-2"
               >
                 full time
               </span>
@@ -155,7 +155,7 @@ const HireUs = () => {
                   boxShadow:
                     '0px 13px 5px rgba(0, 0, 0, 0.03), 0px 7px 4px rgba(0, 0, 0, 0.09), 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18)',
                 }}
-                className="flex items-center justify-center rounded-full bg-no-repeat px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-white"
+                className="flex items-center justify-center rounded-full bg-no-repeat px-2.5 py-1 font-opt text-xl font-medium capitalize leading-6 text-white lg:px-4 lg:py-2"
               >
                 Part time
               </span>
@@ -180,7 +180,7 @@ const HireUs = () => {
                   boxShadow:
                     '0px 13px 5px rgba(0, 0, 0, 0.03), 0px 7px 4px rgba(0, 0, 0, 0.09), 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18)',
                 }}
-                className="flex items-center justify-center rounded-full bg-no-repeat px-4 py-2 font-opt text-xl font-medium capitalize leading-6 text-white"
+                className="flex items-center justify-center rounded-full bg-no-repeat px-2.5 py-1 font-opt text-xl font-medium capitalize leading-6 text-white lg:px-4 lg:py-2"
               >
                 hourly basis
               </span>
@@ -296,12 +296,12 @@ const HireUs = () => {
               advantagesCard.map((item, i) => (
                 <div
                   key={i}
-                  className="flex w-full min-w-[300px] flex-col gap-3 rounded-2xl bg-white/10 p-[30px] backdrop-blur-md sm:min-w-[550px]"
+                  className="bg flex w-full min-w-[300px] flex-col gap-3 rounded-2xl bg-successFulStepCard p-[30px] sm:min-w-[550px]"
                 >
                   <h5 className="font-opt text-xl font-medium leading-6 text-white">
                     {item?.title}
                   </h5>
-                  <p className="line-clamp-6 font-opt text-base font-normal leading-5 text-white/45">
+                  <p className="line-clamp-6 font-opt text-base font-normal leading-5 text-white/70">
                     {item?.description}
                   </p>
                 </div>

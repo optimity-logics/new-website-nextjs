@@ -1,38 +1,36 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 import { menuData } from '@/components/utils/Constant';
+import Image from 'next/image';
 import phone from '../../../../public/svg/call.svg';
 import mail from '../../../../public/svg/mail.svg';
 
 export default function MegaMenu() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [activeCategory, setActiveCategory] = useState<number>(0);
   const [isHovering, setIsHovering] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const megaMenuRef = useRef<HTMLDivElement | null>(null);
 
-  const handleMouseEnter = (menuTitle: string) => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
+  const handleMenuEnter = (menuTitle: string) => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setActiveMenu(menuTitle);
+    setActiveCategory(0);
     setIsHovering(true);
   };
 
-  const handleMouseLeave = () => {
+  const handleMenuLeave = () => {
     setIsHovering(false);
     timeoutRef.current = setTimeout(() => {
       setActiveMenu(null);
+      setActiveCategory(0);
     }, 150);
   };
 
   const handleMegaMenuEnter = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setIsHovering(true);
   };
 
@@ -40,84 +38,89 @@ export default function MegaMenu() {
     setIsHovering(false);
     timeoutRef.current = setTimeout(() => {
       setActiveMenu(null);
+      setActiveCategory(0);
     }, 150);
   };
+  const [small, setSmall] = useState(false);
 
   useEffect(() => {
+    // Function to check scroll position
+    const handleScroll = () => {
+      setSmall(window.scrollY > 0);
+    };
+
+    // Set initial value
+    handleScroll();
+
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup on unmount
     return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
+  const activeMenuData = menuData.find((menu) => menu.menuTitle === activeMenu);
+
   const containerVariants = {
-    hidden: {
-      opacity: 0,
-      y: -10,
-      scale: 0.95,
-    },
+    hidden: { opacity: 0, y: -10, scale: 0.98 },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: {
-        duration: 0.2,
-        ease: [0.04, 0.62, 0.23, 0.98],
-        staggerChildren: 0.05,
-      },
+      transition: { duration: 0.2, ease: [0.04, 0.62, 0.23, 0.98] },
     },
-    exit: {
-      opacity: 0,
-      y: -10,
-      scale: 0.95,
-      transition: {
-        duration: 0.15,
-        ease: [0.04, 0.62, 0.23, 0.98],
-      },
-    },
+    exit: { opacity: 0, y: -10, scale: 0.98, transition: { duration: 0.15 } },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: {
+    hidden: { opacity: 0, x: 30 }, // start from right
+    visible: (index: number) => ({
       opacity: 1,
-      y: 0,
-      transition: { duration: 0.2 },
-    },
+      x: 0,
+      transition: {
+        delay: index * 0.03, // stagger effect
+        duration: 0.25,
+        ease: 'easeOut',
+      },
+    }),
   };
-
-  const activeMenuData = menuData.find((menu) => menu.menuTitle === activeMenu);
 
   return (
     <nav className="relative hidden xl:block">
       <ul className="flex items-center gap-8">
-        {menuData.map((item, index) => (
+        {menuData.map((item) => (
           <li
-            key={index}
-            className="relative"
+            key={item.menuTitle}
+            className="relative py-4"
             onMouseEnter={() =>
-              item.megaMenuItem.length > 0 && handleMouseEnter(item.menuTitle)
+              item.megaMenuItem.length > 0 && handleMenuEnter(item.menuTitle)
             }
-            onMouseLeave={handleMouseLeave}
+            onMouseLeave={handleMenuLeave}
           >
             {item.megaMenuItem.length === 0 ? (
               <Link
                 href={`/${item.menuTitle.toLowerCase().replace(/s$/, '')}`}
-                className={`cursor-pointer py-7 font-opt font-medium leading-6 tracking-[0.5px] text-optDesc transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''} `}
+                className={`py-4 font-opt text-base font-medium transition-colors duration-200 ${
+                  activeMenu === item.menuTitle
+                    ? 'text-lightBlue'
+                    : 'text-optDesc hover:text-lightBlue'
+                }`}
               >
-                <span className="whitespace-pre text-base tracking-wide">
-                  {item.menuTitle}
-                </span>
+                {item.menuTitle}
               </Link>
             ) : (
-              <div
-                className={`cursor-pointer py-7 font-opt font-medium leading-6 tracking-[0.5px] text-optDesc transition-all duration-300 hover:text-lightBlue lg:py-5 ${activeMenu === item.menuTitle && isHovering ? 'text-lightBlue' : ''}`}
+              <span
+                className={`cursor-pointer py-4 font-opt text-base font-medium transition-colors duration-200 ${
+                  activeMenu === item.menuTitle && isHovering
+                    ? 'text-lightBlue'
+                    : 'text-optDesc hover:text-lightBlue'
+                }`}
               >
-                <span className="text-base tracking-wide">
-                  {item.menuTitle}
-                </span>
-              </div>
+                {item.menuTitle}
+              </span>
             )}
           </li>
         ))}
@@ -128,124 +131,132 @@ export default function MegaMenu() {
           activeMenuData &&
           activeMenuData.megaMenuItem.length > 0 && (
             <motion.div
-              ref={megaMenuRef}
               variants={containerVariants}
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="absolute left-0 top-full z-50 mt-2 w-max"
+              className="absolute left-0 top-full z-50"
               onMouseEnter={handleMegaMenuEnter}
               onMouseLeave={handleMegaMenuLeave}
             >
-              <div className="overflow-hidden rounded-2xl bg-white shadow-2xl">
-                <div className="space-y-3 p-5">
-                  <div className="flex flex-wrap justify-between gap-5 xl:flex-nowrap">
-                    {activeMenuData.megaMenuItem.map((category, index) => (
-                      <motion.div
-                        key={index}
-                        variants={itemVariants}
-                        className="flex flex-col gap-6"
-                      >
-                        <div
-                          className="flex items-center gap-3 rounded-[15px] py-2.5 pl-4 pr-5"
-                          style={{
-                            backgroundColor: category.backgroundColor,
-                          }}
-                        >
-                          <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white">
-                            <Image
-                              src={category.img}
-                              alt={category.img}
-                              width={24}
-                              height={24}
-                            />
-                          </div>
-                          <h4 className="whitespace-pre font-opt text-base font-medium leading-6 text-iconSubtle">
-                            {category.title}
-                          </h4>
-                        </div>
-                        <ul className="flex flex-col gap-4">
-                          {category.items.map((items, idx) => (
-                            <li
-                              key={idx}
-                              onClick={() => setActiveMenu(null)}
-                              className="group cursor-pointer pl-2 font-opt text-[15px] font-normal leading-[18px] text-primarySubtle transition-all duration-300 hover:text-primary"
+              <div
+                className={` ${small ? 'rounded-b-2xl' : 'rounded-2xl'} shadow-2xl" flex w-full overflow-hidden border border-[#ebecf5] bg-[#f7f8fb]`}
+              >
+                {/* Left Sidebar - Category Tabs */}
+                <div className="min-w-[200px] border-r border-[#ebecf5] bg-white py-3">
+                  {activeMenuData.megaMenuItem.map((category, index) => (
+                    <button
+                      onMouseEnter={() => setActiveCategory(index)}
+                      style={
+                        {
+                          '--cat-bg': category.backgroundColor,
+                          '--cat-hover-bg': category.backgroundColor,
+                        } as React.CSSProperties
+                      }
+                      key={index}
+                      className={`relative w-full max-w-[350px] border-b border-b-[#ebecf5] px-6 py-3.5 text-left font-opt text-[15px] font-medium transition-all duration-200 last:border-b-0 ${
+                        activeCategory === index
+                          ? 'bg-[var(--cat-bg)] text-white'
+                          : 'text-iconSubtle hover:bg-[var(--cat-hover-bg)]'
+                      } `}
+                    >
+                      {category.title}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Right Panel - Services Grid */}
+                <div className="min-w-[550px] flex-1 p-6">
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={activeCategory}
+                      initial={{ opacity: 0, x: 40 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -40 }}
+                      transition={{ duration: 0.25, ease: 'easeIn' }}
+                    >
+                      <h3 className="mb-5 border-b border-b-[#ebecf5] pb-3 font-opt text-lg font-semibold text-primary">
+                        {activeMenuData.megaMenuItem[activeCategory]?.mainTitle}
+                      </h3>
+
+                      <div className="grid grid-cols-2 gap-4">
+                        {activeMenuData.megaMenuItem[activeCategory]?.items.map(
+                          (item, index) => (
+                            <motion.div
+                              key={item.techName}
+                              custom={index}
+                              variants={itemVariants}
+                              initial="hidden"
+                              animate="visible"
                             >
                               <Link
-                                href={items.techLink}
-                                className="flex items-center gap-2 whitespace-pre"
+                                href={item.techLink}
+                                onClick={() => setActiveMenu(null)}
+                                className="group flex items-center font-opt text-[15px] font-normal text-primary transition-colors duration-200 hover:text-lightBlue"
                               >
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="15"
-                                  height="12"
-                                  viewBox="0 0 12 18"
-                                  fill="currentColor"
-                                  className="transition-all duration-300 group-hover:text-primary"
-                                >
-                                  <path d="M1.51749 0.782258C1.98612 0.313629 2.74592 0.313629 3.21455 0.782258L9.96455 7.53226C10.4332 8.00089 10.4332 8.76069 9.96455 9.22932L3.21455 15.9793C2.74592 16.4479 1.98612 16.4479 1.51749 15.9793C1.04886 15.5106 1.04886 14.7509 1.51749 14.2822L7.41896 8.38079L1.51749 2.47932C1.04886 2.01069 1.04886 1.25089 1.51749 0.782258Z" />
-                                </svg>
-                                {items.techName}
+                                <span className="transition-transform duration-200 group-hover:translate-x-1">
+                                  {item.techName}
+                                </span>
                               </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </motion.div>
-                    ))}
+                            </motion.div>
+                          ),
+                        )}
+                      </div>
+                    </motion.div>
+                  </AnimatePresence>
+                </div>
+                <div className="min-w-[270px] border-l border-[#ebecf5] bg-white px-3 py-4">
+                  <div className="flex flex-col gap-5">
+                    <Link
+                      href="tel: +91 635 301 5499"
+                      className="flex items-center gap-[15px]"
+                    >
+                      <div className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-lightBlue">
+                        <Image src={phone} alt="" width={18} height={18} />
+                      </div>
+                      <div className="flex flex-col gap-2">
+                        <h6 className="font-opt text-sm font-medium leading-4 text-primary">
+                          India
+                        </h6>
+                        <span className="font-opt text-sm font-normal lowercase leading-4 text-gray">
+                          +91 635 301 5499
+                        </span>
+                      </div>
+                    </Link>
+                    <Link
+                      href="mailto:hr@optimitylogics.com"
+                      className="flex items-center gap-[15px]"
+                    >
+                      <div className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-lightBlue">
+                        <Image src={mail} alt="" width={18} height={18} />
+                      </div>
+                      <div className="flex flex-col gap-2">
+                        <h6 className="font-opt text-sm font-medium leading-4 text-primary">
+                          hr enquiries
+                        </h6>
+                        <span className="font-opt text-[15px] font-normal lowercase leading-4 text-gray">
+                          {' '}
+                          hr@optimitylogics.com
+                        </span>
+                      </div>
+                    </Link>
+                    <Link
+                      href="mailto:info@optimitylogics.com"
+                      className="flex items-center gap-[15px]"
+                    >
+                      <div className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-lightBlue">
+                        <Image src={mail} alt="" width={18} height={18} />
+                      </div>
+                      <div className="flex flex-col gap-2">
+                        <h6 className="font-opt text-sm font-medium leading-4 text-primary">
+                          sales enquiries
+                        </h6>
+                        <span className="font-opt text-[15px] font-normal lowercase leading-4 text-gray">
+                          info@optimitylogics.com
+                        </span>
+                      </div>
+                    </Link>
                   </div>
-                  <motion.div variants={itemVariants}>
-                    <div className="flex items-center justify-evenly gap-5 border-t border-t-[#f0f0f0] px-2 pt-5">
-                      <Link
-                        href="tel: +91 635 301 5499"
-                        className="flex items-center gap-[15px]"
-                      >
-                        <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightBlue">
-                          <Image src={phone} alt="" width={24} height={24} />
-                        </div>
-                        <div className="flex flex-col gap-2">
-                          <h6 className="font-opt text-sm font-medium leading-4 text-primary">
-                            India
-                          </h6>
-                          <span className="font-opt text-sm font-normal lowercase leading-4 text-gray">
-                            +91 635 301 5499
-                          </span>
-                        </div>
-                      </Link>
-                      <Link
-                        href="mailto:hr@optimitylogics.com"
-                        className="flex items-center gap-[15px]"
-                      >
-                        <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightBlue">
-                          <Image src={mail} alt="" width={24} height={24} />
-                        </div>
-                        <div className="flex flex-col gap-2">
-                          <h6 className="font-opt text-sm font-medium leading-4 text-primary">
-                            hr enquiries
-                          </h6>
-                          <span className="font-opt text-[15px] font-normal lowercase leading-4 text-gray">
-                            {' '}
-                            hr@optimitylogics.com
-                          </span>
-                        </div>
-                      </Link>
-                      <Link
-                        href="mailto:info@optimitylogics.com"
-                        className="flex items-center gap-[15px]"
-                      >
-                        <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-lightBlue">
-                          <Image src={mail} alt="" width={24} height={24} />
-                        </div>
-                        <div className="flex flex-col gap-2">
-                          <h6 className="font-opt text-sm font-medium leading-4 text-primary">
-                            sales enquiries
-                          </h6>
-                          <span className="font-opt text-[15px] font-normal lowercase leading-4 text-gray">
-                            info@optimitylogics.com
-                          </span>
-                        </div>
-                      </Link>
-                    </div>
-                  </motion.div>
                 </div>
               </div>
             </motion.div>
