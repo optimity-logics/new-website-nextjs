@@ -1,7 +1,7 @@
 'use client';
 import Container from '@/components/ui/Container';
 import React, { useEffect, useState } from 'react';
-import { aboutUsPage, homePageData } from '@/components/utils/Constant';
+import { aboutUsPage } from '@/components/utils/Constant';
 import heroBgRight from '../../../public/webp/about-us/about-shape.webp';
 import AnimatedArrow from '@/components/common/AnimatedArrow';
 import Link from 'next/link';
@@ -17,6 +17,7 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import OurWorkCard from '@/components/common/OurWorkCard';
 import ClientTestimonial from '@/components/ui/ClientTestimonial';
 import ProcessCard from '@/components/common/ProcessCard';
+import { homePageData } from '@/components/utils/page-data/homePage';
 const AboutUs = () => {
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
 
@@ -51,23 +52,31 @@ const AboutUs = () => {
             link={aboutUsPage?.aboutUsBtnLink}
             className="relative z-30 flex w-full max-w-full flex-col gap-7 md:max-w-[700px]"
           />
-
-          <div className="relative">
-            <Image
-              src={heroBgRight}
-              alt=""
-              width={500}
-              height={700}
-              className="absolute -top-24 right-0 z-10 translate-x-1/2 md:-left-40 md:-rotate-6"
-            />
-            <Image
-              src={aboutUsPage?.hero_image}
-              alt="hero-img"
-              width={985}
-              height={985}
-              className="relative z-20 h-auto xl:max-w-[600px]"
-            />
-          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              ease: 'easeIn',
+            }}
+          >
+            <div className="relative">
+              <Image
+                src={heroBgRight}
+                alt=""
+                width={500}
+                height={700}
+                className="absolute -top-24 right-0 z-10 translate-x-1/2 md:-left-40 md:-rotate-6"
+              />
+              <Image
+                src={aboutUsPage?.hero_image}
+                alt="hero-img"
+                width={985}
+                height={985}
+                className="relative z-20 h-auto xl:max-w-[600px]"
+              />
+            </div>
+          </motion.div>
         </Container>
       </div>
       <Container className="relative z-30 mb-[60px] mt-14 w-full max-w-[1680px] xl:-mt-14 3xl:mb-[100px]">
@@ -296,13 +305,24 @@ const AboutUs = () => {
               </motion.div>
             ))}
           </div>
-          <div className="relative aspect-[6/3] w-full">
-            <Image
-              src={aboutUsPage?.ourProcessImg}
-              alt="process"
-              fill
-              className="object-contain"
-            />
+          <div className="relative mx-auto aspect-[6/4] w-full max-w-[450px]">
+            <motion.div
+              key={activeIndex} // 👈 This re-mounts the component whenever index changes
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                ease: 'easeIn',
+              }}
+              className="h-full w-full"
+            >
+              <Image
+                src={aboutUsPage?.ourProcessList?.[activeIndex]?.ourProcessImg}
+                alt="process"
+                fill
+                className="object-contain"
+              />
+            </motion.div>
           </div>
         </div>
       </Container>
@@ -322,12 +342,12 @@ const AboutUs = () => {
               aboutUsPage?.whyChooseUsList.map((item, i) => (
                 <div
                   key={i}
-                  className="flex flex-col gap-4 rounded-xl bg-[#f7f9fa] p-6"
+                  className="flex flex-col gap-4 rounded-xl bg-successFulStepCard p-6"
                 >
-                  <h3 className="font-opt text-xl font-medium leading-6 text-black">
+                  <h3 className="font-opt text-xl font-medium leading-6 text-white">
                     {item?.title}
                   </h3>
-                  <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                  <p className="font-opt text-base font-normal leading-5 text-white/80">
                     {item?.description}
                   </p>
                 </div>

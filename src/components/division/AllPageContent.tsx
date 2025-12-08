@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Container from '../ui/Container';
 import checkMark from '../../../public/svg/check-mark.svg';
 import Link from 'next/link';
-import { homePageData, logoIcons } from '../utils/Constant';
+import { logoIcons } from '../utils/Constant';
 import 'react-international-phone/style.css';
 import AnimatedArrow from '../common/AnimatedArrow';
 import Image from 'next/image';
@@ -17,6 +17,7 @@ import ProjectCard from '../common/ProjectCard';
 import Button from '../ui/Button';
 import Contact from '../ui/Contact';
 import { motion } from 'framer-motion';
+import { homePageData } from '../utils/page-data/homePage';
 
 interface IPropsType {
   data: IPropsDataTypes;
@@ -89,7 +90,7 @@ const AllPageContent = ({ data }: IPropsType) => {
 
   return (
     <>
-      <div className="overflow-hidden bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
+      <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
         <div className="flex h-full min-h-screen items-center justify-center">
           <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-20">
             <HeroSectionHeading
@@ -190,7 +191,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             data?.development?.developmentServices.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-4 rounded-[15px] p-5 shadow-devCardShadow md:p-[30px]"
+                className="flex flex-col gap-4 rounded-[15px] bg-[#f5f5f5] p-5 shadow-devCardShadow md:p-[30px]"
               >
                 <h5 className="font-opt text-xl font-medium leading-6 text-primary">
                   {item?.title}
@@ -310,7 +311,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                             {ind + 1}
                           </div>
                           <div
-                            className={`absolute left-1/2 top-full -z-[1] -mt-2 h-full min-h-[150px] w-[1.5px] translate-x-1/2 rounded-2xl bg-gradientLine opacity-80 backdrop-blur-sm ${ind % 2 !== 0 ? 'rotate-6' : '-rotate-6'}`}
+                            className={`absolute left-1/2 top-full -z-[1] -mt-2 h-full min-h-[150px] w-[1.5px] translate-x-1/2 rounded-2xl bg-gradientLine opacity-80 backdrop-blur-sm`}
                           ></div>
                         </div>
                         <div className="flex flex-col gap-3">
@@ -444,6 +445,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           headingStyle="text-center"
           descriptionStyle="text-center"
         />
+        {/* #bdf4dc #f4bdc8 */}
         <div className="flex flex-col gap-5 3xl:gap-2">
           {data?.technologyWeUse?.technologyServices &&
             data?.technologyWeUse?.technologyServices.map((item, index) => (
@@ -452,12 +454,11 @@ const AllPageContent = ({ data }: IPropsType) => {
                 className={`grid grid-cols-1 bg-white/80 shadow-devCardShadow xl:grid-cols-7 ${index % 2 === 0 ? 'rounded-br-[35px] rounded-tl-[35px]' : 'rounded-br-[35px] rounded-tl-[35px] xl:!rounded-br-[0px] xl:rounded-bl-[35px] xl:rounded-tl-[0px] xl:rounded-tr-[35px]'}`}
               >
                 <div
-                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-[#E94E2569]' : 'rounded-tl-[35px] bg-[#02ADE13D] xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
+                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-[#bdf4dc]' : 'rounded-tl-[35px] bg-[#f4bdc8] xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
                 >
                   <div className="flex h-full items-center justify-start gap-[15px]">
                     <div
-                      className="flex h-14 w-14 items-center justify-center rounded-full 3xl:h-[50px] 3xl:w-[50px]"
-                      style={{ backgroundColor: item?.bgColor }}
+                      className={`flex h-14 w-14 items-center justify-center rounded-full 3xl:h-[50px] 3xl:w-[50px] ${index % 2 !== 0 ? 'bg-[#bdf4dc]' : 'bg-[#f4bdc8]'}`}
                     >
                       <Image
                         src={item?.servicesImg}
@@ -466,7 +467,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                         height={31}
                       />
                     </div>
-                    <span className="font-opt text-xl font-medium leading-6 text-optDesc">
+                    <span className="font-opt text-xl font-medium leading-6 text-primary">
                       {item?.servicesName}
                     </span>
                   </div>

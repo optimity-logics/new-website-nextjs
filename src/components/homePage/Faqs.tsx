@@ -1,9 +1,9 @@
 'use client';
 import SectionHeading from '../ui/HeroSectionHeading';
-import { homePageData } from '../utils/Constant';
 import FaqsAccordion from '../ui/FaqsAccordion';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
+import { homePageData } from '../utils/page-data/homePage';
 
 const Faqs = () => {
   return (

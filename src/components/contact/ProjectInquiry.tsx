@@ -3,10 +3,10 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Button from '../ui/Button';
-import { homePageData } from '../utils/Constant';
 import GoogleCaptcha from '../common/GoogleCaptcha';
 import { useRef, useState } from 'react';
 import { toast } from 'react-toastify';
+import { homePageData } from '../utils/page-data/homePage';
 
 const ProjectInquiry = () => {
   const captchaRef = useRef<{ reset: () => void }>(null);

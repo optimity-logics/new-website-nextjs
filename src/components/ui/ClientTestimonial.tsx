@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { homePageData } from '../utils/Constant';
 import Image from 'next/image';
 import Button from './Button';
+import { homePageData } from '../utils/page-data/homePage';
 
 type ClientTestimonialProps = {
   isDark?: boolean;
@@ -107,14 +107,24 @@ const ClientTestimonial = ({ isDark }: ClientTestimonialProps) => {
               className="group relative row-start-3 overflow-hidden md:col-start-2 md:row-span-2 md:row-start-4 xl:col-start-3 xl:row-start-2"
             >
               <div className="pointer-events-none absolute inset-0 left-1/2 top-0 z-40">
-                <div className="absolute bottom-1 h-[30vw] w-[30vw] scale-100 rounded-full border-1 border-white/100 transition-transform delay-0 duration-500 ease-out group-hover:scale-[0.95]"></div>
-                <div className="absolute bottom-1 h-[30vw] w-[30vw] scale-[1.1] rounded-full border-1 border-white/75 transition-transform delay-100 duration-500 ease-out group-hover:scale-[1.05]"></div>
-                <div className="absolute bottom-1 h-[30vw] w-[30vw] scale-[1.2] rounded-full border-1 border-white/50 transition-transform delay-200 duration-500 ease-out group-hover:scale-[1.15]"></div>
-                <div className="absolute bottom-1 h-[30vw] w-[30vw] scale-[1.3] rounded-full border-1 border-white/25 transition-transform delay-300 duration-500 ease-out group-hover:scale-[1.25]"></div>
-                <div className="absolute bottom-1 h-[30vw] w-[30vw] scale-[1.4] rounded-full border-1 border-white/10 transition-transform delay-500 duration-500 ease-out group-hover:scale-[1.35]"></div>
+                <div
+                  className={`absolute bottom-1 h-[30vw] w-[30vw] scale-100 rounded-full border-1 transition-transform delay-0 duration-500 ease-out group-hover:scale-[0.95] ${isDark ? 'border-white/100' : 'border-optDesc/80'}`}
+                ></div>
+                <div
+                  className={`absolute bottom-1 h-[30vw] w-[30vw] scale-[1.1] rounded-full border-1 transition-transform delay-100 duration-500 ease-out group-hover:scale-[1.05] ${isDark ? 'border-white/75' : 'border-optDesc/60'}`}
+                ></div>
+                <div
+                  className={`absolute bottom-1 h-[30vw] w-[30vw] scale-[1.2] rounded-full border-1 border-white/50 transition-transform delay-200 duration-500 ease-out group-hover:scale-[1.15] ${isDark ? 'border-white/50' : 'border-optDesc/50'}`}
+                ></div>
+                <div
+                  className={`absolute bottom-1 h-[30vw] w-[30vw] scale-[1.3] rounded-full border-1 border-white/25 transition-transform delay-300 duration-500 ease-out group-hover:scale-[1.25] ${isDark ? 'border-white/25' : 'border-optDesc/25'}`}
+                ></div>
+                <div
+                  className={`absolute bottom-1 h-[30vw] w-[30vw] scale-[1.4] rounded-full border-1 border-white/10 transition-transform delay-500 duration-500 ease-out group-hover:scale-[1.35] ${isDark ? 'border-white/10' : 'border-optDesc/10'}`}
+                ></div>
               </div>
               <div
-                className={`flex h-full flex-col justify-between gap-14 rounded-[17px] bg-white/10 p-5 backdrop-blur-lg md:px-[28px] md:py-[32px] ${!isDark ? 'shadow-lg' : ''}`}
+                className={`flex h-full flex-col justify-between gap-14 rounded-[17px] md:px-[28px] md:py-[32px] ${isDark ? 'bg-white/10 p-5 shadow-lg backdrop-blur-lg' : 'bg-[#F7F7F8]'}`}
               >
                 <p
                   className={`${isDark ? 'text-white' : 'text-optDesc'} font-opt text-2xl font-extrabold leading-8 md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]`}
@@ -157,7 +167,7 @@ const ClientTestimonial = ({ isDark }: ClientTestimonialProps) => {
                   }}
                 >
                   <div
-                    className={`h-full rounded-[17px] p-5 md:p-[25px] ${item?.id === 1 ? 'bg-white shadow-card' : 'bg-[#F7F7F8] shadow-custom'} flex flex-col justify-between gap-6`}
+                    className={`flex h-full flex-col justify-between gap-6 rounded-[17px] bg-[#F7F7F8] p-5 shadow-custom md:p-[25px]`}
                   >
                     <p className="line-clamp-6 font-opt text-sm font-normal text-optDesc">
                       {item?.message}

@@ -8,7 +8,12 @@ import nda from '../../../../../../public/svg/services/nda.svg';
 import hiringModal from '../../../../../../public/svg/services/hiring-models.svg';
 import refundPolicy from '../../../../../../public/svg/services/refund-policy.svg';
 import resource from '../../../../../../public/svg/services/resource.svg';
-
+import healthCare from '../../../../../../public/images/solution/healthCare.png';
+import finance from '../../../../../../public/images/solution/financ.png';
+import realEstateSolution from '../../../../../../public/images/solution/real-estate.png';
+import retail from '../../../../../../public/images/solution/retail.png';
+import educationSolution from '../../../../../../public/images/solution/education.png';
+import logistics from '../../../../../../public/images/solution/logistics.png';
 export const healthcareData: IPropsDataTypes = {
   HeroSectionData: {
     heading: `<span class="text-red">Flutter</span> App Development Company`,
@@ -17,7 +22,7 @@ export const healthcareData: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-
+    techImg: healthCare,
     btnName: `Let’s Connect`,
     btnLink: '',
   },
@@ -392,7 +397,7 @@ export const financeSolution: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: '',
+    techImg: finance,
     btnName: `Let’s Connect`,
     btnLink: '',
   },
@@ -767,7 +772,7 @@ export const realEstate: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: '',
+    techImg: realEstateSolution,
     btnName: `Let’s Connect`,
     btnLink: '',
   },
@@ -1142,7 +1147,7 @@ export const retailSolution: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: '',
+    techImg: retail,
     btnName: `Let’s Connect`,
     btnLink: '',
   },
@@ -1517,7 +1522,7 @@ export const education: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: '',
+    techImg: educationSolution,
     btnName: `Let’s Connect`,
     btnLink: '',
   },
@@ -1892,7 +1897,7 @@ export const logisticsAppDevelopment: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: '',
+    techImg: logistics,
     btnName: `Let’s Connect`,
     btnLink: '',
   },
