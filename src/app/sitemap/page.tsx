@@ -7,18 +7,55 @@ import AnimatedArrow from '@/components/common/AnimatedArrow';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { formatTechName } from '@/components/utils/helper/formatTechName';
+import { homePageData } from '@/components/utils/page-data/homePage';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const Sitemap = () => {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
   return (
     <>
       <div
-        className="bg-siteMap bg-cover bg-fixed bg-no-repeat"
-        style={{ backgroundSize: '100% 100%' }}
+        style={{
+          backgroundImage:
+            'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)',
+        }}
+        className="-mt-20"
       >
-        <Container className="py-16 md:py-24">
-          <HeroSectionHeading heading="Sitemap" />
-        </Container>
+        <div className="bg-aboutUsHeroBg bg-full bg-fixed bg-center bg-no-repeat">
+          <div className="flex h-full items-center justify-center lg:min-h-screen">
+            <Container className="relative h-full pb-14 pt-[150px] lg:py-[50px]">
+              <div className="flex w-full flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
+                <HeroSectionHeading
+                  badgeTitle="Site Map"
+                  heading={homePageData?.heroTitle}
+                  description={homePageData?.heroDescription}
+                  btnName={homePageData?.heroContactUsBtn}
+                  link={homePageData?.heroContactUsBtnLink}
+                />
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.8,
+                    ease: 'easeIn',
+                  }}
+                >
+                  <div className="relative z-30 mx-auto w-max">
+                    <Image
+                      src={'/webp/sitemap.webp'}
+                      alt="hero-img"
+                      width={550}
+                      height={450}
+                      priority
+                      className="max-w-[300px] lg:max-w-[350px] 4xl:max-w-max"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+            </Container>
+          </div>
+        </div>
       </div>
       <Container className="py-12 md:py-16 lg:py-20 4xl:py-[100px]">
         <div className="flex flex-col gap-10">

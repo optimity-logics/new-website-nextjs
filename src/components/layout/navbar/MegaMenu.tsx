@@ -140,10 +140,10 @@ export default function MegaMenu() {
               onMouseLeave={handleMegaMenuLeave}
             >
               <div
-                className={` ${small ? 'rounded-b-2xl' : 'rounded-2xl'} shadow-2xl" flex w-full overflow-hidden border border-[#ebecf5] bg-[#f7f8fb]`}
+                className={`${small ? 'mt-0' : 'mt-2'} flex w-full overflow-hidden rounded-b-2xl border border-[#ebecf5] bg-[#f7f8fb] shadow-2xl`}
               >
                 {/* Left Sidebar - Category Tabs */}
-                <div className="min-w-[140px] border-r border-[#ebecf5] bg-white py-3">
+                <div className="min-w-[120px] border-r border-[#ebecf5] bg-white py-3">
                   {activeMenuData.megaMenuItem.map((category, index) => (
                     <button
                       onMouseEnter={() => setActiveCategory(index)}

@@ -400,16 +400,17 @@ const HomePageV2 = () => {
                       data-parallax-group={isOddColumn ? 'odd' : 'even'}
                       key={index}
                     >
-                      <div className="parallax-card grid h-full w-full rounded-[20px] bg-cover p-[8px] transition-transform duration-100 ease-out grid-stack">
+                      <div className="parallax-card relative grid h-full w-full rounded-[20px] bg-cover p-[8px] transition-transform duration-100 ease-out grid-stack">
                         <Image
                           src={item?.techImg}
                           alt="technology"
                           width={254}
                           height={339}
                           loading="lazy"
-                          className="aspect-auto"
+                          className="aspect-auto rounded-xl"
                         />
-                        <span className="mt-auto p-[14px] font-opt text-[20px] font-medium leading-[24px] text-white">
+                        <div className="absolute inset-0 rounded-xl bg-techCardGradient"></div>
+                        <span className="relative z-30 mt-auto p-[14px] font-opt text-[20px] font-medium leading-[24px] text-white">
                           {item?.techName}
                         </span>
                       </div>

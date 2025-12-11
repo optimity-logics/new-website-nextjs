@@ -3,23 +3,50 @@ import React from 'react';
 import Container from '@/components/ui/Container';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import { privacyPolicyData } from '@/components/utils/Constant';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const PrivacyPolicy = () => {
   return (
     <>
       <div
-        className="-mt-20 bg-opacity-80 bg-PrivacyPolicy bg-cover bg-fixed bg-no-repeat pt-20"
-        style={{ backgroundSize: '100% 100%' }}
+        style={{
+          backgroundImage:
+            'radial-gradient(154.86% 76.83% at 50% 22.26%,rgb(247 247 248/.4) 8.98%,#F7F7F8 45.99%)',
+        }}
+        className="-mt-20"
       >
-        <div className="mx-auto flex max-w-[1000px] flex-col items-center gap-4 px-4 py-20 sm:px-6 md:px-8 xl:px-10 3xl:px-0">
-          <HeroSectionHeading
-            heading={privacyPolicyData?.title}
-            badgeTitle={privacyPolicyData?.title}
-            className="items-center"
-          />
-          <span className="mt-2 font-opt text-base font-normal leading-5 text-optDesc">
-            Last Updated : {privacyPolicyData?.lastUpdated}
-          </span>
+        <div className="bg-aboutUsHeroBg bg-full bg-fixed bg-center bg-no-repeat">
+          <div className="flex h-full items-center justify-center lg:min-h-screen">
+            <Container className="relative h-full pb-14 pt-[150px] lg:py-[50px]">
+              <div className="flex w-full flex-col justify-between gap-10 lg:flex-row xl:items-center 4xl:gap-[60px]">
+                <HeroSectionHeading
+                  badgeTitle="Privacy Policy"
+                  heading={privacyPolicyData?.title}
+                  description={`Last Updated : ${privacyPolicyData?.lastUpdated}`}
+                />
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.8,
+                    ease: 'easeIn',
+                  }}
+                >
+                  <div className="relative z-30 mx-auto w-max">
+                    <Image
+                      src={'/webp/privacy.webp'}
+                      alt="hero-img"
+                      width={450}
+                      height={450}
+                      priority
+                      className="max-w-[300px] lg:max-w-[350px] 4xl:max-w-max"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+            </Container>
+          </div>
         </div>
       </div>
       <Container className="max-w-[920px] py-12 md:py-16 lg:py-20 4xl:py-[100px]">

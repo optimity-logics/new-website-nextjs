@@ -445,7 +445,6 @@ const AllPageContent = ({ data }: IPropsType) => {
           headingStyle="text-center"
           descriptionStyle="text-center"
         />
-        {/* #bdf4dc #f4bdc8 */}
         <div className="flex flex-col gap-5 3xl:gap-2">
           {data?.technologyWeUse?.technologyServices &&
             data?.technologyWeUse?.technologyServices.map((item, index) => (
@@ -454,11 +453,11 @@ const AllPageContent = ({ data }: IPropsType) => {
                 className={`grid grid-cols-1 bg-white/80 shadow-devCardShadow xl:grid-cols-7 ${index % 2 === 0 ? 'rounded-br-[35px] rounded-tl-[35px]' : 'rounded-br-[35px] rounded-tl-[35px] xl:!rounded-br-[0px] xl:rounded-bl-[35px] xl:rounded-tl-[0px] xl:rounded-tr-[35px]'}`}
               >
                 <div
-                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-[#bdf4dc]' : 'rounded-tl-[35px] bg-[#f4bdc8] xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
+                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-[#9CE3FE]' : 'rounded-tl-[35px] bg-[#f4bdc8] xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
                 >
                   <div className="flex h-full items-center justify-start gap-[15px]">
                     <div
-                      className={`flex h-14 w-14 items-center justify-center rounded-full 3xl:h-[50px] 3xl:w-[50px] ${index % 2 !== 0 ? 'bg-[#bdf4dc]' : 'bg-[#f4bdc8]'}`}
+                      className={`flex h-14 w-14 items-center justify-center rounded-full 3xl:h-[50px] 3xl:w-[50px] ${index % 2 !== 0 ? 'bg-[#9CE3FE]' : 'bg-[#f4bdc8]'}`}
                     >
                       <Image
                         src={item?.servicesImg}

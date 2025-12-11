@@ -92,6 +92,8 @@ export default {
         btnGradientBg: "url('/svg/about-us/ptwbg.svg')",
         successFulStepCard:
           'linear-gradient(-32.59deg, rgba(23, 49, 56, 0.82) 2.01%, rgba(20, 17, 45, 0.082) 96.5%)',
+        techCardGradient:
+          'linear-gradient(to right, rgba(18,18,18,0.7) 0%, rgba(18,18,18,0) 100%)',
       },
       fontFamily: {
         opt: ['var(--font-opt)'],

@@ -1,7 +1,7 @@
 'use client';
 import Container from '@/components/ui/Container';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
-import { aboutUsPage, jobOpenings } from '@/components/utils/Constant';
+import { jobOpenings } from '@/components/utils/Constant';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import first from '../../../public/webp/careers/1.webp';
@@ -16,6 +16,7 @@ import AnimatedArrow from '@/components/common/AnimatedArrow';
 import heroBgRight from '../../../public/svg/about-us/about-shape.svg';
 import heroCareer from '../../../public/webp/careers/career.webp';
 import SectionHeader from '@/components/ui/SectionHeader';
+import { aboutUsPage } from '@/components/utils/page-data/aboutUs';
 
 const Career = () => {
   const [isSelectPositions, setIsSelectPositions] =

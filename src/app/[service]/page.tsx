@@ -110,6 +110,9 @@ import { SEO } from '@/components/utils/seo/TitleAndDescription';
 import HireUs from '@/components/division/HireUs';
 import Solution from '@/components/division/Solution';
 import { tailwindData } from '@/components/utils/page-data/technology/trending/tailwindcss';
+import { IPropsDataTypes } from '@/components/type/type';
+import { IsolutionsPage } from '@/components/type/solution/solutionType';
+import { IHireUsPageType } from '@/components/type/hireUs/hireUsType';
 
 type Params = Promise<{ service: string }>;
 
@@ -294,7 +297,7 @@ const SubcategoryPage = async (props: { params: Params }) => {
   const pageData = mainService ? dataMap[mainService as ServiceKey] : null;
   if (!pageData) return <p>Data not found.</p>;
   if (service.startsWith('hire')) {
-    return <HireUs />;
+    return <HireUs data={pageData as IHireUsPageType} />;
   }
   if (
     [
@@ -314,9 +317,9 @@ const SubcategoryPage = async (props: { params: Params }) => {
       'enterprise',
     ].includes(mainService)
   ) {
-    return <Solution />;
+    return <Solution data={pageData as IsolutionsPage} />;
   }
-  return <AllPageContent data={pageData} />;
+  return <AllPageContent data={pageData as IPropsDataTypes} />;
 };
 
 export default SubcategoryPage;

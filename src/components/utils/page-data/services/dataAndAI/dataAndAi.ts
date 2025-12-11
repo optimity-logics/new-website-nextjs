@@ -15,381 +15,231 @@ import hiringModal from '../../../../../../public/svg/services/hiring-models.svg
 import refundPolicy from '../../../../../../public/svg/services/refund-policy.svg';
 import resource from '../../../../../../public/svg/services/resource.svg';
 
-export const dataScience: IPropsDataTypes = {
+export const dataScience: IPropsDataTypes & { page__type: string } = {
+  page__type: 'common',
+
   HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: 'Data Scienc',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
+    heading: `<span class="text-red">Data Science</span> Services Company`,
+    techName: 'Data Science',
+    description: `Optimity Logics is a top-notch Data Science services company in the USA offering robust
+cross-platform solutions. With a team of expert Data Scientists onboard, we provide end-to-end
+Data Science solutions aligned with your business objectives.`,
     techImg: DataScienceImg,
     btnName: `Let’s Connect`,
     btnLink: '',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    heading: `<span class="text-red">Our Data Science</span> Services Aligned with Your Needs`,
+    description: `Whether you're looking to implement AI, ML, or data analytics solutions, we’ve got you covered.
+As a leading Data Science company, we provide comprehensive services to support you through every stage
+of your data journey.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Custom Data Science Solutions',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Our experts deliver scalable, robust, and tailored Data Science solutions that drive business growth and improve decision-making.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Predictive Analytics',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We develop predictive models using machine learning algorithms to help you forecast trends and make data-driven decisions.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'AI & Machine Learning Models',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We design and deploy AI/ML models that optimize operations, automate processes, and deliver actionable insights.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Data Engineering & Management',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Our team ensures proper data collection, cleaning, integration, and management to build a strong data foundation.',
       },
     ],
   },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
 
+  WhyOptimityForDevelopment: {
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Data Science Services?`,
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'Expert Team',
         content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+          heading: 'Highly skilled and experienced data science team.',
+          desc: `Our team consists of expert data scientists, ML engineers, and analysts who deliver top-quality solutions.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'Expert ML Engineers',
+            'Data Analysts',
+            'AI Specialists',
+            'Consulting Experts',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Tailored Solutions',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'Solutions customized to your business needs.',
+          desc: `We understand your business and provide solutions that align with your goals and requirements.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'Custom ML Models',
+            'Predictive Analytics',
+            'Data Visualization',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'End-to-End Support',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'From strategy to deployment and support.',
+          desc: `We assist you through every stage of your data project, ensuring smooth implementation and measurable results.`,
+          points: [
+            'Strategy & Planning',
+            'Implementation',
+            'Monitoring & Support',
+          ],
         },
       },
     ],
   },
+
   OurWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
     {
       title: '50+',
-      description: 'Finished Projects',
+      description: 'Completed Projects',
       backGrouund: 'bg-card-2',
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
+
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Want to leverage <span class="text-red capitalize"> Data Science </span> for your business?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: ``,
   crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
+    { img: nda, title: '100% NDA-protected contract' },
+    { img: resource, title: 'Flexible resource allocation' },
+    { img: hiringModal, title: 'Flexible hiring models' },
+    { img: refundPolicy, title: 'Satisfaction & refund policy' },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    heading: `<span class="text-red"> Data Science </span> Development Process`,
+    description: `Our process ensures high-quality solutions for predictive analytics, ML, AI, and data engineering.`,
     developmentProcessStep: [
       {
         processHeading: 'Strategy and Planning',
         procesDataList: [
           {
-            title: 'Strategy and Planning',
+            title: 'Requirement Analysis',
             description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+              'We gather business requirements, define KPIs, and design the solution blueprint.',
           },
           {
-            title: 'Intuitive UX and UI Designing',
+            title: 'Data Collection & Preparation',
             description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
+              'Collecting, cleaning, and preparing data for analysis and model building.',
           },
           {
-            title: 'Development and Testing',
+            title: 'Model Development & Testing',
             description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
+              'Building ML/AI models, testing accuracy, and refining for optimal results.',
           },
           {
-            title: 'Deployment and Support',
+            title: 'Deployment & Monitoring',
             description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
+              'Deploying models into production with ongoing monitoring and support.',
           },
         ],
       },
     ],
   },
+
   exploreProjects: {
-    heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    heading: `Explore Data Science Projects`,
+    description: `Here’s an overview of some of our data science projects demonstrating real-world applications.`,
     buttonName: 'View All',
     buttonLink: '',
     deployProjects: [
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectImg: '/webp/project/ds-project1.webp',
+        projectName: 'Predictive Analytics Solution',
+        projectDescription: `Implemented ML models to forecast sales trends with 95% accuracy.`,
       },
       {
-        projectImg: '/webp/project/hts.webp',
-        projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/hopper.webp',
-        projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectImg: '/webp/project/ds-project2.webp',
+        projectName: 'Customer Segmentation',
+        projectDescription: `Developed clustering algorithms to segment customers for targeted marketing campaigns.`,
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use For <span class="text-red"> Data Science </span>`,
+    description: `We use advanced tools and technologies to deliver robust data-driven solutions.`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
+        servicesName: 'Programming',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: ['Python', 'R', 'SQL', 'Scala'],
       },
       {
         bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
+        servicesName: 'ML/AI Tools',
         servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        servicesItems: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras'],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['MySQL', 'PostgreSQL', 'MongoDB', 'Hadoop'],
       },
       {
         bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
+        servicesName: 'Visualization',
         servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
+        servicesItems: ['Tableau', 'PowerBI', 'Matplotlib', 'Seaborn'],
       },
       {
         bgColor: '#D0BFFF',
         servicesName: 'CI/CD Tools',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['Git', 'Jenkins', 'Docker', 'Kubernetes'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description:
+      'We’ve compiled answers to your most common questions about Data Science services.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'How much does a data science project cost?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Costs depend on project scope, complexity, and data requirements.',
       },
       {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+        question: 'Can you provide a free consultation?',
+        answer: 'Yes, we offer initial consultations to understand your needs.',
       },
       {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+        question: 'Which industries do you serve?',
+        answer: 'We serve healthcare, finance, retail, logistics, and more.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'How long does a typical project take?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Depending on the complexity, projects usually take 4–12 weeks.',
       },
     ],
   },
 };
+
 export const machineLerning: IPropsDataTypes = {
   HeroSectionData: {
     heading: `<span class="text-red">Flutter</span> App Development Company`,
