@@ -2,7 +2,7 @@
 import ProcessCard from '@/components/common/ProcessCard';
 import Container from '@/components/ui/Container';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { aboutUsPage } from '@/components/utils/Constant';
+import { aboutUsPage } from '@/components/utils/page-data/aboutUs';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';

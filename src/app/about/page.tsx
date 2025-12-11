@@ -1,7 +1,6 @@
 'use client';
 import Container from '@/components/ui/Container';
 import React, { useEffect, useState } from 'react';
-import { aboutUsPage } from '@/components/utils/Constant';
 import heroBgRight from '../../../public/webp/about-us/about-shape.webp';
 import AnimatedArrow from '@/components/common/AnimatedArrow';
 import Link from 'next/link';
@@ -18,6 +17,8 @@ import OurWorkCard from '@/components/common/OurWorkCard';
 import ClientTestimonial from '@/components/ui/ClientTestimonial';
 import ProcessCard from '@/components/common/ProcessCard';
 import { homePageData } from '@/components/utils/page-data/homePage';
+import { aboutUsPage } from '@/components/utils/page-data/aboutUs';
+
 const AboutUs = () => {
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
 
@@ -235,7 +236,8 @@ const AboutUs = () => {
                 aboutUsPage?.expertise.map((item, index) => (
                   <SwiperSlide
                     key={index}
-                    className="!flex !h-auto flex-col items-stretch gap-6 rounded-xl bg-white p-6 shadow-card"
+                    style={{ backgroundImage: `url(${item?.bg})` }}
+                    className="!flex !h-auto flex-col items-stretch gap-6 rounded-xl bg-white bg-contain bg-right-top bg-no-repeat p-6 shadow-card"
                   >
                     <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-white shadow-card">
                       <div className="relative aspect-[6/3] w-full">

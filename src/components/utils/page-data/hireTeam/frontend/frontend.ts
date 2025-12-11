@@ -1,3011 +1,963 @@
-import { IPropsDataTypes } from '@/components/type/type';
-import framework from '../../../../../../public/svg/technology/mobile/framework.svg';
-import tools from '../../../../../../public/svg/technology/mobile/tools-utilities.svg';
-import database from '../../../../../../public/svg/technology/mobile/database.svg';
-import plugin from '../../../../../../public/svg/technology/mobile/plugin.svg';
-import dns from '../../../../../../public/svg/technology/mobile/dns.svg';
-import nda from '../../../../../../public/svg/services/nda.svg';
-import hiringModal from '../../../../../../public/svg/services/hiring-models.svg';
-import refundPolicy from '../../../../../../public/svg/services/refund-policy.svg';
-import resource from '../../../../../../public/svg/services/resource.svg';
+import { IHireUsPageType } from '@/components/type/hireUs/hireUsType';
 
-export const hireReactDeveloper: IPropsDataTypes = {
-  HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
-    techImg: '',
-    btnName: `Let’s Connect`,
-    btnLink: '',
-  },
-  development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
-    developmentServices: [
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-    ],
-  },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
-
-    developmentServicesStep: [
-      {
-        id: 1,
-        title: 'Lorem Ipsum text dummy',
-        content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
-          points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-          ],
-        },
-      },
-      {
-        id: 2,
-        title: 'Another Lorem Ipsum text',
-        content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
-          points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
-          ],
-        },
-      },
-      {
-        id: 3,
-        title: 'Third Lorem Ipsum text',
-        content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
-        },
-      },
-    ],
-  },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
+export const hireReactDeveloper: IHireUsPageType = {
+  heroSection: {
+    heading:
+      "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
+    description:
+      "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
+    btnName: 'Let’s consult with our expert',
+    link: '/',
+    images: {
+      leftImage: '/webp/hire-us/hire-us.webp',
+      mainImage: '/webp/hire-us/hire-us-main.webp',
     },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
+  },
+
+  hireRequirementSection: {
+    heading: '<span class="text-red">Hire Based</span> on Your Requirement',
+    cards: [
+      {
+        label: 'full time',
+        timing: '8 hours / day 5 days / week',
+        image: '/webp/hire-us/full-time.webp',
+      },
+      {
+        label: 'Part time',
+        timing: '4 hours / day 5 days / week',
+        image: '/webp/hire-us/part-time.webp',
+      },
+      {
+        label: 'hourly basis',
+        timing: 'Starts with 40 hours Pay as you go',
+        image: '/webp/hire-us/hourly-base.webp',
+      },
+    ],
+  },
+
+  engagementModel: {
+    subHeading: 'Choose Your Ideal Engagement Model.',
+    heading: 'Flexible, Simple, and Efficient.',
+    button: 'Contact Us',
+    image: '/webp/hire-us/world-wide.webp',
+    link: '/',
+  },
+
+  howWeWork: {
+    heading: 'How we work',
+    description:
+      'Lorem Ipsum is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation.',
+    steps: [
+      {
+        title: 'Research & analysis',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Concept & sketch',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Design & branding',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Development & testing',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Delivery & maintenance',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+    ],
+  },
+
+  advantages: {
+    heading:
+      "<span class='text-red'>Advantages!</span> Things You Will Always Love to Have",
+    cards: [
+      {
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
+      },
+      {
+        title: 'Direct Communication',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
+      },
+      {
+        title: 'ZERO Upfront Investment',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
+      },
+      {
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
+      },
+    ],
+  },
+
+  marqueeOne: [
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
   ],
-  crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
-  crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
-  crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
-  ],
-  developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
-    developmentProcessStep: [
-      {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
 
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
-      },
-    ],
-  },
-  exploreProjects: {
-    heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
-    buttonName: 'View All',
-    buttonLink: '',
-    deployProjects: [
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/hts.webp',
-        projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/hopper.webp',
-        projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-    ],
-  },
-  technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
-    technologyServices: [
-      {
-        bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
-        servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
-      },
-      {
-        bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
-        servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
-      },
-      {
-        bgColor: '#9FE9F6',
-        servicesName: 'Databases',
-        servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
-      },
-      {
-        bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
-        servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
-      },
-      {
-        bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
-        servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
-      },
-    ],
-  },
-  Faqs: {
-    heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
-    faqs: [
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How do I start creating my own app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-    ],
-  },
+  marqueeTwo: [
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+  ],
 };
-export const hireNextDeveloper: IPropsDataTypes = {
-  HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
-    techImg: '',
-    btnName: `Let’s Connect`,
-    btnLink: '',
-  },
-  development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
-    developmentServices: [
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-    ],
-  },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
 
-    developmentServicesStep: [
-      {
-        id: 1,
-        title: 'Lorem Ipsum text dummy',
-        content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
-          points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-          ],
-        },
-      },
-      {
-        id: 2,
-        title: 'Another Lorem Ipsum text',
-        content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
-          points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
-          ],
-        },
-      },
-      {
-        id: 3,
-        title: 'Third Lorem Ipsum text',
-        content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
-        },
-      },
-    ],
+export const hireNextDeveloper: IHireUsPageType = {
+  heroSection: {
+    heading:
+      "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
+    description:
+      "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
+    btnName: 'Let’s consult with our expert',
+    link: '/',
+    images: {
+      leftImage: '/webp/hire-us/hire-us.webp',
+      mainImage: '/webp/hire-us/hire-us-main.webp',
+    },
   },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
-  crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
-  crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
-  crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
-  ],
-  developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
-    developmentProcessStep: [
-      {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
 
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+  hireRequirementSection: {
+    heading: '<span class="text-red">Hire Based</span> on Your Requirement',
+    cards: [
+      {
+        label: 'full time',
+        timing: '8 hours / day 5 days / week',
+        image: '/webp/hire-us/full-time.webp',
       },
       {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
+        label: 'Part time',
+        timing: '4 hours / day 5 days / week',
+        image: '/webp/hire-us/part-time.webp',
+      },
+      {
+        label: 'hourly basis',
+        timing: 'Starts with 40 hours Pay as you go',
+        image: '/webp/hire-us/hourly-base.webp',
       },
     ],
   },
-  exploreProjects: {
-    heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
-    buttonName: 'View All',
-    buttonLink: '',
-    deployProjects: [
+
+  engagementModel: {
+    subHeading: 'Choose Your Ideal Engagement Model.',
+    heading: 'Flexible, Simple, and Efficient.',
+    button: 'Contact Us',
+    image: '/webp/hire-us/world-wide.webp',
+    link: '/',
+  },
+
+  howWeWork: {
+    heading: 'How we work',
+    description:
+      'Lorem Ipsum is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation.',
+    steps: [
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Research & analysis',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        projectImg: '/webp/project/hts.webp',
-        projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Concept & sketch',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        projectImg: '/webp/project/hopper.webp',
-        projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Design & branding',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Development & testing',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Delivery & maintenance',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
     ],
   },
-  technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
-    technologyServices: [
+
+  advantages: {
+    heading:
+      "<span class='text-red'>Advantages!</span> Things You Will Always Love to Have",
+    cards: [
       {
-        bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
-        servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
-        servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        title: 'Direct Communication',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        bgColor: '#9FE9F6',
-        servicesName: 'Databases',
-        servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        title: 'ZERO Upfront Investment',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
       {
-        bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
-        servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
-      },
-      {
-        bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
-        servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
     ],
   },
-  Faqs: {
-    heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
-    faqs: [
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How do I start creating my own app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-    ],
-  },
+
+  marqueeOne: [
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+  ],
+
+  marqueeTwo: [
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+  ],
 };
-export const hireAngularDeveloper: IPropsDataTypes = {
-  HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
-    techImg: '',
-    btnName: `Let’s Connect`,
-    btnLink: '',
+export const hireAngularDeveloper: IHireUsPageType = {
+  heroSection: {
+    heading:
+      "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
+    description:
+      "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
+    btnName: 'Let’s consult with our expert',
+    link: '/',
+    images: {
+      leftImage: '/webp/hire-us/hire-us.webp',
+      mainImage: '/webp/hire-us/hire-us-main.webp',
+    },
   },
-  development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
-    developmentServices: [
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-    ],
-  },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
 
-    developmentServicesStep: [
+  hireRequirementSection: {
+    heading: '<span class="text-red">Hire Based</span> on Your Requirement',
+    cards: [
       {
-        id: 1,
-        title: 'Lorem Ipsum text dummy',
-        content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
-          points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-          ],
-        },
+        label: 'full time',
+        timing: '8 hours / day 5 days / week',
+        image: '/webp/hire-us/full-time.webp',
       },
       {
-        id: 2,
-        title: 'Another Lorem Ipsum text',
-        content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
-          points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
-          ],
-        },
+        label: 'Part time',
+        timing: '4 hours / day 5 days / week',
+        image: '/webp/hire-us/part-time.webp',
       },
       {
-        id: 3,
-        title: 'Third Lorem Ipsum text',
-        content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
-        },
+        label: 'hourly basis',
+        timing: 'Starts with 40 hours Pay as you go',
+        image: '/webp/hire-us/hourly-base.webp',
       },
     ],
   },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
-  crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
-  crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
-  crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
-  ],
-  developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
-    developmentProcessStep: [
-      {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
 
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+  engagementModel: {
+    subHeading: 'Choose Your Ideal Engagement Model.',
+    heading: 'Flexible, Simple, and Efficient.',
+    button: 'Contact Us',
+    image: '/webp/hire-us/world-wide.webp',
+    link: '/',
+  },
+
+  howWeWork: {
+    heading: 'How we work',
+    description:
+      'Lorem Ipsum is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation.',
+    steps: [
+      {
+        title: 'Research & analysis',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
+        title: 'Concept & sketch',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Design & branding',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Development & testing',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Delivery & maintenance',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
     ],
   },
-  exploreProjects: {
-    heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
-    buttonName: 'View All',
-    buttonLink: '',
-    deployProjects: [
+
+  advantages: {
+    heading:
+      "<span class='text-red'>Advantages!</span> Things You Will Always Love to Have",
+    cards: [
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hts.webp',
-        projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Direct Communication',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hopper.webp',
-        projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'ZERO Upfront Investment',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
     ],
   },
-  technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
-    technologyServices: [
-      {
-        bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
-        servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
-      },
-      {
-        bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
-        servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
-      },
-      {
-        bgColor: '#9FE9F6',
-        servicesName: 'Databases',
-        servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
-      },
-      {
-        bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
-        servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
-      },
-      {
-        bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
-        servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
-      },
-    ],
-  },
-  Faqs: {
-    heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
-    faqs: [
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How do I start creating my own app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-    ],
-  },
+
+  marqueeOne: [
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+  ],
+
+  marqueeTwo: [
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+  ],
 };
-export const hireVueDeveloper: IPropsDataTypes = {
-  HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
-    techImg: '',
-    btnName: `Let’s Connect`,
-    btnLink: '',
+export const hireVueDeveloper: IHireUsPageType = {
+  heroSection: {
+    heading:
+      "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
+    description:
+      "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
+    btnName: 'Let’s consult with our expert',
+    link: '/',
+    images: {
+      leftImage: '/webp/hire-us/hire-us.webp',
+      mainImage: '/webp/hire-us/hire-us-main.webp',
+    },
   },
-  development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
-    developmentServices: [
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-    ],
-  },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
 
-    developmentServicesStep: [
+  hireRequirementSection: {
+    heading: '<span class="text-red">Hire Based</span> on Your Requirement',
+    cards: [
       {
-        id: 1,
-        title: 'Lorem Ipsum text dummy',
-        content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
-          points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-          ],
-        },
+        label: 'full time',
+        timing: '8 hours / day 5 days / week',
+        image: '/webp/hire-us/full-time.webp',
       },
       {
-        id: 2,
-        title: 'Another Lorem Ipsum text',
-        content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
-          points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
-          ],
-        },
+        label: 'Part time',
+        timing: '4 hours / day 5 days / week',
+        image: '/webp/hire-us/part-time.webp',
       },
       {
-        id: 3,
-        title: 'Third Lorem Ipsum text',
-        content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
-        },
+        label: 'hourly basis',
+        timing: 'Starts with 40 hours Pay as you go',
+        image: '/webp/hire-us/hourly-base.webp',
       },
     ],
   },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
-  crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
-  crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
-  crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
-  ],
-  developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
-    developmentProcessStep: [
-      {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
 
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+  engagementModel: {
+    subHeading: 'Choose Your Ideal Engagement Model.',
+    heading: 'Flexible, Simple, and Efficient.',
+    button: 'Contact Us',
+    image: '/webp/hire-us/world-wide.webp',
+    link: '/',
+  },
+
+  howWeWork: {
+    heading: 'How we work',
+    description:
+      'Lorem Ipsum is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation.',
+    steps: [
+      {
+        title: 'Research & analysis',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
+        title: 'Concept & sketch',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Design & branding',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Development & testing',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Delivery & maintenance',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
     ],
   },
-  exploreProjects: {
-    heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
-    buttonName: 'View All',
-    buttonLink: '',
-    deployProjects: [
+
+  advantages: {
+    heading:
+      "<span class='text-red'>Advantages!</span> Things You Will Always Love to Have",
+    cards: [
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hts.webp',
-        projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Direct Communication',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hopper.webp',
-        projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'ZERO Upfront Investment',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
     ],
   },
-  technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
-    technologyServices: [
-      {
-        bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
-        servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
-      },
-      {
-        bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
-        servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
-      },
-      {
-        bgColor: '#9FE9F6',
-        servicesName: 'Databases',
-        servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
-      },
-      {
-        bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
-        servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
-      },
-      {
-        bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
-        servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
-      },
-    ],
-  },
-  Faqs: {
-    heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
-    faqs: [
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How do I start creating my own app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-    ],
-  },
+
+  marqueeOne: [
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+  ],
+
+  marqueeTwo: [
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+  ],
 };
-export const hireTailwindCssDeveloper: IPropsDataTypes = {
-  HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
-    techImg: '',
-    btnName: `Let’s Connect`,
-    btnLink: '',
+export const hireTailwindCssDeveloper: IHireUsPageType = {
+  heroSection: {
+    heading:
+      "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
+    description:
+      "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
+    btnName: 'Let’s consult with our expert',
+    link: '/',
+    images: {
+      leftImage: '/webp/hire-us/hire-us.webp',
+      mainImage: '/webp/hire-us/hire-us-main.webp',
+    },
   },
-  development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
-    developmentServices: [
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-    ],
-  },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
 
-    developmentServicesStep: [
+  hireRequirementSection: {
+    heading: '<span class="text-red">Hire Based</span> on Your Requirement',
+    cards: [
       {
-        id: 1,
-        title: 'Lorem Ipsum text dummy',
-        content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
-          points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-          ],
-        },
+        label: 'full time',
+        timing: '8 hours / day 5 days / week',
+        image: '/webp/hire-us/full-time.webp',
       },
       {
-        id: 2,
-        title: 'Another Lorem Ipsum text',
-        content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
-          points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
-          ],
-        },
+        label: 'Part time',
+        timing: '4 hours / day 5 days / week',
+        image: '/webp/hire-us/part-time.webp',
       },
       {
-        id: 3,
-        title: 'Third Lorem Ipsum text',
-        content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
-        },
+        label: 'hourly basis',
+        timing: 'Starts with 40 hours Pay as you go',
+        image: '/webp/hire-us/hourly-base.webp',
       },
     ],
   },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
-  crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
-  crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
-  crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
-  ],
-  developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
-    developmentProcessStep: [
-      {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
 
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+  engagementModel: {
+    subHeading: 'Choose Your Ideal Engagement Model.',
+    heading: 'Flexible, Simple, and Efficient.',
+    button: 'Contact Us',
+    image: '/webp/hire-us/world-wide.webp',
+    link: '/',
+  },
+
+  howWeWork: {
+    heading: 'How we work',
+    description:
+      'Lorem Ipsum is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation.',
+    steps: [
+      {
+        title: 'Research & analysis',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
+        title: 'Concept & sketch',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Design & branding',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Development & testing',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Delivery & maintenance',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
     ],
   },
-  exploreProjects: {
-    heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
-    buttonName: 'View All',
-    buttonLink: '',
-    deployProjects: [
+
+  advantages: {
+    heading:
+      "<span class='text-red'>Advantages!</span> Things You Will Always Love to Have",
+    cards: [
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hts.webp',
-        projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Direct Communication',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hopper.webp',
-        projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'ZERO Upfront Investment',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
     ],
   },
-  technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
-    technologyServices: [
-      {
-        bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
-        servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
-      },
-      {
-        bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
-        servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
-      },
-      {
-        bgColor: '#9FE9F6',
-        servicesName: 'Databases',
-        servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
-      },
-      {
-        bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
-        servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
-      },
-      {
-        bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
-        servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
-      },
-    ],
-  },
-  Faqs: {
-    heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
-    faqs: [
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How do I start creating my own app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-    ],
-  },
+
+  marqueeOne: [
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+  ],
+
+  marqueeTwo: [
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+  ],
 };
-export const hireJavascriptDeveloper: IPropsDataTypes = {
-  HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
-    techImg: '',
-    btnName: `Let’s Connect`,
-    btnLink: '',
+export const hireJavascriptDeveloper: IHireUsPageType = {
+  heroSection: {
+    heading:
+      "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
+    description:
+      "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
+    btnName: 'Let’s consult with our expert',
+    link: '/',
+    images: {
+      leftImage: '/webp/hire-us/hire-us.webp',
+      mainImage: '/webp/hire-us/hire-us-main.webp',
+    },
   },
-  development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
-    developmentServices: [
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-    ],
-  },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
 
-    developmentServicesStep: [
+  hireRequirementSection: {
+    heading: '<span class="text-red">Hire Based</span> on Your Requirement',
+    cards: [
       {
-        id: 1,
-        title: 'Lorem Ipsum text dummy',
-        content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
-          points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-          ],
-        },
+        label: 'full time',
+        timing: '8 hours / day 5 days / week',
+        image: '/webp/hire-us/full-time.webp',
       },
       {
-        id: 2,
-        title: 'Another Lorem Ipsum text',
-        content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
-          points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
-          ],
-        },
+        label: 'Part time',
+        timing: '4 hours / day 5 days / week',
+        image: '/webp/hire-us/part-time.webp',
       },
       {
-        id: 3,
-        title: 'Third Lorem Ipsum text',
-        content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
-        },
+        label: 'hourly basis',
+        timing: 'Starts with 40 hours Pay as you go',
+        image: '/webp/hire-us/hourly-base.webp',
       },
     ],
   },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
-  crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
-  crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
-  crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
-  ],
-  developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
-    developmentProcessStep: [
-      {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
 
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+  engagementModel: {
+    subHeading: 'Choose Your Ideal Engagement Model.',
+    heading: 'Flexible, Simple, and Efficient.',
+    button: 'Contact Us',
+    image: '/webp/hire-us/world-wide.webp',
+    link: '/',
+  },
+
+  howWeWork: {
+    heading: 'How we work',
+    description:
+      'Lorem Ipsum is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation.',
+    steps: [
+      {
+        title: 'Research & analysis',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
+        title: 'Concept & sketch',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Design & branding',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Development & testing',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Delivery & maintenance',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
     ],
   },
-  exploreProjects: {
-    heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
-    buttonName: 'View All',
-    buttonLink: '',
-    deployProjects: [
+
+  advantages: {
+    heading:
+      "<span class='text-red'>Advantages!</span> Things You Will Always Love to Have",
+    cards: [
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hts.webp',
-        projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Direct Communication',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hopper.webp',
-        projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'ZERO Upfront Investment',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
     ],
   },
-  technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
-    technologyServices: [
-      {
-        bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
-        servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
-      },
-      {
-        bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
-        servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
-      },
-      {
-        bgColor: '#9FE9F6',
-        servicesName: 'Databases',
-        servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
-      },
-      {
-        bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
-        servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
-      },
-      {
-        bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
-        servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
-      },
-    ],
-  },
-  Faqs: {
-    heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
-    faqs: [
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How do I start creating my own app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-    ],
-  },
+
+  marqueeOne: [
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+  ],
+
+  marqueeTwo: [
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+  ],
 };
-export const hireBackboneJs: IPropsDataTypes = {
-  HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
-    techImg: '',
-    btnName: `Let’s Connect`,
-    btnLink: '',
+export const hireBackboneJs: IHireUsPageType = {
+  heroSection: {
+    heading:
+      "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
+    description:
+      "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
+    btnName: 'Let’s consult with our expert',
+    link: '/',
+    images: {
+      leftImage: '/webp/hire-us/hire-us.webp',
+      mainImage: '/webp/hire-us/hire-us-main.webp',
+    },
   },
-  development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
-    developmentServices: [
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-    ],
-  },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
 
-    developmentServicesStep: [
+  hireRequirementSection: {
+    heading: '<span class="text-red">Hire Based</span> on Your Requirement',
+    cards: [
       {
-        id: 1,
-        title: 'Lorem Ipsum text dummy',
-        content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
-          points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-          ],
-        },
+        label: 'full time',
+        timing: '8 hours / day 5 days / week',
+        image: '/webp/hire-us/full-time.webp',
       },
       {
-        id: 2,
-        title: 'Another Lorem Ipsum text',
-        content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
-          points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
-          ],
-        },
+        label: 'Part time',
+        timing: '4 hours / day 5 days / week',
+        image: '/webp/hire-us/part-time.webp',
       },
       {
-        id: 3,
-        title: 'Third Lorem Ipsum text',
-        content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
-        },
+        label: 'hourly basis',
+        timing: 'Starts with 40 hours Pay as you go',
+        image: '/webp/hire-us/hourly-base.webp',
       },
     ],
   },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
-  crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
-  crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
-  crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
-  ],
-  developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
-    developmentProcessStep: [
-      {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
 
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+  engagementModel: {
+    subHeading: 'Choose Your Ideal Engagement Model.',
+    heading: 'Flexible, Simple, and Efficient.',
+    button: 'Contact Us',
+    image: '/webp/hire-us/world-wide.webp',
+    link: '/',
+  },
+
+  howWeWork: {
+    heading: 'How we work',
+    description:
+      'Lorem Ipsum is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation.',
+    steps: [
+      {
+        title: 'Research & analysis',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
+        title: 'Concept & sketch',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Design & branding',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Development & testing',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Delivery & maintenance',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
     ],
   },
-  exploreProjects: {
-    heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
-    buttonName: 'View All',
-    buttonLink: '',
-    deployProjects: [
+
+  advantages: {
+    heading:
+      "<span class='text-red'>Advantages!</span> Things You Will Always Love to Have",
+    cards: [
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hts.webp',
-        projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Direct Communication',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hopper.webp',
-        projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'ZERO Upfront Investment',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
     ],
   },
-  technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
-    technologyServices: [
-      {
-        bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
-        servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
-      },
-      {
-        bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
-        servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
-      },
-      {
-        bgColor: '#9FE9F6',
-        servicesName: 'Databases',
-        servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
-      },
-      {
-        bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
-        servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
-      },
-      {
-        bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
-        servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
-      },
-    ],
-  },
-  Faqs: {
-    heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
-    faqs: [
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How do I start creating my own app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-    ],
-  },
+
+  marqueeOne: [
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+  ],
+
+  marqueeTwo: [
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+  ],
 };
-export const hireWebflowDeveloper: IPropsDataTypes = {
-  HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: '',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
-    techImg: '',
-    btnName: `Let’s Connect`,
-    btnLink: '',
+export const hireWebflowDeveloper: IHireUsPageType = {
+  heroSection: {
+    heading:
+      "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
+    description:
+      "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
+    btnName: 'Let’s consult with our expert',
+    link: '/',
+    images: {
+      leftImage: '/webp/hire-us/hire-us.webp',
+      mainImage: '/webp/hire-us/hire-us-main.webp',
+    },
   },
-  development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
-    developmentServices: [
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-      {
-        title: 'Custom Flutter App Development',
-        description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-      },
-    ],
-  },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
 
-    developmentServicesStep: [
+  hireRequirementSection: {
+    heading: '<span class="text-red">Hire Based</span> on Your Requirement',
+    cards: [
       {
-        id: 1,
-        title: 'Lorem Ipsum text dummy',
-        content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
-          points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-          ],
-        },
+        label: 'full time',
+        timing: '8 hours / day 5 days / week',
+        image: '/webp/hire-us/full-time.webp',
       },
       {
-        id: 2,
-        title: 'Another Lorem Ipsum text',
-        content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
-          points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
-          ],
-        },
+        label: 'Part time',
+        timing: '4 hours / day 5 days / week',
+        image: '/webp/hire-us/part-time.webp',
       },
       {
-        id: 3,
-        title: 'Third Lorem Ipsum text',
-        content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
-        },
+        label: 'hourly basis',
+        timing: 'Starts with 40 hours Pay as you go',
+        image: '/webp/hire-us/hourly-base.webp',
       },
     ],
   },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
-  crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
-  crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
-  crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
-  ],
-  developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
-    developmentProcessStep: [
-      {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
-      },
-      {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
 
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+  engagementModel: {
+    subHeading: 'Choose Your Ideal Engagement Model.',
+    heading: 'Flexible, Simple, and Efficient.',
+    button: 'Contact Us',
+    image: '/webp/hire-us/world-wide.webp',
+    link: '/',
+  },
+
+  howWeWork: {
+    heading: 'How we work',
+    description:
+      'Lorem Ipsum is to expedite the integration of new technologies within enterprises, addressing the inevitable challenges that accompany digital expansion and fostering continuous innovation.',
+    steps: [
+      {
+        title: 'Research & analysis',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
       {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
+        title: 'Concept & sketch',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Design & branding',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Development & testing',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
+      },
+      {
+        title: 'Delivery & maintenance',
+        description:
+          'Our dedicated team of business analysts meticulously gathers and analyzes vital insights from your business landscape, as well as your competitors.',
       },
     ],
   },
-  exploreProjects: {
-    heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
-    buttonName: 'View All',
-    buttonLink: '',
-    deployProjects: [
+
+  advantages: {
+    heading:
+      "<span class='text-red'>Advantages!</span> Things You Will Always Love to Have",
+    cards: [
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hts.webp',
-        projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Direct Communication',
+        description:
+          'You will get complete access to talk with the chosen developers at all times through Skype, email and phone...',
       },
       {
-        projectImg: '/webp/project/hopper.webp',
-        projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'ZERO Upfront Investment',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        title: 'Your Team, Your Selection',
+        description:
+          'You will get complete access to talk with the chosen developers at all times...',
       },
     ],
   },
-  technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
-    technologyServices: [
-      {
-        bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
-        servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
-      },
-      {
-        bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
-        servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
-      },
-      {
-        bgColor: '#9FE9F6',
-        servicesName: 'Databases',
-        servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
-      },
-      {
-        bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
-        servicesImg: plugin,
-        servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
-        ],
-      },
-      {
-        bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
-        servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
-      },
-    ],
-  },
-  Faqs: {
-    heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
-    faqs: [
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How much does it cost to build an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'Is it possible to create an app for free?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'How do I start creating my own app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-    ],
-  },
+
+  marqueeOne: [
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+    '/webp/hire-us/marquee_1_2_3.webp',
+    '/webp/hire-us/marquee_1_2.webp',
+  ],
+
+  marqueeTwo: [
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+    '/webp/hire-us/marquee_2.webp',
+    '/webp/hire-us/marquee_2_2.webp',
+  ],
 };
