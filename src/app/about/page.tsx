@@ -240,7 +240,7 @@ const AboutUs = () => {
                     className="!flex !h-auto flex-col items-stretch gap-6 rounded-xl bg-white bg-contain bg-right-top bg-no-repeat p-6 shadow-card"
                   >
                     <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-white shadow-card">
-                      <div className="relative aspect-[6/3] w-full">
+                      <div className="relative aspect-[5/3] w-full">
                         <Image
                           src={item?.img}
                           alt="tech"
