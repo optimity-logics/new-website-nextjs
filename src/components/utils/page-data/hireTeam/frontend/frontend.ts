@@ -9,8 +9,7 @@ export const hireReactDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -130,8 +129,7 @@ export const hireNextDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -250,8 +248,7 @@ export const hireAngularDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -370,8 +367,7 @@ export const hireVueDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -490,8 +486,7 @@ export const hireTailwindCssDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -610,8 +605,7 @@ export const hireJavascriptDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -730,8 +724,7 @@ export const hireBackboneJs: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -850,8 +843,7 @@ export const hireWebflowDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 

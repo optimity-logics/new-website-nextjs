@@ -9,8 +9,7 @@ export const hireAIDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -129,8 +128,7 @@ export const hireMLDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -249,8 +247,7 @@ export const hireDataScientist: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 

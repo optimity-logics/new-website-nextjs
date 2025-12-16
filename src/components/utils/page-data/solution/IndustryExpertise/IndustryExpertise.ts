@@ -109,7 +109,7 @@ export const financeSolution: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgFinance',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
@@ -202,7 +202,7 @@ export const realEstate: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgRealEstate',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
@@ -295,7 +295,7 @@ export const retailSolution: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgRetail',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
@@ -388,7 +388,7 @@ export const education: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgEducation',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
@@ -481,7 +481,7 @@ export const logisticsAppDevelopment: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgLogistics',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },

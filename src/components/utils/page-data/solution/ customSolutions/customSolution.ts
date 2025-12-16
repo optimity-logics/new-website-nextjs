@@ -16,7 +16,7 @@ export const devOps: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgDevOps',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
@@ -109,7 +109,7 @@ export const cloudComputing: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgCloudSol',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
@@ -202,7 +202,7 @@ export const productPrototype: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgProductPrototype',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
@@ -295,7 +295,7 @@ export const onDemandApp: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgOnDemand',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },

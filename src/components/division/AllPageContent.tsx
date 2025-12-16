@@ -128,7 +128,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               )}
             </div>
             {data?.HeroSectionData?.techName && (
-              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[10.7%] 3xl:text-[130px]">
+              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[4.9%] md:text-[100px] lg:-bottom-[5%] 3xl:-bottom-[7%] 3xl:text-[130px]">
                 {data?.HeroSectionData?.techName}
               </span>
             )}
@@ -214,7 +214,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             headingStyle="text-center"
             isSectionDark={true}
           />
-          <div className="flex w-full flex-col gap-10 md:flex-row">
+          <div className="flex w-full flex-col gap-10 lg:flex-row">
             <div className="flex w-full flex-col gap-4 md:max-w-[400px]">
               {data?.WhyOptimityForDevelopment?.developmentServicesStep &&
                 data?.WhyOptimityForDevelopment?.developmentServicesStep.map(

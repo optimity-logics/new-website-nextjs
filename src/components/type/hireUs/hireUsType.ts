@@ -1,5 +1,4 @@
 export interface HeroImages {
-  leftImage: string;
   mainImage: string;
 }
 
