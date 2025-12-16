@@ -16,7 +16,7 @@ export const startUpSolution: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgStartup',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
@@ -109,7 +109,7 @@ export const enterpriseSolution: IsolutionsPage = {
     heading: 'Ready to optimize your healthcare operations?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
-    bgClass: 'bg-bgHealthCare',
+    bgClass: 'bg-bgEnterPriseSol',
   },
   ourWork: [
     { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },

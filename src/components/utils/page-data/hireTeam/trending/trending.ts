@@ -9,8 +9,7 @@ export const hireUnrealEngineDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -129,8 +128,7 @@ export const hireUIUXDesigner: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -249,8 +247,7 @@ export const hireSoftwareDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -369,8 +366,7 @@ export const hireDevOpsDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -489,8 +485,7 @@ export const hireMERNStackDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -609,8 +604,7 @@ export const hireMEANStackDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -729,8 +723,7 @@ export const hireGameDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 

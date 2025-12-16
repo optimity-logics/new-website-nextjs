@@ -10,9 +10,9 @@ body {
   box-sizing: border-box;
   overflow-x: hidden !important;
 }
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 @layer components {
   .gradient-border {

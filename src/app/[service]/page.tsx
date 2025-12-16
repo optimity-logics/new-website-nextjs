@@ -1,22 +1,39 @@
 import AllPageContent from '@/components/division/AllPageContent';
+import HireUs from '@/components/division/HireUs';
+import Solution from '@/components/division/Solution';
+import { Metadata } from 'next';
+
+// ===================== DATA IMPORTS =====================
+// backend
 import { GolangData } from '@/components/utils/page-data/technology/back-end/golang';
 import { LaravelData } from '@/components/utils/page-data/technology/back-end/laravel';
 import { MeteorData } from '@/components/utils/page-data/technology/back-end/meteor';
 import { NodeData } from '@/components/utils/page-data/technology/back-end/node';
 import { PhpData } from '@/components/utils/page-data/technology/back-end/php';
 import { PythonData } from '@/components/utils/page-data/technology/back-end/python';
+
+// frontend
 import { AngularData } from '@/components/utils/page-data/technology/front-end/angularJs';
 import { BackboneJsData } from '@/components/utils/page-data/technology/front-end/backboneJs';
 import { JavaScriptData } from '@/components/utils/page-data/technology/front-end/javascript';
 import { NextJsData } from '@/components/utils/page-data/technology/front-end/nextJs';
+import { ReactJsData } from '@/components/utils/page-data/technology/front-end/reactJs';
 import { VueData } from '@/components/utils/page-data/technology/front-end/vueJs';
+
+// mobile
 import { AndroidData } from '@/components/utils/page-data/technology/mobile/android';
 import { FlutterData } from '@/components/utils/page-data/technology/mobile/flutter';
 import { Iconic } from '@/components/utils/page-data/technology/mobile/iconic';
 import { IosData } from '@/components/utils/page-data/technology/mobile/Ios';
 import { ReactNative } from '@/components/utils/page-data/technology/mobile/reactNative';
 import { SwiftData } from '@/components/utils/page-data/technology/mobile/swift';
-import { ReactJsData } from '@/components/utils/page-data/technology/front-end/reactJs';
+
+// trending
+import { weareableAppData } from '@/components/utils/page-data/technology/trending/wearableApp';
+import { internetOfThingsData } from '@/components/utils/page-data/technology/trending/iot';
+import { tailwindData } from '@/components/utils/page-data/technology/trending/tailwindcss';
+
+// services
 import {
   ctoServices,
   digitalMarketing,
@@ -25,6 +42,7 @@ import {
   softwareProductDevelopment,
   uiuxData,
 } from '@/components/utils/page-data/services/digitalTransformation/digitalTransformation';
+
 import {
   artificialIntelligence,
   computerVision,
@@ -33,6 +51,7 @@ import {
   machineLerning,
   roboticAutomation,
 } from '@/components/utils/page-data/services/dataAndAI/dataAndAi';
+
 import {
   appModernization,
   gameDevelopment,
@@ -42,6 +61,8 @@ import {
   softwareDevelopment,
   webAppDevelopment,
 } from '@/components/utils/page-data/services/applicationDevelopment/applicationDevelopment';
+
+// solutions
 import {
   education,
   financeSolution,
@@ -50,21 +71,26 @@ import {
   realEstate,
   retailSolution,
 } from '@/components/utils/page-data/solution/IndustryExpertise/IndustryExpertise';
+
 import {
   cloudComputing,
   devOps,
   onDemandApp,
   productPrototype,
 } from '@/components/utils/page-data/solution/ customSolutions/customSolution';
+
 import {
   enterpriseSolution,
   startUpSolution,
 } from '@/components/utils/page-data/solution/businessScales/businessScales';
+
+// hire team
 import {
   hireAIDeveloper,
   hireDataScientist,
   hireMLDeveloper,
 } from '@/components/utils/page-data/hireTeam/dataAndAI/DataAndAI';
+
 import {
   hireAndroidDeveloper,
   hireFlutterDeveloper,
@@ -73,6 +99,7 @@ import {
   hireReactNativeDeveloper,
   hireSwiftDeveloper,
 } from '@/components/utils/page-data/hireTeam/mobileApp/mobileApp';
+
 import {
   hireAngularDeveloper,
   hireBackboneJs,
@@ -83,6 +110,7 @@ import {
   hireVueDeveloper,
   hireWebflowDeveloper,
 } from '@/components/utils/page-data/hireTeam/frontend/frontend';
+
 import {
   hireDjangoDeveloper,
   hireFastApiDeveloper,
@@ -93,6 +121,7 @@ import {
   hirePhpDeveloper,
   hirePythonDeveloper,
 } from '@/components/utils/page-data/hireTeam/backend/backend';
+
 import {
   hireDevOpsDeveloper,
   hireGameDeveloper,
@@ -102,59 +131,57 @@ import {
   hireUIUXDesigner,
   hireUnrealEngineDeveloper,
 } from '@/components/utils/page-data/hireTeam/trending/trending';
-import { weareableAppData } from '@/components/utils/page-data/technology/trending/wearableApp';
-import { internetOfThingsData } from '@/components/utils/page-data/technology/trending/iot';
-import { Metadata } from 'next';
+
+// seo
 import { generateSEOMetadata } from '@/components/utils/seo/MetaData';
 import { SEO } from '@/components/utils/seo/TitleAndDescription';
-import HireUs from '@/components/division/HireUs';
-import Solution from '@/components/division/Solution';
-import { tailwindData } from '@/components/utils/page-data/technology/trending/tailwindcss';
+
+// types
 import { IPropsDataTypes } from '@/components/type/type';
 import { IsolutionsPage } from '@/components/type/solution/solutionType';
 import { IHireUsPageType } from '@/components/type/hireUs/hireUsType';
 
-type Params = Promise<{ service: string }>;
-
+// ===================== ROUTE DATA MAP =====================
 const dataMap = {
-  // mobile
   flutter: FlutterData,
   ios: IosData,
   swift: SwiftData,
   'react-native': ReactNative,
   iconic: Iconic,
   android: AndroidData,
-  // front-end
+
   next: NextJsData,
   'react-js': ReactJsData,
   angular: AngularData,
   vue: VueData,
   backbone: BackboneJsData,
   javascript: JavaScriptData,
-  // back-end
+
   node: NodeData,
   python: PythonData,
   golang: GolangData,
   php: PhpData,
   laravel: LaravelData,
   meteor: MeteorData,
-  // Trending
+
   wearable: weareableAppData,
   internet: internetOfThingsData,
   tailwind: tailwindData,
-  // services
+
   software: softwareProductDevelopment,
   ui: uiuxData,
   digital: digitalMarketing,
   quality: qualityEngineer,
   dedicated: hireDedicatedDevs,
   cto: ctoServices,
+
   data: dataScience,
   machine: machineLerning,
   artificial: artificialIntelligence,
   robotic: roboticAutomation,
   computer: computerVision,
   generative: generativeAI,
+
   web: webAppDevelopment,
   mobile: mobileAppDevelopment,
   'software-development': softwareDevelopment,
@@ -162,7 +189,7 @@ const dataMap = {
   mvp: mvpDevelopment,
   app: appModernization,
   game: gameDevelopment,
-  // solution
+
   healthcare: healthcareData,
   fintech: financeSolution,
   real: realEstate,
@@ -175,8 +202,7 @@ const dataMap = {
   on: onDemandApp,
   startup: startUpSolution,
   enterprise: enterpriseSolution,
-  // hire devs
-  // mobile
+
   'hire-ai': hireAIDeveloper,
   'hire-machine': hireMLDeveloper,
   'hire-data': hireDataScientist,
@@ -186,7 +212,7 @@ const dataMap = {
   'hire-react-native': hireReactNativeDeveloper,
   'hire-swift': hireSwiftDeveloper,
   'hire-iconic': hireIconicDeveloper,
-  // front-end
+
   'hire-react': hireReactDeveloper,
   'hire-angular': hireAngularDeveloper,
   'hire-vue': hireVueDeveloper,
@@ -195,7 +221,7 @@ const dataMap = {
   'hire-backbone': hireBackboneJs,
   'hire-tailwind': hireTailwindCssDeveloper,
   'hire-webflow': hireWebflowDeveloper,
-  // back-end
+
   'hire-python': hirePythonDeveloper,
   'hire-fastapi': hireFastApiDeveloper,
   'hire-django': hireDjangoDeveloper,
@@ -204,7 +230,7 @@ const dataMap = {
   'hire-node': hireNodeJSDeveloper,
   'hire-php': hirePhpDeveloper,
   'hire-laravel': hireLaravelDeveloper,
-  // trending
+
   'hire-unreal': hireUnrealEngineDeveloper,
   'hire-ui': hireUIUXDesigner,
   'hire-software': hireSoftwareDeveloper,
@@ -215,110 +241,102 @@ const dataMap = {
 } as const;
 
 type ServiceKey = keyof typeof dataMap;
+
+// ===================== HELPERS =====================
+const SOLUTION_KEYS: ServiceKey[] = [
+  'healthcare',
+  'fintech',
+  'real',
+  'ecommerce',
+  'educational',
+  'logistics',
+  'devops',
+  'cloud',
+  'product',
+  'on',
+  'startup',
+  'enterprise',
+];
+
+const resolveMainService = (service: string): ServiceKey => {
+  if (service.startsWith('hire-')) {
+    return service.split('-').slice(0, 2).join('-') as ServiceKey;
+  }
+  return service.split('-')[0] as ServiceKey;
+};
+
+const resolvePageType = (service: string, main: ServiceKey) => {
+  if (service.startsWith('hire-')) return 'hire';
+  if (SOLUTION_KEYS.includes(main)) return 'solution';
+  return 'content';
+};
+
+// ===================== SEO =====================
+const SEO_RULES: { match: RegExp; seoKey: keyof typeof SEO }[] = [
+  { match: /^(web|software)/, seoKey: 'web_app_development_services' },
+  {
+    match: /^(mobile|saas|app|ios|android|react-native|flutter|swift|iconic)/,
+    seoKey: 'mobile_app_development_services',
+  },
+  {
+    match: /^(next|react|angular|vue|backbone|javascript|svelte)/,
+    seoKey: 'frontend_technology',
+  },
+  {
+    match: /^(python|golang|node|laravel|php|meteor)/,
+    seoKey: 'backend_technology',
+  },
+];
+
 export async function generateMetadata({
   params,
 }: {
-  params: Params;
+  params: Promise<{ service: string }>;
 }): Promise<Metadata> {
-  const service = (await params).service;
+  const { service } = await params;
+  const rule = SEO_RULES.find((r) => r.match.test(service));
 
-  const resolveService = (service: string) => {
-    const prefixMap: { prefixes: string[]; seoKey: keyof typeof SEO }[] = [
-      { prefixes: ['web', 'software'], seoKey: 'web_app_development_services' },
-      {
-        prefixes: [
-          'mobile',
-          'saas',
-          'app',
-          'ios',
-          'android',
-          'react-native',
-          'flutter',
-          'swift',
-          'iconic',
-        ],
-        seoKey: 'mobile_app_development_services',
-      },
-      {
-        prefixes: [
-          'next',
-          'react',
-          'angular',
-          'vue',
-          'backbone',
-          'javascript',
-          'svelte',
-        ],
-        seoKey: 'frontend_technology',
-      },
-      {
-        prefixes: ['python', 'golang', 'node', 'laravel', 'php', 'meteor'],
-        seoKey: 'backend_technology',
-      },
-      { prefixes: ['mvp', 'saas'], seoKey: 'about_us' },
-    ];
+  if (!rule) {
+    return {
+      title: 'Optimity Logics',
+      description: 'Digital Transformation & App Development Company',
+    };
+  }
 
-    const matched = prefixMap.find((entry) =>
-      entry.prefixes.some((prefix) => service.startsWith(prefix)),
-    );
+  const seo = SEO[rule.seoKey];
 
-    if (matched) return SEO?.[matched.seoKey];
-  };
-  const seoData = resolveService(service);
-  return seoData
-    ? generateSEOMetadata({
-        title: seoData ? seoData?.title : '',
-        description: seoData.description,
-        og_url: `https://optimitylogics.com/${service}`,
-        og_image:
-          'https://optimitylogics.com/images/meta-img/optimity-logics-og-image.jpg',
-      })
-    : {
-        title: 'Optimity Logics',
-        description: 'Digital Transformation & App Development Company',
-      };
+  return generateSEOMetadata({
+    title: seo.title,
+    description: seo.description,
+    og_url: `https://optimitylogics.com/${service}`,
+    og_image:
+      'https://optimitylogics.com/images/meta-img/optimity-logics-og-image.jpg',
+  });
 }
 
-const SubcategoryPage = async (props: { params: Params }) => {
-  const { service } = await props.params;
+// ===================== PAGE =====================
+const SubcategoryPage = async ({
+  params,
+}: {
+  params: Promise<{ service: string }>;
+}) => {
+  const { service } = await params;
 
-  const mainService = service.startsWith('react-js')
-    ? 'react-js'
-    : service.startsWith('react-native')
-      ? 'react-native'
-      : service.startsWith('software-development')
-        ? 'software-development'
-        : service.startsWith('hire-react-native')
-          ? 'hire-react-native'
-          : service.startsWith('hire')
-            ? service.split('-').slice(0, 2).join('-')
-            : service.split('-')[0];
+  const mainService = resolveMainService(service);
+  const pageData = dataMap[mainService];
 
-  const pageData = mainService ? dataMap[mainService as ServiceKey] : null;
-  if (!pageData) return <p>Data not found.</p>;
-  if (service.startsWith('hire')) {
+  if (!pageData) return <p>Data not found</p>;
+
+  const pageType = resolvePageType(service, mainService);
+
+  if (pageType === 'hire') {
     return <HireUs data={pageData as IHireUsPageType} />;
   }
-  if (
-    [
-      'healthcare',
-      'fintech',
-      'real',
-      'ecommerce',
-      'educational',
-      'logistics',
-      'educational',
-      'logistics',
-      'devops',
-      'cloud',
-      'product',
-      'on',
-      'startup',
-      'enterprise',
-    ].includes(mainService)
-  ) {
+
+  if (pageType === 'solution') {
     return <Solution data={pageData as IsolutionsPage} />;
   }
+
   return <AllPageContent data={pageData as IPropsDataTypes} />;
 };
 

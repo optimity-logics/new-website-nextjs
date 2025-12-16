@@ -9,8 +9,7 @@ export const hirePythonDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -129,8 +128,7 @@ export const hireGoLangDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -249,8 +247,7 @@ export const hireNodeJSDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -369,8 +366,7 @@ export const hireLaravelDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -489,8 +485,7 @@ export const hirePhpDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -609,8 +604,7 @@ export const hireFastApiDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -729,8 +723,7 @@ export const hireDjangoDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 
@@ -849,8 +842,7 @@ export const hireFlaskDeveloper: IHireUsPageType = {
     btnName: 'Let’s consult with our expert',
     link: '/',
     images: {
-      leftImage: '/webp/hire-us/hire-us.webp',
-      mainImage: '/webp/hire-us/hire-us-main.webp',
+      mainImage: '/webp/hire-us/hire-us.webp',
     },
   },
 

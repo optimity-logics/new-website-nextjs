@@ -32,15 +32,6 @@ const HireUs = ({ data }: hireUsProps) => {
         />
         <div className="relative">
           <Image
-            src={data?.heroSection?.images?.leftImage || ''}
-            alt="hire-us"
-            width={400}
-            height={100}
-            priority
-            fetchPriority="high"
-            className="absolute -left-1/2 bottom-5 hidden h-auto 3xl:block"
-          />
-          <Image
             src={data?.heroSection?.images?.mainImage || ''}
             alt="hire-us"
             width={600}

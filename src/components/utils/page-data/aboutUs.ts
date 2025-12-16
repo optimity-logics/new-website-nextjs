@@ -77,30 +77,30 @@ export const aboutUsPage = {
   viewAllBtnLink: '/',
   whatWeDo: [
     {
-      img: '/webp/about-us/app-dev.webp',
+      img: '/webp/about-us/webmobile.webp',
       title: 'Web & Mobile Application Development',
       description:
         'Custom apps, full stack, progressive web apps, hybrid & native.',
     },
     {
-      img: '/webp/about-us/ui-ux.webp',
+      img: '/webp/about-us/uiux.webp',
       title: 'UI / UX Design',
       description: 'Intuitive designs that delight and retain users',
     },
     {
-      img: '/webp/about-us/marketing.webp',
+      img: '/webp/about-us/dm.webp',
       title: 'Digital Marketing & Branding',
       description:
         'Helping brands take off through SEO, social media, paid campaigns, and visual identity.',
     },
     {
-      img: '/webp/about-us/dev-ops.webp',
+      img: '/webp/about-us/devops.webp',
       title: 'DevOps, Cloud & Infrastructure',
       description:
         'Fast, secure, manageable deployments; automation; performance & scalability.',
     },
     {
-      img: '/webp/about-us/qa-test.webp',
+      img: '/webp/about-us/qa.webp',
       title: 'Quality Assurance & Testing',
       description:
         'Ensuring everything works as intended through rigorous manual + automated testing.',

@@ -62,7 +62,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
         </div>
       </div>
       <div
-        className={`${data?.ctaSection?.bgClass} relative mb-[60px] bg-cover bg-fixed bg-center bg-no-repeat after:absolute after:inset-0 after:max-h-[500px] after:w-full after:bg-[#0000008F] 3xl:mb-[100px]`}
+        className={`${data?.ctaSection?.bgClass} relative mb-[60px] bg-full bg-center bg-no-repeat after:absolute after:inset-0 after:max-h-[500px] after:w-full after:bg-[#0000008F] 3xl:mb-[100px]`}
       >
         <Container className="relative z-30 py-[150px]">
           <HeroSectionHeading
