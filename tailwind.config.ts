@@ -154,8 +154,8 @@ export default {
           450: {
             alpha: 'rgba(0, 0, 0, 0.45)',
           },
-          440:{
-            alpha:'rgba(0, 0, 0, 0.44)'
+          440: {
+            alpha: 'rgba(0, 0, 0, 0.44)',
           },
           250: {
             alpha: 'rgba(19, 19, 19, 0.3)',
@@ -196,7 +196,7 @@ export default {
         crystalBlue: '#9CE3FE',
         pastelPink: '#f4bdc8',
         ghostWhite: '#f7f8fb',
-        primaryGrayishBlue:'#d0d7ea'
+        primaryGrayishBlue: '#d0d7ea',
       },
       boxShadow: {
         'work-card': '0px 7px 14px 0px #F4F2EF',
