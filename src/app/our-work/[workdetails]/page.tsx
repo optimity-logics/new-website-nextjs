@@ -52,7 +52,7 @@ const page = () => {
           headingText="Lorem Ipsum is simply dummy text."
           descriptionText={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.`}
         />
-        <div className="relative h-auto w-full max-w-full after:absolute after:inset-0 after:rounded-xl after:bg-[#00000033] lg:after:rounded-[20px]">
+        <div className="relative h-auto w-full max-w-full after:absolute after:inset-0 after:rounded-xl after:bg-black-200-alpha lg:after:rounded-[20px]">
           <Image
             src="/images/our-work/project-details.jpg"
             alt="project-detail"
@@ -135,7 +135,7 @@ const page = () => {
         </div>
       </div>
       <Container className="mb-[60px] h-screen 4xl:mb-[100px]">
-        <div className="relative z-[-1] grid grid-stack after:absolute after:inset-0 after:z-[1] after:rounded-xl after:bg-[#00000033] lg:after:rounded-[20px]">
+        <div className="relative z-[-1] grid grid-stack after:absolute after:inset-0 after:z-[1] after:rounded-xl after:bg-black-200-alpha lg:after:rounded-[20px]">
           <Image
             src="/images/our-work/users.jpg"
             alt="user"
@@ -143,7 +143,7 @@ const page = () => {
             height={500}
             className="w-full rounded-xl md:rounded-[20px]"
           />
-          <div className="relative z-10 m-2 flex h-max w-full max-w-[350px] flex-col justify-between gap-10 rounded-xl bg-[#00000073] p-3 sm:m-3 md:m-8">
+          <div className="relative z-10 m-2 flex h-max w-full max-w-[350px] flex-col justify-between gap-10 rounded-xl bg-black-450-alpha p-3 sm:m-3 md:m-8">
             <span className="text-white">Logo</span>
             <p className="flex-col font-opt text-xl font-medium leading-6 text-white">
               Powerful travel platforms engineered for your business success

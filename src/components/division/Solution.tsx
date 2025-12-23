@@ -55,14 +55,14 @@ const Solution = ({ data }: IsolutionSubPageType) => {
                 />
               </motion.div>
             </div>
-            <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[6%]">
+            <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-primaryRichBlack opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[6%]">
               {data?.heroSection?.watermark}
             </span>
           </Container>
         </div>
       </div>
       <div
-        className={`${data?.ctaSection?.bgClass} relative mb-[60px] bg-full bg-center bg-no-repeat after:absolute after:inset-0 after:max-h-[500px] after:w-full after:bg-[#0000008F] 3xl:mb-[100px]`}
+        className={`${data?.ctaSection?.bgClass} relative mb-[60px] bg-full bg-center bg-no-repeat after:absolute after:inset-0 after:max-h-[500px] after:w-full after:bg-black-560-alpha 3xl:mb-[100px]`}
       >
         <Container className="relative z-30 py-[150px]">
           <HeroSectionHeading
@@ -118,7 +118,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
             {data?.healthcareServices?.images.map((item, i) => (
               <div
                 key={i}
-                className="relative aspect-[6/5] h-full w-full max-w-[340px] rounded-2xl after:absolute after:inset-0 after:rounded-2xl after:bg-[#00000070]"
+                className="relative aspect-[6/5] h-full w-full max-w-[340px] rounded-2xl after:absolute after:inset-0 after:rounded-2xl after:bg-black-440-alpha"
               >
                 <Image src={item} alt="health" fill className="rounded-2xl" />
               </div>

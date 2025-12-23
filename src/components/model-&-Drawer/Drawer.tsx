@@ -1,7 +1,13 @@
-import React from 'react';
-import Drawer from 'react-modern-drawer';
+'use client';
+
+import dynamic from 'next/dynamic';
 import 'react-modern-drawer/dist/index.css';
 import { IDrawerCustomeProps } from '../type/type';
+
+// 👇 Disable SSR for Drawer
+const Drawer = dynamic(() => import('react-modern-drawer'), {
+  ssr: false,
+});
 
 const CustomDrawer = ({
   open,
@@ -13,11 +19,11 @@ const CustomDrawer = ({
 }: IDrawerCustomeProps) => {
   return (
     <Drawer
-      className={className}
       open={open}
       onClose={onClose}
       direction={direction}
       size={size}
+      className={className}
     >
       {children}
     </Drawer>

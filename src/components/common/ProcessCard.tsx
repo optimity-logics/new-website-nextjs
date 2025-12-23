@@ -8,7 +8,7 @@ type processCardTtype = {
 const ProcessCard = ({ index, data }: processCardTtype) => {
   return (
     <div className="flex flex-col gap-[30px] rounded-[20px] bg-white/50 p-5 shadow-howWorkCard backdrop-blur-sm">
-      <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] font-opt text-xl font-medium text-white">
+      <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-electricBlue font-opt text-xl font-medium text-white">
         0{index + 1}
       </span>
       <div className="flex flex-col gap-3">

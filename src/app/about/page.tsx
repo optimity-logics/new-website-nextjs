@@ -170,7 +170,7 @@ const AboutUs = () => {
             aboutUsPage?.whatWeDo.map((item, i) => (
               <div
                 key={i}
-                className="flex flex-col gap-5 rounded-xl border border-[#F0F3F5] bg-white px-5 py-7 shadow-WhatWeDo"
+                className="flex flex-col gap-5 rounded-xl border border-aliceBlue bg-white px-5 py-7 shadow-WhatWeDo"
               >
                 <div className="relative aspect-[6/3] w-full">
                   <Image
@@ -209,7 +209,7 @@ const AboutUs = () => {
               onMouseUp={handleMouseEnterViewAll}
               onMouseDown={handleMouseLeaveViewAl}
               href={aboutUsPage?.viewAllBtnLink}
-              className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-[#1A6AA3] py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-6 text-white"
+              className="flex h-10 w-max items-center gap-1 rounded-[50px] bg-lightBlue py-[8px] pl-[16px] pr-[14px] font-opt text-base font-normal leading-6 text-white"
             >
               {aboutUsPage?.viewAllBtn}
               <AnimatedArrow hover={hoverViewAl} />

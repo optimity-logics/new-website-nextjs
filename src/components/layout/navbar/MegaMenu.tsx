@@ -140,10 +140,10 @@ export default function MegaMenu() {
               onMouseLeave={handleMegaMenuLeave}
             >
               <div
-                className={`${small ? 'mt-0' : 'mt-2'} flex w-full overflow-hidden rounded-b-2xl border border-[#ebecf5] bg-[#f7f8fb] shadow-2xl`}
+                className={`${small ? 'mt-0' : 'mt-2'} flex w-full overflow-hidden rounded-b-2xl border border-subtleWhite bg-ghostWhite shadow-2xl`}
               >
                 {/* Left Sidebar - Category Tabs */}
-                <div className="min-w-[120px] border-r border-[#ebecf5] bg-white py-3">
+                <div className="min-w-[120px] border-r border-subtleWhite bg-white py-3">
                   {activeMenuData.megaMenuItem.map((category, index) => (
                     <button
                       onMouseEnter={() => setActiveCategory(index)}
@@ -154,7 +154,7 @@ export default function MegaMenu() {
                         } as React.CSSProperties
                       }
                       key={index}
-                      className={`relative w-full max-w-[350px] border-b border-b-[#ebecf5] px-6 py-3.5 text-left font-opt text-[15px] font-medium transition-all duration-200 last:border-b-0 ${
+                      className={`relative w-full max-w-[350px] border-b border-b-subtleWhite px-6 py-3.5 text-left font-opt text-[15px] font-medium transition-all duration-200 last:border-b-0 ${
                         activeCategory === index
                           ? 'bg-[var(--cat-bg)] text-white'
                           : 'text-iconSubtle hover:bg-[var(--cat-hover-bg)]'
@@ -175,7 +175,7 @@ export default function MegaMenu() {
                       exit={{ opacity: 0, x: -40 }}
                       transition={{ duration: 0.25, ease: 'easeIn' }}
                     >
-                      <h3 className="mb-5 border-b border-b-[#ebecf5] pb-3 font-opt text-lg font-semibold text-primary">
+                      <h3 className="mb-5 border-b border-b-subtleWhite pb-3 font-opt text-lg font-semibold text-primary">
                         {activeMenuData.megaMenuItem[activeCategory]?.mainTitle}
                       </h3>
 
@@ -205,7 +205,7 @@ export default function MegaMenu() {
                     </motion.div>
                   </AnimatePresence>
                 </div>
-                <div className="min-w-[270px] border-l border-[#ebecf5] bg-white px-3 py-4">
+                <div className="min-w-[270px] border-l border-subtleWhite bg-white px-3 py-4">
                   <div className="flex flex-col gap-5">
                     <Link
                       href="tel: +91 635 301 5499"

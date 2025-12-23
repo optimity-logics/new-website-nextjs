@@ -10,7 +10,7 @@ const Footer = () => {
       style={{ backgroundSize: '100% 100%' }}
     >
       <Container className="pt-10 4xl:pt-20" isBackground={false}>
-        <div className="flex flex-col gap-8 border-b-[1.34px] border-b-[#ffffff4a] pb-10 3xl:gap-10 4xl:gap-[60px]">
+        <div className="flex flex-col gap-8 border-b-[1.34px] border-b-glassWhite pb-10 3xl:gap-10 4xl:gap-[60px]">
           <Review />
           <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:gap-x-4 md:gap-y-10 lg:grid-cols-4">
             {footerData?.footerLinks.map((section, index) => (
@@ -43,7 +43,7 @@ const Footer = () => {
             {footerData?.otherLinks.map((item, i) => (
               <li
                 key={i}
-                className="cursor-pointer border-r border-r-[#ffffff4a] px-5 transition-all duration-300 last-of-type:border-r-0 hover:text-lightBlue"
+                className="cursor-pointer border-r border-r-glassWhite px-5 transition-all duration-300 last-of-type:border-r-0 hover:text-lightBlue"
               >
                 <Link href={item?.link}>{item?.title}</Link>
               </li>

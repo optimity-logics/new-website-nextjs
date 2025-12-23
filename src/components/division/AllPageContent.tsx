@@ -128,7 +128,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               )}
             </div>
             {data?.HeroSectionData?.techName && (
-              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-[#161616] opacity-10 md:-bottom-[4.9%] md:text-[100px] lg:-bottom-[5%] 3xl:-bottom-[7%] 3xl:text-[130px]">
+              <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-primaryRichBlack opacity-10 md:-bottom-[4.9%] md:text-[100px] lg:-bottom-[5%] 3xl:-bottom-[7%] 3xl:text-[130px]">
                 {data?.HeroSectionData?.techName}
               </span>
             )}
@@ -191,7 +191,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             data?.development?.developmentServices.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-4 rounded-[15px] bg-[#f5f5f5] p-5 shadow-devCardShadow md:p-[30px]"
+                className="flex flex-col gap-4 rounded-[15px] bg-primaryOffWhite p-5 shadow-devCardShadow md:p-[30px]"
               >
                 <h5 className="font-opt text-xl font-medium leading-6 text-primary">
                   {item?.title}
@@ -235,7 +235,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                       className={`group relative flex items-center justify-between overflow-hidden rounded-full px-6 py-4 font-opt text-lg font-normal transition-all duration-300 ${
                         activeTab === tab.id
                           ? 'bg-white/80 text-primary shadow-lg backdrop-blur-sm'
-                          : 'bg-[#f0f3f5]/10 text-white backdrop-blur-sm'
+                          : 'bg-aliceBlue/10 text-white backdrop-blur-sm'
                       } `}
                     >
                       {/* ✨ Glass Glow Overlay */}
@@ -257,7 +257,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
-                className="flex w-full max-w-[1000px] flex-col gap-5 rounded-2xl bg-[#FFFFFF24] p-6 backdrop-blur-md"
+                className="flex w-full max-w-[1000px] flex-col gap-5 rounded-2xl bg-faintWhite p-6 backdrop-blur-md"
               >
                 <div className="flex flex-col gap-4">
                   <h2 className="font-opt text-xl font-normal leading-6 text-white">
@@ -353,7 +353,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                 data?.crossPlatformBenefits.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center gap-2 rounded-full border-[1px] border-[#192020] p-3 font-opt text-sm font-normal text-white backdrop-blur-[44px]"
+                    className="flex items-center gap-2 rounded-full border-[1px] border-carbonBlack p-3 font-opt text-sm font-normal text-white backdrop-blur-[44px]"
                   >
                     <Image src={item?.img} alt="" width={15} height={15} />{' '}
                     {item?.title}
@@ -453,11 +453,11 @@ const AllPageContent = ({ data }: IPropsType) => {
                 className={`grid grid-cols-1 bg-white/80 shadow-devCardShadow xl:grid-cols-7 ${index % 2 === 0 ? 'rounded-br-[35px] rounded-tl-[35px]' : 'rounded-br-[35px] rounded-tl-[35px] xl:!rounded-br-[0px] xl:rounded-bl-[35px] xl:rounded-tl-[0px] xl:rounded-tr-[35px]'}`}
               >
                 <div
-                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-[#9CE3FE]' : 'rounded-tl-[35px] bg-[#f4bdc8] xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
+                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-crystalBlue' : 'rounded-tl-[35px] bg-pastelPink xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
                 >
                   <div className="flex h-full items-center justify-start gap-[15px]">
                     <div
-                      className={`flex h-14 w-14 items-center justify-center rounded-full 3xl:h-[50px] 3xl:w-[50px] ${index % 2 !== 0 ? 'bg-[#9CE3FE]' : 'bg-[#f4bdc8]'}`}
+                      className={`flex h-14 w-14 items-center justify-center rounded-full 3xl:h-[50px] 3xl:w-[50px] ${index % 2 !== 0 ? 'bg-crystalBlue' : 'bg-pastelPink'}`}
                     >
                       <Image
                         src={item?.servicesImg}

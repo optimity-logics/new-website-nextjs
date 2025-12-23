@@ -36,7 +36,7 @@ const CaseStudy = () => {
       </Container>
 
       {/* MAIN CONTENT */}
-      <div className="bg-[#f5f5f5] py-20">
+      <div className="bg-primaryOffWhite py-20">
         <Container className="grid grid-cols-1 gap-9 md:grid-cols-3">
           {/* CONTENT SECTIONS */}
           <div className="col-span-2 flex flex-col gap-12">

@@ -2,12 +2,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import heroImg from '../../../public/images/homePagev2/logov3.svg';
 import logo from '../../../public/svg/logo.svg';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import arrow from '../../../public/images/homePagev2/arrow-black.png';
 import ellips1 from '../../../public/images/homePagev2/ellips1.png';
 import ellipse2 from '../../../public/images/homePagev2/ellipse2.png';
-import blackTick from '../../../public/images/homePagev2/blackTick.svg';
 import mobileRobot from '../../../public/webp/homePagev2/mobile-robot.webp';
 import LogoAnimation from './LogoAnimation';
 import phone from '../../../public/svg/footer/phone.svg';
@@ -312,7 +311,7 @@ const HomePageV2 = () => {
           <SectionHeader
             headingText={homePageData?.aiSectionHeqading}
             descriptionText={homePageData?.aiSectionDescription}
-            descriptionStyle="text-center"
+            descriptionStyle="md:text-center"
             className="mx-auto max-w-[1000px] items-center"
             isSectionDark={true}
           />
@@ -407,7 +406,7 @@ const HomePageV2 = () => {
                           width={254}
                           height={339}
                           loading="lazy"
-                          className="aspect-auto rounded-xl"
+                          className="aspect-auto !rounded-xl"
                         />
                         <div className="absolute inset-0 rounded-xl bg-techCardGradient"></div>
                         <span className="relative z-30 mt-auto p-[14px] font-opt text-[20px] font-medium leading-[24px] text-white">
@@ -432,7 +431,7 @@ const HomePageV2 = () => {
                         width={254}
                         height={339}
                         loading="lazy"
-                        className="aspect-auto"
+                        className="aspect-auto rounded-xl"
                       />
                       <span className="mt-auto p-[14px] font-opt text-[20px] font-medium leading-[24px] text-white">
                         {item?.techName}
@@ -456,68 +455,78 @@ const HomePageV2 = () => {
                 key={index}
                 type="button"
                 onClick={() => setActiveTab(item?.id)}
-                className={`flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-200 ease-in ${activeTab === item?.id ? 'border-transparent bg-[#1A6AA3] text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc text-optDesc hover:border-transparent hover:bg-[#1A6AA3] hover:text-white'}`}
+                className={`flex w-max items-center justify-center gap-1 text-nowrap rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-200 ease-in ${activeTab === item?.id ? 'border-transparent bg-lightBlue text-white' : 'border-optDesc text-optDesc hover:border-transparent hover:bg-lightBlue hover:text-white'}`}
               >
                 <span className="mt-0.5">{item?.label}</span>
               </button>
             ))}
         </div>
-        <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:items-end">
-          <div className="flex w-full max-w-full flex-col gap-6 lg:max-w-[650px] xxl:max-w-[800px]">
-            <div className="flex flex-col gap-2.5">
-              <h3 className="font-opt text-3xl font-semibold leading-8 text-primary">
-                {currentTab?.title}
-              </h3>
-              <p className="font-opt text-base font-normal leading-5 text-optDesc">
-                {currentTab?.description}
-              </p>
-            </div>
-            <div className="block lg:hidden">
-              <Image
-                src={currentTab?.image}
-                alt="industries"
-                width={400}
-                height={400}
-                loading="lazy"
-                className="mx-auto"
-              />
-            </div>
-            <div className="flex flex-col gap-6">
-              <h4 className="font-opt text-xl font-medium leading-6 text-lightBlue">
-                {currentTab?.sectionTitle}
-              </h4>
-              <ul className="flex flex-col gap-2">
-                {currentTab?.features.map((list, index) => (
-                  <li key={index} className="flex items-center gap-4">
-                    <Image
-                      src={blackTick}
-                      alt="tick"
-                      loading="lazy"
-                      width={20}
-                      height={20}
-                    />
-                    <p className="font-opt text-base font-normal leading-5 text-optDesc">
-                      {list}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-              <Button
-                btnName={currentTab?.LearnMore}
-                redirectionLink={currentTab?.link}
-                isBackgroung={false}
-              />
-            </div>
-          </div>
+        <AnimatePresence mode="wait">
           <motion.div
             key={currentTab?.id}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
             transition={{
-              duration: 0.8,
-              ease: 'easeIn',
+              duration: 0.6,
+              ease: 'easeInOut',
             }}
+            className="flex flex-col justify-between gap-10 lg:flex-row lg:items-end"
           >
+            {/* LEFT CONTENT */}
+            <div className="flex w-full max-w-full flex-col gap-6 lg:max-w-[650px] xxl:max-w-[800px]">
+              <div className="flex flex-col gap-2.5">
+                <h3 className="font-opt text-3xl font-semibold leading-8 text-primary">
+                  {currentTab?.title}
+                </h3>
+                <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                  {currentTab?.description}
+                </p>
+              </div>
+
+              {/* MOBILE IMAGE */}
+              <div className="block lg:hidden">
+                <Image
+                  src={currentTab?.image}
+                  alt="industries"
+                  width={400}
+                  height={400}
+                  loading="lazy"
+                  className="mx-auto rounded-xl"
+                />
+              </div>
+
+              <div className="flex flex-col gap-6 rounded-xl bg-snowGray p-4 md:p-8">
+                <h4 className="font-opt text-xl font-medium leading-6 text-lightBlue">
+                  {currentTab?.sectionTitle}
+                </h4>
+
+                <ul className="flex flex-col gap-3">
+                  {currentTab?.features.map((list, index) => (
+                    <li key={index} className="flex items-center gap-4">
+                      <Image
+                        src="/svg/listarrow.svg"
+                        alt="tick"
+                        width={20}
+                        height={20}
+                        loading="lazy"
+                      />
+                      <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                        {list}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+
+                <Button
+                  btnName={currentTab?.LearnMore}
+                  redirectionLink={currentTab?.link}
+                  isBackgroung={false}
+                />
+              </div>
+            </div>
+
+            {/* DESKTOP IMAGE */}
             <div className="hidden lg:block">
               <Image
                 src={currentTab?.image}
@@ -525,34 +534,40 @@ const HomePageV2 = () => {
                 width={400}
                 height={400}
                 loading="lazy"
+                className="rounded-xl"
               />
             </div>
           </motion.div>
-        </div>
+        </AnimatePresence>
       </Container>
       <div className="mb-[60px] 4xl:mb-[100px]">
         <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[80px]">
-          <Container className="flex items-center justify-between">
+          <Container className="flex flex-col items-end justify-between gap-5 md:flex-row md:items-center md:gap-0">
             <SectionHeader headingText={homePageData?.deployedProjectsTitle} />
-            <div className="flex w-max items-center gap-5 md:gap-10">
-              <button className="custom-prev" ref={prevRef}>
+            <div className="flex w-max items-center gap-4 md:gap-6">
+              <button
+                ref={prevRef}
+                className="custom-prev group flex h-11 w-11 items-center justify-center rounded-full border border-primary/20 bg-white shadow-md transition-all duration-300 hover:bg-black-100-alpha hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-40"
+              >
                 <Image
                   src={arrow}
-                  alt="arrow"
-                  width={24}
-                  height={24}
-                  loading="lazy"
-                  className="max-w-4 rotate-180 xxl:max-w-full"
+                  alt="Previous"
+                  width={20}
+                  height={20}
+                  className="rotate-180 transition-transform duration-300 group-hover:scale-110"
                 />
               </button>
-              <button className="custom-next" ref={nextRef}>
+
+              <button
+                ref={nextRef}
+                className="custom-next group flex h-11 w-11 items-center justify-center rounded-full border border-primary/20 bg-white shadow-md transition-all duration-300 hover:bg-black-100-alpha hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-40"
+              >
                 <Image
                   src={arrow}
-                  alt="arrow"
-                  width={24}
-                  height={24}
-                  loading="lazy"
-                  className="max-w-4 xxl:max-w-full"
+                  alt="Next"
+                  width={20}
+                  height={20}
+                  className="transition-transform duration-300 group-hover:scale-110"
                 />
               </button>
             </div>
@@ -587,7 +602,7 @@ const HomePageV2 = () => {
               {homePageData?.deployedProjectsList &&
                 homePageData?.deployedProjectsList.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-[#f0f3f5]/70 p-4 lg:flex-row xl:p-6">
+                    <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-aliceBlue/70 p-4 lg:flex-row xl:p-6">
                       <h6 className="w-max font-opt text-xl font-medium leading-6 text-primary 3xl:text-3xl 4xl:leading-10">
                         {item?.projectName}
                       </h6>

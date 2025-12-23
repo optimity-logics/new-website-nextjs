@@ -56,9 +56,9 @@ const OurWorks = () => {
         </Container>
       </div>
       <Container className="-mt-[30px] mb-[60px] flex flex-col gap-[60px] 3xl:mb-[100px]">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-5">
           <div className="flex items-center justify-center">
-            <div className="flex gap-5 overflow-auto whitespace-pre scrollbar-hide">
+            <div className="flex gap-5 overflow-auto whitespace-pre rounded-full border border-black-100-alpha bg-snowWhite p-2 scrollbar-hide">
               {ourWorkPage?.ourWorks &&
                 ourWorkPage?.ourWorks.map((categories, index) => (
                   <div
@@ -66,13 +66,13 @@ const OurWorks = () => {
                     className="relative w-full cursor-pointer rounded-full"
                   >
                     {selectedCategories === categories?.categories && (
-                      <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-[#8ca7bc]"></div>
+                      <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-dustyBlue"></div>
                     )}
                     <div
                       onClick={() =>
                         setSelectedCategories(categories?.categories)
                       }
-                      className={`flex h-full items-center justify-center rounded-full px-6 py-2 font-opt text-base font-normal text-optDesc ${selectedCategories === categories?.categories ? 'bg-[#F3F4F8]' : 'border border-[#E8ECF2] bg-white'}`}
+                      className={`flex h-full items-center justify-center rounded-full px-6 py-2 font-opt text-base font-normal text-optDesc ${selectedCategories === categories?.categories ? 'bg-whiteSmoke' : 'border border-iceGray bg-white'}`}
                     >
                       {categories?.categories}
                     </div>
@@ -81,7 +81,7 @@ const OurWorks = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="flex gap-5 overflow-auto whitespace-pre scrollbar-hide">
+            <div className="flex gap-5 overflow-auto whitespace-pre rounded-full border border-black-100-alpha bg-snowWhite p-2 scrollbar-hide">
               {ourWorkPage?.ourWorks
                 ?.find((cat) => cat.categories === selectedCategories)
                 ?.subcategories.map((subCate, ind) => (
@@ -90,11 +90,11 @@ const OurWorks = () => {
                     className="relative w-full cursor-pointer rounded-full"
                   >
                     {selectedSubCategories === subCate?.name && (
-                      <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-[#8ca7bc]"></div>
+                      <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-dustyBlue"></div>
                     )}
                     <div
                       onClick={() => setSelectedSubCategories(subCate?.name)}
-                      className={`flex h-full items-center justify-center rounded-full px-6 py-2.5 font-opt text-base font-normal leading-5 text-optDesc ${selectedSubCategories === subCate?.name ? 'bg-[#F3F4F8]' : 'border border-[#E8ECF2] bg-white'}`}
+                      className={`flex h-full items-center justify-center rounded-full px-6 py-2.5 font-opt text-base font-normal leading-5 text-optDesc ${selectedSubCategories === subCate?.name ? 'bg-whiteSmoke' : 'border border-iceGray bg-white'}`}
                     >
                       {subCate?.name}
                     </div>
@@ -117,7 +117,7 @@ const OurWorks = () => {
                       ease: 'easeIn',
                     }}
                   >
-                    <div className="rounded-xl border border-black/10 bg-[#F8F8F8] p-2">
+                    <div className="rounded-xl border border-black/10 bg-primarySnowGray p-2">
                       <div className="flex flex-col gap-3 rounded-md bg-white p-2">
                         <div className="relative">
                           <Image

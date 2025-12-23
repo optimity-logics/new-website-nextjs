@@ -32,7 +32,7 @@ const Button = ({
   const handleMouseLeave = () => {
     setHover(false);
   };
-  const DefaultStyle = `flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-250 ease-in hover:shadow-lg ${isBackgroundLight ? 'border-transparent bg-white text-optDesc hover:border-white hover:bg-transparent hover:text-white' : `${isBackgroung ? 'border-transparent bg-[#1A6AA3] text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc bg-transparent text-optDesc hover:border-transparent hover:bg-[#1A6AA3] hover:text-white'} ${isLoading ? '!bg-[#1A6AA3] text-white border-transparent' : ''}`} ${className}`;
+  const DefaultStyle = `flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-250 ease-in hover:shadow-lg ${isBackgroundLight ? 'border-transparent bg-white text-optDesc hover:border-white hover:bg-transparent hover:text-white' : `${isBackgroung ? 'border-transparent bg-lightBlue text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc bg-transparent text-optDesc hover:border-transparent hover:bg-lightBlue hover:text-white'} ${isLoading ? '!bg-lightBlue text-white border-transparent' : ''}`} ${className}`;
 
   const Content = (
     <>

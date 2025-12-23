@@ -42,7 +42,7 @@ const HeroSectionHeading = ({
     <div className={`flex flex-col gap-5 ${className} max-w-[600px]`}>
       {badgeTitle && (
         <div
-          className={`w-max rounded-full border-1 border-[#D6DDE0] bg-[#F7F9FA] px-4 py-1 shadow-default ${badgeStyle}`}
+          className={`w-max rounded-full border-1 border-coolGray bg-offWhite px-4 py-1 shadow-default ${badgeStyle}`}
         >
           <span className="line-clamp-1 font-opt text-sm leading-7 text-primary">
             {badgeTitle}
