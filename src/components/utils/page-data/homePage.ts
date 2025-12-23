@@ -3,7 +3,7 @@ import fintech from '../../../../public/webp/homePagev2/fintech.webp';
 import logistics from '../../../../public/webp/homePagev2/logistics.webp';
 import edTech from '../../../../public/webp/homePagev2/edtech.webp';
 import FB from '../../../../public/webp/homePagev2/fb.webp';
-import healthCare from '../../../../public/webp/homePagev2/healthcare.webp';
+import healthCare from '../../../../public/webp/homePagev2/Healthcare.webp';
 import mobileApp from '../../../../public/webp/homePagev2/mobile-app.webp';
 import webApp from '../../../../public/webp/homePagev2/web-apps.webp';
 import uiux from '../../../../public/webp/homePagev2/ui-ux.webp';

@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import heroImg from '../../../public/images/homePagev2/logov3.svg';
 import logo from '../../../public/svg/logo.svg';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import arrow from '../../../public/images/homePagev2/arrow-black.png';
 import ellips1 from '../../../public/images/homePagev2/ellips1.png';
@@ -461,26 +461,30 @@ const HomePageV2 = () => {
               </button>
             ))}
         </div>
-        <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:items-end">
-          <div className="flex w-full max-w-full flex-col gap-6 lg:max-w-[650px] xxl:max-w-[800px]">
-            <div className="flex flex-col gap-2.5">
-              <h3 className="font-opt text-3xl font-semibold leading-8 text-primary">
-                {currentTab?.title}
-              </h3>
-              <p className="font-opt text-base font-normal leading-5 text-optDesc">
-                {currentTab?.description}
-              </p>
-            </div>
-            <motion.div
-              key={currentTab?.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                ease: 'easeIn',
-              }}
-              className="block lg:hidden"
-            >
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentTab?.id}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{
+              duration: 0.6,
+              ease: 'easeInOut',
+            }}
+            className="flex flex-col justify-between gap-10 lg:flex-row lg:items-end"
+          >
+            {/* LEFT CONTENT */}
+            <div className="flex w-full max-w-full flex-col gap-6 lg:max-w-[650px] xxl:max-w-[800px]">
+              <div className="flex flex-col gap-2.5">
+                <h3 className="font-opt text-3xl font-semibold leading-8 text-primary">
+                  {currentTab?.title}
+                </h3>
+                <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                  {currentTab?.description}
+                </p>
+              </div>
+
+              {/* MOBILE IMAGE */}
               <div className="block lg:hidden">
                 <Image
                   src={currentTab?.image}
@@ -491,44 +495,38 @@ const HomePageV2 = () => {
                   className="mx-auto rounded-xl"
                 />
               </div>
-            </motion.div>
-            <div className="flex flex-col gap-6 rounded-xl bg-snowGray p-4 md:p-8">
-              <h4 className="font-opt text-xl font-medium leading-6 text-lightBlue">
-                {currentTab?.sectionTitle}
-              </h4>
-              <ul className="flex flex-col gap-3">
-                {currentTab?.features.map((list, index) => (
-                  <li key={index} className="flex items-center gap-4">
-                    <Image
-                      src="/svg/listarrow.svg"
-                      alt="tick"
-                      loading="lazy"
-                      width={20}
-                      height={20}
-                    />
-                    <p className="font-opt text-base font-normal leading-5 text-optDesc">
-                      {list}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-              <Button
-                btnName={currentTab?.LearnMore}
-                redirectionLink={currentTab?.link}
-                isBackgroung={false}
-              />
+
+              <div className="flex flex-col gap-6 rounded-xl bg-snowGray p-4 md:p-8">
+                <h4 className="font-opt text-xl font-medium leading-6 text-lightBlue">
+                  {currentTab?.sectionTitle}
+                </h4>
+
+                <ul className="flex flex-col gap-3">
+                  {currentTab?.features.map((list, index) => (
+                    <li key={index} className="flex items-center gap-4">
+                      <Image
+                        src="/svg/listarrow.svg"
+                        alt="tick"
+                        width={20}
+                        height={20}
+                        loading="lazy"
+                      />
+                      <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                        {list}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+
+                <Button
+                  btnName={currentTab?.LearnMore}
+                  redirectionLink={currentTab?.link}
+                  isBackgroung={false}
+                />
+              </div>
             </div>
-          </div>
-          <motion.div
-            key={currentTab?.id}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              ease: 'easeIn',
-            }}
-            className="hidden lg:block"
-          >
+
+            {/* DESKTOP IMAGE */}
             <div className="hidden lg:block">
               <Image
                 src={currentTab?.image}
@@ -540,7 +538,7 @@ const HomePageV2 = () => {
               />
             </div>
           </motion.div>
-        </div>
+        </AnimatePresence>
       </Container>
       <div className="mb-[60px] 4xl:mb-[100px]">
         <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[80px]">
