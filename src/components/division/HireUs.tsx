@@ -9,12 +9,12 @@ import SectionHeader from '../ui/SectionHeader';
 import HeroSectionHeading from '../ui/HeroSectionHeading';
 import ClientTestimonial from '../ui/ClientTestimonial';
 import { IHireUsPageType } from '../type/hireUs/hireUsType';
+import { motion } from 'framer-motion';
 type hireUsProps = {
   data: IHireUsPageType;
 };
 const HireUs = ({ data }: hireUsProps) => {
   const [hover, setHover] = useState<boolean>(false);
-  console.log(data);
   const handleMouseEnter = () => setHover(true);
   const handleMouseLeave = () => {
     setHover(false);
@@ -30,16 +30,24 @@ const HireUs = ({ data }: hireUsProps) => {
           link={data?.heroSection?.btnName}
           className="!gap-10"
         />
-        <div className="relative">
-          <Image
-            src={data?.heroSection?.images?.mainImage || ''}
-            alt="hire-us"
-            width={600}
-            height={100}
-            priority
-            fetchPriority="high"
-            className="h-auto w-full max-w-[500px]"
-          />
+        <div className="relative aspect-[5/4] h-auto w-full max-w-[450px] 3xl:aspect-[5/6]">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              ease: 'easeIn',
+            }}
+            className="relative h-full w-full"
+          >
+            <Image
+              src={data?.heroSection?.images?.mainImage || ''}
+              alt="solution"
+              fill
+              priority
+              fetchPriority="high"
+            />
+          </motion.div>
         </div>
       </Container>
       <Container className="mb-[60px] flex flex-col gap-8 4xl:mb-[100px] 4xl:gap-[60px]">
@@ -74,6 +82,7 @@ const HireUs = ({ data }: hireUsProps) => {
                 alt="hire-us"
                 width={533}
                 height={333}
+                loading="lazy"
                 className="w-full rounded-xl md:w-max"
               />
             </div>
@@ -87,9 +96,9 @@ const HireUs = ({ data }: hireUsProps) => {
         <Container className="flex flex-col items-center justify-between gap-10 py-12 lg:flex-row">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-5">
-              <h5 className="font-opt text-3xl font-normal leading-8 text-white/45">
+              <h3 className="font-opt text-3xl font-normal leading-8 text-white/45">
                 {data?.engagementModel?.subHeading}
-              </h5>
+              </h3>
               <h3 className="font-opt text-5xl font-medium italic text-red">
                 {data?.engagementModel?.heading}
               </h3>
@@ -100,7 +109,7 @@ const HireUs = ({ data }: hireUsProps) => {
               onMouseUp={handleMouseEnter}
               onMouseDown={handleMouseLeave}
               href={data?.engagementModel?.link}
-              className={`flex w-max items-center justify-center gap-1 rounded-[50px] border border-white px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-white transition-all duration-250 ease-in hover:border-transparent hover:bg-[#1A6AA3] hover:shadow-lg`}
+              className={`flex w-max items-center justify-center gap-1 rounded-[50px] border border-white px-[14px] py-[8px] font-opt text-sm font-normal leading-4 text-white transition-all duration-250 ease-in hover:border-transparent hover:bg-lightBlue hover:shadow-lg`}
             >
               <span className="mt-0.5">{data?.engagementModel?.button}</span>
               <span className="mt-0.5">
@@ -114,12 +123,13 @@ const HireUs = ({ data }: hireUsProps) => {
               alt=""
               width={550}
               height={400}
-              className="h-auto max-w-[350px]"
+              loading="lazy"
+              className="max-w-[350px]"
             />
           </div>
         </Container>
       </div>
-      <div className="grid bg-[#F7F7F8] py-10 xxl:py-20">
+      <div className="grid bg-snowGray py-10 xxl:py-20">
         <Container className="relative z-10 grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="absolute -z-10 flex h-full w-full items-center justify-center">
             <Image
@@ -141,13 +151,13 @@ const HireUs = ({ data }: hireUsProps) => {
                 key={i}
                 className="flex flex-col gap-[30px] rounded-[20px] bg-white/70 p-[30px] shadow-howWorkCard backdrop-blur-sm"
               >
-                <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-[#05ADE1] font-opt text-xl font-medium text-white">
+                <span className="flex h-[60px] max-w-[60px] items-center justify-center rounded-md bg-electricBlue font-opt text-xl font-medium text-white">
                   0{i + 1}
                 </span>
                 <div className="flex flex-col gap-3">
-                  <h5 className="font-opt text-xl font-medium leading-6 text-primary">
+                  <h3 className="font-opt text-xl font-medium leading-6 text-primary">
                     {item?.title}
-                  </h5>
+                  </h3>
                   <p className="font-opt text-base font-normal leading-5 text-optDesc">
                     {item?.description}
                   </p>
@@ -175,9 +185,9 @@ const HireUs = ({ data }: hireUsProps) => {
                   key={i}
                   className="bg flex w-full min-w-[300px] flex-col gap-3 rounded-2xl bg-successFulStepCard p-[30px] sm:min-w-[550px]"
                 >
-                  <h5 className="font-opt text-xl font-medium leading-6 text-white">
+                  <h3 className="font-opt text-xl font-medium leading-6 text-white">
                     {item?.title}
-                  </h5>
+                  </h3>
                   <p className="line-clamp-6 font-opt text-base font-normal leading-5 text-white/70">
                     {item?.description}
                   </p>

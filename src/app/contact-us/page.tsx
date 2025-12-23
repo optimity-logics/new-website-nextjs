@@ -18,7 +18,7 @@ const ContactUs = () => {
               headingStyle="text-white"
               descriptionStyle="text-white"
             />
-            <div className="h-[1px] w-full bg-[#FFFFFF38]"></div>
+            <div className="h-[1px] w-full bg-rostedWhite"></div>
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
               <Link
                 href="tel:+91 635 301 5499"
@@ -35,7 +35,7 @@ const ContactUs = () => {
                 <span>info@optimitylogics.com</span>
               </Link>
             </div>
-            <div className="h-[1px] w-full bg-[#FFFFFF38]"></div>
+            <div className="h-[1px] w-full bg-rostedWhite"></div>
             <div className="flex items-start gap-3">
               <Image
                 src={'/svg/location.svg'}

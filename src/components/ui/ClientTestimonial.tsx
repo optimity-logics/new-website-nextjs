@@ -124,7 +124,7 @@ const ClientTestimonial = ({ isDark }: ClientTestimonialProps) => {
                 ></div>
               </div>
               <div
-                className={`flex h-full flex-col justify-between gap-14 rounded-[17px] md:px-[28px] md:py-[32px] ${isDark ? 'bg-white/10 p-5 shadow-lg backdrop-blur-lg' : 'bg-[#F7F7F8]'}`}
+                className={`flex h-full flex-col justify-between gap-14 rounded-[17px] md:px-[28px] md:py-[32px] ${isDark ? 'bg-white/10 p-5 shadow-lg backdrop-blur-lg' : 'bg-snowGray'}`}
               >
                 <p
                   className={`${isDark ? 'text-white' : 'text-optDesc'} font-opt text-2xl font-extrabold leading-8 md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]`}
@@ -167,7 +167,7 @@ const ClientTestimonial = ({ isDark }: ClientTestimonialProps) => {
                   }}
                 >
                   <div
-                    className={`flex h-full flex-col justify-between gap-6 rounded-[17px] bg-[#F7F7F8] p-5 shadow-custom md:p-[25px]`}
+                    className={`flex h-full flex-col justify-between gap-6 rounded-[17px] bg-snowGray p-5 shadow-custom md:p-[25px]`}
                   >
                     <p className="line-clamp-6 font-opt text-sm font-normal text-optDesc">
                       {item?.message}
@@ -182,7 +182,7 @@ const ClientTestimonial = ({ isDark }: ClientTestimonialProps) => {
                         width={67}
                         height={67}
                         loading="lazy"
-                        className="h-[67px] w-[67px] rounded-[12px] object-cover outline outline-[2px] -outline-offset-1 outline-[#0000001A]"
+                        className="h-[67px] w-[67px] rounded-[12px] object-cover outline outline-[2px] -outline-offset-1 outline-black-150-alpha"
                       />
                     </div>
                   </div>

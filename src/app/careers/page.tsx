@@ -185,7 +185,7 @@ const Career = () => {
                           onMouseUp={() => setHoverPosition(detailIndex)}
                           onMouseDown={() => setHoverPosition(null)}
                           href={'/position'}
-                          className={`flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-200 ease-in ${detailIndex % 2 === 0 ? 'border-transparent bg-[#1A6AA3] text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc text-optDesc hover:border-transparent hover:bg-[#1A6AA3] hover:text-white'}`}
+                          className={`flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-200 ease-in ${detailIndex % 2 === 0 ? 'border-transparent bg-lightBlue text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc text-optDesc hover:border-transparent hover:bg-lightBlue hover:text-white'}`}
                         >
                           <span>See position</span>
                           <AnimatedArrow
@@ -246,7 +246,7 @@ const Career = () => {
                   className="h-full w-full object-contain"
                 />
 
-                <div className="flex h-full cursor-pointer items-end rounded-[15px] bg-[#1a1a1a] p-4 lg:p-8">
+                <div className="flex h-full cursor-pointer items-end rounded-[15px] bg-richBlack p-4 lg:p-8">
                   <div className="flex flex-col gap-3">
                     <span className="font-opt text-base font-medium leading-5 text-white lg:text-[28px] lg:leading-[32px]">
                       Explore more

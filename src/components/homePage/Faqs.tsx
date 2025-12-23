@@ -8,7 +8,7 @@ import { homePageData } from '../utils/page-data/homePage';
 const Faqs = () => {
   return (
     <Container className="py-[60px] 4xl:py-[100px]">
-      <div className="flex w-full flex-col gap-8 rounded-xl bg-[#F7F7F8] px-6 py-[60px] lg:gap-6 xl:flex-row xl:items-center 3xl:gap-10 4xl:gap-[80px] 4xl:px-[60px] 4xl:py-[100px]">
+      <div className="flex w-full flex-col gap-8 rounded-xl bg-snowGray px-6 py-[60px] lg:gap-6 xl:flex-row xl:items-center 3xl:gap-10 4xl:gap-[80px] 4xl:px-[60px] 4xl:py-[100px]">
         <div className="flex w-full max-w-[450px] flex-col gap-6">
           <SectionHeading
             heading={homePageData?.faqTitle}

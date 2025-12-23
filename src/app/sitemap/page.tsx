@@ -81,7 +81,7 @@ const Sitemap = () => {
                       >
                         <Link
                           href={tech?.techLink}
-                          className="group flex items-center gap-1.5 text-nowrap rounded-[30px] border border-dashed border-[#192020] px-[18px] py-2.5 text-base font-normal transition-all duration-400 ease-in-out hover:border-[#1A6AA3] hover:bg-[#1A6AA3] hover:text-white"
+                          className="group flex items-center gap-1.5 text-nowrap rounded-[30px] border border-dashed border-carbonBlack px-[18px] py-2.5 text-base font-normal transition-all duration-400 ease-in-out hover:border-lightBlue hover:bg-lightBlue hover:text-white"
                         >
                           {formatTechName(tech?.techName)}
                           <span className="mt-0.5">

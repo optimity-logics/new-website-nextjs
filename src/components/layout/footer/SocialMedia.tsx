@@ -14,7 +14,7 @@ const SocialMedia = () => {
           socialMediaIcons.map((item, index) => (
             <li
               key={index}
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-[#f0f3f5]/10 backdrop-blur-sm"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-aliceBlue/10 backdrop-blur-sm"
             >
               <Link href={item?.link} target="_blank">
                 <Image

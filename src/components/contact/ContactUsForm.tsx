@@ -80,7 +80,7 @@ const ContactUsForm = () => {
 
   return (
     <div
-      className={`flex w-full flex-col gap-[30px] rounded-[20px] border ${Object.keys(formik.errors).length > 0 && Object.keys(formik.touched).length > 0 ? 'border-red' : 'border-[#D9D9D9]'} bg-[#FCFCFC] p-4 shadow-lg md:p-8 lg:max-w-[678px]`}
+      className={`flex w-full flex-col gap-[30px] rounded-[20px] border ${Object.keys(formik.errors).length > 0 && Object.keys(formik.touched).length > 0 ? 'border-red' : 'border-silverGray'} bg-paperWhite p-4 shadow-lg md:p-8 lg:max-w-[678px]`}
     >
       <h3 className="font-opt text-xl font-medium text-primary">
         Fill the below details
@@ -98,7 +98,7 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}
-            className={`w-full border-b bg-transparent pb-1 font-opt text-base text-optDesc outline-none ${formik.touched.name && formik.errors.name ? 'border-b-red' : 'border-b-[#D1D9E6]'}`}
+            className={`w-full border-b bg-transparent pb-1 font-opt text-base text-optDesc outline-none ${formik.touched.name && formik.errors.name ? 'border-b-red' : 'border-b-mutedBlue'}`}
           />
           {formik.touched.name && formik.errors.name && (
             <div className="absolute left-0 top-full mt-0.5 font-opt text-sm font-normal text-red">
@@ -115,7 +115,7 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
-            className={`w-full border-b bg-transparent pb-1 font-opt text-base text-optDesc outline-none ${formik.touched.email && formik.errors.email ? 'border-b-red' : 'border-b-[#D1D9E6]'}`}
+            className={`w-full border-b bg-transparent pb-1 font-opt text-base text-optDesc outline-none ${formik.touched.email && formik.errors.email ? 'border-b-red' : 'border-b-mutedBlue'}`}
           />
           {formik.touched.email && formik.errors.email && (
             <div className="absolute left-0 top-full mt-0.5 font-opt text-sm font-normal text-red">
@@ -132,7 +132,7 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.phoneNumber}
-            className={`w-full border-b bg-transparent pb-1 font-opt text-base text-optDesc outline-none ${formik.touched.phoneNumber && formik.errors.phoneNumber ? 'border-b-red' : 'border-b-[#D1D9E6]'}`}
+            className={`w-full border-b bg-transparent pb-1 font-opt text-base text-optDesc outline-none ${formik.touched.phoneNumber && formik.errors.phoneNumber ? 'border-b-red' : 'border-b-mutedBlue'}`}
           />
           {formik.touched.phoneNumber && formik.errors.phoneNumber && (
             <div className="absolute left-0 top-full mt-0.5 font-opt text-sm font-normal text-red">
@@ -148,7 +148,7 @@ const ContactUsForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
-            className={`w-full border-b bg-transparent pb-1 font-opt text-base text-optDesc outline-none ${formik.touched.message && formik.errors.message ? 'border-b-red' : 'border-b-[#D1D9E6]'}`}
+            className={`w-full border-b bg-transparent pb-1 font-opt text-base text-optDesc outline-none ${formik.touched.message && formik.errors.message ? 'border-b-red' : 'border-b-mutedBlue'}`}
           />
           {formik.touched.message && formik.errors.message && (
             <div className="absolute left-0 top-full mt-0.5 font-opt text-sm font-normal text-red">

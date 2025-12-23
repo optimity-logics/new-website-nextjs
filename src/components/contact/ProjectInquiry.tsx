@@ -82,7 +82,7 @@ const ProjectInquiry = () => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className={`flex w-full max-w-full flex-col gap-10 rounded-2xl border bg-[#f0f3f5]/10 p-6 shadow-xl backdrop-blur-sm lg:max-w-[737px] xl:px-[23px] xl:py-[52px] xl:shadow-none ${Object.keys(formik.errors).length > 0 && Object.keys(formik.touched).length > 0 ? 'border-red' : 'border-transparent'}`}
+      className={`flex w-full max-w-full flex-col gap-10 rounded-2xl border bg-aliceBlue/10 p-6 shadow-xl backdrop-blur-sm lg:max-w-[737px] xl:px-[23px] xl:py-[52px] xl:shadow-none ${Object.keys(formik.errors).length > 0 && Object.keys(formik.touched).length > 0 ? 'border-red' : 'border-transparent'}`}
     >
       <div className="flex flex-col gap-[26px]">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -92,7 +92,7 @@ const ProjectInquiry = () => {
               name="firstName"
               type="text"
               placeholder={homePageData?.formFirstName}
-              className={`w-full rounded-xl border bg-[#CCCCCC5C]/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.firstName && formik.errors.firstName ? 'border-red' : 'border-[#CCCCCC5C]'}`}
+              className={`w-full rounded-xl border bg-disabledGray/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.firstName && formik.errors.firstName ? 'border-red' : 'border-disabledGray'}`}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.firstName}
@@ -109,7 +109,7 @@ const ProjectInquiry = () => {
               name="lastName"
               type="text"
               placeholder={homePageData?.formLastName}
-              className={`w-full rounded-xl border bg-[#CCCCCC5C]/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.lastName && formik.errors.lastName ? 'border-red' : 'border-[#CCCCCC5C]'}`}
+              className={`w-full rounded-xl border bg-disabledGray/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.lastName && formik.errors.lastName ? 'border-red' : 'border-disabledGray'}`}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.lastName}
@@ -127,7 +127,7 @@ const ProjectInquiry = () => {
             name="email"
             type="email"
             placeholder={homePageData?.formEmail}
-            className={`w-full rounded-xl border bg-[#CCCCCC5C]/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.email && formik.errors.email ? 'border-red' : 'border-[#CCCCCC5C]'}`}
+            className={`w-full rounded-xl border bg-disabledGray/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.email && formik.errors.email ? 'border-red' : 'border-disabledGray'}`}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
@@ -144,7 +144,7 @@ const ProjectInquiry = () => {
             name="subject"
             type="text"
             placeholder={homePageData?.formSubject}
-            className={`w-full rounded-xl border bg-[#CCCCCC5C]/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.subject && formik.errors.subject ? 'border-red' : 'border-[#CCCCCC5C]'}`}
+            className={`w-full rounded-xl border bg-disabledGray/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.subject && formik.errors.subject ? 'border-red' : 'border-disabledGray'}`}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.subject}
@@ -161,7 +161,7 @@ const ProjectInquiry = () => {
             name="description"
             rows={2}
             placeholder={homePageData?.formDescription}
-            className={`w-full rounded-xl border bg-[#CCCCCC5C]/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.description && formik.errors.description ? 'border-red' : 'border-[#CCCCCC5C]'}`}
+            className={`w-full rounded-xl border bg-disabledGray/30 p-2.5 text-lg text-white/70 focus:outline-none lg:px-4 lg:py-5 ${formik.touched.description && formik.errors.description ? 'border-red' : 'border-disabledGray'}`}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.description}
