@@ -124,7 +124,7 @@ const ClientTestimonial = ({ isDark }: ClientTestimonialProps) => {
                 ></div>
               </div>
               <div
-                className={`flex h-full flex-col justify-between gap-14 rounded-[17px] md:px-[28px] md:py-[32px] ${isDark ? 'bg-white/10 p-5 shadow-lg backdrop-blur-lg' : 'bg-snowGray'}`}
+                className={`flex h-full flex-col justify-between gap-14 rounded-[17px] p-5 md:px-[28px] md:py-[32px] ${isDark ? 'bg-white/10 p-5 shadow-lg backdrop-blur-lg' : 'bg-snowGray'}`}
               >
                 <p
                   className={`${isDark ? 'text-white' : 'text-optDesc'} font-opt text-2xl font-extrabold leading-8 md:text-3xl md:leading-9 4xl:text-[50px] 4xl:leading-[56px]`}

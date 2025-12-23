@@ -62,9 +62,9 @@ const Solution = ({ data }: IsolutionSubPageType) => {
         </div>
       </div>
       <div
-        className={`${data?.ctaSection?.bgClass} relative mb-[60px] bg-full bg-center bg-no-repeat after:absolute after:inset-0 after:max-h-[500px] after:w-full after:bg-black-560-alpha 3xl:mb-[100px]`}
+        className={`${data?.ctaSection?.bgClass} relative mb-[60px] bg-cover bg-center bg-no-repeat after:absolute after:inset-0 after:max-h-[500px] after:w-full after:bg-black-560-alpha lg:bg-full 3xl:mb-[100px]`}
       >
-        <Container className="relative z-30 py-[150px]">
+        <Container className="relative z-30 py-[80px]">
           <HeroSectionHeading
             heading={data?.ctaSection?.heading}
             btnName={data?.ctaSection?.buttonText}
@@ -118,7 +118,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
             {data?.healthcareServices?.images.map((item, i) => (
               <div
                 key={i}
-                className="relative aspect-[6/5] h-full w-full max-w-[340px] rounded-2xl after:absolute after:inset-0 after:rounded-2xl after:bg-black-440-alpha"
+                className="relative aspect-[6/5] h-full w-full min-w-[300px] rounded-2xl after:absolute after:inset-0 after:rounded-2xl after:bg-black-440-alpha md:min-w-[340px]"
               >
                 <Image src={item} alt="health" fill className="rounded-2xl" />
               </div>
