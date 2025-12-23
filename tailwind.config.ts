@@ -180,7 +180,7 @@ export default {
         dustyBlue: '#8ca7bc',
         whiteSmoke: '#F3F4F8',
         disabledGray: '#CCCCCC5C',
-        glassWhite: 'ffffff4a',
+        glassWhite: '#ffffff4a',
         mutedBlue: '#D1D9E6',
         subtleWhite: '#ebecf5',
         iceGray: '#E8ECF2',

@@ -468,7 +468,7 @@ const HomePageV2 = () => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{
-              duration: 0.6,
+              duration: 0.8,
               ease: 'easeInOut',
             }}
             className="flex flex-col justify-between gap-10 lg:flex-row lg:items-end"
@@ -491,7 +491,7 @@ const HomePageV2 = () => {
                   alt="industries"
                   width={400}
                   height={400}
-                  loading="lazy"
+                  priority
                   className="mx-auto rounded-xl"
                 />
               </div>
@@ -533,7 +533,7 @@ const HomePageV2 = () => {
                 alt="industries"
                 width={400}
                 height={400}
-                loading="lazy"
+                priority
                 className="rounded-xl"
               />
             </div>

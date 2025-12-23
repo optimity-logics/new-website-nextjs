@@ -361,7 +361,7 @@ const AboutUs = () => {
         <SectionHeader
           headingText={aboutUsPage?.ourTeam}
           descriptionText={aboutUsPage?.shortDescription}
-          className="items-center"
+          className="mx-auto max-w-[800px] items-center px-4 sm:px-6 md:px-10"
         />
 
         <div className="">

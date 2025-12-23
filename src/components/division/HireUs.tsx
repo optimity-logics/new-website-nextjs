@@ -22,7 +22,7 @@ const HireUs = ({ data }: hireUsProps) => {
 
   return (
     <>
-      <Container className="my-[60px] flex flex-col-reverse items-center justify-between gap-10 md:flex-row xxl:my-[100px]">
+      <Container className="my-[60px] flex flex-col items-center justify-between gap-10 md:flex-row xxl:my-[100px]">
         <HeroSectionHeading
           heading={data?.heroSection?.heading}
           description={data?.heroSection?.description}
@@ -30,7 +30,7 @@ const HireUs = ({ data }: hireUsProps) => {
           link={data?.heroSection?.btnName}
           className="!gap-10"
         />
-        <div className="relative aspect-[5/4] h-auto w-full max-w-[450px] 3xl:aspect-[5/6]">
+        <div className="relative aspect-[5/4] h-auto w-full max-w-[270px] md:max-w-[450px] 3xl:aspect-[5/6]">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}

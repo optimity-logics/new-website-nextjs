@@ -213,7 +213,8 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
           <Button
             btnName="Contact us"
             redirectionLink="/contact-us"
-            onClick={handleCloseDrawer}
+            isButton={true}
+            onClick={() => handleCloseDrawer()}
           />
         </div>
       </div>

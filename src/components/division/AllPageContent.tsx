@@ -191,7 +191,7 @@ const AllPageContent = ({ data }: IPropsType) => {
             data?.development?.developmentServices.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-4 rounded-[15px] bg-primaryOffWhite p-5 shadow-devCardShadow md:p-[30px]"
+                className="flex flex-col gap-4 rounded-[15px] p-5 shadow-devCardShadow md:p-[30px]"
               >
                 <h5 className="font-opt text-xl font-medium leading-6 text-primary">
                   {item?.title}

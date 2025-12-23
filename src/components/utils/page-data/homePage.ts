@@ -3,7 +3,7 @@ import fintech from '../../../../public/webp/homePagev2/fintech.webp';
 import logistics from '../../../../public/webp/homePagev2/logistics.webp';
 import edTech from '../../../../public/webp/homePagev2/edtech.webp';
 import FB from '../../../../public/webp/homePagev2/fb.webp';
-
+import healthCare from '../../../../public/webp/homePagev2/hc.webp';
 import mobileApp from '../../../../public/webp/homePagev2/mobile-app.webp';
 import webApp from '../../../../public/webp/homePagev2/web-apps.webp';
 import uiux from '../../../../public/webp/homePagev2/ui-ux.webp';
@@ -372,7 +372,7 @@ export const homePageData = {
         'Automation of clinical workflow greatly lessens the administrative load.',
         'Optimising resource allocation during times of high demand',
       ],
-      image: '/webp/homePagev2/hc.webp',
+      image: healthCare,
       LearnMore: 'Learn More',
       link: '',
     },
