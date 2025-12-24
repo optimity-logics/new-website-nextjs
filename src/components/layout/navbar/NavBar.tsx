@@ -1,119 +1,127 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import logo from '../../../../public/svg/logo.svg';
 import mobileScreenLogo from '../../../../public/svg/mobileScreenLogo.svg';
 import hamburger from '../../../../public/svg/hamburger-menu.svg';
-import MenuSidebar from '@/components/model-&-Drawer/MenuSidebar';
 
+import MenuSidebar from '@/components/model-&-Drawer/MenuSidebar';
 import MegaMenu from './MegaMenu';
 import Button from '@/components/ui/Button';
+import { useScrollDirection } from '@/components/hooks/use-scroll-direction';
+
+const navbarVariants = {
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 120,
+      damping: 20,
+      mass: 0.8,
+    },
+  },
+  hidden: {
+    y: '-100%',
+    opacity: 0,
+    transition: {
+      type: 'tween',
+      duration: 0.6,
+      ease: 'easeIn',
+    },
+  },
+};
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const { isVisible } = useScrollDirection();
 
-  const [small, setSmall] = useState(false);
+  const shouldShowNavbar = isMegaMenuOpen || isVisible;
 
-  const handleOpenMenuDrawer = () => {
-    setIsOpen(true);
-  };
-  useEffect(() => {
-    // Function to check scroll position
-    const handleScroll = () => {
-      setSmall(window.scrollY > 0);
-    };
-
-    // Set initial value
-    handleScroll();
-
-    // Add scroll listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup on unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
   return (
     <>
-      <div
-        className={`sticky ${small ? 'top-1.5 mx-4 xl:mx-0' : 'top-0'} z-[99]`}
-      >
-        <div
-          className={`easing_func border-b border-b-primaryGrayishBlue ${small ? 'small rounded-full bg-white px-3 py-2 shadow-card xl:py-0' : 'large bg-white/20 px-4 py-2 backdrop-blur-md md:px-8 xl:px-10'} mx-auto max-w-[1920px]`}
-        >
-          <div className="navigation">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-5 xl:hidden">
-                <div
-                  onClick={handleOpenMenuDrawer}
-                  className="block cursor-pointer xl:hidden"
-                >
-                  <Image
-                    src={hamburger}
-                    alt="hamburger-menu"
-                    width={24}
-                    height={24}
-                    className="h-auto max-w-[22px]"
-                  />
-                </div>
-                <div>
-                  <Link href="/">
-                    <Image
-                      src={mobileScreenLogo}
-                      alt="nav-logo"
-                      width={42}
-                      height={39}
-                      className="h-auto max-w-[30px]"
-                    />
-                  </Link>
-                </div>
-              </div>
-              <div className="flex items-center gap-10 3xl:gap-32">
-                <div className="hidden xl:block">
-                  <Link href="/">
-                    {small ? (
-                      <div className="max-w-max">
-                        <Image
-                          src={mobileScreenLogo}
-                          alt="nav-logo"
-                          width={40}
-                          height={40}
-                          className="max-w-[40px]"
-                        />
-                      </div>
-                    ) : (
-                      <div className="max-w-max">
+      <AnimatePresence>
+        {shouldShowNavbar && (
+          <motion.header
+            variants={navbarVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            className="sticky top-0 z-[99]"
+          >
+            <div
+              className={`mx-auto max-w-[1920px] ${isMegaMenuOpen ? 'border-b border-b-primaryGrayishBlue bg-white' : isVisible ? 'bg-white' : 'bg-transparent'} px-4 py-2 md:px-8 xl:px-10`}
+            >
+              <div className="navigation">
+                <div className="flex items-center justify-between">
+                  {/* Mobile Left */}
+                  <div className="flex items-center gap-5 xl:hidden">
+                    <button
+                      onClick={() => setIsOpen(true)}
+                      className="cursor-pointer"
+                      aria-label="Open menu"
+                    >
+                      <Image
+                        src={hamburger}
+                        alt="hamburger-menu"
+                        width={24}
+                        height={24}
+                        className="max-w-[22px]"
+                      />
+                    </button>
+
+                    <Link href="/">
+                      <Image
+                        src={mobileScreenLogo}
+                        alt="nav-logo"
+                        width={42}
+                        height={39}
+                        className="max-w-[30px]"
+                      />
+                    </Link>
+                  </div>
+
+                  {/* Desktop Center */}
+                  <div className="flex items-center gap-10 3xl:gap-32">
+                    <div className="hidden xl:block">
+                      <Link href="/">
                         <Image
                           src={logo}
                           alt="nav-logo"
                           width={150}
-                          height={57.09}
-                          className="w-full max-w-[130px] xl:max-w-[140px]"
+                          height={57}
+                          className="max-w-[140px]"
                         />
-                      </div>
-                    )}
-                  </Link>
+                      </Link>
+                    </div>
+                    <MegaMenu setIsMegaMenuOpen={setIsMegaMenuOpen} />
+                  </div>
+
+                  {/* Right Actions */}
+                  <div className="flex items-center gap-4">
+                    <Button
+                      btnName="Book A Call"
+                      redirectionLink="/schedule-a-call"
+                    />
+                    <Button
+                      btnName="Contact us"
+                      redirectionLink="/contact-us"
+                      isBackgroung
+                      className="hidden lg:flex"
+                    />
+                  </div>
                 </div>
-                <MegaMenu />
-              </div>
-              <div className="flex items-center gap-4">
-                <Button
-                  btnName="Book A Call"
-                  redirectionLink={'/schedule-a-call'}
-                />
-                <Button
-                  btnName="Contact us"
-                  redirectionLink={'/contact-us'}
-                  isBackgroung={true}
-                  className="hidden lg:flex"
-                />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </motion.header>
+        )}
+      </AnimatePresence>
+
       <MenuSidebar isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );

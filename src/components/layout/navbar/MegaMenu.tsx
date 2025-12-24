@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { menuData } from '@/components/utils/Constant';
@@ -8,7 +8,11 @@ import Image from 'next/image';
 import phone from '../../../../public/svg/call.svg';
 import mail from '../../../../public/svg/mail.svg';
 
-export default function MegaMenu() {
+type IMegaMenuProps = {
+  setIsMegaMenuOpen: (val: boolean) => void;
+};
+
+export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState<number>(0);
   const [isHovering, setIsHovering] = useState(false);
@@ -18,14 +22,14 @@ export default function MegaMenu() {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setActiveMenu(menuTitle);
     setActiveCategory(0);
-    setIsHovering(true);
+    setIsMegaMenuOpen(true);
   };
 
   const handleMenuLeave = () => {
-    setIsHovering(false);
     timeoutRef.current = setTimeout(() => {
       setActiveMenu(null);
       setActiveCategory(0);
+      setIsMegaMenuOpen(false);
     }, 150);
   };
 
@@ -41,26 +45,6 @@ export default function MegaMenu() {
       setActiveCategory(0);
     }, 150);
   };
-  const [small, setSmall] = useState(false);
-
-  useEffect(() => {
-    // Function to check scroll position
-    const handleScroll = () => {
-      setSmall(window.scrollY > 0);
-    };
-
-    // Set initial value
-    handleScroll();
-
-    // Add scroll listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup on unmount
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const activeMenuData = menuData.find((menu) => menu.menuTitle === activeMenu);
 
@@ -98,7 +82,7 @@ export default function MegaMenu() {
             onMouseEnter={() =>
               item.megaMenuItem.length > 0 && handleMenuEnter(item.menuTitle)
             }
-            onMouseLeave={handleMenuLeave}
+            onMouseLeave={() => handleMenuLeave()}
           >
             {item.megaMenuItem.length === 0 ? (
               <Link
@@ -140,7 +124,7 @@ export default function MegaMenu() {
               onMouseLeave={handleMegaMenuLeave}
             >
               <div
-                className={`${small ? 'mt-0' : 'mt-2'} flex w-full overflow-hidden rounded-b-2xl border border-subtleWhite bg-ghostWhite shadow-2xl`}
+                className={`mt-2 flex w-full overflow-hidden rounded-b-2xl border border-subtleWhite bg-ghostWhite shadow-2xl`}
               >
                 {/* Left Sidebar - Category Tabs */}
                 <div className="min-w-[120px] border-r border-subtleWhite bg-white py-3">
