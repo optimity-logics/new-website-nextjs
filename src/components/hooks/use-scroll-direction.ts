@@ -5,23 +5,23 @@ import { useEffect, useState } from 'react';
 export const useScrollDirection = () => {
   const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('up');
   const [isVisible, setIsVisible] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    let lastScrollY = 0;
+    let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (Math.abs(currentScrollY - lastScrollY) < 10) {
-        return;
-      }
+      // background toggle
+      setIsScrolled(currentScrollY > 60);
 
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down
+      if (Math.abs(currentScrollY - lastScrollY) < 10) return;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
         setScrollDirection('down');
         setIsVisible(false);
       } else {
-        // Scrolling up
         setScrollDirection('up');
         setIsVisible(true);
       }
@@ -33,5 +33,5 @@ export const useScrollDirection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  return { scrollDirection, isVisible };
+  return { scrollDirection, isVisible, isScrolled };
 };

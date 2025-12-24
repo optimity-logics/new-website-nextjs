@@ -40,9 +40,11 @@ export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
 
   const handleMegaMenuLeave = () => {
     setIsHovering(false);
+
     timeoutRef.current = setTimeout(() => {
       setActiveMenu(null);
       setActiveCategory(0);
+      setIsMegaMenuOpen(false); // ✅ IMPORTANT FIX
     }, 150);
   };
 

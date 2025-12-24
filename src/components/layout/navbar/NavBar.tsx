@@ -39,7 +39,7 @@ const navbarVariants = {
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
-  const { isVisible } = useScrollDirection();
+  const { isVisible, isScrolled } = useScrollDirection();
 
   const shouldShowNavbar = isMegaMenuOpen || isVisible;
 
@@ -55,7 +55,7 @@ const NavBar = () => {
             className="sticky top-0 z-[99]"
           >
             <div
-              className={`mx-auto max-w-[1920px] ${isMegaMenuOpen ? 'border-b border-b-primaryGrayishBlue bg-white' : isVisible ? 'bg-white' : 'bg-transparent'} px-4 py-2 md:px-8 xl:px-10`}
+              className={`mx-auto max-w-[1920px] ${isMegaMenuOpen ? 'border-b border-b-primaryGrayishBlue bg-white' : isScrolled ? 'bg-white' : 'bg-transparent'} px-4 py-2 md:px-8 xl:px-10`}
             >
               <div className="navigation">
                 <div className="flex items-center justify-between">
