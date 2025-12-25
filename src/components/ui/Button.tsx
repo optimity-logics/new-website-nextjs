@@ -97,6 +97,7 @@ const Button = ({
       onMouseLeave={handleMouseLeave}
       href={redirectionLink || ''}
       className={DefaultStyle}
+      onClick={onClick}
     >
       {Content}
     </Link>

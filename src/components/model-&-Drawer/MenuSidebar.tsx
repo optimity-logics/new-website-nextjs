@@ -108,13 +108,13 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
               const hasMegaMenu = item?.megaMenuItem?.length > 0;
 
               return (
-                <li key={index} className="flex flex-col gap-5">
+                <li key={index} className="flex flex-col gap-5 py-2">
                   <div
                     onClick={() => hasMegaMenu && toggleMenu(item.menuTitle)}
                     className="flex w-full cursor-pointer items-center justify-between"
                   >
                     {hasMegaMenu ? (
-                      <span className="font-opt text-base text-optDesc">
+                      <span className="font-opt text-base font-medium text-optDesc">
                         {item.menuTitle}
                       </span>
                     ) : (
@@ -123,7 +123,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                           .toLowerCase()
                           .replace(/\s+/g, '-')}`}
                         onClick={handleCloseDrawer}
-                        className="block w-full font-opt text-base text-optDesc"
+                        className="block w-full font-opt text-base font-medium text-optDesc"
                       >
                         {item.menuTitle}
                       </Link>
@@ -213,7 +213,6 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
           <Button
             btnName="Contact us"
             redirectionLink="/contact-us"
-            isButton={true}
             onClick={() => handleCloseDrawer()}
           />
         </div>
