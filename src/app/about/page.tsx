@@ -380,7 +380,6 @@ const AboutUs = () => {
               },
             }}
             speed={1000}
-            loop={true}
             centeredSlides={true}
             initialSlide={1}
             className="!h-auto w-full !p-4"
@@ -411,7 +410,7 @@ const AboutUs = () => {
                         {item?.position}
                       </span>
                     </div>
-                    <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                    <p className="font-opt text-sm font-normal leading-5 text-optDesc">
                       {item?.aboutUs}
                     </p>
                   </div>

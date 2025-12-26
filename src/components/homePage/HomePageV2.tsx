@@ -223,7 +223,7 @@ const HomePageV2 = () => {
             />
           </Container>
           <div
-            className={`ml-auto w-full max-w-[1680px] px-4 sm:pl-6 md:pl-10 xl:pl-16`}
+            className={`ml-auto w-full max-w-[1680px] px-4 sm:pl-6 md:pl-10 xl:pl-16 xl:pr-0`}
           >
             <Swiper
               spaceBetween={15}
@@ -237,6 +237,7 @@ const HomePageV2 = () => {
                   spaceBetween: 50,
                 },
               }}
+              centeredSlides={true}
               speed={1000}
               loop={false}
               className="!h-auto w-full"
@@ -245,7 +246,7 @@ const HomePageV2 = () => {
                 homePageData?.ourExpertise.map((item, index) => (
                   <SwiperSlide
                     key={index}
-                    className="!flex !h-auto items-stretch rounded-xl bg-white p-5 xl:p-8 3xl:p-12"
+                    className="m-4 !flex !h-auto items-stretch rounded-xl bg-white p-5 shadow-md xl:p-8 3xl:p-12"
                   >
                     <div className="flex w-full flex-col-reverse items-center justify-between gap-6 xl:flex-row 4xl:gap-[65px]">
                       <div className="flex h-full w-full max-w-[600px] flex-col justify-between gap-5 xl:gap-[40px]">
@@ -346,7 +347,7 @@ const HomePageV2 = () => {
             </div>
           </div>
           <div className="hidden grid-cols-2 gap-8 md:grid lg:grid-cols-3">
-            <div className="mx-auto flex w-full max-w-[350px] flex-col gap-10">
+            <div className="flex w-full max-w-[350px] flex-col gap-10">
               {homePageData?.aiServices &&
                 homePageData?.aiServices.slice(0, 3).map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
@@ -369,7 +370,7 @@ const HomePageV2 = () => {
                 className="mx-auto h-auto max-w-[180px]"
               />
             </div>
-            <div className="mx-auto flex w-full max-w-[350px] flex-col gap-10">
+            <div className="ml-auto flex w-full max-w-[350px] flex-col gap-10">
               {homePageData?.aiServices &&
                 homePageData?.aiServices.slice(3).map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
@@ -594,7 +595,7 @@ const HomePageV2 = () => {
                   spaceBetween: 30,
                 },
                 1439: {
-                  slidesPerView: 2.5,
+                  slidesPerView: 2.3,
                   spaceBetween: 60,
                 },
               }}
@@ -608,7 +609,7 @@ const HomePageV2 = () => {
                     className="bg-slideBg bg-cover bg-no-repeat"
                   >
                     <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-aliceBlue/70 lg:flex-row xl:p-6">
-                      <h6 className="w-max text-nowrap font-opt text-xl font-medium leading-6 text-primary 3xl:text-3xl 4xl:leading-10">
+                      <h6 className="w-full p-6 font-opt text-xl font-medium leading-6 text-primary lg:max-w-[200px] lg:p-0 3xl:text-3xl 4xl:leading-10">
                         {item?.projectName}
                       </h6>
                       <div className="relative h-0 w-full pb-[65%]">
@@ -617,7 +618,7 @@ const HomePageV2 = () => {
                           alt="image"
                           fill
                           loading="lazy"
-                          className="object- h-full w-full rounded-[10px]"
+                          className="h-full w-full rounded-[10px]"
                         />
                       </div>
                     </div>
@@ -629,10 +630,24 @@ const HomePageV2 = () => {
       </div>
       <ClientTestimonial isDark={true} />
       <Faqs />
-      <div className="bg-black bg-tech-we-work bg-full bg-no-repeat xl:bg-transparent xl:bg-contact">
+      <div className="relative bg-black bg-tech-we-work bg-full bg-no-repeat xl:bg-transparent xl:bg-contact">
+        <Image
+          src="/webp/homePagev2/logov2.webp"
+          alt="logo"
+          width={380}
+          height={380}
+          className="absolute left-1/2 top-[10%] hidden -translate-x-1/2 md:block lg:top-[20%]"
+        />
+        <Image
+          src="/webp/homePagev2/logov2.webp"
+          alt="logo"
+          width={180}
+          height={180}
+          className="absolute -left-16 bottom-[10%] rotate-[155deg]"
+        />
         <Container className="mb-[60px] py-[70px] lg:bg-contain xl:mb-0 xl:pb-[130px] xl:pt-[140px] 3xl:px-[80px]">
           <div className="flex flex-col justify-between gap-10 md:flex-row md:items-center">
-            <div className="flex w-full max-w-[570px] flex-col gap-3 xl:gap-5">
+            <div className="relative z-30 flex w-full max-w-[570px] flex-col gap-3 xl:gap-5">
               <HighlitedDescription
                 dangerouslySetInnerHTML={{
                   __html: homePageData?.contactUsFormTitle,
