@@ -22,23 +22,8 @@ import { homePageData } from '../utils/page-data/homePage';
 interface IPropsType {
   data: IPropsDataTypes;
 }
-// const solutionLinks = [
-//   { path: '/healthcare-solutions', bgClass: 'after:bg-healthcarebg' },
-//   { path: '/fintech-solutions', bgClass: 'after:bg-finance' },
-//   { path: '/real-estate-app-development', bgClass: 'after:bg-realEstate' },
-//   { path: '/ecommerce-solutions', bgClass: 'after:bg-retail' },
-//   {
-//     path: '/educational-app-development-solutions',
-//     bgClass: 'after:bg-education',
-//   },
-//   { path: '/logistics-app-development', bgClass: 'after:bg-logistic' },
-// ];
 
-// const AllPageContent = () => {
 const AllPageContent = ({ data }: IPropsType) => {
-  // const solution = solutionLinks.find((link) =>
-  //   path.toLowerCase().includes(link.path.toLowerCase()),
-  // );
   const logos = logoIcons.map((image) => image?.src);
   const [hoverServicesTab, setHoverServicesTab] = useState<
     Record<number, boolean>
@@ -84,7 +69,7 @@ const AllPageContent = ({ data }: IPropsType) => {
     }
 
     return () => {
-      if (currentSection) observer.unobserve(currentSection); // ✅ Use the copied ref
+      if (currentSection) observer.unobserve(currentSection);
     };
   }, []);
 
