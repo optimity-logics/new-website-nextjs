@@ -20,9 +20,9 @@ export const aboutUsPage = {
   aboutUsBtnLink: '/contact-us',
   hero_image: aboutUsHeroImage,
   OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
+    { title: '35+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
     {
-      title: '50+',
+      title: '75+',
       description: 'Finished Projects',
       backGrouund: 'bg-card-2',
     },
@@ -231,25 +231,37 @@ export const aboutUsPage = {
   shortDescription: `We’re a diverse team of developers, designers, testers, and strategists who believe work should be challenging, rewarding, and fun. Continuous learning, peer feedback, and open culture are part of our DNA.`,
   ourTeamList: [
     {
-      img: '/images/about-us/image.png',
+      img: '/images/about-us/1.png',
       name: 'Johnee Honie',
       position: 'CEO, techwix',
       aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
     },
     {
-      img: '/images/about-us/image1.png',
+      img: '/images/about-us/hardik.png',
       name: 'Johnee Honie',
       position: 'CEO, techwix',
       aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
     },
     {
-      img: '/images/about-us/image2.png',
+      img: '/images/about-us/b1.png',
       name: 'Johnee Honie',
       position: 'CEO, techwix',
       aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
     },
     {
-      img: '/images/about-us/image3.png',
+      img: '/images/about-us/d.png',
+      name: 'Johnee Honie',
+      position: 'CEO, techwix',
+      aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
+    },
+    {
+      img: '/images/about-us/hardik.png',
+      name: 'Johnee Honie',
+      position: 'CEO, techwix',
+      aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,
+    },
+    {
+      img: '/images/about-us/b1.png',
       name: 'Johnee Honie',
       position: 'CEO, techwix',
       aboutUs: `We aspire to lead as a top web solutions provider in IT, surpassing our current market standing. Committed to our customers' success, we recognize our growth is linked to theirs. Rooted in precision and quality, we aim for trustworthiness, innovation, and user-centricity. Integrity is paramount, expected from all collaborators, with transparency balanced by discretion. Embracing vulnerability, we foster openness among our team, partners, and clients.`,

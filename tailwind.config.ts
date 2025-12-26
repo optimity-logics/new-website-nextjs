@@ -68,7 +68,7 @@ export default {
         overly: "url('/webp/homePagev2/overly.webp')",
         'project-bg': "url('/images/homePagev2/project.png')",
         line: "url('/images/homePagev2/Line.png')",
-        contact: "url('/webp/homePagev2/contact-us-v2.webp')",
+        contact: "url('/webp/homePagev2/contactbg.webp')",
         'our-expertise': "url('/webp/homePagev2/our-expertise.webp')",
         footerv2: "url('/images/homePagev2/footer.png')",
         heroBg: "url('/images/homePagev2/circuit.svg')",
@@ -93,6 +93,7 @@ export default {
           ' linear-gradient(176.48deg, #41D1FF 11.59%, #034C63 38.07%);',
         frame: "url('/images/our-work/frame.png')",
         userframe: "url('/images/our-work/users.jpg')",
+        slideBg: "url('/webp/homePagev2/bg-ellipse.webp')",
         scheduleCall:
           'linear-gradient(289.62deg, #02ADE1 6.97%, #1A6AA3 94.65%)',
         leftCard:

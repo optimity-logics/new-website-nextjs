@@ -121,7 +121,7 @@ const MenuSidebar = ({ isOpen, setIsOpen }: IMenuSidebarProps) => {
                       <Link
                         href={`/${item.menuTitle
                           .toLowerCase()
-                          .replace(/\s+/g, '-')}`}
+                          .replace(/s$/, '')}`}
                         onClick={handleCloseDrawer}
                         className="block w-full font-opt text-base font-medium text-optDesc"
                       >

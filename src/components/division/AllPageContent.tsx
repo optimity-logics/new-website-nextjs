@@ -90,7 +90,7 @@ const AllPageContent = ({ data }: IPropsType) => {
 
   return (
     <>
-      <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
+      <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-fixed bg-center bg-no-repeat lg:bg-full">
         <div className="flex h-full min-h-screen items-center justify-center">
           <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-20">
             <HeroSectionHeading
@@ -183,7 +183,6 @@ const AllPageContent = ({ data }: IPropsType) => {
         <SectionHeader
           headingText={data?.development?.heading}
           descriptionText={data?.development?.description}
-          headingStyle="text-center"
           className="max-w-[900px] items-center"
         />
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -211,7 +210,6 @@ const AllPageContent = ({ data }: IPropsType) => {
           <SectionHeader
             headingText={data?.WhyOptimityForDevelopment?.heading}
             className="max-w-[900px]"
-            headingStyle="text-center"
             isSectionDark={true}
           />
           <div className="flex w-full flex-col gap-10 lg:flex-row">
@@ -234,7 +232,7 @@ const AllPageContent = ({ data }: IPropsType) => {
                       transition={{ duration: 0.25, delay: i * 0.06 }}
                       className={`group relative flex items-center justify-between overflow-hidden rounded-full px-6 py-4 font-opt text-lg font-normal transition-all duration-300 ${
                         activeTab === tab.id
-                          ? 'bg-white/80 text-primary shadow-lg backdrop-blur-sm'
+                          ? 'bg-white text-primary shadow-lg backdrop-blur-sm'
                           : 'bg-aliceBlue/10 text-white backdrop-blur-sm'
                       } `}
                     >
@@ -289,7 +287,6 @@ const AllPageContent = ({ data }: IPropsType) => {
           <SectionHeader
             headingText={data?.developmentProcess?.heading}
             descriptionText={data?.developmentProcess?.description}
-            headingStyle="text-center"
             className="max-w-full items-center lg:max-w-[900px]"
             isSectionDark={true}
           />
@@ -345,7 +342,7 @@ const AllPageContent = ({ data }: IPropsType) => {
           <div className="flex w-full max-w-[990px] flex-col gap-[38px]">
             <SectionHeader
               headingText={data?.crossPlatformBenefitsTitle}
-              headingStyle="3xl:text-[55px] 3xl:leading-[60px]"
+              headingStyle="3xl:text-[55px] 3xl:leading-[60px] text-start"
               isSectionDark={true}
             />
             <ul className="flex flex-wrap items-center gap-5">
@@ -411,12 +408,11 @@ const AllPageContent = ({ data }: IPropsType) => {
             <SectionHeader
               headingText={data?.exploreProjects?.heading}
               descriptionText={data?.exploreProjects?.description}
-              headingStyle="!text-red"
+              headingStyle="!text-red "
               className="max-w-[800px] items-start"
+              descriptionStyle="!text-start"
               isSectionDark={true}
-              descriptionStyle="text-start "
             />
-
             <Link
               href={data?.exploreProjects?.buttonLink}
               onMouseEnter={handleMouseEnterViewAll}
@@ -429,7 +425,7 @@ const AllPageContent = ({ data }: IPropsType) => {
               <AnimatedArrow hover={hoverViewAll} />
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-8 md:gap-y-0 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-10 md:gap-y-0 xl:grid-cols-3">
             {data?.exploreProjects?.deployProjects &&
               data?.exploreProjects?.deployProjects.map((item, i) => (
                 <ProjectCard key={i} data={item} i={i} />
@@ -442,8 +438,6 @@ const AllPageContent = ({ data }: IPropsType) => {
           headingText={data?.technologyWeUse?.heading}
           descriptionText={data?.technologyWeUse?.description}
           className="mx-auto max-w-[800px] items-center"
-          headingStyle="text-center"
-          descriptionStyle="text-center"
         />
         <div className="flex flex-col gap-5 3xl:gap-2">
           {data?.technologyWeUse?.technologyServices &&
@@ -453,11 +447,11 @@ const AllPageContent = ({ data }: IPropsType) => {
                 className={`grid grid-cols-1 bg-white/80 shadow-devCardShadow xl:grid-cols-7 ${index % 2 === 0 ? 'rounded-br-[35px] rounded-tl-[35px]' : 'rounded-br-[35px] rounded-tl-[35px] xl:!rounded-br-[0px] xl:rounded-bl-[35px] xl:rounded-tl-[0px] xl:rounded-tr-[35px]'}`}
               >
                 <div
-                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-crystalBlue' : 'rounded-tl-[35px] bg-pastelPink xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
+                  className={`col-span-2 h-full min-h-full w-full p-5 md:p-7 ${index % 2 === 0 ? 'rounded-tl-[35px] bg-[#DBEAFE]' : 'rounded-tl-[35px] bg-[#FCE7F3] xl:rounded-bl-[35px] xl:rounded-tl-[0px]'}`}
                 >
                   <div className="flex h-full items-center justify-start gap-[15px]">
                     <div
-                      className={`flex h-14 w-14 items-center justify-center rounded-full 3xl:h-[50px] 3xl:w-[50px] ${index % 2 !== 0 ? 'bg-crystalBlue' : 'bg-pastelPink'}`}
+                      className={`flex h-14 w-14 items-center justify-center rounded-full 3xl:h-[50px] 3xl:w-[50px] ${index % 2 !== 0 ? 'bg-[#DBEAFE]' : 'bg-[#FCE7F3]'}`}
                     >
                       <Image
                         src={item?.servicesImg}

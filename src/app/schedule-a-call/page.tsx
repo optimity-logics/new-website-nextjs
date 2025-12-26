@@ -73,6 +73,7 @@ const Page = () => {
         {/* Right Section - Calendar */}
         <div className="col-span-4 flex h-full min-h-screen w-full flex-col gap-8">
           <iframe
+            title="calendar"
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ36Y_rnJCruCOgeMcn1zxPgvdzP8AjUehVBhM0xJpkt4JDvhHASB2w5vcalE2zZGqfQr2MxzSGb?gv=true"
             style={{ border: 0 }}
             width="100%"

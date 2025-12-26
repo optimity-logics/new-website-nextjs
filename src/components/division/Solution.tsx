@@ -24,7 +24,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
   };
   return (
     <>
-      <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
+      <div className="-mt-20 overflow-hidden bg-aboutUsHeroBg bg-fixed bg-center bg-no-repeat lg:bg-full">
         <div className="flex h-full min-h-screen items-center justify-center">
           <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-20">
             <HeroSectionHeading
@@ -64,7 +64,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
       <div
         className={`${data?.ctaSection?.bgClass} relative mb-[60px] bg-cover bg-center bg-no-repeat after:absolute after:inset-0 after:max-h-[500px] after:w-full after:bg-black-560-alpha lg:bg-full 3xl:mb-[100px]`}
       >
-        <Container className="relative z-30 py-[80px]">
+        <Container className="relative z-30 py-[80px] 3xl:py-[150px]">
           <HeroSectionHeading
             heading={data?.ctaSection?.heading}
             btnName={data?.ctaSection?.buttonText}
@@ -118,7 +118,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
             {data?.healthcareServices?.images.map((item, i) => (
               <div
                 key={i}
-                className="relative aspect-[6/5] h-full w-full min-w-[300px] rounded-2xl after:absolute after:inset-0 after:rounded-2xl after:bg-black-440-alpha md:min-w-[340px]"
+                className="rounded-2x relative aspect-[6/5] h-full w-full min-w-[300px] md:min-w-[340px]"
               >
                 <Image src={item} alt="health" fill className="rounded-2xl" />
               </div>
@@ -150,7 +150,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
               <AnimatedArrow hover={hoverViewAll} />
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-8 md:gap-y-0 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-10 md:gap-y-0 xl:grid-cols-3">
             {data?.exploreProjects?.deployProjects &&
               data?.exploreProjects?.deployProjects.map((item, i) => (
                 <ProjectCard key={i} data={item} i={i} />

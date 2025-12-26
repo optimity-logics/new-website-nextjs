@@ -5,20 +5,17 @@ import edTech from '../../../../public/webp/homePagev2/edtech.webp';
 import FB from '../../../../public/webp/homePagev2/fb.webp';
 import healthCare from '../../../../public/webp/homePagev2/hc.webp';
 import mobileApp from '../../../../public/webp/homePagev2/mobile-app.webp';
-import webApp from '../../../../public/webp/homePagev2/web-apps.webp';
-import uiux from '../../../../public/webp/homePagev2/ui-ux.webp';
+import webApp from '../../../../public/webp/homePagev2/webapp.webp';
+import uiux from '../../../../public/webp/homePagev2/uiux.webp';
 import qa from '../../../../public/webp/homePagev2/qa.webp';
-import digitalMarketing from '../../../../public/webp/homePagev2/digital-marketing.webp';
-import devopsTech from '../../../../public/webp/homePagev2/devops-tech.webp';
+import digitalMarketing from '../../../../public/webp/homePagev2/dm.webp';
+import devopsTech from '../../../../public/webp/homePagev2/dp.webp';
 import mobiles from '../../../../public/webp/homePagev2/mobile.webp';
 import frontend from '../../../../public/webp/homePagev2/frontend.webp';
 import backend from '../../../../public/webp/homePagev2/backend.webp';
 import database from '../../../../public/webp/homePagev2/database.webp';
 import cms from '../../../../public/webp/homePagev2/cms.webp';
 import devops from '../../../../public/webp/homePagev2/devops.webp';
-import htsV2 from '../../../../public/webp/homePagev2/hts.webp';
-import builderV2 from '../../../../public/webp/homePagev2/builder-spec.webp';
-import wikifarmerV2 from '../../../../public/webp/homePagev2/wikifarmer.webp';
 
 export const homePageData = {
   baddge: 'Accelerate Your Growth with AI',
@@ -188,9 +185,9 @@ export const homePageData = {
     },
   ],
   OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
+    { title: '35+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
     {
-      title: '50+',
+      title: '75+',
       description: 'Finished Projects',
       backGrouund: 'bg-card-2',
     },
@@ -260,15 +257,35 @@ export const homePageData = {
   deployedProjectsList: [
     {
       projectName: 'Wikifarmer',
-      img: wikifarmerV2,
+      img: '/webp/project/main/wf.webp',
     },
     {
       projectName: 'HTS',
-      img: htsV2,
+      img: '/webp/project/main/hts.webp',
     },
     {
       projectName: 'Builders Spec',
-      img: builderV2,
+      img: '/webp/project/main/bs.webp',
+    },
+    {
+      projectName: 'E-learning',
+      img: '/webp/project/main/edqan.webp',
+    },
+    {
+      projectName: 'Waterboy Rental',
+      img: '/webp/project/main/wr.webp',
+    },
+    {
+      projectName: 'Hopper',
+      img: '/webp/project/main/hopper.webp',
+    },
+    {
+      projectName: 'HaveScripts',
+      img: '/webp/project/main/hs.webp',
+    },
+    {
+      projectName: 'Keto Cycle',
+      img: '/webp/project/main/kc.webp',
     },
   ],
   ourIndustriesTitle: 'Our Industries',
