@@ -814,46 +814,26 @@ export const howWeWorkData = [
 export const footerData: IFooterDataType = {
   copyRight: 'Optimity Logics. All rights reserved.',
   footerLinks: [
-    {
-      heading: 'Data',
-      items: [
-        { title: 'Data Engineering', link: '' },
-        { title: 'Data Science Solutions', link: '' },
-        { title: 'Data Analytics Services', link: '' },
-        { title: 'Big Data Services', link: '' },
-        { title: 'Business Intelligence', link: '' },
-      ],
-    },
-    {
-      heading: 'AI/ML',
-      items: [
-        { title: 'AI ML Development', link: '' },
-        { title: 'Generative AI Development', link: '' },
-        { title: 'Computer Vision Development', link: '' },
-        { title: 'AI Agent Development', link: '' },
-        { title: 'LLM Development Services', link: '' },
-      ],
-    },
-    {
-      heading: 'Cloud',
-      items: [
-        { title: 'Cloud Engineering', link: '' },
-        { title: 'Cloud App Development', link: '' },
-        { title: 'Cloud Managed Services', link: '' },
-        { title: 'Cloud Security Services', link: '' },
-        { title: 'Cloud Consulting', link: '' },
-      ],
-    },
-    {
-      heading: 'Software',
-      items: [
-        { title: 'Software Development', link: '' },
-        { title: 'Software Product Development', link: '' },
-        { title: 'Startups Software Development', link: '' },
-        { title: 'Enterprise Software Development', link: '' },
-        { title: 'Software Development Outsourcing', link: '' },
-      ],
-    },
+    // {
+    //   heading: 'Data',
+    //   items: [
+    //     { title: 'Data Engineering', link: '' },
+    //     { title: 'Data Science Solutions', link: '' },
+    //     { title: 'Data Analytics Services', link: '' },
+    //     { title: 'Big Data Services', link: '' },
+    //     { title: 'Business Intelligence', link: '' },
+    //   ],
+    // },
+    // {
+    //   heading: 'AI/ML',
+    //   items: [
+    //     { title: 'AI ML Development', link: '' },
+    //     { title: 'Generative AI Development', link: '' },
+    //     { title: 'Computer Vision Development', link: '' },
+    //     { title: 'AI Agent Development', link: '' },
+    //     { title: 'LLM Development Services', link: '' },
+    //   ],
+    // },
     {
       heading: 'Application',
       items: [
@@ -867,29 +847,49 @@ export const footerData: IFooterDataType = {
       ],
     },
     {
-      heading: 'Hire',
+      heading: 'Software',
       items: [
-        { title: 'Hire Dedicated Developers', link: '' },
-        { title: 'Hire Dedicated Developers', link: '' },
-        { title: 'Software Developers', link: '' },
-        { title: 'Mobile App Developers', link: '' },
-        { title: 'Frontend Developers', link: '' },
-        { title: 'Backend Developers', link: '' },
-        { title: 'Unreal Engine Developers', link: '' },
+        { title: 'Software Development', link: '' },
+        { title: 'Software Product Development', link: '' },
+        { title: 'Startups Software Development', link: '' },
+        { title: 'Enterprise Software Development', link: '' },
+        { title: 'Software Development Outsourcing', link: '' },
       ],
     },
     {
-      heading: 'Industries',
+      heading: 'Cloud',
       items: [
-        { title: 'Healthcare', link: '' },
-        { title: 'Education', link: '' },
-        { title: 'Sports', link: '' },
-        { title: 'Real Estate', link: '' },
-        { title: 'Fitness', link: '' },
-        { title: 'Finance', link: '' },
-        { title: 'Retail', link: '' },
+        { title: 'Cloud Engineering', link: '' },
+        { title: 'Cloud App Development', link: '' },
+        { title: 'Cloud Managed Services', link: '' },
+        { title: 'Cloud Security Services', link: '' },
+        { title: 'Cloud Consulting', link: '' },
       ],
     },
+    // {
+    //   heading: 'Hire',
+    //   items: [
+    //     { title: 'Hire Dedicated Developers', link: '' },
+    //     { title: 'Hire Dedicated Developers', link: '' },
+    //     { title: 'Software Developers', link: '' },
+    //     { title: 'Mobile App Developers', link: '' },
+    //     { title: 'Frontend Developers', link: '' },
+    //     { title: 'Backend Developers', link: '' },
+    //     { title: 'Unreal Engine Developers', link: '' },
+    //   ],
+    // },
+    // {
+    //   heading: 'Industries',
+    //   items: [
+    //     { title: 'Healthcare', link: '' },
+    //     { title: 'Education', link: '' },
+    //     { title: 'Sports', link: '' },
+    //     { title: 'Real Estate', link: '' },
+    //     { title: 'Fitness', link: '' },
+    //     { title: 'Finance', link: '' },
+    //     { title: 'Retail', link: '' },
+    //   ],
+    // },
     {
       heading: 'Company',
       items: [
@@ -903,9 +903,7 @@ export const footerData: IFooterDataType = {
     },
   ],
   otherLinks: [
-    { title: 'About Us', link: '/about' },
     { title: 'Insights', link: '' },
-    { title: 'Careers', link: '/careers' },
     { title: 'Privacy Policy', link: '/privacy-policy' },
     { title: 'Sitemap', link: '/sitemap' },
   ],
