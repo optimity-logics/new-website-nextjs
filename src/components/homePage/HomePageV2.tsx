@@ -590,12 +590,8 @@ const HomePageV2 = () => {
                   slidesPerView: 1.6,
                   spaceBetween: 30,
                 },
-                768: {
-                  slidesPerView: 1.9,
-                  spaceBetween: 30,
-                },
                 1439: {
-                  slidesPerView: 2.3,
+                  slidesPerView: 2.1,
                   spaceBetween: 60,
                 },
               }}
@@ -608,8 +604,8 @@ const HomePageV2 = () => {
                     key={index}
                     className="bg-slideBg bg-cover bg-no-repeat"
                   >
-                    <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-aliceBlue/70 lg:flex-row xl:p-6">
-                      <h6 className="w-full p-6 font-opt text-xl font-medium leading-6 text-primary lg:max-w-[200px] lg:p-0 3xl:text-3xl 4xl:leading-10">
+                    <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-aliceBlue/70 p-6 lg:flex-row">
+                      <h6 className="w-full font-opt text-xl font-medium leading-6 text-primary lg:max-w-[200px] 3xl:text-3xl 4xl:leading-10">
                         {item?.projectName}
                       </h6>
                       <div className="relative h-0 w-full pb-[65%]">
