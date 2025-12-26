@@ -201,6 +201,7 @@ const AboutUs = () => {
           <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
             <SectionHeader
               headingText={aboutUsPage?.expertiseTitle}
+              headingStyle="text-start"
               isSectionDark={true}
             />
             <Link
@@ -391,14 +392,14 @@ const AboutUs = () => {
                   className="!flex !h-auto !flex-col !items-center gap-6 rounded-2xl bg-white !p-5 shadow-lg lg:!flex-row"
                 >
                   <div
-                    className={`flex w-full max-w-[300px] items-center justify-center rounded-2xl bg-lightBlue/50 p-2 ${index % 2 !== 0 ? 'rounded-[0_100%_100%_100%]' : 'rounded-[100%_100%_0_100%]'}`}
+                    className={`flex w-full max-w-[300px] items-center justify-center rounded-2xl p-2`}
                   >
                     <Image
                       src={item?.img}
                       alt={item?.name || 'team-img'}
                       width={400}
                       height={300}
-                      className={`h-full w-full ${index % 2 === 0 ? 'rounded-[0_100%_100%_100%]' : 'rounded-[100%_100%_0_100%]'} `}
+                      className={`h-full w-full`}
                     />
                   </div>
                   <div className="flex w-full max-w-[500px] flex-col gap-3">

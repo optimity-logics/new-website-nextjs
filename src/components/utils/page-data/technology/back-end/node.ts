@@ -1,4 +1,4 @@
-import node from '../../../../../../public/images/technology/backend/node.png';
+import node from '../../../../../../public/webp/technology/backend/node.webp';
 import { IPropsDataTypes } from '@/components/type/type';
 import framework from '../../../../../../public/svg/technology/mobile/framework.svg';
 import tools from '../../../../../../public/svg/technology/mobile/tools-utilities.svg';
@@ -253,10 +253,10 @@ fledged development solutions aligned with your business objectives. `,
                 These case studies showcase how we thoughtfully address our
                 clients’ needs with attention to detail and care.`,
     buttonName: 'View All',
-    buttonLink: '',
+    buttonLink: '/our-work',
     deployProjects: [
       {
-        projectImg: '/webp/project/riskbeach.webp',
+        projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
         projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
       },
@@ -266,23 +266,23 @@ fledged development solutions aligned with your business objectives. `,
         projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
       },
       {
-        projectImg: '/webp/project/hopper.webp',
+        projectImg: '/webp/project/Hopper.webp',
         projectName: 'Hopper',
         projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
+        projectImg: '/webp/project/edqan.webp',
+        projectName: 'E-learning',
         projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
+        projectImg: '/webp/project/spacerenta.webp',
+        projectName: 'Spacerenta',
         projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
       },
       {
-        projectImg: '/webp/project/riskbeach.webp',
-        projectName: 'Ricks Beach',
+        projectImg: '/webp/project/afterdark.webp',
+        projectName: 'After dark',
         projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
       },
     ],

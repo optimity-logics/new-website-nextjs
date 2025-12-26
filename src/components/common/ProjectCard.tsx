@@ -26,7 +26,7 @@ const ProjectCard = ({ i, data }: projectCardProps) => {
           alt={data?.projectName}
           width={500}
           height={500}
-          className="aspect-[19/15] w-full rounded-[20px]"
+          className="aspect-[15/15] w-full rounded-[20px]"
         />
       </div>
       <div className="flex flex-col gap-3">

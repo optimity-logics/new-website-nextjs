@@ -217,7 +217,10 @@ const HomePageV2 = () => {
       >
         <div className="flex flex-col gap-8">
           <Container>
-            <SectionHeader headingText={homePageData?.ourExpertiseTitle} />
+            <SectionHeader
+              headingText={homePageData?.ourExpertiseTitle}
+              headingStyle="text-start"
+            />
           </Container>
           <div
             className={`ml-auto w-full max-w-[1680px] px-4 sm:pl-6 md:pl-10 xl:pl-16`}
@@ -231,7 +234,6 @@ const HomePageV2 = () => {
                   spaceBetween: 30,
                 },
                 1439: {
-                  slidesPerView: 2,
                   spaceBetween: 50,
                 },
               }}
@@ -243,10 +245,10 @@ const HomePageV2 = () => {
                 homePageData?.ourExpertise.map((item, index) => (
                   <SwiperSlide
                     key={index}
-                    className="!flex !h-auto items-stretch"
+                    className="!flex !h-auto items-stretch rounded-xl bg-white p-5 xl:p-8 3xl:p-12"
                   >
-                    <div className="flex w-full flex-col-reverse items-center gap-6 xl:flex-row 4xl:gap-[65px]">
-                      <div className="flex h-full w-full max-w-[799px] flex-col justify-between gap-5 xl:gap-[40px]">
+                    <div className="flex w-full flex-col-reverse items-center justify-between gap-6 xl:flex-row 4xl:gap-[65px]">
+                      <div className="flex h-full w-full max-w-[600px] flex-col justify-between gap-5 xl:gap-[40px]">
                         <div className="flex flex-col gap-4">
                           <h5 className="font-opt text-xl font-semibold leading-6 text-primary">
                             {item?.title}
@@ -446,7 +448,7 @@ const HomePageV2 = () => {
       <Container className="mb-[60px] flex flex-col gap-8 4xl:mb-[100px] 4xl:gap-10">
         <SectionHeader
           headingText={homePageData?.ourIndustriesTitle}
-          headingStyle="text-center"
+          headingStyle="text-start"
         />
         <div className="hide-scrollbar flex w-full items-center gap-4 overflow-auto px-2 py-2">
           {homePageData?.ourIndustries &&
@@ -601,18 +603,21 @@ const HomePageV2 = () => {
             >
               {homePageData?.deployedProjectsList &&
                 homePageData?.deployedProjectsList.map((item, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-aliceBlue/70 p-4 lg:flex-row xl:p-6">
-                      <h6 className="w-max font-opt text-xl font-medium leading-6 text-primary 3xl:text-3xl 4xl:leading-10">
+                  <SwiperSlide
+                    key={index}
+                    className="bg-slideBg bg-cover bg-no-repeat"
+                  >
+                    <div className="flex flex-col justify-between gap-[30px] rounded-xl bg-aliceBlue/70 lg:flex-row xl:p-6">
+                      <h6 className="w-max text-nowrap font-opt text-xl font-medium leading-6 text-primary 3xl:text-3xl 4xl:leading-10">
                         {item?.projectName}
                       </h6>
-                      <div className="relative h-0 w-full pb-[50%]">
+                      <div className="relative h-0 w-full pb-[65%]">
                         <Image
                           src={item?.img}
                           alt="image"
                           fill
                           loading="lazy"
-                          className="h-full w-full rounded-[10px] object-cover"
+                          className="object- h-full w-full rounded-[10px]"
                         />
                       </div>
                     </div>

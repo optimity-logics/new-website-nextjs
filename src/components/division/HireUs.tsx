@@ -69,7 +69,7 @@ const HireUs = ({ data }: hireUsProps) => {
                     boxShadow:
                       '0px 13px 5px rgba(0, 0, 0, 0.03), 0px 7px 4px rgba(0, 0, 0, 0.09), 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18)',
                   }}
-                  className="flex items-center justify-center rounded-full bg-no-repeat px-2.5 py-1 font-opt text-xl font-medium capitalize leading-6 text-white lg:px-4 lg:py-2"
+                  className="flex items-center justify-center rounded-full bg-no-repeat px-2.5 py-1 font-opt text-base font-medium capitalize leading-6 text-white lg:px-4 xxl:py-2 3xl:text-xl"
                 >
                   {item?.label}
                 </span>
@@ -175,7 +175,7 @@ const HireUs = ({ data }: hireUsProps) => {
             headingText={data?.advantages?.heading}
             className="mx-auto max-w-[800px]"
             isSectionDark={true}
-            headingStyle="text-center"
+            headingStyle="text-center px-4"
           />
 
           <div className="flex w-full items-stretch gap-4 overflow-x-auto px-7 scrollbar-hide">

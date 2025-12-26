@@ -27,12 +27,12 @@ const SectionHeader = ({
             dangerouslySetInnerHTML={{
               __html: headingText || '',
             }}
-            className={`font-opt text-[41px] font-medium leading-[48px] ${isSectionDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
+            className={`text-center font-opt text-[41px] font-medium leading-[48px] ${isSectionDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
           />
         )}
         {descriptionText && (
           <p
-            className={`w-full max-w-[800px] font-opt text-base font-normal leading-5 md:text-center ${isSectionDark ? 'text-white/40' : 'text-optDesc'} ${descriptionStyle}`}
+            className={`w-full max-w-[800px] text-center font-opt text-base font-normal leading-5 ${isSectionDark ? 'text-white/40' : 'text-optDesc'} ${descriptionStyle}`}
           >
             {descriptionText}
           </p>
