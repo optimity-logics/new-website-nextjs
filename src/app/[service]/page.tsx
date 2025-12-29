@@ -1,6 +1,6 @@
-import AllPageContent from '@/components/division/AllPageContent';
-import HireUs from '@/components/division/HireUs';
-import Solution from '@/components/division/Solution';
+import AllPageContent from '@/components/pages/AllPageContent';
+import HireUs from '@/components/pages/HireUs';
+import Solution from '@/components/pages/Solution';
 import { Metadata } from 'next';
 
 // ===================== DATA IMPORTS =====================

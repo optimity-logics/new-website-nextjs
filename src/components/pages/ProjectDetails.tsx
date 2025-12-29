@@ -38,7 +38,9 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
             <HeroSectionHeading
               description={data?.heroSection?.description || ''}
               btnName={data?.heroSection?.buttonText || ''}
+              link={data?.heroSection?.buttonLink || ''}
               className="w-full"
+              target="_blank"
             />
           </div>
 

@@ -16,6 +16,7 @@ interface IHeadingProps {
   headingStyle?: string;
   link?: string;
   isBtnBackgroundLight?: boolean;
+  target?: string;
 }
 
 const HighlitedDescription = styled.h1`
@@ -37,6 +38,7 @@ const HeroSectionHeading = ({
   headingStyle,
   isBtnBackgroundLight,
   link,
+  target,
 }: IHeadingProps) => {
   return (
     <div className={`flex flex-col gap-5 ${className} max-w-[600px]`}>
@@ -66,6 +68,7 @@ const HeroSectionHeading = ({
           redirectionLink={link}
           className={btnStyle}
           isBackgroundLight={isBtnBackgroundLight}
+          target={target}
         />
       )}
     </div>

@@ -14,6 +14,7 @@ interface ButtonProps {
   isButton?: boolean;
   isLoading?: boolean;
   isSuccess?: boolean;
+  target?: string;
 }
 
 const Button = ({
@@ -26,6 +27,7 @@ const Button = ({
   isButton,
   isLoading = false,
   isSuccess = false,
+  target,
 }: ButtonProps) => {
   const [hover, setHover] = useState<boolean>(false);
   const handleMouseEnter = () => setHover(true);
@@ -98,6 +100,8 @@ const Button = ({
       href={redirectionLink || ''}
       className={DefaultStyle}
       onClick={onClick}
+      target={target || '_self'}
+      rel="noopener noreferrer"
     >
       {Content}
     </Link>
