@@ -495,6 +495,7 @@ const HomePageV2 = () => {
                   width={400}
                   height={400}
                   priority
+                  fetchPriority="high"
                   className="mx-auto rounded-xl"
                 />
               </div>
@@ -537,6 +538,7 @@ const HomePageV2 = () => {
                 width={400}
                 height={400}
                 priority
+                fetchPriority="high"
                 className="rounded-xl"
               />
             </div>
