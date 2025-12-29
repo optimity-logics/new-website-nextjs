@@ -9,7 +9,7 @@ cross-platform app development solutions. With a team of expert Flutter develope
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives.`,
       buttonText: 'Visit Now',
-      buttonLink: 'www.hts.hopper.com',
+      buttonLink: 'https://hts.hopper.com/',
       projectLogo: '/svg/client-logo-slider/black-icon/hts.svg',
       heroProjectMockupImg: '',
     },
@@ -90,7 +90,7 @@ cross-platform app development solutions. With a team of expert Flutter develope
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives.`,
       buttonText: 'Visit Now',
-      buttonLink: 'www.wikifarmer.com',
+      buttonLink: 'https://wikifarmer.com/',
       projectLogo: '/svg/client-logo-slider/black-icon/wikifarmer.svg',
       heroProjectMockupImg: '',
     },

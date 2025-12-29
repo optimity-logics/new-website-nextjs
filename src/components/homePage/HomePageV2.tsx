@@ -222,11 +222,9 @@ const HomePageV2 = () => {
               headingStyle="text-start"
             />
           </Container>
-          <div
-            className={`ml-auto w-full max-w-[1680px] px-4 sm:pl-6 md:pl-10 xl:pl-16 xl:pr-0`}
-          >
+          <div className={`w-full`}>
             <Swiper
-              spaceBetween={15}
+              spaceBetween={12}
               slidesPerView={1.2}
               breakpoints={{
                 540: {
@@ -236,8 +234,11 @@ const HomePageV2 = () => {
                 1439: {
                   spaceBetween: 50,
                 },
+                1560: {
+                  slidesPerView: 1.8,
+                  spaceBetween: 50,
+                },
               }}
-              centeredSlides={true}
               speed={1000}
               loop={false}
               className="!h-auto w-full"
@@ -246,7 +247,7 @@ const HomePageV2 = () => {
                 homePageData?.ourExpertise.map((item, index) => (
                   <SwiperSlide
                     key={index}
-                    className="m-4 !flex !h-auto items-stretch rounded-xl bg-white p-5 shadow-md xl:p-8 3xl:p-12"
+                    className="m-2 !flex !h-auto items-stretch rounded-xl bg-white p-5 shadow-md md:m-4 xl:p-8 3xl:p-12"
                   >
                     <div className="flex w-full flex-col-reverse items-center justify-between gap-6 xl:flex-row 4xl:gap-[65px]">
                       <div className="flex h-full w-full max-w-[600px] flex-col justify-between gap-5 xl:gap-[40px]">
@@ -577,23 +578,22 @@ const HomePageV2 = () => {
               </button>
             </div>
           </Container>
-          <div className="w-full">
+          <div className="ml-2 w-full md:ml-0">
             <Swiper
-              spaceBetween={10}
+              spaceBetween={12}
               slidesPerView={1.2}
               modules={[Autoplay, Navigation]}
               navigation={{
                 nextEl: '.custom-next',
                 prevEl: '.custom-prev',
               }}
-              centeredSlides={true}
               breakpoints={{
                 540: {
                   slidesPerView: 1.6,
                   spaceBetween: 30,
                 },
                 1439: {
-                  slidesPerView: 2.1,
+                  slidesPerView: 2.2,
                   spaceBetween: 60,
                 },
               }}
