@@ -481,17 +481,6 @@ span.absolute.z-0.inset-0.rounded-full.bg-background.dark\:bg-default.shadow-sma
   left: 8px;
 }
 
-.project-detail-swiper .swiper-slide {
-  transform: scale(1);
-  transition: transform 0.4s ease;
-  opacity: 0.6;
-}
-
-.project-detail-swiper .swiper-slide-active {
-  transform: scale(1.15) !important;
-  opacity: 1;
-  z-index: 10;
-}
 #rc-anchor-container {
   background: transparent !important;
 }
