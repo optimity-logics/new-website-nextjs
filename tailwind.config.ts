@@ -102,6 +102,8 @@ export default {
           'linear-gradient(192.59deg, rgba(12, 50, 59, 0.82) 2.01%, rgba(20, 17, 45, 0.082) 96.5%);',
         gradientLine: 'linear-gradient(#fffc,#0000)',
         btnGradientBg: "url('/svg/about-us/ptwbg.svg')",
+        workDetailRight: "url('/webp/our-work/work-detail/ellipseleft.webp')",
+        workDetailLeft: "url('/webp/our-work/work-detail/ellipseright.webp')",
         successFulStepCard:
           'linear-gradient(-32.59deg, rgba(23, 49, 56, 0.82) 2.01%, rgba(20, 17, 45, 0.082) 96.5%)',
         techCardGradient:
@@ -198,6 +200,8 @@ export default {
         pastelPink: '#f4bdc8',
         ghostWhite: '#f7f8fb',
         primaryGrayishBlue: '#d0d7ea',
+        lightBlueish: '#8CCFF8',
+        lightBlueishGray: '#F6FBFF',
       },
       boxShadow: {
         'work-card': '0px 7px 14px 0px #F4F2EF',

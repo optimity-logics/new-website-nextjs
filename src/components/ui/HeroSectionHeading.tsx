@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Button from './Button';
 
 interface IHeadingProps {
-  heading: string;
+  heading?: string;
   description?: string;
   className?: string;
   badgeTitle?: string;
@@ -50,7 +50,7 @@ const HeroSectionHeading = ({
         </div>
       )}
       <HighlitedDescription
-        dangerouslySetInnerHTML={{ __html: heading }}
+        dangerouslySetInnerHTML={{ __html: heading || '' }}
         className={`font-opt text-4xl font-semibold leading-10 lg:text-[40px] lg:font-bold lg:leading-[48px] 3xl:text-[60px] 3xl:leading-[64px] ${isDark ? 'text-white' : 'text-primary'} ${headingStyle}`}
       />
       {description && (
