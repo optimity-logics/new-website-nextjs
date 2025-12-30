@@ -2,7 +2,17 @@ import Container from '@/components/ui/Container';
 import Image from 'next/image';
 import notFoundImage from '../../public/webp/404.webp';
 import Link from 'next/link';
+import { generateSEOMetadata } from '@/components/utils/seo/MetaData';
+import { SEO } from '@/components/utils/seo/TitleAndDescription';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = generateSEOMetadata({
+  title: SEO?.not_found?.title || '',
+  description: SEO?.not_found?.description || '',
+  og_url: 'https://optimitylogics.com',
+  og_image:
+    'https://optimitylogics.com/images/meta-img/optimity-logics-og-image.jpg',
+});
 export default function NotFound() {
   return (
     <Container className="mb-10">

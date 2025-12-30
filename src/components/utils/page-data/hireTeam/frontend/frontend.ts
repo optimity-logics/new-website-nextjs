@@ -477,7 +477,7 @@ export const hireVueDeveloper: IHireUsPageType = {
     '/webp/hire-us/marquee_2_2.webp',
   ],
 };
-export const hireTailwindCssDeveloper: IHireUsPageType = {
+export const hireTailwindDeveloper: IHireUsPageType = {
   heroSection: {
     heading:
       "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
@@ -596,7 +596,7 @@ export const hireTailwindCssDeveloper: IHireUsPageType = {
     '/webp/hire-us/marquee_2_2.webp',
   ],
 };
-export const hireJavascriptDeveloper: IHireUsPageType = {
+export const hireJavaScriptDeveloper: IHireUsPageType = {
   heroSection: {
     heading:
       "<span class='text-red'>Engage Dedicated</span> Offshore Developers",
@@ -715,7 +715,7 @@ export const hireJavascriptDeveloper: IHireUsPageType = {
     '/webp/hire-us/marquee_2_2.webp',
   ],
 };
-export const hireBackboneJs: IHireUsPageType = {
+export const hireBackboneDeveloper: IHireUsPageType = {
   heroSection: {
     heading:
       "<span class='text-red'>Engage Dedicated</span> Offshore Developers",

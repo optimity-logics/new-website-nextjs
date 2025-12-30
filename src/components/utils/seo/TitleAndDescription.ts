@@ -329,7 +329,13 @@ export const SEO = {
     description:
       'Engage our dedicated team of full stack developers to craft web and mobile applications tailored to your needs. Our highly skilled full stack web developers possess in-depth expertise in both front-end and back-end development.',
   },
-  404: {
+  healthcare_solution: {
+    title:
+      'Hire Full Stack Developer India | Hire Dedicated Full Stack Developers',
+    description:
+      'Engage our dedicated team of full stack developers to craft web and mobile applications tailored to your needs. Our highly skilled full stack web developers possess in-depth expertise in both front-end and back-end development.',
+  },
+  not_found: {
     title: 'Page Not Found',
     description: 'The page you were looking for is not here.',
   },
