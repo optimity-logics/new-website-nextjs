@@ -10,10 +10,11 @@ import HeroSectionHeading from '../ui/HeroSectionHeading';
 import ClientTestimonial from '../ui/ClientTestimonial';
 import { IHireUsPageType } from '../type/hireUs/hireUsType';
 import { motion } from 'framer-motion';
-type hireUsProps = {
+interface HireUsProps {
   data: IHireUsPageType;
-};
-const HireUs = ({ data }: hireUsProps) => {
+}
+
+const HireUs = ({ data }: HireUsProps) => {
   const [hover, setHover] = useState<boolean>(false);
   const handleMouseEnter = () => setHover(true);
   const handleMouseLeave = () => {
@@ -27,7 +28,7 @@ const HireUs = ({ data }: hireUsProps) => {
           heading={data?.heroSection?.heading}
           description={data?.heroSection?.description}
           btnName={data?.heroSection?.btnName}
-          link={data?.heroSection?.btnName}
+          link={data.heroSection.btnName}
           className="!gap-10"
         />
         <div className="relative aspect-[5/4] h-auto w-full max-w-[270px] md:max-w-[450px] 3xl:aspect-[5/6]">
