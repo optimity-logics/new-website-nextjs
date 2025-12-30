@@ -221,64 +221,64 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
   // Industry Expertise
 
   'healthcare-solutions': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: healthcareData,
   },
   'fintech-solutions': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: financeSolution,
   },
   'real-estate-app-development': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: realEstate,
   },
   'ecommerce-solutions': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: retailSolution,
   },
   'educational-app-development-solutions': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: education,
   },
   'logistics-app-development': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: logisticsAppDevelopment,
   },
   // Custom Solutions
   'devops-solutions': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: devOps,
   },
   'cloud-computing-solutions': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: cloudComputing,
   },
   'product-prototype-solutions-service': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: productPrototype,
   },
   'on-demand-app-development': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: onDemandApp,
   },
   // Business Focus
   'startup-app-development-service': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: startUpSolution,
   },
   'enterprise-app-development-service': {
-    type: 'default',
+    type: 'solution',
     seoKey: 'healthcare_solution',
     data: enterpriseSolution,
   },
