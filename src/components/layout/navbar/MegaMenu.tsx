@@ -89,6 +89,9 @@ export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
             {item.megaMenuItem.length === 0 ? (
               <Link
                 href={`/${item.menuTitle.toLowerCase().replace(/s$/, '')}`}
+                target={
+                  item.menuTitle.toLocaleLowerCase() === 'blog' ? '_blank' : ''
+                }
                 className={`py-4 font-opt text-base font-medium transition-colors duration-200 ${
                   activeMenu === item.menuTitle
                     ? 'text-lightBlue'
