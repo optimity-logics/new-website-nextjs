@@ -39,7 +39,7 @@ export default {
         tectnologyContentbg: "url('/webp/technologyWeWork/techContentbg.webp')",
         teambg: "url('/webp/team.webp')",
         footer: "url('/webp/footerbg.webp')",
-        contactUs: "url('/images/services/desktop-contactus.webp')",
+        contactUs: "url('/webp/services/desktop-contactus.webp')",
         careerBanner: "url('/webp/careers/career-banner.webp')",
         exportTeamBg: "url('/webp/about-us/exportTeamBg.webp')",
         aboutUsClient: "url('/svg/about-us/about-shape.svg')",

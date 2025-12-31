@@ -119,64 +119,64 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
   // Digital Services
   'software-product-development-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'software_product_development_service',
     data: softwareProductDevelopment,
   },
   'ui-ux-design-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'ui_ux_design_service',
     data: uiuxData,
   },
   'digital-marketing-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'digital_marketing_service',
     data: digitalMarketing,
   },
   'quality-engineering-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'quality_engineering_service',
     data: qualityEngineer,
   },
   'dedicated-team-augmentation-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'dedicated_team_augmentation_service',
     data: hireDedicatedDevs,
   },
   'cto-as-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'cto_as_service',
     data: ctoServices,
   },
   // AI/ML
 
   'data-science-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'data_science_service',
     data: dataScience,
   },
   'machine-learning-development-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'machine_learning_development_service',
     data: machineLerning,
   },
   'artificial-intelligence-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'artificial_intelligence_service',
     data: artificialIntelligence,
   },
   'robotic-process-automation-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'robotic_process_automation_service',
     data: roboticAutomation,
   },
   'computer-vision-development-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'computer_vision_development_service',
     data: computerVision,
   },
   'generative-ai-development-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'generative_ai_development_service',
     data: generativeAI,
   },
   // Application services
@@ -188,32 +188,32 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
   },
   'mobile-app-development': {
     type: 'default',
-    seoKey: 'mobile_app_development_services',
+    seoKey: 'mobile_app_development_service',
     data: mobileAppDevelopment,
   },
   'software-development-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'software_development_service',
     data: softwareDevelopment,
   },
   'saas-app-development-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'saas_app_development_service',
     data: saasDevelopment,
   },
   'mvp-development-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'mvp_development_service',
     data: mvpDevelopment,
   },
   'app-modernization-development-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'app_modernization_development_service',
     data: appModernization,
   },
   'game-development-service': {
     type: 'default',
-    seoKey: 'web_app_development_services',
+    seoKey: 'game_development_service',
     data: gameDevelopment,
   },
 
@@ -222,397 +222,397 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
 
   'healthcare-solutions': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'healthcare_solutions',
     data: healthcareData,
   },
   'fintech-solutions': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'fintech_solutions',
     data: financeSolution,
   },
   'real-estate-app-development': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'real_estate_app_development',
     data: realEstate,
   },
   'ecommerce-solutions': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'ecommerce_solutions',
     data: retailSolution,
   },
   'educational-app-development-solutions': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'educational_app_development_solutions',
     data: education,
   },
   'logistics-app-development': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'logistics_app_development',
     data: logisticsAppDevelopment,
   },
   // Custom Solutions
   'devops-solutions': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'devops_solutions',
     data: devOps,
   },
   'cloud-computing-solutions': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'cloud_computing_solutions',
     data: cloudComputing,
   },
   'product-prototype-solutions-service': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'product_prototype_solutions_service',
     data: productPrototype,
   },
   'on-demand-app-development': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'on_demand_app_development',
     data: onDemandApp,
   },
   // Business Focus
   'startup-app-development-service': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'startup_app_development_service',
     data: startUpSolution,
   },
   'enterprise-app-development-service': {
     type: 'solution',
-    seoKey: 'healthcare_solution',
+    seoKey: 'enterprise_app_development_service',
     data: enterpriseSolution,
   },
   // Technology
   // Mobile Development
   'ios-development-service': {
     type: 'default',
-    seoKey: 'mobile_app_development_services',
+    seoKey: 'ios_development_service',
     data: IosData,
   },
 
   'android-development-service': {
     type: 'default',
-    seoKey: 'mobile_app_development_services',
+    seoKey: 'android_development_service',
     data: AndroidData,
   },
 
   'react-native-development-service': {
     type: 'default',
-    seoKey: 'mobile_app_development_services',
+    seoKey: 'react_native_development_service',
     data: ReactNative,
   },
 
   'flutter-development-service': {
     type: 'default',
-    seoKey: 'mobile_app_development_services',
+    seoKey: 'flutter_development_service',
     data: FlutterData,
   },
   // Frontend Development
   'next-js-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'next_js_development_service',
     data: NextJsData,
   },
 
   'react-js-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'react_js_development_service',
     data: ReactJsData,
   },
 
   'angular-js-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'angular_js_development_service',
     data: AngularData,
   },
 
   'vue-js-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'vue_js_development_service',
     data: VueData,
   },
 
   'svelte-js-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'svelte_js_development_service',
     data: SvelteJsData,
   },
 
   'javascript-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'javascript_development_service',
     data: JavaScriptData,
   },
   // Backend Development
   'python-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'python_development_service',
     data: PythonData,
   },
 
   'golang-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'golang_development_service',
     data: GolangData,
   },
 
   'node-js-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'nodejs_development_service',
     data: NodeData,
   },
 
   'laravel-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'laravel_development_service',
     data: LaravelData,
   },
 
   'php-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'php_development_service',
     data: PhpData,
   },
   // CMS Development
   'wordpress-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'wordpress_development_service',
     data: wordpress,
   },
 
   'contentful-cloud-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'contentful_development_service',
     data: contentful,
   },
 
   'craft-cms-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'craft_cms_service',
     data: craftCms,
   },
 
   'magento-cms-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'magento_cms_service',
     data: magento,
   },
   // DevOps
   'AWS-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'aws_development_service',
     data: aws,
   },
 
   'google-cloud-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'google_development_service',
     data: googleCloud,
   },
 
   'azure-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'azure_development_service',
     data: azure,
   },
   // Trending
 
   'tailwind-css-development-service': {
     type: 'default',
-    seoKey: 'technology',
+    seoKey: 'tailwind_css_development_service',
     data: tailwindData,
   },
 
   // Data & AI
   'hire-ai-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_ai_developers',
     data: hireAIDeveloper,
   },
 
   'hire-machine-learning-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_machine_learning_developers',
     data: hireMLDeveloper,
   },
 
   'hire-data-scientists-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_data_scientists_developers',
     data: hireDataScientist,
   },
   // Mobile Developers
   'hire-ios-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_ios_developers',
     data: hireIosDeveloper,
   },
 
   'hire-android-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_android_developers',
     data: hireAndroidDeveloper,
   },
 
   'hire-react-native-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_react_native_developers',
     data: hireReactNativeDeveloper,
   },
 
   'hire-flutter-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_flutter_developers',
     data: hireFlutterDeveloper,
   },
 
   'hire-swift-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_swift_developers',
     data: hireSwiftDeveloper,
   },
 
   'hire-iconic-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_iconic_developers',
     data: hireIconicDeveloper,
   },
   // Frontend Developers
   'hire-next-js-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_next_js_developers',
     data: hireNextDeveloper,
   },
 
   'hire-react-js-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_react_js_developers',
     data: hireReactDeveloper,
   },
 
   'hire-angular-js-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_angular_js_developers',
     data: hireAngularDeveloper,
   },
 
   'hire-vue-js-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_vue_js_developers',
     data: hireVueDeveloper,
   },
 
   'hire-backbone-js-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_backbone_js_developers',
     data: hireBackboneDeveloper,
   },
 
   'hire-javascript-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_javascript_developers',
     data: hireJavaScriptDeveloper,
   },
 
   'hire-tailwind-css-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_tailwind_css_developers',
     data: hireTailwindDeveloper,
   },
 
   'hire-webflow-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_webflow_developers',
     data: hireWebflowDeveloper,
   },
   // Backend Developers
   'hire-python-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_python_developers',
     data: hirePythonDeveloper,
   },
 
   'hire-fastapi-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_fastapi_developers',
     data: hireFastApiDeveloper,
   },
 
   'hire-django-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_django_developers',
     data: hireDjangoDeveloper,
   },
 
   'hire-flask-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_flask_developers',
     data: hireFlaskDeveloper,
   },
 
   'hire-golang-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_golang_developers',
     data: hireGoLangDeveloper,
   },
 
   'hire-node-js-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_node_js_developers',
     data: hireNodeJSDeveloper,
   },
 
   'hire-laravel-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_laravel_developers',
     data: hireLaravelDeveloper,
   },
 
   'hire-php-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_php_developers',
     data: hirePhpDeveloper,
   },
   // Trending
   'hire-unreal-app-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_unreal_app_developers',
     data: hireUnrealEngineDeveloper,
   },
 
   'hire-ui-ux-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_ui_ux_developers',
     data: hireUIUXDesigner,
   },
 
   'hire-software-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_software_developers',
     data: hireSoftwareDeveloper,
   },
 
   'hire-devops-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_devops_developers',
     data: hireDevOpsDeveloper,
   },
 
   'hire-mern-stack-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_mern_stack_developers',
     data: hireMERNStackDeveloper,
   },
 
   'hire-mean-stack-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_mean_stack_developers',
     data: hireMEANStackDeveloper,
   },
 
   'hire-game-developers': {
     type: 'hire',
-    seoKey: 'hire_us',
+    seoKey: 'hire_game_developers',
     data: hireGameDeveloper,
   },
 };
