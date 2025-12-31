@@ -55,20 +55,6 @@ export function generateSEOMetadata({
           'https://optimitylogics.com/images/meta-img/optimity-logics-og-image.jpg',
       ],
     },
-    icons: {
-      icon: '/favicon.ico',
-      apple: [
-        { url: '/images/favicons/icon-57.png', sizes: '57x57' },
-        { url: '/images/favicons/icon-60.png', sizes: '60x60' },
-        { url: '/images/favicons/icon-72.png', sizes: '72x72' },
-        { url: '/images/favicons/icon-76.png', sizes: '76x76' },
-        { url: '/images/favicons/icon-114.png', sizes: '114x114' },
-        { url: '/images/favicons/icon-120.png', sizes: '120x120' },
-        { url: '/images/favicons/icon-144.png', sizes: '144x144' },
-        { url: '/images/favicons/icon-152.png', sizes: '152x152' },
-        { url: '/images/favicons/icon-180.png', sizes: '180x180' },
-      ],
-    },
     robots: {
       index: true,
       follow: true,

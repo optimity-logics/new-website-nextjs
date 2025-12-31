@@ -1,9 +1,25 @@
+import { Metadata } from 'next';
 import './globals.css';
 import Layout from '@/components/layout/Layout';
 import locaFont from 'next/font/local';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+export const metadata: Metadata = {
+  icons: {
+    icon: '/favicon.ico',
+    apple: [
+      { url: '/favicons/icon-57.png', sizes: '57x57' },
+      { url: '/favicons/icon-60.png', sizes: '60x60' },
+      { url: '/favicons/icon-72.png', sizes: '72x72' },
+      { url: '/favicons/icon-76.png', sizes: '76x76' },
+      { url: '/favicons/icon-114.png', sizes: '114x114' },
+      { url: '/favicons/icon-120.png', sizes: '120x120' },
+      { url: '/favicons/icon-144.png', sizes: '144x144' },
+      { url: '/favicons/icon-152.png', sizes: '152x152' },
+      { url: '/favicons/icon-180.png', sizes: '180x180' },
+    ],
+  },
+};
 const opt = locaFont({
   src: [
     { path: './fonts/opt/Opt-Light.woff2', weight: '300' },
@@ -22,6 +38,7 @@ const dmSans = locaFont({
   ],
   variable: '--font-dmSans',
 });
+
 export default function RootLayout({
   children,
 }: Readonly<{
