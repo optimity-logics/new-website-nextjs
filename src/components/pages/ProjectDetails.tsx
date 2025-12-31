@@ -7,7 +7,6 @@ import ProjectCard from '../common/ProjectCard';
 import Container from '../ui/Container';
 import HeroSectionHeading from '../ui/HeroSectionHeading';
 import SectionHeader from '../ui/SectionHeader';
-import { ourWorkPage } from '../utils/Constant';
 import Image from 'next/image';
 import { IProjectDetail } from '../type/projectDetail/projectDetailType';
 
@@ -44,7 +43,7 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
             />
           </div>
 
-          <div className="relative aspect-[5/4] h-full w-full max-w-[400px]">
+          <div className="relative aspect-[5/4] h-full w-full max-w-[450px] 3xl:max-w-[700px]">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -55,7 +54,7 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
               className="relative h-full w-full"
             >
               <Image
-                src={ourWorkPage?.heroRightImage || ''}
+                src="/images/11.png"
                 alt=""
                 fill
                 priority
@@ -129,7 +128,7 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
               <h3 className="font-opt text-3xl font-medium leading-8 text-primary">
                 {card.solutionTitle}
               </h3>
-              <p className="font-opt text-lg text-optDesc">
+              <p className="font-opt text-base text-optDesc md:text-lg">
                 {card.solutionDescription}
               </p>
             </div>

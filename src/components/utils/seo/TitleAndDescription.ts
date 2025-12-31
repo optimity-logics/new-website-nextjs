@@ -322,6 +322,11 @@ export const SEO = {
     description:
       "Discover the impact of our digital solutions as we've empowered clients across diverse services. Our portfolio is a testament to over 8 years of expertise and innovation.",
   },
+  sitemap: {
+    title: 'Sitemap | Optimity Logics',
+    description:
+      'View the complete list of pages on the Optimity Logics website to quickly find services, solutions, technologies, resources, and company information.',
+  },
 
   hire_us: {
     title:
@@ -329,6 +334,18 @@ export const SEO = {
     description:
       'Engage our dedicated team of full stack developers to craft web and mobile applications tailored to your needs. Our highly skilled full stack web developers possess in-depth expertise in both front-end and back-end development.',
   },
+  privacy_policy: {
+    title: 'Privacy Policy | Optimity Logics',
+    description:
+      'Read Optimity Logics’ Privacy Policy to understand how we collect, use, store, and protect your personal information while delivering our digital services.',
+  },
+  book_a_call: {
+    title: 'Book a Strategy Call with Our Experts | Optimity Logics',
+
+    description:
+      'Schedule a free consultation call with Optimity Logics to discuss your project requirements, digital transformation goals, and business ideas with our experts.',
+  },
+
   healthcare_solution: {
     title:
       'Hire Full Stack Developer India | Hire Dedicated Full Stack Developers',
@@ -338,5 +355,415 @@ export const SEO = {
   not_found: {
     title: 'Page Not Found',
     description: 'The page you were looking for is not here.',
+  },
+  // Services → Digital
+  software_product_development_service: {
+    title: 'Software Product Development Services | Optimity Logics',
+    description:
+      'Build and scale market-ready software products with Optimity Logics. From discovery and MVP to full-cycle development, we deliver reliable, user-focused product engineering.',
+  },
+  ui_ux_design_service: {
+    title: 'UI/UX Design Services | Optimity Logics',
+    description:
+      'Create intuitive, conversion-focused digital experiences with Optimity Logics. Get user research, wireframes, UI design systems, and prototyping tailored to your product goals.',
+  },
+  digital_marketing_service: {
+    title: 'Digital Marketing Services | Optimity Logics',
+    description:
+      'Grow traffic, leads, and brand visibility with Optimity Logics. We deliver SEO, performance marketing, content strategy, and campaign optimization for measurable results.',
+  },
+  quality_engineering_service: {
+    title: 'Quality Engineering & Testing Services | Optimity Logics',
+    description:
+      'Ship faster with confidence using Optimity Logics quality engineering. We provide functional, automation, performance, and security testing to improve product reliability.',
+  },
+  dedicated_team_augmentation_service: {
+    title: 'Dedicated Team Augmentation Services | Optimity Logics',
+    description:
+      'Extend your delivery capacity with dedicated engineers from Optimity Logics. Get vetted talent, flexible engagement, and seamless collaboration to accelerate product execution.',
+  },
+  cto_as_service: {
+    title: 'CTO as a Service | Technology Leadership | Optimity Logics',
+    description:
+      'Get strategic technology leadership without a full-time hire. Optimity Logics provides architecture guidance, roadmap planning, team mentoring, and delivery governance.',
+  },
+
+  // Services → AI/ML
+  data_science_service: {
+    title: 'Data Science Services & Consulting | Optimity Logics',
+    description:
+      'Turn data into business decisions with Optimity Logics. We build analytics, predictive models, dashboards, and data pipelines to improve efficiency and outcomes.',
+  },
+  machine_learning_development_service: {
+    title: 'Machine Learning Development Services | Optimity Logics',
+    description:
+      'Build ML solutions that automate decisions and improve accuracy. Optimity Logics delivers model development, training, deployment, and MLOps for real-world impact.',
+  },
+  artificial_intelligence_service: {
+    title: 'Artificial Intelligence (AI) Services | Optimity Logics',
+    description:
+      'Adopt AI to enhance products and operations with Optimity Logics. We design AI-driven features, intelligent automation, and custom solutions aligned to your goals.',
+  },
+  robotic_process_automation_service: {
+    title: 'Robotic Process Automation (RPA) Services | Optimity Logics',
+    description:
+      'Automate repetitive business workflows with Optimity Logics RPA. Reduce manual effort, improve accuracy, and accelerate processing across teams and systems.',
+  },
+  computer_vision_development_service: {
+    title: 'Computer Vision Development Services | Optimity Logics',
+    description:
+      'Extract insights from images and video with Optimity Logics. We build computer vision systems for detection, recognition, classification, and automation use cases.',
+  },
+  generative_ai_development_service: {
+    title: 'Generative AI Development Services | Optimity Logics',
+    description:
+      'Build GenAI applications with Optimity Logics—chatbots, copilots, content generation, and enterprise knowledge assistants with secure integrations and evaluation.',
+  },
+
+  // Services → Application
+
+  mobile_app_development_service: {
+    title: 'Mobile App Development Services | Optimity Logics',
+    description:
+      'Launch high-quality iOS and Android apps with Optimity Logics. From UI to backend and store release, we build mobile products that users love.',
+  },
+  software_development_service: {
+    title: 'Custom Software Development Services | Optimity Logics',
+    description:
+      'Get tailored software built around your workflows. Optimity Logics delivers custom development, integrations, modernization, and long-term maintenance support.',
+  },
+  saas_app_development_service: {
+    title: 'SaaS Application Development Services | Optimity Logics',
+    description:
+      'Build subscription-ready SaaS products with Optimity Logics. We design multi-tenant architectures, billing-ready systems, scalable APIs, and secure user management.',
+  },
+  mvp_development_service: {
+    title: 'MVP Development Services | Optimity Logics',
+    description:
+      'Validate your idea quickly with an MVP by Optimity Logics. We focus on core features, fast iterations, and a roadmap that supports product-market fit.',
+  },
+  app_modernization_development_service: {
+    title: 'Application Modernization Services | Optimity Logics',
+    description:
+      'Modernize legacy applications with Optimity Logics. Improve performance, security, and scalability through refactoring, re-platforming, and cloud-ready architecture.',
+  },
+  game_development_service: {
+    title: 'Game Development Services | Optimity Logics',
+    description:
+      'Create engaging games with Optimity Logics. We deliver design, development, testing, and performance optimization for mobile, web, and interactive experiences.',
+  },
+
+  // Solution → Industry
+  healthcare_solutions: {
+    title: 'Healthcare Software & App Development | Optimity Logics',
+    description:
+      'Build secure healthcare solutions with Optimity Logics. From patient apps to admin portals and integrations, we develop compliant, scalable digital health products.',
+  },
+  fintech_solutions: {
+    title: 'FinTech App Development & Solutions | Optimity Logics',
+    description:
+      'Launch secure FinTech platforms with Optimity Logics. We build payment-ready apps, financial dashboards, automation, and integrations with strong security practices.',
+  },
+  real_estate_app_development: {
+    title: 'Real Estate App Development Services | Optimity Logics',
+    description:
+      'Digitize real estate operations with Optimity Logics. Build listing platforms, CRM tools, broker apps, and customer portals designed to boost conversions.',
+  },
+  ecommerce_solutions: {
+    title: 'eCommerce Solutions & App Development | Optimity Logics',
+    description:
+      'Grow online sales with Optimity Logics eCommerce solutions. We build storefronts, custom features, integrations, and performance optimizations for better revenue.',
+  },
+  educational_app_development_solutions: {
+    title: 'Education App Development Solutions | Optimity Logics',
+    description:
+      'Deliver modern learning experiences with Optimity Logics. We build LMS platforms, student portals, mobile learning apps, and content-driven education systems.',
+  },
+  logistics_app_development: {
+    title: 'Logistics & Transportation App Development | Optimity Logics',
+    description:
+      'Streamline logistics with Optimity Logics. We build tracking systems, fleet apps, dispatch dashboards, and workflow automation for faster operations.',
+  },
+
+  // Solution → Custom
+  devops_solutions: {
+    title: 'DevOps Solutions & Consulting | Optimity Logics',
+    description:
+      'Accelerate releases with Optimity Logics DevOps. We implement CI/CD, infrastructure automation, monitoring, and cloud best practices for stable deployments.',
+  },
+  cloud_computing_solutions: {
+    title: 'Cloud Computing Solutions & Services | Optimity Logics',
+    description:
+      'Move to the cloud with Optimity Logics. We design cloud architectures, migrate workloads, optimize costs, and improve availability across your platforms.',
+  },
+  product_prototype_solutions_service: {
+    title: 'Product Prototype Development Services | Optimity Logics',
+    description:
+      'Convert ideas into clickable prototypes with Optimity Logics. Validate UX, align stakeholders, and prepare a build-ready product roadmap faster.',
+  },
+  on_demand_app_development: {
+    title: 'On-Demand App Development Services | Optimity Logics',
+    description:
+      'Build on-demand platforms with Optimity Logics—booking, delivery, logistics, and service marketplaces with real-time tracking, payments, and admin dashboards.',
+  },
+
+  // Solution → Business
+  startup_app_development_service: {
+    title: 'Startup App Development Services | Optimity Logics',
+    description:
+      'Launch faster with Optimity Logics startup development. MVPs, product strategy, scalable architecture, and iterative delivery designed for early traction.',
+  },
+  enterprise_app_development_service: {
+    title: 'Enterprise Software Development Services | Optimity Logics',
+    description:
+      'Build enterprise-grade applications with Optimity Logics. We deliver secure architecture, integrations, governance, and scalable platforms for large teams.',
+  },
+
+  // Technology → Mobile (you already have some in SEO; keep consistent)
+
+  // Technology → Frontend (NOTE: your menu links are missing leading "/")
+  next_js_development_service: {
+    title: 'Next.js Development Services | Optimity Logics',
+    description:
+      'Build fast, SEO-friendly web apps with Optimity Logics Next.js development. We deliver SSR/SSG solutions, scalable architecture, and great Core Web Vitals.',
+  },
+  react_js_development_service: {
+    title: 'React.js Development Services | Optimity Logics',
+    description:
+      'Create modern web interfaces with Optimity Logics React development. We build reusable UI systems, SPAs, dashboards, and performance-optimized experiences.',
+  },
+  angular_js_development_service: {
+    title: 'Angular Development Services | Optimity Logics',
+    description:
+      'Develop maintainable enterprise frontends with Optimity Logics. We build Angular applications with strong architecture, testing, and performance best practices.',
+  },
+  vue_js_development_service: {
+    title: 'Vue.js Development Services | Optimity Logics',
+    description:
+      'Build sleek, responsive web apps with Optimity Logics Vue.js development. Ideal for SPAs and interactive UIs with clean code and smooth performance.',
+  },
+  svelte_js_development_service: {
+    title: 'Svelte.js Development Services | Optimity Logics',
+    description:
+      'Deliver lightweight, high-speed frontends with Optimity Logics Svelte development. We build modern UI experiences with minimal runtime overhead.',
+  },
+  javascript_development_service: {
+    title: 'JavaScript Development Services | Optimity Logics',
+    description:
+      'Build reliable web applications with Optimity Logics JavaScript expertise. From front-end to full-stack solutions, we deliver clean, scalable implementations.',
+  },
+
+  // Technology → Backend
+
+  golang_development_service: {
+    title: 'Golang Development Services | Optimity Logics',
+    description:
+      'Create high-performance backend services with Optimity Logics Golang development. Ideal for microservices, APIs, and systems that demand speed and reliability.',
+  },
+  laravel_development_service: {
+    title: 'Laravel Development Services | Optimity Logics',
+    description:
+      'Develop robust PHP applications with Optimity Logics Laravel development. We build secure web apps, APIs, and admin panels with clean architecture.',
+  },
+
+  // Technology → Database (your current links look placeholder; writing SEO assuming you’ll create pages)
+  postgresql_development_service: {
+    title: 'PostgreSQL Development Services | Optimity Logics',
+    description:
+      'Build reliable PostgreSQL data systems with Optimity Logics. We help with schema design, query optimization, migrations, and high-availability setups.',
+  },
+  // Technology → CMS
+  wordpress_service: {
+    title: 'WordPress Development Services | Optimity Logics',
+    description:
+      'Build high-performing WordPress websites with Optimity Logics. We deliver custom themes, plugins, speed optimization, security hardening, and CMS workflows.',
+  },
+  contentful_cloud_service: {
+    title: 'Contentful Development Services | Optimity Logics',
+    description:
+      'Deliver scalable headless CMS experiences with Optimity Logics Contentful development. Build content models, APIs, and modern frontends for fast publishing.',
+  },
+  craft_cms_service: {
+    title: 'Craft CMS Development Services | Optimity Logics',
+    description:
+      'Build flexible, content-rich websites with Optimity Logics Craft CMS development. We deliver custom builds, integrations, and secure CMS implementations.',
+  },
+  magento_cms_service: {
+    title: 'Magento Development Services | Optimity Logics',
+    description:
+      'Scale eCommerce with Optimity Logics Magento development. We build custom storefronts, integrations, performance tuning, and secure transaction workflows.',
+  },
+
+  // Technology → Trending
+  tailwind_css_development_service: {
+    title: 'Tailwind CSS Development Services | Optimity Logics',
+    description:
+      'Build fast, consistent UIs with Optimity Logics Tailwind CSS development. We deliver design systems, component libraries, and responsive, scalable interfaces.',
+  },
+
+  // Hire pages
+  hire_ai_developers: {
+    title: 'Hire AI Developers | Dedicated AI Engineers | Optimity Logics',
+    description:
+      'Hire AI developers from Optimity Logics to build intelligent products and automation. Get vetted talent for prototyping, deployment, and ongoing improvements.',
+  },
+  hire_machine_learning_developers: {
+    title: 'Hire Machine Learning Developers | Optimity Logics',
+    description:
+      'Hire ML developers from Optimity Logics to build predictive systems and production-ready models. Scale faster with experienced engineers and MLOps support.',
+  },
+  hire_data_scientists_developers: {
+    title: 'Hire Data Scientists | Data Science Team | Optimity Logics',
+    description:
+      'Hire data scientists from Optimity Logics for analytics, forecasting, experimentation, and insights. Turn raw data into decisions with expert support.',
+  },
+
+  hire_ios_developers: {
+    title: 'Hire iOS Developers | iPhone App Experts | Optimity Logics',
+    description:
+      'Hire iOS developers from Optimity Logics to build high-quality iPhone and iPad apps. Get skilled engineers for UI, performance, and App Store delivery.',
+  },
+  hire_android_developers: {
+    title: 'Hire Android Developers | Dedicated Team | Optimity Logics',
+    description:
+      'Hire Android developers from Optimity Logics for scalable apps across devices. Build faster with experienced engineers focused on performance and stability.',
+  },
+  hire_react_native_developers: {
+    title: 'Hire React Native Developers | Optimity Logics',
+    description:
+      'Hire React Native developers from Optimity Logics to build cross-platform apps efficiently. Get shared codebases, native integrations, and fast delivery.',
+  },
+  hire_flutter_developers: {
+    title: 'Hire Flutter Developers | Cross-Platform Experts | Optimity Logics',
+    description:
+      'Hire Flutter developers from Optimity Logics to build beautiful, high-performance apps. Ideal for rapid development with a consistent UI across platforms.',
+  },
+  hire_swift_developers: {
+    title: 'Hire Swift Developers | iOS Development Team | Optimity Logics',
+    description:
+      'Hire Swift developers from Optimity Logics for modern iOS app development. Build secure, maintainable apps with strong performance and great UX.',
+  },
+  hire_iconic_developers: {
+    title: 'Hire Ionic Developers | Hybrid App Team | Optimity Logics',
+    description:
+      'Hire Ionic developers from Optimity Logics to build cross-platform hybrid apps. Get rapid development, plugin integrations, and production-ready delivery.',
+  },
+
+  hire_next_js_developers: {
+    title: 'Hire Next.js Developers | Dedicated Team | Optimity Logics',
+    description:
+      'Hire Next.js developers from Optimity Logics for fast, SEO-friendly web apps. Get experts in SSR/SSG, performance optimization, and scalable architecture.',
+  },
+  hire_react_js_developers: {
+    title: 'Hire React Developers | Dedicated Frontend Team | Optimity Logics',
+    description:
+      'Hire React developers from Optimity Logics to build modern UI experiences. Get skilled engineers for dashboards, SPAs, component systems, and performance.',
+  },
+  hire_angular_js_developers: {
+    title: 'Hire Angular Developers | Frontend Engineers | Optimity Logics',
+    description:
+      'Hire Angular developers from Optimity Logics for enterprise web apps. Get maintainable architecture, testing discipline, and efficient delivery support.',
+  },
+  hire_vue_js_developers: {
+    title: 'Hire Vue Developers | Frontend Team | Optimity Logics',
+    description:
+      'Hire Vue.js developers from Optimity Logics for responsive, fast web apps. Build SPAs and interactive UIs with clean code and great performance.',
+  },
+  hire_backbone_js_developers: {
+    title: 'Hire Backbone.js Developers | Optimity Logics',
+    description:
+      'Hire Backbone.js developers from Optimity Logics to maintain and modernize legacy frontends. Get reliable support, refactoring, and feature delivery.',
+  },
+  hire_javascript_developers: {
+    title: 'Hire JavaScript Developers | Web Engineers | Optimity Logics',
+    description:
+      'Hire JavaScript developers from Optimity Logics for front-end or full-stack work. Build reliable features with clean code, best practices, and speed.',
+  },
+  hire_tailwind_css_developers: {
+    title: 'Hire Tailwind CSS Developers | UI Engineers | Optimity Logics',
+    description:
+      'Hire Tailwind CSS developers from Optimity Logics to build consistent, responsive UI fast. Great for design systems, component libraries, and modern apps.',
+  },
+  hire_webflow_developers: {
+    title: 'Hire Webflow Developers | No-Code Experts | Optimity Logics',
+    description:
+      'Hire Webflow developers from Optimity Logics to build marketing sites fast. Get pixel-perfect pages, CMS setups, animations, and conversion-focused delivery.',
+  },
+
+  hire_python_developers: {
+    title: 'Hire Python Developers | Backend Engineers | Optimity Logics',
+    description:
+      'Hire Python developers from Optimity Logics for APIs, automation, and scalable backends. Get vetted talent for fast delivery and maintainable systems.',
+  },
+  hire_fastapi_developers: {
+    title: 'Hire FastAPI Developers | API Experts | Optimity Logics',
+    description:
+      'Hire FastAPI developers from Optimity Logics to build high-performance APIs. Ideal for modern backends with validation, documentation, and scalability.',
+  },
+  hire_django_developers: {
+    title: 'Hire Django Developers | Web Engineers | Optimity Logics',
+    description:
+      'Hire Django developers from Optimity Logics to build secure web apps and APIs. Get experts in scalable architecture, admin systems, and integrations.',
+  },
+  hire_flask_developers: {
+    title: 'Hire Flask Developers | Python Team | Optimity Logics',
+    description:
+      'Hire Flask developers from Optimity Logics for lightweight Python backends. Build microservices, APIs, and integrations with clean, maintainable code.',
+  },
+  hire_golang_developers: {
+    title: 'Hire Golang Developers | Backend Team | Optimity Logics',
+    description:
+      'Hire Golang developers from Optimity Logics for high-throughput services. Great for microservices, APIs, concurrency-heavy systems, and performance work.',
+  },
+  hire_node_js_developers: {
+    title: 'Hire Node.js Developers | API Engineers | Optimity Logics',
+    description:
+      'Hire Node.js developers from Optimity Logics to build scalable backend systems. Get expertise in APIs, real-time apps, integrations, and microservices.',
+  },
+  hire_laravel_developers: {
+    title: 'Hire Laravel Developers | PHP Experts | Optimity Logics',
+    description:
+      'Hire Laravel developers from Optimity Logics to build secure web apps and admin panels. Get fast delivery with clean architecture and reliable support.',
+  },
+  hire_php_developers: {
+    title: 'Hire PHP Developers | Web Development Team | Optimity Logics',
+    description:
+      'Hire PHP developers from Optimity Logics for custom web development. Build scalable applications, integrations, and maintainable backend solutions.',
+  },
+
+  hire_unreal_app_developers: {
+    title: 'Hire Unreal Engine Developers | Optimity Logics',
+    description:
+      'Hire Unreal Engine developers from Optimity Logics for high-quality 3D experiences. Build games, simulations, and interactive applications with expert support.',
+  },
+  hire_ui_ux_developers: {
+    title: 'Hire UI/UX Designers | Product Design Team | Optimity Logics',
+    description:
+      'Hire UI/UX designers from Optimity Logics for research-driven product design. Get wireframes, UI systems, prototypes, and conversion-focused UX.',
+  },
+  hire_software_developers: {
+    title: 'Hire Software Developers | Dedicated Engineers | Optimity Logics',
+    description:
+      'Hire software developers from Optimity Logics to accelerate delivery. Get vetted engineers for web, mobile, backend, and full-cycle product development.',
+  },
+  hire_devops_developers: {
+    title: 'Hire DevOps Engineers | CI/CD & Cloud | Optimity Logics',
+    description:
+      'Hire DevOps engineers from Optimity Logics to automate delivery and improve reliability. Get CI/CD pipelines, IaC, monitoring, and cloud operations support.',
+  },
+  hire_mern_stack_developers: {
+    title: 'Hire MERN Stack Developers | Full-Stack Team | Optimity Logics',
+    description:
+      'Hire MERN stack developers from Optimity Logics to build fast web applications. Get expertise across MongoDB, Express, React, and Node.js delivery.',
+  },
+  hire_mean_stack_developers: {
+    title: 'Hire MEAN Stack Developers | Full-Stack Team | Optimity Logics',
+    description:
+      'Hire MEAN stack developers from Optimity Logics to build scalable web apps. Get end-to-end expertise across MongoDB, Express, Angular, and Node.js.',
+  },
+  hire_game_developers: {
+    title: 'Hire Game Developers | Game Dev Team | Optimity Logics',
+    description:
+      'Hire game developers from Optimity Logics to build engaging experiences. Get support across design, development, optimization, and QA for release-ready games.',
   },
 };

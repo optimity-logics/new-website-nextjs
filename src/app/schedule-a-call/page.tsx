@@ -1,9 +1,18 @@
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import SectionHeader from '@/components/ui/SectionHeader';
+import { generateSEOMetadata } from '@/components/utils/seo/MetaData';
+import { SEO } from '@/components/utils/seo/TitleAndDescription';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
+export const metadata: Metadata = generateSEOMetadata({
+  title: SEO?.book_a_call?.title || '',
+  description: SEO?.book_a_call?.description || '',
+  og_url: 'https://optimitylogics.com/schedule-a-call',
+  og_image:
+    'https://optimitylogics.com/images/meta-img/optimity-logics-og-image.jpg',
+});
 const Page = () => {
   const promises = [
     { text: 'Tailored Solutions for Your Challenges' },
