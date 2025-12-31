@@ -18,7 +18,7 @@ export default function NotFound() {
     <Container className="mb-10">
       <div className="flex flex-col items-center justify-center gap-5 md:gap-7 xl:gap-8">
         <div>
-          <Image src={notFoundImage} alt="404" width={1012} height={700} />
+          <Image src={notFoundImage} alt="404" width={892} height={700} />
         </div>
         <div className="flex flex-col items-center gap-5">
           <div className="flex flex-col items-center gap-2 sm:gap-3">
