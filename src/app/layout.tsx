@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 import './globals.css';
 import Layout from '@/components/layout/Layout';
 import locaFont from 'next/font/local';
@@ -20,6 +20,12 @@ export const metadata: Metadata = {
     ],
   },
 };
+export function generateViewport(): Viewport {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+  };
+}
 const opt = locaFont({
   src: [
     { path: './fonts/opt/Opt-Light.woff2', weight: '300' },

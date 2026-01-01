@@ -51,6 +51,8 @@ export default function LogoAnimation({ logo }: LogoSliderProps) {
                           alt="logo"
                           width={150}
                           height={60}
+                          property="high"
+                          fetchPriority="high"
                           className="!w-max object-contain"
                         />
                       </div>

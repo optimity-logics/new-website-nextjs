@@ -117,7 +117,7 @@ fledged development solutions aligned with your business objectives. `,
   crossPlatformBenefitsTitle:
     'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
     {
       img: nda,

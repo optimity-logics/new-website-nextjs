@@ -181,7 +181,7 @@ export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
                               <Link
                                 href={item.techLink}
                                 onClick={() => setActiveMenu(null)}
-                                className="group flex items-center font-opt text-[15px] font-normal text-primary transition-colors duration-200 hover:text-lightBlue"
+                                className="group flex w-max items-center font-opt text-[15px] font-normal text-primary transition-colors duration-200 hover:text-lightBlue"
                               >
                                 <span className="transition-transform duration-200 group-hover:translate-x-1">
                                   {item.techName}
@@ -205,7 +205,7 @@ export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
                       </div>
                       <div className="flex flex-col gap-2">
                         <h6 className="font-opt text-sm font-medium leading-4 text-primary">
-                          India
+                          Call Us
                         </h6>
                         <span className="font-opt text-sm font-normal lowercase leading-4 text-gray">
                           +91 635 301 5499
@@ -221,7 +221,7 @@ export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
                       </div>
                       <div className="flex flex-col gap-2">
                         <h6 className="font-opt text-sm font-medium leading-4 text-primary">
-                          hr enquiries
+                          HR Enquiries
                         </h6>
                         <span className="font-opt text-[15px] font-normal lowercase leading-4 text-gray">
                           {' '}
@@ -238,7 +238,7 @@ export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
                       </div>
                       <div className="flex flex-col gap-2">
                         <h6 className="font-opt text-sm font-medium leading-4 text-primary">
-                          sales enquiries
+                          Sales Enquiries
                         </h6>
                         <span className="font-opt text-[15px] font-normal lowercase leading-4 text-gray">
                           info@optimitylogics.com

@@ -28,10 +28,10 @@ const HireUs = ({ data }: HireUsProps) => {
           heading={data?.heroSection?.heading}
           description={data?.heroSection?.description}
           btnName={data?.heroSection?.btnName}
-          link={data.heroSection.btnName}
+          link={data.heroSection.link}
           className="!gap-10"
         />
-        <div className="relative aspect-[5/4] h-auto w-full max-w-[270px] md:max-w-[450px] 3xl:aspect-[5/6]">
+        <div className="relative aspect-[5/5] h-auto w-full max-w-[270px] md:aspect-[5/4] md:max-w-[450px] 3xl:aspect-[5/6]">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
