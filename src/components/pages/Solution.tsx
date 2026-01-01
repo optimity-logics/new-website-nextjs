@@ -55,7 +55,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
                 />
               </motion.div>
             </div>
-            <span className="absolute -bottom-[4%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[75px] font-medium text-primaryRichBlack opacity-10 md:-bottom-[6%] md:text-[100px] lg:-bottom-[8%] 3xl:-bottom-[6%]">
+            <span className="absolute -bottom-[2%] left-1/2 z-0 block -translate-x-1/2 whitespace-pre text-center font-opt text-[45px] font-medium text-primaryRichBlack opacity-10 md:-bottom-[6%] md:text-[100px]">
               {data?.heroSection?.watermark}
             </span>
           </Container>

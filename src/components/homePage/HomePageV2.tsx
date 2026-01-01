@@ -578,7 +578,7 @@ const HomePageV2 = () => {
               </button>
             </div>
           </Container>
-          <div className="ml-2 w-full md:ml-0">
+          <div className="w-full pl-2 md:pl-0">
             <Swiper
               spaceBetween={12}
               slidesPerView={1.2}

@@ -88,7 +88,7 @@ export default {
         bgProductPrototype: "url('/webp/solution/ProductPrototype.webp')",
         bgOnDemand: "url('/webp/solution/On-demand.webp')",
         bgContact: "url('/webp/services/contact-us.webp')",
-        contactMobileBg: "url('/images/services/mobile-contactus.webp')",
+        contactMobileBg: "url('/webp/services/mobile-contactus.webp')",
         detailHeroGradient:
           ' linear-gradient(176.48deg, #41D1FF 11.59%, #034C63 38.07%);',
         frame: "url('/images/our-work/frame.png')",
@@ -108,6 +108,8 @@ export default {
           'linear-gradient(-32.59deg, rgba(23, 49, 56, 0.82) 2.01%, rgba(20, 17, 45, 0.082) 96.5%)',
         techCardGradient:
           'linear-gradient(to right, rgba(18,18,18,0.7) 0%, rgba(18,18,18,0) 100%)',
+        projectDetailHeroGradient:
+          'linear-gradient(196.13deg, rgba(0, 0, 0, 0) -2.73%, #FFFFFF 61.57%)',
       },
       fontFamily: {
         opt: ['var(--font-opt)'],

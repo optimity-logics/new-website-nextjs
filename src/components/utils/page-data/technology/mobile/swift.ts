@@ -20,7 +20,7 @@ onboard, we offer end-to-end Flutter app development services, from discovery to
 fledged development solutions aligned with your business objectives. `,
     techImg: swift,
     btnName: `Let’s Connect`,
-    btnLink: '',
+    btnLink: '/schedule-a-call',
   },
   development: {
     heading: `<span class="text-red">Our Flutter App</span> Development
@@ -118,7 +118,7 @@ fledged development solutions aligned with your business objectives. `,
   crossPlatformBenefitsTitle:
     'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
-  crossPlatformBenefitsContactBtnLink: ``,
+  crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
     {
       img: nda,
@@ -266,7 +266,7 @@ fledged development solutions aligned with your business objectives. `,
         projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
       },
       {
-        projectImg: '/webp/project/Hopper.webp',
+        projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
         projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
       },

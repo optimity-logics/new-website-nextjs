@@ -12,7 +12,7 @@ export const hireFlutterDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -131,7 +131,7 @@ export const hireIosDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -250,7 +250,7 @@ export const hireAndroidDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -369,7 +369,7 @@ export const hireReactNativeDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -488,7 +488,7 @@ export const hireSwiftDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -607,7 +607,7 @@ export const hireIconicDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -725,7 +725,7 @@ export const TechnologyWeUseInDevelopment = {
   description:
     "Here's a list of tools and technologies our Flutter experts excel in, catering to various requirements for Flutter mobile app development services",
   btnName: 'schedule a developer interview',
-  btnLink: '',
+  btnLink: '/schedule-a-call',
   technologyServices: [
     {
       bgColor: '#FFC0D9',

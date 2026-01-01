@@ -2,8 +2,8 @@ export const privacyPolicyData = {
   title: 'Privacy Policy',
   lastUpdated: 'July 29, 2025',
   information: [
-    `Protecting the personal information of our customers is a significant responsibility of any organization, so we take it very seriously. MindInventory secures privacy by providing transparency and choice regarding protecting the privacy of our clients’ personal information as well as visitors to our website.`,
-    `This privacy policy describes what data MindInventory (herein referred to as “We,” “Our,” or “Us”) collects, stores, and processes about you. It also explains your rights to your data and the way to contact us in case of any questions. We hold the right to reconstruct this privacy statement at our discretion and encourage you to check this section from time to time to be aware of any changes.`,
+    `Protecting the personal information of our customers is a significant responsibility of any organization, so we take it very seriously. Optimity Logics secures privacy by providing transparency and choice regarding protecting the privacy of our clients’ personal information as well as visitors to our website.`,
+    `This privacy policy describes what data Optimity Logics (herein referred to as “We,” “Our,” or “Us”) collects, stores, and processes about you. It also explains your rights to your data and the way to contact us in case of any questions. We hold the right to reconstruct this privacy statement at our discretion and encourage you to check this section from time to time to be aware of any changes.`,
   ],
   informationList: [
     {
@@ -50,7 +50,7 @@ export const privacyPolicyData = {
       description:
         'We may use trusted third-party tools for analytics, advertising, remarketing, and user engagement. These tools may collect data about your visits to our website and other websites to help us:',
       description1:
-        'These tools operate under their own privacy policies. While we work with reliable partners, MindInventory is not responsible for how these third parties manage your data. We recommend reviewing their privacy terms for full transparency.',
+        'These tools operate under their own privacy policies. While we work with reliable partners, Optimity Logics is not responsible for how these third parties manage your data. We recommend reviewing their privacy terms for full transparency.',
       itemList: [
         'Analyze visitor behavior',
         'Show you personalized ads across different platforms',
@@ -60,7 +60,7 @@ export const privacyPolicyData = {
     {
       heading: 'How We Use Submitted Information',
       description:
-        'By submitting your contact details (such as name, email address, or phone number), you agree that MindInventory may use this information to:',
+        'By submitting your contact details (such as name, email address, or phone number), you agree that Optimity Logics may use this information to:',
       description1:
         'You can opt out of marketing communications at any time using the unsubscribe link in our emails.',
       itemList: [
@@ -83,7 +83,7 @@ export const privacyPolicyData = {
         'To keep you updated with new products and services provided by us, upcoming events, offers, and promotions of interest to you.',
         'For providing our services as requested by you through various means, such as enabling collaboration, requirement gathering, project development, and deployment of a project.',
         'To provide good customer support and analyze our interactions with customers.',
-        'To recognize and block fraudulent transactions and other unauthorized activities, to report spam, and to protect the rights and interests of MindInventory and its users.',
+        'To recognize and block fraudulent transactions and other unauthorized activities, to report spam, and to protect the rights and interests of Optimity Logics and its users.',
         'To update, expand, and investigate our records, identify new customers, and provide products and services that may be of interest to you.',
         'To manage our website and track website visitor navigations to understand their behavior and interests for better support.',
         'To observe and enhance our marketing campaigns and make suggestions relevant to the user.',
@@ -117,8 +117,8 @@ export const privacyPolicyData = {
     {
       heading: 'Beware of Sharpies',
       descriptionList: [
-        'This is the official global website of MindInventory. We do not operate any other website domain and do not request any payments (for example, related to recruitment) unless it’s related to an official client project. Be cautious of scammers posing as us.',
-        'MindInventory will not be liable for any losses incurred if you fall victim to such scams, knowingly or unknowingly. If you encounter any suspicious activity, report it directly to us through the provided contact details, or you can also report phishing to Google directly. Stay vigilant, and thank you for your cooperation.',
+        'This is the official global website of Optimity Logics. We do not operate any other website domain and do not request any payments (for example, related to recruitment) unless it’s related to an official client project. Be cautious of scammers posing as us.',
+        'Optimity Logics will not be liable for any losses incurred if you fall victim to such scams, knowingly or unknowingly. If you encounter any suspicious activity, report it directly to us through the provided contact details, or you can also report phishing to Google directly. Stay vigilant, and thank you for your cooperation.',
       ],
     },
   ],

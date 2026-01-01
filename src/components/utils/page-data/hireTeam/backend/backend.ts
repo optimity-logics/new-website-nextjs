@@ -7,7 +7,7 @@ export const hirePythonDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -126,7 +126,7 @@ export const hireGoLangDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -245,7 +245,7 @@ export const hireNodeJSDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -364,7 +364,7 @@ export const hireLaravelDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -483,7 +483,7 @@ export const hirePhpDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -602,7 +602,7 @@ export const hireFastApiDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -721,7 +721,7 @@ export const hireDjangoDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },
@@ -840,7 +840,7 @@ export const hireFlaskDeveloper: IHireUsPageType = {
     description:
       "At Optimity Logics, you'll find a powerhouse of top-tier industrial talents spanning web developers, project managers, QA analysts, UI/UX designers, business analysts, technical experts, and consultants.",
     btnName: 'Let’s consult with our expert',
-    link: '/',
+    link: '/schedule-a-call',
     images: {
       mainImage: '/webp/hire-us/hire-us.webp',
     },

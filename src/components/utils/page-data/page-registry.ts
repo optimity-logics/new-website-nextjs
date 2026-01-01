@@ -75,13 +75,12 @@ import {
 } from './hireTeam/dataAndAI/DataAndAI';
 import {
   hireAngularDeveloper,
-  hireBackboneDeveloper,
   hireJavaScriptDeveloper,
   hireNextDeveloper,
   hireReactDeveloper,
+  hireSvelteDeveloper,
   hireTailwindDeveloper,
   hireVueDeveloper,
-  hireWebflowDeveloper,
 } from './hireTeam/frontend/frontend';
 import {
   hireDjangoDeveloper,
@@ -94,13 +93,13 @@ import {
   hirePythonDeveloper,
 } from './hireTeam/backend/backend';
 import {
-  hireUnrealEngineDeveloper,
   hireUIUXDesigner,
   hireSoftwareDeveloper,
   hireDevOpsDeveloper,
   hireMERNStackDeveloper,
   hireMEANStackDeveloper,
   hireGameDeveloper,
+  hireRemoteDeveloper,
 } from './hireTeam/trending/trending';
 import { contentful, craftCms, magento, wordpress } from './technology/cms/cms';
 import { aws, azure, googleCloud } from './devOps/devOps';
@@ -193,7 +192,7 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
     seoKey: 'web_app_development_services',
     data: webAppDevelopment,
   },
-  'mobile-app-development': {
+  'mobile-app-development-service': {
     type: 'default',
     seoKey: 'mobile_app_development_service',
     data: mobileAppDevelopment,
@@ -544,10 +543,10 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
     data: hireVueDeveloper,
   },
 
-  'hire-backbone-js-developers': {
+  'hire-svelte-js-developers': {
     type: 'hire',
     seoKey: 'hire_backbone_js_developers',
-    data: hireBackboneDeveloper,
+    data: hireSvelteDeveloper,
   },
 
   'hire-javascript-developers': {
@@ -562,11 +561,6 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
     data: hireTailwindDeveloper,
   },
 
-  'hire-webflow-developers': {
-    type: 'hire',
-    seoKey: 'hire_webflow_developers',
-    data: hireWebflowDeveloper,
-  },
   // Backend Developers
   'hire-python-developers': {
     type: 'hire',
@@ -616,10 +610,10 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
     data: hirePhpDeveloper,
   },
   // Trending
-  'hire-unreal-app-developers': {
+  'hire-remote-developers': {
     type: 'hire',
     seoKey: 'hire_unreal_app_developers',
-    data: hireUnrealEngineDeveloper,
+    data: hireRemoteDeveloper,
   },
 
   'hire-ui-ux-developers': {

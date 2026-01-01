@@ -1,4 +1,4 @@
-import AllPageContent from '@/components/pages/AllPageContent';
+import DefaultPage from '@/components/pages/DefaultPage';
 import HireUs from '@/components/pages/HireUs';
 import Solution from '@/components/pages/Solution';
 import { IHireUsPageType } from '@/components/type/hireUs/hireUsType';
@@ -13,6 +13,11 @@ import { notFound } from 'next/navigation';
 type Props = {
   params: Promise<{ service: string }>;
 };
+export function generateStaticParams() {
+  return Object.keys(PAGE_REGISTRY).map((service) => ({
+    service,
+  }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { service } = await params;
@@ -44,7 +49,6 @@ export default async function ServicePage({ params }: Props) {
   const page = PAGE_REGISTRY[service];
 
   if (!page) {
-    // Redirects to the Next.js default 404 page
     return notFound();
   }
 
@@ -56,5 +60,5 @@ export default async function ServicePage({ params }: Props) {
     return <Solution data={page.data as IsolutionsPage} />;
   }
 
-  return <AllPageContent data={page.data as IPropsDataTypes} />;
+  return <DefaultPage data={page.data as IPropsDataTypes} />;
 }

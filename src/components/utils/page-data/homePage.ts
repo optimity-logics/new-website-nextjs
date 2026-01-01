@@ -253,7 +253,7 @@ export const homePageData = {
       techImg: devops,
     },
   ],
-  deployedProjectsTitle: 'Successfully deployed projects',
+  deployedProjectsTitle: 'Successfully Deployed Projects',
   deployedProjectsList: [
     {
       projectName: 'Wikifarmer',

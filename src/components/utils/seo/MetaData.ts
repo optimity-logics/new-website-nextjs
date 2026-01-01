@@ -18,12 +18,13 @@ export function generateSEOMetadata({
     description:
       description ||
       'As a prominent Node.js development firm, Optimity Logics specializes in crafting fast, scalable, and real-time applications.',
-    viewport: 'width=device-width, initial-scale=1',
+
     alternates: {
       canonical: og_url || 'https://optimitylogics.com',
     },
+
     openGraph: {
-      title,
+      title: title || 'Optimity Logics',
       description:
         description ||
         'As a prominent Node.js development firm, Optimity Logics specializes in crafting fast, scalable, and real-time applications.',
@@ -38,15 +39,16 @@ export function generateSEOMetadata({
             'https://optimitylogics.com/images/meta-img/optimity-logics-og-image.jpg',
           width: 3168,
           height: 792,
-          alt: title,
+          alt: title || 'Optimity Logics',
         },
       ],
     },
+
     twitter: {
       card: 'summary_large_image',
       site: '@optimitylogics',
       creator: '@optimitylogics',
-      title,
+      title: title || 'Optimity Logics',
       description:
         description ||
         'As a prominent Node.js development firm, Optimity Logics specializes in crafting fast, scalable, and real-time applications.',
@@ -55,10 +57,12 @@ export function generateSEOMetadata({
           'https://optimitylogics.com/images/meta-img/optimity-logics-og-image.jpg',
       ],
     },
+
     robots: {
       index: true,
       follow: true,
     },
+
     other: {
       'http-equiv:origin-trial':
         'A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==',

@@ -3,11 +3,11 @@
 import AnimatedArrow from '@/components/common/AnimatedArrow';
 import Container from '@/components/ui/Container';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
-import { ourWorkPage } from '@/components/utils/Constant';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { ourWorkPage } from '../utils/page-data/ourWork';
 
 const OurWorks = () => {
   const [selectedCategories, setSelectedCategories] = useState('All');
