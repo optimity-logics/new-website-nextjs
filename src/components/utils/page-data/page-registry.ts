@@ -104,6 +104,13 @@ import {
 } from './hireTeam/trending/trending';
 import { contentful, craftCms, magento, wordpress } from './technology/cms/cms';
 import { aws, azure, googleCloud } from './devOps/devOps';
+import {
+  firebase,
+  mongodb,
+  mysql,
+  postgresql,
+  redis,
+} from './technology/database/database';
 export type PageType = 'hire' | 'solution' | 'default';
 
 export type PageData = IPropsDataTypes | IHireUsPageType | IsolutionsPage;
@@ -374,43 +381,78 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
     data: PhpData,
   },
   // CMS Development
-  'wordpress-service': {
+  'wordpress-development-service': {
     type: 'default',
     seoKey: 'wordpress_development_service',
     data: wordpress,
   },
 
-  'contentful-cloud-service': {
+  'contentful-development-service': {
     type: 'default',
     seoKey: 'contentful_development_service',
     data: contentful,
   },
 
-  'craft-cms-service': {
+  'craft-cms-development-service': {
     type: 'default',
     seoKey: 'craft_cms_service',
     data: craftCms,
   },
 
-  'magento-cms-service': {
+  'magento-development-service': {
     type: 'default',
     seoKey: 'magento_cms_service',
     data: magento,
   },
+  'drupal-development-service': {
+    type: 'default',
+    seoKey: 'magento_cms_service',
+    data: magento,
+  },
+  // database
+  'mysql-development-service': {
+    type: 'default',
+    seoKey: 'mysql_development_service',
+    data: mysql,
+  },
+
+  'postgre-sql-development-service': {
+    type: 'default',
+    seoKey: 'postgresql_development_service',
+    data: postgresql,
+  },
+
+  'mongo-db-development-service': {
+    type: 'default',
+    seoKey: 'mongodb_development_service',
+    data: mongodb,
+  },
+
+  'redis-development-service': {
+    type: 'default',
+    seoKey: 'redis_development_service',
+    data: redis,
+  },
+
+  'firebase-development-service': {
+    type: 'default',
+    seoKey: 'firebase_development_service',
+    data: firebase,
+  },
   // DevOps
-  'AWS-service': {
+  'aws-development-service': {
     type: 'default',
     seoKey: 'aws_development_service',
     data: aws,
   },
 
-  'google-cloud-service': {
+  'google-development-service': {
     type: 'default',
     seoKey: 'google_development_service',
     data: googleCloud,
   },
 
-  'azure-service': {
+  'azure-development-service': {
     type: 'default',
     seoKey: 'azure_development_service',
     data: azure,
