@@ -1740,23 +1740,23 @@ export const menuData = [
         items: [
           {
             techName: 'MySQL',
-            techLink: '/',
+            techLink: '/mysql-development-service',
           },
           {
             techName: 'PostgreSQL',
-            techLink: '/tailwind-css-development-service',
+            techLink: '/postgre-sql-development-service',
           },
           {
             techName: 'MongoDB',
-            techLink: '/tailwind-css-development-service',
+            techLink: '/mongo-db-development-service',
           },
           {
             techName: 'Redis',
-            techLink: '/tailwind-css-development-service',
+            techLink: '/redis-development-service',
           },
           {
             techName: 'Firebase',
-            techLink: '/tailwind-css-development-service',
+            techLink: '/firebase-development-service',
           },
         ],
       },
@@ -1768,19 +1768,23 @@ export const menuData = [
         items: [
           {
             techName: 'Wordpress',
-            techLink: '/wordpress-service',
+            techLink: '/wordpress-development-service',
           },
           {
             techName: 'Contentful',
-            techLink: '/contentful-cloud-service',
+            techLink: '/contentful-development-service',
           },
           {
             techName: 'Craft CMS',
-            techLink: '/craft-cms-service',
+            techLink: '/craft-cms-development-service',
           },
           {
             techName: 'Magento',
-            techLink: '/magento-cms-service',
+            techLink: '/magento-development-service',
+          },
+          {
+            techName: 'Drupal',
+            techLink: '/drupal-development-service',
           },
         ],
       },
@@ -1792,15 +1796,15 @@ export const menuData = [
         items: [
           {
             techName: 'AWS',
-            techLink: '/AWS-service',
+            techLink: '/aws-development-service',
           },
           {
             techName: 'Google Cloud',
-            techLink: '/google-cloud-service',
+            techLink: '/google-development-service',
           },
           {
             techName: 'Azure',
-            techLink: '/azure-service',
+            techLink: '/azure-development-service',
           },
         ],
       },
