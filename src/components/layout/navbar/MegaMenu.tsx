@@ -77,6 +77,12 @@ export default function MegaMenu({
       },
     }),
   };
+  const toMenuSlug = (text: string) =>
+    text
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, '-') // spaces → hyphen
+      .replace(/s$/, ''); // remove last "s" ONLY
 
   return (
     <nav className="relative hidden xl:block">
@@ -92,7 +98,7 @@ export default function MegaMenu({
           >
             {item.megaMenuItem.length === 0 ? (
               <Link
-                href={`/${item.menuTitle.toLowerCase().replace(/s$/, '')}`}
+                href={`/${toMenuSlug(item.menuTitle)}`}
                 target={
                   item.menuTitle.toLocaleLowerCase() === 'blog' ? '_blank' : ''
                 }
