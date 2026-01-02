@@ -43,7 +43,7 @@ const Footer = () => {
             {footerData?.otherLinks.map((item, i) => (
               <li
                 key={i}
-                className="cursor-pointer border-r border-r-glassWhite px-5 transition-all duration-300 last-of-type:border-r-0 hover:text-lightBlue"
+                className="cursor-pointer border-r border-r-glassWhite px-2.5 transition-all duration-300 last-of-type:border-r-0 hover:text-lightBlue md:px-5"
               >
                 <Link href={item?.link}>{item?.title}</Link>
               </li>

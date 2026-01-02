@@ -28,7 +28,7 @@ export const aboutUsPage = {
     },
     { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
   ],
-  woWeAre: 'Wo We Are?',
+  woWeAre: 'Who We Are?',
   woWeAreList: [
     {
       title: 'Our Mission',
@@ -74,7 +74,7 @@ export const aboutUsPage = {
   },
   whatWeDoTitle: 'What <span class="text-red">We Do (Our Services)</span>',
   viewAllBtn: 'View All',
-  viewAllBtnLink: '/',
+  viewAllBtnLink: '/our-work',
   whatWeDo: [
     {
       img: '/webp/about-us/webmobile.webp',
@@ -85,7 +85,7 @@ export const aboutUsPage = {
     {
       img: '/webp/about-us/uiux.webp',
       title: 'UI / UX Design',
-      description: 'Intuitive designs that delight and retain users',
+      description: 'Intuitive designs that delight and retain users.',
     },
     {
       img: '/webp/about-us/dm.webp',
@@ -97,7 +97,7 @@ export const aboutUsPage = {
       img: '/webp/about-us/devops.webp',
       title: 'DevOps, Cloud & Infrastructure',
       description:
-        'Fast, secure, manageable deployments; automation; performance & scalability.',
+        'Fast, secure, manageable deployments; automation performance & scalability.',
     },
     {
       img: '/webp/about-us/qa.webp',
@@ -118,7 +118,7 @@ export const aboutUsPage = {
     {
       img: '/webp/about-us/mobile-apps.webp',
       bg: '/images/about-us/mobile-appbg.png',
-      title: 'Mobile apps',
+      title: 'Mobile Apps',
       description:
         'From concept to completion, Optimity Logics seamlessly manages the entire mobile app',
     },
@@ -276,7 +276,7 @@ export const aboutUsPage = {
     },
     {
       benefitesIcon: rocketLaunchv2,
-      benefitesName: 'Perfessional grow budget',
+      benefitesName: 'Professional grow budget',
     },
     {
       benefitesIcon: calendarv2,

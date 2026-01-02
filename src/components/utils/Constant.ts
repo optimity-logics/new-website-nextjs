@@ -894,7 +894,7 @@ export const menuData = [
     megaMenuItem: [],
   },
   {
-    menuTitle: 'Work',
+    menuTitle: 'Our-Works',
     megaMenuItem: [],
   },
   {

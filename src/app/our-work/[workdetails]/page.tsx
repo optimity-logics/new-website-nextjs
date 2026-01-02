@@ -1,6 +1,6 @@
 // src/app/our-work/[workdetails]/page.tsx
 import ProjectDetails from '@/components/pages/ProjectDetails';
-import { projectDetails } from '@/components/utils/page-data/projectDetail/projectDetail';
+import { projectDetails } from '@/components/utils/page-data/projectDetail';
 import { notFound } from 'next/navigation';
 
 export default async function Page({

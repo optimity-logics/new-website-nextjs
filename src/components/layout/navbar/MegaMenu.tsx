@@ -10,9 +10,13 @@ import mail from '../../../../public/svg/mail.svg';
 
 type IMegaMenuProps = {
   setIsMegaMenuOpen: (val: boolean) => void;
+  isWorkDetailSubPages: boolean;
 };
 
-export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
+export default function MegaMenu({
+  setIsMegaMenuOpen,
+  isWorkDetailSubPages,
+}: IMegaMenuProps) {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState<number>(0);
   const [isHovering, setIsHovering] = useState(false);
@@ -95,7 +99,9 @@ export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
                 className={`py-4 font-opt text-base font-medium transition-colors duration-200 ${
                   activeMenu === item.menuTitle
                     ? 'text-lightBlue'
-                    : 'text-optDesc hover:text-lightBlue'
+                    : `${
+                        isWorkDetailSubPages ? 'text-white' : 'text-optDesc'
+                      } hover:text-lightBlue`
                 }`}
               >
                 {item.menuTitle}
@@ -105,7 +111,9 @@ export default function MegaMenu({ setIsMegaMenuOpen }: IMegaMenuProps) {
                 className={`cursor-pointer py-4 font-opt text-base font-medium transition-colors duration-200 ${
                   activeMenu === item.menuTitle && isHovering
                     ? 'text-lightBlue'
-                    : 'text-optDesc hover:text-lightBlue'
+                    : `${
+                        isWorkDetailSubPages ? 'text-white' : 'text-optDesc'
+                      } hover:text-lightBlue`
                 }`}
               >
                 {item.menuTitle}

@@ -15,6 +15,7 @@ interface ButtonProps {
   isLoading?: boolean;
   isSuccess?: boolean;
   target?: string;
+  isWorkDetailSubPages?: boolean;
 }
 
 const Button = ({
@@ -28,13 +29,14 @@ const Button = ({
   isLoading = false,
   isSuccess = false,
   target,
+  isWorkDetailSubPages,
 }: ButtonProps) => {
   const [hover, setHover] = useState<boolean>(false);
   const handleMouseEnter = () => setHover(true);
   const handleMouseLeave = () => {
     setHover(false);
   };
-  const DefaultStyle = `flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-250 ease-in hover:shadow-lg ${isBackgroundLight ? 'border-transparent bg-white text-optDesc hover:border-white hover:bg-transparent hover:text-white' : `${isBackgroung ? 'border-transparent bg-lightBlue text-white hover:border-optDesc hover:bg-transparent hover:text-optDesc' : 'border-optDesc bg-transparent text-optDesc hover:border-transparent hover:bg-lightBlue hover:text-white'} ${isLoading ? '!bg-lightBlue text-white border-transparent' : ''}`} ${className}`;
+  const DefaultStyle = `flex w-max items-center justify-center gap-1 rounded-[50px] border px-[14px] py-[8px] font-opt text-sm font-normal leading-4 transition-all duration-250 ease-in hover:shadow-lg ${isBackgroundLight ? 'border-transparent bg-white text-optDesc hover:border-white hover:bg-transparent hover:text-white' : `${isBackgroung ? `border-transparent bg-lightBlue text-white  hover:bg-transparent  ${isWorkDetailSubPages ? 'hover:text-white hover:border-white' : 'hover:text-optDesc hover:border-optDesc'}` : `bg-transparent hover:border-transparent hover:bg-lightBlue hover:text-white ${isWorkDetailSubPages ? 'border-white text-white ' : 'text-optDesc border-optDesc'}`} ${isLoading ? '!bg-lightBlue text-white border-transparent' : ''}`} ${className}`;
 
   const Content = (
     <>

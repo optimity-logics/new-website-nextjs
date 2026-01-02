@@ -4,6 +4,7 @@ interface IHeroSection {
   buttonText: string;
   buttonLink: string;
   heroProjectMockupImg: string;
+  heroBgimg: string;
 }
 interface IAboutTheProject {
   title: string;

@@ -388,7 +388,7 @@ const AboutUs = () => {
               aboutUsPage?.ourTeamList.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="!flex !h-auto !flex-col !items-center gap-6 rounded-2xl bg-white !p-5 shadow-lg lg:!flex-row"
+                  className="!flex !h-auto !flex-col !items-center gap-6 rounded-2xl bg-[#fafafa]/80 !p-5 shadow-lg lg:!flex-row"
                 >
                   <div
                     className={`flex w-full max-w-[300px] items-center justify-center rounded-2xl p-2`}

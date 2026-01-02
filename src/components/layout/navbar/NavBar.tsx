@@ -13,6 +13,7 @@ import MenuSidebar from '@/components/model-&-Drawer/MenuSidebar';
 import MegaMenu from './MegaMenu';
 import Button from '@/components/ui/Button';
 import { useScrollDirection } from '@/components/hooks/use-scroll-direction';
+import { usePathname } from 'next/navigation';
 
 const navbarVariants = {
   visible: {
@@ -29,9 +30,10 @@ const navbarVariants = {
     y: '-100%',
     opacity: 0,
     transition: {
-      type: 'tween',
-      duration: 0.25,
-      ease: 'easeOut',
+      type: 'spring',
+      stiffness: 55,
+      damping: 22,
+      mass: 1.1,
     },
   },
 };
@@ -42,6 +44,13 @@ const NavBar = () => {
   const { isVisible, isScrolled } = useScrollDirection();
 
   const shouldShowNavbar = isMegaMenuOpen || isVisible;
+  const pathname = usePathname();
+
+  const isWorkDetailSubPages =
+    pathname.startsWith('/our-work/') &&
+    pathname !== '/our-work' &&
+    !isScrolled &&
+    !isMegaMenuOpen;
 
   return (
     <>
@@ -49,17 +58,15 @@ const NavBar = () => {
         variants={navbarVariants}
         initial={false}
         animate={shouldShowNavbar ? 'visible' : 'hidden'}
-        className="sticky top-0 z-[99]"
+        className={`sticky top-0 z-[99] ${
+          isMegaMenuOpen
+            ? 'border-b border-b-primaryGrayishBlue bg-white'
+            : isScrolled
+              ? 'bg-white'
+              : 'bg-transparent'
+        }`}
       >
-        <div
-          className={`mx-auto max-w-[1920px] ${
-            isMegaMenuOpen
-              ? 'border-b border-b-primaryGrayishBlue bg-white'
-              : isScrolled
-                ? 'bg-white'
-                : 'bg-transparent'
-          } px-4 py-2 md:px-8 xl:px-10`}
-        >
+        <div className={`mx-auto max-w-[1920px] px-4 py-2 md:px-8 xl:px-10`}>
           <div className="navigation">
             <div className="flex items-center justify-between">
               {/* Mobile Left */}
@@ -93,30 +100,43 @@ const NavBar = () => {
               <div className="flex items-center gap-10 3xl:gap-32">
                 <div className="hidden xl:block">
                   <Link href="/">
-                    <Image
-                      src={logo}
-                      alt="nav-logo"
-                      width={150}
-                      height={57}
-                      className="max-w-[140px]"
-                    />
+                    {isWorkDetailSubPages ? (
+                      <Image
+                        src="/svg/lightThemeLogo.svg"
+                        alt="nav-logo"
+                        width={150}
+                        height={57}
+                        className="max-w-[140px]"
+                      />
+                    ) : (
+                      <Image
+                        src={logo}
+                        alt="nav-logo"
+                        width={150}
+                        height={57}
+                        className="max-w-[140px]"
+                      />
+                    )}
                   </Link>
                 </div>
 
-                <MegaMenu setIsMegaMenuOpen={setIsMegaMenuOpen} />
+                <MegaMenu
+                  setIsMegaMenuOpen={setIsMegaMenuOpen}
+                  isWorkDetailSubPages={isWorkDetailSubPages}
+                />
               </div>
-
-              {/* Right Actions */}
               <div className="flex items-center gap-4">
                 <Button
                   btnName="Book A Call"
                   redirectionLink="/schedule-a-call"
+                  isWorkDetailSubPages={isWorkDetailSubPages}
                 />
                 <Button
                   btnName="Contact us"
                   redirectionLink="/contact-us"
                   isBackgroung
                   className="hidden lg:flex"
+                  isWorkDetailSubPages={isWorkDetailSubPages}
                 />
               </div>
             </div>
