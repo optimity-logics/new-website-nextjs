@@ -762,7 +762,7 @@ export const menuData = [
             techLink: 'svelte-js-development-service',
           },
           {
-            techName: 'JavaSctipt',
+            techName: 'JavaScript',
             techLink: 'javascript-development-service',
           },
         ],
