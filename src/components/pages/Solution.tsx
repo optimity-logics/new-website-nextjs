@@ -126,7 +126,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
           </div>
         </div>
       </Container>
-      <div className="mb-[60px] bg-black bg-tech-we-work bg-full py-[80px] 4xl:mb-[100px]">
+      <div className="bg-black bg-tech-we-work bg-full py-[80px]">
         <Container className="flex flex-col gap-11">
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-center">
             <SectionHeader

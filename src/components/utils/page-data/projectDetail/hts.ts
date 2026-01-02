@@ -11,7 +11,7 @@ fledged development solutions aligned with your business objectives.`,
     buttonLink: 'https://hts.hopper.com/',
     projectLogo: '/svg/client-logo-slider/black-icon/hts.svg',
     heroProjectMockupImg: '/webp/projectDetail/heroimg/pdhts.webp',
-    heroBgimg: '/webp/projectDetail/bg/bghts.webp',
+    heroBgimg: '/webp/projectDetail/bg/bgep.webp',
   },
   aboutTheProject: {
     title: 'About The Project',

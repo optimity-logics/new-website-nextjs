@@ -102,7 +102,8 @@ import {
   hireRemoteDeveloper,
 } from './hireTeam/trending/trending';
 import { contentful, craftCms, magento, wordpress } from './technology/cms/cms';
-import { aws, azure, googleCloud } from './devOps/devOps';
+import { aws, googleCloud, azure } from './technology/devops/devops';
+
 import {
   firebase,
   mongodb,

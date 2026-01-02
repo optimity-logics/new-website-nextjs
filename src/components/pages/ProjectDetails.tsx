@@ -22,10 +22,9 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
   return (
     <>
       <div
-        className="relative -mt-[74px] mb-[60px] bg-cover bg-fixed bg-no-repeat 3xl:mb-[100px]"
+        className="relative -mt-[74px] mb-[60px] bg-cover bg-fixed bg-center bg-no-repeat 3xl:mb-[100px]"
         style={{
           backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) -2.73%, rgba(255, 255, 255) 61.57%),url(${data?.heroSection?.heroBgimg})`,
-          backgroundSize: '100% 100%',
         }}
       >
         <div className="mx-auto flex w-full max-w-full flex-col justify-between gap-12 overflow-hidden pl-4 pt-[150px] sm:pl-6 md:pl-10 lg:h-screen lg:flex-row xl:pl-20 3xl:pl-24">
