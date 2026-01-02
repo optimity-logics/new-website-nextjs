@@ -1,4 +1,3 @@
-import angular from '../../../../../../public/webp/technology/frontend/angular.webp';
 import { IPropsDataTypes } from '@/components/type/type';
 import framework from '../../../../../../public/svg/technology/mobile/framework.svg';
 import tools from '../../../../../../public/svg/technology/mobile/tools-utilities.svg';
@@ -18,7 +17,7 @@ export const mysql: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: angular,
+    techImg: '/webp/technology/database/sql.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
@@ -393,7 +392,7 @@ export const postgresql: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: angular,
+    techImg: '/webp/technology/database/psql.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
@@ -768,7 +767,7 @@ export const mongodb: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: angular,
+    techImg: '/webp/technology/database/mdb.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
@@ -1143,7 +1142,7 @@ export const redis: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: angular,
+    techImg: '/webp/technology/database/redis.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
@@ -1518,7 +1517,7 @@ export const firebase: IPropsDataTypes = {
 cross-platform app development solutions. With a team of expert Flutter developers
 onboard, we offer end-to-end Flutter app development services, from discovery to full-
 fledged development solutions aligned with your business objectives. `,
-    techImg: angular,
+    techImg: '/webp/technology/database/fb.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },

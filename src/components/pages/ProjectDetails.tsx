@@ -22,11 +22,14 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
   return (
     <>
       <div
-        className="-mt-20 mb-[60px] bg-aboutUsHeroBg bg-cover bg-fixed bg-no-repeat 3xl:mb-[100px]"
-        style={{ backgroundSize: '100% 100%' }}
+        className="relative -mt-[74px] mb-[60px] bg-cover bg-fixed bg-no-repeat 3xl:mb-[100px]"
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) -2.73%, rgba(255, 255, 255) 61.57%),url(${data?.heroSection?.heroBgimg})`,
+          backgroundSize: '100% 100%',
+        }}
       >
-        <Container className="mx-auto flex w-full max-w-[1000px] flex-col items-center justify-between gap-12 pb-[100px] pt-[150px] lg:h-screen lg:flex-row">
-          <div className="flex flex-col gap-4">
+        <div className="mx-auto flex w-full max-w-full flex-col justify-between gap-12 overflow-hidden pl-4 pt-[150px] sm:pl-6 md:pl-10 lg:h-screen lg:flex-row xl:pl-20 3xl:pl-24">
+          <div className="ml-auto flex w-full max-w-[780px] flex-col justify-center gap-4 lg:pb-[100px]">
             <Image
               src={data?.heroSection?.projectLogo || ''}
               alt="p-logo"
@@ -42,8 +45,7 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
               target="_blank"
             />
           </div>
-
-          <div className="relative aspect-[5/4] h-full w-full max-w-[450px] 3xl:max-w-[700px]">
+          <div className="ml-auto mt-auto aspect-[5/4] h-max w-full max-w-[450px] lg:max-w-[700px]">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -54,15 +56,15 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
               className="relative h-full w-full"
             >
               <Image
-                src="/images/11.png"
+                src={data?.heroSection?.heroProjectMockupImg}
                 alt=""
                 fill
                 priority
-                className="object-contain"
+                className="object-cover"
               />
             </motion.div>
           </div>
-        </Container>
+        </div>
       </div>
       <div className="bg-workDetailRight bg-contain bg-left bg-no-repeat">
         <Container className="mb-[60px] flex flex-col gap-10 4xl:mb-[100px] 4xl:gap-[60px]">

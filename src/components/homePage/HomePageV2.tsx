@@ -548,7 +548,7 @@ const HomePageV2 = () => {
       </Container>
       <div className="mb-[60px] 4xl:mb-[100px]">
         <div className="flex flex-col gap-8 3xl:gap-10 4xl:gap-[80px]">
-          <Container className="flex flex-col items-end justify-between gap-5 md:flex-row md:items-center md:gap-0">
+          <Container className="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-0">
             <SectionHeader headingText={homePageData?.deployedProjectsTitle} />
             <div className="flex w-max items-center gap-4 md:gap-6">
               <button

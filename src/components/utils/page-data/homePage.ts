@@ -24,7 +24,7 @@ export const homePageData = {
   heroContactUsBtn: 'Contact Us',
   heroContactUsBtnLink: '/contact-us',
   trustedClient:
-    'Trusted BY 1400+ Happy Clients, Including Fortune 400 Companies',
+    'Trusted By 1400+ Happy Clients, Including Fortune 400 Companies',
   ourExpertiseTitle: 'Our Expertise',
   ourExpertise: [
     {
@@ -305,7 +305,7 @@ export const homePageData = {
       ],
       image: realEstate,
       LearnMore: 'Learn More',
-      link: '',
+      link: '/our-work',
     },
     {
       id: 'fintech',
@@ -322,7 +322,7 @@ export const homePageData = {
       ],
       image: fintech,
       LearnMore: 'Learn More',
-      link: '',
+      link: '/our-work',
     },
     {
       id: 'logistics',
@@ -339,7 +339,7 @@ export const homePageData = {
       ],
       image: logistics,
       LearnMore: 'Learn More',
-      link: '',
+      link: '/our-work',
     },
     {
       id: 'edtech',
@@ -357,7 +357,7 @@ export const homePageData = {
       ],
       image: edTech,
       LearnMore: 'Learn More',
-      link: '',
+      link: '/our-work',
     },
     {
       id: 'food-beverage',
@@ -374,7 +374,7 @@ export const homePageData = {
       ],
       image: FB,
       LearnMore: 'Learn More',
-      link: '',
+      link: '/our-work',
     },
     {
       id: 'healthCare',
@@ -391,7 +391,7 @@ export const homePageData = {
       ],
       image: healthCare,
       LearnMore: 'Learn More',
-      link: '',
+      link: '/our-work',
     },
   ],
   contactUsCardTitle: 'Let’s Build Something Great Together',
@@ -465,7 +465,7 @@ export const homePageData = {
   faqTitle: 'FAQs',
   faqsDescription: 'We’ve compiled the answers to your burning questions!',
   getInTouchBtn: 'Get In Touch',
-  getInTouchBtnLink: '',
+  getInTouchBtnLink: '/schedule-a-call',
   faqsList: [
     {
       question: 'How can I get started with Optimity Logics?',
