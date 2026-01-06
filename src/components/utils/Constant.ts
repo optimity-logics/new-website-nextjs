@@ -33,9 +33,9 @@ import yellowbird from '../../../public/webp/client-logos/yellowbird.webp';
 import instagram from '../../../public/svg/footer/social-media/instagram.svg';
 import twitter from '../../../public/svg/footer/social-media/twitter.svg';
 import dribble from '../../../public/svg/footer/social-media/dribble.svg';
-import linkedin from '../../../public/svg/footer/social-media/linkedIn.svg';
-import youtube from '../../../public/svg/footer/social-media/youtube.svg';
-import facebook from '../../../public/svg/footer/social-media/facebook.svg';
+import linkedin from '../../../public/svg/footer/social-media/linkedin.svg';
+import youtube from '../../../public/svg/footer/social-media/yt.svg';
+import facebook from '../../../public/svg/footer/social-media/fb.svg';
 
 // orange social media icons
 

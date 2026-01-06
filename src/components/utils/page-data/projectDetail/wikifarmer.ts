@@ -1,6 +1,6 @@
 import { IProjectDetail } from '@/components/type/projectDetail/projectDetailType';
 
-export const wikifarmerProject: IProjectDetail = {
+export const wikifarmer: IProjectDetail = {
   slug: 'wikifarmer',
   heroSection: {
     description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust

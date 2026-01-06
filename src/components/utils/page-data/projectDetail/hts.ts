@@ -1,6 +1,6 @@
 import { IProjectDetail } from '@/components/type/projectDetail/projectDetailType';
 
-export const htsProject: IProjectDetail = {
+export const hts: IProjectDetail = {
   slug: 'hts',
   heroSection: {
     description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
@@ -11,17 +11,17 @@ fledged development solutions aligned with your business objectives.`,
     buttonLink: 'https://hts.hopper.com/',
     projectLogo: '/svg/client-logo-slider/black-icon/hts.svg',
     heroProjectMockupImg: '/webp/projectDetail/heroimg/pdhts.webp',
-    heroBgimg: '/webp/projectDetail/bg/bgep.webp',
+    heroBgimg: '/webp/projectDetail/bg/bghts.webp',
   },
   aboutTheProject: {
     title: 'About The Project',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
-    projectMockupImages: '/webp/our-work/work-detail/mockup1.webp',
+    projectMockupImages: '/webp/projectDetail/mockup-slide/hts.webp',
   },
-  projectHomePageImage: '/webp/our-work/work-detail/mockup2.webp',
+  projectHomePageImage: '/webp/projectDetail/mockup/mwk.webp',
   projectSubMockupImages: [
-    '/webp/our-work/work-detail/mockup3.webp',
-    '/webp/our-work/work-detail/mockup3.webp',
+    '/webp/projectDetail/page-mockup/hts1.webp',
+    '/webp/projectDetail/page-mockup/hts2.webp',
   ],
   projectSolution: {
     title: 'The Solution',

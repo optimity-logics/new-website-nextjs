@@ -56,6 +56,7 @@ const Page = () => {
             <SectionHeader
               headingText="What We Promise:"
               headingStyle="text-lg text-white"
+              className="items-start"
             />
 
             <div className="flex flex-col gap-3">
