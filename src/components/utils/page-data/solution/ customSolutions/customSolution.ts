@@ -139,7 +139,7 @@ Healthcare Operations`,
 
     images: [
       '/webp/solution/our-services/cloudComputing.webp',
-      '/webp/solution/our-services/cloudComputing.webp',
+      '/webp/solution/our-services/cloudComputings.webp',
     ],
   },
 

@@ -226,6 +226,8 @@ const HomePageV2 = () => {
             <Swiper
               spaceBetween={12}
               slidesPerView={1.2}
+              slidesOffsetAfter={120}
+              slidesOffsetBefore={10}
               breakpoints={{
                 540: {
                   slidesPerView: 1.6,
@@ -240,7 +242,6 @@ const HomePageV2 = () => {
                 },
               }}
               speed={1000}
-              loop={false}
               className="!h-auto w-full"
             >
               {homePageData?.ourExpertise &&
@@ -578,7 +579,7 @@ const HomePageV2 = () => {
               </button>
             </div>
           </Container>
-          <div className="w-full pl-2 md:pl-0">
+          <div className="w-full pl-4 md:pl-0">
             <Swiper
               spaceBetween={12}
               slidesPerView={1.2}
@@ -598,7 +599,7 @@ const HomePageV2 = () => {
                 },
               }}
               speed={1000}
-              loop={false}
+              slidesOffsetAfter={20}
             >
               {homePageData?.deployedProjectsList &&
                 homePageData?.deployedProjectsList.map((item, index) => (

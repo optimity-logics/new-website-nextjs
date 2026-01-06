@@ -28,7 +28,7 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
         }}
       >
         <div className="mx-auto flex w-full max-w-full flex-col justify-between gap-12 overflow-hidden pl-4 pt-[150px] sm:pl-6 md:pl-10 lg:h-screen lg:flex-row xl:pl-20 3xl:pl-24">
-          <div className="ml-auto flex w-full max-w-[780px] flex-col justify-center gap-4 lg:pb-[100px]">
+          <div className="flex w-full max-w-[580px] flex-col justify-center gap-4 lg:ml-auto lg:pb-[100px]">
             <Image
               src={data?.heroSection?.projectLogo || ''}
               alt="p-logo"
@@ -38,31 +38,25 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
             />
             <HeroSectionHeading
               description={data?.heroSection?.description || ''}
-              btnName={data?.heroSection?.buttonText || ''}
-              link={data?.heroSection?.buttonLink || ''}
               className="w-full"
-              target="_blank"
             />
           </div>
-          <div className="ml-auto mt-auto aspect-[5/4] h-max w-full max-w-[450px] lg:max-w-[700px]">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                ease: 'easeIn',
-              }}
-              className="relative h-full w-full"
-            >
-              <Image
-                src={data?.heroSection?.heroProjectMockupImg}
-                alt=""
-                fill
-                priority
-                className="object-cover"
-              />
-            </motion.div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              ease: 'easeIn',
+            }}
+            className="relative ml-auto mt-auto aspect-[5/4] h-full w-full max-w-[450px] lg:aspect-[unset] lg:max-w-[900px]"
+          >
+            <Image
+              src={data?.heroSection?.heroProjectMockupImg}
+              alt="moc-img"
+              fill
+              priority
+            />
+          </motion.div>
         </div>
       </div>
       <div className="bg-workDetailRight bg-contain bg-left bg-no-repeat">
@@ -87,14 +81,15 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
         </Container>
       </div>
       <div className="bg-workDetailLeft bg-contain bg-right bg-no-repeat">
-        <Container className="mb-[60px] flex flex-col gap-10 4xl:mb-[100px] 4xl:gap-[60px]">
-          <div className="relative h-0 w-full pb-[100%]">
+        <Container className="mb-[60px] flex max-w-[1200px] flex-col gap-10 4xl:mb-[100px] 4xl:gap-[60px]">
+          <div className="relative w-full">
             <Image
               src={data?.projectHomePageImage || ''}
               alt="image"
-              fill
+              width={1200}
+              height={1200}
               loading="lazy"
-              className="h-full w-full"
+              className="h-auto w-full"
             />
           </div>
         </Container>

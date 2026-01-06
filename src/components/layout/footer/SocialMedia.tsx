@@ -14,14 +14,14 @@ const SocialMedia = () => {
           socialMediaIcons.map((item, index) => (
             <li
               key={index}
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-aliceBlue/10 backdrop-blur-sm"
+              className="flex h-11 w-11 items-center justify-center rounded-full"
             >
               <Link href={item?.link} target="_blank">
                 <Image
                   src={item?.icon}
                   alt="social-media-icon"
-                  width={24}
-                  height={24}
+                  width={44}
+                  height={44}
                   className="object-contain"
                 />
               </Link>
