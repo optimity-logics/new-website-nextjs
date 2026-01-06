@@ -27,7 +27,7 @@ const navbarVariants = {
     },
   },
   hidden: {
-    y: '-100%',
+    y: '-74px',
     opacity: 0,
     transition: {
       type: 'spring',
