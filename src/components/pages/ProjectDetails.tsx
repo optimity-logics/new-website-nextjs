@@ -81,13 +81,13 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
         </Container>
       </div>
       <div className="bg-workDetailLeft bg-contain bg-right bg-no-repeat">
-        <Container className="mb-[60px] flex max-w-[1200px] flex-col gap-10 4xl:mb-[100px] 4xl:gap-[60px]">
+        <Container className="mb-[60px] flex !max-w-[1300px] flex-col gap-10 4xl:mb-[100px] 4xl:gap-[60px]">
           <div className="relative w-full">
             <Image
               src={data?.projectHomePageImage || ''}
               alt="image"
               width={1200}
-              height={1200}
+              height={1000}
               loading="lazy"
               className="h-auto w-full"
             />

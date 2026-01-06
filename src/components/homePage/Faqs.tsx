@@ -21,9 +21,7 @@ const Faqs = () => {
             redirectionLink={homePageData?.getInTouchBtnLink}
           />
         </div>
-        <div className="w-full max-w-full">
-          <FaqsAccordion data={homePageData?.faqsList} />
-        </div>
+        <FaqsAccordion data={homePageData?.faqsList} />
       </div>
     </Container>
   );
