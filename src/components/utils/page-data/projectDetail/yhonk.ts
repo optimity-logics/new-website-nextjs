@@ -36,7 +36,7 @@ fledged development solutions aligned with your business objectives.`,
         solutionDescription: `To gain an impactful online presence, MindInventory worked on adding new on-demand web pages and website functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more`,
       },
     ],
-    projectLogo: '/svg/client-logo-slider/hts.svg',
+    projectLogo: '/svg/client-logo-slider/yhonk.svg',
     subDescription:
       'Powerful travel platforms engineered for your business success',
     projectUser: '/images/our-work/users.jpg',
