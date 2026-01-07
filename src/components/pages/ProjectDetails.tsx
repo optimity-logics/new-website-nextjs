@@ -32,13 +32,14 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
             <Image
               src={data?.heroSection?.projectLogo || ''}
               alt="p-logo"
-              width={160}
-              height={90}
+              width={120}
+              height={60}
               className="object-contain"
             />
             <HeroSectionHeading
               description={data?.heroSection?.description || ''}
               className="w-full"
+              headingStyle="hidden"
             />
           </div>
           <motion.div
@@ -146,8 +147,8 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
             <Image
               src={data?.projectSolution?.projectLogo || ''}
               alt="p-logo"
-              width={160}
-              height={90}
+              width={100}
+              height={60}
               className="object-contain"
             />
             <p className="flex-col font-opt text-xl font-medium leading-6 text-white">
