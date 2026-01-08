@@ -150,7 +150,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
               <AnimatedArrow hover={hoverViewAll} />
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-10 md:gap-y-0 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-10 md:gap-y-0 lg:gap-x-16 xl:grid-cols-3">
             {data?.exploreProjects?.deployProjects &&
               data?.exploreProjects?.deployProjects.map((item, i) => (
                 <ProjectCard key={i} data={item} i={i} />

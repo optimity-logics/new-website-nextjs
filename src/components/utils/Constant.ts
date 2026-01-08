@@ -142,33 +142,40 @@ export const footerData: IFooterDataType = {
     {
       heading: 'Application',
       items: [
-        { title: 'Web Development', link: '' },
-        { title: 'Mobile App Development', link: '' },
-        { title: 'SaaS Development', link: '' },
-        { title: 'PWA Development', link: '' },
-        { title: 'Game Development', link: '' },
-        { title: 'Digital Twin Services', link: '' },
-        { title: 'Unreal Development', link: '' },
+        { title: 'Web Development', link: '/web-app-development-service' },
+        {
+          title: 'Mobile App Development',
+          link: '/mobile-app-development-service ',
+        },
+        { title: 'SaaS Development', link: '/saas-app-development-service' },
+        { title: 'Game Development', link: '/game-development-service' },
       ],
     },
     {
       heading: 'Software',
       items: [
-        { title: 'Software Development', link: '' },
-        { title: 'Software Product Development', link: '' },
-        { title: 'Startups Software Development', link: '' },
-        { title: 'Enterprise Software Development', link: '' },
-        { title: 'Software Development Outsourcing', link: '' },
+        {
+          title: 'Software Development',
+          link: '/software-development-service',
+        },
+        {
+          title: 'Software Product Development',
+          link: '/software-product-development-service',
+        },
+        {
+          title: 'Startups Software Development',
+          link: '/startup-app-development-service',
+        },
+        {
+          title: 'Enterprise Software Development',
+          link: '/enterprise-app-development-service',
+        },
       ],
     },
     {
       heading: 'Cloud',
       items: [
-        { title: 'Cloud Engineering', link: '' },
-        { title: 'Cloud App Development', link: '' },
-        { title: 'Cloud Managed Services', link: '' },
-        { title: 'Cloud Security Services', link: '' },
-        { title: 'Cloud Consulting', link: '' },
+        { title: 'Cloud Engineering', link: '/cloud-computing-solutions' },
       ],
     },
     // {
@@ -198,17 +205,15 @@ export const footerData: IFooterDataType = {
     {
       heading: 'Company',
       items: [
-        { title: 'About Us', link: '' },
+        { title: 'About Us', link: '/about-us' },
         { title: 'Career', link: '/careers' },
-        { title: 'Life@OptimityLogics', link: '' },
-        { title: 'Partnership', link: '' },
-        { title: 'Client Testimonials', link: '' },
-        { title: 'FAQs', link: '' },
+        { title: 'Our Works', link: '/our-work' },
+        { title: 'Contact Us', link: '/contact-us' },
+        { title: 'Blog', link: 'https://optimitylogics.com/blog/' },
       ],
     },
   ],
   otherLinks: [
-    { title: 'Insights', link: '' },
     { title: 'Privacy Policy', link: '/privacy-policy' },
     { title: 'Sitemap', link: '/sitemap' },
   ],
@@ -891,10 +896,12 @@ export const menuData = [
   },
   {
     menuTitle: 'About',
+    redirectLink: '/about-us',
     megaMenuItem: [],
   },
   {
     menuTitle: 'Our Works',
+    redirectLink: '/our-work',
     megaMenuItem: [],
   },
   {
@@ -1072,6 +1079,7 @@ export const menuData = [
   },
   {
     menuTitle: 'Blog',
+    redirectLink: 'https://optimitylogics.com/blog/',
     megaMenuItem: [],
   },
 ];
@@ -1085,7 +1093,7 @@ export const siteMapData = [
       },
       {
         techName: 'iOS App Development',
-        techLink: 'ios-development-service',
+        techLink: '/ios-development-service',
       },
       {
         techName: 'Android App Development',
@@ -1102,22 +1110,6 @@ export const siteMapData = [
       {
         techName: 'Enterprise App Development',
         techLink: '/enterprise-app-development-service',
-      },
-      {
-        techName: 'Software solution for Startups',
-        techLink: '',
-      },
-      {
-        techName: 'frontend  Development',
-        techLink: '',
-      },
-      {
-        techName: 'Cross platform Development',
-        techLink: '',
-      },
-      {
-        techName: 'API Development',
-        techLink: '',
       },
     ],
   },
@@ -1137,10 +1129,6 @@ export const siteMapData = [
         techLink: '/educational-app-development-solutions',
       },
       {
-        techName: 'fitness app development',
-        techLink: '',
-      },
-      {
         techName: 'ecommerce app development',
         techLink: '/ecommerce-solutions',
       },
@@ -1153,24 +1141,8 @@ export const siteMapData = [
         techLink: '/real-estate-app-development',
       },
       {
-        techName: 'travel app development',
-        techLink: '',
-      },
-      {
-        techName: 'sports app development',
-        techLink: '',
-      },
-      {
-        techName: 'social networking app development',
-        techLink: '',
-      },
-      {
         techName: 'enterprise app development',
         techLink: '/enterprise-app-development-service',
-      },
-      {
-        techName: 'food services solution',
-        techLink: '',
       },
     ],
   },
@@ -1217,18 +1189,6 @@ export const siteMapData = [
         techName: 'php development',
         techLink: '/php-development-service',
       },
-      {
-        techName: 'Backend development',
-        techLink: '',
-      },
-      {
-        techName: 'PWA development ',
-        techLink: '',
-      },
-      {
-        techName: 'typescript development',
-        techLink: '',
-      },
     ],
   },
   {
@@ -1237,10 +1197,6 @@ export const siteMapData = [
       {
         techName: 'hire UI/UX designers',
         techLink: '/hire-ui-ux-developers',
-      },
-      {
-        techName: 'hire mobile app developers',
-        techLink: '',
       },
       {
         techName: 'hire iOS app developers',
@@ -1291,16 +1247,8 @@ export const siteMapData = [
         techLink: '/hire-php-developers',
       },
       {
-        techName: 'hire full stack developers',
-        techLink: '',
-      },
-      {
-        techName: 'hire QA engineers',
-        techLink: '',
-      },
-      {
         techName: 'hire devOps engineers',
-        techLink: '',
+        techLink: '/hire-devops-developers',
       },
       {
         techName: 'hire game developers',
@@ -1335,14 +1283,6 @@ export const siteMapData = [
         techLink: '/hire-software-developers',
       },
       {
-        techName: 'hire backend developers',
-        techLink: '',
-      },
-      {
-        techName: 'hire front end developers',
-        techLink: '',
-      },
-      {
         techName: 'hire MERN stack developers',
         techLink: '/hire-mern-stack-developers',
       },
@@ -1363,30 +1303,14 @@ export const siteMapData = [
         techLink: '/hire-unreal-app-developers',
       },
       {
-        techName: 'hire webflow developers',
-        techLink: '',
-      },
-      {
         techName: 'dedicated software development team',
-        techLink: '',
-      },
-      {
-        techName: 'hire typescript developers',
-        techLink: '',
+        techLink: 'hire-remote-developers',
       },
     ],
   },
   {
     title: 'emerging tech',
     items: [
-      {
-        techName: 'blockchain development',
-        techLink: '',
-      },
-      {
-        techName: 'web 3.0 development',
-        techLink: '',
-      },
       {
         techName: 'computer vision development',
         techLink: '/computer-vision-development-service',
@@ -1411,31 +1335,11 @@ export const siteMapData = [
         techName: 'generative AI development',
         techLink: '/generative-ai-development-service',
       },
-      {
-        techName: 'AI ML development',
-        techLink: '',
-      },
-      {
-        techName: 'unreal engine development',
-        techLink: '',
-      },
-      {
-        techName: 'AI consulting',
-        techLink: '',
-      },
-      {
-        techName: 'AI integration',
-        techLink: '',
-      },
     ],
   },
   {
     title: 'digital solutions',
     items: [
-      {
-        techName: 'digital transformation',
-        techLink: '',
-      },
       {
         techName: 'CTO as a services',
         techLink: '/cto-as-service',
@@ -1454,23 +1358,11 @@ export const siteMapData = [
       },
       {
         techName: 'software testing services',
-        techLink: '',
+        techLink: '/quality-engineering-service',
       },
       {
         techName: 'cloud computing ',
         techLink: '/cloud-computing-solutions',
-      },
-      {
-        techName: 'cloud migration',
-        techLink: '',
-      },
-      {
-        techName: 'cloud integration',
-        techLink: '',
-      },
-      {
-        techName: 'cloud consulting',
-        techLink: '',
       },
       {
         techName: 'devOps solutions',
@@ -1502,7 +1394,7 @@ export const siteMapData = [
       },
       {
         techName: 'digital marketing services',
-        techLink: '',
+        techLink: '/digital-marketing-service',
       },
     ],
   },
@@ -1511,11 +1403,7 @@ export const siteMapData = [
     items: [
       {
         techName: 'blog',
-        techLink: '/blog',
-      },
-      {
-        techName: 'insights',
-        techLink: '/blog/insights',
+        techLink: 'https://optimitylogics.com/blog/',
       },
       {
         techName: 'career',
@@ -1528,18 +1416,6 @@ export const siteMapData = [
       {
         techName: 'privacy policy',
         techLink: '/privacy-policy',
-      },
-      {
-        techName: 'life at MI',
-        techLink: '',
-      },
-      {
-        techName: 'client testimonials',
-        techLink: '',
-      },
-      {
-        techName: 'FAQs',
-        techLink: '/faq',
       },
     ],
   },
