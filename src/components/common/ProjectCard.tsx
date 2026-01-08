@@ -26,9 +26,10 @@ const ProjectCard = ({ i, data }: projectCardProps) => {
           alt={data?.projectName}
           width={500}
           height={500}
-          className="aspect-[15/15] w-full rounded-[20px]"
+          className="aspect-[13/15] w-full rounded-[20px]"
         />
       </div>
+
       <div className="flex flex-col gap-3">
         <h3 className="font-opt text-lg font-medium leading-6 text-white">
           {data?.projectName}
