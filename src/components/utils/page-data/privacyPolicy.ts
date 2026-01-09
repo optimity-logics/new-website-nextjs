@@ -111,7 +111,7 @@ export const privacyPolicyData = {
         'You can choose not to share your information by not filling out any form.',
         'You can choose not to share your information by not using the chat support.',
         'You can at any time change your consent earlier provided for any specific use of your data.',
-        'If you have any questions regarding our privacy policy or data handling practices, we would be glad to hear from you at support@mindinventory.com.',
+        'If you have any questions regarding our privacy policy or data handling practices, we would be glad to hear from you at support@optimitylogics.com.',
       ],
     },
     {
