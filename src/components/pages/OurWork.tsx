@@ -3,7 +3,7 @@
 import AnimatedArrow from '@/components/common/AnimatedArrow';
 import Container from '@/components/ui/Container';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -18,9 +18,17 @@ const OurWorks = () => {
   const handleMouseLeave = () => {
     setHover(false);
   };
-  const selectedSubCategory = ourWorkPage?.ourWorks
-    ?.find((cat) => cat.categories === selectedCategories)
-    ?.subcategories?.find((subCat) => subCat?.name === selectedSubCategories);
+
+  const filteredArticles =
+    selectedCategories === 'All'
+      ? ourWorkPage.ourWorks.flatMap((cat) =>
+          cat.subcategories.flatMap((sub) => sub.articles),
+        )
+      : ourWorkPage.ourWorks
+          .find((cat) => cat.categories === selectedCategories)
+          ?.subcategories.find((sub) => sub.name === selectedSubCategories)
+          ?.articles || [];
+
   return (
     <>
       <div
@@ -57,94 +65,146 @@ const OurWorks = () => {
       </div>
       <Container className="-mt-[30px] mb-[60px] flex flex-col gap-[60px] 3xl:mb-[100px]">
         <div className="flex flex-col gap-5">
-          <div className="flex items-center justify-center">
-            <div className="flex gap-5 overflow-auto whitespace-pre rounded-full border border-black-100-alpha bg-snowWhite p-2 scrollbar-hide">
-              {ourWorkPage?.ourWorks &&
-                ourWorkPage?.ourWorks.map((categories, index) => (
-                  <div
-                    key={index}
-                    className="relative w-full cursor-pointer rounded-full"
-                  >
-                    {selectedCategories === categories?.categories && (
-                      <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-dustyBlue"></div>
-                    )}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key="category-tabs"
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{
+                duration: 0.35,
+                ease: 'easeOut',
+              }}
+              className="flex items-center justify-center"
+            >
+              <div className="flex gap-5 overflow-auto whitespace-pre rounded-full border border-black-100-alpha bg-snowWhite p-2 scrollbar-hide">
+                {ourWorkPage?.ourWorks &&
+                  ourWorkPage?.ourWorks.map((categories, index) => (
                     <div
-                      onClick={() =>
-                        setSelectedCategories(categories?.categories)
-                      }
-                      className={`flex h-full items-center justify-center rounded-full px-6 py-2 font-opt text-base font-normal text-optDesc ${selectedCategories === categories?.categories ? 'bg-whiteSmoke' : 'border border-iceGray bg-white'}`}
+                      key={index}
+                      className="relative w-full cursor-pointer rounded-full"
                     >
-                      {categories?.categories}
+                      {selectedCategories === categories?.categories && (
+                        <motion.div
+                          layoutId="active-category-tab"
+                          className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-dustyBlue"
+                          transition={{
+                            type: 'spring',
+                            stiffness: 300,
+                            damping: 30,
+                          }}
+                        />
+                      )}
+
+                      <div
+                        onClick={() =>
+                          setSelectedCategories(categories?.categories)
+                        }
+                        className={`flex h-full items-center justify-center rounded-full px-6 py-2 font-opt text-base font-normal text-optDesc ${
+                          selectedCategories === categories?.categories
+                            ? 'bg-whiteSmoke'
+                            : 'border border-iceGray bg-white'
+                        }`}
+                      >
+                        {categories?.categories}
+                      </div>
                     </div>
-                  </div>
-                ))}
-            </div>
-          </div>
-          <div className="flex items-center justify-center">
-            <div className="flex gap-5 overflow-auto whitespace-pre rounded-full border border-black-100-alpha bg-snowWhite p-2 scrollbar-hide">
-              {ourWorkPage?.ourWorks
-                ?.find((cat) => cat.categories === selectedCategories)
-                ?.subcategories.map((subCate, ind) => (
-                  <div
-                    key={ind}
-                    className="relative w-full cursor-pointer rounded-full"
-                  >
-                    {selectedSubCategories === subCate?.name && (
-                      <div className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-dustyBlue"></div>
-                    )}
-                    <div
-                      onClick={() => setSelectedSubCategories(subCate?.name)}
-                      className={`flex h-full items-center justify-center rounded-full px-6 py-2.5 font-opt text-base font-normal leading-5 text-optDesc ${selectedSubCategories === subCate?.name ? 'bg-whiteSmoke' : 'border border-iceGray bg-white'}`}
-                    >
-                      {subCate?.name}
-                    </div>
-                  </div>
-                ))}
-            </div>
-          </div>
+                  ))}
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+          <AnimatePresence mode="wait">
+            {selectedCategories !== 'All' && (
+              <motion.div
+                key="sub-tabs"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{
+                  duration: 0.35,
+                  ease: 'easeOut',
+                }}
+                className="flex items-center justify-center"
+              >
+                <div className="flex gap-5 overflow-auto whitespace-pre rounded-full border border-black-100-alpha bg-snowWhite p-2 scrollbar-hide">
+                  {ourWorkPage?.ourWorks
+                    ?.find((cat) => cat.categories === selectedCategories)
+                    ?.subcategories.map((subCate, ind) => (
+                      <div
+                        key={ind}
+                        className="relative w-full cursor-pointer rounded-full"
+                      >
+                        {selectedSubCategories === subCate?.name && (
+                          <motion.div
+                            layoutId="active-sub-tab"
+                            className="play-button pointer-events-none absolute inset-0 h-full w-full rounded-full border-[1.591px] border-dustyBlue"
+                          />
+                        )}
+
+                        <div
+                          onClick={() =>
+                            setSelectedSubCategories(subCate?.name)
+                          }
+                          className={`flex h-full items-center justify-center rounded-full px-6 py-2.5 font-opt text-base font-normal leading-5 text-optDesc ${
+                            selectedSubCategories === subCate?.name
+                              ? 'bg-whiteSmoke'
+                              : 'border border-iceGray bg-white'
+                          }`}
+                        >
+                          {subCate?.name}
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
         <div className="grid grid-cols-1 gap-6 gap-x-0 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
           <div className="col-span-2">
-            {selectedSubCategory?.articles.length ? (
+            {filteredArticles.length ? (
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                {selectedSubCategory.articles.map((item, idx) => (
-                  <motion.div
-                    key={selectedSubCategory?.name + '-' + idx}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                      duration: 0.8,
-                      ease: 'easeIn',
-                    }}
+                {filteredArticles.map((item, idx) => (
+                  <Link
+                    href={`https://new-website-nextjs.vercel.app/our-work/${item.redirectlink}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={idx}
                   >
-                    <div className="rounded-xl border border-black/10 bg-primarySnowGray p-2">
-                      <div className="flex flex-col gap-3 rounded-md bg-white p-2">
-                        <div className="relative">
-                          <Image
-                            src={item?.image}
-                            alt=""
-                            width={322}
-                            height={182}
-                            className="w-full rounded-md object-cover"
-                          />
-                          {/* <div className="absolute right-2 top-2 rounded-md bg-white px-2 py-1 font-opt text-sm font-normal leading-5 text-optDesc">
-                            {item?.date}
-                          </div> */}
-                        </div>
-                        {/* <span className="px-2 font-opt text-sm font-normal leading-5 text-optDesc">
-                          {item?.readTime}
-                        </span> */}
-                        <div className="flex flex-col gap-1.5 px-2 pb-2">
-                          <h3 className="font-opt text-lg font-semibold leading-6 text-primary">
-                            {item?.title}
-                          </h3>
-                          <p className="font-opt text-base font-normal leading-5 text-optDesc">
-                            {item?.description}
-                          </p>
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      whileHover={{ scale: 1.03 }}
+                      transition={{
+                        duration: 0.4,
+                        ease: 'easeInOut',
+                      }}
+                    >
+                      <div className="rounded-xl border border-black/10 bg-primarySnowGray p-2">
+                        <div className="flex flex-col gap-3 rounded-md bg-white p-2">
+                          <div className="relative">
+                            <Image
+                              src={item?.image}
+                              alt=""
+                              width={322}
+                              height={182}
+                              className="w-full rounded-md object-cover"
+                            />
+                          </div>
+
+                          <div className="flex flex-col gap-1.5 px-2 pb-2">
+                            <h3 className="font-opt text-lg font-semibold leading-6 text-primary">
+                              {item?.title}
+                            </h3>
+                            <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                              {item?.description}
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </motion.div>
+                    </motion.div>
+                  </Link>
                 ))}
               </div>
             ) : (
@@ -153,6 +213,7 @@ const OurWorks = () => {
               </div>
             )}
           </div>
+
           <div className="top-24 flex h-max w-full flex-col gap-16 rounded-xl bg-contactUsBg bg-cover bg-center bg-no-repeat p-8 lg:sticky 3xl:bg-full">
             <div className="flex flex-col gap-5">
               <h4 className="font-opt text-xl font-medium leading-6 text-white">
