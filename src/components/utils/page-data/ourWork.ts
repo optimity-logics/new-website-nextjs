@@ -9,7 +9,41 @@ export const ourWorkPage = {
       subcategories: [
         {
           name: 'Sports',
-          articles: [],
+          articles: [
+            {
+              id: 1,
+              date: 'September 29, 2025',
+              readTime: '10 Min Read',
+              title: 'Full Stack Developer vs Specialized: A Complete Guide',
+              description:
+                'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+              image: healthare,
+              buttonText: 'Read More',
+              redirectlink: 'hts',
+            },
+            {
+              id: 2,
+              date: 'September 29, 2025',
+              readTime: '10 Min Read',
+              title: 'Full Stack Developer vs Specialized: A Complete Guide',
+              description:
+                'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+              image: healthare,
+              buttonText: 'Read More',
+              redirectlink: 'riskbeachrental',
+            },
+            {
+              id: 3,
+              date: 'September 29, 2025',
+              readTime: '10 Min Read',
+              title: 'Full Stack Developer vs Specialized: A Complete Guide',
+              description:
+                'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
+              image: healthare,
+              buttonText: 'Read More',
+              redirectlink: '',
+            },
+          ],
         },
         {
           name: 'Fitness',
@@ -36,6 +70,7 @@ export const ourWorkPage = {
                 'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
               image: healthare,
               buttonText: 'Read More',
+              redirectlink: '',
             },
             {
               id: 2,
@@ -46,6 +81,7 @@ export const ourWorkPage = {
                 'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
               image: healthare,
               buttonText: 'Read More',
+              redirectlink: '',
             },
             {
               id: 3,
@@ -56,6 +92,7 @@ export const ourWorkPage = {
                 'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
               image: healthare,
               buttonText: 'Read More',
+              redirectlink: '',
             },
           ],
         },
@@ -71,6 +108,7 @@ export const ourWorkPage = {
                 'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
               image: healthare,
               buttonText: 'Read More',
+              redirectlink: '',
             },
           ],
         },
@@ -86,6 +124,7 @@ export const ourWorkPage = {
                 'Explore key differences between specialized and full stack developers in our comprehensive guide. Discover the right career path and excel in each role.',
               image: healthare,
               buttonText: 'Read More',
+              redirectlink: '',
             },
           ],
         },
