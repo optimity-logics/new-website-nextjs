@@ -133,7 +133,7 @@ const ProjectDetails = ({ data }: ProjectDetailsProps) => {
         </div>
       </Container>
       <Container className="mb-[60px] 4xl:mb-[100px]">
-        <div className="relative z-[-1] grid overflow-hidden grid-stack after:absolute after:inset-0 after:z-[1] after:rounded-xl after:bg-black-200-alpha lg:after:rounded-[20px]">
+        <div className="relative z-[-1] grid overflow-hidden grid-stack after:absolute after:inset-0 after:z-[1] after:rounded-xl after:bg-black-200-alpha lg:after:rounded-[32px]">
           <div className="relative h-0 w-full rounded-xl pb-[100%] lg:rounded-[20px] lg:pb-[60%]">
             <Image
               src={data?.projectSolution?.projectUser || ''}
