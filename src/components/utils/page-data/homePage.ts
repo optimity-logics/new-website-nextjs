@@ -49,7 +49,7 @@ export const homePageData = {
         },
       ],
       button: 'View All',
-      buttonLink: '',
+      buttonLink: '/our-work',
       img: mobileApp,
     },
     {
@@ -76,7 +76,7 @@ export const homePageData = {
         },
       ],
       button: 'View All',
-      buttonLink: '',
+      buttonLink: '/our-work',
       img: webApp,
     },
     {
@@ -103,7 +103,7 @@ export const homePageData = {
         },
       ],
       button: 'View All',
-      buttonLink: '',
+      buttonLink: '/our-work',
       img: uiux,
     },
     {
@@ -130,7 +130,7 @@ export const homePageData = {
         },
       ],
       button: 'View All',
-      buttonLink: '',
+      buttonLink: '/our-work',
       img: digitalMarketing,
     },
     {
@@ -157,7 +157,7 @@ export const homePageData = {
         },
       ],
       button: 'View All',
-      buttonLink: '',
+      buttonLink: '/our-work',
       img: devopsTech,
     },
     {
@@ -180,7 +180,7 @@ export const homePageData = {
         },
       ],
       button: 'View All',
-      buttonLink: '',
+      buttonLink: '/our-work',
       img: qa,
     },
   ],

@@ -39,7 +39,7 @@ export const hirePythonDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -158,7 +158,7 @@ export const hireGoLangDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -277,7 +277,7 @@ export const hireNodeJSDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -396,7 +396,7 @@ export const hireLaravelDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -515,7 +515,7 @@ export const hirePhpDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -634,7 +634,7 @@ export const hireFastApiDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -753,7 +753,7 @@ export const hireDjangoDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -872,7 +872,7 @@ export const hireFlaskDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {

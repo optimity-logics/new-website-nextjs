@@ -39,7 +39,7 @@ export const hireReactDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -159,7 +159,7 @@ export const hireNextDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -278,7 +278,7 @@ export const hireAngularDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -397,7 +397,7 @@ export const hireVueDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -516,7 +516,7 @@ export const hireTailwindDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -635,7 +635,7 @@ export const hireJavaScriptDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -754,7 +754,7 @@ export const hireSvelteDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {

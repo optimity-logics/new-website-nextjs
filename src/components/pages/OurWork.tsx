@@ -180,9 +180,10 @@ const OurWorks = () => {
                         duration: 0.4,
                         ease: 'easeInOut',
                       }}
+                      className="group"
                     >
                       <div className="rounded-xl border border-black/10 bg-primarySnowGray p-2">
-                        <div className="flex flex-col gap-3 rounded-md bg-white p-2">
+                        <div className="flex flex-col gap-4 rounded-md bg-white p-2">
                           <div className="relative">
                             <Image
                               src={item?.image}
@@ -194,12 +195,12 @@ const OurWorks = () => {
                           </div>
 
                           <div className="flex flex-col gap-1.5 px-2 pb-2">
-                            <h3 className="font-opt text-lg font-semibold leading-6 text-primary">
+                            <h3 className="font-opt text-lg font-semibold leading-6 text-primary group-hover:text-lightBlue">
                               {item?.title}
                             </h3>
-                            <p className="font-opt text-base font-normal leading-5 text-optDesc">
+                            {/* <p className="font-opt text-base font-normal leading-5 text-optDesc">
                               {item?.description}
-                            </p>
+                            </p> */}
                           </div>
                         </div>
                       </div>

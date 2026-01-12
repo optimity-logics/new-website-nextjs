@@ -24,7 +24,13 @@ const Footer = () => {
                       key={idx}
                       className="cursor-pointer font-opt text-base font-light text-white/80 transition-all duration-300 hover:text-lightBlue xl:w-max xl:text-nowrap"
                     >
-                      <Link href={item?.link} className="font-opt">
+                      <Link
+                        href={item?.link}
+                        target={
+                          item?.title.toLowerCase() === 'blog' ? '_blank' : ''
+                        }
+                        className="font-opt"
+                      >
                         {' '}
                         {item?.title}
                       </Link>
