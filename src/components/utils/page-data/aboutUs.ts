@@ -130,7 +130,7 @@ export const aboutUsPage = {
         'We create websites that are favored by search engines. With our search engine optimization',
     },
     {
-      img: '/webp/about-us/digital-marketing.webp',
+      img: '/webp/about-us/ui.webp',
       bg: '/images/about-us/ui-uxbg.png',
       title: 'UI/UX',
       description:
@@ -158,7 +158,7 @@ export const aboutUsPage = {
         'We create websites that are favored by search engines. With our search engine optimization',
     },
     {
-      img: '/webp/about-us/digital-marketing.webp',
+      img: '/webp/about-us/ui.webp',
       bg: '/images/about-us/ui-uxbg.png',
       title: 'UI/UX',
       description:

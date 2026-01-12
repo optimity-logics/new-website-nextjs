@@ -39,7 +39,7 @@ export const hireAIDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -158,7 +158,7 @@ export const hireMLDeveloper: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {
@@ -277,7 +277,7 @@ export const hireDataScientist: IHireUsPageType = {
     heading: 'Flexible, Simple, and Efficient.',
     button: 'Contact Us',
     image: '/webp/hire-us/world-wide.webp',
-    link: '/',
+    link: '/contact-us',
   },
 
   howWeWork: {

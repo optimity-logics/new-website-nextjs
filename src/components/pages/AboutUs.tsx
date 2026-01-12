@@ -44,7 +44,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="-mt-20 bg-aboutUsHeroBg bg-full bg-fixed bg-no-repeat">
-        <Container className="flex h-full flex-col items-center justify-between gap-10 overflow-hidden pb-[100px] pt-[150px] lg:h-screen lg:flex-row">
+        <Container className="flex h-full flex-col items-center justify-between gap-10 overflow-hidden pb-[100px] pt-[150px] lg:flex-row 4xl:h-screen">
           <HeroSectionHeading
             badgeTitle={aboutUsPage?.surTitle}
             heading={aboutUsPage?.heding}

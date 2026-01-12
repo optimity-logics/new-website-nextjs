@@ -143,7 +143,9 @@ export default function MegaMenu({
                 <div className="min-w-[120px] border-r border-subtleWhite bg-white py-3">
                   {activeMenuData.megaMenuItem.map((category, index) => (
                     <button
-                      onMouseEnter={() => setActiveCategory(index)}
+                      onMouseEnter={() => {
+                        setActiveCategory(index);
+                      }}
                       style={
                         {
                           '--cat-bg': category.backgroundColor,
@@ -188,7 +190,7 @@ export default function MegaMenu({
                             >
                               <Link
                                 href={item.techLink}
-                                onClick={() => setActiveMenu(null)}
+                                onClick={() => handleMegaMenuLeave()}
                                 className="group flex w-max items-center font-opt text-[15px] font-normal text-primary transition-colors duration-200 hover:text-lightBlue"
                               >
                                 <span className="transition-transform duration-200 group-hover:translate-x-1">
