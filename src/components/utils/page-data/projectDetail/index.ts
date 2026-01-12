@@ -32,6 +32,8 @@ import { woodLogsScotland } from './woodLogsScotland';
 import { yhonk } from './yhonk';
 import { yellowbirdDental } from './yellowBirdDental';
 import { goBrochures } from './goBrochures';
+import { edqan } from './edqan';
+import { spacerenta } from './spacerenta';
 
 export const projectDetails: IProjectDetail[] = [
   hts,
@@ -67,4 +69,6 @@ export const projectDetails: IProjectDetail[] = [
   woodLogsScotland,
   yhonk,
   yellowbirdDental,
+  edqan,
+  spacerenta,
 ];

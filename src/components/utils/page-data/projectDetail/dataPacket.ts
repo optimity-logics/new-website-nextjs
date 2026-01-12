@@ -21,7 +21,7 @@ fledged development solutions aligned with your business objectives.`,
   projectHomePageImage: '/webp/projectDetail/mockup/dp.webp',
   projectSubMockupImages: [
     '/webp/projectDetail/page-mockup/dp1.webp',
-    '/webp/projectDetail/page-mockup/dp1.webp',
+    '/webp/projectDetail/page-mockup/dp2.webp',
   ],
   projectSolution: {
     title: 'The Solution',
@@ -29,17 +29,17 @@ fledged development solutions aligned with your business objectives.`,
     projectSolutionCard: [
       {
         solutionTitle: 'Vision',
-        solutionDescription: `To gain an impactful online presence, optimitylogics worked on adding new on-demand web pages and website functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more`,
+        solutionDescription: `To gain an impactful online presence, Optimity Logics worked on adding new on-demand web pages and website functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more`,
       },
       {
         solutionTitle: 'Mission',
-        solutionDescription: `To gain an impactful online presence, optimitylogics worked on adding new on-demand web pages and website functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more`,
+        solutionDescription: `To gain an impactful online presence, Optimity Logics worked on adding new on-demand web pages and website functionalities that can provide more value to the target audience. web pages and website functionalities that can provide more`,
       },
     ],
     projectLogo: '/svg/client-logo-slider/datapacket.svg',
     subDescription:
       'Powerful travel platforms engineered for your business success',
-    projectUser: '/images/our-work/users.jpg',
+    projectUser: '/webp/projectDetail/pui/dp.webp',
   },
   exploreProjects: {
     heading: `Explore Projects`,
