@@ -11,7 +11,7 @@ import mobileRobot from '../../../public/webp/homePagev2/mobile-robot.webp';
 import LogoAnimation from './LogoAnimation';
 import phone from '../../../public/svg/footer/phone.svg';
 import email from '../../../public/svg/footer/mail.svg';
-import { logoIcons } from '../utils/Constant';
+import { logoIcons, OurWork } from '../utils/Constant';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -302,10 +302,8 @@ const HomePageV2 = () => {
       </div>
       <Container className="mb-[60px] w-full max-w-[1680px] 4xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
-          {homePageData?.OurWork &&
-            homePageData?.OurWork.map((item, i) => (
-              <OurWorkCard key={i} data={item} />
-            ))}
+          {OurWork &&
+            OurWork.map((item, i) => <OurWorkCard key={i} data={item} />)}
         </div>
       </Container>
       <div

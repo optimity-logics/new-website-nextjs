@@ -6,7 +6,7 @@ import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ourWorkPage } from '../utils/page-data/ourWork';
 
 const OurWorks = () => {
@@ -28,7 +28,20 @@ const OurWorks = () => {
           .find((cat) => cat.categories === selectedCategories)
           ?.subcategories.find((sub) => sub.name === selectedSubCategories)
           ?.articles || [];
+  useEffect(() => {
+    if (selectedCategories === 'All') {
+      setSelectedSubCategories('');
+      return;
+    }
 
+    const category = ourWorkPage?.ourWorks.find(
+      (cat) => cat.categories === selectedCategories,
+    );
+
+    if (category?.subcategories?.length) {
+      setSelectedSubCategories(category.subcategories[0].name);
+    }
+  }, [selectedCategories]);
   return (
     <>
       <div

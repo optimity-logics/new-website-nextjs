@@ -1,7 +1,7 @@
 'use client';
 import Container from '@/components/ui/Container';
 import HeroSectionHeading from '@/components/ui/HeroSectionHeading';
-import { jobOpenings } from '@/components/utils/Constant';
+import { jobOpenings, OurWork } from '@/components/utils/Constant';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import first from '../../../public/webp/careers/1.webp';
@@ -57,8 +57,8 @@ const Career = () => {
       </div>
       <Container className="relative z-30 -mt-14 mb-[60px] w-full max-w-[1680px] 3xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
-          {aboutUsPage?.OurWork &&
-            aboutUsPage?.OurWork.map((item, index) => (
+          {OurWork &&
+            OurWork.map((item, index) => (
               <div
                 key={index}
                 className="rounded-xl bg-white px-[12px] pb-3 pt-[8px] shadow-work-card xl:rounded-[38px] xl:px-[32px] xl:pb-[20px]"

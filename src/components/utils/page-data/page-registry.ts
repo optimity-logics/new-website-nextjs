@@ -101,7 +101,13 @@ import {
   hireGameDeveloper,
   hireRemoteDeveloper,
 } from './hireTeam/trending/trending';
-import { contentful, craftCms, magento, wordpress } from './technology/cms/cms';
+import {
+  contentful,
+  craftCms,
+  drupal,
+  magento,
+  wordpress,
+} from './technology/cms/cms';
 import { aws, googleCloud, azure } from './technology/devops/devops';
 
 import {
@@ -407,7 +413,7 @@ export const PAGE_REGISTRY: Record<string, PageConfig> = {
   'drupal-development-service': {
     type: 'default',
     seoKey: 'magento_cms_service',
-    data: magento,
+    data: drupal,
   },
   // database
   'mysql-development-service': {

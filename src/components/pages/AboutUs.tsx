@@ -18,6 +18,7 @@ import ClientTestimonial from '@/components/ui/ClientTestimonial';
 import ProcessCard from '@/components/common/ProcessCard';
 import { homePageData } from '@/components/utils/page-data/homePage';
 import { aboutUsPage } from '@/components/utils/page-data/aboutUs';
+import { OurWork } from '../utils/Constant';
 
 const AboutUs = () => {
   const [hoverViewAl, setHoverViewAl] = useState<boolean>(false);
@@ -82,8 +83,8 @@ const AboutUs = () => {
       </div>
       <Container className="relative z-30 mb-[60px] mt-14 w-full max-w-[1680px] xl:-mt-14 3xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
-          {aboutUsPage?.OurWork &&
-            aboutUsPage?.OurWork.map((item, index) => (
+          {OurWork &&
+            OurWork.map((item, index) => (
               <OurWorkCard key={index} data={item} />
             ))}
         </div>
