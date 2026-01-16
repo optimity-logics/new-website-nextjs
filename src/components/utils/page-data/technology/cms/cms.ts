@@ -11,674 +11,618 @@ import resource from '../../../../../../public/svg/services/resource.svg';
 
 export const wordpress: IPropsDataTypes = {
   HeroSectionData: {
-    heading: `<span class="text-red">Wordpress</span> App Development Company`,
-    techName: 'wordpress',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
+    heading: `<span class="text-red">WordPress</span> Development Company`,
+    techName: 'WordPress',
+    description: `Optimity Logics is a trusted WordPress development company delivering
+scalable, secure, and high-performing websites. Our WordPress experts build custom
+themes, plugins, and enterprise-grade solutions tailored to your business goals.`,
     techImg: '/webp/technology/cms/wordpress.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
+    heading: `<span class="text-red">Our WordPress</span> Development
             Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    description: `From business websites to enterprise CMS solutions, our
+WordPress development services are designed to deliver flexibility,
+performance, and growth.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Custom WordPress Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We build tailor-made WordPress websites and solutions aligned with your brand and business requirements.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'WordPress Theme Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Custom, responsive, and SEO-friendly WordPress themes designed for performance and usability.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'WordPress Plugin Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Feature-rich custom plugins to extend WordPress functionality and meet unique business needs.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'WooCommerce Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Scalable WooCommerce solutions for secure and high-converting eCommerce experiences.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'WordPress Migration & Upgrade',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Seamless migration from other platforms and safe WordPress version upgrades.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Maintenance & Support',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Ongoing updates, security monitoring, performance optimization, and technical support.',
       },
     ],
   },
+
   WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for WordPress Development Services?`,
 
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'WordPress Expertise',
         content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+          heading: 'Experienced WordPress professionals',
+          desc: `Our developers have extensive experience building
+custom WordPress solutions across industries.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'Clean and scalable code',
+            'Custom themes & plugins',
+            'SEO-friendly architecture',
+            'Performance optimization',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Agile & Transparent Process',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'Clear communication and faster delivery',
+          desc: `We follow agile methodologies to ensure flexibility,
+visibility, and on-time project execution.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'Sprint-based development',
+            'Regular progress updates',
+            'Flexible engagement models',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'Secure & Scalable Solutions',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'Built for long-term growth',
+          desc: `Our WordPress solutions follow best security
+practices and scalable architecture.`,
+          points: [
+            'Secure coding standards',
+            'Optimized performance',
+            'Future-ready solutions',
+          ],
         },
       },
     ],
   },
 
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Looking to build a <span class="text-red capitalize"> powerful WordPress website </span>?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
+    { img: nda, title: '100% NDA-protected contract' },
+    { img: resource, title: 'Dedicated WordPress experts' },
+    { img: hiringModal, title: 'Flexible hiring models' },
+    { img: refundPolicy, title: 'Risk-free engagement*' },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
+    heading: `<span class="text-red"> WordPress </span>
             Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    description: `Our structured WordPress development process ensures
+quality delivery and scalable results.`,
     developmentProcessStep: [
       {
-        title: 'Strategy and Planning',
+        title: 'Requirement Discovery',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We understand your business goals, target audience, and website requirements.',
       },
       {
-        title: 'Intuitive UX and UI Designing',
+        title: 'Design & Architecture',
         description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
+          'We design intuitive UI and a robust WordPress architecture for performance and scalability.',
       },
       {
-        title: 'Development and Testing',
+        title: 'Development & Testing',
         description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
+          'Custom theme and plugin development with rigorous testing for quality and security.',
       },
       {
-        title: 'Deployment and Support',
+        title: 'Deployment & Support',
         description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
+          'Smooth deployment with ongoing maintenance, updates, and performance monitoring.',
       },
     ],
   },
+
   exploreProjects: {
     heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    description: `A snapshot of WordPress solutions we’ve delivered
+for businesses across industries.`,
     buttonName: 'View All',
     buttonLink: '/our-work',
     deployProjects: [
       {
         projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Custom WordPress website with optimized performance.`,
       },
       {
         projectImg: '/webp/project/hts.webp',
         projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Enterprise WordPress CMS solution.`,
       },
       {
         projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `WooCommerce-powered WordPress platform.`,
       },
       {
         projectImg: '/webp/project/edqan.webp',
         projectName: 'E-learning',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Learning platform built on WordPress.`,
       },
       {
         projectImg: '/webp/project/spacerenta.webp',
         projectName: 'Spacerenta',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Scalable WordPress rental website.`,
       },
       {
         projectImg: '/webp/project/afterdark.webp',
-        projectName: 'After dark',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectName: 'After Dark',
+        projectDescription: `High-performance WordPress business website.`,
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use For <span class="text-red"> WordPress Development</span>`,
+    description: `Our WordPress developers use modern tools and
+technologies to deliver reliable solutions.`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
+        servicesName: 'Core Technologies',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: ['WordPress', 'PHP', 'REST API'],
       },
       {
         bgColor: '#B5F1CC',
         servicesName: 'Tools & Utilities',
         servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        servicesItems: ['VS Code', 'Git', 'WP-CLI'],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['MySQL', 'MariaDB'],
       },
       {
         bgColor: '#FFD8C0',
         servicesName: 'Plugins & Integrations',
         servicesImg: plugin,
         servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
+          'WooCommerce',
+          'Yoast SEO',
+          'Advanced Custom Fields',
+          'Elementor',
+          'Payment Gateways',
         ],
       },
       {
         bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
+        servicesName: 'Hosting & DevOps',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['AWS', 'cPanel', 'Cloudflare', 'CI/CD'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description: 'Common questions about WordPress development.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Why choose WordPress for website development?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'WordPress is flexible, scalable, SEO-friendly, and powers over 40% of the web.',
       },
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Do you build custom WordPress themes and plugins?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we specialize in custom themes and plugins tailored to your needs.',
       },
       {
-        question: 'Is it possible to create an app for free?',
+        question: 'Can you migrate my existing website to WordPress?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we provide secure and seamless WordPress migration services.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'Is WordPress secure for business websites?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, with proper security practices, WordPress is highly secure and reliable.',
       },
       {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+        question: 'Do you offer ongoing WordPress support?',
+        answer: 'Yes, we provide continuous maintenance, updates, and support.',
       },
     ],
   },
 };
+
 export const contentful: IPropsDataTypes = {
   HeroSectionData: {
-    heading: `<span class="text-red">Contentful</span> App Development Company`,
-    techName: 'contentful',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
+    heading: `<span class="text-red">Contentful</span> Development Company`,
+    techName: 'Contentful',
+    description: `Optimity Logics is a trusted Contentful development company delivering
+scalable, API-driven, and future-ready headless CMS solutions. Our Contentful experts
+help businesses build flexible digital experiences across web, mobile, and omnichannel
+platforms.`,
     techImg: '/webp/technology/cms/c.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
+    heading: `<span class="text-red">Our Contentful</span> Development
             Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    description: `Whether you need a headless CMS, omnichannel content platform,
+or a Contentful-powered website or app, our experts deliver scalable
+and high-performance solutions.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Contentful CMS Implementation',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'End-to-end Contentful setup, configuration, and architecture tailored to your business needs.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Headless CMS Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'API-first headless CMS solutions enabling seamless content delivery across platforms.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Contentful Website Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'High-performance websites integrated with Contentful and modern frontend frameworks.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Content Modeling & Migration',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Structured content modeling and secure migration from legacy CMS platforms to Contentful.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Contentful Integrations',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Third-party integrations including CRM, eCommerce, analytics, and marketing tools.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Maintenance & Support',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Ongoing Contentful support, optimization, and performance monitoring.',
       },
     ],
   },
+
   WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Contentful Development Services?`,
 
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'Headless CMS Expertise',
         content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+          heading: 'Experienced Contentful specialists',
+          desc: `Our team has deep expertise in designing and delivering
+headless CMS solutions using Contentful.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'API-first architecture',
+            'Scalable content models',
+            'Omnichannel delivery',
+            'Best practices implementation',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Agile & Transparent Process',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'Faster delivery with full visibility',
+          desc: `We follow agile methodologies ensuring flexibility,
+clear communication, and timely delivery.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'Sprint-based execution',
+            'Regular updates',
+            'Flexible engagement models',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'Secure & Future-Ready Solutions',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'Built for performance and growth',
+          desc: `Our Contentful solutions are secure, scalable,
+and ready for future expansion.`,
+          points: [
+            'Secure API integrations',
+            'High performance',
+            'Cloud-native architecture',
+          ],
         },
       },
     ],
   },
 
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Looking to build a <span class="text-red capitalize"> headless CMS solution </span> using Contentful?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
+    { img: nda, title: '100% NDA-protected contract' },
+    { img: resource, title: 'Dedicated Contentful experts' },
+    { img: hiringModal, title: 'Flexible hiring models' },
+    { img: refundPolicy, title: 'Risk-free engagement*' },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
+    heading: `<span class="text-red"> Contentful </span>
             Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    description: `Our structured Contentful development process ensures
+scalable, flexible, and high-performing digital solutions.`,
     developmentProcessStep: [
       {
-        title: 'Strategy and Planning',
+        title: 'Discovery & Planning',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We analyze your content needs, business goals, and digital ecosystem.',
       },
       {
-        title: 'Intuitive UX and UI Designing',
+        title: 'Content Modeling & Architecture',
         description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
+          'We design structured content models and API-driven architecture in Contentful.',
       },
       {
-        title: 'Development and Testing',
+        title: 'Development & Integration',
         description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
+          'We integrate Contentful with frontend frameworks and third-party services.',
       },
       {
-        title: 'Deployment and Support',
+        title: 'Testing, Deployment & Support',
         description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
+          'We ensure smooth deployment with continuous monitoring and support.',
       },
     ],
   },
+
   exploreProjects: {
     heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    description: `A glimpse of Contentful-powered solutions delivered
+for global businesses.`,
     buttonName: 'View All',
     buttonLink: '/our-work',
     deployProjects: [
       {
         projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Headless CMS-powered content platform using Contentful.`,
       },
       {
         projectImg: '/webp/project/hts.webp',
         projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Enterprise Contentful CMS implementation.`,
       },
       {
         projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Contentful-driven omnichannel platform.`,
       },
       {
         projectImg: '/webp/project/edqan.webp',
         projectName: 'E-learning',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Scalable learning platform built with Contentful.`,
       },
       {
         projectImg: '/webp/project/spacerenta.webp',
         projectName: 'Spacerenta',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Modern headless CMS solution using Contentful.`,
       },
       {
         projectImg: '/webp/project/afterdark.webp',
-        projectName: 'After dark',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectName: 'After Dark',
+        projectDescription: `High-performance Contentful-powered website.`,
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use For <span class="text-red"> Contentful Development</span>`,
+    description: `Tools and technologies our Contentful experts
+use to build modern digital experiences.`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
+        servicesName: 'CMS & APIs',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: ['Contentful', 'Contentful APIs', 'GraphQL'],
       },
       {
         bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
+        servicesName: 'Frontend Frameworks',
         servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        servicesItems: ['Next.js', 'React', 'Vue.js'],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['Contentful CDN', 'Cloud Storage'],
       },
       {
         bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
+        servicesName: 'Integrations',
         servicesImg: plugin,
         servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
+          'Ecommerce platforms',
+          'CRM tools',
+          'Analytics tools',
+          'Marketing automation',
         ],
       },
       {
         bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
+        servicesName: 'DevOps & Hosting',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['AWS', 'Vercel', 'Netlify', 'CI/CD'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description: 'Common questions about Contentful development.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'What is Contentful?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Contentful is a headless CMS that allows flexible, API-driven content delivery.',
       },
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Why choose Contentful over traditional CMS?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Contentful enables omnichannel delivery, scalability, and faster development.',
       },
       {
-        question: 'Is it possible to create an app for free?',
+        question: 'Can Contentful be integrated with frontend frameworks?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, Contentful integrates seamlessly with React, Next.js, Vue, and more.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'Do you offer Contentful migration services?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we migrate content securely from legacy CMS platforms to Contentful.',
       },
       {
-        question: 'What’s involved in launching an app?',
+        question: 'Do you provide ongoing Contentful support?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we offer continuous maintenance, optimization, and support services.',
       },
     ],
   },
 };
+
 export const craftCms: IPropsDataTypes = {
   HeroSectionData: {
-    heading: `<span class="text-red">Craft Cms</span> App Development Company`,
-    techName: 'CraftCms',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
+    heading: `<span class="text-red">Craft CMS</span> Development Company`,
+    techName: 'Craft CMS',
+    description: `Optimity Logics is a trusted Craft CMS development company delivering flexible, scalable, and content-first digital solutions. Our expert Craft CMS developers build custom websites and applications that offer complete control, high performance, and seamless content management tailored to your business needs.`,
     techImg: '/webp/technology/cms/cc.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    heading: `<span class="text-red">Our Craft CMS</span> Development Services`,
+    description: `From custom website development to enterprise-grade content platforms, we provide end-to-end Craft CMS solutions that are secure, scalable, and easy to manage.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Custom Craft CMS Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We build tailor-made Craft CMS websites with flexible content modeling, custom fields, and scalable architectures aligned with your business goals.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Craft CMS Website Design',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Our designers create clean, modern, and conversion-focused UI/UX designs that integrate seamlessly with Craft CMS.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Craft CMS Plugin Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We develop custom Craft CMS plugins to extend functionality and meet unique business requirements.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Craft CMS Migration Services',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Seamlessly migrate your existing website from WordPress, Drupal, or other CMS platforms to Craft CMS without data loss.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Craft CMS Maintenance & Support',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We provide ongoing maintenance, performance optimization, updates, and security monitoring for Craft CMS projects.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Headless Craft CMS Solutions',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Leverage Craft CMS as a headless CMS integrated with modern frontend frameworks for omnichannel content delivery.',
       },
     ],
   },
+
   WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Craft CMS Development?`,
 
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'Craft CMS Expertise',
         content: {
           heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+            'Experienced Craft CMS developers with deep platform knowledge',
+          desc: `Our team specializes in Craft CMS architecture, custom fields, sections, and plugin development to deliver robust and flexible solutions.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'Certified Craft CMS developers',
+            'Clean and scalable codebase',
+            'Best practices implementation',
+            'Performance-focused builds',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Custom & Scalable Solutions',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'Tailored solutions designed for long-term growth',
+          desc: `We don’t use templates. Every Craft CMS project is custom-built to scale with your business needs.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'Custom content modeling',
+            'Scalable architecture',
+            'Future-ready solutions',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'Transparent Process',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'Clear communication and full project visibility',
+          desc: `We follow a transparent development process with regular updates, milestones, and clear deliverables.`,
+          points: [
+            'Dedicated project manager',
+            'Agile development approach',
+            'On-time delivery',
+          ],
         },
       },
     ],
   },
+
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Looking for a flexible and powerful <span class="text-red capitalize">CMS solution</span> with Craft CMS?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
@@ -688,283 +632,244 @@ fledged development solutions aligned with your business objectives. `,
     },
     {
       img: resource,
-      title: '100% resource substitution*',
+      title: 'Dedicated Craft CMS experts',
     },
     {
       img: hiringModal,
-      title: 'Flexible hiring models',
+      title: 'Flexible engagement models',
     },
     {
       img: refundPolicy,
-      title: '100% refund policy*',
+      title: 'Risk-free development approach',
     },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    heading: `<span class="text-red">Craft CMS</span> Development Process`,
+    description: `Our structured Craft CMS development process ensures clarity, quality, and timely delivery.`,
     developmentProcessStep: [
       {
-        title: 'Strategy and Planning',
+        title: 'Discovery & Requirement Analysis',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We understand your business goals, content structure, and technical requirements to define a clear project scope.',
       },
       {
-        title: 'Intuitive UX and UI Designing',
+        title: 'Information Architecture & UX Design',
         description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
+          'We design content models, user journeys, and intuitive interfaces optimized for usability and scalability.',
       },
       {
-        title: 'Development and Testing',
+        title: 'Craft CMS Development',
         description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
+          'Our developers build custom templates, fields, and plugins using Craft CMS best practices.',
       },
       {
-        title: 'Deployment and Support',
+        title: 'Testing & Quality Assurance',
         description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
+          'We rigorously test functionality, performance, and security to ensure a flawless experience.',
+      },
+      {
+        title: 'Deployment & Ongoing Support',
+        description:
+          'We deploy your Craft CMS project and provide continuous support, updates, and optimization.',
       },
     ],
   },
+
   exploreProjects: {
     heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    description: `A glimpse of our successful CMS and web development projects.`,
     buttonName: 'View All',
     buttonLink: '/our-work',
     deployProjects: [
       {
         projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'A custom Craft CMS website with dynamic content management and performance optimization.',
       },
       {
         projectImg: '/webp/project/hts.webp',
         projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'Enterprise-level CMS solution built using Craft CMS for scalability and flexibility.',
       },
       {
         projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/edqan.webp',
-        projectName: 'E-learning',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/spacerenta.webp',
-        projectName: 'Spacerenta',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/afterdark.webp',
-        projectName: 'After dark',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'Modern content-driven platform powered by Craft CMS and custom UI.',
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use for <span class="text-red">Craft CMS Development</span>`,
+    description: `Tools and technologies our Craft CMS experts rely on.`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
+        servicesName: 'CMS & Backend',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: ['Craft CMS', 'PHP', 'Yii Framework'],
       },
       {
         bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
+        servicesName: 'Frontend',
         servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        servicesItems: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'React'],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['MySQL', 'PostgreSQL'],
       },
       {
         bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
+        servicesName: 'Integrations',
         servicesImg: plugin,
         servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
+          'REST APIs',
+          'Third-party services',
+          'Payment gateways',
+          'CRM integrations',
         ],
       },
       {
         bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
+        servicesName: 'DevOps & Tools',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['Git', 'Docker', 'CI/CD Pipelines', 'AWS'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description: 'Answers to common questions about Craft CMS development.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Why choose Craft CMS over WordPress?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Craft CMS offers greater flexibility, security, and content control compared to traditional CMS platforms like WordPress.',
       },
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Is Craft CMS suitable for enterprise projects?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, Craft CMS is highly scalable and ideal for enterprise-grade websites and content platforms.',
       },
       {
-        question: 'Is it possible to create an app for free?',
+        question: 'Can you migrate my existing website to Craft CMS?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Absolutely. We provide seamless migration services from WordPress, Drupal, and other CMS platforms.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'Do you offer ongoing Craft CMS support?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we provide maintenance, updates, performance optimization, and long-term support.',
       },
     ],
   },
 };
+
 export const magento: IPropsDataTypes = {
   HeroSectionData: {
-    heading: `<span class="text-red">Magento</span> App Development Company`,
-    techName: 'magento',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
+    heading: `<span class="text-red">Magento</span> Development Company`,
+    techName: 'Magento',
+    description: `Optimity Logics is a reliable Magento (Adobe Commerce) development company delivering scalable, secure, and high-performance eCommerce solutions. Our experienced Magento developers build feature-rich online stores tailored to your business goals, from custom store development to enterprise-level commerce solutions.`,
     techImg: '/webp/technology/cms/m.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    heading: `<span class="text-red">Our Magento</span> Development Services`,
+    description: `Whether you need a new Magento store, a migration, or performance optimization, we provide end-to-end Magento development services to support your eCommerce growth.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Custom Magento Store Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We build fully customized Magento stores with scalable architecture, tailored features, and seamless user experiences.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Magento Theme Design & Customization',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Our designers create conversion-focused, responsive Magento themes aligned with your brand identity.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Magento Extension Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We develop custom Magento extensions to add advanced functionality and meet specific business requirements.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Magento Migration Services',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Smooth and secure migration from Shopify, WooCommerce, or legacy platforms to Magento without data loss.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Magento Performance Optimization',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We optimize speed, performance, and scalability to ensure fast load times and better conversions.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Magento Support & Maintenance',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Ongoing maintenance, security updates, and technical support to keep your Magento store running smoothly.',
       },
     ],
   },
+
   WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Magento Development?`,
 
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'Magento Expertise',
         content: {
           heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+            'Certified Magento developers with deep eCommerce experience',
+          desc: `Our team specializes in Magento architecture, custom modules, and enterprise-grade eCommerce solutions.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'Certified Magento developers',
+            'Clean & scalable code',
+            'Adobe Commerce expertise',
+            'Best security practices',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Scalable eCommerce Solutions',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'Built to grow with your business',
+          desc: `We design Magento solutions that scale effortlessly as your traffic, products, and customers grow.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'High-performance architecture',
+            'Future-ready solutions',
+            'Multi-store & multi-language support',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'Transparent Development Process',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'Clear communication and full visibility',
+          desc: `We follow an agile, transparent process with regular updates and milestone-based delivery.`,
+          points: [
+            'Dedicated project manager',
+            'Agile methodology',
+            'On-time delivery',
+          ],
         },
       },
     ],
   },
 
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Want to build a powerful <span class="text-red capitalize">Magento eCommerce store</span>?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
@@ -974,283 +879,248 @@ fledged development solutions aligned with your business objectives. `,
     },
     {
       img: resource,
-      title: '100% resource substitution*',
+      title: 'Dedicated Magento developers',
     },
     {
       img: hiringModal,
-      title: 'Flexible hiring models',
+      title: 'Flexible engagement models',
     },
     {
       img: refundPolicy,
-      title: '100% refund policy*',
+      title: 'Risk-free development approach',
     },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    heading: `<span class="text-red">Magento</span> Development Process`,
+    description: `Our proven Magento development process ensures quality, scalability, and timely delivery.`,
     developmentProcessStep: [
       {
-        title: 'Strategy and Planning',
+        title: 'Requirement Analysis & Planning',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We analyze business goals, product catalog, and user journeys to define a clear development roadmap.',
       },
       {
-        title: 'Intuitive UX and UI Designing',
+        title: 'UX/UI Design',
         description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
+          'We design intuitive, conversion-focused interfaces optimized for eCommerce experiences.',
       },
       {
-        title: 'Development and Testing',
+        title: 'Magento Development & Integration',
         description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
+          'Custom Magento development including themes, modules, third-party integrations, and APIs.',
       },
       {
-        title: 'Deployment and Support',
+        title: 'Testing & Quality Assurance',
         description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
+          'We conduct performance, security, and functional testing to ensure a flawless shopping experience.',
+      },
+      {
+        title: 'Deployment & Ongoing Support',
+        description:
+          'Store deployment, monitoring, maintenance, and continuous improvements post-launch.',
       },
     ],
   },
+
   exploreProjects: {
     heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    description: `A snapshot of our successful eCommerce and CMS projects.`,
     buttonName: 'View All',
     buttonLink: '/our-work',
     deployProjects: [
       {
         projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'Custom Magento-powered eCommerce platform with optimized performance.',
       },
       {
         projectImg: '/webp/project/hts.webp',
         projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'Enterprise Magento solution with advanced product and order management.',
       },
       {
         projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/edqan.webp',
-        projectName: 'E-learning',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/spacerenta.webp',
-        projectName: 'Spacerenta',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/afterdark.webp',
-        projectName: 'After dark',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'Scalable Magento store designed for high traffic and conversions.',
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use for <span class="text-red">Magento Development</span>`,
+    description: `Tools and technologies our Magento experts work with.`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
+        servicesName: 'Platform & Backend',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: [
+          'Magento Open Source',
+          'Adobe Commerce',
+          'PHP',
+          'MySQL',
+        ],
       },
       {
         bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
+        servicesName: 'Frontend',
         servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        servicesItems: ['HTML5', 'CSS3', 'JavaScript', 'Knockout.js', 'React'],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['MySQL', 'MariaDB'],
       },
       {
         bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
+        servicesName: 'Integrations',
         servicesImg: plugin,
         servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
+          'Payment Gateways',
+          'Shipping APIs',
+          'ERP & CRM Integrations',
+          'Third-party APIs',
         ],
       },
       {
         bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
+        servicesName: 'DevOps & Tools',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['Git', 'Docker', 'CI/CD', 'AWS', 'Cloud Hosting'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description: 'Common questions about Magento development services.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Why choose Magento for eCommerce?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Magento offers unmatched flexibility, scalability, and customization for growing eCommerce businesses.',
       },
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Is Magento suitable for enterprise businesses?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, Adobe Commerce (Magento) is widely used by enterprise-level brands worldwide.',
       },
       {
-        question: 'Is it possible to create an app for free?',
+        question: 'Can you migrate my existing store to Magento?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we provide secure and seamless migration from other platforms to Magento.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'Do you provide ongoing Magento support?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Absolutely. We offer maintenance, security updates, and performance optimization.',
       },
     ],
   },
 };
+
 export const drupal: IPropsDataTypes = {
   HeroSectionData: {
-    heading: `<span class="text-red">Drupal</span> App Development Company`,
+    heading: `<span class="text-red">Drupal</span> Development Company`,
     techName: 'drupal',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
-    techImg: '/webp/technology/cms/m.webp',
+    description: `Optimity Logics is a trusted Drupal development company delivering secure, scalable, and high-performance CMS solutions. Our Drupal experts build flexible digital platforms, enterprise websites, and content-rich applications tailored to complex business requirements.`,
+    techImg: '/webp/technology/cms/drupal.webp',
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    heading: `<span class="text-red">Our Drupal</span> Development Services`,
+    description: `From custom Drupal websites to enterprise-grade CMS platforms, we provide end-to-end Drupal development services to help organizations manage content, scale efficiently, and deliver exceptional digital experiences.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Custom Drupal Website Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We build scalable and secure Drupal websites tailored to your business, content, and user needs.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Drupal Theme Design & Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Our designers craft responsive, accessible, and conversion-focused Drupal themes aligned with your brand.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Drupal Module Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We develop custom Drupal modules to extend functionality and integrate third-party services.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Drupal Migration & Upgrade',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Seamless migration and upgrades from older Drupal versions or other CMS platforms with zero data loss.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Enterprise Drupal Solutions',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Robust Drupal solutions for large-scale, high-traffic, and content-heavy enterprise applications.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Drupal Support & Maintenance',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Ongoing maintenance, security updates, performance optimization, and technical support.',
       },
     ],
   },
+
   WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Drupal Development?`,
 
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'Drupal Expertise',
         content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+          heading: 'Experienced Drupal developers you can trust',
+          desc: `Our team has deep expertise in Drupal architecture, security, and enterprise CMS implementations.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'Certified Drupal developers',
+            'Enterprise-grade solutions',
+            'Security-first development',
+            'Clean and scalable code',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Scalable & Secure Platforms',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'Built for performance and growth',
+          desc: `We design Drupal platforms that handle high traffic, complex content structures, and evolving business needs.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'High scalability',
+            'Advanced access control',
+            'Performance optimization',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'Transparent Process',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'Clear communication and agile delivery',
+          desc: `We follow an agile, transparent development process with regular updates and measurable milestones.`,
+          points: [
+            'Agile methodology',
+            'Dedicated project manager',
+            'On-time delivery',
+          ],
         },
       },
     ],
   },
 
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Want to build a powerful <span class="text-red capitalize">Drupal CMS platform</span>?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
@@ -1260,180 +1130,142 @@ fledged development solutions aligned with your business objectives. `,
     },
     {
       img: resource,
-      title: '100% resource substitution*',
+      title: 'Dedicated Drupal developers',
     },
     {
       img: hiringModal,
-      title: 'Flexible hiring models',
+      title: 'Flexible engagement models',
     },
     {
       img: refundPolicy,
-      title: '100% refund policy*',
+      title: 'Risk-free development approach',
     },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
-            Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    heading: `<span class="text-red">Drupal</span> Development Process`,
+    description: `Our structured Drupal development process ensures quality, security, and scalability.`,
     developmentProcessStep: [
       {
-        title: 'Strategy and Planning',
+        title: 'Requirement Analysis & Planning',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We analyze business goals, content strategy, and technical requirements to define a clear roadmap.',
       },
       {
-        title: 'Intuitive UX and UI Designing',
+        title: 'UX/UI & Information Architecture',
         description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
+          'Designing intuitive interfaces and structured content models for optimal user experience.',
       },
       {
-        title: 'Development and Testing',
+        title: 'Drupal Development & Customization',
         description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
+          'Custom themes, modules, integrations, and configurations using Drupal best practices.',
       },
       {
-        title: 'Deployment and Support',
+        title: 'Testing & Quality Assurance',
         description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
+          'Comprehensive security, performance, and functional testing before launch.',
+      },
+      {
+        title: 'Deployment & Ongoing Support',
+        description:
+          'Secure deployment, monitoring, maintenance, and continuous improvements.',
       },
     ],
   },
+
   exploreProjects: {
     heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    description: `A snapshot of our Drupal and CMS-based projects.`,
     buttonName: 'View All',
     buttonLink: '/our-work',
     deployProjects: [
       {
         projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'Drupal-based content platform optimized for performance and scalability.',
       },
       {
         projectImg: '/webp/project/hts.webp',
         projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'Enterprise Drupal solution with complex content workflows.',
       },
       {
         projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/edqan.webp',
-        projectName: 'E-learning',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/spacerenta.webp',
-        projectName: 'Spacerenta',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
-      },
-      {
-        projectImg: '/webp/project/afterdark.webp',
-        projectName: 'After dark',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'High-traffic Drupal website with custom modules and integrations.',
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use for <span class="text-red">Drupal Development</span>`,
+    description: `Tools and technologies our Drupal experts work with.`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
+        servicesName: 'CMS & Backend',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: ['Drupal 9/10', 'PHP', 'Symfony'],
       },
       {
         bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
+        servicesName: 'Frontend',
         servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        servicesItems: ['HTML5', 'CSS3', 'JavaScript', 'Twig', 'React'],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['MySQL', 'PostgreSQL'],
       },
       {
         bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
+        servicesName: 'Integrations',
         servicesImg: plugin,
         servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
+          'REST & JSON APIs',
+          'Third-party integrations',
+          'CRM & ERP systems',
+          'Payment gateways',
         ],
       },
       {
         bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
+        servicesName: 'DevOps & Tools',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['Git', 'Docker', 'CI/CD', 'AWS', 'Cloud Hosting'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description: 'Common questions about Drupal development services.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Why choose Drupal for enterprise websites?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Drupal offers advanced security, scalability, and content management features ideal for enterprise platforms.',
       },
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Can you migrate from an older Drupal version?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we provide secure migration and upgrades from Drupal 7/8 to the latest versions.',
       },
       {
-        question: 'Is it possible to create an app for free?',
+        question: 'Is Drupal suitable for large-scale applications?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Absolutely. Drupal is widely used for government, enterprise, and high-traffic platforms.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'Do you provide Drupal maintenance services?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
-      },
-      {
-        question: 'What’s involved in launching an app?',
-        answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we offer ongoing maintenance, security updates, and performance optimization.',
       },
     ],
   },

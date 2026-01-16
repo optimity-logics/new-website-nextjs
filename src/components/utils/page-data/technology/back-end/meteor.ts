@@ -12,285 +12,262 @@ import resource from '../../../../../../public/svg/services/resource.svg';
 
 export const MeteorData: IPropsDataTypes = {
   HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: 'Meteor Js',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
+    heading: `<span class="text-red">Meteor JS</span> Development Company`,
+    techName: 'Meteor JS',
+    description: `Optimity Logics is a trusted Meteor JS development company delivering
+real-time, scalable, and high-performance web applications. Our experienced Meteor JS
+developers build end-to-end solutions using a unified JavaScript stack, ensuring faster
+development, seamless data synchronization, and robust application architecture aligned
+with your business goals.`,
     techImg: meteor,
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
+    heading: `<span class="text-red">Our Meteor JS</span> Development
             Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    description: `Whether you want to build a real-time web application, MVP, or
+enterprise-grade solution, our Meteor JS experts have you covered. As a leading
+Meteor JS development company, we deliver full-cycle development services
+from concept to deployment.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Custom Meteor JS Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We build custom Meteor JS applications tailored to your business needs, offering real-time data updates, high scalability, and secure performance.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Real-Time Application Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Leverage Meteor’s real-time capabilities to build chat apps, dashboards, collaboration tools, and live data-driven platforms.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'MVP Development with Meteor JS',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We help startups launch fast with MVP development using Meteor JS, reducing time-to-market while maintaining scalability.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Meteor JS Migration Services',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Seamlessly migrate your existing applications to Meteor JS for better performance, maintainability, and real-time functionality.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'API & Third-Party Integrations',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We integrate REST APIs, GraphQL, payment gateways, and third-party services to extend your Meteor JS application’s functionality.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Maintenance & Support',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Our team provides ongoing support, performance optimization, and feature enhancements to keep your Meteor JS app running smoothly.',
       },
     ],
   },
+
   WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Meteor JS Development?`,
 
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'Experienced Meteor JS Developers',
         content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+          heading: 'A skilled team with deep expertise in Meteor JS ecosystem.',
+          desc: `Our developers have hands-on experience building real-time,
+scalable, and secure Meteor JS applications across multiple industries.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'Expert JavaScript developers',
+            'Strong Meteor & Node.js expertise',
+            'Proven real-time app experience',
+            'Clean and maintainable code',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Agile & Transparent Process',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'A development process you can trust',
+          desc: `We follow agile methodologies with clear communication,
+regular updates, and complete project transparency.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'Sprint-based development',
+            'Regular progress reports',
+            'Flexible engagement models',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'Scalable & Future-Ready Solutions',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'Applications designed to grow with your business',
+          desc: `Our Meteor JS solutions are built with scalability,
+security, and performance in mind.`,
+          points: [
+            'Cloud-ready architecture',
+            'High performance optimization',
+            'Long-term scalability',
+          ],
         },
       },
     ],
   },
+
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Looking to build a <span class="text-red capitalize"> real-time web application </span> with Meteor JS?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
+    { img: nda, title: '100% NDA-protected contract' },
+    { img: resource, title: 'Dedicated development resources' },
+    { img: hiringModal, title: 'Flexible hiring models' },
+    { img: refundPolicy, title: 'Risk-free engagement*' },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
+    heading: `<span class="text-red"> Meteor JS </span>
             Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    description: `Our streamlined Meteor JS development process ensures
+high-quality delivery, faster turnaround, and predictable outcomes.`,
     developmentProcessStep: [
       {
-        title: 'Strategy and Planning',
+        title: 'Requirement Analysis',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We understand your business goals, application requirements, and technical needs to define a clear development roadmap.',
       },
       {
-        title: 'Intuitive UX and UI Designing',
+        title: 'Architecture & Planning',
         description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
+          'Our team designs a scalable Meteor JS architecture, selecting the right packages, database, and integrations.',
       },
       {
-        title: 'Development and Testing',
+        title: 'Development & Testing',
         description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
+          'We develop real-time features using Meteor JS and conduct rigorous testing to ensure performance, security, and reliability.',
       },
       {
-        title: 'Deployment and Support',
+        title: 'Deployment & Ongoing Support',
         description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
+          'We deploy your application and provide continuous monitoring, maintenance, and feature enhancements.',
       },
     ],
   },
+
   exploreProjects: {
     heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    description: `Take a look at some of the successful projects we’ve delivered
+using modern web technologies.`,
     buttonName: 'View All',
     buttonLink: '/our-work',
     deployProjects: [
       {
         projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `A scalable booking platform with real-time availability and seamless user experience.`,
       },
       {
         projectImg: '/webp/project/hts.webp',
         projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `An enterprise web solution with real-time data synchronization.`,
       },
       {
         projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `A dynamic platform optimized for performance and scalability.`,
       },
       {
         projectImg: '/webp/project/edqan.webp',
         projectName: 'E-learning',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `A real-time e-learning platform with interactive features.`,
       },
       {
         projectImg: '/webp/project/spacerenta.webp',
         projectName: 'Spacerenta',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `A modern rental platform with live data updates.`,
       },
       {
         projectImg: '/webp/project/afterdark.webp',
-        projectName: 'After dark',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectName: 'After Dark',
+        projectDescription: `A feature-rich platform with secure real-time interactions.`,
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use For <span class="text-red"> Meteor JS Development</span>`,
+    description: `Here’s a list of tools and technologies our Meteor JS experts use
+to build high-performance applications:`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
+        servicesName: 'Core Technologies',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: ['Meteor JS', 'Node.js', 'JavaScript (ES6+)', 'MongoDB'],
       },
       {
         bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
+        servicesName: 'Frontend',
         servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        servicesItems: ['React', 'Blaze', 'Vue', 'HTML5', 'CSS3'],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['MongoDB', 'Redis', 'Minimongo'],
       },
       {
         bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
+        servicesName: 'Integrations',
         servicesImg: plugin,
         servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
+          'REST APIs',
+          'GraphQL',
+          'Authentication & Authorization',
+          'Payment Gateways',
+          'Cloud Services',
         ],
       },
       {
         bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
+        servicesName: 'DevOps & Deployment',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['Docker', 'AWS', 'CI/CD Pipelines', 'Galaxy Hosting'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description:
+      'We’ve answered the most common questions about Meteor JS development.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Why choose Meteor JS for web development?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Meteor JS enables real-time functionality, faster development, and a unified JavaScript stack for both frontend and backend.',
       },
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Is Meteor JS suitable for large-scale applications?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, Meteor JS supports scalable architecture and is ideal for real-time and enterprise applications.',
       },
       {
-        question: 'Is it possible to create an app for free?',
+        question: 'Can you migrate my existing app to Meteor JS?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Absolutely. We provide seamless migration services with minimal downtime.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'How long does Meteor JS development take?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'The timeline depends on project complexity, features, and integrations.',
       },
       {
-        question: 'What’s involved in launching an app?',
+        question: 'Do you provide post-launch support?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we offer ongoing maintenance, performance optimization, and feature upgrades.',
       },
     ],
   },

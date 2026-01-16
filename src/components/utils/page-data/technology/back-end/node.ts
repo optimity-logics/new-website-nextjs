@@ -12,285 +12,259 @@ import resource from '../../../../../../public/svg/services/resource.svg';
 
 export const NodeData: IPropsDataTypes = {
   HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
-    techName: 'Node Js',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
+    heading: `<span class="text-red">Node.js</span> Development Company`,
+    techName: 'Node JS',
+    description: `Optimity Logics is a reliable Node.js development company delivering
+scalable, high-performance, and secure backend solutions. Our experienced Node.js
+developers build real-time, API-driven, and cloud-ready applications tailored to your
+business requirements, ensuring speed, flexibility, and long-term scalability.`,
     techImg: node,
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
+    heading: `<span class="text-red">Our Node.js</span> Development
             Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    description: `Whether you need a lightweight backend, real-time application,
+or enterprise-grade system, our Node.js experts have you covered. As a leading
+Node.js development company, we deliver end-to-end backend and full-stack solutions.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Custom Node.js Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We develop custom Node.js applications that are fast, scalable, and optimized for high traffic and performance.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'API & Backend Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Our team builds secure RESTful and GraphQL APIs to power web, mobile, and third-party integrations.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Real-Time Application Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We create real-time applications such as chat apps, dashboards, and collaboration tools using Node.js and WebSockets.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Microservices Architecture',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Design and development of scalable microservices-based applications using Node.js for better flexibility and maintainability.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Node.js Migration Services',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We migrate legacy systems to Node.js to improve performance, scalability, and maintainability.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Maintenance & Support',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Ongoing monitoring, optimization, updates, and technical support to keep your Node.js application running smoothly.',
       },
     ],
   },
+
   WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Node.js Development Services?`,
 
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'Expert Node.js Developers',
         content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+          heading: 'A team with strong backend and JavaScript expertise',
+          desc: `Our Node.js developers have extensive experience building
+scalable, secure, and high-performance backend systems.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'Experienced Node.js engineers',
+            'Strong JavaScript & backend expertise',
+            'Proven enterprise project delivery',
+            'Clean and maintainable codebase',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Agile & Transparent Development',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'Predictable delivery with full visibility',
+          desc: `We follow agile methodologies with continuous communication,
+regular updates, and complete transparency.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'Sprint-based execution',
+            'Regular progress updates',
+            'Flexible engagement models',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'Scalable & Secure Solutions',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'Built for performance and growth',
+          desc: `Our Node.js solutions are designed with scalability,
+security, and future expansion in mind.`,
+          points: [
+            'High-performance architecture',
+            'Secure API development',
+            'Cloud-ready deployment',
+          ],
         },
       },
     ],
   },
+
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Looking to build a <span class="text-red capitalize"> scalable backend </span> with Node.js?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
+    { img: nda, title: '100% NDA-protected contract' },
+    { img: resource, title: 'Dedicated development resources' },
+    { img: hiringModal, title: 'Flexible hiring models' },
+    { img: refundPolicy, title: 'Risk-free engagement*' },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
+    heading: `<span class="text-red"> Node.js </span>
             Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    description: `Our structured Node.js development process ensures
+high-quality code, scalability, and on-time delivery.`,
     developmentProcessStep: [
       {
-        title: 'Strategy and Planning',
+        title: 'Requirement Analysis',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We analyze business needs, system requirements, and technical goals to define a clear backend strategy.',
       },
       {
-        title: 'Intuitive UX and UI Designing',
+        title: 'Architecture & Planning',
         description:
-          'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
+          'Our team designs a scalable Node.js architecture, database structure, and API flow.',
       },
       {
-        title: 'Development and Testing',
+        title: 'Development & Testing',
         description:
-          'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
+          'We develop robust Node.js solutions and perform extensive testing to ensure performance, security, and reliability.',
       },
       {
-        title: 'Deployment and Support',
+        title: 'Deployment & Support',
         description:
-          'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
+          'We deploy your application and provide continuous monitoring, maintenance, and enhancements.',
       },
     ],
   },
+
   exploreProjects: {
     heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    description: `Discover some of the backend and full-stack solutions
+we’ve successfully delivered to our clients.`,
     buttonName: 'View All',
     buttonLink: '/our-work',
     deployProjects: [
       {
         projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `A scalable backend system supporting real-time bookings and integrations.`,
       },
       {
         projectImg: '/webp/project/hts.webp',
         projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Enterprise-grade backend platform built with Node.js.`,
       },
       {
         projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `High-performance API-driven application with real-time data handling.`,
       },
       {
         projectImg: '/webp/project/edqan.webp',
         projectName: 'E-learning',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `A scalable backend powering interactive learning experiences.`,
       },
       {
         projectImg: '/webp/project/spacerenta.webp',
         projectName: 'Spacerenta',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `A modern rental platform with secure Node.js APIs.`,
       },
       {
         projectImg: '/webp/project/afterdark.webp',
-        projectName: 'After dark',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectName: 'After Dark',
+        projectDescription: `A feature-rich platform built on scalable Node.js architecture.`,
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use For <span class="text-red"> Node.js Development</span>`,
+    description: `Here’s a list of tools and technologies our Node.js experts
+use to build scalable backend solutions:`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
+        servicesName: 'Core Technologies',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: ['Node.js', 'JavaScript (ES6+)', 'TypeScript'],
       },
       {
         bgColor: '#B5F1CC',
-        servicesName: 'Tools & Utilities',
+        servicesName: 'Frameworks',
         servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        servicesItems: ['Express.js', 'NestJS', 'Fastify', 'Koa'],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis'],
       },
       {
         bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
+        servicesName: 'APIs & Integrations',
         servicesImg: plugin,
         servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
+          'REST APIs',
+          'GraphQL',
+          'Authentication & Authorization',
+          'Payment Gateways',
+          'Third-party APIs',
         ],
       },
       {
         bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
+        servicesName: 'DevOps & Deployment',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['Docker', 'AWS', 'CI/CD Pipelines', 'Nginx'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description: 'Answers to common questions about Node.js development.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Why choose Node.js for backend development?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Node.js offers high performance, scalability, and real-time capabilities using a single JavaScript runtime.',
       },
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Is Node.js suitable for enterprise applications?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, Node.js is widely used for enterprise-grade, high-traffic, and scalable applications.',
       },
       {
-        question: 'Is it possible to create an app for free?',
+        question: 'Can you migrate existing systems to Node.js?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we provide seamless migration services with minimal downtime.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'How long does Node.js development take?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Timelines depend on project complexity, features, and integrations.',
       },
       {
-        question: 'What’s involved in launching an app?',
+        question: 'Do you provide post-launch support?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we offer continuous maintenance, optimization, and enhancements.',
       },
     ],
   },
