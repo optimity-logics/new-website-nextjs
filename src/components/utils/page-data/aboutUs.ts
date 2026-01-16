@@ -19,15 +19,7 @@ export const aboutUsPage = {
   aboutUsBtn: 'About Us',
   aboutUsBtnLink: '/contact-us',
   hero_image: aboutUsHeroImage,
-  OurWork: [
-    { title: '35+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '75+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
+
   woWeAre: 'Who We Are?',
   woWeAreList: [
     {

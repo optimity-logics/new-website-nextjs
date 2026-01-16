@@ -184,15 +184,7 @@ export const homePageData = {
       img: qa,
     },
   ],
-  OurWork: [
-    { title: '35+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '75+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
+
   aiSectionHeqading: 'Automated Data Intelligence',
   aiSectionDescription:
     'Data and AI/ML technologies can revolutionise your company. Find out what you need to know and automate critical processes to increase productivity, efficiency, and long-term growth.',

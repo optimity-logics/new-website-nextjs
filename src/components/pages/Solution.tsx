@@ -11,6 +11,7 @@ import ProjectCard from '../common/ProjectCard';
 import Faqs from '../homePage/Faqs';
 import { motion } from 'framer-motion';
 import { IsolutionsPage } from '../type/solution/solutionType';
+import { OurWork } from '../utils/Constant';
 
 type IsolutionSubPageType = {
   data: IsolutionsPage;
@@ -28,7 +29,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
         <div className="flex h-full min-h-screen items-center justify-center">
           <Container className="relative z-20 flex h-full flex-col items-center justify-end gap-5 py-20 pt-[150px] lg:min-h-screen lg:flex-row lg:justify-between lg:pt-20">
             <HeroSectionHeading
-              className="items-start justify-center !gap-10"
+              className="items-start justify-center !gap-10 3xl:max-w-[740px]"
               heading={data?.heroSection?.title}
               description={data?.heroSection?.description}
               btnName={data?.heroSection?.buttonText}
@@ -62,7 +63,7 @@ const Solution = ({ data }: IsolutionSubPageType) => {
         </div>
       </div>
       <div
-        className={`${data?.ctaSection?.bgClass} relative mb-[60px] bg-cover bg-center bg-no-repeat after:absolute after:inset-0 after:max-h-[500px] after:w-full after:bg-black-560-alpha lg:bg-full 3xl:mb-[100px]`}
+        className={`${data?.ctaSection?.bgClass} relative mb-[60px] bg-cover bg-center bg-no-repeat after:absolute after:inset-0 after:w-full after:bg-black-560-alpha lg:bg-full 3xl:mb-[100px]`}
       >
         <Container className="relative z-30 py-[80px] 3xl:py-[150px]">
           <HeroSectionHeading
@@ -77,8 +78,8 @@ const Solution = ({ data }: IsolutionSubPageType) => {
       </div>
       <Container className="mb-[60px] w-full max-w-[1680px] 4xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
-          {data?.ourWork &&
-            data?.ourWork.map((item, i) => <OurWorkCard key={i} data={item} />)}
+          {OurWork &&
+            OurWork.map((item, i) => <OurWorkCard key={i} data={item} />)}
         </div>
       </Container>
       <Container className="mb-[60px] flex flex-col gap-[60px] 3xl:mb-[100px]">
@@ -106,8 +107,9 @@ const Solution = ({ data }: IsolutionSubPageType) => {
                     <Image
                       src={data?.healthcareServices?.serviceIcon}
                       alt="heart"
-                      width={26}
-                      height={26}
+                      width={16}
+                      height={16}
+                      className="w-2.5"
                     />{' '}
                     {item}
                   </li>

@@ -12,375 +12,260 @@ import resource from '../../../../../../public/svg/services/resource.svg';
 
 export const PythonData: IPropsDataTypes = {
   HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
+    heading: `<span class="text-red">Python</span> Development Company`,
     techName: 'Python',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
+    description: `Optimity Logics is a reliable Python development company delivering
+secure, scalable, and high-performance solutions. Our experienced Python developers
+build web applications, backend systems, APIs, automation tools, and data-driven
+solutions tailored to your business needs.`,
     techImg: python,
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
+    heading: `<span class="text-red">Our Python</span> Development
             Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    description: `From web applications to data-driven platforms, our Python
+development services are designed to deliver performance, scalability, and
+business value across industries.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Custom Python Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We build custom Python applications tailored to your business workflows, ensuring scalability and clean architecture.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Python Web Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Robust web applications using frameworks like Django and Flask with secure backend architecture.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'API Development & Integration',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Design and integration of secure RESTful APIs for seamless third-party connectivity.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Data Analytics & Processing',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Powerful data processing and analytics solutions using Python libraries and tools.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Automation & Scripting',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Automation of repetitive tasks and workflows using Python scripts to improve efficiency.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Maintenance & Support',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Continuous monitoring, upgrades, and support to keep Python applications running smoothly.',
       },
     ],
   },
+
   WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Python Development Services?`,
 
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'Expert Python Developers',
         content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+          heading: 'Experienced developers with deep Python expertise',
+          desc: `Our Python engineers have hands-on experience delivering
+scalable, secure, and high-performance applications across domains.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'Clean and maintainable code',
+            'Industry best practices',
+            'Framework-based development',
+            'Scalable architecture',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Agile & Transparent Process',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'Faster delivery with complete visibility',
+          desc: `We follow agile methodologies to ensure flexibility,
+clear communication, and on-time project delivery.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'Sprint-based execution',
+            'Regular progress updates',
+            'Flexible engagement models',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'Secure & Future-Ready Solutions',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'Built to scale with your business',
+          desc: `Our Python solutions are designed for security,
+performance, and long-term scalability.`,
+          points: [
+            'Secure coding standards',
+            'Performance optimization',
+            'Future-ready architecture',
+          ],
         },
       },
     ],
   },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
+
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Looking to build a <span class="text-red capitalize"> scalable solution </span> using Python?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
+    { img: nda, title: '100% NDA-protected contract' },
+    { img: resource, title: 'Dedicated development resources' },
+    { img: hiringModal, title: 'Flexible hiring models' },
+    { img: refundPolicy, title: 'Risk-free engagement*' },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
+    heading: `<span class="text-red"> Python </span>
             Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    description: `Our structured Python development process ensures
+quality delivery, scalability, and business alignment.`,
     developmentProcessStep: [
       {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+        title: 'Requirement Analysis',
+        description:
+          'We analyze business goals, technical needs, and project scope to define a clear development roadmap.',
       },
       {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+        title: 'Architecture & Design',
+        description:
+          'Designing scalable system architecture and database structures for long-term success.',
       },
       {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+        title: 'Development & Testing',
+        description:
+          'Python development with rigorous testing to ensure security, performance, and reliability.',
       },
       {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
+        title: 'Deployment & Support',
+        description:
+          'Smooth deployment with continuous monitoring, maintenance, and technical support.',
       },
     ],
   },
+
   exploreProjects: {
     heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    description: `A glimpse of Python-based solutions we’ve delivered
+across web, backend, and data-driven platforms.`,
     buttonName: 'View All',
     buttonLink: '/our-work',
     deployProjects: [
       {
         projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Python-powered backend system with secure data handling.`,
       },
       {
         projectImg: '/webp/project/hts.webp',
         projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Enterprise-grade Python web application.`,
       },
       {
         projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `High-performance Python API-driven platform.`,
       },
       {
         projectImg: '/webp/project/edqan.webp',
         projectName: 'E-learning',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Learning management platform built using Python.`,
       },
       {
         projectImg: '/webp/project/spacerenta.webp',
         projectName: 'Spacerenta',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription: `Scalable rental solution with Python backend.`,
       },
       {
         projectImg: '/webp/project/afterdark.webp',
-        projectName: 'After dark',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectName: 'After Dark',
+        projectDescription: `Custom Python web solution with optimized performance.`,
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use For <span class="text-red"> Python Development</span>`,
+    description: `Our Python developers use modern tools and frameworks
+to build reliable and scalable solutions.`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
         servicesName: 'Frameworks',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: ['Django', 'Flask', 'FastAPI'],
       },
       {
         bgColor: '#B5F1CC',
         servicesName: 'Tools & Utilities',
         servicesImg: tools,
-        servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
-        ],
+        servicesItems: ['VS Code', 'PyCharm', 'Git', 'Postman'],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
       },
       {
         bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
+        servicesName: 'Libraries & Integrations',
         servicesImg: plugin,
         servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
+          'NumPy',
+          'Pandas',
+          'Celery',
+          'REST APIs',
+          'Payment Gateways',
+          'Authentication Systems',
         ],
       },
       {
         bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
+        servicesName: 'DevOps & Deployment',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['Docker', 'AWS', 'CI/CD Pipelines', 'Nginx'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description: 'Answers to common questions about Python development.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Why choose Python for development?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Python offers simplicity, scalability, and a rich ecosystem, making it ideal for web, data, and backend development.',
       },
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Which Python frameworks do you use?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'We work with Django, Flask, FastAPI, and other modern Python frameworks.',
       },
       {
-        question: 'Is it possible to create an app for free?',
+        question: 'Can you migrate legacy systems to Python?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we provide seamless migration and modernization services.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'Is Python secure for enterprise applications?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we follow strict security best practices and testing standards.',
       },
       {
-        question: 'What’s involved in launching an app?',
+        question: 'Do you provide post-launch support?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Absolutely. We offer continuous maintenance and support services.',
       },
     ],
   },

@@ -2,9 +2,9 @@ import { IsolutionsPage } from '@/components/type/solution/solutionType';
 
 export const devOps: IsolutionsPage = {
   heroSection: {
-    title: 'DevOps & Life Sciences',
+    title: 'DevOps Solutions for Modern Enterprises',
     description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      'We help organizations accelerate software delivery, improve system reliability, and automate workflows with end-to-end DevOps solutions. Our services enable continuous integration, continuous delivery, and scalable infrastructure management across cloud and on-premise environments.',
     buttonText: 'Let’s Connect',
     buttonLink: '/schedule-a-call',
     bgClass: 'bg-aboutUsHeroBg',
@@ -13,36 +13,26 @@ export const devOps: IsolutionsPage = {
   },
 
   ctaSection: {
-    heading: 'Ready to optimize your healthcare operations?',
+    heading: 'Ready to streamline your software delivery pipeline?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
     bgClass: 'bg-bgDevOps',
   },
-  ourWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
 
   healthcareServices: {
-    title: `<span class="text-red">Our Services </span>Revolutioning Your 
-Healthcare Operations`,
+    title: `<span class="text-red">Our Services </span>Accelerating Software Delivery`,
     description:
-      "Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered.",
-    serviceTitle: 'Healthcare Software Development',
-    serviceDescription: `Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Flutter mobile app development company, we provide comprehensive Flutter app development services to support you through every stage of the development lifecycle.`,
+      'We provide comprehensive DevOps services to automate deployments, enhance collaboration between development and operations teams, and optimize infrastructure for scalability and security.',
+    serviceTitle: 'DevOps Services',
+    serviceDescription: `From CI/CD pipeline implementation to cloud infrastructure automation and monitoring, we deliver DevOps solutions that reduce release cycles, improve system reliability, and support continuous innovation. Our team ensures best practices, compliance, and optimized workflows tailored to your business needs.`,
     serviceIcon: '/svg/services/health.svg',
 
     services: [
-      'Custom healthcare app development',
-      'Cross-platform Flutter solutions',
-      'Medical workflow automation',
-      'Telemedicine solutions',
-      'Healthcare integration services',
+      'CI/CD pipeline design and implementation',
+      'Infrastructure as Code (IaC)',
+      'Cloud migration and management',
+      'Monitoring, logging, and performance optimization',
+      'DevOps consulting and automation strategy',
     ],
 
     images: [
@@ -54,7 +44,7 @@ Healthcare Operations`,
   exploreProjects: {
     heading: 'Explore Our Projects',
     description:
-      'We have delivered cutting-edge healthcare solutions across all domains.',
+      'We have helped organizations automate and optimize software delivery pipelines across industries.',
     buttonName: 'View All',
     buttonLink: '/our-work',
 
@@ -94,9 +84,9 @@ Healthcare Operations`,
 };
 export const cloudComputing: IsolutionsPage = {
   heroSection: {
-    title: 'Cloud Computing & Life Sciences',
+    title: 'Cloud Computing Solutions',
     description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      'We provide scalable and secure cloud computing solutions that optimize IT infrastructure, reduce costs, and enable seamless collaboration. Our services include cloud migration, multi-cloud management, and cloud-native application development.',
     buttonText: 'Let’s Connect',
     buttonLink: '/schedule-a-call',
     bgClass: 'bg-aboutUsHeroBg',
@@ -105,36 +95,26 @@ export const cloudComputing: IsolutionsPage = {
   },
 
   ctaSection: {
-    heading: 'Ready to optimize your healthcare operations?',
+    heading: 'Ready to accelerate your cloud transformation?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
     bgClass: 'bg-bgCloudSol',
   },
-  ourWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
 
   healthcareServices: {
-    title: `<span class="text-red">Our Services </span>Revolutioning Your 
-Healthcare Operations`,
+    title: `<span class="text-red">Our Services </span>Empowering Cloud-First Businesses`,
     description:
-      "Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered.",
-    serviceTitle: 'Healthcare Software Development',
-    serviceDescription: `Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Flutter mobile app development company, we provide comprehensive Flutter app development services to support you through every stage of the development lifecycle.`,
+      'We help organizations adopt cloud technologies, optimize infrastructure, and implement secure and scalable solutions to meet business goals.',
+    serviceTitle: 'Cloud Computing Services',
+    serviceDescription: `Our cloud computing services cover cloud strategy, migration, deployment, and management. We ensure high availability, security, and scalability for your applications, whether on public, private, or hybrid cloud environments.`,
     serviceIcon: '/svg/services/health.svg',
 
     services: [
-      'Custom healthcare app development',
-      'Cross-platform Flutter solutions',
-      'Medical workflow automation',
-      'Telemedicine solutions',
-      'Healthcare integration services',
+      'Cloud strategy and consulting',
+      'Cloud migration and deployment',
+      'Multi-cloud and hybrid cloud management',
+      'Cloud-native application development',
+      'Infrastructure as Code (IaC) and automation',
     ],
 
     images: [
@@ -146,7 +126,7 @@ Healthcare Operations`,
   exploreProjects: {
     heading: 'Explore Our Projects',
     description:
-      'We have delivered cutting-edge healthcare solutions across all domains.',
+      'We have helped businesses across industries migrate, manage, and optimize their cloud infrastructure for better performance and scalability.',
     buttonName: 'View All',
     buttonLink: '/our-work',
 
@@ -186,9 +166,9 @@ Healthcare Operations`,
 };
 export const productPrototype: IsolutionsPage = {
   heroSection: {
-    title: 'Product Prototype & Life Sciences',
+    title: 'Product Prototype Development Solutions',
     description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      'We help startups and enterprises turn ideas into working prototypes quickly. Our product prototyping services validate concepts, streamline design, and prepare your product for market-ready development.',
     buttonText: 'Let’s Connect',
     buttonLink: '/schedule-a-call',
     bgClass: 'bg-aboutUsHeroBg',
@@ -197,36 +177,26 @@ export const productPrototype: IsolutionsPage = {
   },
 
   ctaSection: {
-    heading: 'Ready to optimize your healthcare operations?',
+    heading: 'Ready to bring your product ideas to life?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
     bgClass: 'bg-bgProductPrototype',
   },
-  ourWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
 
   healthcareServices: {
-    title: `<span class="text-red">Our Services </span>Revolutioning Your 
-Healthcare Operations`,
+    title: `<span class="text-red">Our Services </span>Turning Ideas into Reality`,
     description:
-      "Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered.",
-    serviceTitle: 'Healthcare Software Development',
-    serviceDescription: `Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Flutter mobile app development company, we provide comprehensive Flutter app development services to support you through every stage of the development lifecycle.`,
+      'We provide end-to-end product prototyping services, helping you design, test, and validate your product concepts before full-scale development.',
+    serviceTitle: 'Product Prototype Development',
+    serviceDescription: `From concept design and wireframing to interactive MVPs, we build prototypes that demonstrate functionality, validate usability, and reduce time-to-market. Our team ensures your product vision is accurately represented and ready for development.`,
     serviceIcon: '/svg/services/health.svg',
 
     services: [
-      'Custom healthcare app development',
-      'Cross-platform Flutter solutions',
-      'Medical workflow automation',
-      'Telemedicine solutions',
-      'Healthcare integration services',
+      'Concept design and wireframing',
+      'Interactive MVP development',
+      'User experience and UI validation',
+      'Rapid prototyping for testing and feedback',
+      'Product consulting and roadmap planning',
     ],
 
     images: [
@@ -238,7 +208,7 @@ Healthcare Operations`,
   exploreProjects: {
     heading: 'Explore Our Projects',
     description:
-      'We have delivered cutting-edge healthcare solutions across all domains.',
+      'We have helped startups and enterprises create functional prototypes to test ideas, gather feedback, and accelerate development.',
     buttonName: 'View All',
     buttonLink: '/our-work',
 
@@ -278,9 +248,9 @@ Healthcare Operations`,
 };
 export const onDemandApp: IsolutionsPage = {
   heroSection: {
-    title: 'On-demand application & Life Sciences',
+    title: 'On-Demand Application Development Solutions',
     description:
-      'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+      'We build custom on-demand applications that connect users with services instantly. Our apps are scalable, secure, and designed to provide seamless experiences across Android, iOS, and web platforms.',
     buttonText: 'Let’s Connect',
     buttonLink: '/schedule-a-call',
     bgClass: 'bg-aboutUsHeroBg',
@@ -289,36 +259,24 @@ export const onDemandApp: IsolutionsPage = {
   },
 
   ctaSection: {
-    heading: 'Ready to optimize your healthcare operations?',
+    heading: 'Ready to launch your on-demand service platform?',
     buttonText: 'Connect Us',
     buttonLink: '/contact-us',
     bgClass: 'bg-bgOnDemand',
   },
-  ourWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
-
   healthcareServices: {
-    title: `<span class="text-red">Our Services </span>Revolutioning Your 
-Healthcare Operations`,
+    title: `<span class="text-red">Our Services </span>Empowering On-Demand Experiences`,
     description:
-      "Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered.",
-    serviceTitle: 'Healthcare Software Development',
-    serviceDescription: `Whether you're looking to build a custom cross-platform app from the ground up using Flutter or upgrade an existing app to match current technology trends, we’ve got you covered. As a leading Flutter mobile app development company, we provide comprehensive Flutter app development services to support you through every stage of the development lifecycle.`,
+      'We provide end-to-end on-demand app development services, helping startups and enterprises build platforms that connect users with services quickly and efficiently.',
+    serviceTitle: 'On-Demand App Development',
+    serviceDescription: `From marketplace apps to service booking platforms, we deliver feature-rich, scalable, and user-friendly on-demand applications. Our solutions include real-time tracking, payment integration, notifications, and analytics, ensuring your platform is ready to serve users efficiently.`,
     serviceIcon: '/svg/services/health.svg',
-
     services: [
-      'Custom healthcare app development',
-      'Cross-platform Flutter solutions',
-      'Medical workflow automation',
-      'Telemedicine solutions',
-      'Healthcare integration services',
+      'Custom on-demand app development',
+      'Real-time service tracking and notifications',
+      'Integrated payment gateways',
+      'Cross-platform mobile and web solutions',
+      'On-demand platform consulting and scaling',
     ],
 
     images: [
@@ -330,7 +288,7 @@ Healthcare Operations`,
   exploreProjects: {
     heading: 'Explore Our Projects',
     description:
-      'We have delivered cutting-edge healthcare solutions across all domains.',
+      'We have developed innovative on-demand solutions across industries, connecting users with services instantly.',
     buttonName: 'View All',
     buttonLink: '/our-work',
 

@@ -34,9 +34,9 @@ const ProjectCard = ({ i, data }: projectCardProps) => {
         <h3 className="font-opt text-lg font-medium leading-6 text-white">
           {data?.projectName}
         </h3>
-        <p className="font-opt text-base font-normal leading-5 text-white/80">
+        {/* <p className="font-opt text-base font-normal leading-5 text-white/80">
           {data?.projectDescription}
-        </p>
+        </p> */}
       </div>
     </div>
   );

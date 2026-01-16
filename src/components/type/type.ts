@@ -173,20 +173,12 @@ type IDevelopments = {
     description: string;
   }[];
 };
-type IOurWork = {
-  title: string;
-  description: string;
-  backGrouund: string;
-}[];
 type IdevProcess = {
   heading: string;
   description: string;
   developmentProcessStep: {
-    processHeading: string;
-    procesDataList: {
-      title: string;
-      description: string;
-    }[];
+    title: string;
+    description: string;
   }[];
 };
 type IExploreProjects = {
@@ -217,7 +209,6 @@ type ICrossPlatformBenefits = {
 export type IPropsDataTypes = {
   HeroSectionData: IHeroSectionData;
   development: IDevelopments;
-  OurWork: IOurWork;
   developmentProcess: IdevProcess;
   technologyWeUse: ITechnologyWeUse;
   exploreProjects: IExploreProjects;

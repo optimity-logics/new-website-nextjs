@@ -48,7 +48,6 @@ export interface ExploreProjects {
 export interface IsolutionsPage {
   heroSection: HeroSection;
   ctaSection: CtaSection;
-  ourWork: WorkItem[];
   healthcareServices: HealthcareServices;
   exploreProjects: ExploreProjects;
 }

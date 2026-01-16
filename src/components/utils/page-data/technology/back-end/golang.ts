@@ -12,375 +12,270 @@ import resource from '../../../../../../public/svg/services/resource.svg';
 
 export const GolangData: IPropsDataTypes = {
   HeroSectionData: {
-    heading: `<span class="text-red">Flutter</span> App Development Company`,
+    heading: `<span class="text-red">Golang</span> Development Company`,
     techName: 'Go Lang',
-    description: `Optimity Logics is a top-notch Flutter app development company in USA offering robust
-cross-platform app development solutions. With a team of expert Flutter developers
-onboard, we offer end-to-end Flutter app development services, from discovery to full-
-fledged development solutions aligned with your business objectives. `,
+    description: `Optimity Logics is a trusted Golang development company delivering high-performance,
+scalable, and secure backend solutions. Our experienced Go developers build robust
+systems ranging from microservices and APIs to cloud-native and distributed
+applications that align perfectly with your business objectives.`,
     techImg: golang,
     btnName: `Let’s Connect`,
     btnLink: '/schedule-a-call',
   },
+
   development: {
-    heading: `<span class="text-red">Our Flutter App</span> Development
-            Services Aligned with Your Needs`,
-    description: ` Whether you're looking to build a custom cross-platform app from
-                the technology trends, we've got you covered. As a leading
-                Flutter mobile app development company, we provide comprehensive
-                Flutter app development services to support you through every stage
-                of the development lifecycle.`,
+    heading: `<span class="text-red">Our Golang</span> Development
+            Services Aligned with Your Business Needs`,
+    description: `Whether you need a high-performance backend, scalable microservices,
+or cloud-native applications, our Golang experts deliver efficient and reliable
+solutions. We support you through every phase of the development lifecycle.`,
     developmentServices: [
       {
-        title: 'Custom Flutter App Development',
+        title: 'Custom Golang Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We build custom Golang applications tailored to your business requirements, ensuring high performance, scalability, and long-term maintainability.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Backend & API Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Our Go developers create secure and high-speed REST and GraphQL APIs to power web, mobile, and enterprise applications.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Microservices Architecture',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We design and develop microservices-based systems using Golang to ensure scalability, fault tolerance, and faster deployments.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Cloud-Native Application Development',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We build cloud-ready Golang applications optimized for AWS, GCP, and Azure with containerization and orchestration support.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'High-Performance Systems',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'Leverage Golang’s concurrency model to build high-throughput systems such as real-time platforms, data pipelines, and streaming services.',
       },
       {
-        title: 'Custom Flutter App Development',
+        title: 'Maintenance & Support',
         description:
-          'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
+          'We provide ongoing monitoring, optimization, and support to ensure your Golang applications remain secure and performant.',
       },
     ],
   },
-  WhyOptimityForDevelopment: {
-    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Flutter App Development Services?`,
 
+  WhyOptimityForDevelopment: {
+    heading: `<span class="text-red">Why Choose Optimity </span>Logics for Golang Development?`,
     developmentServicesStep: [
       {
         id: 1,
-        title: 'Lorem Ipsum text dummy',
+        title: 'Expert Golang Engineers',
         content: {
-          heading:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...`,
+          heading: 'Skilled developers with deep Golang expertise',
+          desc: `Our engineers have hands-on experience building scalable, production-grade systems using Golang across multiple industries.`,
           points: [
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
-            'Lorem Ipsum is simply',
+            'Experienced Golang professionals',
+            'Strong system design expertise',
+            'Production-ready coding standards',
+            'Performance-driven development',
           ],
         },
       },
       {
         id: 2,
-        title: 'Another Lorem Ipsum text',
+        title: 'Scalable & Secure Solutions',
         content: {
-          heading: 'Another heading for this tab',
-          desc: `This is another description text for the second tab.`,
+          heading: 'Built for performance and growth',
+          desc: `We design Golang solutions that scale seamlessly while ensuring high security, reliability, and fault tolerance.`,
           points: [
-            'Second tab point one',
-            'Second tab point two',
-            'Second tab point three',
+            'Secure coding practices',
+            'Scalable system architecture',
+            'Cloud-ready applications',
           ],
         },
       },
       {
         id: 3,
-        title: 'Third Lorem Ipsum text',
+        title: 'Transparent Process',
         content: {
-          heading: 'Third tab title section',
-          desc: `You can customize each tab content here.`,
-          points: ['Point A', 'Point B', 'Point C'],
+          heading: 'Clear communication and delivery',
+          desc: `Our structured development process ensures transparency, predictable timelines, and measurable outcomes.`,
+          points: [
+            'Agile development approach',
+            'Regular progress updates',
+            'On-time delivery',
+          ],
         },
       },
     ],
   },
-  OurWork: [
-    { title: '20+', description: 'Happy Clients', backGrouund: 'bg-card-1' },
-    {
-      title: '50+',
-      description: 'Finished Projects',
-      backGrouund: 'bg-card-2',
-    },
-    { title: '10+', description: 'Skilled Experts', backGrouund: 'bg-card-3' },
-  ],
+
   crossPlatformBenefitsTitle:
-    'Want to build a cross platform <span class="text-red capitalize"> mobile app </span> using Flutter?',
+    'Looking to build a <span class="text-red capitalize"> high-performance backend </span> using Golang?',
   crossPlatformBenefitsContactBtn: `Contact Us`,
   crossPlatformBenefitsContactBtnLink: `/contact-us`,
   crossPlatformBenefits: [
-    {
-      img: nda,
-      title: '100% NDA-protected contract',
-    },
-    {
-      img: resource,
-      title: '100% resource substitution*',
-    },
-    {
-      img: hiringModal,
-      title: 'Flexible hiring models',
-    },
-    {
-      img: refundPolicy,
-      title: '100% refund policy*',
-    },
+    { img: nda, title: '100% NDA-protected contract' },
+    { img: resource, title: 'Flexible resource scaling' },
+    { img: hiringModal, title: 'Multiple engagement models' },
+    { img: refundPolicy, title: 'Risk-free development approach*' },
   ],
+
   developmentProcess: {
-    heading: `<span class="text-red"> Mobile App </span>
+    heading: `<span class="text-red"> Golang </span>
             Development Process`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-            text`,
+    description: `Our structured Golang development process ensures efficiency,
+scalability, and high code quality from concept to deployment.`,
     developmentProcessStep: [
       {
-        processHeading: 'Strategy and Planning',
-        procesDataList: [
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+        title: 'Requirement Analysis',
+        description:
+          'We analyze business objectives, technical needs, and system requirements to define a clear development roadmap.',
       },
       {
-        processHeading: 'Intuitive UX and UI Designing',
-        procesDataList: [
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+        title: 'System & Architecture Design',
+        description:
+          'We design scalable architectures focusing on performance, concurrency, and future growth.',
       },
       {
-        processHeading: 'Development and Testing',
-        procesDataList: [
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-        ],
+        title: 'Golang Development',
+        description:
+          'Our engineers develop clean, efficient, and maintainable Golang code following best practices.',
       },
       {
-        processHeading: 'Deployment and Support',
-        procesDataList: [
-          {
-            title: 'Deployment and Support',
-            description:
-              'We handle the complete deployment process and provide ongoing support to ensure your application runs smoothly. Our team offers maintenance, updates, and technical support to keep your app performing optimally and adapting to evolving business needs.',
-          },
-          {
-            title: 'Strategy and Planning',
-            description:
-              'Whether it is a B2B or B2C app development requirement, our Flutter developers have the competencies to build you a custom cross-platform app that is scalable, aesthetically pleasing, runs seamlessly across Android and iOS devices, and exceeds your expectations.',
-          },
-          {
-            title: 'Intuitive UX and UI Designing',
-            description:
-              'Our design team focuses on creating intuitive user experiences that engage your audience. We craft beautiful, user-friendly interfaces that not only look great but also provide seamless navigation and optimal user satisfaction across all devices and platforms.',
-          },
-          {
-            title: 'Development and Testing',
-            description:
-              'Our experienced development team builds robust, scalable applications using the latest technologies and best practices. We implement comprehensive testing strategies to ensure your app performs flawlessly and meets the highest quality standards before deployment.',
-          },
-        ],
+        title: 'Testing & Optimization',
+        description:
+          'We conduct rigorous testing and performance optimization to ensure reliability and scalability.',
+      },
+      {
+        title: 'Deployment & Support',
+        description:
+          'We deploy your solution and provide continuous monitoring, maintenance, and enhancements.',
       },
     ],
   },
+
   exploreProjects: {
     heading: `Explore Projects`,
-    description: `Here’s an overview of some of the projects we’ve worked on.
-                These case studies showcase how we thoughtfully address our
-                clients’ needs with attention to detail and care.`,
+    description: `A glimpse of the solutions we’ve delivered, showcasing our
+technical expertise and commitment to quality.`,
     buttonName: 'View All',
     buttonLink: '/our-work',
     deployProjects: [
       {
         projectImg: '/webp/project/ricksbeach.webp',
         projectName: 'Ricks Beach Rentals',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'A scalable backend system built to handle high traffic and real-time operations.',
       },
       {
         projectImg: '/webp/project/hts.webp',
         projectName: 'HTS',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'Enterprise-grade backend services optimized for performance and reliability.',
       },
       {
         projectImg: '/webp/project/hopper.webp',
         projectName: 'Hopper',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'High-performance APIs powering seamless digital experiences.',
       },
       {
         projectImg: '/webp/project/edqan.webp',
         projectName: 'E-learning',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'A scalable learning platform backend supporting thousands of users.',
       },
       {
         projectImg: '/webp/project/spacerenta.webp',
         projectName: 'Spacerenta',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectDescription:
+          'Cloud-native backend enabling fast and secure operations.',
       },
       {
         projectImg: '/webp/project/afterdark.webp',
-        projectName: 'After dark',
-        projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since`,
+        projectName: 'After Dark',
+        projectDescription:
+          'A robust backend system designed for real-time data processing.',
       },
     ],
   },
+
   technologyWeUse: {
-    heading: `Technology Stack We Use For <span class="text-red"> Flutter App Development</span>`,
-    description: ` Her's a list of tools and technologies our Flutter experts
-            excel in, catering to various requirements for Flutter mobile app
-            development services:`,
+    heading: `Technology Stack We Use For <span class="text-red"> Golang Development</span>`,
+    description: `A curated list of tools and technologies our Golang experts
+use to build scalable and high-performance solutions.`,
     technologyServices: [
       {
         bgColor: '#FFC0D9',
-        servicesName: 'Frameworks',
+        servicesName: 'Languages & Frameworks',
         servicesImg: framework,
-        servicesItems: ['Flutter', 'Dart plugins', 'Flutter SDK', 'Dart SDK'],
+        servicesItems: ['Golang', 'Gin', 'Echo', 'Fiber'],
       },
       {
         bgColor: '#B5F1CC',
         servicesName: 'Tools & Utilities',
         servicesImg: tools,
         servicesItems: [
-          'Android studio',
-          'Visual studio code',
-          'IntelliJ',
-          'Version control tools (Git, GitLab, Bit Bucket)',
+          'Go Modules',
+          'Docker',
+          'Git, GitHub, GitLab',
+          'VS Code',
         ],
       },
       {
         bgColor: '#9FE9F6',
         servicesName: 'Databases',
         servicesImg: database,
-        servicesItems: [
-          'Hive',
-          'ObjectBox',
-          'SQLite',
-          'Firebase realtime database',
-          'Firestore',
-          'Sembast',
-          'StorageMoor',
-        ],
+        servicesItems: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
       },
       {
         bgColor: '#FFD8C0',
-        servicesName: 'Plugins & Integrations',
+        servicesName: 'Integrations',
         servicesImg: plugin,
         servicesItems: [
-          'Firebase (All service)',
-          'Provider',
-          'Payment Gateways (Stripe, Braintree, Google Pay, Razorpay)',
-          'Social Sign-In (Facebook, Google, Apple)',
-          'Shared preferences',
-          'Image_picker',
-          'In-app Purchase',
-          'Map flutter_ffmpeg',
-          'AWS Amplify',
-          'AWS datastore',
-          'Freezed',
-          'JSON serializable',
-          'flutter_local_notifications',
-          'BLoC',
+          'REST & GraphQL APIs',
+          'gRPC',
+          'Kafka',
+          'AWS & GCP Services',
         ],
       },
       {
         bgColor: '#D0BFFF',
-        servicesName: 'CI/CD Tools',
+        servicesName: 'CI/CD & DevOps',
         servicesImg: dns,
-        servicesItems: ['Travis', 'Cirrus', 'Codemagic', 'Bitrise', 'Fastlane'],
+        servicesItems: ['GitHub Actions', 'Jenkins', 'Docker CI', 'Kubernetes'],
       },
     ],
   },
+
   Faqs: {
     heading: 'Frequently Asked Questions',
-    description: 'We’ve compiled the answers to your burning questions!',
+    description: 'We’ve answered the most common Golang development questions.',
     faqs: [
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Why choose Golang for backend development?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Golang offers high performance, built-in concurrency, scalability, and simplicity, making it ideal for modern backend systems.',
       },
       {
-        question: 'How much does it cost to build an app?',
+        question: 'Is Golang suitable for large-scale systems?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, Golang is widely used for large-scale, distributed, and cloud-native systems.',
       },
       {
-        question: 'Is it possible to create an app for free?',
+        question: 'Can Golang be used with microservices?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Absolutely. Golang is one of the most popular choices for building microservices architectures.',
       },
       {
-        question: 'How do I start creating my own app?',
+        question: 'Do you provide Golang maintenance services?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Yes, we offer ongoing support, optimization, and maintenance for Golang applications.',
       },
       {
-        question: 'What’s involved in launching an app?',
+        question: 'How do I start a Golang project with Optimity Logics?',
         answer:
-          'The cost of building an app will depend on the app’s features, and we as a brand only offer clear, upfront pricing to avoid any confusion.',
+          'Simply contact us, and our team will guide you through requirements, planning, and execution.',
       },
     ],
   },

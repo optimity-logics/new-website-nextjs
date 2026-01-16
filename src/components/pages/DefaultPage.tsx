@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Container from '../ui/Container';
 import checkMark from '../../../public/svg/check-mark.svg';
 import Link from 'next/link';
-import { logoIcons } from '../utils/Constant';
+import { logoIcons, OurWork } from '../utils/Constant';
 import 'react-international-phone/style.css';
 import AnimatedArrow from '../common/AnimatedArrow';
 import Image from 'next/image';
@@ -278,43 +278,41 @@ const DefaultPage = ({ data }: IPropsType) => {
           <div className="space-y-6">
             {data?.developmentProcess?.developmentProcessStep &&
               data?.developmentProcess?.developmentProcessStep.map(
-                (item, index) =>
-                  index === 0 &&
-                  item?.procesDataList.map((items, ind) => (
+                (item, index) => (
+                  <div
+                    key={index}
+                    className="grid grid-cols-1 last:overflow-hidden lg:grid-cols-2"
+                  >
                     <div
-                      key={ind}
-                      className="grid grid-cols-1 last:overflow-hidden lg:grid-cols-2"
+                      className={` ${index % 2 !== 0 ? 'col-start-2 border-r-2 border-r-red bg-leftCard pl-2 lg:-ml-5' : 'col-start-1 flex-row-reverse border-l-2 border-l-red bg-rightCard pr-2 lg:ml-5'} flex w-full items-start gap-4 rounded-xl p-6 shadow-devCardShadow backdrop-blur-xl scrollbar-hide md:max-w-full lg:min-w-full`}
                     >
-                      <div
-                        className={` ${ind % 2 !== 0 ? 'col-start-2 border-r-2 border-r-red bg-leftCard pl-2 lg:-ml-5' : 'col-start-1 flex-row-reverse border-l-2 border-l-red bg-rightCard pr-2 lg:ml-5'} flex w-full items-start gap-4 rounded-xl p-6 shadow-devCardShadow backdrop-blur-xl scrollbar-hide md:max-w-full lg:min-w-full`}
-                      >
-                        <div className={`relative grid flex-col items-center`}>
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-black-900-alpha text-white backdrop-blur-md">
-                            {ind + 1}
-                          </div>
-                          <div
-                            className={`absolute left-1/2 top-full -z-[1] -mt-2 h-full min-h-[150px] w-[1.5px] translate-x-1/2 rounded-2xl bg-gradientLine opacity-80 backdrop-blur-sm`}
-                          ></div>
+                      <div className={`relative grid flex-col items-center`}>
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-black-900-alpha text-white backdrop-blur-md">
+                          {index + 1}
                         </div>
-                        <div className="flex flex-col gap-3">
-                          <h4 className="font-opt text-[22px] font-medium leading-7 text-white">
-                            {items?.title}
-                          </h4>
-                          <p className="font-opt text-base font-normal leading-5 text-white/70">
-                            {items?.description}
-                          </p>
-                        </div>
+                        <div
+                          className={`absolute left-1/2 top-full -z-[1] -mt-2 h-full min-h-[150px] w-[1.5px] translate-x-1/2 rounded-2xl bg-gradientLine opacity-80 backdrop-blur-sm`}
+                        ></div>
+                      </div>
+                      <div className="flex flex-col gap-3">
+                        <h4 className="font-opt text-[22px] font-medium leading-7 text-white">
+                          {item?.title}
+                        </h4>
+                        <p className="font-opt text-base font-normal leading-5 text-white/70">
+                          {item?.description}
+                        </p>
                       </div>
                     </div>
-                  )),
+                  </div>
+                ),
               )}
           </div>
         </Container>
       </div>
       <Container className="mb-[60px] 4xl:mb-[100px]">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-[45px]">
-          {data?.OurWork &&
-            data?.OurWork.map((item, index) => (
+          {OurWork &&
+            OurWork.map((item, index) => (
               <OurWorkCard key={index} data={item} />
             ))}
         </div>
